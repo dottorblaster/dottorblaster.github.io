@@ -1,0 +1,450 @@
+---
+layout: post
+status: publish
+published: true
+title: Ventuno.
+author:
+  display_name: Bl@ster
+  login: Blaster
+  email: dottorblaster@gmail.com
+  url: http://www.dottorblaster.it
+author_login: Blaster
+author_email: dottorblaster@gmail.com
+author_url: http://www.dottorblaster.it
+wordpress_id: 1044
+wordpress_url: http://dottorblaster.it/?p=1044
+date: '2011-10-11 23:54:05 +0200'
+date_gmt: '2011-10-11 22:54:05 +0200'
+categories: []
+tags:
+- My Life
+comments:
+- id: 16441
+  author: ''
+  author_email: stefanauss@gmail.com
+  author_url: ''
+  date: '2011-10-11 23:59:00 +0200'
+  date_gmt: '2011-10-11 22:59:00 +0200'
+  content: Tanti auguri Alessio ;)
+- id: 16442
+  author: Matteo Pani
+  author_email: andovais@gmail.com
+  author_url: ''
+  date: '2011-10-12 00:02:00 +0200'
+  date_gmt: '2011-10-11 23:02:00 +0200'
+  content: Tantissimi auguri!
+- id: 16443
+  author: Diego
+  author_email: cdprincipe.spam@gmail.com
+  author_url: ''
+  date: '2011-10-12 00:03:00 +0200'
+  date_gmt: '2011-10-11 23:03:00 +0200'
+  content: E allora auguri
+- id: 16444
+  author: gain
+  author_email: gianni.zen@gmail.com
+  author_url: ''
+  date: '2011-10-12 00:05:00 +0200'
+  date_gmt: '2011-10-11 23:05:00 +0200'
+  content: Congrats ^^
+- id: 16445
+  author: neonbible*
+  author_email: ''
+  author_url: http://twitter.com/_neonbible_
+  date: '2011-10-12 00:05:00 +0200'
+  date_gmt: '2011-10-11 23:05:00 +0200'
+  content: |-
+    auguri Blaster :*
+    spacca tutto.
+    Sono orgogliosa di te.
+- id: 16447
+  author: Arsenio76
+  author_email: arsenio76@gmail.com
+  author_url: ''
+  date: '2011-10-12 00:13:00 +0200'
+  date_gmt: '2011-10-11 23:13:00 +0200'
+  content: Tanti auguri!
+- id: 16448
+  author: vencizon
+  author_email: vencizon@yahoo.it
+  author_url: ''
+  date: '2011-10-12 00:16:00 +0200'
+  date_gmt: '2011-10-11 23:16:00 +0200'
+  content: |-
+    ...
+    anni++;  // Tanti auguri!...
+- id: 16449
+  author: Sba
+  author_email: sba@nyft.org
+  author_url: ''
+  date: '2011-10-12 00:27:00 +0200'
+  date_gmt: '2011-10-11 23:27:00 +0200'
+  content: Potrei dirti semplicemente di andare affanculo, così, per sport, ma sei
+    un Bilancia e questo fa di te un bravo ragazzo. Io i 21 anni li ho compiuti sotto
+    le armi, sembra un secolo fa, ma chissenefrega di ciò che faccio io, oggi la festa
+    è tua e quindi ti faccio i migliori auguri di non invecchiare troppo in fretta,
+    che è uno schifo, goditeli tutti, minuto per minuto. Dannato nerd! :)
+- id: 16450
+  author: Andrea Colangelo
+  author_email: andrea.colangelo@gmail.com
+  author_url: ''
+  date: '2011-10-12 06:04:00 +0200'
+  date_gmt: '2011-10-12 05:04:00 +0200'
+  content: Auguri tipaccio! :D
+- id: 16451
+  author: Giovanni Ponzio
+  author_email: n1n0.aegis@gmail.com
+  author_url: ''
+  date: '2011-10-12 06:14:00 +0200'
+  date_gmt: '2011-10-12 05:14:00 +0200'
+  content: |-
+    Uh! Auguri ;-)
+    Ecco una cosa in cui ti batto, almeno quella.
+- id: 16452
+  author: Dandelionbrain
+  author_email: dandelionbrain@gmail.com
+  author_url: ''
+  date: '2011-10-12 06:51:00 +0200'
+  date_gmt: '2011-10-12 05:51:00 +0200'
+  content: Auguri ingegnere!
+- id: 16453
+  author: Davide TheSgrash
+  author_email: thesgrash@yahoo.it
+  author_url: http://www.basketbaiano.it
+  date: '2011-10-12 08:02:00 +0200'
+  date_gmt: '2011-10-12 07:02:00 +0200'
+  content: auguroni postumi doc
+- id: 16456
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2011-10-12 08:26:00 +0200'
+  date_gmt: '2011-10-12 07:26:00 +0200'
+  content: Non ti lamentare se poi la gente ti vuole bene. Grazie :P
+- id: 16457
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2011-10-12 08:27:00 +0200'
+  date_gmt: '2011-10-12 07:27:00 +0200'
+  content: Sono sicuro che mi batti in tantissime altre cose ;)
+- id: 16458
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2011-10-12 08:27:00 +0200'
+  date_gmt: '2011-10-12 07:27:00 +0200'
+  content: |-
+    Dà :P
+    Grazie ;)
+- id: 16459
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2011-10-12 08:27:00 +0200'
+  date_gmt: '2011-10-12 07:27:00 +0200'
+  content: |-
+    Postumi? :D
+    Graaaazie :P
+- id: 16460
+  author: Valdan
+  author_email: ''
+  author_url: http://twitter.com/valdannet
+  date: '2011-10-12 08:28:00 +0200'
+  date_gmt: '2011-10-12 07:28:00 +0200'
+  content: "Auguri Dottò! \nQuand'è che ci offri da bere? \nlol"
+- id: 16461
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2011-10-12 08:30:00 +0200'
+  date_gmt: '2011-10-12 07:30:00 +0200'
+  content: |-
+    for (i=0; i&lt;anni; i++){
+      cout &lt;&lt; &quot;Grazie&quot; &lt;&lt; endl;
+    }
+
+    ;)
+- id: 16462
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2011-10-12 08:32:00 +0200'
+  date_gmt: '2011-10-12 07:32:00 +0200'
+  content: Tivvibbi, lo sai.
+- id: 16463
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2011-10-12 08:32:00 +0200'
+  date_gmt: '2011-10-12 07:32:00 +0200'
+  content: Grazie ;D
+- id: 16464
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2011-10-12 08:47:00 +0200'
+  date_gmt: '2011-10-12 07:47:00 +0200'
+  content: ";)"
+- id: 16465
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2011-10-12 08:47:00 +0200'
+  date_gmt: '2011-10-12 07:47:00 +0200'
+  content: E allora grazie. :D
+- id: 16466
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2011-10-12 08:48:00 +0200'
+  date_gmt: '2011-10-12 07:48:00 +0200'
+  content: Ma grazie amico mio ;)
+- id: 16467
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2011-10-12 08:48:00 +0200'
+  date_gmt: '2011-10-12 07:48:00 +0200'
+  content: Denghiu :)
+- id: 16468
+  author: Francesco Del Prete
+  author_email: italyanker@gmail.com
+  author_url: http://profiles.google.com/italyanker
+  date: '2011-10-12 08:50:00 +0200'
+  date_gmt: '2011-10-12 07:50:00 +0200'
+  content: Auguri @dottorblaster:disqus 
+- id: 16469
+  author: oskarnrk
+  author_email: oskarnrk@gmail.com
+  author_url: http://www.oskarnrk.net
+  date: '2011-10-12 08:57:00 +0200'
+  date_gmt: '2011-10-12 07:57:00 +0200'
+  content: |-
+    Tanti auguri anche qui :) Ah, 21, bei tempi! Qui ormai sono 28 e si va per i 30!
+    Ah: guardati il film "21" ("21 vittoria grande baldoria") che è stupendo ;)
+- id: 16470
+  author: Antonio Barba
+  author_email: thekaneb@gmail.com
+  author_url: ''
+  date: '2011-10-12 09:06:00 +0200'
+  date_gmt: '2011-10-12 08:06:00 +0200'
+  content: |-
+    Uno, ventuno e centomila :-D
+    Buon compleanno dottore! :D
+- id: 16471
+  author: sonofthestage
+  author_email: sonofthestage@gmail.com
+  author_url: ''
+  date: '2011-10-12 09:31:00 +0200'
+  date_gmt: '2011-10-12 08:31:00 +0200'
+  content: Anche se in ritardo auguri Alessio. :)
+- id: 16472
+  author: aldolat
+  author_email: aldolat@gmail.com
+  author_url: http://www.aldolat.it
+  date: '2011-10-12 09:36:00 +0200'
+  date_gmt: '2011-10-12 08:36:00 +0200'
+  content: Auguri, Doc!
+- id: 16473
+  author: Davide TheSgrash
+  author_email: thesgrash@yahoo.it
+  author_url: http://www.basketbaiano.it
+  date: '2011-10-12 10:51:00 +0200'
+  date_gmt: '2011-10-12 09:51:00 +0200'
+  content: postumi perchè pensavo che era ieri avendo questo articolo la data di pubblicazione
+    11 oct.... meglio così allora... ancora auguri XD
+- id: 16476
+  author: drake762001
+  author_email: drake762001@gmail.com
+  author_url: ''
+  date: '2011-10-12 11:28:00 +0200'
+  date_gmt: '2011-10-12 10:28:00 +0200'
+  content: Allora tanti auguri per il compleanno, complimenti per la tua carriera
+    universitaria e un in bocca al lupo sincero per Hopen.
+- id: 16477
+  author: Picchiopc
+  author_email: picchiopc@gmail.com
+  author_url: http://picchiopc.wordpress.com
+  date: '2011-10-12 11:58:00 +0200'
+  date_gmt: '2011-10-12 10:58:00 +0200'
+  content: Tanti auguri Alessio :D
+- id: 16478
+  author: Gigitux
+  author_email: gigitux@gmail.com
+  author_url: http://linuxaroforever.wordpress.com
+  date: '2011-10-12 12:35:00 +0200'
+  date_gmt: '2011-10-12 11:35:00 +0200'
+  content: Tantissimi Auguri !
+- id: 16479
+  author: Telperion
+  author_email: nikita_top@libero.it
+  author_url: ''
+  date: '2011-10-12 12:45:00 +0200'
+  date_gmt: '2011-10-12 11:45:00 +0200'
+  content: |-
+    Auguri!
+    Un consiglio, goditeli più che puoi, perchè passano in fretta.
+- id: 16480
+  author: Tyler
+  author_email: matteo.mora.76@gmail.com
+  author_url: http://mcqueenlives.hostzi.com/
+  date: '2011-10-12 13:34:00 +0200'
+  date_gmt: '2011-10-12 12:34:00 +0200'
+  content: tantissimi auguri!
+- id: 16481
+  author: Nicopi
+  author_email: nicopistaff@yahoo.it
+  author_url: http://nicopi.blogspot.com
+  date: '2011-10-12 15:26:00 +0200'
+  date_gmt: '2011-10-12 14:26:00 +0200'
+  content: Auguri!!
+- id: 16482
+  author: Christopher Rotta
+  author_email: ''
+  author_url: http://twitter.com/chrisbroken89
+  date: '2011-10-12 16:56:00 +0200'
+  date_gmt: '2011-10-12 15:56:00 +0200'
+  content: Augurissimi!
+- id: 16483
+  author: MrModd
+  author_email: mr.modd@gmail.com
+  author_url: http://mrmodd.it/
+  date: '2011-10-12 18:35:00 +0200'
+  date_gmt: '2011-10-12 17:35:00 +0200'
+  content: Ma tanti tanti auguri!!!
+- id: 16484
+  author: azzarcher
+  author_email: azzarcher@gmail.com
+  author_url: http://azzsthoughts.netsons.org/
+  date: '2011-10-12 20:10:00 +0200'
+  date_gmt: '2011-10-12 19:10:00 +0200'
+  content: Sei un esempio, vecchio mio! :)
+- id: 16485
+  author: Alessio Mazzieri
+  author_email: alessio.mazzieri@gmail.com
+  author_url: ''
+  date: '2011-10-12 21:04:00 +0200'
+  date_gmt: '2011-10-12 20:04:00 +0200'
+  content: e peggio verrà :)
+- id: 16486
+  author: Alessio Mazzieri
+  author_email: alessio.mazzieri@gmail.com
+  author_url: ''
+  date: '2011-10-12 21:04:00 +0200'
+  date_gmt: '2011-10-12 20:04:00 +0200'
+  content: e peggio verrà
+- id: 16487
+  author: Antonio Barba
+  author_email: thekaneb@gmail.com
+  author_url: ''
+  date: '2011-10-12 22:54:00 +0200'
+  date_gmt: '2011-10-12 21:54:00 +0200'
+  content: double post
+- id: 16488
+  author: Antonio Barba
+  author_email: thekaneb@gmail.com
+  author_url: ''
+  date: '2011-10-12 22:54:00 +0200'
+  date_gmt: '2011-10-12 21:54:00 +0200'
+  content: double post
+- id: 16489
+  author: zakunin
+  author_email: ''
+  author_url: http://twitter.com/zakunin
+  date: '2011-10-12 23:56:00 +0200'
+  date_gmt: '2011-10-12 22:56:00 +0200'
+  content: In ritardo...auguri! :)
+- id: 16490
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2011-10-13 16:19:00 +0200'
+  date_gmt: '2011-10-13 15:19:00 +0200'
+  content: Grazie MOTU :P
+- id: 16491
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2011-10-13 16:20:00 +0200'
+  date_gmt: '2011-10-13 15:20:00 +0200'
+  content: Messo a scaric... aehm, "comprare" :D
+- id: 16492
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2011-10-13 16:20:00 +0200'
+  date_gmt: '2011-10-13 15:20:00 +0200'
+  content: Grazie ;)
+- id: 16493
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2011-10-13 16:20:00 +0200'
+  date_gmt: '2011-10-13 15:20:00 +0200'
+  content: Ma no non eri in ritardo :P
+- id: 16494
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2011-10-13 16:20:00 +0200'
+  date_gmt: '2011-10-13 15:20:00 +0200'
+  content: ";)"
+- id: 16495
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2011-10-13 16:21:00 +0200'
+  date_gmt: '2011-10-13 15:21:00 +0200'
+  content: Di in bocca al lupo ce ne serviranno parecchi. Vedremo... ;)
+- id: 16496
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2011-10-13 16:21:00 +0200'
+  date_gmt: '2011-10-13 15:21:00 +0200'
+  content: "È quello che sto cercando di fare ;)"
+- id: 16497
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2011-10-13 16:22:00 +0200'
+  date_gmt: '2011-10-13 15:22:00 +0200'
+  content: Grazie, sono sempre ben accetti :)
+- id: 16498
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2011-10-13 16:22:00 +0200'
+  date_gmt: '2011-10-13 15:22:00 +0200'
+  content: Mh? ;P
+- id: 16499
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2011-10-13 16:25:00 +0200'
+  date_gmt: '2011-10-13 15:25:00 +0200'
+  content: Ma esempio de che... :D
+- id: 16544
+  author: Marco - CasaPizza
+  author_email: casapiz@gmail.com
+  author_url: http://www.pizzacast.it
+  date: '2011-10-24 11:36:00 +0200'
+  date_gmt: '2011-10-24 10:36:00 +0200'
+  content: Auguri in ritardo sodo! Da uno che tra un mesetto e mezzo toccherà i 30!!!
+    :D
+- id: 16545
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2011-10-24 11:37:00 +0200'
+  date_gmt: '2011-10-24 10:37:00 +0200'
+  content: |-
+    Noi nati autunnali/invernali siamo superiori hahah
+    Grazie :D
+---
+<p>Apro <strong>Wikipedia</strong> e controllo un po' di cose.</p>
+<p>Ventuno è il numero naturale dopo il 20 e prima del 22. È un numero <strong><a href="http://it.wikipedia.org/wiki/Numero_difettivo">difettivo</a></strong>. È l'ottavo nella <strong><a href="http://it.wikipedia.org/wiki/Successione_di_Fibonacci">successione di Fibonacci</a></strong>. Servono almeno ventuno quadrati distinti per comporne uno grosso. È numero <strong><a href="http://it.wikipedia.org/wiki/Numero_ottagonale">ottagonale</a></strong>, <strong><a href="http://it.wikipedia.org/wiki/Numero_fortunato">fortunato</a></strong>, nonchè <strong><a href="http://it.wikipedia.org/wiki/Numero_di_Harshad">di Harshad</a></strong>.</p>
+<p>L'alfabeto italiano ha ventuno lettere, ventuno poi è anche la porta raccomandata per <strong>FTP</strong>.</p>
+<p>Ma soprattutto è il numero dei <strong>miei anni</strong> oggi: questo nuovo genetliaco porta tanta roba con sé. Il primo grosso regalo mi è già arrivato: con il lancio di Hopen, ho cominciato a pensare di potercela davvero fare, e da quel venerdì sera credo di aver capito tantissime cose su come funziona il mondo e soprattutto su come funziono io. Oltre il <strong><a href="http://hopen.it/2011/10/we-are-hopen/">boot meeting di Hopen</a></strong>, che è un progetto in cui sto davvero mettendo me stesso, sono giunte soddisfazioni anche dalla vita universitaria; un'opinione forte sul sottoscritto di un paio di prof la cui stima mi rende davvero felice, nonchè poi il resto. È stato un anno ricco, infatti: ho fatto tanti test, tante prove, tante recensioni e mentre avevo vent'anni ed ero giovane e forte ho anche (e continuo) scritto fiumi di parole su <strong>OneOpenSource</strong>, con quel santo di <strong>Matteo</strong> a sopportare i miei scleri. Ma, oh, che ci volete fare, è il genio dell'artista.</p>
+<p>Ventuno. Dio mio. <strong>Ventuno</strong>.</p>

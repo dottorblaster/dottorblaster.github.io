@@ -1,0 +1,175 @@
+---
+layout: post
+status: publish
+published: true
+title: Lo Stregone.
+author:
+  display_name: Bl@ster
+  login: Blaster
+  email: dottorblaster@gmail.com
+  url: http://www.dottorblaster.it
+author_login: Blaster
+author_email: dottorblaster@gmail.com
+author_url: http://www.dottorblaster.it
+excerpt: "Era tanto che non postavo, e mi sono deciso a rendere noto a chi non lo
+  conosce questo piccolo dialogo scritto da Michele Sciabarrà tra un cliente e un
+  tecnico (di quelli seri).\r\n<blockquote><strong>Il Grande Mago dell'Ordine Sacro
+  dell'OpenSource di Michele Sciabarrà</strong>\r\n\r\nDisquizione umoristica a tema
+  informatico-magico.Cosa è veramente l'informatico? Un tecnico, o un sacerdote di
+  un culto magico? Ebbene, forse non lo sapevate, ma la verità è che gli informatici
+  sono dei Maghi di un culto esoterico. E sono divisi in varie sette.</blockquote>\r\n"
+wordpress_id: 56
+wordpress_url: http://blaster.netsons.org/?p=56
+date: '2007-08-29 12:59:04 +0200'
+date_gmt: '2007-08-29 10:59:04 +0200'
+categories:
+- Tech
+tags:
+- Informatica
+comments:
+- id: 476
+  author: Lazza
+  author_email: andrea.lazzarotto@gmail.com
+  author_url: http://lazza.wordpress.com
+  date: '2007-08-29 13:54:15 +0200'
+  date_gmt: '2007-08-29 11:54:15 +0200'
+  content: Ecco magari quando eviterai il Courier e una formattazione alla &quot;membro
+    di segugio&quot; lo legger&ograve; pi&ugrave; volentieri! ;-)
+- id: 477
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://blaster.netsons.org
+  date: '2007-08-29 15:04:08 +0200'
+  date_gmt: '2007-08-29 13:04:08 +0200'
+  content: Va bene modifico -.-
+- id: 480
+  author: Lobotomia
+  author_email: lobotomiatbm@gmail.com
+  author_url: http://pettinix.blogspot.com
+  date: '2007-08-29 16:05:30 +0200'
+  date_gmt: '2007-08-29 14:05:30 +0200'
+  content: auhauahuahuahauha LOL :D
+- id: 481
+  author: phoenix
+  author_email: a@a.it
+  author_url: http://vitedigitali.blogspot.com
+  date: '2007-08-29 17:38:49 +0200'
+  date_gmt: '2007-08-29 15:38:49 +0200'
+  content: "da sballo&nbsp; :)\r\n\r\nper&ograve; &egrave; lungo come La Divina Commedia&nbsp;
+    :("
+- id: 482
+  author: Gionark
+  author_email: admin@gionark.it
+  author_url: http://www.gionark.it
+  date: '2007-08-29 19:29:17 +0200'
+  date_gmt: '2007-08-29 17:29:17 +0200'
+  content: "Veramente bello. Ne ha di fantasia questo!\r\nA quando la seconda puntata?
+    :D"
+- id: 483
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://blaster.netsons.org
+  date: '2007-08-29 19:36:19 +0200'
+  date_gmt: '2007-08-29 17:36:19 +0200'
+  content: 'Purtroppo non c&#39;&egrave; seconda puntata... ma vi faccio uno spoiler:
+    domani mattina, per tutti coloro cui openarena da problemi, l&#39;how-to per l&#39;aggiornamento!'
+- id: 484
+  author: psychomantum
+  author_email: psychomantum2@gmail.com
+  author_url: http://psychomantum.wordpress.com
+  date: '2007-08-30 01:22:17 +0200'
+  date_gmt: '2007-08-29 23:22:17 +0200'
+  content: "ahuahuuha genialeeeeeeeeeeeeeeee&nbsp;&nbsp;  \r\n&nbsp;&nbsp;&nbsp;"
+- id: 485
+  author: lele85
+  author_email: emanuele_rampichini@yahoo.it
+  author_url: http://italyanker.wordpress.com
+  date: '2007-08-30 01:41:44 +0200'
+  date_gmt: '2007-08-29 23:41:44 +0200'
+  content: Ma lol! Il maniaco che ha inventato sta cosa &egrave; un genio! :P
+- id: 486
+  author: TheKaneB
+  author_email: thekaneb@gmail.com
+  author_url: http://bloginformatico.netsons.org
+  date: '2007-08-30 02:19:39 +0200'
+  date_gmt: '2007-08-30 00:19:39 +0200'
+  content: Simpatico! per&ograve; arrivato a met&agrave; mi stavo gi&agrave; impiccando....
+    X_X
+- id: 487
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://blaster.netsons.org
+  date: '2007-08-30 09:15:34 +0200'
+  date_gmt: '2007-08-30 07:15:34 +0200'
+  content: Eh lo so &egrave; lungo... ma molto bello :D
+---
+<p>Era tanto che non postavo, e mi sono deciso a rendere noto a chi non lo conosce questo piccolo dialogo scritto da Michele Sciabarrà tra un cliente e un tecnico (di quelli seri).</p>
+<blockquote><p><strong>Il Grande Mago dell'Ordine Sacro dell'OpenSource di Michele Sciabarrà</strong></p>
+<p>Disquizione umoristica a tema informatico-magico.Cosa è veramente l'informatico? Un tecnico, o un sacerdote di un culto magico? Ebbene, forse non lo sapevate, ma la verità è che gli informatici sono dei Maghi di un culto esoterico. E sono divisi in varie sette.</p></blockquote>
+<p><a id="more"></a><a id="more-56"></a></p>
+<blockquote><p> Ecco a voi una conversazione tra un adepto, un Cliente (C:) e il Gran Mago Informatico (I:) dell'Ordine Sacro dell'Open Source, che riceve nel suo tempio segreto, mimetizzato nel retrobottega del suo Computer Shop. Solo pochi iniziati conoscono la sua vera natura; (C:) è uno dei pochi a cui il Mago si è rivelato.Nota: la fonti di ispirazione sono la serie a fumetti Gea di Luca Enoch, le vicende di Wanna Marchi in TV, Harry Potter e i racconti di H.P. Lovercraft. E naturalmente la realtà quotidiana di come vanno le cose nel mondo dell'informatica...</p>
+<p>C: Maestro, posso entrare?</p>
+<p>I: Vieni confratello, accomodati. Un momento solo, sto completando questo incantesimo.</p>
+<p>C: Maestro, se vuole posso aspettare ancora un po'.</p>
+<p>I: No, non preoccuparti, entra pure. E' che il messaggero Outlook ha dei problemi di comunicazione con l'aldilà, il suo signore e padrone Exchange è stato attaccato da un Worm mostruoso ed è arso vivo... Quindi sto facendo una magia e lo sto facendo rinascere in un uccello del tuono. Ho quasi finito.</p>
+<p>C: Maestro, grande è la forza della tua magia...</p>
+<p>I: Oh no, è un piccolo incantesimo che sanno fare anche agli apprendisti stregoni al primo anno della scuola di magia. Si chiama "setup".</p>
+<p>C: E' codesta una parola magica che possono pronunciare anche i non iniziati?</p>
+<p>I: Uhm, in teoria potrebbero pronunciarla e perfino eseguirla ANCHE i non iniziati; ma come tutte le magie i comuni mortali non sanno veramente cosa scatenano. Una innocua installazione può creare strane pertubazioni interne, come conflitti di versione delle DLL. E questo può rendere tutto il sistema instabile: basta poco per far entrare le forze del male. Quindi è bene che i non iniziati non manipolino pozioni, formule magiche, installer e cose del genere. Ma entra, accomodati e parlami dei tuoi problemi.</p>
+<p>C: Maestro mi dispiace importunarTi con i miei umili problemni, ma il dolore e la sofferenza di me e della mia azienda è veramente grande.</p>
+<p>I: Suvvia confidami senza remore i tuoi crucci. Io sono un mago buono, lo sai. Sono dell'ordine Sacro dell'Open Source, il cui compito mistico è quello di essere un baluardo contro le forze del male, e di aiutare gli utenti umani come te a non essere vampirizzati dai mostri della Setta Sacro$oft. Purtroppo questa setta pagana è molto diffusa sulla Terra, e i loro sacerdoti avidi e impietosi. Essi ti fanno pagare tutto: il software innanzitutto, e tanto; ma poi per i loro ci vuole tanto tanto hardware, e tutto nuovo; e poi tanta tanta tanta assistenza. Noi invece ti doniamo il sofware, lo facciamo funzionare sull'hardware che già hai, o che costa poco, e ti chiediamo solo un umile contributo per vivere.</p>
+<p>C: Lo so maestro, e so ciò che tu dici è vero. Il grande sigillo che ci hai svelato, OpenOffice, ha fatto davvero miracoli. Ogni giorno ci arrivavano documenti infetti e grande dolore arrecavano al mio portafogli. Ho dovuto chiamare tre volte in un mese l'assistenza per disinfestare dai virus demoniaci che trasportava l'email (sia maledetta). Dicevano che avevano messo l'antivirus, che era attivo, ma non funzionava mai. E poi mi dicevano che erano stati dei virus nuovi e più potenti, più forti dell'antivirus. E io ho pagato l'antivirus, e ho pagato l'assistenza, e ho pagato il server nuovo, e ho pagato la reinstallazione di tutte le macchine, e i computer erano sempre bloccati e non potevo lavorare. E i miei clienti si lamentavano e gli affari andano male.</p>
+<p>I: E ti sei rivolto a me.</p>
+<p>C: Ammetto, Maestro, che è stato un gesto di disperazione. Non sapevo più a chi credere, cosa credere, dove andare, di chi fidarmi. Sono venuto da te, con il sospetto nel cuore e la diffidenza nella mente. E tu sei stato generoso da svelarmi la tua natura mistica, di raccomandarmi e pregare sempre il grande Pinguino (sia benedetto), l'unico il solo il vero e il grande, e mi hai fatto un miracolo con OpenOffice!</p>
+<p>I: OpenOffice.org ! Dot ORG!</p>
+<p>C: Scusa se ho bestemmiato, Maestro.</p>
+<p>I: Non dimenticare che stavi usando il prodotto Ufficio di Sacro$oft senza versare l'obolo, e quindi commettevi sacrilegio.</p>
+<p>C: E' vero maestro, lo ammetto, ma la mia azienda è piccola e povera, non potevo pagare la licenza al Gran Maestro del Salasso, il sacerdote Sacro$oft. Ho dieci computer sai quando mi costa pagare le licenze? E poi è lo stesso Sacerdote, che è anche rivenditore MBI, che mi diceva "se compri queste macchine ti ci metto anche l'ultima versione di Ufficio, poi non ti preoccupare, presto o tardi ci metteremo in regola con le licenze. Ma intanto devi comprare la macchina ultimo modello altrimenti il nostro Dio potrebbe arrabbiarsi e mandarti la Guardia di Finanza. Se mi compri la macchina, io la benedirò, lo terrò buono e terrò lontano il male un altro anno". E io gli credevo, ma il male arrivava lo stesso. Non era ancora il male assoluto della Guardia di Finanza, ma era sempre il male. Ed era sempre presagio di cose ancora più infauste.</p>
+<p>I: Per cominciare abbiamo allontanato il male assoluto, eliminando il sacrilegio; anche se Sacro$oft è un Dio Pagano, usare software senza licenza sempre un sacrilegio è. E quindi abbiamo instalallato un software compatibile con Ufficio, ma puro, che non è vittima dei virus dei documenti, e che non ti chiede sacrifici umani per essere usato. Ora ti va tutto bene?</p>
+<p>C: Si si si! Va tutto benissimo, tutti i documenti che avevamo si leggono (e io non ci credevo, ma ho visto con i miei occhi). Il software è meno bello di quell'altro (almeno così dice la ragazza più pratica), ma funziona e fa quello che deve fare. Quasi tutti ci lavorano fin dal primo giorno. Dopo averlo visto hanno detto "che cos'è questo?"? Qualcuno ha cercato il cagnolino, un'altra voleva la graffetta magica. Io ho detto che è la nuova versione ottimizzata professionale di Ufficio Sacro$oft, che erano cresciuti e non gli servivano più i balocchi, e quindi li ho premiati. Loro ci hanno creduto, hanno detto "ogni anno qui cambia tutto", ma poi da allora lavorano tranquilli. E non si è bloccato tutto da tre mesi. UN MIRACOLO!!! Questo mi ha convertito, io credo all'Open Source, ci credo, ci credo ci credo! Come potrei non credere! Sono in regola con la licenza (lo dice anche l'avvocato, che non voleva crederci nemmeno lui) SENZA PAGARE, tutto funziona come prima e non prendo più virus nei documenti!!!</p>
+<p>I: Orsù confratello, se tutto va bene dimmi allora quale cruccio ti ha portato al mio cospetto...</p>
+<p>C: Maestro, ho fatto una cosa che non avrei dovuto fare. Mi sono fatto fare un programma personalizzato.</p>
+<p>I: Uhmmmm... brutta cosa. Racconta.</p>
+<p>C: Lo so che i software sono magie che non sono date di essere create su misura per i comuni mortali. Ma il grande sacerdote del salasso mi diceva di conoscere un grande stregone programmatore che poteva risolveri tutti i miei problemi di magazzino (che sempre con lui mi lamentavo), e se compravo la nuova stampante me ne avrebbe rivelato il nome.</p>
+<p>I: E cosa è successo?</p>
+<p>C: Io gli ho creduto. Vedi io ho un magazzino che mi crea tanti problemi, è grande e ha tanti codici strani, che dobbiamo gestire a mano per fare le ordinazioni. Io avevo bisogno di una magia che mi liberasse da tutta questa fatica (e dai costi di due dipendenti, che c'è la crisi). E così ho comprato la stampante (la quarta quest'anno).</p>
+<p>I: E hai conosciuto lo stregone programmatore?</p>
+<p>C: Lo stregone programmatore è venuto da me; all'inizio era vestito bene, in giacca e cravatta, e ha esordito raccontandomi una barzelletta divertente. Poi mi ha detto: "io sono bravissimo, qualunque cosa ti serve te la faccio in breve tempo e ti costa pochissimo". E allora io gli ho parlato del nostro magazzino.</p>
+<p>I: E lui?</p>
+<p>C: Io gli ho spiegato tutta la nostra gestione codici, che è speciale perché i nostri clienti usano quella. Lui mi guardava, sorrideva e annuiva. Poi gli ho detto delle bolle, che devono essere conforme a un strano editto emanato da re Grande Biscia . Lui mi ha detto "ma certo", e ha continuato a sorridere. Poi infine gli ho chiesto con apprensioe se avremmo potuto importare i dati di nostri fogli di calcolo. Al che lui si è alzato, dicendo "non preoccuparti, ci penso io".</p>
+<p>I: E tu?</p>
+<p>C: Veramente, io ho sempre pensato che quando qualcuno mi dice di non preoccuparmi, ALLORA è venuto il momento di cominciare a preoccuparsi. Però non l'ho fatto. Non mi sono preoccupato.</p>
+<p>I: E poi cosa è successo?</p>
+<p>C: E' successo che quasi subito tutto è cominciato ad andare male. Lo stregone mi ha fatto subito la prima FATTURA. Per analisi di procedura software. Una cosa mostruosa, incredibile: un costo inimmaginabile, un mare di soldi per una chiaccherata di un'ora.</p>
+<p>I: E tu hai pagato?</p>
+<p>C: Io veramente non volevo pagare, ma lui mi ha detto che se pagavo lui avrebbe tolto il male del mio magazzino, e mi avrebbe fatto quel programma magico che risolveva i miei problemi. Però se non pagavo potevano succedere cose terribili a me e ai miei familiari, perché oramai avevo evocato il demone del software personalizzato, e non si poteva placare se non facendo un grande sacrificio.</p>
+<p>I: E quindi alla fine tu hai pagato.</p>
+<p>C: Si ho pagato l'analisi, sperando di non vederlo più. Ma dopo tre mesi è ritornato, con un cdrom in mano. Era una cosa tremenda, questa volta era tutto di nero, con gli occhiali scuri che sembrava un misto tra i Blue Brothers e i Man in Black. E aveva in mano un CDROM rilucente e sul viso un sorriso folle di soddisfazione, quasi demoniaco. Mi ha messo subito paura.</p>
+<p>I: Cosa c'era in quel cdrom?</p>
+<p>C: C'era il programma di magazzino che mi aveva fatto. Io gli ho detto subito che non lo volevo più, che lo avevo pagato e che non lo volevo più rivedere. Al che lui è diventato serio, si è tolto gli occhiali e mi ha guardato in un modo che mi sono sentito trafitto da un paolo. Ancora tremo quando ci penso. E poi ha parlato. Con voce cavernosa e mi ha spaventato ancora di più.</p>
+<p>I: E cosa ha detto con quella voce?</p>
+<p>C: Ha detto "Tu hai pagato la consulenza. Il programma lo devi ancora pagare." E poi mi ha fatto la seconda FATTURA, ancora più tremenda della prima. Mio Dio! Una cosa incredibile. Ma il peggio doveva venire quando mi ha dato il cdrom e mi ha detto di provare il software.</p>
+<p>I: Brutta storia, ti sei messo con uno stregone perfido e malvagio. Hai provato il software?</p>
+<p>C: Non avevo scelta. Tremavo e non sapevo più cosa dire. Non osavo contraddirlo, ero atterrito, così l'ho messo nel lettore e l'ho aperto. Il cdrom ha cominciato a fare un suono orribile, che sembrava l'urlo di disperazione di un esserino che veniva schiacchiato dentro. Alla fine si è aperta una finestra si vedeva una iconcina strana, che sembrava una tomba...</p>
+<p>I: Continua...</p>
+<p>C: Lo stregone programmatore mi ha detto "cliccaci sopra" e io l'ho fatto. E' comparsa una finestra nera, orrenda, con un teschio che girava e rideva, e sotto la scritta rossa "Software by DarkProgramming", che sembrava sangue gocciolante. E la scritta "click here" compariva investendo una vecchina che attaversa la strada. Io tremavo visibilmente di paura di fronte a quella schermata immond</p>
+<p>mentre lo stregone programmatore rideva e mi diceva "bello eh?". Io ho annuito, fingendo di sorridere, e ho cliccato ancora. E allora è comparso un programma stranissimo che sembrava fatto per l'evocazione del diavolo.</p>
+<p>I: Cioè?</p>
+<p>C: Era davvero strano. Innanzitutto i colori: le scritte erano verde palude su sfondo marrone, con strani bordi blu e gialli; si leggevano malissimo, a stento, I font erano piccolissimi, mentre la scritta "(C) DarkProgramming per l'eternità" era enorme e occupava mezzo schermo. Le voci di menù erano parole magiche, come "Lock record", "Compress Storage", "Calculate UID", "Generate ISAM Tree". Era sicuramente un programma per aprire le porte dell'inferno.</p>
+<p>I: Ma tu hai capito come funzionava?</p>
+<p>C: Ci ho provato. Ho provato a creare la bolla. Ho cercato "Bolla" o "Creazione" ma non c'era nulla del genere. Allora ho chiesto, umilmente "O mio signonre, come posso creare la bolla?". Al che lo stregone si è infuriato e mi ha detto "Razza di idiota! Voi utonti siete tutti uguali. Clicca sul menu Attribute, seleziona il sottomenù Subsystem, e scegli Data Entry. Nel dialogo "Data Entry Selection" clicca su Printing, seleziona la linguetta "Configuration" e scrivi i dati della bolla. Ok non c'è scritto che è una bolla, ma è un dettaglio; dal contesto è evidente!"</p>
+<p>I: Uhm... non siamo solo noi dell'Open Source ad avere qualche problema di comunicazione con voi umani... A quel punto?</p>
+<p>C: A quel punto ho detto che il programma era stupendo e che mi soddisfaceva alla perfezione, sperando che lo stregone se ne andasse. Ma non è bastato. Mi ha fatto vedere tutto il programma. Dio come ho sofferto.</p>
+<p>I: Immagino...</p>
+<p>C: No, non immagini. NON IMMAGINI. Non puoi immaginare cosa significa cercare di inserire il codice; e ho anche dovuto dire a quel mostro che era chiarissimo. Lui infieriva e io cliccavo, aprivo, spostavo, inserivo. E comparivano continuamente messagi che ogni volta sembravano la voce del diavolo. Appariva "record corrupted", appariva "questo programma ha eseguito un'operazione non valida", appariva "non posso salvare il record perchè un altro lo sta usando". Ho dovuto simulare che capivo perfettamente. Quando dovevo creare il codice dovevo chiudere tre volte il programma, fare due giri intorno al tavolo, cliccare su sei voci di menù diverse, dare una botta al monitor, poi calcolarmi a mano il codice, inserirlo, andarlo a ricercare nel database, copiarlo e incollarlo in un'altra maschera, chiudere nuovamente il programma, rientrare e poi correggere il codice a mano che si perdeva la prima lettera. E lui diceva "beh ancora c'è qualche difettuccio, ma il programma è già perfettamente usabile anche così". Alla fine il calvario è finito ma è stata dura. Mai sono stato così vicino alla follia come quella volta.</p>
+<p>I: Ho capito, ma mi sembra che ne sei uscito. Come hai fatto?</p>
+<p>C: Nell'unico modo: gli ho pagato la fattura, e gli ho anche pagato subito l'altra fattura che mi voleva fare, quella della manutenzione, ma a patto che NON mi facesse assistenza. Gli ho detto che era il programma era così chiaro che non mi serviva e quindi quello era il premio per la bellezza del software e che lo ringraziavo. E con questo me la sono scansata, non lo vedrò più (spero) per un anno. E mi dicono che questi stregoni dopo sei mesi cambiano mestiere e quindi si dissolvono. Ma ora vengo qui a chiederti: come DIAVOLO faccio quel magazzino? Io ne ho davvero bisogno...</p>
+<p>I: Credo che sia una problematica standard che possa essere risolta con una customizzazione di un pacchetto di larga diffusione.</p>
+<p>C: EH?!?!?</p>
+<p>I: Non preoccuparti, è solo che hai chiesto un sortilegio per spostare una montagna quando basta un semplice incantesimo che apre una porta.<br />
+Ci penso io, e te lo faccio personalizzandoti un pacchetto Open Source<br />
+che conosco.</p>
+<p>C: Grazie, Maestro. Grazie, sapevo di poter contare su di te. Tu sia<br />
+benedetto e con te il grande Pinguino e i suoi adepti.</p></blockquote>
+<p>Url originale:</p>
+<p><a href="http://michele.sciabarra.com/page/Il_Grande_Mago_dell_Open_Source">http://michele.sciabarra.com/page/Il_Grande_Mago_dell_Open_Source</a></p>

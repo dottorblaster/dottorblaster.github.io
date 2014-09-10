@@ -1,0 +1,221 @@
+---
+layout: post
+status: publish
+published: true
+title: Il mio regno per il 4K
+author:
+  display_name: Bl@ster
+  login: Blaster
+  email: dottorblaster@gmail.com
+  url: http://www.dottorblaster.it
+author_login: Blaster
+author_email: dottorblaster@gmail.com
+author_url: http://www.dottorblaster.it
+wordpress_id: 2358
+wordpress_url: http://dottorblaster.it/?p=2358
+date: '2014-01-16 09:21:24 +0100'
+date_gmt: '2014-01-16 08:21:24 +0100'
+categories:
+- Tech
+tags:
+- 4k
+- monitor
+comments:
+- id: 18671
+  author: telperion
+  author_email: nikita_top@libero.it
+  author_url: ''
+  date: '2014-01-16 12:46:00 +0100'
+  date_gmt: '2014-01-16 11:46:00 +0100'
+  content: |-
+    4K vanno bene per lavorare cn molti programmi aperti.
+    Ma ad un prezzo accettabile.
+    Ma con un fattore forma maggiore di 16/9, un 32" a 50cm non può essere troppo alto sarebbe scomodo, dovrebbe essere circa come 2 22/24"" affiancati.
+    Ma certi DE che si sono orientati alla singola applicazione (GNOME) sarebbero definitivamente "fottuti".
+    Ma servirebbe solo a pochi (io tra quelli) e quindi niente economia si scala, cioè prezzi elevati.
+- id: 18672
+  author: telperion
+  author_email: nikita_top@libero.it
+  author_url: ''
+  date: '2014-01-16 12:52:00 +0100'
+  date_gmt: '2014-01-16 11:52:00 +0100'
+  content: |-
+    nel frattempo questo
+    http://www.lg.com/us/monitors/lg-29EA93-P-led-monitor/technical-specifications
+    circa 440€ su amazon, non è malaccio.
+    29"  21:9  con 2560 x 1080.
+- id: 18673
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2014-01-16 14:55:00 +0100'
+  date_gmt: '2014-01-16 13:55:00 +0100'
+  content: |-
+    Non lo so, testo a breve GNOME su 27" e ti faccio sapere come mi ci trovo, per ora l'approccio a expo non mi sembra male anche se in realtà devi andare di alt-tab come un forsennato (cosa che un 4k mi risparmierebbe)
+
+    Per la questione larghezza, vero, un monitor non può essere troppo alto, ed è proprio per questo che il 4K è importante: più pixel in meno spazio (sia da una parte che dall'altra).
+- id: 18674
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2014-01-16 14:56:00 +0100'
+  date_gmt: '2014-01-16 13:56:00 +0100'
+  content: |-
+    La Seiki potrebbe togliere l'aspetto televisivo dai suoi TV 4K e sfornare un monitor della madonna con refresh rate a 60hz + hdmi2.
+    Non lo faranno eh, però sarebbe fico, come dice anche Hauer.
+- id: 18675
+  author: Mr. Blackheart
+  author_email: alessandro.as@outlook.it
+  author_url: ''
+  date: '2014-01-16 16:36:00 +0100'
+  date_gmt: '2014-01-16 15:36:00 +0100'
+  content: Ne ho visto uno un mese fa in un megastore di elettronica, era un Sony,
+    tv 55". Li vicino c'era l'ultimo Samsung smart tv del cazzo. Bene, il sony 55"
+    4k rendeva possibile la conta dei capelli grigi del giornalista di sky. Ho sbavato
+    20 minuti li davanti.
+- id: 18676
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2014-01-16 16:47:00 +0100'
+  date_gmt: '2014-01-16 15:47:00 +0100'
+  content: Ma infatti a breve prevedo drooling massiccio sul nuovo notebook :F:F:F
+- id: 18677
+  author: Francesco
+  author_email: francesco@ceccon.me
+  author_url: http://francesco-cek.com/
+  date: '2014-01-16 17:30:00 +0100'
+  date_gmt: '2014-01-16 16:30:00 +0100'
+  content: |-
+    Ecco, il problema è il monitor a 60hz. Ormai sono abituato a 120hz e il mouse sul MBP mi sembra sempre andare a scatti.
+
+
+    Io aspetto i 4k 120hz IPS :P
+- id: 18678
+  author: Fulvio Esposito
+  author_email: esposito.fulvio@gmail.com
+  author_url: ''
+  date: '2014-01-17 10:05:00 +0100'
+  date_gmt: '2014-01-17 09:05:00 +0100'
+  content: |-
+    Assolutamente d'accordo! Le cose che mi sono piaciute:
+
+    - Il riferimento al porno, fa sempre piacere :D
+    - L'idea che il 3D difficilmente aiuta noi programmatori
+    - L'organizzazione delle svariate CLI e editor sullo schermo
+    - Il riferimento al porno l'ho già detto?
+
+    Vorrei però ricordare che la cosa funziona proprio per quello che hai detto, e cioè avere più finestre affiancate. Sfortunatamente anche se la tecnologia avanza, noi siamo sempre esseri umani e la nostra visione periferica rimane la stessa (per la cronaca, recenti studi dimostrano che perfino la famosa, rullo di tamburi, column 80 è troppo in là per il nostro occhio, e ci si dovrebbe fermare a 60)!
+
+    PS: Figo il nuovo tema del blog!
+- id: 18679
+  author: Francesco
+  author_email: francesco@ceccon.me
+  author_url: http://francesco-cek.com/
+  date: '2014-01-17 12:58:00 +0100'
+  date_gmt: '2014-01-17 11:58:00 +0100'
+  content: |-
+    Per quello sono un fan di i3wm, anche con un monitor di solo 20" riesco a tenere vim splittato e un mini terminale sul fondo per compilare, git etc. senza dover star li a ridimensionare le finestre a mano.
+
+
+    (Questo commento in realtà è un invito a provare i3wm :P )
+- id: 18680
+  author: Fulvio Esposito
+  author_email: esposito.fulvio@gmail.com
+  author_url: ''
+  date: '2014-01-17 13:14:00 +0100'
+  date_gmt: '2014-01-17 12:14:00 +0100'
+  content: Sono un tipo pigro quindi di solito non mi metto a sostituire il default
+    window manager (Al momento uso KDE/KWin). Avevo sentito che in google molti utilizzano
+    xmonad che è simile in intenti a i2wm ma scritto in haskell. Probabilmente adesso
+    che ho cambiato portatile e devo reinstallare linux farò un tentativo senza DE,
+    solo tiling WM (mi serve un ambiente abbastanza minimale che gira su una VM in
+    Win8)
+- id: 18681
+  author: Lazza
+  author_email: andrea.lazzarotto@gmail.com
+  author_url: http://andrealazzarotto.com/
+  date: '2014-01-17 16:00:00 +0100'
+  date_gmt: '2014-01-17 15:00:00 +0100'
+  content: |-
+    Ti dirò Blaster, onestamente la vedo come al solito una gara a chi ce l'ha più grande... Sul filo di questo ragionamento, c'è addirittura gente che si compra "smartphone" da 6 pollici e ne va fiero (il mio è da 5 e ripensandoci avrei preso volentieri un 4.5, più pratico, anche se questo comunque non è male).
+
+    Sono mode che lasciano il tempo che trovano... di sicuro a un developer non serve uno schermo con decine di miliardi di pixel, a meno che non sia (forse) uno sviluppatore di videogame. :D
+
+    Sul primo punto elenco che hai messo evito di fare commenti perché mi è parso decisamente fuori luogo, triste, un po' infantile e mi ha pure abbassato la voglia di leggere il resto fino a dovermi quasi sforzare. Scusa la franchezza, ma non ho motivo di raccontarti palle. :P
+- id: 18682
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2014-01-17 17:31:00 +0100'
+  date_gmt: '2014-01-17 16:31:00 +0100'
+  content: Pazienza :) Ma sulla gara a chi ce l'ha più lungo non sono affatto d'accordo,
+    vediti il post di Hauer che ho linkato. ;)
+- id: 18683
+  author: Lazza
+  author_email: andrea.lazzarotto@gmail.com
+  author_url: http://andrealazzarotto.com/
+  date: '2014-01-17 17:39:00 +0100'
+  date_gmt: '2014-01-17 16:39:00 +0100'
+  content: |-
+    «I want a 50-inch desktop display with north of 10,000 horizontal pixels»
+    Già, questo ha proprio serie carenze delle mutande da dover compensare facendo il megalomane. :D Tra l'altro, prova tu a stare davanti a un 50 pollici a distanza normale senza girare la testa di continuo. :P Per 500$ mi prenderei una TV per usarla come TV, non certo come monitor (spreco assurdo).
+- id: 18685
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2014-01-17 19:18:00 +0100'
+  date_gmt: '2014-01-17 18:18:00 +0100'
+  content: |-
+    È chiaro che a te le iperboli sfuggono, a 'sto punto :D
+    Io ho un 27" e ci vivo benissimo, se fosse un 35" 4K avrei un boato di spazio per fare tutto a prima vista. È per questo che sono nate le finestre, il fatto di sovrapporle è dovuto a un limite tecnico dei monitor anni 80/90, non al fatto che così è più comodo :P
+- id: 18686
+  author: Lazza
+  author_email: andrea.lazzarotto@gmail.com
+  author_url: http://andrealazzarotto.com/
+  date: '2014-01-17 19:24:00 +0100'
+  date_gmt: '2014-01-17 18:24:00 +0100'
+  content: |-
+    Dici che era un'iperbole? Mmm ok. :D A me il tizio sembrava spaventosamente serio (come anche sembra serio quando ritiene normale dotare ogni singolo PC di casa e in ufficio con un televisore da 500$)...
+
+    A me piace la risoluzione alta (tipo il 1920x1080 che ho sul cellulare) ma non ne faccio un dramma esistenziale (sul laptop l'ho molto più bassa) e non credo necessariamente che ciò si debba tradurre in un aumento spropositato di pollici. 27 mi sembrano niente male comunque eh. :D Io un 27 pollici l'avrò visto sì e no un paio di volte, se non altro perché qui a casa tendiamo a sfruttare l'hardware finché dura.
+- id: 18687
+  author: Visto nel Web &#8211; 114 | Ok, panico
+  author_email: ''
+  author_url: http://okpanico.wordpress.com/2014/01/19/visto-nel-web-114/
+  date: '2014-01-19 09:13:38 +0100'
+  date_gmt: '2014-01-19 08:13:38 +0100'
+  content: "[&#8230;] Il mio regno per il 4K il nuovo che anvanza (il 4K, garantisce
+    Bl@ster) ::: Bl@ster&#8217;s [&#8230;]"
+- id: 18695
+  author: Shiba
+  author_email: shibotto@gmail.com
+  author_url: http://shibotto.altervista.org/
+  date: '2014-02-05 19:26:00 +0100'
+  date_gmt: '2014-02-05 18:26:00 +0100'
+  content: Pensavo la stessa cosa, si finisce per muovere la testa come la levetta
+    analogica di un joypad. Imho l'unico reale utilizzo di un 4K è avere una definizione
+    maggiore, ma mantenendo le proporzioni di un Full HD, se no non ci leggi una cippa.
+    Se poi qualcuno ricominciasse a fare monitor 5:4 con una buona densità di pixel
+    sarebbe una manna dal cielo...
+---
+<p><img class=" alignnone" alt="4k monitor" src="http://farm5.staticflickr.com/4026/4532962327_c5a219d992_b.jpg" width="1024" height="683" /></p>
+<blockquote><p>The toleration of mediocrity on the desktop irks me.</p></blockquote>
+<p>Così recita <a href="http://tiamat.tsotech.com/4k-is-for-programmers">Brian Hauer</a> in un suo recente post che ha fatto parlare un bel po' sviluppatori, hacker e nerd in generale, e devo dire che mi sento abbastanza d'accordo. Partiamo con un po' di background, che fa sempre bene: qualche mese fa ho fatto un nuovo acquisto, ossia un All In One con <strong>monitor da 27 pollici</strong> e specifiche tecniche parecchio elevato, marchio ASUS, totalmente compatibile con Linux, e tremendo gaudio sia lavorativo che per quanto riguarda l'entertainment. Ci ho infatti sostituito persino il televisore, ormai rimasto alla mia famiglia meno digitalizzata (anche se, aehm, mia madre ne ha preso uno con ingresso USB poco dopo: devo aver inoculato il germe dell'USB anche in casa).</p>
+<p>Bello eh, anzi: riesco a tenere aperte parecchie cose contemporaneamente, ma sento ancora la <strong>necessità di un secondo monitor</strong>, e - per quanto io stia provando a far entrare nel mio "studio" una scrivania più grande - le dimensioni sono quelle che sono, la metratura pure, e quindi per ora me la devo amabilmente <strong>prendere in quel posto</strong>; diversamente, con un solo monitor, sostenuto da una sola base, anche più grande, riuscirei comunque ad avere un diverso assetto con la scrivania che ho, mantenendo l'arredamento simile e avendo più spazio "digitale" (desktop! LOL) a disposizione.</p>
+<p>Se debbo fare un <strong>appunto alla mia workstation</strong> infatti, è solo la densità di pixel "standard". Questo (vista l'avanguardia generale della componentistica di cui parliamo), esattamente come per Hauer, genera in me un certo disappunto. <strong>Parecchio disappunto</strong>.</p>
+<h3>Questo mi serve, altro che 3D</h3>
+<blockquote><p>Vabbeh, vedémoselo.</p></blockquote>
+<p>Più o meno questa è la reazione mia e dei miei amici, ogni volta che andiamo al cinema (chiaramente a Roma come avete percepito dall'accento) e ci viene proposto un film in 3D dove non è possibile scegliere l'alternativa in 2D. Chiaramente non è che io sia <strong>contro il 3D</strong>, che anzi al cinema è un'esperienza carina, ma tra lo <strong>spam dei cinematografi</strong> e la campagna d'assedio a cui ci ha sottoposto chi vende monitor e televisori, ne ho avuto veramente abbastanza di chi ha voluto veramente farci credere che la risoluzione non fosse più un fattore importante e discriminante nella scelta di un dispositivo di visualizzazione.</p>
+<p>Così, quando per la prima volta <strong>ho visto un monitor 4K</strong>, e a maggior ragione quando ho letto il post in oggetto, ho pensato una sola cosa: "Avete finito di cercare di infinocchiarci, maledetti". Semplicemente perché mentre della tecnologia di riproduzione 3D possiamo fare a meno in quanto inerente prettamente l'ambito della divertenza (che termine fico eh), l'ambito della definizione e della risoluzione è qualcosa dove, al <strong>confronto</strong> con un monitor - o meglio ancora un televisore - 4K, <strong>un dispositivo tradizionale mostra il fianco</strong>, e senza cotta di maglia.</p>
+<p>Con lo spazio per <strong>4 colonne di editor di testo aperte</strong>, svariati terminali con qualcosa in esecuzione dentro, e la possibilità di affiancare a tutto comunque un browser per visualizzare il risultato del nostro sviluppo web, o l'emulatore dell'SDK per chi sviluppa nel settore mobile (e così via...), le specifiche di qualsiasi cosa che non sia l'ultimo modello di <a href="http://www.asus.com/zenbook/">Zenbook</a> dove su un 13 pollici abbiamo una risoluzione di <strong>duemilacinquecento e rotti pixel</strong> in orizzontale, risultano tremendamente imbarazzanti. Ma che dico imbarazzanti, praticamente di un'era passata.</p>
+<h3>Risoluzione, definizione, monitor e fattori di forma (un sacco di roba quindi)</h3>
+<blockquote><p>Da quel che so, il sesso non ha avuto aggiornamenti con grafica ad alta definizione e armamenti potenziati. - Sheldon Cooper</p></blockquote>
+<p>Dato che un <strong>televisore 4K</strong> al posto di un monitor mette in luce quanto l'industria degli schermi si sia adagiata sugli allori, e questo l'abbiamo già acclarato abbondantemente, azzardiamo anche qualche previsione su quello che succederà in questi anni di <strong>profonda rivoluzione nel campo desktop</strong>, a causa di qualcosa che finalmente serve alla massa e non ai proprietari dei cinema per venderti un biglietto da 10 (dieci) euro - o se preferite, a chi vuole venderti un 40 pollici che, al posto di fare il televisore, potrà fare tranquillamente da <strong>soprammobile</strong>. Con buona pace degli amanti del treddì.</p>
+<ul>
+<li><strong>Il porno</strong>: Naughty America ha annunciato proprio in questi giorni che sono i fase pianificazione i primi <a href="http://www.theverge.com/2014/1/11/5299032/naughty-america-porn-4K-videos">film pornografici girati in 4K</a>. Modestamente, in quanto esperto dell'ambito (:D), ritengo che questo cambierà parecchi aspetti nell'ambito home video: dato che il VHS ha vinto contro il Betamax complice il porno, la spinta dell'industria pornografica se ingente ha le carte in regola per rendere 4K un successo, mentre il "good enough" 3D nell'ambito rimarrà al palo. E si sa, per chi rimane al palo nel mondo del porno butta male. Oddio, effettivamente dipende da quale palo.</li>
+<li><strong>L'imbarazzo dell'anzianità</strong>: qualche tempo fa ho avuto l'immenso piacere di provare il <a href="http://www.html.it/articoli/dell-xps-13-developer-edition-con-ubuntu-recensione/">Dell XPS Developer Edition</a>, che un mio coworker ha anche acquistato. Il lavoro su uno schermo a così alta risoluzione è comodissimo, e immagino che lavorare con un monitor 4K mi farebbe voglia di <strong>fiondare dalla finestra</strong> il mio All In One esattamente come dopo aver provato l'XPS  è stato terribilmente traumatizzante tornare al mio "legacy laptop" con il suo monitor, per così dire, stretto<strong>.</strong></li>
+<li><strong>Le dimensioni contano</strong>: mettiamo caso che finalmente arrivi un <strong>monitor 4K ad un costo decente</strong>, come ipotizza anche Hauer; a questo punto, con abbastanza spazio per quattro colonne di editor di testo, <strong>svariate CLI</strong> aperte e uno o più browser, tornereste veramente ad una configurazione della scrivania con monitor multipli? Nonostante a me piaccia la configurazione multi-monitor e io sia dell'opinione che i pixel non sono mai troppi, i limiti fisici della mia scrivania mi impediscono sia di avere due monitor, al momento (ed è per questo che sto cambiando scrivania eh), ma anche se questa fosse più grande preferirei risparmiare spazio in favore di qualcos'altro. Insomma, in due parole: le nostre scrivanie, dopo l'avvento e la <strong>massificazione del 4K</strong>, non saranno più le stesse.</li>
+</ul>
+<p>Quando vi tireranno fuori l'<strong>ennesimo pacco</strong> per farci accontentare della qualità d'immagine attuale, non date soddisfazione a nessuno. D'altronde, il <strong>regno del 4K</strong> sta per cominciare, ma l'<strong>8K</strong> si profila già all'orizzonte, e potrebbe darci ancora più soddisfazione.</p>
+<p><em>Photo courtesy of <a href="http://www.flickr.com/photos/ivyfield/4532962327/">Tutaka Tsutano</a></em></p>

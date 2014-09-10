@@ -1,0 +1,81 @@
+---
+layout: post
+status: publish
+published: true
+title: 2012 VS 1960
+author:
+  display_name: Bl@ster
+  login: Blaster
+  email: dottorblaster@gmail.com
+  url: http://www.dottorblaster.it
+author_login: Blaster
+author_email: dottorblaster@gmail.com
+author_url: http://www.dottorblaster.it
+wordpress_id: 1199
+wordpress_url: http://dottorblaster.it/?p=1199
+date: '2012-03-18 14:21:12 +0100'
+date_gmt: '2012-03-18 13:21:12 +0100'
+categories:
+- Web
+tags: []
+comments:
+- id: 17235
+  author: Tony Stark
+  author_email: antonio.cavestro@gmail.com
+  author_url: ''
+  date: '2012-03-18 14:57:00 +0100'
+  date_gmt: '2012-03-18 13:57:00 +0100'
+  content: Che è successo Doc? :D
+- id: 17237
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2012-03-18 15:16:00 +0100'
+  date_gmt: '2012-03-18 14:16:00 +0100'
+  content: "'Sciamo perdere :D"
+- id: 17238
+  author: Stefanauss
+  author_email: stefanauss@gmail.com
+  author_url: ''
+  date: '2012-03-18 16:28:00 +0100'
+  date_gmt: '2012-03-18 15:28:00 +0100'
+  content: "Perché 1960? xD\n\nNon sono proprio uno storico informatico, ma a quanto
+    so/ricordo la \nsituazione allora era più simile all'attuale/desiderabile. Lo
+    scempio è \nstato prodotto tipico dei 70-80.\n\n\n\nSottoscrivo tutto comunque."
+- id: 17239
+  author: nikita
+  author_email: blablabla@gmail.com
+  author_url: ''
+  date: '2012-03-18 20:27:00 +0100'
+  date_gmt: '2012-03-18 19:27:00 +0100'
+  content: a me sembra uno sfogo senza nè capo nè coda... 
+- id: 17240
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2012-03-18 20:38:00 +0100'
+  date_gmt: '2012-03-18 19:38:00 +0100'
+  content: |-
+    :D
+    In realtà il mio identificare tali cose come '1960' è per dire 'un paio d'ere informatiche fa', quando il parsing di un testo era considerabile un'operazione computazionalmente gravosa anche per un calcolatore di quelli a parete :P
+- id: 17241
+  author: Shiba
+  author_email: ''
+  author_url: http://shiba89.wordpress.com/
+  date: '2012-03-19 21:24:00 +0100'
+  date_gmt: '2012-03-19 20:24:00 +0100'
+  content: " Ti sei trovato di fronte a un sistema messo in piedi dall'università?
+    :P"
+- id: 17242
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2012-03-19 21:49:00 +0100'
+  date_gmt: '2012-03-19 20:49:00 +0100'
+  content: Aehm.
+---
+<p>Piccolo sfogo di ordine totalmente personale.</p>
+<p>Mi chiedo come diavolo sia possibile che nel 2012 vengano ancora utilizzare alcune piattaforme (sto parlando di <strong>CMS</strong> nello specifico ma è un discorso che può applicarsi ad altro) che, oltre ad essere chiuse - che è una logica che ci sta se un prodotto comunque funziona bene e ti fa fare il tuo lavoro - hanno bisogno che un utente passi l'HTML a mano senza parsare minimamente il testo.</p>
+<p>Ecco, io quando vedo certe vergogne della programmazione web vorrei trafiggermi gli occhi con uno spiedo e maledire col mio sangue i creatori di certi scempi; non dico che uno debba installarsi <strong>Wordpress da SVN</strong>, ma quantomeno mantenere un'infrastruttura facilmente portabile per non ritrovarsi, dopo anni, a dover piangere per una migrazione massiccia che invece, greppando uno <strong>standard aperto</strong>, poteva essere fattibile con quattro script.</p>
+<p>E invece.</p>
+<p>Che palle.</p>

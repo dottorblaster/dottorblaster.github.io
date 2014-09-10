@@ -1,0 +1,55 @@
+---
+layout: post
+status: publish
+published: true
+title: WordPress 3.5
+author:
+  display_name: Bl@ster
+  login: Blaster
+  email: dottorblaster@gmail.com
+  url: http://www.dottorblaster.it
+author_login: Blaster
+author_email: dottorblaster@gmail.com
+author_url: http://www.dottorblaster.it
+wordpress_id: 1949
+wordpress_url: http://dottorblaster.it/?p=1949
+date: '2012-12-12 17:22:59 +0100'
+date_gmt: '2012-12-12 16:22:59 +0100'
+categories:
+- Open Source
+tags:
+- WordPress
+comments:
+- id: 18065
+  author: Simone
+  author_email: simone.obo@gmail.com
+  author_url: http://www.peroraobo.it/
+  date: '2012-12-12 22:27:00 +0100'
+  date_gmt: '2012-12-12 21:27:00 +0100'
+  content: |-
+    io sto aspettando la localizzazione in ita e poi aggiorno ;)
+    il tuo articolo l'avevo letto, mi piace anche l'impostazione grafica della nuova dashboard
+- id: 18066
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2012-12-12 22:32:00 +0100'
+  date_gmt: '2012-12-12 21:32:00 +0100'
+  content: |-
+    In realtà l'articolo originale è dell'ottimo Claudio Garau, io ho solo corretto la bozza. ;)
+    La nuova dashboard è molto bella, spero che nella prossima versione ne vedremo di belle.
+- id: 18070
+  author: bradipina
+  author_email: marujas@libero.it
+  author_url: ''
+  date: '2012-12-16 17:24:00 +0100'
+  date_gmt: '2012-12-16 16:24:00 +0100'
+  content: l'aggiornamento non dà alcun problema? Sapete per caso se c'è qualche tema
+    o plugin incompatibile? Ho sempre fifa quando devo passare da una versione all'altra
+    :-(
+---
+<p>Ebbene: adesso questo blog è basato su <strong>WordPress 3.5</strong>.</p>
+<p>Era da tantissimo che non facevo un post così corto solo per brevi aggiornamenti tecnici; su <strong>HTML.it</strong> è uscito una settimana fa un articolo (bozza corretta dal sottoscritto) che illustra <a href="http://www.html.it/articoli/wordpress-3-5-vediamo-le-novita/">le novità di WordPress 3.5</a> nel dettaglio; la cosa più bella sembra essere la nuova <strong>media library</strong>, che finalmente è stata portata al "next level" dopo essere stata per un bel po' nel mirino degli sviluppatori, fino alle ultime release.</p>
+<p><img class="aligncenter" alt="" src="http://farm4.staticflickr.com/3290/2986187518_24400c3e74.jpg" width="500" height="333" /></p>
+<p>È Natale, quindi vi metto una zucca di Halloween a forma di W di <strong>WordPress</strong>. Non c'entra niente, ma era un secolo che desideravo infilare questa immagine in un post. Godetevi questo capolavoro di <strong>open source</strong>.</p>
+<p><em>Photo courtesy of <a href="http://www.flickr.com/photos/ericmmartin/2986187518/in/photostream/">Eric M. Martin</a></em></p>

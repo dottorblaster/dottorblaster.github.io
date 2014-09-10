@@ -1,0 +1,62 @@
+---
+layout: post
+status: publish
+published: true
+title: WordPress 2.3
+author:
+  display_name: Bl@ster
+  login: Blaster
+  email: dottorblaster@gmail.com
+  url: http://www.dottorblaster.it
+author_login: Blaster
+author_email: dottorblaster@gmail.com
+author_url: http://www.dottorblaster.it
+excerpt: Riprendo il titolo direttamente dal blog ufficiale del mio blogging engine
+  preferito, per notificare a chi ancora non l'avesse letto nel proprio control center,
+  che finalmente è uscito dallo stato di beta WordPress 2.3.
+wordpress_id: 81
+wordpress_url: http://blaster.netsons.org/?p=81
+date: '2007-09-25 13:22:23 +0200'
+date_gmt: '2007-09-25 11:22:23 +0200'
+categories:
+- Open Source
+tags:
+- WordPress
+- aggiornamento
+comments:
+- id: 778
+  author: thecr0w
+  author_email: thecr0w@hotmail.it
+  author_url: http://thecr0w.piplos.org/
+  date: '2007-09-25 17:10:21 +0200'
+  date_gmt: '2007-09-25 15:10:21 +0200'
+  content: S&igrave; s&igrave;, anche io l'ho gi&agrave; aggiornato da un bel pezzo
+    :)
+- id: 779
+  author: Kobrabyte
+  author_email: info@kobrabyte.org
+  author_url: http://www.kobrabyte.org
+  date: '2007-09-25 21:37:45 +0200'
+  date_gmt: '2007-09-25 19:37:45 +0200'
+  content: Non ancora colgo l' occasione per farlo.
+- id: 13307
+  author: thecr0w
+  author_email: thecr0w@hotmail.it
+  author_url: http://thecr0w.piplos.org/
+  date: '2007-09-25 15:10:00 +0200'
+  date_gmt: '2007-09-25 15:10:00 +0200'
+  content: S&igrave; s&igrave;, anche io l'ho gi&agrave; aggiornato da un bel pezzo
+    :)
+- id: 13308
+  author: Kobrabyte
+  author_email: info@kobrabyte.org
+  author_url: http://www.kobrabyte.org
+  date: '2007-09-25 19:37:00 +0200'
+  date_gmt: '2007-09-25 19:37:00 +0200'
+  content: Non ancora colgo l' occasione per farlo.
+---
+<p>Riprendo il titolo direttamente dal blog ufficiale del mio blogging engine preferito, per notificare a chi ancora non l'avesse letto nel proprio control center, che finalmente è uscito dallo stato di beta WordPress 2.3.<a id="more"></a><a id="more-81"></a></p>
+<p>Ovviamente, io ho aggiornato subito, vista la moledi novità che c'erano nel changelog. Quelle più in risalto sono:</p>
+<blockquote><p>Tags: cioè le categorie "del discount"? Mah, solo il tempo ce lo dirà.</p>
+<p>Editor rinnovato, riprendendo un po' delle funzionalità di TinyMCE</p></blockquote>
+<p>Beh, questo post è scritto con WordPress 2.3 e... che dire, aggiornate anche voi!</p>

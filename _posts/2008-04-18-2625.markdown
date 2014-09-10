@@ -1,0 +1,76 @@
+---
+layout: post
+status: publish
+published: true
+title: 2.6.25
+author:
+  display_name: Bl@ster
+  login: Blaster
+  email: dottorblaster@gmail.com
+  url: http://www.dottorblaster.it
+author_login: Blaster
+author_email: dottorblaster@gmail.com
+author_url: http://www.dottorblaster.it
+wordpress_id: 168
+wordpress_url: http://blaster.netsons.org/?p=168
+date: '2008-04-18 21:04:20 +0200'
+date_gmt: '2008-04-18 19:04:20 +0200'
+categories:
+- Linux
+- How-To
+tags:
+- Kernel
+comments:
+- id: 1863
+  author: LuNa
+  author_email: ipoccios@msn.com
+  author_url: http://opensource2007.netsons.org
+  date: '2008-04-19 14:55:37 +0200'
+  date_gmt: '2008-04-19 12:55:37 +0200'
+  content: ma quel murrine rgba ha i bordi esterni completamente trasparenti ? che
+    bruttura O.o
+- id: 1864
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://blaster.netsons.org
+  date: '2008-04-19 14:59:48 +0200'
+  date_gmt: '2008-04-19 12:59:48 +0200'
+  content: "<p>Beh è ovvio che senza Compiz risulta bruttino come effetto. Ci fosse
+    un Blur Windows, potrei rendere molto meglio ;)</p>"
+- id: 1875
+  author: scimmia
+  author_email: lists4davide@gmail.com
+  author_url: ''
+  date: '2008-04-23 15:45:40 +0200'
+  date_gmt: '2008-04-23 13:45:40 +0200'
+  content: "io sono tornato al 24, ché i driver fglrx nuovi non vanno con il 25.\r\ne
+    i nuovi driver non son niente male. (mi fan andar compiz ;-))"
+- id: 14083
+  author: LuNa
+  author_email: ipoccios@msn.com
+  author_url: http://opensource2007.netsons.org
+  date: '2008-04-19 12:55:00 +0200'
+  date_gmt: '2008-04-19 12:55:00 +0200'
+  content: ma quel murrine rgba ha i bordi esterni completamente trasparenti ? che
+    bruttura O.o
+- id: 14084
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2008-04-19 12:59:00 +0200'
+  date_gmt: '2008-04-19 12:59:00 +0200'
+  content: Beh è ovvio che senza Compiz risulta bruttino come effetto. Ci fosse un
+    Blur Windows, potrei rendere molto meglio ;)
+- id: 14085
+  author: ''
+  author_email: lists4davide@gmail.com
+  author_url: ''
+  date: '2008-04-23 13:45:00 +0200'
+  date_gmt: '2008-04-23 13:45:00 +0200'
+  content: "io sono tornato al 24, ché i driver fglrx nuovi non vanno con il 25.\r\ne
+    i nuovi driver non son niente male. (mi fan andar compiz ;-))"
+---
+<p>Eccolo quì, il nostro bel 2.6.25, arrivato finalmente a compimento dopo parecchie alpha, beta, RC e chi più ne ha più ne metta.</p>
+<p style="text-align: center;"><img src="http://img85.imageshack.us/img85/417/schermatamonitordisistejl2.png" alt="" /></p>
+<p style="text-align: left;">Come l'ho compilato? Ma semplice. Su Debian, seguendo la <a href="http://blaster.netsons.org/compilare-il-kernel-alla-debian/">guida scritta tempo fa</a>, valida per ogni versione del kernel finchè morte non li separi (kernel e kernel-package); per impacchettare un kernel per Arch Linux invece si può usare il mio PKGBUILD con file annessi reperibile <a href="http://blaster.tuttoeniente.net/kernel-build.tar.gz">quì</a>.</p>
+<p style="text-align: left;">Spacchettando tutto in una directory a caso, basterà entrare nella directory e dare <em>makepkg</em>. Facile no? :D</p>

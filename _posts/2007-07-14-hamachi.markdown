@@ -1,0 +1,102 @@
+---
+layout: post
+status: publish
+published: true
+title: Hamachi
+author:
+  display_name: Bl@ster
+  login: Blaster
+  email: dottorblaster@gmail.com
+  url: http://www.dottorblaster.it
+author_login: Blaster
+author_email: dottorblaster@gmail.com
+author_url: http://www.dottorblaster.it
+excerpt: "Beh, il titolo mi sembra abbastanza adatto direi. :)\r\n\r\nVi ho mai parlato
+  di Hamachi? NO? Come ho fatto a gettarlo così nel dimenticatoio? E io che pensavo
+  di avere una memoria di ferro... insomma, non voglio dire subito di che si tratta,
+  ma vi darò degli indizi: prima fra tutti una telefonata tra me e il mio amico <a
+  href=\"http://dimensionjude.splinder.com\">Jude</a>:\r\n<blockquote>Bl@ster: Pronto,
+  Jude, che se dice?\r\n\r\nJude: Oh Blà, stavo a giocà a OpenArena, te voi unì al
+  party co me e Mark?\r\n\r\nBl@ster: No, no... veramente volevo regolà quel conto
+  in sospeso tra te e me sempre a OpenArena, ancora ce rosico...\r\n\r\nJude: Ah vabbè
+  arrivo subito... famola su <strong>Hamachi</strong>, che là non ce disturba nessuno.\r\n\r\nBl@ster:
+  Bravo, vedo che hai capito al volo; creala te, che io refresho.</blockquote>\r\nAllora,
+  chi ha capito di che cosa si tratta? Giù quelle mani, era una domanda retorica...
+  Hamachi è un software per <strong>creare VPN (altrimenti detti LAN) a distanza</strong>."
+wordpress_id: 20
+wordpress_url: http://blaster.netsons.org/?p=20
+date: '2007-07-14 17:44:41 +0200'
+date_gmt: '2007-07-14 15:44:41 +0200'
+categories:
+- Linux
+- Windows
+- How-To
+tags:
+- Recensioni
+comments:
+- id: 138
+  author: LuNa
+  author_email: ipoccios@msn.com
+  author_url: http://opensource2007.netsons.org
+  date: '2007-07-23 00:42:06 +0200'
+  date_gmt: '2007-07-22 22:42:06 +0200'
+  content: la guida su hamachi va benissimo :D ma ... ora le rompo un p&ograve; (le
+    uova, ahah) per giocare in 2, non vale forse pi&ugrave; la pensa di usare un bell&#39;openvpn
+    ? :)
+- id: 139
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://blaster.netsons.org
+  date: '2007-07-23 09:36:48 +0200'
+  date_gmt: '2007-07-23 07:36:48 +0200'
+  content: non conosco openvpn... ma Hamachi da la possibilit&agrave; di giocare &quot;in
+    privato&quot; ;)
+- id: 12653
+  author: LuNa
+  author_email: ipoccios@msn.com
+  author_url: http://opensource2007.netsons.org
+  date: '2007-07-22 22:42:00 +0200'
+  date_gmt: '2007-07-22 22:42:00 +0200'
+  content: la guida su hamachi va benissimo :D ma ... ora le rompo un p&ograve; (le
+    uova, ahah) per giocare in 2, non vale forse pi&ugrave; la pensa di usare un bell&#039;openvpn
+    ? :)
+- id: 12654
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2007-07-23 07:36:00 +0200'
+  date_gmt: '2007-07-23 07:36:00 +0200'
+  content: non conosco openvpn... ma Hamachi da la possibilit&agrave; di giocare &quot;in
+    privato&quot; ;)
+---
+<p>Beh, il titolo mi sembra abbastanza adatto direi. :)</p>
+<p>Vi ho mai parlato di Hamachi? NO? Come ho fatto a gettarlo così nel dimenticatoio? E io che pensavo di avere una memoria di ferro... insomma, non voglio dire subito di che si tratta, ma vi darò degli indizi: prima fra tutti una telefonata tra me e il mio amico <a href="http://dimensionjude.splinder.com">Jude</a>:</p>
+<blockquote><p>Bl@ster: Pronto, Jude, che se dice?</p>
+<p>Jude: Oh Blà, stavo a giocà a OpenArena, te voi unì al party co me e Mark?</p>
+<p>Bl@ster: No, no... veramente volevo regolà quel conto in sospeso tra te e me sempre a OpenArena, ancora ce rosico...</p>
+<p>Jude: Ah vabbè arrivo subito... famola su <strong>Hamachi</strong>, che là non ce disturba nessuno.</p>
+<p>Bl@ster: Bravo, vedo che hai capito al volo; creala te, che io refresho.</p></blockquote>
+<p>Allora, chi ha capito di che cosa si tratta? Giù quelle mani, era una domanda retorica... Hamachi è un software per <strong>creare VPN (altrimenti detti LAN) a distanza</strong>.<a id="more"></a><a id="more-20"></a></p>
+<p>Quali sono le possibilità di Hamchi, dunque? Infinite, nell'ambito delle reti locali. È possibile utilizzare Hamachi per creare la propria cerchia di condivisori file in tutta libertà, oppure... beh, avete mai sentito il bisogno, mentre regolavate i conti con un amico in Sacred, OpenArena, o Unreal Tournament, di regolare questi conti in privato, su una LAN in modo che i soliti quattro rompi***** non vi vedessero ed venissero a rovinarvi la festa?</p>
+<p>Ebbene, quì si giunge al nocciolo della questione: come si installa Hamachi? Semplice: si scarica dalla <a href="http://www.hamachi.it/download.htm">pagina di download</a> e si installa con un click del mouse. Purtroppo per chi possiede, come m, il pinguino, la strada si complica non poco; infatti Hamachi va compilato, e configurato correttamente, il che <strong>non è cosa proprio a portata di niubbo</strong>. Prima di tutto scompattiamo i file di Hamachi nella cartella <em>hamachi</em> creata appositamente per questa installazione, poi apriamo il miglior amico dell'uomo, il terminale, e digitiamo:</p>
+<blockquote><p><em>cd hamachi</em></p></blockquote>
+<p>dopodichè diamo un semplice</p>
+<blockquote><p><em>sudo make </em></p></blockquote>
+<p>e avremo installato Hamachi. Ora viene il difficile, però; ;)</p>
+<blockquote><p><em>hamachi-init</em></p></blockquote>
+<p>questo configurerà Hamachi per la vostra Linux-Box.</p>
+<blockquote><p> <em>sudo tuncfg</em></p></blockquote>
+<p>da dare <strong>sempre prima</strong> di avviare Hamachi,  questo configura il bridge di rete virtuale per i VPN, anche loro virtuali. Adesso possiamo far partire Hamachi:</p>
+<blockquote><p><em>hamachi start</em></p></blockquote>
+<p>e ora dobbiamo loggarci e ottenere così un IP univoco per essere identificati come "peer":</p>
+<blockquote><p><em>hamachi login</em></p></blockquote>
+<p>Adesso siamo dentro. Possiamo creare la nostra rete:</p>
+<blockquote><p><em>hamachi create<strong> nome_rete </strong></em></p></blockquote>
+<p>E dopo il suddetto comando vi verrà chiesta la password che volete dare alla vostra rete, oppure possiamo entrare a far parte di una rete già esistente:</p>
+<blockquote><p><em>hamachi join <strong>nome_rete</strong></em></p></blockquote>
+<p>Anche in questo caso vi verrà chiesta la password della rete.</p>
+<p>Un ulteriore passo da fare sia in caso di creazione che in caso di joining, è rendersi visibili:</p>
+<blockquote><p><em>hamachi go-online <strong>nome_rete</strong></em></p></blockquote>
+<p>E fatto questo ultimo passo potete godervi in santa pace i privilegi di giocare in una LAN privata, o quelli di condividere file in libertà, comanche tutti gli altri privilegi di una rete locale. :)</p>
+<p>Beh, alla fine di tutta questa guida, c'è solo una cosa da dire, e cioè il mio motto... <strong>Enjoy the Web! </strong></p>
+<blockquote></blockquote>

@@ -1,0 +1,132 @@
+---
+layout: post
+status: publish
+published: true
+title: 2.6.23.8
+author:
+  display_name: Bl@ster
+  login: Blaster
+  email: dottorblaster@gmail.com
+  url: http://www.dottorblaster.it
+author_login: Blaster
+author_email: dottorblaster@gmail.com
+author_url: http://www.dottorblaster.it
+wordpress_id: 121
+wordpress_url: http://blaster.netsons.org/?p=121
+date: '2007-11-20 20:13:30 +0100'
+date_gmt: '2007-11-20 18:13:30 +0100'
+categories:
+- Linux
+tags:
+- Debian
+- Kernel
+comments:
+- id: 1206
+  author: lele85
+  author_email: emanuele_rampichini@yahoo.it
+  author_url: http://italyanker.wordpress.com
+  date: '2007-11-20 20:32:07 +0100'
+  date_gmt: '2007-11-20 18:32:07 +0100'
+  content: Adesso non ci sono pi&ugrave; scuse per non compilarsi il kernel! :-P
+- id: 1207
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://blaster.netsons.org
+  date: '2007-11-20 20:34:43 +0100'
+  date_gmt: '2007-11-20 18:34:43 +0100'
+  content: Gi&agrave; ;)
+- id: 1208
+  author: LuNa
+  author_email: ipoccios@msn.com
+  author_url: http://opensource2007.netsons.org
+  date: '2007-11-20 22:31:52 +0100'
+  date_gmt: '2007-11-20 20:31:52 +0100'
+  content: e mi aspetti il programmino ... ?!? ma prrrrr ;)
+- id: 1209
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://blaster.netsons.org
+  date: '2007-11-21 14:36:40 +0100'
+  date_gmt: '2007-11-21 12:36:40 +0100'
+  content: Avevo cominciato senza... per&ograve; con kernelcheck &egrave; pi&ugrave;
+    rapido ed indolore.
+- id: 1288
+  author: master_kernel
+  author_email: master.kernel.contact@gmail.com
+  author_url: http://kcheck.sourceforge.net
+  date: '2007-12-05 00:02:40 +0100'
+  date_gmt: '2007-12-04 22:02:40 +0100'
+  content: "Ho usato Google Translate tradotto in italiano. \r\n \r\n Grazie per il
+    mio blog programma; KernelCheck sta diffondendo istantanea! Sono anche lieto di
+    sapere il mio programma &egrave; utilizzato anche in Italia!\r\n\r\nmaster_kernel\r\n"
+- id: 1289
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://blaster.netsons.org
+  date: '2007-12-05 09:03:51 +0100'
+  date_gmt: '2007-12-05 07:03:51 +0100'
+  content: Thanks to you, master_kernel :)
+- id: 1361
+  author: soujiro
+  author_email: kivandrow@hotmail.com
+  author_url: ''
+  date: '2007-12-11 15:43:37 +0100'
+  date_gmt: '2007-12-11 13:43:37 +0100'
+  content: kernel-checc il convertitore di preferenze sessuali del kernel linux..
+- id: 13699
+  author: lele85
+  author_email: emanuele_rampichini@yahoo.it
+  author_url: http://italyanker.wordpress.com
+  date: '2007-11-20 18:32:00 +0100'
+  date_gmt: '2007-11-20 18:32:00 +0100'
+  content: Adesso non ci sono pi&ugrave; scuse per non compilarsi il kernel! :-P
+- id: 13700
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2007-11-20 18:34:00 +0100'
+  date_gmt: '2007-11-20 18:34:00 +0100'
+  content: Gi&agrave; ;)
+- id: 13701
+  author: LuNa
+  author_email: ipoccios@msn.com
+  author_url: http://opensource2007.netsons.org
+  date: '2007-11-20 20:31:00 +0100'
+  date_gmt: '2007-11-20 20:31:00 +0100'
+  content: e mi aspetti il programmino ... ?!? ma prrrrr ;)
+- id: 13702
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2007-11-21 12:36:00 +0100'
+  date_gmt: '2007-11-21 12:36:00 +0100'
+  content: Avevo cominciato senza... per&ograve; con kernelcheck &egrave; pi&ugrave;
+    rapido ed indolore.
+- id: 13703
+  author: master_kernel
+  author_email: master.kernel.contact@gmail.com
+  author_url: http://kcheck.sourceforge.net
+  date: '2007-12-04 22:02:00 +0100'
+  date_gmt: '2007-12-04 22:02:00 +0100'
+  content: "Ho usato Google Translate tradotto in italiano. \r\n \r\n Grazie per il
+    mio blog programma; KernelCheck sta diffondendo istantanea! Sono anche lieto di
+    sapere il mio programma &egrave; utilizzato anche in Italia!\r\n\r\nmaster_kernel"
+- id: 13704
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2007-12-05 07:03:00 +0100'
+  date_gmt: '2007-12-05 07:03:00 +0100'
+  content: Thanks to you, master_kernel :)
+- id: 13705
+  author: soujiro
+  author_email: kivandrow@hotmail.com
+  author_url: ''
+  date: '2007-12-11 13:43:00 +0100'
+  date_gmt: '2007-12-11 13:43:00 +0100'
+  content: kernel-checc il convertitore di preferenze sessuali del kernel linux..
+---
+<p>Alla fine mi sono buttato sul vanilla. Ho usato così <a href="http://italyanker.wordpress.com/2007/11/20/kernelcheck-kernel-fresco-di-giornata-per-tutti/">l'ottimo tool suggerito da lele85</a>: Kernelcheck.</p>
+<p align="center"><img src="http://img240.imageshack.us/img240/7078/schermatamonitordisisteoj0.png" /></p>
+<p align="left">Con Kernelcheck è molto più facile compilare il proprio kernel: basta scegliere i moduli... quasi come yaourt, che scarica i sorgenti, compila, ti fa scegliere i moduli, ed infine installa; con la differenza che Kernelcheck esegue prima menuconfig, poi qconfig, in modo da fugare ogni dubbio sulla configurazione.</p>
+<p align="left"> Forza, tutti a compilare :D</p>

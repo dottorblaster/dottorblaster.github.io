@@ -1,0 +1,87 @@
+---
+layout: post
+status: publish
+published: true
+title: Uff...
+author:
+  display_name: Bl@ster
+  login: Blaster
+  email: dottorblaster@gmail.com
+  url: http://www.dottorblaster.it
+author_login: Blaster
+author_email: dottorblaster@gmail.com
+author_url: http://www.dottorblaster.it
+wordpress_id: 122
+wordpress_url: http://blaster.netsons.org/?p=122
+date: '2007-11-24 18:30:49 +0100'
+date_gmt: '2007-11-24 16:30:49 +0100'
+categories: []
+tags:
+- My Life
+comments:
+- id: 1214
+  author: LuNa
+  author_email: ipoccios@msn.com
+  author_url: http://opensource2007.netsons.org
+  date: '2007-11-24 19:32:14 +0100'
+  date_gmt: '2007-11-24 17:32:14 +0100'
+  content: e che avevi dei DVD fallati :D
+- id: 1215
+  author: edo947
+  author_email: scikke@yahoo.it
+  author_url: ''
+  date: '2007-11-24 20:24:55 +0100'
+  date_gmt: '2007-11-24 18:24:55 +0100'
+  content: almeno il masterizzatore &egrave; contento xD
+- id: 1217
+  author: Falling
+  author_email: fallingautumnlinks@alice.it
+  author_url: http://fallingautumnlinks.wordpress.com
+  date: '2007-11-24 22:41:03 +0100'
+  date_gmt: '2007-11-24 20:41:03 +0100'
+  content: Dai dai...riprenditi...guarda questa foto del neo presidente micro(ma molto
+    micro)soft .... http://www.pocketpicks.co.uk/latest/wp-content/uploads/2007/05/ballmer.jpg
+- id: 1218
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://blaster.netsons.org
+  date: '2007-11-25 11:30:04 +0100'
+  date_gmt: '2007-11-25 09:30:04 +0100'
+  content: "@LuNa: erano CD :)\r\n\r\n@edo947: Il mio masterizzatore non prova sentimenti.
+    :D\r\n\r\n@Falling: Oddio! Mi sono spaventato quando ho visto quello scherzo della
+    natura!"
+- id: 13706
+  author: LuNa
+  author_email: ipoccios@msn.com
+  author_url: http://opensource2007.netsons.org
+  date: '2007-11-24 17:32:00 +0100'
+  date_gmt: '2007-11-24 17:32:00 +0100'
+  content: e che avevi dei DVD fallati :D
+- id: 13707
+  author: edo947
+  author_email: scikke@yahoo.it
+  author_url: ''
+  date: '2007-11-24 18:24:00 +0100'
+  date_gmt: '2007-11-24 18:24:00 +0100'
+  content: almeno il masterizzatore &egrave; contento xD
+- id: 13708
+  author: Falling
+  author_email: fallingautumnlinks@alice.it
+  author_url: http://fallingautumnlinks.wordpress.com
+  date: '2007-11-24 20:41:00 +0100'
+  date_gmt: '2007-11-24 20:41:00 +0100'
+  content: Dai dai...riprenditi...guarda questa foto del neo presidente micro(ma molto
+    micro)soft .... http://www.pocketpicks.co.uk/latest/wp-content/uploads/2007/05/ballmer.jpg
+- id: 13709
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2007-11-25 09:30:00 +0100'
+  date_gmt: '2007-11-25 09:30:00 +0100'
+  content: "@LuNa: erano CD :)\r\n\r\n@edo947: Il mio masterizzatore non prova sentimenti.
+    :D\r\n\r\n@Falling: Oddio! Mi sono spaventato quando ho visto quello scherzo della
+    natura!"
+---
+<p>Nulla da scrivere, nulla da dire.</p>
+<p>Nota negativa: sto male.</p>
+<p>Nota positiva: ho scoperto che il mio masterizzatore funziona perfettamente.</p>

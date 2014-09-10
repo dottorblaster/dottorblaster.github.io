@@ -1,0 +1,176 @@
+---
+layout: post
+status: publish
+published: true
+title: 2014.start();
+author:
+  display_name: Bl@ster
+  login: Blaster
+  email: dottorblaster@gmail.com
+  url: http://www.dottorblaster.it
+author_login: Blaster
+author_email: dottorblaster@gmail.com
+author_url: http://www.dottorblaster.it
+wordpress_id: 2352
+wordpress_url: http://dottorblaster.it/?p=2352
+date: '2014-01-02 09:30:42 +0100'
+date_gmt: '2014-01-02 08:30:42 +0100'
+categories:
+- Tech
+tags:
+- life
+- java
+comments:
+- id: 18653
+  author: Juhan
+  author_email: n1n0.aegis@gmail.com
+  author_url: ''
+  date: '2014-01-02 10:01:00 +0100'
+  date_gmt: '2014-01-02 09:01:00 +0100'
+  content: Però! (dr.Blaster rockz)
+- id: 18654
+  author: Mercus
+  author_email: mercantiandrea@gmail.com
+  author_url: ''
+  date: '2014-01-02 11:18:00 +0100'
+  date_gmt: '2014-01-02 10:18:00 +0100'
+  content: Like (y)
+- id: 18655
+  author: Mercus
+  author_email: mercantiandrea@gmail.com
+  author_url: ''
+  date: '2014-01-02 11:19:00 +0100'
+  date_gmt: '2014-01-02 10:19:00 +0100'
+  content: a quando il fork per il blog del lug? :D
+- id: 18656
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2014-01-02 12:48:00 +0100'
+  date_gmt: '2014-01-02 11:48:00 +0100'
+  content: Eh, quando ci si diverte :P
+- id: 18657
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2014-01-02 12:49:00 +0100'
+  date_gmt: '2014-01-02 11:49:00 +0100'
+  content: 8)
+- id: 18658
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2014-01-02 12:49:00 +0100'
+  date_gmt: '2014-01-02 11:49:00 +0100'
+  content: Il fork del tema? Naah, quello del LUG credo vada rifatto da zero, questo
+    è concepito per un personal blog :P
+- id: 18659
+  author: Mercus
+  author_email: mercantiandrea@gmail.com
+  author_url: ''
+  date: '2014-01-02 12:52:00 +0100'
+  date_gmt: '2014-01-02 11:52:00 +0100'
+  content: ok, a quando il rifacimento da "zero"? :)
+- id: 18660
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2014-01-02 12:56:00 +0100'
+  date_gmt: '2014-01-02 11:56:00 +0100'
+  content: Eh mica lo so, bisogna vedere quanto ci metto a fare i progetti di Lo Presti
+    &amp; co. =)
+- id: 18661
+  author: Nicola Greco
+  author_email: notsecurity+disquis@gmail.com
+  author_url: ''
+  date: '2014-01-02 13:29:00 +0100'
+  date_gmt: '2014-01-02 12:29:00 +0100'
+  content: Buon anno caro!
+- id: 18662
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2014-01-02 13:37:00 +0100'
+  date_gmt: '2014-01-02 12:37:00 +0100'
+  content: Anche a te! ;)
+- id: 18663
+  author: lbonesini
+  author_email: lbonesini@gmail.com
+  author_url: ''
+  date: '2014-01-02 16:04:00 +0100'
+  date_gmt: '2014-01-02 15:04:00 +0100'
+  content: Bravo. Buon anno. A presto.
+- id: 18664
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2014-01-02 16:05:00 +0100'
+  date_gmt: '2014-01-02 15:05:00 +0100'
+  content: Grazie. Ci si vede. ;)
+- id: 18665
+  author: C.Stefano
+  author_email: ketiserver@gmail.com
+  author_url: http://spazio-informatico.blogspot.com
+  date: '2014-01-02 18:02:00 +0100'
+  date_gmt: '2014-01-02 17:02:00 +0100'
+  content: Come al solito, sempre pieno di novitá. Dovrei fare anche io un post sul
+    nuovo anno e i nuovi progetti...Uhm...mi hai ispirato. Buon anno Ale
+- id: 18666
+  author: Dreamquest
+  author_email: giorgio.freespire@gmail.com
+  author_url: ''
+  date: '2014-01-04 10:27:00 +0100'
+  date_gmt: '2014-01-04 09:27:00 +0100'
+  content: |-
+    Buon anno whitewool!
+
+
+
+    E, se posso darti un consiglio, aumenta un po' il padding dentro entry-content, così è molto stretto IMHO ;)
+- id: 18667
+  author: deshack
+  author_email: mattia.mglrn@gmail.com
+  author_url: ''
+  date: '2014-01-04 11:21:00 +0100'
+  date_gmt: '2014-01-04 10:21:00 +0100'
+  content: Vai così Doc! Auguri per tutto :)
+- id: 18668
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2014-01-04 11:26:00 +0100'
+  date_gmt: '2014-01-04 10:26:00 +0100'
+  content: Speriamo che il 2014 continui su questa scia ;)
+- id: 18669
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2014-01-04 11:27:00 +0100'
+  date_gmt: '2014-01-04 10:27:00 +0100'
+  content: |-
+    Cavolo mi sa che hai ragione. Nel pomeriggio forse vedo di dargli una sistemata e di ficcarci dentro le media query :D
+
+
+    Buon anno anche a te :P
+- id: 18670
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2014-01-04 11:27:00 +0100'
+  date_gmt: '2014-01-04 10:27:00 +0100'
+  content: Anche a te boss dei boss ;)
+- id: 18684
+  author: Marco Usai (gusions)
+  author_email: gusions@yahoo.it
+  author_url: http://www.arresojas.it/
+  date: '2014-01-17 18:21:00 +0100'
+  date_gmt: '2014-01-17 17:21:00 +0100'
+  content: molto bello :O
+---
+<p><img class="aligncenter" alt="Change" src="http://farm3.staticflickr.com/2526/4166307741_09d356b9a9_b.jpg" width="1024" height="682" /></p>
+<p>È stato un <strong>anno ricco di cose</strong>. Cose <a href="http://dottorblaster.it/2013/07/vi-racconto-posto-dove-lavoro/">belle</a>, cose brutte, non importa (oddio, per la gran parte comunque <strong>cose belle</strong> - e di questo mi compiaccio). Fatto sta, che l'altro ieri mi sono trovato a sedermi e, per la prima volta in un anno e forse più, ho potuto decidere di <strong>non fare nulla</strong> tutto il giorno. È stato un anno di cambiamento, per me e per tutti quelli che mi hanno circondato; spero, ovviamente, che il <strong>cambiamento</strong> sia stato positivo - soprattutto per me, che diavolo, ma anche per gli altri: il lavoro, quello che è stato prodotto da me e da chi mi circonda durante l'anno, è stato parecchio e proficuo. Bene così.</p>
+<p>Ma il cambiamento va portato avanti fino alla fine: e così ho deciso di cambiare nome e veste persino a questo <strong>blog</strong>, che rinasce dalle proprie ceneri e diventa "<strong>Grab The Blaster</strong>". Un po' quello di prima, un po' cose nuove, progetti nuovi, una vita nuova. È la prima volta che festeggio l'inizio di un anno così sentitamente: forse perché <strong>nel nuovo spero molto</strong>, ci ripongo parecchie speranze.</p>
+<p>Solo una cosa rimane la stessa: la mia <strong>nerditudine</strong>. E un costante desiderio di debuggarmi la vita, per quanto arduo possa essere. Come ha detto un amico una volta, "<a href="http://www.slideshare.net/fabius77/life-is-a-continuous-pivoting-fabio-lalli">life is a continuous pivoting"</a>. Non mi resta che far partire il <strong>nuovo thread</strong>, e sperare che non incontri <strong>deadlock</strong> o race condition.</p>
+<pre>2014.start();</pre>
+<p>(Tra l'altro, postilla: il codice del tema sarà <strong>open source</strong> prestissimo. Il tempo di correggere un paio di cose fastidiose.)</p>
+<p><em>Photo courtesy of <a href="http://www.flickr.com/photos/st3f4n/4166307741/">Stéfan</a></em></p>

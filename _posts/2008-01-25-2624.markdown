@@ -1,0 +1,234 @@
+---
+layout: post
+status: publish
+published: true
+title: 2.6.24
+author:
+  display_name: Bl@ster
+  login: Blaster
+  email: dottorblaster@gmail.com
+  url: http://www.dottorblaster.it
+author_login: Blaster
+author_email: dottorblaster@gmail.com
+author_url: http://www.dottorblaster.it
+wordpress_id: 150
+wordpress_url: http://blaster.netsons.org/?p=150
+date: '2008-01-25 20:14:18 +0100'
+date_gmt: '2008-01-25 18:14:18 +0100'
+categories:
+- Linux
+- Tech
+tags:
+- Informatica
+- Kernel
+comments:
+- id: 1487
+  author: Piplos
+  author_email: piplos89@gmail.com
+  author_url: http://www.piplos.org
+  date: '2008-01-25 22:46:40 +0100'
+  date_gmt: '2008-01-25 20:46:40 +0100'
+  content: "Bah... più aumenta il numero della versione, più è pesante il kernello...
+    bisognerebbe fare una bella pulizia.\r\n\r\nDicono anche che ogni giorno tutti
+    gli sviluppatori del kernel linux aggiungono ogni giorno in media 1000 linee di
+    codice. -.-"
+- id: 1488
+  author: ozacchig
+  author_email: ozacchig@gmail.com
+  author_url: ''
+  date: '2008-01-26 01:01:12 +0100'
+  date_gmt: '2008-01-25 23:01:12 +0100'
+  content: "Ciao blaster, ne aprofitto per chiederti che guida segui per la compilazione?
+    compili con o senza initrd?\r\n\r\nL'ultima volta che sono riuscito a compilarlo
+    con successo (cioe senza kernel panic causato dall'initrd)  non  riuscivo + a
+    fare la connessione con pppoeconf, mi mancava qualche modulo che non sono mai
+    riuscito a trovare ... :'( ! \r\n\r\nDi solito dopo quanto tempo vengono inseriti
+    i .deb in testing(dopo il rilascio ufficiale di Linus)?  È possibile(ha senso?)
+    installare il kernel precompilato di unstable sulla mia testing?  \r\n\r\nScusa
+    per la lunghezza del comm. ma sono particolarmente interessato a questo 2.6.24\r\n\r\nCiao
+    e grazie in anticipo per l'eventuale risposta :)"
+- id: 1489
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://blaster.netsons.org
+  date: '2008-01-26 18:12:17 +0100'
+  date_gmt: '2008-01-26 16:12:17 +0100'
+  content: "@ozzacchig: Guarda, ti dico che compilo con l'initrd e seguendo la guida
+    di imu che presto linkerò nella sidebar.\r\n\r\nA me questo 2.6.24 crea qualche
+    anomalia visto che il mouse, utilizzando giochi con accelerazione 3D, va terribilmente
+    lento. Non credo comunque che ci siano problemi ad installare il deb del kernel
+    di sid su testing."
+- id: 1490
+  author: ozacchig
+  author_email: ozacchig@gmail.com
+  author_url: ''
+  date: '2008-01-26 19:15:09 +0100'
+  date_gmt: '2008-01-26 17:15:09 +0100'
+  content: Grazie :)
+- id: 1491
+  author: davide scimmia
+  author_email: lists4davide@gmail.com
+  author_url: ''
+  date: '2008-01-26 19:15:11 +0100'
+  date_gmt: '2008-01-26 17:15:11 +0100'
+  content: "ozzacchig: il deb lo puoi installare benissimo se le dipendenze sono rispettate,
+    ma credo che quanto richiesto da un kernel in unstable e da uno in testing sia
+    molto simile.\r\nquindi vai tranquillo, se ti dice di aggiornare altro legato
+    al kernel fallo.\r\ne ricorda di mantenere sempre un kernel di quelli buoni installati.
+    ti potrebbe essere utile in caso di problemi o compilazioni sbagliate... ;-)"
+- id: 1492
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://blaster.netsons.org
+  date: '2008-01-26 23:04:46 +0100'
+  date_gmt: '2008-01-26 21:04:46 +0100'
+  content: 'Quoto davide, e ribadisco: prova a installarlo, il deb: al limite se non
+    va c''è il kernel vecchio :D'
+- id: 1493
+  author: ozacchig
+  author_email: ozacchig@gmail.com
+  author_url: ''
+  date: '2008-01-27 03:28:34 +0100'
+  date_gmt: '2008-01-27 01:28:34 +0100'
+  content: Grazie ragazzi, attualmente il 2.6.24 c'è solo in experimental, quando
+    passa in unstable provo ad installarlo sulla testing
+- id: 1520
+  author: LuNa
+  author_email: ipoccios@msn.com
+  author_url: ''
+  date: '2008-01-29 16:44:21 +0100'
+  date_gmt: '2008-01-29 14:44:21 +0100'
+  content: beh, se volete farlo senza initrd i moduli necessari all'avvio della macchina
+    devono essere necessariamente built-in nel kernel, o il kernel panic è inevitabile.
+    Comunque sia, avere l'initrd con tutti i vostri bei moduletti dentro (visto che
+    ci sta li apposta initramfs-tools o chi per lui a generarvelo quando installate
+    un kernel) o averli compilati nel kernel, non vi cambia un bel nulla, nel senso
+    che non vi è alcun guadagno prestazionale, se non forse qualche piccolo secondo
+    risparmiato all'avvio. :)
+- id: 1521
+  author: LuNa
+  author_email: ipoccios@msn.com
+  author_url: ''
+  date: '2008-01-29 16:50:09 +0100'
+  date_gmt: '2008-01-29 14:50:09 +0100'
+  content: "@ozacchig : esatto, aspetta. Prelevare un kernel da un'altro ramo è un
+    casino perchè al 99,999% è compilato con altra versione di glibc e poi se devi
+    compilare moduli o avere a che fare con sorgenti/headers del kernel con questa
+    discrepanza è spesso e volentieri un bagno di sangue :D"
+- id: 1522
+  author: Falling
+  author_email: fallingautumnlinks@alice.it
+  author_url: http://fallingautumnlinks.wordpress.com/
+  date: '2008-01-29 22:44:56 +0100'
+  date_gmt: '2008-01-29 20:44:56 +0100'
+  content: "Son contento per te che hai tempo per fare tutto ciò...io invece sono
+    da alcuni giorno full-immerso in circuiti digitali(guarda la cresta del clock,guardaguarda,
+    ora scende!) ed in contorti listati C.Esami,esami,esami...4 esami in 5 giorni!\r\nMa
+    finalmente dopo il 6 ci sarà la quiete..."
+- id: 13950
+  author: Piplos
+  author_email: piplos89@gmail.com
+  author_url: http://www.piplos.org
+  date: '2008-01-25 20:46:00 +0100'
+  date_gmt: '2008-01-25 20:46:00 +0100'
+  content: "Bah... più aumenta il numero della versione, più è pesante il kernello...
+    bisognerebbe fare una bella pulizia.\r\n\r\nDicono anche che ogni giorno tutti
+    gli sviluppatori del kernel linux aggiungono ogni giorno in media 1000 linee di
+    codice. -.-"
+- id: 13951
+  author: ozacchig
+  author_email: ozacchig@gmail.com
+  author_url: ''
+  date: '2008-01-25 23:01:00 +0100'
+  date_gmt: '2008-01-25 23:01:00 +0100'
+  content: "Ciao blaster, ne aprofitto per chiederti che guida segui per la compilazione?
+    compili con o senza initrd?\r\n\r\nL'ultima volta che sono riuscito a compilarlo
+    con successo (cioe senza kernel panic causato dall'initrd)  non  riuscivo + a
+    fare la connessione con pppoeconf, mi mancava qualche modulo che non sono mai
+    riuscito a trovare ... :'( ! \r\n\r\nDi solito dopo quanto tempo vengono inseriti
+    i .deb in testing(dopo il rilascio ufficiale di Linus)?  È possibile(ha senso?)
+    installare il kernel precompilato di unstable sulla mia testing?  \r\n\r\nScusa
+    per la lunghezza del comm. ma sono particolarmente interessato a questo 2.6.24\r\n\r\nCiao
+    e grazie in anticipo per l'eventuale risposta :)"
+- id: 13952
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2008-01-26 16:12:00 +0100'
+  date_gmt: '2008-01-26 16:12:00 +0100'
+  content: "@ozzacchig: Guarda, ti dico che compilo con l'initrd e seguendo la guida
+    di imu che presto linkerò nella sidebar.\r\n\r\nA me questo 2.6.24 crea qualche
+    anomalia visto che il mouse, utilizzando giochi con accelerazione 3D, va terribilmente
+    lento. Non credo comunque che ci siano problemi ad installare il deb del kernel
+    di sid su testing."
+- id: 13953
+  author: ozacchig
+  author_email: ozacchig@gmail.com
+  author_url: ''
+  date: '2008-01-26 17:15:00 +0100'
+  date_gmt: '2008-01-26 17:15:00 +0100'
+  content: Grazie :)
+- id: 13954
+  author: ''
+  author_email: lists4davide@gmail.com
+  author_url: ''
+  date: '2008-01-26 17:15:00 +0100'
+  date_gmt: '2008-01-26 17:15:00 +0100'
+  content: "ozzacchig: il deb lo puoi installare benissimo se le dipendenze sono rispettate,
+    ma credo che quanto richiesto da un kernel in unstable e da uno in testing sia
+    molto simile.\r\nquindi vai tranquillo, se ti dice di aggiornare altro legato
+    al kernel fallo.\r\ne ricorda di mantenere sempre un kernel di quelli buoni installati.
+    ti potrebbe essere utile in caso di problemi o compilazioni sbagliate... ;-)"
+- id: 13955
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2008-01-26 21:04:00 +0100'
+  date_gmt: '2008-01-26 21:04:00 +0100'
+  content: 'Quoto davide, e ribadisco: prova a installarlo, il deb: al limite se non
+    va c''è il kernel vecchio :D'
+- id: 13956
+  author: ozacchig
+  author_email: ozacchig@gmail.com
+  author_url: ''
+  date: '2008-01-27 01:28:00 +0100'
+  date_gmt: '2008-01-27 01:28:00 +0100'
+  content: Grazie ragazzi, attualmente il 2.6.24 c'è solo in experimental, quando
+    passa in unstable provo ad installarlo sulla testing
+- id: 13957
+  author: LuNa
+  author_email: ipoccios@msn.com
+  author_url: ''
+  date: '2008-01-29 14:44:00 +0100'
+  date_gmt: '2008-01-29 14:44:00 +0100'
+  content: beh, se volete farlo senza initrd i moduli necessari all'avvio della macchina
+    devono essere necessariamente built-in nel kernel, o il kernel panic è inevitabile.
+    Comunque sia, avere l'initrd con tutti i vostri bei moduletti dentro (visto che
+    ci sta li apposta initramfs-tools o chi per lui a generarvelo quando installate
+    un kernel) o averli compilati nel kernel, non vi cambia un bel nulla, nel senso
+    che non vi è alcun guadagno prestazionale, se non forse qualche piccolo secondo
+    risparmiato all'avvio. :)
+- id: 13958
+  author: LuNa
+  author_email: ipoccios@msn.com
+  author_url: ''
+  date: '2008-01-29 14:50:00 +0100'
+  date_gmt: '2008-01-29 14:50:00 +0100'
+  content: "@ozacchig : esatto, aspetta. Prelevare un kernel da un'altro ramo è un
+    casino perchè al 99,999% è compilato con altra versione di glibc e poi se devi
+    compilare moduli o avere a che fare con sorgenti/headers del kernel con questa
+    discrepanza è spesso e volentieri un bagno di sangue :D"
+- id: 13959
+  author: Falling
+  author_email: fallingautumnlinks@alice.it
+  author_url: http://fallingautumnlinks.wordpress.com/
+  date: '2008-01-29 20:44:00 +0100'
+  date_gmt: '2008-01-29 20:44:00 +0100'
+  content: "Son contento per te che hai tempo per fare tutto ciò...io invece sono
+    da alcuni giorno full-immerso in circuiti digitali(guarda la cresta del clock,guardaguarda,
+    ora scende!) ed in contorti listati C.Esami,esami,esami...4 esami in 5 giorni!\r\nMa
+    finalmente dopo il 6 ci sarà la quiete..."
+---
+<p>Ebbene si, ho compilato il kernel 2.6.24... come potevo non farlo, d'altronde? :D</p>
+<p align="center"><img src="http://img01.picoodle.com/img/img01/4/1/25/f_SchermataMom_8830b2d.png" /></p>
+<p align="left">Moltissime novità, gran parte delle quali sperimentali. Beh, non mi resta che usarlo e vedere cosa ne viene fuori :)</p>

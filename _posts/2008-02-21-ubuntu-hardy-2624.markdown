@@ -1,0 +1,147 @@
+---
+layout: post
+status: publish
+published: true
+title: 'Ubuntu Hardy: 2.6.24!'
+author:
+  display_name: Bl@ster
+  login: Blaster
+  email: dottorblaster@gmail.com
+  url: http://www.dottorblaster.it
+author_login: Blaster
+author_email: dottorblaster@gmail.com
+author_url: http://www.dottorblaster.it
+wordpress_id: 154
+wordpress_url: http://blaster.netsons.org/?p=154
+date: '2008-02-21 16:05:02 +0100'
+date_gmt: '2008-02-21 14:05:02 +0100'
+categories:
+- Linux
+tags:
+- Ubuntu
+- Kernel
+comments:
+- id: 1618
+  author: Luca
+  author_email: luca@tuttoeniente.net
+  author_url: http://lublog.tuttoeniente.net/
+  date: '2008-02-21 16:17:31 +0100'
+  date_gmt: '2008-02-21 14:17:31 +0100'
+  content: "Secondo me Ubuntu l'ha già fatto: conosco diverse persone, informaticamente
+    abbastanza niubbe per le quali Linux = Ubuntu... Adesso Ubuntu deve solo convincere
+    queste persone a farsi installare e usare stabilmente.\r\nTempo fa (maggio, o
+    qualcosa del genere), avevo installato ad una mia amica Ubuntu Feisty, ma poi
+    è tornata a windows perché \"non risucivo a stare senza Messenger Plus!\" -.-"
+- id: 1619
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://blaster.netsons.org
+  date: '2008-02-21 16:28:42 +0100'
+  date_gmt: '2008-02-21 14:28:42 +0100'
+  content: "@Luca: Sicuramente è come dici tu; io intendevo infatti non solo il &quot;Linux=Ubuntu&quot;,
+    bensì la sconfitta del baco numero 1.\r\nPoverina la tua amica :D peccato che
+    la maggior parte di Plus sia stato importato in Emesene ;)"
+- id: 1629
+  author: blood
+  author_email: feindblut@email.it
+  author_url: ''
+  date: '2008-02-24 23:32:53 +0100'
+  date_gmt: '2008-02-24 21:32:53 +0100'
+  content: ma tu, blaster, non eri in ritiro spirituale? Si sono alzati i voti? :)
+- id: 1631
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://blaster.netsons.org
+  date: '2008-02-25 14:37:12 +0100'
+  date_gmt: '2008-02-25 12:37:12 +0100'
+  content: "@Blood: lo sono ancora, caro amico. Riesco però a postare durante le inique
+    lezioni di ECDL :D"
+- id: 1643
+  author: ubu4ever
+  author_email: morarossa@gmail.com
+  author_url: http://ubu4ever.netsons.org
+  date: '2008-02-28 23:38:10 +0100'
+  date_gmt: '2008-02-28 21:38:10 +0100'
+  content: "Tutte le versioni di ubuntu usano i kernel pari (a parte dapper ed edgy
+    (con il ritardo di dapper si è ritardato anche edgy) ). :)\r\n\r\nbreezy (se ricordo
+    bene): 2.6.12\r\ndapper: 2.6.15\r\nedgy: 2.6.17\r\nfeisty: 2.6.20\r\ngutsy: 2.6.22\r\nhardy:
+    2.6.24\r\n\r\n:)"
+- id: 1645
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://blaster.netsons.org
+  date: '2008-02-29 16:04:10 +0100'
+  date_gmt: '2008-02-29 14:04:10 +0100'
+  content: Giusto, l'avevo dimenticato. :D
+- id: 1648
+  author: ubu4ever
+  author_email: morarossa@gmail.com
+  author_url: http://ubu4ever.netsons.org/blog
+  date: '2008-03-03 14:54:56 +0100'
+  date_gmt: '2008-03-03 12:54:56 +0100'
+  content: "Da notare che se non c'era dapper a rompere tutto, i kernel seguivano
+    le versioni di gnome!\r\n\r\nInfatti breezy = kernel: 2.6.12, gnome: 2.12 :)"
+- id: 13984
+  author: Luca
+  author_email: luca@tuttoeniente.net
+  author_url: http://lublog.tuttoeniente.net/
+  date: '2008-02-21 14:17:00 +0100'
+  date_gmt: '2008-02-21 14:17:00 +0100'
+  content: "Secondo me Ubuntu l'ha già fatto: conosco diverse persone, informaticamente
+    abbastanza niubbe per le quali Linux = Ubuntu... Adesso Ubuntu deve solo convincere
+    queste persone a farsi installare e usare stabilmente.\r\nTempo fa (maggio, o
+    qualcosa del genere), avevo installato ad una mia amica Ubuntu Feisty, ma poi
+    è tornata a windows perché \"non risucivo a stare senza Messenger Plus!\" -.-"
+- id: 13985
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2008-02-21 14:28:00 +0100'
+  date_gmt: '2008-02-21 14:28:00 +0100'
+  content: "@Luca: Sicuramente è come dici tu; io intendevo infatti non solo il &quot;Linux=Ubuntu&quot;,
+    bensì la sconfitta del baco numero 1.\r\nPoverina la tua amica :D peccato che
+    la maggior parte di Plus sia stato importato in Emesene ;)"
+- id: 13986
+  author: blood
+  author_email: feindblut@email.it
+  author_url: ''
+  date: '2008-02-24 21:32:00 +0100'
+  date_gmt: '2008-02-24 21:32:00 +0100'
+  content: ma tu, blaster, non eri in ritiro spirituale? Si sono alzati i voti? :)
+- id: 13987
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2008-02-25 12:37:00 +0100'
+  date_gmt: '2008-02-25 12:37:00 +0100'
+  content: "@Blood: lo sono ancora, caro amico. Riesco però a postare durante le inique
+    lezioni di ECDL :D"
+- id: 13988
+  author: ubu4ever
+  author_email: morarossa@gmail.com
+  author_url: http://ubu4ever.netsons.org
+  date: '2008-02-28 21:38:00 +0100'
+  date_gmt: '2008-02-28 21:38:00 +0100'
+  content: "Tutte le versioni di ubuntu usano i kernel pari (a parte dapper ed edgy
+    (con il ritardo di dapper si è ritardato anche edgy) ). :)\r\n\r\nbreezy (se ricordo
+    bene): 2.6.12\r\ndapper: 2.6.15\r\nedgy: 2.6.17\r\nfeisty: 2.6.20\r\ngutsy: 2.6.22\r\nhardy:
+    2.6.24\r\n\r\n:)"
+- id: 13989
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2008-02-29 14:04:00 +0100'
+  date_gmt: '2008-02-29 14:04:00 +0100'
+  content: Giusto, l'avevo dimenticato. :D
+- id: 13990
+  author: ubu4ever
+  author_email: morarossa@gmail.com
+  author_url: http://ubu4ever.netsons.org/blog
+  date: '2008-03-03 12:54:00 +0100'
+  date_gmt: '2008-03-03 12:54:00 +0100'
+  content: "Da notare che se non c'era dapper a rompere tutto, i kernel seguivano
+    le versioni di gnome!\r\n\r\nInfatti breezy = kernel: 2.6.12, gnome: 2.12 :)"
+---
+<p>Lo so che magari è una notizia già vecchia, ma in una delle mie poche pause sono riuscito a carpire da <a href="http://lublog.altervista.org/archives/145/hardy-kernel-2624-8-e-driver-nvidia">questo post</a> di Luca che Ubuntu Hardy userà il kernel 2.6.24.</p>
+<p>Per me è una vera gioia, anche se comprendo che per l'uscita di Ubuntu Hardy in versione Stable, questa versione sarà ormai passata in cavalleria per favorire l'avvento della neofita 2.6.25: mi farebbe piacere che la release stabile utilizzasse comunque l'ultimo kernel disponibile, per favorire sia i newbie che i pro.</p>
+<p>Ma è comunque un pregio che Ubuntu utilizzi un kernel come questo, visto che include qualche chicca come il group scheduling. Sarà la volta buona che la bella mora africana conquisterà i desktop?</p>

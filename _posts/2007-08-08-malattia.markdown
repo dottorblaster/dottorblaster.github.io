@@ -1,0 +1,175 @@
+---
+layout: post
+status: publish
+published: true
+title: Malattia
+author:
+  display_name: Bl@ster
+  login: Blaster
+  email: dottorblaster@gmail.com
+  url: http://www.dottorblaster.it
+author_login: Blaster
+author_email: dottorblaster@gmail.com
+author_url: http://www.dottorblaster.it
+wordpress_id: 42
+wordpress_url: http://blaster.netsons.org/?p=42
+date: '2007-08-08 15:05:09 +0200'
+date_gmt: '2007-08-08 13:05:09 +0200'
+categories: []
+tags:
+- My Life
+comments:
+- id: 266
+  author: LuNa
+  author_email: ipoccios@msn.com
+  author_url: http://opensource2007.netsons.org
+  date: '2007-08-08 16:38:28 +0200'
+  date_gmt: '2007-08-08 14:38:28 +0200'
+  content: ahhaah vedo che per&ograve; non ostante i batteri la scemenza rimane sempre
+    la stessa ;) sicuro di non avere norton antivirus installato ? metti clam e vedi
+    che sconfiggi ogni creatura maligna :P
+- id: 267
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://blaster.netsons.org
+  date: '2007-08-08 16:48:10 +0200'
+  date_gmt: '2007-08-08 14:48:10 +0200'
+  content: "LuNa sono sicuro di non avere Norton :D\r\n\r\nsto facendo una cura a
+    base di antibiotici, clam e Nonciclopedia (alla Patch Adams) ;)"
+- id: 269
+  author: riva.dani
+  author_email: riva.dani@email.it
+  author_url: ''
+  date: '2007-08-08 20:20:46 +0200'
+  date_gmt: '2007-08-08 18:20:46 +0200'
+  content: Io mi sono ammalato proprio mentre ero al mare (l'unica settimana di ferie
+    lontano da casa), sono tornato domenica ed ancora mi trascino i sintomi. Ammalarsi
+    d'inverno è sopportabile, ma d'estate è un inferno! Fortuna che oggi c'era brutto
+    qui al nord. :)
+- id: 270
+  author: Piplos
+  author_email: piplos@piplos.org
+  author_url: http://www.piplos.org
+  date: '2007-08-08 20:25:04 +0200'
+  date_gmt: '2007-08-08 18:25:04 +0200'
+  content: Hmm... &egrave; una settimana che stai in malattia... non &egrave; che
+    dovremmo preoccuparci? :D
+- id: 271
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://blaster.netsons.org
+  date: '2007-08-08 21:36:56 +0200'
+  date_gmt: '2007-08-08 19:36:56 +0200'
+  content: "Piplos non preoccuparti, sto prendendo le mie compresse e presto tutto
+    torner&agrave; come prima ;)\r\n\r\n@riva.dani: Fortuna per te che c&#39;&egrave;
+    brutto; da me c&#39;&egrave; un sole che spacca le pietre e tutti giocano e si
+    divertono :-|"
+- id: 272
+  author: ubu4ever
+  author_email: morarossa@gmail.com
+  author_url: http://kangos.wordpress.com
+  date: '2007-08-09 11:39:33 +0200'
+  date_gmt: '2007-08-09 09:39:33 +0200'
+  content: "Fai un bel ckrootkit xD! Speriamo che guarisci presto!\r\n\r\nciao"
+- id: 273
+  author: Delian
+  author_email: delian2@gmail.com
+  author_url: http://www.delian.it
+  date: '2007-08-09 12:14:46 +0200'
+  date_gmt: '2007-08-09 10:14:46 +0200'
+  content: Mi dispiace per la malattia ed in bocca al lupo per la guarigione.. ma
+    non mi sembrava il caso di farlo pervenire pure su Tuxfeed :P
+- id: 274
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://blaster.netsons.org
+  date: '2007-08-09 14:12:20 +0200'
+  date_gmt: '2007-08-09 12:12:20 +0200'
+  content: "Mi scuso se arrivano certe cose :D\r\n\r\nma d&#39;altronde cos&igrave;
+    lo sa mezzo mondo :D"
+- id: 275
+  author: Kobrabyte
+  author_email: info@kobrabyte.org
+  author_url: http://www.kobrabyte.org
+  date: '2007-08-09 14:24:30 +0200'
+  date_gmt: '2007-08-09 12:24:30 +0200'
+  content: mi dispiace !! guarisci presto ...
+- id: 12872
+  author: LuNa
+  author_email: ipoccios@msn.com
+  author_url: http://opensource2007.netsons.org
+  date: '2007-08-08 14:38:00 +0200'
+  date_gmt: '2007-08-08 14:38:00 +0200'
+  content: ahhaah vedo che per&ograve; non ostante i batteri la scemenza rimane sempre
+    la stessa ;) sicuro di non avere norton antivirus installato ? metti clam e vedi
+    che sconfiggi ogni creatura maligna :P
+- id: 12873
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2007-08-08 14:48:00 +0200'
+  date_gmt: '2007-08-08 14:48:00 +0200'
+  content: "LuNa sono sicuro di non avere Norton :D\r\n\r\nsto facendo una cura a
+    base di antibiotici, clam e Nonciclopedia (alla Patch Adams) ;)"
+- id: 12874
+  author: riva.dani
+  author_email: riva.dani@email.it
+  author_url: ''
+  date: '2007-08-08 18:20:00 +0200'
+  date_gmt: '2007-08-08 18:20:00 +0200'
+  content: Io mi sono ammalato proprio mentre ero al mare (l'unica settimana di ferie
+    lontano da casa), sono tornato domenica ed ancora mi trascino i sintomi. Ammalarsi
+    d'inverno è sopportabile, ma d'estate è un inferno! Fortuna che oggi c'era brutto
+    qui al nord. :)
+- id: 12875
+  author: Piplos
+  author_email: piplos@piplos.org
+  author_url: http://www.piplos.org
+  date: '2007-08-08 18:25:00 +0200'
+  date_gmt: '2007-08-08 18:25:00 +0200'
+  content: Hmm... &egrave; una settimana che stai in malattia... non &egrave; che
+    dovremmo preoccuparci? :D
+- id: 12876
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2007-08-08 19:36:00 +0200'
+  date_gmt: '2007-08-08 19:36:00 +0200'
+  content: "Piplos non preoccuparti, sto prendendo le mie compresse e presto tutto
+    torner&agrave; come prima ;)\r\n\r\n@riva.dani: Fortuna per te che c&#039;&egrave;
+    brutto; da me c&#039;&egrave; un sole che spacca le pietre e tutti giocano e si
+    divertono :-|"
+- id: 12877
+  author: ubu4ever
+  author_email: morarossa@gmail.com
+  author_url: http://kangos.wordpress.com
+  date: '2007-08-09 09:39:00 +0200'
+  date_gmt: '2007-08-09 09:39:00 +0200'
+  content: "Fai un bel ckrootkit xD! Speriamo che guarisci presto!\r\n\r\nciao"
+- id: 12878
+  author: Delian
+  author_email: delian2@gmail.com
+  author_url: http://www.delian.it
+  date: '2007-08-09 10:14:00 +0200'
+  date_gmt: '2007-08-09 10:14:00 +0200'
+  content: Mi dispiace per la malattia ed in bocca al lupo per la guarigione.. ma
+    non mi sembrava il caso di farlo pervenire pure su Tuxfeed :P
+- id: 12879
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2007-08-09 12:12:00 +0200'
+  date_gmt: '2007-08-09 12:12:00 +0200'
+  content: "Mi scuso se arrivano certe cose :D\r\n\r\nma d&#039;altronde cos&igrave;
+    lo sa mezzo mondo :D"
+- id: 12880
+  author: Kobrabyte
+  author_email: info@kobrabyte.org
+  author_url: http://www.kobrabyte.org
+  date: '2007-08-09 12:24:00 +0200'
+  date_gmt: '2007-08-09 12:24:00 +0200'
+  content: mi dispiace !! guarisci presto ...
+---
+<p>E niente. Solo un post per segnalare che il maledetto attacco batteriologico nei mie confronti non è finito. Allego foto del sottoscritto che combatte per salvare la pelle.</p>
+<p style="text-align: center"><img src="http://img366.imageshack.us/img366/852/060hh6.jpg" height="452" width="447" /></p>
+<p style="text-align: center"><em>Io che combatto la malattia. Dite la verità, non sono sexy vestito da cavaliere?</em></p>

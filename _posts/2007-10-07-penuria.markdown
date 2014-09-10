@@ -1,0 +1,233 @@
+---
+layout: post
+status: publish
+published: true
+title: Penuria.
+author:
+  display_name: Bl@ster
+  login: Blaster
+  email: dottorblaster@gmail.com
+  url: http://www.dottorblaster.it
+author_login: Blaster
+author_email: dottorblaster@gmail.com
+author_url: http://www.dottorblaster.it
+wordpress_id: 91
+wordpress_url: http://blaster.netsons.org/?p=91
+date: '2007-10-07 21:08:52 +0200'
+date_gmt: '2007-10-07 19:08:52 +0200'
+categories:
+- Progetti
+tags:
+- My Life
+- Progetti
+comments:
+- id: 841
+  author: sfinge
+  author_email: diodo.vettoriale@gmail.com
+  author_url: ''
+  date: '2007-10-07 21:30:55 +0200'
+  date_gmt: '2007-10-07 19:30:55 +0200'
+  content: Vorrei una riflessione sulla politica dei rilasci di ubuntu, se in questi
+    rilasci vedi innovazioni e funzionalit&agrave; importanti da parte di una societ&agrave;
+    miliardaria o solo una pacchettizzazione di gnome e software di altre distro..vorrei
+    sapere se sei soddisfatto del fatto che programmatori (pagati) lascino che feisty
+    abbia thunderbird alla versione 1.5 (sapendo che soffre di un exploit alla portata
+    di un bambino) perch&egrave; i backports fanno pena..in una parola cosa vorresti
+    da ubuntu, se credi sia giunto il momento che faccia il grande passo implementando
+    qualcosa di veramente originale, idee e riflessioni sulla non linearit&agrave;
+    fra aumento di potenza hardware e funzionalit&agrave; aggiuntive...previsioni
+    catastrofiche di un futuro che ci vedr&agrave; con 12 processori e pc raffreddato
+    al freon solo per fare il boot!!!!
+- id: 842
+  author: TheKaneB
+  author_email: thekaneb@gmail.com
+  author_url: http://bloginformatico.netsons.org
+  date: '2007-10-07 21:49:17 +0200'
+  date_gmt: '2007-10-07 19:49:17 +0200'
+  content: "vorrei leggere articoli interessanti come quelli che hai scritto fin'ora,
+    questo significa che aspetter&ograve; che ti torni l'ispirazione. Si capisce ad
+    un chilometro di distanza quando un'articolo &egrave; stato &quot;tirato per i
+    capelli&quot; ed frutto soltanto della febbre da blogging!\r\n\r\nVisto che fin'ora
+    hai scritto cose a mio parere &quot;degne di essere lette&quot;, mi dispiacerebbe
+    assistere ad un decadimento proprio adesso! Fatti una bella vacanza &quot;bloggativa&quot;
+    e quando trovi una buona idea scrivila come sai fare ;)"
+- id: 843
+  author: Piplos
+  author_email: piplos@piplos.org
+  author_url: http://www.piplos.org
+  date: '2007-10-07 23:23:11 +0200'
+  date_gmt: '2007-10-07 21:23:11 +0200'
+  content: "Nah, l'importante non &egrave; postare regolarmente seguendo un ritmo,
+    ma postare quando e come si vuole. Altrimenti non &egrave; pi&ugrave; un blog!\r\n\r\nCmq
+    sia anche io mi sento come te in questo periodo..."
+- id: 844
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://blaster.netsons.org
+  date: '2007-10-08 13:37:56 +0200'
+  date_gmt: '2007-10-08 11:37:56 +0200'
+  content: "@Tutti: grazie del vostro commento.\r\n\r\n@TheKaneB: L'argomento alla
+    fine l'ho trovato, ma penso che lo scriver&ograve; un po' lentamente; comunque
+    sia la prima parte del commento la prendo come un vero e proprio complimento,
+    e per questo ti ringrazio.\r\n\r\n@sfinge: In effetti hai proposto argomenti interessantissimi.
+    Vedr&ograve; di approfondirli: sinceramente, non uso Thunderbird quindi non sapevo
+    dell'exploit ;)"
+- id: 845
+  author: LuNa
+  author_email: ipoccios@msn.com
+  author_url: http://opensource2007.netsons.org
+  date: '2007-10-08 13:50:00 +0200'
+  date_gmt: '2007-10-08 11:50:00 +0200'
+  content: "cambia distro\r\n:D"
+- id: 846
+  author: Lazza
+  author_email: andrea.lazzarotto@gmail.com
+  author_url: http://lazza.wordpress.com
+  date: '2007-10-08 13:53:02 +0200'
+  date_gmt: '2007-10-08 11:53:02 +0200'
+  content: Sarei orientato sulla 3... ma poi mi sa che le tue tematiche assomiglierebbero
+    troppo alle mie. :-P
+- id: 847
+  author: ubu4ever
+  author_email: morarossa@gmail.com
+  author_url: http://ubu4ever.netsons.org
+  date: '2007-10-08 14:11:39 +0200'
+  date_gmt: '2007-10-08 12:11:39 +0200'
+  content: "Tutte e tre :D\r\n\r\n&lt;blockquote&gt; Cmq sia anche io mi sento come
+    te in questo periodo&hellip;&lt;/blockquote&gt;Quoto."
+- id: 848
+  author: phoenix
+  author_email: a@a.it
+  author_url: http://vitedigitali.blogspot.com
+  date: '2007-10-08 19:15:26 +0200'
+  date_gmt: '2007-10-08 17:15:26 +0200'
+  content: "sarebbe bella qualche guida o tutorial...\r\nintanto potresti raccontarci
+    la storia del tuo primo computer (sempre se non l' hai gi&agrave; scritta)"
+- id: 849
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://blaster.netsons.org
+  date: '2007-10-08 21:06:20 +0200'
+  date_gmt: '2007-10-08 19:06:20 +0200'
+  content: "Phoenix un giorno posto la foto.\r\n\r\n@Tutti: ho in cantiere un post,
+    finalmente!"
+- id: 853
+  author: Gionark
+  author_email: admin@gionark.it
+  author_url: http://www.gionark.it
+  date: '2007-10-08 22:27:00 +0200'
+  date_gmt: '2007-10-08 20:27:00 +0200'
+  content: "Non &egrave; solo un problema tuo!\r\nForse &egrave; che cominciando la
+    scuola, il lavoro e le attivit&agrave; di routine si ha meno tempo ... non dici?\r\nScrivi
+    semplicemente quello che ti viene in mente, quello che ritieni opportuno ... chi
+    legge il tuo blog, capir&agrave;!\r\nCiao ;)"
+- id: 13357
+  author: sfinge
+  author_email: diodo.vettoriale@gmail.com
+  author_url: ''
+  date: '2007-10-07 19:30:00 +0200'
+  date_gmt: '2007-10-07 19:30:00 +0200'
+  content: Vorrei una riflessione sulla politica dei rilasci di ubuntu, se in questi
+    rilasci vedi innovazioni e funzionalit&agrave; importanti da parte di una societ&agrave;
+    miliardaria o solo una pacchettizzazione di gnome e software di altre distro..vorrei
+    sapere se sei soddisfatto del fatto che programmatori (pagati) lascino che feisty
+    abbia thunderbird alla versione 1.5 (sapendo che soffre di un exploit alla portata
+    di un bambino) perch&egrave; i backports fanno pena..in una parola cosa vorresti
+    da ubuntu, se credi sia giunto il momento che faccia il grande passo implementando
+    qualcosa di veramente originale, idee e riflessioni sulla non linearit&agrave;
+    fra aumento di potenza hardware e funzionalit&agrave; aggiuntive...previsioni
+    catastrofiche di un futuro che ci vedr&agrave; con 12 processori e pc raffreddato
+    al freon solo per fare il boot!!!!
+- id: 13358
+  author: TheKaneB
+  author_email: thekaneb@gmail.com
+  author_url: http://bloginformatico.netsons.org
+  date: '2007-10-07 19:49:00 +0200'
+  date_gmt: '2007-10-07 19:49:00 +0200'
+  content: "vorrei leggere articoli interessanti come quelli che hai scritto fin'ora,
+    questo significa che aspetter&ograve; che ti torni l'ispirazione. Si capisce ad
+    un chilometro di distanza quando un'articolo &egrave; stato &quot;tirato per i
+    capelli&quot; ed frutto soltanto della febbre da blogging!\r\n\r\nVisto che fin'ora
+    hai scritto cose a mio parere &quot;degne di essere lette&quot;, mi dispiacerebbe
+    assistere ad un decadimento proprio adesso! Fatti una bella vacanza &quot;bloggativa&quot;
+    e quando trovi una buona idea scrivila come sai fare ;)"
+- id: 13359
+  author: Piplos
+  author_email: piplos@piplos.org
+  author_url: http://www.piplos.org
+  date: '2007-10-07 21:23:00 +0200'
+  date_gmt: '2007-10-07 21:23:00 +0200'
+  content: "Nah, l'importante non &egrave; postare regolarmente seguendo un ritmo,
+    ma postare quando e come si vuole. Altrimenti non &egrave; pi&ugrave; un blog!\r\n\r\nCmq
+    sia anche io mi sento come te in questo periodo..."
+- id: 13360
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2007-10-08 11:37:00 +0200'
+  date_gmt: '2007-10-08 11:37:00 +0200'
+  content: "@Tutti: grazie del vostro commento.\r\n\r\n@TheKaneB: L'argomento alla
+    fine l'ho trovato, ma penso che lo scriver&ograve; un po' lentamente; comunque
+    sia la prima parte del commento la prendo come un vero e proprio complimento,
+    e per questo ti ringrazio.\r\n\r\n@sfinge: In effetti hai proposto argomenti interessantissimi.
+    Vedr&ograve; di approfondirli: sinceramente, non uso Thunderbird quindi non sapevo
+    dell'exploit ;)"
+- id: 13361
+  author: LuNa
+  author_email: ipoccios@msn.com
+  author_url: http://opensource2007.netsons.org
+  date: '2007-10-08 11:50:00 +0200'
+  date_gmt: '2007-10-08 11:50:00 +0200'
+  content: "cambia distro\r\n:D"
+- id: 13362
+  author: Lazza
+  author_email: andrea.lazzarotto@gmail.com
+  author_url: http://andrealazzarotto.com/
+  date: '2007-10-08 11:53:00 +0200'
+  date_gmt: '2007-10-08 11:53:00 +0200'
+  content: Sarei orientato sulla 3... ma poi mi sa che le tue tematiche assomiglierebbero
+    troppo alle mie. :-P
+- id: 13363
+  author: ubu4ever
+  author_email: morarossa@gmail.com
+  author_url: http://ubu4ever.netsons.org
+  date: '2007-10-08 12:11:00 +0200'
+  date_gmt: '2007-10-08 12:11:00 +0200'
+  content: "Tutte e tre :D\r\n\r\n&lt;blockquote&gt; Cmq sia anche io mi sento come
+    te in questo periodo&hellip;&lt;/blockquote&gt;Quoto."
+- id: 13364
+  author: phoenix
+  author_email: a@a.it
+  author_url: http://vitedigitali.blogspot.com
+  date: '2007-10-08 17:15:00 +0200'
+  date_gmt: '2007-10-08 17:15:00 +0200'
+  content: "sarebbe bella qualche guida o tutorial...\r\nintanto potresti raccontarci
+    la storia del tuo primo computer (sempre se non l' hai gi&agrave; scritta)"
+- id: 13365
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2007-10-08 19:06:00 +0200'
+  date_gmt: '2007-10-08 19:06:00 +0200'
+  content: "Phoenix un giorno posto la foto.\r\n\r\n@Tutti: ho in cantiere un post,
+    finalmente!"
+- id: 13366
+  author: Gionark
+  author_email: admin@gionark.it
+  author_url: http://www.gionark.it
+  date: '2007-10-08 20:27:00 +0200'
+  date_gmt: '2007-10-08 20:27:00 +0200'
+  content: "Non &egrave; solo un problema tuo!\r\nForse &egrave; che cominciando la
+    scuola, il lavoro e le attivit&agrave; di routine si ha meno tempo ... non dici?\r\nScrivi
+    semplicemente quello che ti viene in mente, quello che ritieni opportuno ... chi
+    legge il tuo blog, capir&agrave;!\r\nCiao ;)"
+---
+<p>Sto sperimentando veramente la mancanza di argomenti: forse sono io che non sono più lo smanettone di una volta, forse mi sono imborghesito, o forse Ubuntu è diventata troppo facile (per me o per tutti)... quindi, in conclusione di ciò, io lancio il sondaggio.</p>
+<blockquote><p>Cosa volete nei miei prossimi aritcoli?</p></blockquote>
+<p>Le risposte possibili sono:</p>
+<blockquote><p>1. Cronache dei tuoi smanettamenti...</p>
+<p>2. Più tutorial e how-to!</p>
+<p>3.  La tua vita, voglio farmi gli affari tuoi sino in fondo.</p></blockquote>
+<p>Bene, adesso non vi resta che lasciare la vostra opzione in un commento... al prossimo post!¹</p>
+<p>------------------------------</p>
+<p>[1]: Notare che è la prima volta in vita mia che concludo un post così.</p>

@@ -1,0 +1,191 @@
+---
+layout: post
+status: publish
+published: true
+title: Il LiBBro.
+author:
+  display_name: Bl@ster
+  login: Blaster
+  email: dottorblaster@gmail.com
+  url: http://www.dottorblaster.it
+author_login: Blaster
+author_email: dottorblaster@gmail.com
+author_url: http://www.dottorblaster.it
+wordpress_id: 640
+wordpress_url: http://dottorblaster.it/?p=640
+date: '2010-04-09 22:09:07 +0200'
+date_gmt: '2010-04-09 21:09:07 +0200'
+categories:
+- Linux
+- Tech
+tags:
+- Informatica
+- My Life
+comments:
+- id: 9889
+  author: Gianfranco
+  author_email: gianfranco.pellegrino@gmail.com
+  author_url: ''
+  date: '2010-04-09 21:57:56 +0200'
+  date_gmt: '2010-04-10 02:57:56 +0200'
+  content: Rispondo alle domande con sincerità:<br>- Si.<br>- Dopo aver letto un capitolo
+    d&#39;assaggio, perchè no?<br>- Si, se ho gradito. :D
+- id: 9890
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2010-04-09 22:05:21 +0200'
+  date_gmt: '2010-04-10 03:05:21 +0200'
+  content: Sono indeciso sulle modalità di distribuzione, penso che adotterò una doppia
+    licenza :D<br>Comunque, grazie delle risposte, veramente.
+- id: 9891
+  author: Dario
+  author_email: darionst@gmail.com
+  author_url: http://fuorichiave.blogspot.com/
+  date: '2010-04-09 22:58:46 +0200'
+  date_gmt: '2010-04-10 03:58:46 +0200'
+  content: Mah vuoi opinioni? Ok ti do la mia personalissima... Leggo con piacere
+    il tuo blog da parecchio tempo ormai, quindi potrei anche leggere un tuo libro...
+    Certo (parlo da blogger) un conto è scrivere in un blog, un conto è un libro,
+    cioè un vero libro, ma se ci sono i contenuti e la voglia, sì lo leggerei.
+- id: 9892
+  author: teolinux
+  author_email: teolinux@hotmail.com
+  author_url: ''
+  date: '2010-04-10 01:31:35 +0200'
+  date_gmt: '2010-04-10 06:31:35 +0200'
+  content: 'Scrivere significa comunicare. Comunicare idee, contenuti tecnici impressioni.
+    Quello che dici di voler comunicare tu forse lo si può fare meglio con un blog,
+    o se vuoi condividere in modo open con un wiki.<br><br>A meno che tu voglia qualcosa
+    di fisso, inalterabile, e con uno schema di lettura volutamente lineare. In quel
+    caso: libro.<br>A favore del blog, ti cito Felipe di pollycoke: con il suo blog
+    e il suo stile mi sembra raggiunga questi scopi.'
+- id: 9893
+  author: juhan
+  author_email: n1n0.aegis@gmail.com
+  author_url: ''
+  date: '2010-04-10 05:05:38 +0200'
+  date_gmt: '2010-04-10 10:05:38 +0200'
+  content: 'Io mi prenoto subito, a condizione che sia diverso da tutti quelli che
+    ci sono: dev&#39;essere personale.<br>E complementare al blog, siamo nel terzo
+    millennio, come era solito dire GP2.'
+- id: 9894
+  author: firstbit
+  author_email: andrea.de.iacovo@gmail.com
+  author_url: ''
+  date: '2010-04-10 07:12:40 +0200'
+  date_gmt: '2010-04-10 12:12:40 +0200'
+  content: Trovo la tua idea troppo "bloggistica". Un libro è una cosa che, per il
+    tempo ed i soldi che ci stanno dietro, presume un certo tipo di competenza ed
+    "autorevolezza" da parte dell&#39;autore, diverse da quelle che ci si aspetta
+    da un blogger.<br>Ora come ora non ti vedo troppo da libro (come d&#39;altra parte
+    non vedo da libro anche altri nomi blog-noti che, tuttavia, dei libri li hanno
+    scritti); poi magari, e lo spero per te, mi sbaglio ;-)
+- id: 10058
+  author: quacos
+  author_email: giovanni.cappellini@gmail.com
+  author_url: ''
+  date: '2010-04-10 18:18:48 +0200'
+  date_gmt: '2010-04-10 23:18:48 +0200'
+  content: Con me i lettori farebbero ++
+- id: 10085
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2010-04-11 12:46:46 +0200'
+  date_gmt: '2010-04-11 17:46:46 +0200'
+  content: Ora che ci penso potrei mettere tantissimi riferimenti, comunque si, la
+    pensavo come un&#39;opera parallela che raccoglie (vedi risposta a Dario) un po&#39;
+    tutto quello che ho imparato, e tutto ciò che mi ha fatto divertire. ;)
+- id: 10086
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2010-04-11 12:45:51 +0200'
+  date_gmt: '2010-04-11 17:45:51 +0200'
+  content: L&#39;obiettivo è riassumere, fare un punto della situazione ripercorrendo
+    tappe fondamentali della mia formazione da autodidatta, in maniera anche divertente.
+    Grazie ;)
+- id: 10101
+  author: scimmia
+  author_email: scimmion@gmail.com
+  author_url: ''
+  date: '2010-04-12 10:48:59 +0200'
+  date_gmt: '2010-04-12 15:48:59 +0200'
+  content: io personalmente non lo leggerei.<br>perché ne ho troppi altri da leggere,
+    perché un libro su linux non mi serve, perché il tuo avvicinarsi a linux è un&#39;esperienza
+    che pur essendo personale e quindi unica, sarà bene o male una fotocopia della
+    mia di 15 anni fa (suppergiù) con ubuntu al posto di debian, nano al posto di
+    vim, dei wiki al posto dei file .txt zippati e una adsl al posto del 56k.<br>ma
+    in bocca al lupo lo stesso!
+- id: 10126
+  author: picchio
+  author_email: picchiopc@yahoo.it
+  author_url: http://picchiopc.blogspot.com
+  date: '2010-04-15 12:39:20 +0200'
+  date_gmt: '2010-04-15 17:39:20 +0200'
+  content: io sarei felicissimo di leggere il tuo libro certo potresti pubblicarlo
+    in modo gratuito via internet come succede su molti libri che parlano di OpenSource
+    e di Gnu/Linux.
+- id: 10129
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2010-04-15 13:10:38 +0200'
+  date_gmt: '2010-04-15 18:10:38 +0200'
+  content: certo che lo pubblicherei free, ma mi farebbe piacere distribuirne anche
+    una versione a pagamento :)
+- id: 10133
+  author: Quizzlo
+  author_email: marcopaolone@gmail.com
+  author_url: ''
+  date: '2010-04-16 16:32:36 +0200'
+  date_gmt: '2010-04-16 21:32:36 +0200'
+  content: 'È un&#39;ottima idea :) anche se più che come libro, quasi lo vedrei come
+    un "diario" delle tue avventure/sventure, di conoscenze fatte o evitate, di quanto
+    imparato, di quello che ami o che hai amato.<br><br>Insomma, un nerd su carta
+    fa sempre la sua degna figura xD (e... no, il tasto &#39;Trova&#39; non ce lo
+    vogliamo. Che al massimo si scannerizza che l&#39;apriamo con xpdf [e che nessuno
+    nomini acroread!] ). <br><br>LaTeX rulez. Sempre.<br><br>{PS: non sono morto,
+    mi hanno semplicemente fottuto gli account tra ff e twitter. Torno presto, tempo
+    di pestare il cracker dei miei bit. Salutami todos over there, Luke in primis
+    :D }'
+- id: 10134
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2010-04-16 17:05:36 +0200'
+  date_gmt: '2010-04-16 22:05:36 +0200'
+  content: Luke è tornata a Milano, come ti hanno fottuto gli account? :OOO
+- id: 10135
+  author: Quizzlo
+  author_email: marcopaolone@gmail.com
+  author_url: ''
+  date: '2010-04-16 17:15:21 +0200'
+  date_gmt: '2010-04-16 22:15:21 +0200'
+  content: Sono stato ad un internet point qui in zona tempo fa... Internet Exploder
+    pare abbia memorizzato tutte le password (e non solo le mie); per buona fortuna
+    hanno rintracciato quel simpaticone, così avrò modo di pestarlo quando sarà ora...
+    non è che verresti a dare una mano? :D
+- id: 10136
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2010-04-16 17:17:16 +0200'
+  date_gmt: '2010-04-16 22:17:16 +0200'
+  content: Mortacci :0<br>A me è successo mentre ero a Vienna, dopo ho debitamente
+    tracciato il cammino del PC e l&#39;ho rintracciato e ahem... non si può dire
+    sennò finisco in galera :D
+- id: 10137
+  author: Quizzlo
+  author_email: marcopaolone@gmail.com
+  author_url: ''
+  date: '2010-04-16 17:24:24 +0200'
+  date_gmt: '2010-04-16 22:24:24 +0200'
+  content: D&#39;oh :D d&#39;ora in poi mai più senza il mio terminale XD fosse anche
+    un PDP-11 con elinks... (e magari un gioiellino di quelli Q__ )
+---
+<p>Ho pensato. Ho pensato a tante cose. E nella miriade di pensieri, ha preso forma un'idea che adesso è un chiodo fisso; qualcosa che ottenendo il giusto riscontro potrebbe anche diventare <strong>realtà</strong>.</p>
+<p>Se io scrivessi un libro. Non prendetela come la solita cosa pallosa: un libro su Linux, su di me, su me e Linux contemporaneamente, sul semi-onanismo di un sedicenne riguardo la tecnologia e i sistemi operativi. Le competenze che ho maturato, cosa significa Linux per me, cosa significa Linux per gli altri. Filosofia open source, filosofia <em>spicciola</em> open source (che è ben altra cosa dalla <strong>vera</strong> filosofia open); Arch, e tutti i ricordi brutti e cattivi, belli e sconvolgenti, di tutte le distribuzioni che ho provato e continuo a provare. Insomma, <strong>del perchè amo Linux</strong> e, informalmente e tra amici, spiegare un po' come vanno le cose, chi fa cosa, come si fa quello, a che serve quell'altro.</p>
+<p>Ma quello che ci andrebbe dentro lo so, a me interessa sapere che effetto farebbe a voi che state <strong>dall'altra parte</strong> del monitor (e della cattedra, quando vado ai Linux Day :D): lo leggereste? Lo comprereste? Lo consigliereste?</p>
+<p>Idee sono ben accette, come qualunque altro tipo di contributo, anche insulti. Fatevi avanti.</p>

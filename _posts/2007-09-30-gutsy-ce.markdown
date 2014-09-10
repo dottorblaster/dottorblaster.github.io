@@ -1,0 +1,146 @@
+---
+layout: post
+status: publish
+published: true
+title: Gutsy c'è!
+author:
+  display_name: Bl@ster
+  login: Blaster
+  email: dottorblaster@gmail.com
+  url: http://www.dottorblaster.it
+author_login: Blaster
+author_email: dottorblaster@gmail.com
+author_url: http://www.dottorblaster.it
+excerpt: "Non ho potuto postare prima la notizia perchè la server farm di Netsons
+  ha fatto un macello sfasciando dei controller RAID.\r\n\r\nFinalmente sono passato
+  a Ubuntu Gutsy Gibbon, e i problemi da risolvere sono stati molto pochi, in relazione
+  a tutti gli altri miei aggiornamenti di release, i quali hanno dato tutti dei problemi
+  assurdi con annesse incompatibilità. Invece questo dist-upgrade ha generato in me
+  molta goduria... ma non resisto oltre, devo postarvi l'immagine!!!\r\n<p align=\"center\"><img
+  src=\"http://img233.imageshack.us/img233/7129/schermatamonitordisistelz9.png\" /></p>\r\n<p
+  align=\"center\"><em>Notare il rilascio ;)</em>"
+wordpress_id: 87
+wordpress_url: http://blaster.netsons.org/?p=87
+date: '2007-09-30 17:14:41 +0200'
+date_gmt: '2007-09-30 15:14:41 +0200'
+categories:
+- Linux
+tags:
+- Ubuntu
+- Recensioni
+comments:
+- id: 809
+  author: luca90$
+  author_email: savanafatta@hotmail.it
+  author_url: ''
+  date: '2007-09-30 17:30:04 +0200'
+  date_gmt: '2007-09-30 15:30:04 +0200'
+  content: "Che dire....una versione ancora piu bella e &quot;ordinata&quot; come
+    hai detto tu Bl@ster!!!!bella la nuova &quot;sezione&quot; <strong><em>appareance</em></strong>...davvero
+    piu ordinato...poi per non parlare del nuovo desktop!!!!! un vero e proprio ritorno
+    alla natura!!!!insomma W il gibbone\r\nP.S. anche il [sudo] nn &egrave; male!!!"
+- id: 810
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://blaster.netsons.org
+  date: '2007-09-30 17:33:16 +0200'
+  date_gmt: '2007-09-30 15:33:16 +0200'
+  content: Gi&agrave;, veramente fenomeni i ragazzi di Ubuntu :)
+- id: 811
+  author: LuNa
+  author_email: ipoccios@msn.com
+  author_url: http://opensource2007.netsons.org
+  date: '2007-10-01 11:56:11 +0200'
+  date_gmt: '2007-10-01 09:56:11 +0200'
+  content: anche a me &egrave; andata abbastanza bene, ho dovuto solo reinstallare
+    compiz (gi&agrave; me lo aspettavo) perch&egrave; &egrave; una di quelle cose
+    per la quale non uso pacchetti, e delle altre cose minori tipo amsn. Per adesso
+    non noto problemi. Molto bello a mio avviso l'antialiasing dei caratteri. La nuova
+    capplet .. che ne penso ?? bleah !! orripile ! :( preferivo la versione 2.18
+- id: 812
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://blaster.netsons.org
+  date: '2007-10-01 11:57:43 +0200'
+  date_gmt: '2007-10-01 09:57:43 +0200'
+  content: Nuooo... &egrave; spettacolare! Molto pulita e bella!
+- id: 813
+  author: Gionark
+  author_email: admin@gionark.it
+  author_url: http://www.gionark.it
+  date: '2007-10-01 17:25:01 +0200'
+  date_gmt: '2007-10-01 15:25:01 +0200'
+  content: "Grande!!! \r\nFra poco opero anche io il passaggio a Gutsy.\r\nComunque
+    il desktop &egrave; milto bello davvero."
+- id: 814
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://blaster.netsons.org
+  date: '2007-10-01 18:33:42 +0200'
+  date_gmt: '2007-10-01 16:33:42 +0200'
+  content: Si, il desktop &egrave; fenomenale...
+- id: 13332
+  author: luca90$
+  author_email: savanafatta@hotmail.it
+  author_url: ''
+  date: '2007-09-30 15:30:00 +0200'
+  date_gmt: '2007-09-30 15:30:00 +0200'
+  content: "Che dire....una versione ancora piu bella e &quot;ordinata&quot; come
+    hai detto tu Bl@ster!!!!bella la nuova &quot;sezione&quot; <strong><em>appareance</em></strong>...davvero
+    piu ordinato...poi per non parlare del nuovo desktop!!!!! un vero e proprio ritorno
+    alla natura!!!!insomma W il gibbone\r\nP.S. anche il [sudo] nn &egrave; male!!!"
+- id: 13333
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2007-09-30 15:33:00 +0200'
+  date_gmt: '2007-09-30 15:33:00 +0200'
+  content: Gi&agrave;, veramente fenomeni i ragazzi di Ubuntu :)
+- id: 13334
+  author: LuNa
+  author_email: ipoccios@msn.com
+  author_url: http://opensource2007.netsons.org
+  date: '2007-10-01 09:56:00 +0200'
+  date_gmt: '2007-10-01 09:56:00 +0200'
+  content: anche a me &egrave; andata abbastanza bene, ho dovuto solo reinstallare
+    compiz (gi&agrave; me lo aspettavo) perch&egrave; &egrave; una di quelle cose
+    per la quale non uso pacchetti, e delle altre cose minori tipo amsn. Per adesso
+    non noto problemi. Molto bello a mio avviso l'antialiasing dei caratteri. La nuova
+    capplet .. che ne penso ?? bleah !! orripile ! :( preferivo la versione 2.18
+- id: 13335
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2007-10-01 09:57:00 +0200'
+  date_gmt: '2007-10-01 09:57:00 +0200'
+  content: Nuooo... &egrave; spettacolare! Molto pulita e bella!
+- id: 13336
+  author: Gionark
+  author_email: admin@gionark.it
+  author_url: http://www.gionark.it
+  date: '2007-10-01 15:25:00 +0200'
+  date_gmt: '2007-10-01 15:25:00 +0200'
+  content: "Grande!!! \r\nFra poco opero anche io il passaggio a Gutsy.\r\nComunque
+    il desktop &egrave; milto bello davvero."
+- id: 13337
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2007-10-01 16:33:00 +0200'
+  date_gmt: '2007-10-01 16:33:00 +0200'
+  content: Si, il desktop &egrave; fenomenale...
+---
+<p>Non ho potuto postare prima la notizia perchè la server farm di Netsons ha fatto un macello sfasciando dei controller RAID.</p>
+<p>Finalmente sono passato a Ubuntu Gutsy Gibbon, e i problemi da risolvere sono stati molto pochi, in relazione a tutti gli altri miei aggiornamenti di release, i quali hanno dato tutti dei problemi assurdi con annesse incompatibilità. Invece questo dist-upgrade ha generato in me molta goduria... ma non resisto oltre, devo postarvi l'immagine!!!</p>
+<p align="center"><img src="http://img233.imageshack.us/img233/7129/schermatamonitordisistelz9.png" /></p>
+<p align="center"><em>Notare il rilascio ;)</em><a id="more"></a><a id="more-87"></a></p>
+<p align="left">Dal fronte Gnome 2.20 le novità non sono ne poche ne tante, ma per una release del genere uno si mette a scavare un po'... e si trova roba interessante. Come ad esempio il nuovo sudo:</p>
+<p align="center"> <img src="http://farm2.static.flickr.com/1244/1463850934_0aadd0dce3.jpg?v=0" /></p>
+<p align="center"><em>Non sembra più "umano"?</em></p>
+<p align="left">Po, per tornare al nuovo Gnome, mi ha colpito il senso di pulizia che regna in questa nuova release... basta vedere come hanno unito tutte le preferenze del desktop nella nuova applet "Aspetto" (inglese "Appearance"):</p>
+<p align="center"><img src="http://farm2.static.flickr.com/1044/1463850942_b538ab0fcd.jpg" height="437" width="500" /></p>
+<p align="center"><em>Da notare il mio personalissimo tema in bella vista :P</em></p>
+<p align="left">E per finire in bellezza una bella panoramica del mio desktop... con tanto di sfondo nuovo, direttamente dal futuro:</p>
+<p align="center"><img src="http://farm2.static.flickr.com/1160/1463850946_711ad0e1d7.jpg" height="375" width="500" /></p>
+<p align="center"><em>Ritorno alla terra... questo si che è "Linux for Human Beings"!</em></p>
+<p align="left">Ovviamente trovate tutte le immagini nel <a href="http://www.flickr.com/photos/fotoblaster/">mio album su Flickr</a>. Enjoy your Gutsy!</p>

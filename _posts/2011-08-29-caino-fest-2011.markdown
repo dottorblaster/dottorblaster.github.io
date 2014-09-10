@@ -1,0 +1,95 @@
+---
+layout: post
+status: publish
+published: true
+title: Caino Fest 2011 - la meraviglia
+author:
+  display_name: Bl@ster
+  login: Blaster
+  email: dottorblaster@gmail.com
+  url: http://www.dottorblaster.it
+author_login: Blaster
+author_email: dottorblaster@gmail.com
+author_url: http://www.dottorblaster.it
+wordpress_id: 1003
+wordpress_url: http://dottorblaster.it/?p=1003
+date: '2011-08-29 23:32:18 +0200'
+date_gmt: '2011-08-29 22:32:18 +0200'
+categories:
+- Linux
+- Windows
+tags:
+- My Life
+comments:
+- id: 16332
+  author: killeader
+  author_email: federico.gerardi@gmail.com
+  author_url: http://zenetic.it
+  date: '2011-08-30 00:25:00 +0200'
+  date_gmt: '2011-08-30 00:25:00 +0200'
+  content: |-
+    Grazie per lo splendido post... è stato un grande piacere averti ospite in ciociaria, tra reti, psicologia e indie-rock punkeggiante ;)
+
+    Indossa con orgoglio la tshirt del mayor e preparati a difendere il titolo, la prossima volta porteremo più contendenti :D
+- id: 16334
+  author: Mario Esposito
+  author_email: nautilus82@gmail.com
+  author_url: http://www.marioesposito.eu
+  date: '2011-08-30 17:42:00 +0200'
+  date_gmt: '2011-08-30 17:42:00 +0200'
+  content: |-
+    Alessio, mi fa piacere tu abbia avuto un'ottima impressione della mia "natia terra" (io sono proprio di Frosinone) :P
+
+    L'anno prossimo conto di esser presente anche io all'evento ^.^
+- id: 16335
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2011-08-30 17:44:00 +0200'
+  date_gmt: '2011-08-30 17:44:00 +0200'
+  content: |-
+    Conto di difendere il titolo con onore l'anno prossimo :D
+    Mi auguro anche una lotta più serrata :P
+- id: 16336
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2011-08-30 17:45:00 +0200'
+  date_gmt: '2011-08-30 17:45:00 +0200'
+  content: |-
+    Benissimo!
+    Io in realtà non è che sia di molto lontano, abito a Palestrina :D
+    Però l'area Frosinone-Cassino per me è semplicemente magica. Dall'ambiente alle persone, adoro.
+- id: 16337
+  author: Mario Esposito
+  author_email: nautilus82@gmail.com
+  author_url: http://www.marioesposito.eu
+  date: '2011-08-30 17:47:00 +0200'
+  date_gmt: '2011-08-30 17:47:00 +0200'
+  content: |-
+    Territorio per certi versi ancora ospitale come una volta, per altri sempre più caotico e "freddo"...
+    Non siamo lontani, è vero, poi studiamo entrambi a Rm, dobbiamo incontraci prima o poi :D
+- id: 16998
+  author: truzzo
+  author_email: asd@ds.ds
+  author_url: ''
+  date: '2012-01-22 01:18:00 +0100'
+  date_gmt: '2012-01-22 00:18:00 +0100'
+  content: 'Sono proprio curioso di sapere che cosa intendi per "hacking vero"... '
+---
+<p>Ciò che ho passato negli ultimi giorni è stato uno degli eventi più belli che io abbia mai vissuto, da che ho memoria, in questo lungo anno che tra qualche mese si accingerà a volgere al termine. Ho infatti fatto un salto nelle terre ciociare in verità poco distanti da casa mia, per passare un paio di meravigliosi giorni con <strong><a href="http://zenetic.it">Federico aka Killeader</a></strong> in occasione della <strong>Caino Fest 2011</strong>. Tanto verde, tanta musica, e soprattutto tanto hacking, cosa che non mi sarei mai aspettato, hanno caratterizzato il tempo che abbiamo speso insieme; c'è stata l'occasione di dimostrarsi forti delle proprie conoscenze, e soprattutto non sono mancati i momenti riderecci in cui tentavamo di accendere aggeggi con il cablaggio sbagliato o l'alimentazione staccata.</p>
+<h3>Il delirio: Windows != routing</h3>
+<p>La prima sera, dato che Federico disponeva di questo bel router <strong>US Robotics</strong>, abbiamo tentato l'impossibile cercando di portare una connessione da una penna Vodafone a tutta l'area del festival. Cosa fattibile in cinque minuti in Unix, ma tra lo USR e la penna 3G c'era di mezzo un PC <strong>Windows</strong> da cui far passare i pacchetti: dopo circa un'ora e mezza, due ore forse, di smanettamento, siamo riusciti solamente a ottenere di pingare qualche host interno. A questo punto abbiamo smontato tutto, e come da buona filosofia KISS, abbiamo messo al posto della macchina Windows un Macbook, il quale con la potenza di qualche click e l'attivazione della condivisione della connessione ha risolto il problema. Ovviamente la stessa cosa sarebbe stata possibile con Ubuntu (o una qualsiasi distro Linux), e la creazione di un hotspot wifi tramite NetworkManager. Unix powah :D</p>
+<p>C'è da dire che poi abbiamo scoperto che cercavamo di infilare il cavo ethernet nella WAN anzichè nella RJ45 indirizzata alla LAN, ma queste sono quisquilie, dato che comunque una volta corretto il tiro non funzionava comunque una mazza.</p>
+<h3>Le cose mistiche: uno USR come repeater</h3>
+<p>Vincitori, abbiamo poi provato con l'access point casalingo a ripristinare la precedente configurazione, ossia quella secondo cui da un gateway posto al piano di sopra, il segnale arrivava fino allo USR di cui ho scritto e <strong>veniva ripetuto</strong> un po' in ogni dove coprendo tutto il copribile. Ora, non so se c'entra il fatto che io ripercorrendo i passi che avevamo svolto in precedenza abbia anche disattivato il firewall del repeater, ma per più di 24 ore quel maledetto coso abilitando solamente il WDS tra i due trasmettitori e disabilitando il <strong>DHCP</strong> sul ripetitore, non ha voluto saperne di andare. Poi ho usato la Forza il giorno dopo ed è andato tutto a posto, come ci si aspetta da dei veri Jedi.</p>
+<p>Nel frattempo, ho anche mostrato al buon Federico che era così gentile da ospitarmi nella sua magione, che smanettare un terminale <strong>Android</strong> è qualcosa di veramente semplicissimo: root e custom ROM nel giro di circa un quarto d'ora, accorciando di un po' i tempi morti dovuti alla banda non proprio prestante.</p>
+<h3>Il contorno</h3>
+<p>Nel contorno bucolico di Roccasecca e Aquino abbiamo avuto tante esperienze di hacking, quello vero. Abbiamo per esempio confrontato, ad un orario improbo, la struttura della <strong>rete Internet</strong> con la rete di neuroni appartenente al cervello umano, e il fatto che tale tecnologia manchi per ora di autocoscienza. Insieme a questi discorsi filosofici, c'è stata tanta musica: in particolare voglio ringraziare i Wora Wora Washington con cui mi sono fatto una bella chiacchierata, e che sul palco del festival sono stati veramente magnifici.</p>
+<p>Ho anche vinto <strong>la maglia del Caino Festival</strong>! Eccola qua:</p>
+<p style="text-align: center;"><img class="alignnone" src="http://i52.tinypic.com/2d7txs.png" alt="" width="470" height="360" /></p>
+<p>Doveva essere del mayor della venue su <strong>FourSquare</strong> al termine dell'evento, e ovviamente io non ho perso occasione per crivellare il post di checkin, anche se sono stato battuto all'ultimo da una persona dello staff... tuttavia la maglia l'ho presa io lo stesso perchè i checkin dello staff non valevano :D</p>
+<p>Affianco alla musica e a tutte le persone meravigliose che ho conosciuto in questo piccolo soggiorno ciociaro, il mio ringraziamento più grande va ovviamente a Federico e alla sua famiglia, di una dolcezza assoluta e di una nerditudine senza pari: il sensore di movimento che fa accendere le luminarie della veranda è qualcosa che non avevo mai visto e che ci tengo a replicare quanto prima. In seconda battuta ma assolutamente non per importanza voglio menzionare: <strong><a href="http://suunciliegioestremo.blogspot.com">Davide</a></strong>, perchè è troppo un figo e finalmente dopo anni di chatteria siamo riusciti a vederci e a mangiarci un paninozzo insieme, e <strong><a href="http://wingbeatman.blogspot.com/">Jose</a></strong> che non conoscevo ma che adesso conosco (lapalissiano.) e mi tengo stretto assolutamente. Un grazie anche a <strong><a href="http://mvr.carbonmade.com/">Manuel</a></strong>, con il quale abbiamo scoperto di aver passato almeno due ore della nostra vita gomito a gomito, pur non rendendoci conto l'uno dell'altro. In sua difesa, il soggetto ha detto:</p>
+<blockquote><p>Ah ma quindi eri tu il capellone con la maglietta di Wikipedia!</p></blockquote>
+<p>E poi ovviamente un invito: durante questo periodo dell'anno, informatevi per il Caino Fest 2012, perchè è un'iniziativa che merita veramente tanto, nella quale c'è prima di tutto il cuore di tutti coloro che la organizzano, con fondi propri.</p>
+<p><em>Stay rock</em>!</p>

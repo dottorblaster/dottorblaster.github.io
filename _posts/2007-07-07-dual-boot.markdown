@@ -1,0 +1,202 @@
+---
+layout: post
+status: publish
+published: true
+title: Dual-Boot!
+author:
+  display_name: Bl@ster
+  login: Blaster
+  email: dottorblaster@gmail.com
+  url: http://www.dottorblaster.it
+author_login: Blaster
+author_email: dottorblaster@gmail.com
+author_url: http://www.dottorblaster.it
+excerpt: "Cari lettori, quest'oggi è un gran giorno: vi parlo dalla mia box dual-boot
+  :D .\r\n\r\nEbbene, per chi voglia sapere come ho fatto, è stato molto semplice.
+  Mi sono svegliato, stamattina, con un'idea che mi ronzava in testa, e mentre mangiavo
+  il cornetto preparatomi dalla mia fantastica mamma, l'idea ha preso forma; poi mentre
+  trangugiavo il frullato offertomi sempre da mia madre (dovrebbe mettere su una ditta
+  di catering :) ), l'idea si è concretizzata in un \"e se formattassi tutto, installassi
+  windoze, e facessi le partizioni Linux con Partition Magic?\""
+wordpress_id: 17
+wordpress_url: http://blaster.netsons.org/?p=17
+date: '2007-07-07 14:54:07 +0200'
+date_gmt: '2007-07-07 12:54:07 +0200'
+categories:
+- Linux
+- Windows
+tags: []
+comments:
+- id: 53
+  author: Piplos
+  author_email: piplos@piplos.org
+  author_url: http://www.piplos.org
+  date: '2007-07-07 15:54:29 +0200'
+  date_gmt: '2007-07-07 13:54:29 +0200'
+  content: Ahahah! Ma tu sei un folle Blaster!! :D
+- id: 54
+  author: Vigliag
+  author_email: vigliag@gmail.com
+  author_url: http://vigliag.wordpress.com
+  date: '2007-07-07 16:02:43 +0200'
+  date_gmt: '2007-07-07 14:02:43 +0200'
+  content: "Meglio di cos&igrave;... io invece cel&#39;ho con il partizionatore di
+    ubuntu:\r\nMentre installavo Edgy sul computer di mio fratello il partizionatore
+    di ubuntu, senza alcun apparente motivo, cerca di copiare la struttura delle partizioni
+    del disco interno in quello esterno (che avevo scordato di staccare dal computer),
+    la cosa finisce, come era facile aspettarsi, in un errore. \r\nAl riavvio su winzozz
+    mi accorgo che la tabella partizioni del disco esterno &egrave; stata completamente
+    sfigurata e tutti i dati irrimediabilmente persi..."
+- id: 55
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://blaster.netsons.org
+  date: '2007-07-07 16:39:29 +0200'
+  date_gmt: '2007-07-07 14:39:29 +0200'
+  content: Ma la mia follia &egrave; quello che piace al lettore. Io non faccio che
+    fornire materiale.
+- id: 56
+  author: phoenix
+  author_email: a@a.it
+  author_url: http://vitedigitali.blogspot.com
+  date: '2007-07-07 17:20:12 +0200'
+  date_gmt: '2007-07-07 15:20:12 +0200'
+  content: "troppo bello questo post...\r\nma come ti vengono in mente &#39;ste cose?&nbsp;
+    :-D\r\n\r\nlo sai cosa dovrei fare adesso? dovrei scrivere un post sul mio blog
+    dedicato a questo post! (sempre col tuo permesso)"
+- id: 59
+  author: ILLuSioN²²
+  author_email: illusion22@email.it
+  author_url: http://illusion22.wordpress.com
+  date: '2007-07-08 03:30:23 +0200'
+  date_gmt: '2007-07-08 01:30:23 +0200'
+  content: "ma lol!!!\r\n\r\n:-)\r\n\r\ngrandee :-D"
+- id: 60
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://blaster.netsons.org
+  date: '2007-07-08 09:52:10 +0200'
+  date_gmt: '2007-07-08 07:52:10 +0200'
+  content: ":D\r\nStamattina vi potrei gi&agrave; fare un report lungo come la Salerno-Reggio
+    Calabria dei problemi che mi ha creato la partizione ntfs ;)"
+- id: 66
+  author: melina vtb
+  author_email: melinanke@gmail.com
+  author_url: ''
+  date: '2007-07-09 15:52:12 +0200'
+  date_gmt: '2007-07-09 13:52:12 +0200'
+  content: "<strong>Questo fù un commento spam.</strong>\r\n"
+- id: 67
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://blaster.netsons.org
+  date: '2007-07-09 20:48:58 +0200'
+  date_gmt: '2007-07-09 18:48:58 +0200'
+  content: Non sono sicuro che questo fosse un commento spam.
+- id: 72
+  author: Miki
+  author_email: miki.news@email.it
+  author_url: http://www.mikinews.net
+  date: '2007-07-10 11:41:33 +0200'
+  date_gmt: '2007-07-10 09:41:33 +0200'
+  content: "Ciao Bl@ster,\r\n&egrave; un commento di spam quello di melina. Ne ricevo
+    circa 2 al giorno anche sul mio blog e akismet me li blocca puntualmente :P. Pu&ograve;
+    ingannare (anche io ci ero cascato all&#39;inizio) ma purtroppo &egrave; cos&igrave;
+    :-). Cmq gran bel blog. Anche la parlata con Patrizio niente male lol. Ciao"
+- id: 12636
+  author: Piplos
+  author_email: piplos@piplos.org
+  author_url: http://www.piplos.org
+  date: '2007-07-07 13:54:00 +0200'
+  date_gmt: '2007-07-07 13:54:00 +0200'
+  content: Ahahah! Ma tu sei un folle Blaster!! :D
+- id: 12637
+  author: Vigliag
+  author_email: vigliag@gmail.com
+  author_url: http://vigliag.wordpress.com
+  date: '2007-07-07 14:02:00 +0200'
+  date_gmt: '2007-07-07 14:02:00 +0200'
+  content: "Meglio di cos&igrave;... io invece cel&#039;ho con il partizionatore di
+    ubuntu:\r\nMentre installavo Edgy sul computer di mio fratello il partizionatore
+    di ubuntu, senza alcun apparente motivo, cerca di copiare la struttura delle partizioni
+    del disco interno in quello esterno (che avevo scordato di staccare dal computer),
+    la cosa finisce, come era facile aspettarsi, in un errore. \r\nAl riavvio su winzozz
+    mi accorgo che la tabella partizioni del disco esterno &egrave; stata completamente
+    sfigurata e tutti i dati irrimediabilmente persi..."
+- id: 12638
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2007-07-07 14:39:00 +0200'
+  date_gmt: '2007-07-07 14:39:00 +0200'
+  content: Ma la mia follia &egrave; quello che piace al lettore. Io non faccio che
+    fornire materiale.
+- id: 12639
+  author: phoenix
+  author_email: a@a.it
+  author_url: http://vitedigitali.blogspot.com
+  date: '2007-07-07 15:20:00 +0200'
+  date_gmt: '2007-07-07 15:20:00 +0200'
+  content: "troppo bello questo post...\r\nma come ti vengono in mente &#039;ste cose?&nbsp;
+    :-D\r\n\r\nlo sai cosa dovrei fare adesso? dovrei scrivere un post sul mio blog
+    dedicato a questo post! (sempre col tuo permesso)"
+- id: 12640
+  author: ILLuSioN²²
+  author_email: illusion22@email.it
+  author_url: http://illusion22.wordpress.com
+  date: '2007-07-08 01:30:00 +0200'
+  date_gmt: '2007-07-08 01:30:00 +0200'
+  content: "ma lol!!!\r\n\r\n:-)\r\n\r\ngrandee :-D"
+- id: 12641
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2007-07-08 07:52:00 +0200'
+  date_gmt: '2007-07-08 07:52:00 +0200'
+  content: ":D\r\nStamattina vi potrei gi&agrave; fare un report lungo come la Salerno-Reggio
+    Calabria dei problemi che mi ha creato la partizione ntfs ;)"
+- id: 12642
+  author: melina vtb
+  author_email: melinanke@gmail.com
+  author_url: ''
+  date: '2007-07-09 13:52:00 +0200'
+  date_gmt: '2007-07-09 13:52:00 +0200'
+  content: "<strong>Questo fù un commento spam.</strong>"
+- id: 12643
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2007-07-09 18:48:00 +0200'
+  date_gmt: '2007-07-09 18:48:00 +0200'
+  content: Non sono sicuro che questo fosse un commento spam.
+- id: 12644
+  author: Miki
+  author_email: miki.news@email.it
+  author_url: http://www.mikinews.net
+  date: '2007-07-10 09:41:00 +0200'
+  date_gmt: '2007-07-10 09:41:00 +0200'
+  content: "Ciao Bl@ster,\r\n&egrave; un commento di spam quello di melina. Ne ricevo
+    circa 2 al giorno anche sul mio blog e akismet me li blocca puntualmente :P. Pu&ograve;
+    ingannare (anche io ci ero cascato all&#039;inizio) ma purtroppo &egrave; cos&igrave;
+    :-). Cmq gran bel blog. Anche la parlata con Patrizio niente male lol. Ciao"
+---
+<p>Cari lettori, quest'oggi è un gran giorno: vi parlo dalla mia box dual-boot :D .</p>
+<p>Ebbene, per chi voglia sapere come ho fatto, è stato molto semplice. Mi sono svegliato, stamattina, con un'idea che mi ronzava in testa, e mentre mangiavo il cornetto preparatomi dalla mia fantastica mamma, l'idea ha preso forma; poi mentre trangugiavo il frullato offertomi sempre da mia madre (dovrebbe mettere su una ditta di catering :) ), l'idea si è concretizzata in un "e se formattassi tutto, installassi windoze, e facessi le partizioni Linux con Partition Magic?"<a id="more"></a><a id="more-17"></a></p>
+<p>E così è stato. A mezzogiorno, dopo vari esperimenti andati male con PuppyOS per mettere la partizione NTFS "in mezzo al disco", ho dovuto formattare tutto, e partire dalle origini: adesso win è in /dev/hda1, cioè il settore inziale. Stavolta, essendoci una sola partizione, l'installer di XP non ha fatto macelli (anche se il maledetto partizionatore accetta solo partizioni fatte da LUI), e sono riuscito ad installare XP nella prima partizione. Appena partito XP, frenandomi dallo spaccare tutto per quella orrida musichetta (molto meglio il "turutù" di GDM! :D ) ho installato e avviato Partition Magic, che per comodità e per affezione, chiameremo Patrizio (cognome da celibe: Magico). Lì abbiamo avuto un dialogo virtuale che riprodurrò quì:</p>
+<blockquote><p>Bl@ster: Oh Patrì, che racconti?</p>
+<p>Patrizio: Niente di che, mi hai installato ora dopo tanto tempo... precisamente da quando ho mosso un braccio per sbaglio e ti ho ranzato via XP a Natale.</p>
+<p>Bl@ster: Non preoccuparti, basta che stavolta tu ti concentri e forse eviteremo casini.</p>
+<p>Patrizio: Basta che non mi fai fare un reisize, che io li odio...</p>
+<p>Bl@ster: No, ho creato la partizione wincozz su misura, apposta per te.</p>
+<p>Patrizio: Ti voglio bene, sei il mio migliore amico!</p>
+<p>Bl@ster: Dai su, adesso basta coi convenevoli, mi crei una ext3 e una swap, consecutive?</p>
+<p>Patrizio: OK, faccio subito... intanto se vuoi da bere serviti pure.</p>
+<p>Bl@ster: Rinco, stiamo a casa mia... comunque il thè freddo è nel frigo.</p>
+<p>Patrizio: Ah si, dammene un bicchiere, che sennò quà sfascio il drive.</p>
+<p>Bl@ster: Vabbè, vado...</p>
+<p>*va e torna con il thè*</p>
+<p>Patrizio: Ho finito, vedi un po' te poi...</p>
+<p>Bl@ster: Lascia tutto così, ci penserà il tuo collega del CD di Ubuntu a fare il resto!</p>
+<p>Patrizio: OK, io vado, chiama se serve qualcosa!</p>
+<p>Bl@ster: Grazie, ciao!</p></blockquote>
+<p>Finita la chiacchierata col partizionatore, ho messo il CD di Ubuntu e ho avviato l'installer. Con mia grande sorpresasi è installato tutto senza problemi, così ho aggiunto i repo che mi servivano, ho fatto l'aggiornamento di Ubuntu, ed eccomi quà: vivo e vegeto con il mio dual-boot. Ah, la vie...</p>

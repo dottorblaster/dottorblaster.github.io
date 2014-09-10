@@ -1,0 +1,52 @@
+---
+layout: post
+status: publish
+published: true
+title: Linux 3.0
+author:
+  display_name: Bl@ster
+  login: Blaster
+  email: dottorblaster@gmail.com
+  url: http://www.dottorblaster.it
+author_login: Blaster
+author_email: dottorblaster@gmail.com
+author_url: http://www.dottorblaster.it
+wordpress_id: 942
+wordpress_url: http://dottorblaster.it/?p=942
+date: '2011-07-22 23:46:57 +0200'
+date_gmt: '2011-07-22 22:46:57 +0200'
+categories:
+- Linux
+tags: []
+comments:
+- id: 16162
+  author: Alessandro Anghelone
+  author_email: alex.anghelone@gmail.com
+  author_url: ''
+  date: '2011-07-25 10:51:00 +0200'
+  date_gmt: '2011-07-25 10:51:00 +0200'
+  content: Confermo sulla modalità distractionless, già ho scritto alcuni post in
+    quella modalità, se si trovasse il modo di importare in quella modalità tutti
+    i pulsanti della toolbar (io ne ho alcuni personalizzati) sarebbe davvero perfetta.
+- id: 16163
+  author: evilripper
+  author_email: gigarimini@gmail.com
+  author_url: http://www.evilripper.net/
+  date: '2011-07-25 14:09:00 +0200'
+  date_gmt: '2011-07-25 14:09:00 +0200'
+  content: concordo distractionless mode è ottimo! :-) 
+- id: 16168
+  author: telperion
+  author_email: nikita_top@libero.it
+  author_url: ''
+  date: '2011-07-26 10:47:00 +0200'
+  date_gmt: '2011-07-26 10:47:00 +0200'
+  content: |
+    2 commenti sulla distractionless, la dicono lunga sull'interesse sul kernel 3.0.
+
+    Rido pensando agli smadonnamenti che avrebbe scritto LuNa, proprio non si riesce a mandare una dsl in the other side?
+---
+<p>Mi scuso se non mi sono fatto sentire per parecchio, ma ho avuto un sacco da fare nell'ultimo periodo e non ho trovato proprio tempo per aggiornare questo angolino di miei rantoli personali.</p>
+<p>Insomma, come <a href="http://www.oneopensource.it/22/07/2011/rilasciato-linux-3-0-si-pensa-gia-alla-release-3-1/">abbiamo scritto</a> stamattina tra mille peripezie in redazione, è arrivato <strong>Linux 3.0</strong>; ce ne parla come al solito KernelNewbies, rendendoci il changelog più a portata di umano, e personalmente penso che comunque tutto ciò sia bene e sia un evento epocale, anche perchè stiamo assistendo a tutta una rivoluzione nel sistema di release del kernel.</p>
+<p>Poi, postilla a parte, continua a venirmi in mente che "Succederà quando sarà rilasciato Linux 3"  era un intercalare molto usato una persona a me molto cara, che purtroppo non è più fra noi anche se ci guarda dal paradiso degli hacker.</p>
+<p>Ancora una nota: questo post l'ho scritto con la nuova modalità distractionless di WordPress. Una figata immensa, posso dirvelo.</p>

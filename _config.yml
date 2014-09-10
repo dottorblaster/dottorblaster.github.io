@@ -1,0 +1,23 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Grab The Blaster
+tagline:          di Alessio Biancalana
+paginate:         5
+baseurl:          '/'
+url:              'http://dottorblaster.it'
+permalink:        '/:title'
+author:
+  name:           Alessio Biancalana
+  url:            http://dottorblaster.it
+  email:          dottorblaster@gmail.com
+
+# Custom vars
+version:          0.0.7
+github:
+  repo:           https://github.com/poole/poole

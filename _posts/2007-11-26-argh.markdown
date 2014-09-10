@@ -1,0 +1,490 @@
+---
+layout: post
+status: publish
+published: true
+title: Argh!
+author:
+  display_name: Bl@ster
+  login: Blaster
+  email: dottorblaster@gmail.com
+  url: http://www.dottorblaster.it
+author_login: Blaster
+author_email: dottorblaster@gmail.com
+author_url: http://www.dottorblaster.it
+wordpress_id: 124
+wordpress_url: http://blaster.netsons.org/?p=124
+date: '2007-11-26 11:51:01 +0100'
+date_gmt: '2007-11-26 09:51:01 +0100'
+categories: []
+tags:
+- My Life
+comments:
+- id: 1231
+  author: Sleepingcreep
+  author_email: sleepingcreep@email.it
+  author_url: http://www.sleepingcreep.netsons.org
+  date: '2007-11-26 12:22:47 +0100'
+  date_gmt: '2007-11-26 10:22:47 +0100'
+  content: Ah, la varicella. Io l'ho avuta tipo a 10 anni e la attaccai a mio padre.
+    Ho delle foto. Sembravo avere una pizza margherita sulla faccia.
+- id: 1232
+  author: Kobrabyte
+  author_email: info@kobrabyte.org
+  author_url: http://www.kobrabyte.org
+  date: '2007-11-26 15:08:34 +0100'
+  date_gmt: '2007-11-26 13:08:34 +0100'
+  content: Eh blaster in occasione di questo, ti consiglio una ode di Leopardi All'amica
+    risanata. Scherzo se te la leggi ti perdiamo definitivamente... Comunque ho spostato
+    il mio blog temporaneo su www.kobrabyte.blogspot.com, se mi puoi inserire anche
+    questo nel Planet te ne sarei grato. CIao
+- id: 1233
+  author: Kobrabyte
+  author_email: info@kobrabyte.org
+  author_url: http://www.kobrabyte.org
+  date: '2007-11-26 15:09:02 +0100'
+  date_gmt: '2007-11-26 13:09:02 +0100'
+  content: No non &egrave; di Leopardi &egrave; di Foscolo, agrrr... che errore
+- id: 1234
+  author: edo947
+  author_email: scikke@yahoo.it
+  author_url: ''
+  date: '2007-11-26 15:25:07 +0100'
+  date_gmt: '2007-11-26 13:25:07 +0100'
+  content: dai che stai a casa! :D io c'&egrave; l'ho avuta da piccolo a pasqua e
+    mi dovevano dare i frullati perch&egrave; avevo le &quot;bolle&quot; anche dentro
+    :(
+- id: 1235
+  author: Piplos
+  author_email: piplos@piplos.org
+  author_url: http://www.piplos
+  date: '2007-11-26 15:55:41 +0100'
+  date_gmt: '2007-11-26 13:55:41 +0100'
+  content: "Ma &egrave; il dottor House! Mitico! :D\r\n\r\nMa... COSA?? La varicella???
+    Argh!! Ho ancora un pessimo ricordo di quando me la presi da piccolo. Terribile."
+- id: 1236
+  author: davide
+  author_email: lists4davide@gmail.com
+  author_url: ''
+  date: '2007-11-26 16:01:31 +0100'
+  date_gmt: '2007-11-26 14:01:31 +0100'
+  content: "non toccarti! (intendo le pustole!)\r\naltrimenti ti rimarranno per sempre!"
+- id: 1237
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://blaster.netsons.org
+  date: '2007-11-26 16:58:05 +0100'
+  date_gmt: '2007-11-26 14:58:05 +0100'
+  content: "@Tutti: Grazie dei commenti :)\r\n@davide: per adesso il problema pi&ugrave;
+    grande la maledetta mucosa dell'occhio sinistro, mi fa male da morire arghhhh!!!\r\n@edo947:
+    Anche dentro? Io ho qualcosa, ma non credo di dover prendere i frullati :D\r\n@Kobrabyte:
+    Errare humanum est.\r\n@Piplos: Ovvio, chi mettere se non il mitico House?\r\n@SleepingCreep:
+    Io pi&ugrave; che altro sembro un vulcano."
+- id: 1238
+  author: Gionark
+  author_email: admin@gionark.it
+  author_url: http://www.gionark.it
+  date: '2007-11-26 18:07:33 +0100'
+  date_gmt: '2007-11-26 16:07:33 +0100'
+  content: ":lol: io non l'ho mai presa!!!! :lol:\r\nbeh ... vedila dal lato positivo:
+    non vai a scuola, puoi stare a letto, puoi stare al PC ... vabb&egrave; lo so
+    che non &egrave; poi il massimo ma ... Ok la pianto di dire cretinate! :D \r\nBuona
+    guarigione 8)"
+- id: 1239
+  author: Luca
+  author_email: luca@tuttoeniente.net
+  author_url: http://lublog.tuttoeniente.net/
+  date: '2007-11-26 19:02:23 +0100'
+  date_gmt: '2007-11-26 17:02:23 +0100'
+  content: "Tanti auguri di pronta guarigione!\r\n\r\nComunque fortuna che è solo
+    un vairus, se avessi preso una scossa ti sarebbe toccato il clistere di acido
+    solforico e chiodi!\r\nhttp://it.youtube.com/watch?v=gZD8sp_Xs08"
+- id: 1242
+  author: lele85
+  author_email: emanuele_rampichini@yahoo.it
+  author_url: http://italyanker.wordpress.com
+  date: '2007-11-26 23:40:10 +0100'
+  date_gmt: '2007-11-26 21:40:10 +0100'
+  content: Riprenditi presto! ;-)
+- id: 1243
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://blaster.netsons.org
+  date: '2007-11-27 13:13:17 +0100'
+  date_gmt: '2007-11-27 11:13:17 +0100'
+  content: "@Gionark: Adesso che il dolore all'occhio se n'&egrave; andato sono molto
+    pi&ugrave; contento, hai ragione tu :D\r\n@Luca: Le ho gi&agrave; viste tutte
+    ieri :lol:\r\n@lele85: Speriamo... anche se non troppo presto :)"
+- id: 1244
+  author: Darkarix
+  author_email: costailmigliore@email.com
+  author_url: http://linuxrevenge.wordpress.com/
+  date: '2007-11-27 16:37:52 +0100'
+  date_gmt: '2007-11-27 14:37:52 +0100'
+  content: "Ti auguro una pronta guarigione. So bene cosa significa avere la varicella
+    (l'ho avuta a 10 anni proprio sotto Natale), ma come ha detto davide&egrave; cerca
+    di non grattarti nonostante il desiderio, perch&eacute; se no poi diventi uno
+    scolapasta. \r\nCerto potei anche dare un pacman -S antivirus, LOL!\r\n\r\nCiao,
+    riprenditi!\r\n\r\nP.S. Azzeccata la foto del dottor Casa. ;))"
+- id: 1245
+  author: Luca90$
+  author_email: savanafatta@hotmail.it
+  author_url: ''
+  date: '2007-11-27 19:26:12 +0100'
+  date_gmt: '2007-11-27 17:26:12 +0100'
+  content: "Grandeeeeeeee...il post dedicato alla varicella ci mancava sulla tua home...poi
+    con il dottor house...che ridere.\r\nCmq auguri di pronta guarigione...aspettiamo
+    il tuo ritorno in classe!!!!!!\r\nCiauu.\r\nP.S. Ti invidio,il tuo solo pensiero
+    &egrave; dormire e stare al PC e il mio quello di studiare per la settimana entrante...ARGHHHHHH"
+- id: 1246
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://blaster.netsons.org
+  date: '2007-11-27 19:47:14 +0100'
+  date_gmt: '2007-11-27 17:47:14 +0100'
+  content: "@Darkarix: ho dato un sudo mv /home/blaster/varicella /dev/null :D\r\n\r\n@Luca90$:
+    Tutti tranne Ale che si &egrave; fregato il mio posto in meno di un secondo :D\r\nComunque
+    anche io ho i miei problemi, fidati: anche se li allevio guardando film."
+- id: 1248
+  author: stambec92
+  author_email: stambec92@hotmail.it
+  author_url: http://stambec92.wordpress.com/
+  date: '2007-11-27 22:30:56 +0100'
+  date_gmt: '2007-11-27 20:30:56 +0100'
+  content: 'Prima ti vengono queste malattie e meglio &egrave;: meglio ora che da
+    grande, sarebbe un po'' pi&ugrave; bastardella -_&middot;'
+- id: 1249
+  author: nicola greco
+  author_email: notsecurity@gmail.com
+  author_url: http://notsecurity.com
+  date: '2007-11-27 22:32:57 +0100'
+  date_gmt: '2007-11-27 20:32:57 +0100'
+  content: sudo apt-get remove varicella, e ricoprda di levare tutte le dipendenze
+    innecessarie, e tutte le cose che trovi in piu' disistallandolo, perche' se no
+    ti occupano spazio, con un bell sudo apt-get autoclean, e poi se vuoi aggiungi
+    sudo apt-get update non si sa mai
+- id: 1250
+  author: Jak - BeeSeek Blogs admin
+  author_email: supermarco88@gmail.com
+  author_url: http://blog.beeseek.org
+  date: '2007-11-27 23:29:14 +0100'
+  date_gmt: '2007-11-27 21:29:14 +0100'
+  content: "Beh speriamo che tu ti riprenda presto!\r\n\r\n&Egrave; un blog interessante
+    e sarebbe un peccato interrompesse di essere pubblicato! :)"
+- id: 1251
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://blaster.netsons.org
+  date: '2007-11-28 13:00:50 +0100'
+  date_gmt: '2007-11-28 11:00:50 +0100'
+  content: "@Jak: Ma <strong>scherzi</strong>? Ho gi&agrave; nuova roba in programma.
+    Mi chiamano lo Stakanov del mondo informatico :D\r\n@stambec92: E salto una settimana
+    di compiti in classe :)\r\n@nicola greco: deborphan?"
+- id: 1252
+  author: nicola greco
+  author_email: notsecurity@gmail.com
+  author_url: http://notsecurity.com
+  date: '2007-11-28 18:04:48 +0100'
+  date_gmt: '2007-11-28 16:04:48 +0100'
+  content: deborphan ? che'?
+- id: 1253
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://blaster.netsons.org
+  date: '2007-11-28 18:10:19 +0100'
+  date_gmt: '2007-11-28 16:10:19 +0100'
+  content: "nicola, deborphan: strumento utile per tenere pulita una debian.\r\nhttp://www.ls-lug.org/wiki/index.php/Deborphan"
+- id: 1255
+  author: ubu4ever
+  author_email: morarossa@gmail.com
+  author_url: http://ubu4ever.netsons.org
+  date: '2007-11-29 19:48:03 +0100'
+  date_gmt: '2007-11-29 17:48:03 +0100'
+  content: Io la avr&ograve; presa a 7 anni... -.-
+- id: 1256
+  author: phoenix
+  author_email: a@a.it
+  author_url: http://vitedigitali.blogspot.com
+  date: '2007-11-29 20:45:59 +0100'
+  date_gmt: '2007-11-29 18:45:59 +0100'
+  content: "se chiami Dottor House ti passa in 5 secondi...\r\nvuoi il suo numero?&nbsp;
+    :-)"
+- id: 1257
+  author: Falling
+  author_email: fallingautumnlinks@alice.it
+  author_url: http://fallingautumnlinks.wordpress.org
+  date: '2007-11-29 23:38:13 +0100'
+  date_gmt: '2007-11-29 21:38:13 +0100'
+  content: penso che l'unica soluzione sia di farti guarire da Norton...certo,dopo
+    aver pagato 99&euro; di licenza...mah
+- id: 1258
+  author: telperion
+  author_email: nikita_top@libero.it
+  author_url: ''
+  date: '2007-11-30 01:36:27 +0100'
+  date_gmt: '2007-11-29 23:36:27 +0100'
+  content: "Rigrazia che la diagnosi l'ha fatta tua madre.\r\nSe la faceva House stavi
+    una settimana in ospedale ti prelevava tessuti del cervello con trapanate varie,
+    midolli ossei vari, ti rivoltava come un calziono testandoti con 12 terapie farmacologiche
+    a caso, e quando saresti stato prossimo al trapasso ti avrebbe detto:\r\n&quot;tranquillo
+    &egrave; una semplice varicella&quot;\r\ne ti avrebbe messo in lista per il trapianto
+    di reni e polmoni irrimediabilmente compromessi nel formulare la diagnosi.\r\nPer&ograve;
+    alla gente piace cosi. Mah.\r\n:)"
+- id: 1259
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://blaster.netsons.org
+  date: '2007-11-30 17:41:49 +0100'
+  date_gmt: '2007-11-30 15:41:49 +0100'
+  content: "@Falling: NNNOOO!!! :D\r\n@telperion: Si, forse hai ragione :)\r\n@ubu4ever:
+    Cos'&egrave;, te la tiri perch&egrave; l'hai presa prima di me? :lol:"
+- id: 1263
+  author: tLp
+  author_email: vale.h@hotmail.it
+  author_url: http://www.pdptlp.wordpress.om
+  date: '2007-12-02 13:23:21 +0100'
+  date_gmt: '2007-12-02 11:23:21 +0100'
+  content: 'Dai che ti bossi scuola!!! :lol:&nbsp; :lol:'
+- id: 1264
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://blaster.netsons.org
+  date: '2007-12-02 14:08:29 +0100'
+  date_gmt: '2007-12-02 12:08:29 +0100'
+  content: "@tLp: &Egrave; quello il bello :lol:"
+- id: 13722
+  author: Sleepingcreep
+  author_email: sleepingcreep@email.it
+  author_url: http://www.sleepingcreep.netsons.org
+  date: '2007-11-26 10:22:00 +0100'
+  date_gmt: '2007-11-26 10:22:00 +0100'
+  content: Ah, la varicella. Io l'ho avuta tipo a 10 anni e la attaccai a mio padre.
+    Ho delle foto. Sembravo avere una pizza margherita sulla faccia.
+- id: 13723
+  author: Kobrabyte
+  author_email: info@kobrabyte.org
+  author_url: http://www.kobrabyte.org
+  date: '2007-11-26 13:08:00 +0100'
+  date_gmt: '2007-11-26 13:08:00 +0100'
+  content: Eh blaster in occasione di questo, ti consiglio una ode di Leopardi All'amica
+    risanata. Scherzo se te la leggi ti perdiamo definitivamente... Comunque ho spostato
+    il mio blog temporaneo su www.kobrabyte.blogspot.com, se mi puoi inserire anche
+    questo nel Planet te ne sarei grato. CIao
+- id: 13724
+  author: Kobrabyte
+  author_email: info@kobrabyte.org
+  author_url: http://www.kobrabyte.org
+  date: '2007-11-26 13:09:00 +0100'
+  date_gmt: '2007-11-26 13:09:00 +0100'
+  content: No non &egrave; di Leopardi &egrave; di Foscolo, agrrr... che errore
+- id: 13725
+  author: edo947
+  author_email: scikke@yahoo.it
+  author_url: ''
+  date: '2007-11-26 13:25:00 +0100'
+  date_gmt: '2007-11-26 13:25:00 +0100'
+  content: dai che stai a casa! :D io c'&egrave; l'ho avuta da piccolo a pasqua e
+    mi dovevano dare i frullati perch&egrave; avevo le &quot;bolle&quot; anche dentro
+    :(
+- id: 13726
+  author: Piplos
+  author_email: piplos@piplos.org
+  author_url: http://www.piplos
+  date: '2007-11-26 13:55:00 +0100'
+  date_gmt: '2007-11-26 13:55:00 +0100'
+  content: "Ma &egrave; il dottor House! Mitico! :D\r\n\r\nMa... COSA?? La varicella???
+    Argh!! Ho ancora un pessimo ricordo di quando me la presi da piccolo. Terribile."
+- id: 13727
+  author: ''
+  author_email: lists4davide@gmail.com
+  author_url: ''
+  date: '2007-11-26 14:01:00 +0100'
+  date_gmt: '2007-11-26 14:01:00 +0100'
+  content: "non toccarti! (intendo le pustole!)\r\naltrimenti ti rimarranno per sempre!"
+- id: 13728
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2007-11-26 14:58:00 +0100'
+  date_gmt: '2007-11-26 14:58:00 +0100'
+  content: "@Tutti: Grazie dei commenti :)\r\n@davide: per adesso il problema pi&ugrave;
+    grande la maledetta mucosa dell'occhio sinistro, mi fa male da morire arghhhh!!!\r\n@edo947:
+    Anche dentro? Io ho qualcosa, ma non credo di dover prendere i frullati :D\r\n@Kobrabyte:
+    Errare humanum est.\r\n@Piplos: Ovvio, chi mettere se non il mitico House?\r\n@SleepingCreep:
+    Io pi&ugrave; che altro sembro un vulcano."
+- id: 13729
+  author: Gionark
+  author_email: admin@gionark.it
+  author_url: http://www.gionark.it
+  date: '2007-11-26 16:07:00 +0100'
+  date_gmt: '2007-11-26 16:07:00 +0100'
+  content: ":lol: io non l'ho mai presa!!!! :lol:\r\nbeh ... vedila dal lato positivo:
+    non vai a scuola, puoi stare a letto, puoi stare al PC ... vabb&egrave; lo so
+    che non &egrave; poi il massimo ma ... Ok la pianto di dire cretinate! :D \r\nBuona
+    guarigione 8)"
+- id: 13730
+  author: Luca
+  author_email: luca@tuttoeniente.net
+  author_url: http://lublog.tuttoeniente.net/
+  date: '2007-11-26 17:02:00 +0100'
+  date_gmt: '2007-11-26 17:02:00 +0100'
+  content: "Tanti auguri di pronta guarigione!\r\n\r\nComunque fortuna che è solo
+    un vairus, se avessi preso una scossa ti sarebbe toccato il clistere di acido
+    solforico e chiodi!\r\nhttp://it.youtube.com/watch?v=gZD8sp_Xs08"
+- id: 13731
+  author: lele85
+  author_email: emanuele_rampichini@yahoo.it
+  author_url: http://italyanker.wordpress.com
+  date: '2007-11-26 21:40:00 +0100'
+  date_gmt: '2007-11-26 21:40:00 +0100'
+  content: Riprenditi presto! ;-)
+- id: 13732
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2007-11-27 11:13:00 +0100'
+  date_gmt: '2007-11-27 11:13:00 +0100'
+  content: "@Gionark: Adesso che il dolore all'occhio se n'&egrave; andato sono molto
+    pi&ugrave; contento, hai ragione tu :D\r\n@Luca: Le ho gi&agrave; viste tutte
+    ieri :lol:\r\n@lele85: Speriamo... anche se non troppo presto :)"
+- id: 13733
+  author: Darkarix
+  author_email: costailmigliore@email.com
+  author_url: http://linuxrevenge.wordpress.com/
+  date: '2007-11-27 14:37:00 +0100'
+  date_gmt: '2007-11-27 14:37:00 +0100'
+  content: "Ti auguro una pronta guarigione. So bene cosa significa avere la varicella
+    (l'ho avuta a 10 anni proprio sotto Natale), ma come ha detto davide&egrave; cerca
+    di non grattarti nonostante il desiderio, perch&eacute; se no poi diventi uno
+    scolapasta. \r\nCerto potei anche dare un pacman -S antivirus, LOL!\r\n\r\nCiao,
+    riprenditi!\r\n\r\nP.S. Azzeccata la foto del dottor Casa. ;))"
+- id: 13734
+  author: Luca90$
+  author_email: savanafatta@hotmail.it
+  author_url: ''
+  date: '2007-11-27 17:26:00 +0100'
+  date_gmt: '2007-11-27 17:26:00 +0100'
+  content: "Grandeeeeeeee...il post dedicato alla varicella ci mancava sulla tua home...poi
+    con il dottor house...che ridere.\r\nCmq auguri di pronta guarigione...aspettiamo
+    il tuo ritorno in classe!!!!!!\r\nCiauu.\r\nP.S. Ti invidio,il tuo solo pensiero
+    &egrave; dormire e stare al PC e il mio quello di studiare per la settimana entrante...ARGHHHHHH"
+- id: 13735
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2007-11-27 17:47:00 +0100'
+  date_gmt: '2007-11-27 17:47:00 +0100'
+  content: "@Darkarix: ho dato un sudo mv /home/blaster/varicella /dev/null :D\r\n\r\n@Luca90$:
+    Tutti tranne Ale che si &egrave; fregato il mio posto in meno di un secondo :D\r\nComunque
+    anche io ho i miei problemi, fidati: anche se li allevio guardando film."
+- id: 13736
+  author: stambec92
+  author_email: stambec92@hotmail.it
+  author_url: http://stambec92.wordpress.com/
+  date: '2007-11-27 20:30:00 +0100'
+  date_gmt: '2007-11-27 20:30:00 +0100'
+  content: 'Prima ti vengono queste malattie e meglio &egrave;: meglio ora che da
+    grande, sarebbe un po'' pi&ugrave; bastardella -_&middot;'
+- id: 13737
+  author: nicola greco
+  author_email: notsecurity@gmail.com
+  author_url: http://notsecurity.com
+  date: '2007-11-27 20:32:00 +0100'
+  date_gmt: '2007-11-27 20:32:00 +0100'
+  content: sudo apt-get remove varicella, e ricoprda di levare tutte le dipendenze
+    innecessarie, e tutte le cose che trovi in piu' disistallandolo, perche' se no
+    ti occupano spazio, con un bell sudo apt-get autoclean, e poi se vuoi aggiungi
+    sudo apt-get update non si sa mai
+- id: 13738
+  author: Jak - BeeSeek Blogs admin
+  author_email: supermarco88@gmail.com
+  author_url: http://blog.beeseek.org
+  date: '2007-11-27 21:29:00 +0100'
+  date_gmt: '2007-11-27 21:29:00 +0100'
+  content: "Beh speriamo che tu ti riprenda presto!\r\n\r\n&Egrave; un blog interessante
+    e sarebbe un peccato interrompesse di essere pubblicato! :)"
+- id: 13739
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2007-11-28 11:00:00 +0100'
+  date_gmt: '2007-11-28 11:00:00 +0100'
+  content: "@Jak: Ma <strong>scherzi</strong>? Ho gi&agrave; nuova roba in programma.
+    Mi chiamano lo Stakanov del mondo informatico :D\r\n@stambec92: E salto una settimana
+    di compiti in classe :)\r\n@nicola greco: deborphan?"
+- id: 13740
+  author: nicola greco
+  author_email: notsecurity@gmail.com
+  author_url: http://notsecurity.com
+  date: '2007-11-28 16:04:00 +0100'
+  date_gmt: '2007-11-28 16:04:00 +0100'
+  content: deborphan ? che'?
+- id: 13741
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2007-11-28 16:10:00 +0100'
+  date_gmt: '2007-11-28 16:10:00 +0100'
+  content: "nicola, deborphan: strumento utile per tenere pulita una debian.\r\nhttp://www.ls-lug.org/wiki/index.php/Deborphan"
+- id: 13742
+  author: ubu4ever
+  author_email: morarossa@gmail.com
+  author_url: http://ubu4ever.netsons.org
+  date: '2007-11-29 17:48:00 +0100'
+  date_gmt: '2007-11-29 17:48:00 +0100'
+  content: Io la avr&ograve; presa a 7 anni... -.-
+- id: 13743
+  author: phoenix
+  author_email: a@a.it
+  author_url: http://vitedigitali.blogspot.com
+  date: '2007-11-29 18:45:00 +0100'
+  date_gmt: '2007-11-29 18:45:00 +0100'
+  content: "se chiami Dottor House ti passa in 5 secondi...\r\nvuoi il suo numero?&nbsp;
+    :-)"
+- id: 13744
+  author: Falling
+  author_email: fallingautumnlinks@alice.it
+  author_url: http://fallingautumnlinks.wordpress.org
+  date: '2007-11-29 21:38:00 +0100'
+  date_gmt: '2007-11-29 21:38:00 +0100'
+  content: penso che l'unica soluzione sia di farti guarire da Norton...certo,dopo
+    aver pagato 99&euro; di licenza...mah
+- id: 13745
+  author: telperion
+  author_email: nikita_top@libero.it
+  author_url: ''
+  date: '2007-11-29 23:36:00 +0100'
+  date_gmt: '2007-11-29 23:36:00 +0100'
+  content: "Rigrazia che la diagnosi l'ha fatta tua madre.\r\nSe la faceva House stavi
+    una settimana in ospedale ti prelevava tessuti del cervello con trapanate varie,
+    midolli ossei vari, ti rivoltava come un calziono testandoti con 12 terapie farmacologiche
+    a caso, e quando saresti stato prossimo al trapasso ti avrebbe detto:\r\n&quot;tranquillo
+    &egrave; una semplice varicella&quot;\r\ne ti avrebbe messo in lista per il trapianto
+    di reni e polmoni irrimediabilmente compromessi nel formulare la diagnosi.\r\nPer&ograve;
+    alla gente piace cosi. Mah.\r\n:)"
+- id: 13746
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2007-11-30 15:41:00 +0100'
+  date_gmt: '2007-11-30 15:41:00 +0100'
+  content: "@Falling: NNNOOO!!! :D\r\n@telperion: Si, forse hai ragione :)\r\n@ubu4ever:
+    Cos'&egrave;, te la tiri perch&egrave; l'hai presa prima di me? :lol:"
+- id: 13747
+  author: tLp
+  author_email: vale.h@hotmail.it
+  author_url: http://www.pdptlp.wordpress.om
+  date: '2007-12-02 11:23:00 +0100'
+  date_gmt: '2007-12-02 11:23:00 +0100'
+  content: 'Dai che ti bossi scuola!!! :lol:&nbsp; :lol:'
+- id: 13748
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2007-12-02 12:08:00 +0100'
+  date_gmt: '2007-12-02 12:08:00 +0100'
+  content: "@tLp: &Egrave; quello il bello :lol:"
+---
+<p>E così, ieri sera ho scoperto di avere una delle malattie più fastidiose al mondo: la <strong><a href="http://it.wikipedia.org/wiki/Varicella">varicella</a></strong>.</p>
+<p align="center"> <img src="http://img409.imageshack.us/img409/6681/lauriehughxl9.jpg" /><em><br />
+È un vairus!!!</em></p>
+<p align="left">La diagnosta è stata la mamma, grazie ad un miracoloso libro comprato qualche decennio fa (in occasione della mia nascita). In questo momento ho un occhio dolorante a causa dell'attacco della malattia alle mucose, e sono un vulcano in eruzione (cutanea); la mia bellezza deturpata così... che orribile pensiero!</p>

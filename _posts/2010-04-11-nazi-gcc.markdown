@@ -1,0 +1,153 @@
+---
+layout: post
+status: publish
+published: true
+title: Nazi GCC.
+author:
+  display_name: Bl@ster
+  login: Blaster
+  email: dottorblaster@gmail.com
+  url: http://www.dottorblaster.it
+author_login: Blaster
+author_email: dottorblaster@gmail.com
+author_url: http://www.dottorblaster.it
+wordpress_id: 643
+wordpress_url: http://dottorblaster.it/?p=643
+date: '2010-04-11 15:12:30 +0200'
+date_gmt: '2010-04-11 14:12:30 +0200'
+categories:
+- Linux
+tags:
+- Arch
+comments:
+- id: 10087
+  author: evilsocket
+  author_email: evilsocket@gmail.com
+  author_url: http://www.hybris-lang.org/
+  date: '2010-04-11 14:15:28 +0200'
+  date_gmt: '2010-04-11 19:15:28 +0200'
+  content: 'Trovato su <a href="http://bbs.archlinux.org" rel="nofollow">bbs.archlinux.org</a>
+    :<br><br>"You don&#39;t have to switch locales, just need to enable support for
+    them.<br>You just need to unmask (remove the #) the following locales in /etc/locale.gen.<br><br>de_DE.UTF-8
+    UTF-8<br>de_DE ISO-8859-1<br>de_DE@euro ISO-8859-15<br><br>Then run "locale-gen"
+    and try to recompile GCC."'
+- id: 10088
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2010-04-11 14:19:50 +0200'
+  date_gmt: '2010-04-11 19:19:50 +0200'
+  content: Si si per carità, non è un problema, semplicemente mi chiedevo come mai
+    dovessi avere il de_DE abilitato, dato che la compilazione di solito viene fatta
+    a prescindere dai locali. Mah, misteri :D
+- id: 10089
+  author: evilsocket
+  author_email: evilsocket@gmail.com
+  author_url: http://www.hybris-lang.org/
+  date: '2010-04-11 14:21:32 +0200'
+  date_gmt: '2010-04-11 19:21:32 +0200'
+  content: Ehehe chissà chi l&#39;ha fatto lo script di abs e soprattutto COME l&#39;ha
+    fatto XD
+- id: 10090
+  author: M0rF3uS
+  author_email: morfeus@ilportalinux.it
+  author_url: http://www.ilportalinux.it
+  date: '2010-04-11 14:24:26 +0200'
+  date_gmt: '2010-04-11 19:24:26 +0200'
+  content: Heil mein Fuhrer!!
+- id: 10091
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2010-04-11 14:24:12 +0200'
+  date_gmt: '2010-04-11 19:24:12 +0200'
+  content: Mi hai messo curiosità, effettivamente sono andato a controllare e ho scoperto
+    questa porzione di codice:<br>  if ! locale -a | grep ^de_DE &gt; /dev/null; then<br>    echo
+    "You need the de_DE locale to build gcc."<br>    return 1<br>  fi<br>Cioè, ma
+    è pazzesco :D:D
+- id: 10092
+  author: evilsocket
+  author_email: evilsocket@gmail.com
+  author_url: http://www.hybris-lang.org/
+  date: '2010-04-11 14:25:33 +0200'
+  date_gmt: '2010-04-11 19:25:33 +0200'
+  content: Asd sarà un fissato della razza ariana che ritiene che il privilegio di
+    usare gcc sia riservato solo ai veri figli degli Dei ! XD<br>Lol ce n&#39;è di
+    gente scema in giro :D
+- id: 10094
+  author: itbdc
+  author_email: roberto@gdx.de
+  author_url: ''
+  date: '2010-04-11 16:40:59 +0200'
+  date_gmt: '2010-04-11 21:40:59 +0200'
+  content: che font è quello del tuo terminale?<br><br>ps:dovresti creare un font
+    apposta per quando evidenzi qualcosa, il tuo stile è ganzissimo XD
+- id: 10095
+  author: weseven
+  author_email: None
+  author_url: http://weseven.myopenid.com/
+  date: '2010-04-11 16:43:29 +0200'
+  date_gmt: '2010-04-11 21:43:29 +0200'
+  content: sigh, basterebbero 5 secondi di google per evitare certe sparate.<br><a
+    href="http://gcc.gnu.org/onlinedocs/libstdc++/manual/setup.html" rel="nofollow">http://gcc.gnu.org/onlinedocs/libstdc++/manual/...</a>
+- id: 10096
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2010-04-11 17:13:31 +0200'
+  date_gmt: '2010-04-11 22:13:31 +0200'
+  content: Uso Monaco, le scritte stupide le faccio orgogliosamente a mano con la
+    matita di GIMP :P
+- id: 10097
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2010-04-11 17:11:48 +0200'
+  date_gmt: '2010-04-11 22:11:48 +0200'
+  content: Due cose, innanzi tutto io ho compilato GCC su Gentoo con abilitato solo
+    it_IT quindi boh; secondo, grazie della spiegazione :)
+- id: 10098
+  author: weseven
+  author_email: weseven@gmail.com
+  author_url: http://weseven.netsons.org/
+  date: '2010-04-11 17:36:23 +0200'
+  date_gmt: '2010-04-11 22:36:23 +0200'
+  content: 'stessa pagina:<br>"Note however that the sanity checks involving the de_DE
+    locale are skipped when an explicit --enable-clocale=gnu configure option is used:
+    only the basic checks are carried out, defending against misconfigurations."'
+- id: 10099
+  author: telperion
+  author_email: nikita_top@libero.it
+  author_url: ''
+  date: '2010-04-11 21:54:23 +0200'
+  date_gmt: '2010-04-12 02:54:23 +0200'
+  content: Ach!!!  Tu uzare Münich come karattere et poi tu lamenta che fuole De_de
+    !!???<br><br>Tu fieren alleaten, inztalla zubito De_de<br><br><a href="http://tinyurl.com/y76m5gu"
+    rel="nofollow">http://tinyurl.com/y76m5gu</a><br><br>LOL
+- id: 10100
+  author: vikkio88
+  author_email: vikkio88@yahoo.it
+  author_url: http://vikkio88.altervista.org
+  date: '2010-04-12 10:05:20 +0200'
+  date_gmt: '2010-04-12 15:05:20 +0200'
+  content: muahuahua
+- id: 10102
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2010-04-12 14:58:41 +0200'
+  date_gmt: '2010-04-12 19:58:41 +0200'
+  content: hahahahahaha :D
+- id: 10104
+  author: TheKaneB
+  author_email: thekaneb@gmail.com
+  author_url: http://www.oscene.net/
+  date: '2010-04-12 23:27:10 +0200'
+  date_gmt: '2010-04-13 04:27:10 +0200'
+  content: Achtung! GCC compilazionen nicht funzionen, ja! Tu afere usato Linux, tu
+    jude comunisten ja!
+---
+<p>Questa è una storia vera. Oggi provavo a fare delle cose belle con <strong>GCC</strong>, soprattutto aggiornarne delle componenti tramite ABS sulla mia Arch Linux... quando improvvisamente mi sono trovato davanti un <em>messaggio inquietante</em>.</p>
+<p style="text-align: center;"><img class="alignnone" src="http://i39.tinypic.com/iwojgk.jpg" alt="" width="499" height="278" /></p>
+<p style="text-align: left;">Di fronte a questo avviso perentorio, il build s'è bloccato ed è tornato piangente. GCC ci <strong>ghettizzerà</strong>? :D</p>
+<p style="text-align: left;">Comunque, qualcuno me la deve spiegare 'sta cosa. :)</p>

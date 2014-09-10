@@ -1,0 +1,35 @@
+---
+layout: post
+status: publish
+published: true
+title: Back online
+author:
+  display_name: Bl@ster
+  login: Blaster
+  email: dottorblaster@gmail.com
+  url: http://www.dottorblaster.it
+author_login: Blaster
+author_email: dottorblaster@gmail.com
+author_url: http://www.dottorblaster.it
+wordpress_id: 1422
+wordpress_url: http://dottorblaster.it/?p=1422
+date: '2012-07-25 16:57:49 +0200'
+date_gmt: '2012-07-25 15:57:49 +0200'
+categories:
+- Web
+tags:
+- Server
+- server
+- offline
+- online
+comments: []
+---
+<p>Nella giornata di ieri il datacenter che ospita questo blog è stato colpito da non so cosa, probabilmente la <strong>peste ner(d)a</strong>, e quindi sono stato offline per un bel po'. A seguito, una serie di cose che ho pensato, e che continuo a pensare mentre scrivo questo post per ragguagliarvi del fatto che, come potete constatare, sono tornato:</p>
+<ul>
+<li>Spero che Google non mi penalizzi le <strong>SERP</strong> per 24 ore e passa filate offline;</li>
+<li>Spero di riuscire a riportare tutto come era prima;</li>
+<li>Per ripristinare gli ultimi post mi sono fatto un <strong>buciodec**o</strong> così;</li>
+<li>Complimenti a <strong>HostingPerTe</strong> che mi ha risolto il problema in così poco tempo andando a ripescare un <strong>backup non fatto da me</strong> senza dirmi di arrangiarmi.</li>
+</ul>
+<p>E cose simili. Ovviamente complimentoni anche al sottoscritto che, come detto sopra, ha lavorato in maniera non indifferente greppando la cache di <strong>Google</strong> per riportare tutti i post mancanti al loro nido. Attualmente sto ripristinando le modifiche fatte al tema negli ultimi giorni, il resto è tutto nell'ovile, bene o male.</p>
+<p>Ad maiora.</p>

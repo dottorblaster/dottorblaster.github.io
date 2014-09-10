@@ -1,0 +1,32 @@
+---
+layout: post
+status: publish
+published: true
+title: Airone
+author:
+  display_name: Bl@ster
+  login: Blaster
+  email: dottorblaster@gmail.com
+  url: http://www.dottorblaster.it
+author_login: Blaster
+author_email: dottorblaster@gmail.com
+author_url: http://www.dottorblaster.it
+wordpress_id: 141
+wordpress_url: http://blaster.netsons.org/?p=141
+date: '2008-01-01 14:40:47 +0100'
+date_gmt: '2008-01-01 12:40:47 +0100'
+categories:
+- Linux
+- Tech
+tags:
+- Ubuntu
+- Informatica
+- My Life
+comments: []
+---
+<p>Ebbene, questa mattina, svegliatomi molto tardi, avevo bisogno di uno stimolo per proseguire la seconda parte delle vacanze in pieno clima di testing, così ho pensato... cosa c'è di meglio di una Ubuntu aggiornata al ramo Unstable?</p>
+<p>Dunque ho preso la mia Ubuntu Gutsy installata qualche giorno fa per divertimento e...</p>
+<p align="center"><img src="http://img34.picoodle.com/img/img34/5/1/1/f_Schermatablm_0999f3c.png" /></p>
+<p align="left">&nbsp;</p>
+<p align="left">Modificando il sources.list a dovere, ho poi dato un bel dist-upgrade per vedere che aria tira lassù, dove volano gli aironi.</p>
+<p align="left">Stay tuned! Vi informerò quando avrò finito di upgradare e avrò fatto i primi test :D</p>

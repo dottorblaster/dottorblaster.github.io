@@ -1,0 +1,245 @@
+---
+layout: post
+status: publish
+published: true
+title: Il volo dell'Airone
+author:
+  display_name: Bl@ster
+  login: Blaster
+  email: dottorblaster@gmail.com
+  url: http://www.dottorblaster.it
+author_login: Blaster
+author_email: dottorblaster@gmail.com
+author_url: http://www.dottorblaster.it
+wordpress_id: 142
+wordpress_url: http://blaster.netsons.org/?p=142
+date: '2008-01-01 16:23:46 +0100'
+date_gmt: '2008-01-01 14:23:46 +0100'
+categories:
+- Linux
+- Tech
+- Desktop Environment
+tags:
+- Ubuntu
+- Recensioni
+- Informatica
+- Gnome
+comments:
+- id: 1435
+  author: simo_magic
+  author_email: zephyrglider@gmail.com
+  author_url: http://zephyrbreath.netsons.org
+  date: '2008-01-01 16:50:34 +0100'
+  date_gmt: '2008-01-01 14:50:34 +0100'
+  content: "ammazza ma quanto è ciccio il tuo ubuntu? :o c'è qualcosa che hai fatto
+    tu o è così di default?\r\nps per caso hai letto Ken Follet? :P"
+- id: 1436
+  author: macro182
+  author_email: macro182@alice.it
+  author_url: ''
+  date: '2008-01-01 17:44:16 +0100'
+  date_gmt: '2008-01-01 15:44:16 +0100'
+  content: "cosa c'è di tanto cattivo nell'ultimo tracker?\r\nho l'ultima versione,
+    su gutsy, e mi pare faccia il suo onesto lavoro... magari mi sbaglio\r\n\r\n;)"
+- id: 1437
+  author: stefanauss
+  author_email: stefh@yahoo.it
+  author_url: http://alldnsleadstome.wordpress.com
+  date: '2008-01-01 18:15:12 +0100'
+  date_gmt: '2008-01-01 16:15:12 +0100'
+  content: "Cioè, mi sfugge.\r\nDisintallare Tracker quando finalmente lo si può semplicemente
+    mettere in pausa =)?\r\nCapisco che rallenta il sistema, ma non è mica Tracker
+    a farlo, è il concetto di indicizzatore che è cosi. Se a te non serve ok, ma quando
+    finalmente lo integreranno totalmente col resto di GNOME (visto che Tracker fa
+    parte di GNOME) sarà una manna assoluta. Oramai il daemon è a posto, serve l'integrazione.\r\n\r\nPer
+    il resto io non chiamerei l'Alpha2 una release che sta venendo bene. Non perchè
+    non sia buona, semplicemente non si può parlare di release visto che si tratta
+    semplicemente del risultato dei merge dei repository debian. Magari quando cominceranno
+    a implementare le BluePrint selezionate =)."
+- id: 1438
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://blaster.netsons.org
+  date: '2008-01-01 19:26:05 +0100'
+  date_gmt: '2008-01-01 17:26:05 +0100'
+  content: "@stefanauss: Grazie del commento. In realtà io Tracker lo ho solo rimosso
+    dai servizi che partivano  allo startup, il passo successivo è la disinstallazione;
+    so benissimo che è il concetto di indicizzatore e non Tracker ciò che non mi va
+    a genio (o meglio, ciò che mi succhia CPU), tuttavia ho preferito parlare per
+    nomi e non per concetti, anche se quello che dico potrebbe essere frainteso: Tracker
+    infatti, lo avrei disattivato anche se fosse stato Beagle, o Recoll.\r\nPer il
+    resto concordo con te dicendo: è vero che non hanno nemmeno cominciato con le
+    blueprint, ma almeno il merge è decente :)\r\n\r\n@macro182: Leggi la risposta
+    a stefanauss. Mi succhia CPU, semplicemente.\r\n\r\n@simo_magic: in che senso...
+    \"ciccio\"?\r\nNon ho letto Ken Follet, spiegami cosa intendevi pleeease :)"
+- id: 1439
+  author: simo_magic
+  author_email: zephyrglider@gmail.com
+  author_url: http://zephyrbreath.netsons.org
+  date: '2008-01-02 00:12:57 +0100'
+  date_gmt: '2008-01-01 22:12:57 +0100'
+  content: "ken follet ha scritto &quot;il volo del calabrone&quot;: si parla tra
+    l'altro di un aereo da riparare e dal tono sembrava la stessa cosa rivolta all'airone
+    :P\r\n\r\nciccio perchè io tra compiz,epiphany con vari tabs,banshee(quindi mono
+    e tutta la ram che può ciucciare),liferea,il tuo amore tracker e la deskbar applet(che
+    sembra ma usando python piglia 20MB!) arrivo a malapena a 300 mega...a meno che
+    ho confuso te con qualcun'altro non eri tu quello che aveva hardy appesantita
+    da qualcosa? a quanto ricordo girando sui vari blog...se ho confuso scusa, sono
+    i postumi di capodanno :D"
+- id: 1440
+  author: ragebeing
+  author_email: ragebeing@gmail.com
+  author_url: ''
+  date: '2008-01-02 00:21:12 +0100'
+  date_gmt: '2008-01-01 22:21:12 +0100'
+  content: 'domanda: ma nautilus-gio è implementato nello gnome dell''airone? Sono
+    curioso di provare come se la cava con l''ftp'
+- id: 1441
+  author: Diska
+  author_email: discardi.nicola@gmail.com
+  author_url: ''
+  date: '2008-01-02 00:56:04 +0100'
+  date_gmt: '2008-01-01 22:56:04 +0100'
+  content: "nautilus-gio non è ancora presente nell'airone.\r\n\r\nTrovi i pacchetti
+    per il gvfs e le glib con supporto giò.\r\n\r\npoi installarlo partendo da svn
+    \r\n\r\nti consiglio di installare da svn nell'ordine\r\n\r\neel, glib, gvfs,nautilus
+    \r\n\r\nsvn co http://svn.gnome.org/NOMELIBRERIA/trunk NOMELIBRERIA."
+- id: 1442
+  author: simo_magic
+  author_email: zephyrglider@gmail.com
+  author_url: http://zephyrbreath.netsons.org
+  date: '2008-01-02 01:00:59 +0100'
+  date_gmt: '2008-01-01 23:00:59 +0100'
+  content: "@ragebeing\r\nhanno messo da poco gnome 2.21, la release di sviluppo che
+    porterà al 2.22 stabile...aspetta e vedrai che aggiornando arriveranno se verrà
+    implementata"
+- id: 1443
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://blaster.netsons.org
+  date: '2008-01-02 11:07:04 +0100'
+  date_gmt: '2008-01-02 09:07:04 +0100'
+  content: "@simo_magic: Comprendo, ma il mio riferimento è del tutto casuale :D\r\nla
+    mia Hardy è soltanto spompata da Tracker, comunque, e la prima prova l'ho fatta
+    poco prima di scrivere il post in questione ;)\r\n\r\nSpero sbavando che arrivino
+    prestissimo a implementare anche le loro micidiali blueprint nuove... :)"
+- id: 1457
+  author: ragebeing
+  author_email: ragebeing@gmail.com
+  author_url: ''
+  date: '2008-01-12 20:29:43 +0100'
+  date_gmt: '2008-01-12 18:29:43 +0100'
+  content: "grazie. Ti sei mangiato un 'svn' però...\r\nsvn co http://svn.gnome.org/svn/<em>[module]</em>/trunk
+    <em>[module]</em>"
+- id: 13900
+  author: simo_magic
+  author_email: zephyrglider@gmail.com
+  author_url: http://zephyrbreath.netsons.org
+  date: '2008-01-01 14:50:00 +0100'
+  date_gmt: '2008-01-01 14:50:00 +0100'
+  content: "ammazza ma quanto è ciccio il tuo ubuntu? :o c'è qualcosa che hai fatto
+    tu o è così di default?\r\nps per caso hai letto Ken Follet? :P"
+- id: 13901
+  author: macro182
+  author_email: macro182@alice.it
+  author_url: ''
+  date: '2008-01-01 15:44:00 +0100'
+  date_gmt: '2008-01-01 15:44:00 +0100'
+  content: "cosa c'è di tanto cattivo nell'ultimo tracker?\r\nho l'ultima versione,
+    su gutsy, e mi pare faccia il suo onesto lavoro... magari mi sbaglio\r\n\r\n;)"
+- id: 13902
+  author: stefanauss
+  author_email: stefh@yahoo.it
+  author_url: http://alldnsleadstome.wordpress.com
+  date: '2008-01-01 16:15:00 +0100'
+  date_gmt: '2008-01-01 16:15:00 +0100'
+  content: "Cioè, mi sfugge.\r\nDisintallare Tracker quando finalmente lo si può semplicemente
+    mettere in pausa =)?\r\nCapisco che rallenta il sistema, ma non è mica Tracker
+    a farlo, è il concetto di indicizzatore che è cosi. Se a te non serve ok, ma quando
+    finalmente lo integreranno totalmente col resto di GNOME (visto che Tracker fa
+    parte di GNOME) sarà una manna assoluta. Oramai il daemon è a posto, serve l'integrazione.\r\n\r\nPer
+    il resto io non chiamerei l'Alpha2 una release che sta venendo bene. Non perchè
+    non sia buona, semplicemente non si può parlare di release visto che si tratta
+    semplicemente del risultato dei merge dei repository debian. Magari quando cominceranno
+    a implementare le BluePrint selezionate =)."
+- id: 13903
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2008-01-01 17:26:00 +0100'
+  date_gmt: '2008-01-01 17:26:00 +0100'
+  content: "@stefanauss: Grazie del commento. In realtà io Tracker lo ho solo rimosso
+    dai servizi che partivano  allo startup, il passo successivo è la disinstallazione;
+    so benissimo che è il concetto di indicizzatore e non Tracker ciò che non mi va
+    a genio (o meglio, ciò che mi succhia CPU), tuttavia ho preferito parlare per
+    nomi e non per concetti, anche se quello che dico potrebbe essere frainteso: Tracker
+    infatti, lo avrei disattivato anche se fosse stato Beagle, o Recoll.\r\nPer il
+    resto concordo con te dicendo: è vero che non hanno nemmeno cominciato con le
+    blueprint, ma almeno il merge è decente :)\r\n\r\n@macro182: Leggi la risposta
+    a stefanauss. Mi succhia CPU, semplicemente.\r\n\r\n@simo_magic: in che senso...
+    \"ciccio\"?\r\nNon ho letto Ken Follet, spiegami cosa intendevi pleeease :)"
+- id: 13904
+  author: simo_magic
+  author_email: zephyrglider@gmail.com
+  author_url: http://zephyrbreath.netsons.org
+  date: '2008-01-01 22:12:00 +0100'
+  date_gmt: '2008-01-01 22:12:00 +0100'
+  content: "ken follet ha scritto &quot;il volo del calabrone&quot;: si parla tra
+    l'altro di un aereo da riparare e dal tono sembrava la stessa cosa rivolta all'airone
+    :P\r\n\r\nciccio perchè io tra compiz,epiphany con vari tabs,banshee(quindi mono
+    e tutta la ram che può ciucciare),liferea,il tuo amore tracker e la deskbar applet(che
+    sembra ma usando python piglia 20MB!) arrivo a malapena a 300 mega...a meno che
+    ho confuso te con qualcun'altro non eri tu quello che aveva hardy appesantita
+    da qualcosa? a quanto ricordo girando sui vari blog...se ho confuso scusa, sono
+    i postumi di capodanno :D"
+- id: 13905
+  author: ragebeing
+  author_email: ragebeing@gmail.com
+  author_url: ''
+  date: '2008-01-01 22:21:00 +0100'
+  date_gmt: '2008-01-01 22:21:00 +0100'
+  content: 'domanda: ma nautilus-gio è implementato nello gnome dell''airone? Sono
+    curioso di provare come se la cava con l''ftp'
+- id: 13906
+  author: Diska
+  author_email: discardi.nicola@gmail.com
+  author_url: ''
+  date: '2008-01-01 22:56:00 +0100'
+  date_gmt: '2008-01-01 22:56:00 +0100'
+  content: "nautilus-gio non è ancora presente nell'airone.\r\n\r\nTrovi i pacchetti
+    per il gvfs e le glib con supporto giò.\r\n\r\npoi installarlo partendo da svn
+    \r\n\r\nti consiglio di installare da svn nell'ordine\r\n\r\neel, glib, gvfs,nautilus
+    \r\n\r\nsvn co http://svn.gnome.org/NOMELIBRERIA/trunk NOMELIBRERIA."
+- id: 13907
+  author: simo_magic
+  author_email: zephyrglider@gmail.com
+  author_url: http://zephyrbreath.netsons.org
+  date: '2008-01-01 23:00:00 +0100'
+  date_gmt: '2008-01-01 23:00:00 +0100'
+  content: "@ragebeing\r\nhanno messo da poco gnome 2.21, la release di sviluppo che
+    porterà al 2.22 stabile...aspetta e vedrai che aggiornando arriveranno se verrà
+    implementata"
+- id: 13908
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2008-01-02 09:07:00 +0100'
+  date_gmt: '2008-01-02 09:07:00 +0100'
+  content: "@simo_magic: Comprendo, ma il mio riferimento è del tutto casuale :D\r\nla
+    mia Hardy è soltanto spompata da Tracker, comunque, e la prima prova l'ho fatta
+    poco prima di scrivere il post in questione ;)\r\n\r\nSpero sbavando che arrivino
+    prestissimo a implementare anche le loro micidiali blueprint nuove... :)"
+- id: 13909
+  author: ragebeing
+  author_email: ragebeing@gmail.com
+  author_url: ''
+  date: '2008-01-12 18:29:00 +0100'
+  date_gmt: '2008-01-12 18:29:00 +0100'
+  content: "grazie. Ti sei mangiato un 'svn' però...\r\nsvn co http://svn.gnome.org/svn/<em>[module]</em>/trunk
+    <em>[module]</em>"
+---
+<p>Nessun crash rilevante, per ora: sembra che il team di Ubuntu sia rinsavito tutto d'un tratto, levando quell'obrobrio di sfondo che c'era prima e inserendo solamente quello "terroso", scelta, in Gutsy, alternativa allo yogurt marrone.</p>
+<p align="center"> <img src="http://img29.picoodle.com/img/img29/5/1/1/f_SchermataMom_fe90ffd.png" /></p>
+<p align="left">Come potete vedere, il monitor di sistema presenta una leggera obesità, ma svolge bene il suo lavoro, mostrando uno Gnome 2.21 all'avanguardia, il rilascio (prova inconfutabile che non mento), ed il kernel, un bel 2.6.24.</p>
+<p align="left">Tracker è stato arricchito inoltre di una infernale applet che tiene sotto controllo l'indicizzazione; futile dire che subito dopo aver fatto partire Hardy, sono andato a disinstallare l'indicizzatore :)</p>
+<p align="left">In finale, debbo dire che i crash sono stati irrilevanti (credo che avesse dato di matto proprio l'applet per segnalarli), e credo, dopo questo breve test, che a parte elementi infamanti come il suddetto Tracker (disattivatelo!), la release stia venendo su più che bene. Che dire allora, se non: alla prossima, Ubuntu!</p>

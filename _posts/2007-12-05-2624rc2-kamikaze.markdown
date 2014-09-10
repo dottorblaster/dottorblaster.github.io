@@ -1,0 +1,187 @@
+---
+layout: post
+status: publish
+published: true
+title: 2.6.24rc2-kamikaze
+author:
+  display_name: Bl@ster
+  login: Blaster
+  email: dottorblaster@gmail.com
+  url: http://www.dottorblaster.it
+author_login: Blaster
+author_email: dottorblaster@gmail.com
+author_url: http://www.dottorblaster.it
+wordpress_id: 130
+wordpress_url: http://blaster.netsons.org/?p=130
+date: '2007-12-05 14:01:54 +0100'
+date_gmt: '2007-12-05 12:01:54 +0100'
+categories:
+- Linux
+- Tech
+tags:
+- Recensioni
+- Informatica
+- Arch
+- Kernel
+comments:
+- id: 1299
+  author: marcoita
+  author_email: bonezzi@telefonica.net
+  author_url: ''
+  date: '2007-12-06 00:34:44 +0100'
+  date_gmt: '2007-12-05 22:34:44 +0100'
+  content: Ciao! Scusa se magari &eacute; un po' OT, ma quale tema stai usando? Clearlooks
+    con gli ultimi cambiamenti di Cimi? E la fonte utilizzata?? Mi sa che tocca un
+    cambio di look alla mia Arch.. Grazie! :)
+- id: 1300
+  author: LuNa
+  author_email: ipoccios@msn.com
+  author_url: http://opensource2007.netsons.org
+  date: '2007-12-06 01:38:10 +0100'
+  date_gmt: '2007-12-05 23:38:10 +0100'
+  content: ben , apparte che io non mi scotenno pi&ugrave; con le RC perch&egrave;
+    molte volte i moduli che uso non ci compilano (virtualbox, nvidia, *azzi vari)
+    una certa differenza la noto dai kernel patchati dalle distribuzioni al vanilla
+    a favore di quest'ultimo. Con gli altri patchset alternativi tutta sta differenza
+    non c'e'. Imposta uno scheduler rispetto ad un'altro e apprezzi delle differenze
+    significative in alcuni tipi di operazioni. Un patchet che fa &quot;miracoli&quot;
+    non j&egrave; :D
+- id: 1301
+  author: furester
+  author_email: furester@fastwebnet.it
+  author_url: http://xenos.altervista.org/blogs/
+  date: '2007-12-06 09:44:06 +0100'
+  date_gmt: '2007-12-06 07:44:06 +0100'
+  content: 'Per quanto riguarda Arch e -kamikaze avevo letto questa notizia tempo
+    fa: http://pierluigi.netsons.org/kamikaze-diventa-zen'
+- id: 1302
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://blaster.netsons.org
+  date: '2007-12-06 11:14:56 +0100'
+  date_gmt: '2007-12-06 09:14:56 +0100'
+  content: "@marcoita:\r\nMetacity: Clearlooks Classic (ha una sfumatura in pi&ugrave;)\r\nGTK+:
+    Clearlooks\r\nFont: Liberation Sans (pacchetto ttf-liberation)\r\nil tutto ovviamente
+    corredato da gtk-engines e gnome-themes SVN (li ho compilati pure sulla Debian
+    hihi :) )\r\n\r\n@LuNa: noto, con tuo piacere, che hai ragione ;)\r\n\r\n@furester:
+    evvai, grazie dell'importantissima segnalazione. Quando sar&agrave; un po' pi&ugrave;
+    avanti lo tester&ograve; sicuramente :D"
+- id: 1309
+  author: marcoita
+  author_email: bonezzi@telefonica.net
+  author_url: ''
+  date: '2007-12-06 22:26:38 +0100'
+  date_gmt: '2007-12-06 20:26:38 +0100'
+  content: Grazie per l'informazione.. Visto la mancanza di novit&aacute; particolari
+    nell'ultimo periodo mi sto preparando gtk-engines-svn, gnome-themes-svn e anche
+    metacity col compositor come hai appena illustrato..hehe Grazie, un saluto! :)
+- id: 1312
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://blaster.netsons.org
+  date: '2007-12-07 10:55:42 +0100'
+  date_gmt: '2007-12-07 08:55:42 +0100'
+  content: marcoita, allora ti consiglio anche la compilazione di gnome-themes-extras
+    da SVN, dovrei aggiornare la guida tra poco :)
+- id: 1324
+  author: telperion
+  author_email: nikita_top@libero.it
+  author_url: ''
+  date: '2007-12-07 18:52:39 +0100'
+  date_gmt: '2007-12-07 16:52:39 +0100'
+  content: "Vanilla ovunque e su tutto salvo se c'&egrave; hardware particolare. In
+    quel caso quello che funzia.\r\nRegola elementare, direi.\r\nTra l'atro io uso
+    sempre preemption none server (CONFIG_PREEMPT_NONE=y)\r\nche &egrave; quella che
+    mi da le maggiori performance."
+- id: 1325
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://blaster.netsons.org
+  date: '2007-12-07 19:03:14 +0100'
+  date_gmt: '2007-12-07 17:03:14 +0100'
+  content: "@telperion: susu, spiegati meglio :D\r\nche opzione &egrave;, dove si
+    trova?"
+- id: 13785
+  author: marcoita
+  author_email: bonezzi@telefonica.net
+  author_url: ''
+  date: '2007-12-05 22:34:00 +0100'
+  date_gmt: '2007-12-05 22:34:00 +0100'
+  content: Ciao! Scusa se magari &eacute; un po' OT, ma quale tema stai usando? Clearlooks
+    con gli ultimi cambiamenti di Cimi? E la fonte utilizzata?? Mi sa che tocca un
+    cambio di look alla mia Arch.. Grazie! :)
+- id: 13786
+  author: LuNa
+  author_email: ipoccios@msn.com
+  author_url: http://opensource2007.netsons.org
+  date: '2007-12-05 23:38:00 +0100'
+  date_gmt: '2007-12-05 23:38:00 +0100'
+  content: ben , apparte che io non mi scotenno pi&ugrave; con le RC perch&egrave;
+    molte volte i moduli che uso non ci compilano (virtualbox, nvidia, *azzi vari)
+    una certa differenza la noto dai kernel patchati dalle distribuzioni al vanilla
+    a favore di quest'ultimo. Con gli altri patchset alternativi tutta sta differenza
+    non c'e'. Imposta uno scheduler rispetto ad un'altro e apprezzi delle differenze
+    significative in alcuni tipi di operazioni. Un patchet che fa &quot;miracoli&quot;
+    non j&egrave; :D
+- id: 13787
+  author: furester
+  author_email: furester@fastwebnet.it
+  author_url: http://xenos.altervista.org/blogs/
+  date: '2007-12-06 07:44:00 +0100'
+  date_gmt: '2007-12-06 07:44:00 +0100'
+  content: 'Per quanto riguarda Arch e -kamikaze avevo letto questa notizia tempo
+    fa: http://pierluigi.netsons.org/kamikaze-diventa-zen'
+- id: 13788
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2007-12-06 09:14:00 +0100'
+  date_gmt: '2007-12-06 09:14:00 +0100'
+  content: "@marcoita:\r\nMetacity: Clearlooks Classic (ha una sfumatura in pi&ugrave;)\r\nGTK+:
+    Clearlooks\r\nFont: Liberation Sans (pacchetto ttf-liberation)\r\nil tutto ovviamente
+    corredato da gtk-engines e gnome-themes SVN (li ho compilati pure sulla Debian
+    hihi :) )\r\n\r\n@LuNa: noto, con tuo piacere, che hai ragione ;)\r\n\r\n@furester:
+    evvai, grazie dell'importantissima segnalazione. Quando sar&agrave; un po' pi&ugrave;
+    avanti lo tester&ograve; sicuramente :D"
+- id: 13789
+  author: marcoita
+  author_email: bonezzi@telefonica.net
+  author_url: ''
+  date: '2007-12-06 20:26:00 +0100'
+  date_gmt: '2007-12-06 20:26:00 +0100'
+  content: Grazie per l'informazione.. Visto la mancanza di novit&aacute; particolari
+    nell'ultimo periodo mi sto preparando gtk-engines-svn, gnome-themes-svn e anche
+    metacity col compositor come hai appena illustrato..hehe Grazie, un saluto! :)
+- id: 13790
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2007-12-07 08:55:00 +0100'
+  date_gmt: '2007-12-07 08:55:00 +0100'
+  content: marcoita, allora ti consiglio anche la compilazione di gnome-themes-extras
+    da SVN, dovrei aggiornare la guida tra poco :)
+- id: 13791
+  author: telperion
+  author_email: nikita_top@libero.it
+  author_url: ''
+  date: '2007-12-07 16:52:00 +0100'
+  date_gmt: '2007-12-07 16:52:00 +0100'
+  content: "Vanilla ovunque e su tutto salvo se c'&egrave; hardware particolare. In
+    quel caso quello che funzia.\r\nRegola elementare, direi.\r\nTra l'atro io uso
+    sempre preemption none server (CONFIG_PREEMPT_NONE=y)\r\nche &egrave; quella che
+    mi da le maggiori performance."
+- id: 13792
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2007-12-07 17:03:00 +0100'
+  date_gmt: '2007-12-07 17:03:00 +0100'
+  content: "@telperion: susu, spiegati meglio :D\r\nche opzione &egrave;, dove si
+    trova?"
+---
+<p>Neanche a dirlo, avevo tempo, ed è bastato dare</p>
+<blockquote><p>yaourt -S kernel26kamikaze</p></blockquote>
+<p>per compilarlo. Piccoli accorgimenti nel menù di configurazione mi hanno permesso di attivare tutto il supporto necessario al mio hard drive Serial ATA, che prima con i kernel custom faceva le bizze, invece adesso fila tutto liscio come l'olio.</p>
+<p align="center"><img src="http://img356.imageshack.us/img356/4628/schermatamonitordisisterm8.png" /></p>
+<p align="left">Kamikaze è un ottimo patchset, e lo consiglio a chiunque abbia voglia di mettere un po' le mani in pasta. Il tutto risulta accelerato per rasentare la perfezione di un sistema Linux come Dio comanda, ma alla fine, al mio occhio, non è che il tutto differisca molto dal vanilla che ho sulla Debian.</p>
+<p align="left">Se qualcuno avesse pareri discordanti da riferire, commentasse pure ;)</p>

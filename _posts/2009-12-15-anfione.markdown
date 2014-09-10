@@ -1,0 +1,134 @@
+---
+layout: post
+status: publish
+published: true
+title: Anfìone
+author:
+  display_name: Bl@ster
+  login: Blaster
+  email: dottorblaster@gmail.com
+  url: http://www.dottorblaster.it
+author_login: Blaster
+author_email: dottorblaster@gmail.com
+author_url: http://www.dottorblaster.it
+wordpress_id: 554
+wordpress_url: http://dottorblaster.it/?p=554
+date: '2009-12-15 19:01:18 +0100'
+date_gmt: '2009-12-15 18:01:18 +0100'
+categories:
+- Tech
+tags:
+- Informatica
+- My Life
+comments:
+- id: 9446
+  author: LuNa
+  author_email: ipoccios@msn.com
+  author_url: http://opensource2007.netsons.org
+  date: '2009-12-15 23:12:01 +0100'
+  date_gmt: '2009-12-16 04:12:01 +0100'
+  content: ma a me non mi ispira, visto che hai già un portatile discreto.<br>avrei
+    preso l&#39;htc con android. i 4 chili e l&#39;aria calda secondo me non giustificano
+    questo ulteriore acquisto "doppio".<br>in&#39;oltre ti ci voglio a scrivere tonnellate
+    di codice su un 12, mentre devi forzatamente tenerti aperti appunti manuali e
+    quant&#39;altro, ti tocca switchare da un app all&#39;altra e diventa snervante.
+    imho.
+- id: 9447
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2009-12-15 23:18:42 +0100'
+  date_gmt: '2009-12-16 04:18:42 +0100'
+  content: l&#39;htc me l&#39;hanno levato dalla vetrina! Il tatoo mi fa cagare -.-
+- id: 9448
+  author: LuNa
+  author_email: ipoccios@msn.com
+  author_url: http://opensource2007.netsons.org
+  date: '2009-12-15 23:23:32 +0100'
+  date_gmt: '2009-12-16 04:23:32 +0100'
+  content: il tatoo è giocattoloso. magic o dream, e basta.
+- id: 9449
+  author: telperion
+  author_email: nikita_top@libero.it
+  author_url: ''
+  date: '2009-12-16 00:49:37 +0100'
+  date_gmt: '2009-12-16 05:49:37 +0100'
+  content: '"Sette contro Tebe"<br><br>Windows "dominava" già allora ...<br><br>GHGHGHGH'
+- id: 9450
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2009-12-16 15:08:19 +0100'
+  date_gmt: '2009-12-16 20:08:19 +0100'
+  content: Infatti hanno vinto i tebani... :D
+- id: 9452
+  author: idl3
+  author_email: idlemailman@gmail.com
+  author_url: http://idl3.wordpress.com/
+  date: '2009-12-16 16:00:43 +0100'
+  date_gmt: '2009-12-16 21:00:43 +0100'
+  content: Sai cosa manca? Una foto :)
+- id: 9453
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2009-12-16 16:13:17 +0100'
+  date_gmt: '2009-12-16 21:13:17 +0100'
+  content: 'Posterò tutto il necessario una volta finita la configurazione: anticipo
+    solo che ovviamente c&#39;ho messo subito Arch :D'
+- id: 9454
+  author: idl3
+  author_email: idlemailman@gmail.com
+  author_url: http://idl3.wordpress.com/
+  date: '2009-12-16 16:21:02 +0100'
+  date_gmt: '2009-12-16 21:21:02 +0100'
+  content: '&gt; "anticipo solo che ovviamente c&#39;ho messo subito Arch"<br>Questo
+    lo davo per scontato :(<br><br>ah ah, scherzo (riguardo l&#39;emoticon) :)'
+- id: 9455
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2009-12-16 16:37:02 +0100'
+  date_gmt: '2009-12-16 21:37:02 +0100'
+  content: ":P<br>In ogni caso, arriverà tutto a tempo debito :D"
+- id: 9457
+  author: xxx
+  author_email: xxx@xxx.it
+  author_url: ''
+  date: '2009-12-17 16:09:33 +0100'
+  date_gmt: '2009-12-17 21:09:33 +0100'
+  content: dottore, ma i suoi feed non vanno più?
+- id: 9458
+  author: Bl@ster
+  author_email: dottorblaster@gmail.com
+  author_url: http://dottorblaster.it/
+  date: '2009-12-17 20:15:43 +0100'
+  date_gmt: '2009-12-18 01:15:43 +0100'
+  content: Non vi preoccupate, pare un problema di articoli nella home, con il prossimo
+    post dovrebbe andare tutto a posto :D
+- id: 9459
+  author: telperion
+  author_email: nikita_top@libero.it
+  author_url: ''
+  date: '2009-12-18 01:54:57 +0100'
+  date_gmt: '2009-12-18 06:54:57 +0100'
+  content: Comunque in romanesco suona strano ...<br><br>Aaaaan fione de na grandissima
+    ...<br><br>LOL
+---
+<blockquote>E sia cosí. Del quinto ora ti parlo,<br />
+che alle porte Borrèe presso ha le schiere,<br />
+al quinto posto, vicino alla tomba<br />
+del rampollo di Giove, Anfíone. Giura<br />
+per la sua lancia, in cui confida, e piú<br />
+del Dio l'onora, e piú di sue pupille,<br />
+che struggerà la rocca dei Cadmèi,<br />
+a dispetto di Giove. Cosí grida<br />
+questo germoglio di montana madre,<br />
+uomo e fanciullo, vago volto, e or ora<br />
+su le sue gote cresce la lanugine:<br />
+fitta, ché il sevo dell'età la spinge,<br />
+gèrmina. È il nome verginal; ma egli,<br />
+animo crudo, truce sguardo, sta<br />
+contro la porta, e non da vanto immune.</p></blockquote>
+<p>Nei giorni scorsi non ho aggiornato il blog riguardo la compra del netbook. Ebbene, alla fine ce l'ho fatta, e delle avventure per ottenerlo darò racconto poi; Giusto due minuti, adesso, per postare che il piccolo è arrivato, è a casa, sano e salvo, ed il suo nome sarà Anfìone, piccolo ma valoroso.</p>
+<p>Questi sù sono i versi riferiti all'eroe (e al netbook), presi, come mio solito, dai Sette contro Tebe :)</p>
