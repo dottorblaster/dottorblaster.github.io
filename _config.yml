@@ -11,7 +11,7 @@ tagline:          di Alessio Biancalana
 paginate:         5
 baseurl:          '/'
 url:              'http://dottorblaster.it'
-permalink:        '/:title'
+permalink:        '/:year/:month/:title'
 author:
   name:           Alessio Biancalana
   url:            http://dottorblaster.it
