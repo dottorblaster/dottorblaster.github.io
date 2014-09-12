@@ -1,9 +1,5 @@
 # Dependencies
 markdown:         redcarpet
-highlighter:      pygments
-
-# Permalinks
-permalink:        pretty
 
 # Setup
 title:            Grab The Blaster
