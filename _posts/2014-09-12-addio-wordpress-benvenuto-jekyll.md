@@ -24,7 +24,7 @@ Come tutti quelli che passano a [Jekyll](http://jekyllrb.com/), anche io sento l
 Per **importare i post** dentro Jekyll, nonostante vengano forniti in rete tantissimi tool sotto forma di plugin, di script e di blob, ho preferito dare una chance alla banalissima soluzione scritta in Ruby e fornita direttamente dai ragazzi di GitHub/Jekyll - quindi sono andato sulla documentazione ufficiale, e ho convertito la **oscena istruzione** multiriga di Ruby in un piccolo script, che ha funzionato perfettamente al primo colpo. I tag sono stati correttamente mantenuti in ogni post, così come le categorie e anche tutti i commenti (che non ho il coraggio di strippare né di parsare a mano, quindi per ora lascerò tutto così schiantato nei file di markdown). Per mostrare effettivamente i commenti uso **Disqus**, che è totalmente slegato da tutto questo.
 
 
-``` ruby
+```ruby
 require "jekyll-import";
 
 JekyllImport::Importers::WordPress.run({
