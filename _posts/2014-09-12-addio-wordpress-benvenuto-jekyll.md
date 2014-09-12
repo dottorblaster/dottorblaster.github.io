@@ -23,6 +23,27 @@ Come tutti quelli che passano a [Jekyll](http://jekyllrb.com/), anche io sento l
 
 Per **importare i post** dentro Jekyll, nonostante vengano forniti in rete tantissimi tool sotto forma di plugin, di script e di blob, ho preferito dare una chance alla banalissima soluzione scritta in Ruby e fornita direttamente dai ragazzi di GitHub/Jekyll - quindi sono andato sulla documentazione ufficiale, e ho convertito la **oscena istruzione** multiriga di Ruby in un piccolo script, che ha funzionato perfettamente al primo colpo. I tag sono stati correttamente mantenuti in ogni post, così come le categorie e anche tutti i commenti (che non ho il coraggio di strippare né di parsare a mano, quindi per ora lascerò tutto così schiantato nei file di markdown). Per mostrare effettivamente i commenti uso **Disqus**, che è totalmente slegato da tutto questo.
 
+
+``` ruby
+require "jekyll-import";
+
+JekyllImport::Importers::WordPress.run({
+  "dbname"   => "home_",
+  "user"     => "alvise",
+  "password" => "sbrebbro",
+  "host"     => "dottorblaster.it",
+  "socket"   => "",
+  "table_prefix"   => "wp_",
+  "clean_entities" => false,
+  "comments"       => true,
+  "categories"     => true,
+  "tags"           => true,
+  "more_excerpt"   => true,
+  "more_anchor"    => true,
+  "status"         => ["publish"]
+})
+```
+
 Il flusso di scrittura non è molto diverso da quello che adottavo in precedenza: apro il mio editor di testo, scrivo **il mio file in Markdown** (perché, ricordiamolo, Markdown regna), e successivamente se prima mi servivo di funzionalità built-in in **Sublime Text** o in Byword per pubblicare quello che avevo scritto, adesso mi basta fare commit del mio post e fare push sul repository Git che ospita il blog. L'istanza di Jekyll remota si occupa di accogliere le modifiche, rigenerare il sito, e rifare il deploy.
 
 La **fase di editing** è veramente semplice: essendo tutto ciò che importa scritto in Markdown, non devo fare altro che modificare quello che mi interessa in Sublime Text (in genere), agendo su parti di testo o specifici parametri, non dovendo avere a che fare con interfacce web che hanno bisogno di caricarsi ogni volta. Per sviluppare parti del sito che richiedono modifiche massicce (quindi non per modifiche piccole) posso con due comandi avviare un'istanza locale che rispecchia quello che vedrei online. Jekyll, in poche parole, per l'aspetto editoriale è un generatore di siti statici che non sta in mezzo ai piedi come farebbe un CMS, **permettendo ai power user una maggiore flessibilità** e soprattutto, secondo me, dei tempi di scrittura minori, non dovendo avere a che fare con tutto il peso di una web UI.
