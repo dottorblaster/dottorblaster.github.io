@@ -25,7 +25,6 @@ Per **importare i post** dentro Jekyll, nonostante vengano forniti in rete tanti
 
 
 {{% highlight ruby %}}
-#!/usr/bin/ruby
 require "jekyll-import";
 
 JekyllImport::Importers::WordPress.run({
