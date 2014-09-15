@@ -4,21 +4,21 @@ layout: nil
 <?xml version="1.0"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>example.com</title>
-    <link>http://example.com/</link>
+    <title>{{ site.title }}</title>
+    <link>{{ site.url }}</link>
     <atom:link href="http://example.com/rss.xml" rel="self" type="application/rss+xml" />
-    <description>Your Website</description>
-    <language>en-us</language>
+    <description>{{ site.tagline }}</description>
+    <language>it-it</language>
     <pubDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
     <lastBuildDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</lastBuildDate>
 
     {% for post in site.posts limit:50 %}
     <item>
       <title>{{ post.title }}</title>
-      <link>http://example.com{{ post.url }}</link>
+      <link>http://dottorblaster.it{{ post.url }}</link>
       <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
-      <author>you@example.com (Your Name)</author>
-      <guid>http://example.com{{ post.id }}</guid>
+      <author>dottorblaster@gmail.com (Alessio Biancalana)</author>
+      <guid>http://dottorblaster.it{{ post.id }}</guid>
       <description>{{ post.content | xml_escape }}</description>
     </item>
     {% endfor %}
