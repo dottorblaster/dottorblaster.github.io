@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: true
-title: OS X: ottenere una lista dei processi in ascolto da terminale
+title: OS X, ottenere una lista dei processi in ascolto da terminale
 categories:
 - Tech
 tags:
