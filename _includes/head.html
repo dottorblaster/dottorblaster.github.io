@@ -42,6 +42,24 @@
     {% endfor %}
   {% endif %}
 
+
+
+  {% assign foundImage = 0 %}
+  {% assign images = post.content | split:"<img " %}
+  {% for image in images %}
+    {% if image contains 'src' %}
+
+        {% if foundImage == 0 %}
+            {% assign html = image | split:"/>" | first %}
+            {% assign parsed = html | split:"src=" %}
+            <meta content={{ parsed }} property="og:image">
+            {% assign foundImage = 1 %}
+        {% endif %}
+    {% endif %}
+  {% endfor %}
+
+
+
   <title>
     {% if page.title == "Home" %}
       {{ site.title }} &middot; {{ site.tagline }}
