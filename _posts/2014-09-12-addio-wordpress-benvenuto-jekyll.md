@@ -57,7 +57,7 @@ L'aspetto editoriale l'ho gestito con qualche script e il fido Sublime Text al f
 - [Jekyll From Scratch - Getting Started](http://pixelcog.com/blog/2013/jekyll-from-scratch-introduction/)
 - [Jekyll From Scratch - Extending Jekyll](http://pixelcog.com/blog/2013/jekyll-from-scratch-extending-jekyll/)
 - [Migrating from WordPress to Jekyll, and Host on Github](http://girliemac.com/blog/2013/12/27/wordpress-to-jekyll/)
-- [WordPress to Jekyll](paulstamatiou.com/how-to-wordpress-to-jekyll/), di Paul Stamatiou
+- [WordPress to Jekyll](http://paulstamatiou.com/how-to-wordpress-to-jekyll/), di Paul Stamatiou
 - [exitwp @ GitHub](https://github.com/thomasf/exitwp)
 - [Poole, the Jekyll butler](http://getpoole.com/)
 
