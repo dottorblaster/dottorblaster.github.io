@@ -8,12 +8,15 @@ paginate:         5
 baseurl:          '/'
 url:              'http://dottorblaster.it'
 permalink:        '/:year/:month/:title'
+license:
+  link:           'https://creativecommons.org/licenses/by-nc/3.0/'
+  label:          'CC BY-NC'
 author:
   name:           Alessio Biancalana
   url:            http://dottorblaster.it
   email:          dottorblaster@gmail.com
 
 # Custom vars
-version:          0.0.7
+version:          0.0.9
 github:
-  repo:           https://github.com/poole/poole
+  repo:           https://github.com/dottorblaster/dottorblaster.github.io
