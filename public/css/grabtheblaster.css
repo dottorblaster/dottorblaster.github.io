@@ -66,6 +66,11 @@ pre {
 	text-align: center;
 }
 
+.footer {
+	margin-top: 3rem;
+	font-size: 0.8rem;
+}
+
 .social-section {
 	margin-bottom: 1rem;
 	margin-top: -1rem;
