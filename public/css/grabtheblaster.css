@@ -10,6 +10,7 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: "Montserrat", Helvetica, Arial, sans-serif;
+	text-align: center;
 }
 
 p img {
@@ -17,14 +18,25 @@ p img {
 	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-/* All of this for my pic, I'm a narcisist*/
+/* All of this for my pic, I'm a narcisist */
+
+.masthead-title {
+	width: 100%;
+}
+
 .masthead img {
-	display: inline;
-	vertical-align: middle;
+	display: block;
 	margin-bottom: 0px;
-	height: 3rem;
-	border-radius: 1.5rem;
+	margin-right: auto;
+	margin-left: auto;
+	height: 5rem;
+	border-radius: 2.5rem;
 	border: 2px solid #000000;
+}
+
+.masthead-title a {
+	display: block;
+	text-align: center;
 }
 
 .masthead-title small {
@@ -32,6 +44,12 @@ p img {
   font-weight: 400;
   color: #c0c0c0;
   letter-spacing: 0;
+  display: block;
+  text-align: center;
+}
+
+.post-date {
+	text-align: center;
 }
 
 .social-section {
@@ -44,30 +62,39 @@ p img {
 	margin-left: 2rem;
 }
 
-@media only screen and (min-device-width : 768px) {
+@media only screen and (min-width : 768px) {
 	/* Some responsive stuff :-))) */
 
 	html {
 		font-size: 20px; /* Raffaella this is your fault :-D */
 	}
 
-	.masthead-title {
-		width: 100%;
+	h1, h2, h3, h4, h5, h6 {
+		text-align: left;
 	}
 
-	.masthead img {
-		display: block;
-		margin-right: auto;
-		margin-left: auto;
+	.masthead-title {
+		width: auto;
 	}
 
 	.masthead-title a {
-		display: block;
-		text-align: center;
+		display: inline;
+		text-align: left;
+	}
+
+	.masthead img {
+		display: inline;
+		vertical-align: middle;
+		height: 3rem;
+		border-radius: 1.5rem;
 	}
 
 	.masthead-title small {
-		display: block;
-		text-align: center;
+		display: inline;
+		text-align: left;
+	}
+
+	.post-date {
+		text-align: left;
 	}
 }
