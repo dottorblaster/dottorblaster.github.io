@@ -1,6 +1,6 @@
 html {
 	font-family: "PT Serif", Georgia, "Times New Roman", serif;
-	font-size: 20px; /* Raffaella this is your fault :-D */
+	font-size: 16px;
 }
 
 a {
@@ -42,4 +42,32 @@ p img {
 .twitter-share-button {
 	vertical-align: text-bottom !important;
 	margin-left: 2rem;
+}
+
+@media only screen and (min-device-width : 768px) {
+	/* Some responsive stuff :-))) */
+
+	html {
+		font-size: 20px; /* Raffaella this is your fault :-D */
+	}
+
+	.masthead-title {
+		width: 100%;
+	}
+
+	.masthead img {
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.masthead-title a {
+		display: block;
+		text-align: center;
+	}
+
+	.masthead-title small {
+		display: block;
+		text-align: center;
+	}
 }
