@@ -25,11 +25,10 @@ pre {
 	padding: 1rem;
 	font-size: .8rem;
 	line-height: 1.4;
-	white-space: pre;
-	word-break: break-all;
-	word-wrap: break-word;
 	background-color: #f9f9f9;
-	overflow: scroll;
+	overflow-y: scroll;
+	white-space: pre;
+	word-wrap: normal;
 }
 
 /* All of this for my pic, I'm a narcisist */
