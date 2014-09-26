@@ -4,21 +4,35 @@ module.exports = function(grunt) {
 			options: {
 				dest: '_site',
 			},
+			build: {
+				options: {
+					drafts: false,
+					serve: false,
+					watch: false
+				}
+			},
 			dev: {
 				options: {
 					dest: '_devtarget',
 					serve: true,
 					watch: true,
 					drafts: true,
-					limit_posts: 100,
 					port: 8000
 				}
 			},
-			build: {
-				drafts: false,
-				serve: false,
-				watch: false,
-				drafts: false
+			doctor: {
+				options: {
+					doctor: true
+				}
+			},
+			prod: {
+				options: {
+					dest: '_prod',
+					drafts: false,
+					serve: true,
+					watch: true,
+					port: 4000
+				}
 			}
 		}
 	});
@@ -26,5 +40,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-jekyll');
 
 	grunt.registerTask('default', ['jekyll:build']);
-	grunt.registerTask('watch', ['jekyll:dev']); // I should include jslint
+	grunt.registerTask('watch', ['jekyll:dev']);
+	grunt.registerTask('production', ['jekyll:prod']);
+	grunt.registerTask('doctor', ['jekyll:doctor']);
 };
