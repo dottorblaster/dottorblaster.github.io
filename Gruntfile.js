@@ -4,7 +4,6 @@ grunt.initConfig({
 			dest: 'build',
 			drafts: 'false'
 		},
-
 		checkup: {
 			doctor: true
 		}
@@ -17,13 +16,11 @@ grunt.initConfig({
 			port: 8000
 		}
 	}
-
 	watch: {
 		jekyll: {
 			tasks: ['jekyll:dev']
 		}
 	}
-
 	doctor: {
 		jekyll: {
 			tasks: ['jekyll:checkup']
