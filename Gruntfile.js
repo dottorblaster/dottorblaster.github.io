@@ -1,33 +1,30 @@
-grunt.initConfig({
-	jekyll: {
-		build: {
-			dest: 'build',
-			drafts: 'false'
-		},
-		checkup: {
-			doctor: true
-		}
-
-		dev: {
-			serve: true,
-			watch: true,
-			drafts: true,
-			limit_posts: 100,
-			port: 8000
-		}
-	}
-	watch: {
+module.exports = function(grunt) {
+	grunt.initConfig({
 		jekyll: {
-			tasks: ['jekyll:dev']
+			options: {
+				dest: '_site',
+			},
+			dev: {
+				options: {
+					dest: '_devtarget',
+					serve: true,
+					watch: true,
+					drafts: true,
+					limit_posts: 100,
+					port: 8000
+				}
+			},
+			build: {
+				drafts: false,
+				serve: false,
+				watch: false,
+				drafts: false
+			}
 		}
-	}
-	doctor: {
-		jekyll: {
-			tasks: ['jekyll:checkup']
-		}
-	}
-});
+	});
 
-grunt.loadNpmTasks('grunt-jekyll');
+	grunt.loadNpmTasks('grunt-jekyll');
 
-grunt.registerTask('default', ['jshint', 'jekyll:build']);
+	grunt.registerTask('default', ['jekyll:build']);
+	grunt.registerTask('watch', ['jekyll:dev']); // I should include jslint
+};
