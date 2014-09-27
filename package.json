@@ -1,0 +1,9 @@
+{
+  "name": "grab-the-blaster",
+  "version": "0.0.9",
+  "devDependencies": {
+    "grunt-cli": "*",
+    "grunt-jslint": "*",
+    "grunt-jekyll": "*"
+  }
+}
