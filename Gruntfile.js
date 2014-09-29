@@ -4,6 +4,7 @@ module.exports = function(grunt) {
 			options: {
 				dest: '_site',
 			},
+
 			build: {
 				options: {
 					drafts: false,
@@ -11,20 +12,23 @@ module.exports = function(grunt) {
 					watch: false
 				}
 			},
+
 			dev: {
 				options: {
 					dest: '_devtarget',
 					serve: true,
-					watch: true,
+					watch: false,
 					drafts: true,
 					port: 8000
 				}
 			},
+
 			doctor: {
 				options: {
 					doctor: true
 				}
 			},
+
 			prod: {
 				options: {
 					dest: '_prod',
@@ -35,22 +39,35 @@ module.exports = function(grunt) {
 				}
 			}
 		},
-		jslint: {
-			// TODO
-		},
+
 		csslint: {
 			build: {
 				src: ['public/css/*.css']
+			}
+		},
+
+		watch: {
+			files: ['_layouts/*.html',
+					'_posts/*',
+					'public/css/*.css',
+					'_config.yml',
+					'index.html',
+					'404.html'],
+			tasks: ['csslint', 'jekyll:dev'],
+			options: {
+				spawn: false,
+				iterrupt: true,
+				atBegin: true,
+				livereload: true
 			}
 		}
 	});
 
 	grunt.loadNpmTasks('grunt-jekyll');
-	grunt.loadNpmTasks('grunt-jslint');
 	grunt.loadNpmTasks('grunt-contrib-csslint');
+	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	grunt.registerTask('default', ['csslint', 'jekyll:build']);
-	grunt.registerTask('watch', ['csslint', 'jekyll:dev']);
 	grunt.registerTask('production', ['csslint', 'jekyll:prod']);
 	grunt.registerTask('doctor', ['jekyll:doctor']);
 };
