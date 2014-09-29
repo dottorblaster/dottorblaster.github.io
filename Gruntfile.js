@@ -46,7 +46,7 @@ module.exports = function(grunt) {
 			}
 		},
 
-		watch: {
+		watch: { // this needs testing
 			files: ['_layouts/*.html',
 					'_posts/*',
 					'public/css/*.css',
