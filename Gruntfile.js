@@ -34,13 +34,23 @@ module.exports = function(grunt) {
 					port: 4000
 				}
 			}
+		},
+		jslint: {
+			// TODO
+		},
+		csslint: {
+			build: {
+				src: ['public/css/*.css']
+			}
 		}
 	});
 
 	grunt.loadNpmTasks('grunt-jekyll');
+	grunt.loadNpmTasks('grunt-jslint');
+	grunt.loadNpmTasks('grunt-contrib-csslint');
 
-	grunt.registerTask('default', ['jekyll:build']);
-	grunt.registerTask('watch', ['jekyll:dev']);
-	grunt.registerTask('production', ['jekyll:prod']);
+	grunt.registerTask('default', ['csslint', 'jekyll:build']);
+	grunt.registerTask('watch', ['csslint', 'jekyll:dev']);
+	grunt.registerTask('production', ['csslint', 'jekyll:prod']);
 	grunt.registerTask('doctor', ['jekyll:doctor']);
 };
