@@ -15,7 +15,7 @@ tags:
 
 > This is the first submission of kdbus by the kernel community.  It was developed in its own repository for well more than a year, and has been tested on x64-64, i686 and ARM architectures in various use cases. The driver is totally non-intrusive and doesn't touch a single line of existing kernel code.
 
-Forse il **kernel Linux** è arrivato ad una delle sue più grandi svolte (almeno secondo me): un primo abbozzo di kdbus è stato [sottomesso alla Linux Kernel Mailing List](https://lkml.org/lkml/2014/10/29/854) per l'approvazione. Per chi non sapesse che cos'è **kdbus**, cito sempre dalla stessa mail:
+Forse il **kernel Linux** è arrivato ad una delle sue più grandi svolte (almeno secondo me): un primo abbozzo di kdbus è stato [sottomesso alla Linux Kernel Mailing List](https://lkml.org/lkml/2014/10/29/854) (_si, sottomesso come nel sadomaso, grazie a [Giorgio](http://www.zarrelli.org/blog/) per la segnalazione_) per l'approvazione. Per chi non sapesse che cos'è **kdbus**, cito sempre dalla stessa mail:
 
 > kdbus is a kernel-level IPC implementation that aims for resemblance to the the protocol layer with the existing userspace D-Bus daemon while enabling some features that couldn't be implemented before in userspace.
 
