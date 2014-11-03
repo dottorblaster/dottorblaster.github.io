@@ -3,9 +3,9 @@ layout: default
 ---
 
 <div class="post">
-  <h1 class="post-title"><a href="{{ post.origlink }}">{{ page.title }}</a></h1>
+  <h1 class="post-title"><i class="fa fa-link"></i>: <a href="{{ page.origlink }}">{{ page.title }}</a></h1>
   {{ content }}
-  <p><i class="fa fa-link"></i>ed on {{ page.date | date_to_string }}</p>
+  <span class="post-date"><i class="fa fa-link"></i>ed on {{ page.date | date_to_string }}</span>
 </div>
 
 <div class="social-section">
