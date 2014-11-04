@@ -3,7 +3,7 @@ layout: link
 status: publish
 published: true
 title: Android 5.0 is rolling out
-origlink: http://www.zdnet.com/ubuntu-is-working-on-a-new-secure-container-hypervisor-lxd-7000035402
+origlink: http://www.zdnet.com/android-lollipop-rolls-out-across-smartphones-tablets-7000035406
 categories:
 - Android
 tags:
