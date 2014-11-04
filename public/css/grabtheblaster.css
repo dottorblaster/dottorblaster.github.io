@@ -62,6 +62,14 @@ pre {
   text-align: center;
 }
 
+.post-title-link {
+	text-align: left;
+}
+
+.post-title-link a:hover {
+	text-decoration: none;
+}
+
 .post-date {
 	text-align: center;
 }
