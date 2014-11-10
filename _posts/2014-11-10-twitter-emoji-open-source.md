@@ -15,13 +15,13 @@ tags:
 
 Da giovedì le **emoji di Twitter** sono **open source** e liberamente utilizzabili da chiunque.
 
-```xhtml
+```html
 <script src="//twemoji.maxcdn.com/twemoji.min.js"></script>
 ```
 
 Se vogliamo fare i virtuosi possiamo persino **lavorarle nel DOM**:
 
-```js
+```javascript
 var div = document.createElement('div');
 div.textContent = 'I \u2764\uFE0F emoji!';
 document.body.appendChild(div);
