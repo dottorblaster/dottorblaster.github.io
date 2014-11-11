@@ -63,6 +63,7 @@ pre {
 }
 
 .post-title-link {
+        font-size: 1.1rem;
 	text-align: left;
 }
 
@@ -125,3 +126,4 @@ pre {
 		text-align: left;
 	}
 }
+
