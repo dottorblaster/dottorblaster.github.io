@@ -23,7 +23,7 @@ Dal blog di **Open Whisper Systems**:
 
 - Lo so che è un tipo di encription end to end, ma finché **il server è proprietario** può sempre esserci qualche magheggio (notare il termine tecnico) dietro che di fatto non consente un viaggio ddel messaggio da utente a utente completamente sicuro;
 - WhatsApp stesso è closed source, quindi il massimo che possiamo fare è decompilare l'APK per vedere se troviamo qualcosa di utile, o sniffare la rete per verificare che **veramente** venga usato quello specifico protocollo;
-- La cosa positiva è che quantomeno sia il server che il client sono **open source**. La questione, come detto sopra, è verificare se veramente WhatsApp usa 'sta roba o una versione modificata.
+- La cosa positiva è che quantomeno sia il [server](https://github.com/WhisperSystems/TextSecure-Server) che il [client](https://github.com/WhisperSystems/TextSecure) sono **open source**. La questione, come detto sopra, è verificare se veramente WhatsApp usa 'sta roba o una versione modificata.
 
 Poi vabbeh: se volessi essere inutilmente caustico consiglierei a tutti di [passare a Telegram](http://dottorblaster.it/2014/03/telegram-pro-e-contro/), ma non lo farò (anche perché non credo che sia una soluzione).
 
