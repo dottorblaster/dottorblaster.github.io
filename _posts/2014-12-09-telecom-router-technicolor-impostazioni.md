@@ -30,7 +30,7 @@ Ho guardato quel router, ancora inscatolato, come guarderei un **velociraptor** 
 Ovviamente al primo impatto quello che ho fatto è stato seplicemente inorridire: l'**interfaccia web** di questo affare non è minimamente utilizzabile per i compiti di base di chiunque voglia amministrare con un po' di raziocinio la propria rete casalinga. Fortunatamente ho trovato un piccolo trucco per **aggirare questi limiti senza riflashare il Technicolor** con un firmware normale.
 
 ### La soluzione  
-Scartabellando un po' ho visto che l'interfaccia del router espone quantomeno un metodo per il **backup delle impostazioni** e per il restore di queste nel caso in cui qualcosa vada storto. Queste impostazioni sono scritte in un **file di testo XML** che però, purtroppo, è **criptato attraverso SSL**. In giro per l'Internet comunque ci sono le chiavi per decrittare il file, per cui ci basta andare nell'interfaccia di amministrazione del router e, nel dialogo apposito, scegliere di fare un backup delle nostre impostazioni. Questo ci farà scaricare un file.
+Scartabellando un po' ho visto che l'interfaccia del router espone quantomeno un metodo per il **backup delle impostazioni** e per il restore di queste nel caso in cui qualcosa vada storto. Queste impostazioni sono scritte in un **file di testo XML** che però, purtroppo, è **criptato attraverso AES**. In giro per l'Internet comunque ci sono le chiavi per decrittare il file, per cui ci basta andare nell'interfaccia di amministrazione del router e, nel dialogo apposito, scegliere di fare un backup delle nostre impostazioni. Questo ci farà scaricare un file.
 
 Per **trasformare il file in formato .kry in un normale file XML**, ci basterà usare OpenSSL come nell'esempio qui sotto:
 
