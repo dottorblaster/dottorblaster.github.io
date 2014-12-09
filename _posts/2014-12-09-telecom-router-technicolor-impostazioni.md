@@ -14,9 +14,9 @@ tags:
 
 ![Technicolor TG582n hack](http://www.k4ch0.org/wp-content/uploads/2013/12/Modem-Technicolor-TG582n.jpg)
 
-Qualche settimana fa, mia madre ha pensato bene di attribuire la colpa di alcuni malfunzionamenti della rete casalinga al nostro router - che effettivamente cominciava a mostrare segni di cedimento dopo quasi dieci anni (si, avete letto bene: dieci anni) di servizio. Ignorando qualsiasi dettame totalitario imposto da me sull'acquisto di beni tecnologici, chiaramente provocato dal fatto che senza la consulenza del sottoscritto sono state fatte entrare in casa delle cagate immonde che non meriterebbero manco il nome di "hardware" (tanto meno quello di "software" per quanto riguarda i firmware di codesti dispositivi), ha chiamato allegrotta Telecom per farci mandare un nuovo router.
+Qualche settimana fa, mia madre ha pensato bene di attribuire la colpa di alcuni **malfunzionamenti della rete casalinga** al nostro router - che effettivamente cominciava a mostrare segni di cedimento dopo quasi dieci anni (si, avete letto bene: dieci anni) di servizio. Ignorando qualsiasi dettame totalitario imposto da me sull'acquisto di beni tecnologici, chiaramente provocato dal fatto che senza la consulenza del sottoscritto sono state fatte entrare in casa delle cagate immonde che non meriterebbero manco il nome di "hardware" (tanto meno quello di "software" per quanto riguarda i firmware di codesti dispositivi), ha chiamato allegrotta Telecom per farci mandare un **nuovo router**.
 
-![A mia insaputa come quello famoso](4.bp.blogspot.com/-PLcsu_MZ4ww/Tu3MurgWs9I/AAAAAAAAThk/cNU9FcPu4WQ/s1600/Scajola%2BNonleggerlo.png)
+![A mia insaputa come quello famoso](http://4.bp.blogspot.com/-PLcsu_MZ4ww/Tu3MurgWs9I/AAAAAAAAThk/cNU9FcPu4WQ/s1600/Scajola%2BNonleggerlo.png)
 
 Così, senza manco tornare dalla trasferta, e senza manco una telefonatina, il danno era fatto: mi sono trovato a mia insaputa a dover installare un **Technicolor TG582n**, ovvero il router che da qualche tempo Telecom, Tiscali e un sacco di altri **provider** anche esteri mandano ai propri clienti.
 
