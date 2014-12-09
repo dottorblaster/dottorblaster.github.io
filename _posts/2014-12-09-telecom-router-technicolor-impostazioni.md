@@ -40,9 +40,9 @@ openssl aes-128-cbc -K 65316532656263323039373831383630 -nosalt -iv 0 -d -in fil
 
 A questo punto, **aprendo il file XML** potremo modificare qualsiasi valore in qualcosa di più adatto. Un paio di riferimenti utili:
 
-- <code><SSID>NomeDellaRete</SSID></code>: in questo particolare punto potete modificare il nome della vostra rete come l'ESSID, che altrimenti sarebbe ad vitam qualcosa tipo Telecom-123456
-- <code><PublicPrimaryDNS>0.0.0.0</PublicPrimaryDNS></code> per il DNS primario, altrimenti risolverete sempre sui DNS del provider, che in genere fanno cagare. Io ho impostato i classici DNS di Google, ma anche gli OpenDNS vanno benone.
-- <code><PublicSecondaryDNS>0.0.0.0</PublicSecondaryDNS></code> come sopra: DNS secondario per la risoluzione dei nomi di dominio.
+- <code>\<SSID\>NomeDellaRete\</SSID\></code>: in questo particolare punto potete modificare il nome della vostra rete come l'ESSID, che altrimenti sarebbe ad vitam qualcosa tipo Telecom-123456
+- <code>\<PublicPrimaryDNS\>0.0.0.0\</PublicPrimaryDNS\></code> per il DNS primario, altrimenti risolverete sempre sui DNS del provider, che in genere fanno cagare. Io ho impostato i classici DNS di Google, ma anche gli OpenDNS vanno benone.
+- <code>\<PublicSecondaryDNS\>0.0.0.0\</PublicSecondaryDNS\></code> come sopra: DNS secondario per la risoluzione dei nomi di dominio.
 
 Ci sono anche un sacco di valori che se siete dei power user delle reti di calcolatori potete modificare a mano. Io non ho voluto fare troppi danni. :-D
 
