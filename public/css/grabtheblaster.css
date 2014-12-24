@@ -80,6 +80,18 @@ pre {
 	font-size: 0.8rem;
 }
 
+.social-icons {
+	text-align: center;
+	font-size: 2rem;
+	margin-top: -3.8rem;
+	margin-bottom: 1rem;
+	letter-spacing: 0.8rem;
+}
+
+.social-icons a {
+	color: #303030;
+}
+
 .social-section {
 	margin-bottom: 1rem;
 	margin-top: -1rem;
