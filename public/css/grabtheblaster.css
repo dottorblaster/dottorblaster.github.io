@@ -26,7 +26,6 @@ pre {
 	font-size: .8rem;
 	line-height: 1.4;
 	background-color: #f9f9f9;
-	overflow-y: scroll;
 	overflow-x: visible;
 	white-space: pre;
 	word-wrap: normal;
