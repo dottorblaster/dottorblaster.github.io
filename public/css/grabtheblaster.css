@@ -31,6 +31,10 @@ pre {
 	word-wrap: normal;
 }
 
+pre code {
+	padding-right: 1rem;
+}
+
 /* All of this for my pic, I'm a narcisist */
 
 .masthead-title {
