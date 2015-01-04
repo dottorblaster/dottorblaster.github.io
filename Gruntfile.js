@@ -17,7 +17,6 @@ module.exports = function(grunt) {
 				options: {
 					dest: '_devtarget',
 					serve: true,
-					watch: false,
 					drafts: true,
 					port: 8000
 				}
@@ -50,12 +49,13 @@ module.exports = function(grunt) {
 			files: ['_layouts/*.html',
 					'_posts/*',
 					'public/css/*.css',
+					'feed/*.xml',
 					'_config.yml',
 					'index.html',
 					'404.html'],
-			tasks: ['csslint', 'jekyll:dev'],
+			tasks: 'jekyll:dev',
 			options: {
-				spawn: false,
+				spawn: true,
 				iterrupt: true,
 				atBegin: true,
 				livereload: true
