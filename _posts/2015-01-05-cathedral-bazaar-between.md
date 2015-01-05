@@ -2,7 +2,7 @@
 layout: link
 status: publish
 published: true
-title: Cathedrals, Bazaars, and In Between
+title: Cathedrals, bazaars, and in between
 origlink: http://third-bit.com/2015/01/05/cathedrals-bazaars-and-in-between.html
 date: 2015-01-05 18:15:00 +0100
 categories:
