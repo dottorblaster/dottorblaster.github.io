@@ -2,7 +2,7 @@
 layout: link
 status: publish
 published: true
-title: A JIT for grepping: jrep and rejit
+title: A JIT for grepping&#58; jrep and rejit
 origlink: https://lwn.net/Articles/589009/
 date: 2015-01-10 13:20:00 +0100
 categories:
