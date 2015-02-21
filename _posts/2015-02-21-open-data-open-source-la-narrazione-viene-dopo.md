@@ -3,7 +3,7 @@ layout: post
 status: publish
 published: true
 title: Open Data (e Open Source) - La narrazione viene dopo
-date: 2015-02-21 18:05:00 +0100
+date: 2015-02-21 18:08:00 +0100
 categories:
 - Open Source
 tags:
