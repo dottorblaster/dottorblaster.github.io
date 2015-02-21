@@ -36,3 +36,5 @@ Sforzarsi di girare il calzino e osservare le cose dalla **prospettiva opposta**
 Io, dal canto mio, **ringrazio Andrea** per aver spezzato una lancia a favore di chi dai dati vuole tirarci fuori risultati veri.
 
 _Photo courtesy of [Open Data Institute Knowledge for Everyone](http://www.flickr.com/photos/93591348@N03/14318989343)_
+
+_P.S.: dimenticavo. Buon Open Data Day a tutti :-)_
