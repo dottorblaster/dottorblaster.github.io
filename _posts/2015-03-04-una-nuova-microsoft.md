@@ -15,7 +15,7 @@ tags:
 
 Curioso trovare Microsoft su un blog come il mio, che tratta soprattutto di "nerdate e Open Source", vero? ;-) Eppure.
 
-La scorsa settimana sono stato anch'io come [Nicola Iarocci](twitter.com/nicolaiarocci) all'**Azure Open Day** di **Microsoft**, ma purtroppo a casa dei ritmi serrati di questi giorni non ho potuto mettere per iscritto nemmeno uno stralcio delle impressioni che ho avuto prima, dopo e soprattutto durante l'evento. Recupero in corner citando almeno il post di Nicola sul blog di Microsoft stessa:
+La scorsa settimana sono stato anch'io come [Nicola Iarocci](http://twitter.com/nicolaiarocci) all'**Azure Open Day** di **Microsoft**, ma purtroppo a casa dei ritmi serrati di questi giorni non ho potuto mettere per iscritto nemmeno uno stralcio delle impressioni che ho avuto prima, dopo e soprattutto durante l'evento. Recupero in corner citando almeno il post di Nicola sul blog di Microsoft stessa:
 
 > Una cosa che balza all'occhio nell'offerta Azure; la ricchezza di supporto per i tool non-Microsoft, in particolar modo per quelli open source: git, Linux e quant'altro. Certo, col senno di poi, non c'è nulla di strano vista la rivoluzione che sta avvenendo col .NET Framework, cuore pulsante delle tecnologie Microsoft. Eppure ancora oggi non faccio che ripetermi: chi l'avrebbe detto solo un paio d'anni fa che avremmo visto Linux girare su una piattaforma Microsoft? E che dire della release non solo Open Source, ma addirittura multi piattaforma del prossimo .NET Core, di ASP.NET 5 e di tutto il resto che, c'è da scommetterci, arriverà poi?
 >
