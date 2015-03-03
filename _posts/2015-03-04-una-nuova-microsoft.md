@@ -21,7 +21,7 @@ La scorsa settimana sono stato anch'io come [Nicola Iarocci](twitter.com/nicolai
 >
 > Microsoft vuole essere ovunque, e ha capito che questo obiettivo non può essere raggiunto rimanendo focalizzata unicamente sulle tecnologie proprietarie né tantomeno costringendo gli sviluppatori su una piattaforma chiusa e limitata a Windows. Poteva arrivarci prima e certo ha ben corso il rischio di perdere il treno, ma a quanto pare ora siamo sulla giusta strada e l'intenzione di percorrerla a spron battuto.
 
-In realtà ho in canna un **commentario molto più ampio** sulla **strategia open** di Microsoft, se non altro perché quello che tanti fanno a parole, Microsoft lo mette a terra coi fatti arrivando ad essere quasi un gigante dell'Open Source nella sua totalità, scrivendo un sacco di codice non solo per le sue piattaforme ma foraggiando quello che a conti fatti è parte del suo core business e permettendo a tutte le persone di eseguire ogni possibile alternativa sulla piattaforma che offre.
+In realtà ho in canna un **commentario molto più ampio** sulla **strategia open** di Microsoft, se non altro perché quello che tanti fanno a parole, Microsoft lo mette a terra coi fatti arrivando ad essere quasi un gigante dell'Open Source nella sua totalità, scrivendo un sacco di codice non solo per le sue piattaforme ma [foraggiando](http://rcpmag.com/articles/2012/04/04/microsoft-credited-as-a-top-linux-kernel-contributor.aspx) quello che a conti fatti è parte del suo core business e permettendo a tutte le persone di eseguire ogni possibile alternativa sulla piattaforma che offre.
 
 Il mondo sta cambiando. **Microsoft sta cambiando**. Ne vedremo delle belle.
 
