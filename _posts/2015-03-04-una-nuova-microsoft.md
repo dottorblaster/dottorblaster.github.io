@@ -4,7 +4,7 @@ status: publish
 published: true
 title: Una giornata all'Azure Open Day in compagnia di una nuova Microsoft
 origlink: http://blogs.msdn.com/b/italy/archive/2015/03/03/guest-post-una-giornata-all-azure-open-day-in-compagnia-di-una-nuova-microsoft.aspx
-date: 2015-03-03 21:21:00 +0100
+date: 2015-03-04 21:21:00 +0100
 categories:
 - Open Source
 tags:
