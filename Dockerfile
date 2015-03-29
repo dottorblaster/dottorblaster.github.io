@@ -7,5 +7,5 @@ WORKDIR /data
 
 COPY . /data
 
-CMD ["jekyll", "serve"]
+RUN jekyll serve
 
