@@ -10,6 +10,7 @@ Well well, I finally made all my blog available under Jekyll.
 - [Rake](https://github.com/jimweirich/rake)
 - [Grunt](http://gruntjs.com/)
 - [Tapir.js](http://tapirgo.com/) (future)
+- [Docker](https://www.docker.com/)
 
 ## Run, debug, study my shit
 Just download this repository, and serve the content using the Jekyll built-in webserver.
@@ -21,3 +22,4 @@ $ git clone git@github.com:dottorblaster/dottorblaster.github.io.git
 $ cd dottorblaster.github.io
 $ jekyll serve
 ```
+
