@@ -13,6 +13,8 @@ tags:
 - git
 ---
 
+|[FriendFeed profile open source](http://i60.tinypic.com/2ai3kmr.png)
+
 Purtroppo nell'ultimo mese non ho mai avuto tempo di fare un post come si deve; provo a recuperare adesso in calcio d'angolo, dando un indizio che spero sia interessante a tutti i nerd che mi leggono e che hanno un profilo su **FriendFeed** (ormai credo pochi). Mi è infatti venuto in mente che, [chiudendo la piattaforma il 9 aprile](http://dottorblaster.it/2015/03/goodbye-friendfeed), oltre che esportare i miei contenuti e quelli di alcune stanzette, potevo rendere disponibile il tutto per un facile accesso online, **non spendendo una lira** di hosting.
 
 La ricetta è semplice, e gli ingredienti sono:
