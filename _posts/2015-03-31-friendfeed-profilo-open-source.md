@@ -48,4 +48,4 @@ Come avviene la magia? È abbastanza semplice: GitHub Pages si occupa di control
 
 È un **esercizio di stile**, ma per me era anche importante salvarmi tutto e tenerlo lontano dai miei hard disk, dato che non mi fido delle mie procedure di backup fallaci.
 
-Se volete vedere come viene il lavoro finito, trovate [il mio feed qui](http://dottorblaster.it/friendfeed-profile/).
+Se volete vedere come viene il lavoro finito, trovate [il mio feed qui](http://dottorblaster.it/friendfeed-profile/) (e il repository corrispondente [qui](https://github.com/dottorblaster/friendfeed-profile), senza README e licenza perché ovviamente l'ho fatto di fretta).
