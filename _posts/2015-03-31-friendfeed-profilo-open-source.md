@@ -8,7 +8,7 @@ categories:
 - Open Source
 tags:
 - open data
-- social netrworking
+- social networking
 - open source
 - git
 ---
