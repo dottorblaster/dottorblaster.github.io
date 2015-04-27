@@ -13,7 +13,7 @@ tags:
 - ios
 ---
 
-**Sudeshna Pantham** in un suo articolo su Medium mette a segno delle osservazioni interessanti:
+**Sudeshna Pantham** in un suo articolo su **Medium** mette a segno delle osservazioni interessanti:
 
 > I wish my phone had a friendly gatekeeper, someone who gives me a quick, personalized update every time I tap him on the shoulder (check the time). Maybe someone with Dwight Schrute’s dedication, April Ludgate’s dark humor, Chris Traeger’s enthusiasm and Gary Walsh’s loyalty. [...] My point is, this is not my day, this is. I don’t always want my device to save me time. Sometimes, I want it to make me stop and remember, smile, cry, laugh and be grateful.
 
