@@ -2,7 +2,7 @@
 layout: link
 status: publish
 published: true
-title: The watch on my phone: what time means to us.
+title: "The watch on my phone: what time means to us."
 origlink: https://medium.com/@sudeshnapantham/the-watch-on-my-phone-what-time-means-to-us-2935752a9dd1
 date: 2015-04-27 08:20:00 +0100
 categories:
