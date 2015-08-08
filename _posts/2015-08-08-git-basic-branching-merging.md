@@ -4,7 +4,7 @@ status: publish
 published: true
 title: Git basic branching and merging
 origlink: https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging
-date: 2015-04-28 09:35:00 +0100
+date: 2015-08-08 17:49:00 +0100
 categories:
 - Open Source
 tags:
