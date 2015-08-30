@@ -2,7 +2,7 @@
 layout: link
 status: publish
 published: true
-title: 8 (utilissime) utility da terminale per OS X
+title: 8 (fantastiche) utility da terminale per OS X
 origlink: http://www.mitchchn.me/2014/os-x-terminal/
 date: 2015-08-31 00:17:00 +0100
 categories:
