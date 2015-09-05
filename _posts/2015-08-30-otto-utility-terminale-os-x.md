@@ -2,17 +2,16 @@
 layout: link
 status: publish
 published: true
-title: 8 (fantastiche) utility da terminale per OS X
-origlink: http://www.mitchchn.me/2014/os-x-terminal/
-date: 2015-08-31 00:17:00 +0100
+title: Node.js Foundation Elects Board of Directors
+origlink: https://new.nodejs.org/en/blog/announcements/foundation-elects-board/
+date: 2015-09-05 10:56:00 +0100
 categories:
-- Linux
+- Tech
 tags:
-- unix
-- osx
-- bash
+- nodejs
+- javascript
 ---
 
-A prescindere da che shell utilizziamo (e lo dico perché ho appena migrato anche il mio setup OS X a [ZSH](http://www.zsh.org/) convertendo tutti gli \*rc), i comandi che abbiamo a disposizione su ogni sistema operativo sono molteplici: Mitchell Cohen dà una panoramica di 8 comandi che possiamo utilizzare su **OS X** di Apple per renderci la vita più semplice anche se siamo costretti da varie circostanze a usare un Mac.
+Come avevamo già visto tempo fa, **IO.js** e **Node.js** hanno riunito le forze sotto il marchio di Node per costruire insieme un **progetto maggiormente community-driven** che comunque tenesse bene in considerazione le esigenze del mondo enterprise. Proprio ieri sono state pubblicate le nomine relative alla Board of Directors di questo nuovo progetto, dentro cui troviamo dei nomi interessanti come quello di [Gianugo Rabellino](https://twitter.com/gianugo), o quello di [Scott Hammond](https://www.linkedin.com/pub/scott-hammond/1/a4b/92a) (scontato? Si ma nemmeno troppo...).
 
-Per chi invece dal terminale vuole un po' di più e non è disposto a scendere a compromessi con l'**applicazione predefinita** di OS X che è effettivamente un po' povera, consiglio l'ottimo [iTerm](https://www.iterm2.com/index.html) che permette di suddividere la vista in più pannelli, è molto più configurabile - e tantissime altre cose.
+L'elenco è ricco di altro nomi rilevanti. Personalmente auguro il miglior operato possibile a tutti, e di riuscire a far crescere **Node** in una direzione che rispetti gli interessi di tutti.
