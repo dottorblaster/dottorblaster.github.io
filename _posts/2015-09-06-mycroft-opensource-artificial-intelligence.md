@@ -4,7 +4,7 @@ status: publish
 published: true
 title: "Mycroft: An Open Source Artificial Intelligence For Everyone"
 origlink: https://www.kickstarter.com/projects/aiforeveryone/mycroft-an-open-source-artificial-intelligence-for
-date: 2015-09-05 10:58:00 +0100
+date: 2015-09-06 17:20:00 +0100
 categories:
 - Tech
 tags:
