@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: true
-title: Microsoft e l'open source – considerazioni
+title: Microsoft e l'open source – Analisi e impressioni su una nuova open source company
 date: 2015-09-18 19:30:00 +0100
 categories:
 - Tech
@@ -11,6 +11,8 @@ tags:
 - open source
 - linux
 ---
+
+![Si: quello sono io. Davanti alla sede di Microsoft a Peschiera :-)](http://i60.tinypic.com/opurkk.jpg)
 
 Analizzare il comportamento di **Microsoft** negli ultimi anni nei confronti dell'open source non è una cosa facile, tant'è che non so come iniziare, dato che non si può fare un preambolo efficace per parlare di una compagnia che è stata in grado, in relativamente pochissimo tempo, di passare da un approccio totalmente esclusivo verso l'ecosistema open ad uno inclusivo per buona parte del business plan orientato agli sviluppatori, passando per una fase in cui si respirava un clima del tipo "si, l'**open source** è figo, ma è roba per smanettoni e fricchettoni, adesso vi facciamo vedere noi come giocano i bimbi grandi". Volendo affrontare una questione come questa in relativamente poco tempo, senza perdere settimane, sicuramente ci è utile un'analisi storica condotta a spanne sull'operato di Microsoft lungo il tempo.
 
@@ -56,6 +58,8 @@ Se della filosofia abbiamo avuto tempo di stancarci oltremodo, è anche vero che
 
 Il terzo punto di miglioramento, piuttosto, è una derivazione del primo, e mi concentro su questo perché penso che vada a coronare l'insieme di azioni che l'azienda può intraprendere immediatamente per correggere il tiro, ampliare la sua audience e ricavare il massimo in termini di feedback e contributi esterni. C'è il bisogno essenziale che Microsoft, infatti, continui a **mantenere un effort sui progetti correntemente aperti**, e renda **open source** nuovi progetti. In questo modo, sicuramente verrà confermato il commitment iniziale per il quale si sarà sforzata parecchio, ma soprattutto **verrà aumentato il fattore di fiducia** da parte di una community che comunque, nel tempo, è cresciuta spaventosamente. Microsoft ha visto ingrossarsi sempre più le fila dei suoi contributori esterni, e aumentare il bacino di progetti su cui lavorare insieme a una community costituita da dipendenti e "alieni" alla realtà aziendale non farà altro che avvicinare gli sviluppatori e gli amanti dei progetti portati avanti nel modo giusto a credere in questo nuovo assetto aziendale.
 
+![Senza parole... :-D](http://i61.tinypic.com/24262i0.jpg)
+
 ## L'open source come valore di business
 **Alan Ho** in ["Using open source to deliver business value"](http://www.zdnet.com/article/using-open-source-to-deliver-business-value/) mette a fuoco cinque punti, diciamo pure molto focalizzati sul punto di vista enterprise, per cui l'open source consente di raggiungere un valore di business complessivo più alto. Ho si concentra essenzialmente su:
 
@@ -91,6 +95,8 @@ Allo stesso modo, quello che è interessante vedere avvicinandosi sempre di più
 > One metric totally made my day. When browsing the graphs of the corefx repo, GitHub displays the following [...] Indeed we’ve more than 1,000 forks! Of course, this a total vanity metric and not indicative of the true number of engagements we have. But we’re still totally humbled by the massive amount of interest we see from the community. And we’re also a tiny bit proud. But the total number of pull requests is pretty high. In total, we’re approaching 250 pull requests since last November (which includes both, contributors from community as well as Microsoft)
 
 Che dire? Sembra che Microsoft c'abbia veramente preso gusto: sicuramente .Net è **un prodotto a cui ha giovato l'apertura**, anche se sinceramente penso che se Microsoft non avesse accompagnato l'apertura del sorgente al supporto multipiattaforma non si sarebbe verificato questo boom. In ogni caso, è sempre bello vedere quando un'iniziativa di questo genere trova persone capaci di apprezzarla, e dimostra coi risultati tangibili quanto, condotto con raziocinio, il **processo open** possa arrecare un valore aggiunto al prodotto in oggetto (pur non divenendo una caratteristica primaria).
+
+![Microsoft Build](https://farm7.staticflickr.com/6185/6144618538_9b42127682_o.jpg)
 
 ## Valutazioni finali
 Di base, **Microsoft mi ha stupito**, e credo che abbia stupito moltissime persone con i suoi "ultimi" sommovimenti. L'azienda ha riconfigurato la propria politica in relativamente poco tempo, dimostrando una **maturità** tardiva per certi aspetti (solo ora l'open source ha assunto il ruolo spettantegli? Non sarà tardi?), invidiabilmente precoce per altri (non è facile per una grande azienda cambiare mindset secondo queste tempistiche). Poste le opportune premesse, penso che si possa esprimere un giudizio complessivamente buono, anche se ci sono tante sfumature da ritoccare e una strategia da rinforzare massicciamente, dato che per quanto mi riguarda Microsoft è appena all'inizio del suo cammino che potrebbe portarla a diventare un'azienda totalmente nuova.
