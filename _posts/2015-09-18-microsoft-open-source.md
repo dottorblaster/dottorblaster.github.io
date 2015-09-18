@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: true
-title: Microsoft e l'open source – Analisi e impressioni su una nuova open source company
+title: Microsoft e l'open source – analisi e impressioni su una nuova open source company
 date: 2015-09-18 19:30:00 +0100
 categories:
 - Tech
