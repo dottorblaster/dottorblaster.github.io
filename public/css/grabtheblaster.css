@@ -65,8 +65,12 @@ pre code {
   text-align: center;
 }
 
+.post {
+	margin-bottom: 1rem;
+}
+
 .post-title-link {
-        font-size: 1.1rem;
+	font-size: 1.1rem;
 	text-align: left;
 }
 
@@ -77,6 +81,17 @@ pre code {
 .post-date {
 	text-align: center;
 }
+
+.post-closure {
+	margin-bottom: 3rem;
+	text-align: center;
+	font-size: 1.3rem;
+}
+
+.closure-icon {
+	padding: 0.4rem;
+}
+
 
 .footer {
 	margin-top: 3rem;
@@ -93,7 +108,7 @@ pre code {
 }
 
 .social-icons a {
-	color: #303030;
+	color: #515151;
 }
 
 .social-section {
