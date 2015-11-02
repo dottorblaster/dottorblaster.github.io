@@ -21,4 +21,4 @@ In questi giorni sta girando per Internet il post stupendo di [@ndrsju](https://
 - Usano qualcosa che non ti aspetteresti mai: **Dennis Ritchie usava Windows NT**? -> wat face here.
 
 A parte queste osservazioni estemporanee, è veramente affascinante la **personalizzabilità di Unix**, e poter guardare da vicino dei "desktop famosi", sperando ispezionandoli di cogliere qualcosa che ci farà sorridere. Lo fate anche voi vero? :-)
-**
+
