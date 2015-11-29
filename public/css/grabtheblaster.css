@@ -57,12 +57,12 @@ pre code {
 }
 
 .masthead-title small {
-  font-size: 65%;
-  font-weight: 400;
-  color: #c0c0c0;
-  letter-spacing: 0;
-  display: block;
-  text-align: center;
+	font-size: 65%;
+	font-weight: 400;
+	color: #c0c0c0;
+	letter-spacing: 0;
+	display: block;
+	text-align: center;
 }
 
 .post {
@@ -90,6 +90,10 @@ pre code {
 
 .closure-icon {
 	padding: 0.4rem;
+}
+
+a .pagination-item:hover {
+	text-decoration: none;
 }
 
 
@@ -157,4 +161,3 @@ pre code {
 		text-align: left;
 	}
 }
-
