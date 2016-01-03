@@ -92,8 +92,25 @@ pre code {
 	padding: 0.4rem;
 }
 
-a .pagination-item:hover {
-	text-decoration: none;
+.pagination {
+        margin: 0.3rem 0;  
+}
+
+.pagination-item {
+        background-color: #FFFFFF;
+        color: #888888;
+        border: none;
+        font-size: 3rem;
+        padding: 0;
+}
+
+a.pagination-item {
+        color: #515151;  
+}
+
+a.pagination-item:hover {
+        text-decoration: none;
+        background-color: #FFFFFF;
 }
 
 
@@ -161,3 +178,4 @@ a .pagination-item:hover {
 		text-align: left;
 	}
 }
+
