@@ -16,7 +16,7 @@ tags:
 
 Analizzare il comportamento di **Microsoft** negli ultimi anni nei confronti dell'open source non è una cosa facile, tant'è che non so come iniziare, dato che non si può fare un preambolo efficace per parlare di una compagnia che è stata in grado, in relativamente pochissimo tempo, di passare da un approccio totalmente esclusivo verso l'ecosistema open ad uno inclusivo per buona parte del business plan orientato agli sviluppatori, passando per una fase in cui si respirava un clima del tipo "si, l'**open source** è figo, ma è roba per smanettoni e fricchettoni, adesso vi facciamo vedere noi come giocano i bimbi grandi". Volendo affrontare una questione come questa in relativamente poco tempo, senza perdere settimane, sicuramente ci è utile un'analisi storica condotta a spanne sull'operato di Microsoft lungo il tempo.
 
-## La vecchia Microsoft: Halloween Documents, FUD & co.
+### La vecchia Microsoft: Halloween Documents, FUD & co.
 Microsoft è sempre stata la più grande **bestia nera**, se vogliamo al pari di Apple, verso **Linux** e l'approccio open source. Prima di affrontare la Microsoft attuale, è impossibile dimenticare specie per chi è più affezionato ai "vecchi tempi" alcuni atteggiamenti ostili da parte dell'azienda di Redmond, condotti sia in maniera subdola che in maniera più palese, e che una volta portati alla luce hanno reso Bill Gates il nemico pubblico numero 1 di ogni OSS enthusiast, e Microsoft una compagnia da screditare in ogni possibile occasione, per ricambiare la **pubblicità negativa** che questa poteva permettersi di riversare su Linux, BSD, tecnologie e filosofie attigue con parecchia facilità.
 
 La prova più lampante e famosa dell'antico atteggiamento negativo di Microsoft verso la community open source e verso alcuni progetti - Linux in testa - emerge soprattutto da una serie di documenti confidenziali ormai divenuti famosissimi, ovvero gli **Halloween Documents**, di cui di seguito è possibile leggere uno stralcio:
@@ -31,7 +31,7 @@ Col tempo, Microsoft ha affinato le sue tecniche di persuasione nei confronti de
 
 Una patata bollente che l'eccellente Satya tuttavia avrebbe saputo trattare egregiamente, almeno secondo la mia valutazione.
 
-## La nuova Microsoft: open source, Linux, e tanto coraggio
+### La nuova Microsoft: open source, Linux, e tanto coraggio
 > Microsoft loves Linux [...] We will have always first class support for Linux distributions, this is something I want to make sure to drill home.
 
 Nadella pronuncia queste frasi nemmeno troppo timidamente, su un palco non troppo noto durante un webcast sulla cloud; decisamente un grosso passo avanti, che ribalta le concezioni che anche i più affezionati al mondo tecnologico avevano a proposito di **Microsoft**. Come si è potuti arrivare a questo? Gradualmente, è chiaro: innanzi tutto è bene infatti ricordare che durante durante l'amministrazione Ballmer l'azienda aveva cominciato ad offrire già ben presto, oltre la possibilità di utilizzare chiaramente Windows Server, anche immagini Linux da installare sulle proprie macchine virtuali che risiedevano su **Azure**, il provider cloud di cui Microsoft è signora e padrona. Ampliando questa **offerta UNIX/Linux** col tempo, di fatto la compagnia ha spalancato le porte a smanettoni di ogni "razza", facendo si che sulla stessa piattaforma convergessero gli affezionati ai prodotti storici di Microsoft, ma anche accogliendo tutta una nuova fetta di utenza incuriosita dalla variegata offerta "di Linux" proveniente da Microsoft.
@@ -40,7 +40,7 @@ Satya Nadella non poteva fare altrimenti quindi: dato che da sempre nell'ecosist
 
 C'è poco da fare, oggi come oggi, anche per aziende del calibro di Microsoft o di altri colossi: c'è bisogno di **confrontarsi con l'ecosistema open**, e proprio a Redmond hanno scelto di confrontarsi con Linux prima, poi con tanti altri microambiti, andando a coprire una vasta parte del panorama del codice aperto disponibile. Potremo fidarci? Può mai essere che un'azienda riesca a **rinunciare con tanta leggerezza** ad un'eredità così pesante, e ad offrire un servizio di prima categoria utilizzando di fatto il prodotto di una community che per anni è riuscita a rappresentare il competitor numero uno di quella stessa corporate? È così facile, o forse non lo è? Forse non lo è, no. Forse Microsoft è riuscita a mettersi tutto dietro le spalle solo dopo un momento difficile. E almeno per come si sta comportando adesso, merita un biscottino.
 
-## È davvero possibile?
+### È davvero possibile?
 La mossa che a Redmond hanno messo in atto lungo più e più anni è veramente interessante, tanto da essere da me reputata un **caso di studio** esemplare. Chiaramente non credo che sia possibile mettere una pietra sopra alle divergenze avute con la community Linux in particolare, e con l'ecosistema open in generale, con tutta questa leggerezza. Per poterlo fare ci vogliono anni di costante lavoro (che Microsoft ha messo sul piatto senza esitare, pare), e anche la volontà di mettersi in gioco su un terreno impervio come questo.
 
 A tale proposito **ho avuto più di qualche chiacchierata con Microsoft Italia**, e le intenzioni di base non mi sono sembrate malvagie, anzi: sicuramente c'è la **voglia di mettersi in gioco** per fare qualcosa che non solo viene riconosciuto come "mai fatto" da gran parte dell'azienda (certo, possiamo parlare di Open Tech, ma in che percentuale l'azienda era focalizzata su "compiti" che riguardavano un repository pubblico?), ma da parte di tutti (almeno le persone con cui ho parlato) c'è la volontà di farlo "bene", nel modo giusto.
@@ -49,7 +49,7 @@ Arrivare a **fare open source nel modo giusto**, ovvero non solo aprendo cose a 
 
 Nonostante questo, però, Microsoft ha dimostrato della sana voglia di fare, non solo nei confronti dei suoi stessi prodotti che sono addirittura stati aperti su **GitHub** invece che su CodePlex (grande gesto di umiltà e allo stesso tempo grossa furberia, dato che ormai GitHub è la piattaforma dove la maggior parte degli sviluppatori ospita il proprio codice - e di conseguenza dove viene inviata la maggior parte dei contributi), ma anche nei confronti di "terzi", come ad esempio la **nuova versione di AngularJS**, targata prevalentemente Google e Microsoft, la quale ha iniziato a portare codice TypeScript direttamente dentro Angular. Questo ed altri episodi, nonostante tutto, testimoniano un **commitment che non può essere ignorato o denigrato**; giudicare un contributo di buona qualità come qualcosa di inaccettabile sarebbe fallace a prescindere.
 
-## Cose che Microsoft può fare meglio
+### Cose che Microsoft può fare meglio
 Uno sforzo come quello di Microsoft non è assolutamente da considerare poca cosa, e non si può certo restare indifferenti come alcune persone sono rimaste di fronte a tutto questo; tuttavia, **nulla è perfetto e tutto è migliorabile** e per questo anche Microsoft può migliorare decisamente nella gestione della propria strategia in materia di open source. Una delle cose che mi hanno colpito di più per esempio è che ancora ci sia **moltissimo codice di Microsoft ospitato su CodePlex**; certo, ci sta ed è legittimo che la propria "casa" sia ritenuta una piattaforma privilegiata. Nonostante questo però, Microsoft impostando la sua politica di condivisione del codice in questo nuovo modo ha stabilito di riconoscere che la conversazione sta da un'altra parte (cioè su GitHub): in futuro quindi spero che ogni repository venga comunque portato **da CodePlex a GitHub**, dato che comunque anche volendo riportare la situazione più "dentro i suoi confini" è un'azienda che ha fatto un grosso passo di esposizione all'esterno, e non credo che possa tornare indietro o permettersi atteggiamenti di apertura parziale.
 
 Il secondo punto che voglio stressare parlando della strategia di condivisione di Microsoft, è proprio quello relativo all'**advocacy** che i vari membri della community (vediamo per un momento i membri di questo circolo come una community a sé) perseguono nei confronti dell'azienda. È vero infatti che la compagnia si è aperta alle contribuzioni esterne su prodotti che in ambito enterprise godono di un certo successo (e, aehm, di un certo fatturato generato), ed è vero che a Redmond in un momento di giramento di testa hanno deciso di produrre **un editor di testo con debugger integrato che facesse pienamente concorrenza a Sublime Text**, ma le due cose non sono minimamente correlate, e questo l'azienda dovrebbe capirlo. Le persone che contribuiscono ai progetti open source probabilmente non si curano del fatto che Microsoft regali Visual Studio alle startup, e nel caso in cui gli interessi, lo sanno già. La comunicazione di Microsoft riguardo l'apertura e i progetti a cui è possibile contribuire deve subire un passo in avanti ulteriore, stimolando non tanto il sentimento, che è quello che paga a breve termine, quanto **la volontà di costruire un prodotto insieme**, che a lungo termine come dimostrano le linee temporali di altre compagnie è qualcosa che tende a certificare un approccio vincente. Vogliamo fare di un mal comune un mezzo gaudio? Facciamolo e siamo assolutori: in realtà un atteggiamento di questo tipo manca in parecchie compagnie ritenute da tutti oltre che sedicenti superstar dell'open source, indipendentemente che i campioni per questa statistica vengano presi dall'ecosistema enterprise o dall'underground.
@@ -60,7 +60,7 @@ Il terzo punto di miglioramento, piuttosto, è una derivazione del primo, e mi c
 
 ![Senza parole... :-D](http://i61.tinypic.com/24262i0.jpg)
 
-## L'open source come valore di business
+### L'open source come valore di business
 **Alan Ho** in ["Using open source to deliver business value"](http://www.zdnet.com/article/using-open-source-to-deliver-business-value/) mette a fuoco cinque punti, diciamo pure molto focalizzati sul punto di vista enterprise, per cui l'open source consente di raggiungere un valore di business complessivo più alto. Ho si concentra essenzialmente su:
 
 - Sicurezza;
@@ -74,7 +74,7 @@ Un esempio notevole di questo è la **collaborazione tra Microsoft e Google per 
 
 **Microsoft**, quindi, sembra aver capito che l'open source rappresenta un valore aggiunto non indifferente per molti dei software che ha aperto e per i software ai quali sta contribuendo. Spero che continui a perseguire questa strada, perché sembra dare frutti notevoli.
 
-## Azure
+### Azure
 Quando si prova a dirimere la questione del **rapporto tra Microsoft e l'open source**, secondo me uno dei nodi centrali diventa immediatamente la piattaforma **Azure**. Cito da Wikipedia:
 
 > Microsoft Azure [...] is a cloud computing platform and infrastructure, created by Microsoft, for building, deploying and managing applications and services [...] It provides both PaaS and IaaS services and supports many different programming languages, tools and frameworks, including both Microsoft-specific and third-party software and systems.
@@ -85,7 +85,7 @@ In questo **Microsoft ha dimostrato lungimiranza**, spirito di coopetition e sop
 
 Altre chicche molto open che troviamo dentro Azure? Una su tutte: la PaaS, che pure non ho avuto troppo occasione di apprezzare per via del fatto che non mi andava di prendere confidenza con quello specifico flusso di lavoro, supporta benissimo out of the box il deploy da un repository git, e ovviamente **il principe della situazione è ancora una volta GitHub**. Mi ha colpito, piccola osservazione tecnica, anche il fatto che fosse possibile impostare con un paio di click la **continuous delivery** per ogni commit che avviene su un determinato branch.
 
-## DotNet, Roslyn
+### DotNet, Roslyn
 La ciliegina sulla torta viene per ultima: vicino al Natale del 2014, **Microsoft** decide infatti di fare un grosso regalo alla community open source, specialmente quella coinvolta nello sviluppo di applicazioni con tecnologia .Net; con un grosso passo avanti e un atto di fede piuttosto ingente **rende open source tutto il core di .Net**. Su **GitHub**. Il che significa che, come dicevo sopra, l'azienda un tempo simbolo di chiusura e di una certa ottica di business ha riconosciuto in GitHub il posto ideale per intavolare una conversazione con realtà diverse da quella interna.
 
 In breve **i commit sul progetto hanno raggiunto picchi elevatissimi**: la piattaforma **Roslyn**, che fornisce i compilatori per C# e Visual Basic, open già dall'aprile di quell'anno, registra numeri da record che Microsoft si [affretta a condividere](http://blogs.msdn.com/b/dotnet/archive/2015/04/06/a-journey-through-open-source-the-trials-amp-triumphs-in-roslyn-s-first-year-of-open-source.aspx) dopo un lungo viaggio percorso insieme alla propria community di affezionati. Community che viene ingaggiata massicciamente, fidelizzata, incentivata con dei gadget meravigliosi come le **tazze con l'hash del proprio primo commit** su .Net Core. Il report di Febbraio di quest'anno sull'andamento del progetto è meraviglioso: mostra un sentimento di vero legame tra ecosistema aziendale e contributor esterni.
@@ -98,7 +98,7 @@ Che dire? Sembra che Microsoft c'abbia veramente preso gusto: sicuramente .Net �
 
 ![Microsoft Build](https://farm7.staticflickr.com/6185/6144618538_9b42127682_o.jpg)
 
-## Valutazioni finali
+### Valutazioni finali
 Di base, **Microsoft mi ha stupito**, e credo che abbia stupito moltissime persone con i suoi "ultimi" sommovimenti. L'azienda ha riconfigurato la propria politica in relativamente poco tempo, dimostrando una **maturità** tardiva per certi aspetti (solo ora l'open source ha assunto il ruolo spettantegli? Non sarà tardi?), invidiabilmente precoce per altri (non è facile per una grande azienda cambiare mindset secondo queste tempistiche). Poste le opportune premesse, penso che si possa esprimere un giudizio complessivamente buono, anche se ci sono tante sfumature da ritoccare e una strategia da rinforzare massicciamente, dato che per quanto mi riguarda Microsoft è appena all'inizio del suo cammino che potrebbe portarla a diventare un'azienda totalmente nuova.
 
 Andando per punti, **tre pro**:
