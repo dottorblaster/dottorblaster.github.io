@@ -5,6 +5,7 @@ markdown:         redcarpet
 title:            Grab The Blaster
 tagline:          di Alessio Biancalana
 paginate:         5
+paginate_path:    '/page/:num'
 baseurl:          '/'
 url:              'http://dottorblaster.it'
 permalink:        '/:year/:month/:title'
@@ -17,6 +18,10 @@ author:
   email:          dottorblaster@gmail.com
 
 # Custom vars
-version:          0.1.0
+version:          0.3.0
 github:
   repo:           https://github.com/dottorblaster/dottorblaster.github.io
+
+# Custom configs
+gems: [jekyll-paginate]
+
