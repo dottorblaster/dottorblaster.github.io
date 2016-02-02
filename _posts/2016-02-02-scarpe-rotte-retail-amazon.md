@@ -1,4 +1,5 @@
-yout: post
+---
+layout: post
 status: publish
 published: true
 title: Dalle scarpe rotte al cambiamento del retail
