@@ -2,6 +2,6 @@ language: ruby
 rvm:
 - 2.1
 
-install: gem install jekyll redcarpet jekyll-paginate
+install: gem install jekyll kramdown jekyll-paginate
 script: jekyll build
 
