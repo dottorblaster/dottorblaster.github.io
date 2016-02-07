@@ -15,7 +15,7 @@ layout: null
     {% for post in site.posts limit:50 %}
     <item>
       {% if post.layout == "link" %}
-        <title>{{ post.title }}</title>
+        <title>{{ post.title | xml_escape }}</title>
         <link>{{ post.origlink }}</link>
         <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
         <author>dottorblaster@gmail.com (Alessio Biancalana)</author>
