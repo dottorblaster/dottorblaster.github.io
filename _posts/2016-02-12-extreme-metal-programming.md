@@ -13,5 +13,5 @@ tags:
 - programmazione
 ---
 
-Dal blog di mogui, appena aperto, fresco fresco, uno dei manifesti più belli sul software development che ci siano. Se siete metallari(come noi! Anche se a me piacciono pure i Periphery) lo amerete :-D
+Dal [blog di mogui](http://mogui.it), appena aperto, fresco fresco, uno dei manifesti più belli sul software development che ci siano. Se siete metallari(come noi! Anche se a me piacciono pure i Periphery) lo amerete :-D
 
