@@ -3,7 +3,7 @@ layout: link
 status: publish
 published: true
 origlink: http://www.wired.com/2012/12/ff-john-mcafees-last-stand/
-title: John McAfee, l'intervista più "badass" del mondo
+title: John McAfee, l'intervista più \"badass\" del mondo
 date: 2016-02-18 23:26:41 +0100
 categories:
 - Tech
