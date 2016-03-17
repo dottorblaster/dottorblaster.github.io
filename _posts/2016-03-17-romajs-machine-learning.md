@@ -24,6 +24,6 @@ Dopodiché, **hamburgerozzo** per tutti. Il quale, chiaramente, è stato condito
 
 > Il Perl minificato è più leggibile di quello normale!
 
-Insomma, che dire: sono sicuro di esserci anche la prossima volta :-)
+Insomma, che dire: sono sicuro di esserci anche la prossima volta :-) E anche voi, se siete romani, mettete il like alla [pagina Facebook](https://www.facebook.com/romajs.org/) per essere aggiornati. In ogni caso, ogni terzo mercoledì del mese andate in Enlabs verso le sette.
 
 _Photo courtesy of Luca Lanziani_
