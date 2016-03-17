@@ -8,7 +8,7 @@ paginate:         5
 paginate_path:    '/page/:num'
 baseurl:          '/'
 url:              'http://dottorblaster.it'
-permalink:        '/:year/:month/:title/'
+permalink:        '/:year/:month/:title'
 license:
   link:           'https://creativecommons.org/licenses/by-nc/3.0/'
   label:          'CC BY-NC'
