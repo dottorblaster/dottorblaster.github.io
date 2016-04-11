@@ -20,6 +20,6 @@ Se arrivate a sentire l'esigenza di chiederci delle cose simili, come se non fos
 - **Con una pizza in mano**, dimodoché possiamo godere del vostro sacrificio di beni materiali al nostro stomaco;
 - **Con la carta di credito bene in vista**, in modo che possiamo capire la chiara intenzione di contraccambiare;
 - **Senza mutande**, ove compatibile con i gusti della controparte in oggetto;
-- Aprendo il discorso con "stavo guardando la tua **whishlist di Amazon** ma il mio PC fa le bizze".
+- Aprendo il discorso con "stavo guardando la tua **wishlist di Amazon** ma il mio PC fa le bizze".
 
 Chiaramente sentitevi liberi di personalizzare leggermente questi **metodi di approccio**, che suonano senza dubbio meglio dei soliti.

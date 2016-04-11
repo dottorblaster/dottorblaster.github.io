@@ -7,7 +7,6 @@ Well well, I finally made all my blog available under Jekyll.
 - [Jekyll](http://jekyllrb.com/)
 - [Poole](https://github.com/poole/poole)
 - [GitHub Pages](https://pages.github.com/)
-- [Rake](https://github.com/jimweirich/rake)
 - [Grunt](http://gruntjs.com/)
 - [Tapir.js](http://tapirgo.com/) (future)
 - [Docker](https://www.docker.com/)
