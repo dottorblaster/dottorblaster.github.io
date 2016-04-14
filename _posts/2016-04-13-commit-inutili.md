@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: true
-title: Le Pull Request \"inutili\"
+title: Le Pull Request "inutili"
 date: 2016-04-14 22:51:40 +0200
 categories:
 - Open Source
