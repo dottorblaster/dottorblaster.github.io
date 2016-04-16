@@ -5,10 +5,11 @@ published: true
 title: Niente più Air da Apple?
 date: 2016-04-15 17:35:12 +0200
 categories:
-- Category
+- Tech
 tags:
-- first_tag
-- second_tag
+- os x
+- air
+- macbook
 ---
 
 _Doverosa introduzione: non parlo quasi mai di Apple, ma per una volta che non parlo di Linux ci sta dai :D_
