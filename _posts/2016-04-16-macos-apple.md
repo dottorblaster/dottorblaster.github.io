@@ -12,8 +12,9 @@ tags:
 - mac
 ---
 
-**Apple** cambia, [ancora una volta][1], nome al suo "sistema operativo migliore di sempre". Nel frattempo Microsoft porta la Bash (nativa) su Windows 10, insieme a gran parte della userland di Ubuntu.
+**Apple** cambia, [ancora una volta][1], nome al suo "sistema operativo migliore di sempre". Nel frattempo [Microsoft porta la Bash (nativa) su Windows 10][2], insieme a gran parte della userland di Ubuntu.
 
 Se fossi un coatto, scriverei "ciaone".
 
 [1]: http://www.theverge.com/2012/2/16/2802281/apple-officially-renames-mac-os-x-to-os-x-drops-the-mac
+[2]: http://dottorblaster.it/2016/03/ubuntu-on-windows/
