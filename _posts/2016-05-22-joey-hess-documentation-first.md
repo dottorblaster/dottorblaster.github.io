@@ -13,6 +13,6 @@ tags:
 - software
 ---
 
-Ancora un'altra frase iconica di Joey Hess, giuro che poi la smetto.
+Ancora un'altra frase iconica di **Joey Hess**, giuro che poi la smetto.
 
 > I write documentation first and code second.
