@@ -14,7 +14,7 @@ tags:
 - memories
 ---
 
-Oggi sono finito sull'about di **Marco Arment** per caso, e subito dopo su questo post (che parla della crescita di **Tumblr**) che paradossalmente nonostante la mia ammirazione per lui non avevo mai letto. Fornisce degli spunti di riflessione a mio parere veramente buoni sull'**operato di un CEO** di un'azienda di prodotto, sul **ruolo di un tecnico** quando si parla di crescita dell'azienda, e su tante altre cose. Per esempio il posizionamento.
+Oggi sono finito sull'[about](https://marco.org/about) di **Marco Arment** per caso, e subito dopo su questo post (che parla della crescita di **Tumblr**, linkato nel titolo come sempre) che paradossalmente nonostante la mia ammirazione per lui non avevo mai letto. Fornisce degli spunti di riflessione a mio parere veramente buoni sull'**operato di un CEO** di un'azienda di prodotto, sul **ruolo di un tecnico** quando si parla di crescita dell'azienda, e su tante altre cose. Per esempio il posizionamento.
 
 > MySpace was where you went in the past, WordPress and Movable Type were where people went if they had the patience and writing output to maintain a traditional blog, Facebook was where you went to define yourself by schools and checkboxes, and Tumblr was where you went to make your own identity and express your creativity.
 
