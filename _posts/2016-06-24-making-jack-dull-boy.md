@@ -16,7 +16,7 @@ tags:
 
 ![Headphone jack](https://c1.staticflickr.com/9/8587/15893585805_e985f86cb8_h.jpg)
 
-Ho un mucchio di roba da scrivere, ma esattamente come [Joey](http://www.omgubuntu.co.uk/2016/06/guess-write-flatpak-im-finding-hard) sono un procrastinatore seriale e piuttosto che parlare di questioni serie voglio virare verso il faceto. Parliamo quindi un po' di Apple che vuole **rimuovere il jack audio** (secondo rumor più o meno confermati) dal prossimo iPhone. A me sinceramente non è che interessi tantissimo, ma è innegabile che le scelte di Apple abbiano un impatto su come gli altri produttori costruiscono le proprie soluzioni.
+Ho un mucchio di roba da scrivere, ma esattamente come [Joey](http://www.omgubuntu.co.uk/2016/06/guess-write-flatpak-im-finding-hard) sono un procrastinatore seriale e piuttosto che parlare di questioni serie voglio virare verso il faceto. Parliamo quindi un po' di Apple che vuole **rimuovere il connettore jack audio** (secondo rumor più o meno confermati) dal prossimo iPhone. A me sinceramente non è che interessi tantissimo, ma è innegabile che le scelte di Apple abbiano un impatto su come gli altri produttori costruiscono le proprie soluzioni.
 
 Non ho letto molto sulla cosa: ho letto sostanzialmente poche fonti, di cui la più presente è stata Daring Fireball, su cui **John Gruber** riporta ripetutamente la sua opinione positiva riguardo questa scelta:
 
