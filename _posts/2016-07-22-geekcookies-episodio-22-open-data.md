@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: link
 status: publish
 published: true
 title: Geek Cookies, episodio 22 – Open Data et al.
