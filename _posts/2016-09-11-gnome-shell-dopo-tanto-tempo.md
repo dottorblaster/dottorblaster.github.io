@@ -28,8 +28,8 @@ Ma soprattutto, ho **installato GNOME Shell**, la scorsa settimana, per prenderm
 Per l'occasione, ho deciso di avvalermi di un assistente d'eccezione: così mentre il package manager ho chiamato [Gianguido](http://blog.gsora.xyz/), che la scena GNOME negli ultimi tempi l'ha seguita molto più di me, e gli ho chiesto consiglio.
 
 ```shell
-$ pacman -Rcs kde
-$ pacman -S gnome gnome-extra
+$ sudo pacman -Rcs kde
+$ sudo pacman -S gnome gnome-extra
 ```
 
 Con i comandi di rito ho avuto un **setup abbastanza pulito di GNOME** sulla mia macchina. Quello che però non sono ancora riuscito a digerire della nuova **GUI**, purtroppo, è il tema di default che gli sviluppatori hanno deciso di disegnare ed adottare: se infatti dall'esterno può apparire anche gradevole, personalmente non lo trovo molto bello, anche se devo giudicarlo molto funzionale. Essendo stato consigliato da Gianguido riguardo l'**installare un tema** dato che nel tempo c'è stata una proliferazione discreta, ho optato per sostituire il secolare (ormai) Adwaita con un **più ammiccante Arc**, sia per quanto riguarda la GUI delle applicazioni, sia per quanto riguarda GNOME Shell.
