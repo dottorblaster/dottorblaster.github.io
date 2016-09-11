@@ -25,7 +25,7 @@ Ho scritto [pacnews](https://github.com/dottorblaster/pacnews).
 Ma soprattutto, ho **installato GNOME Shell**, la scorsa settimana, per prendermi una pausa di riflessione da KDE; ed il risultato è stato totalmente inaspettato.
 
 ### Il setup
-Per l'occasione, ho deciso di avvalermi di un assistente d'eccezione: così mentre il package manager ho chiamato [Gianguido](http://blog.gsora.xyz/), che la scena GNOME negli ultimi tempi l'ha seguita molto più di me, e gli ho chiesto consiglio.
+Per l'occasione, ho deciso di avvalermi di un assistente d'eccezione: così mentre il package manager sbrigava il lavoro sporco ho chiamato [Gianguido](http://blog.gsora.xyz/), che la scena GNOME negli ultimi tempi l'ha seguita molto più di me, e gli ho chiesto consiglio.
 
 ```shell
 $ sudo pacman -Rcs kde
