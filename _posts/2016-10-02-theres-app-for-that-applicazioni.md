@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: true
-title: There\'s an app for that
+title: There's an app for that
 date: 2016-10-02 18:15:19 +0200
 categories:
 - Tech
