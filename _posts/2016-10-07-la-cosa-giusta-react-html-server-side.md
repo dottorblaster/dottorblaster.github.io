@@ -26,7 +26,7 @@ Quello che mi ha sorpreso, è stato leggere in questi giorni una serie di post c
 - [How We Replaced React with Phoenix](https://robots.thoughtbot.com/how-we-replaced-react-with-phoenix)
 - [Questo gist senza titolo](https://gist.github.com/threepointone/c382856fd2e2c325f8d230e85d85499b), ma stupendo
 
-Sto per addentrarmi in una questione squisitamente relativamente relativa allo sviluppo software, che mi rendo conto essere una cosa che di riffa o di raffa non ho mai trattato ad un livello così profondamente tecnico su questo blog. Get ready.
+Sto per addentrarmi in una questione squisitamente relativamente relativa allo sviluppo web, che mi rendo conto essere una cosa che di riffa o di raffa non ho mai trattato ad un livello così profondamente tecnico su questo blog. Get ready.
 
 > We started with a JSON API and a React front end and slowly migrated to server rendered HTML.
 
