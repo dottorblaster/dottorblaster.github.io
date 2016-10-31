@@ -38,6 +38,6 @@ Probabilmente non solo per me, che non sono mai stato un grosso affezionato, ma 
 
 Di tutto questo è rimasta solo l'interfaccia grafica, dato che l'ottimizzazione del sistema operativo è andata a donnine col tempo, e l'ecosistema Unix ormai tra Linux che lo offre nativamente e Windows 10 che lo offre tramite subsystem dedicato comincia ad essere una caratteristica che spacciata come inarrivabile pregio sembra quasi **naìf**.
 
-Nel frattempo i competitor stanno ridefinendo i traguardi a cui puntare, e stanno ormai sorpassando a tutta manetta quelli che Apple vede ancora come tali. Basta guardare come funziona [GNOME Shell sul mio computer fisso](http://dottorblaster.it/2016/09/gnome-shell-dopo-tanto-tempo/), o come Microsoft sia riuscita a sfornare un prodotto clamoroso con un consenso globale com il suo ultimo **Surface Studio**.
+Nel frattempo i competitor stanno ridefinendo i traguardi a cui puntare, e stanno ormai sorpassando a tutta manetta quelli che Apple vede ancora come tali. Basta guardare come funziona [GNOME Shell sul mio computer fisso](http://dottorblaster.it/2016/09/gnome-shell-dopo-tanto-tempo/), o come Microsoft sia riuscita a sfornare un prodotto clamoroso con un consenso globale con il suo ultimo **Surface Studio**.
 
 Insomma, oltre il confine tracciato dal Mac sembra esserci **una terra fatta di meravigliose novità**. E forse il fatto che Apple stessa per questo nuovo Macbook abbia spento la mela sempre accesa sul lid del blasonatissimo portatile, è metaforico di un destino in calo.
