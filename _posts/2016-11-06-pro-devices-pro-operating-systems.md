@@ -1,8 +1,9 @@
 ---
-layout: post
+layout: link
 status: publish
 published: true
 title: What pro OSes/devices could be
+origlink: https://al3x.net/2016/10/31/pro-computing.html
 date: 2016-11-06 11:13:35 +0100
 categories:
 - Tech
