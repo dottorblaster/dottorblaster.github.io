@@ -6,7 +6,7 @@ title: CentOS Container Image Scanners
 origlink: https://seven.centos.org/2016/11/introducing-centos-container-image-scanners/
 date: 2016-11-13 12:07:26 +0100
 categories: 
-- Category
+- Linux
 tags: 
 - centos
 - container
