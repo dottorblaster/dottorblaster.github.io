@@ -25,4 +25,4 @@ Viceversa, non penso che sia vero quanto segue:
 
 Utilizzare [JIRA](https://www.atlassian.com/software/jira), oppure un qualsiasi altro sistema di ticketing, sia esso più "alla moda" come [Taiga](https://taiga.io/) o più "legacy" come [Redmine](http://www.redmine.org/), è sempre una questione tecnologica. La questione relativa alla progettazione del software e al monitoring dei KPI invece mi sembra che possa essere ricondotta molto meglio alla **sfera comunicativa**.
 
-Se ti senti stressato, se ti senti in qualche modo **attaccato da un sistema di ticketing**, forse dovresti alzare per un attimo gli occhi dal monitor e cercare un modo per eliminare il tuo capo facendo sparire le prove. 😛
+Se ti senti stressato, se ti senti in qualche modo **attaccato da un sistema di ticketing**, forse dovresti alzare per un attimo gli occhi dal monitor e cercare un modo per eliminare il tuo capo facendo sparire le prove. 😁
