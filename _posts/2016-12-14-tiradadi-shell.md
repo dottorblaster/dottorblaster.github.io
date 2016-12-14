@@ -29,7 +29,7 @@ Siccome però la console Javascript per fare una cosa simile è un overkill, ho 
 $ roll() { print $[RANDOM % $1 + 1]; }
 ```
 
-La stessa cosa si può fare in bash usando `echo` al posto di . Volendo usarlo come utility per i prossimi **casi di emergenza**, l'ho anche infilato in un custom plugin per Oh My Zsh:
+La stessa cosa si può fare in bash usando `echo` al posto di `print`. Volendo usarlo come utility per i prossimi **casi di emergenza**, l'ho anche infilato in un custom plugin per Oh My Zsh:
 
 ```sh
 $ cat .oh-my-zsh/custom/plugins/dice-roller/dice-roller.plugin.zsh
