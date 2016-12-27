@@ -8,8 +8,7 @@ Well well, I finally made all my blog available under Jekyll.
 - [Poole](https://github.com/poole/poole)
 - [GitHub Pages](https://pages.github.com/)
 - [Rake](https://github.com/ruby/rake)
-- [Tapir.js](http://tapirgo.com/) (future)
-- [Docker](https://www.docker.com/)
+- [lunr.js](http://lunrjs.com/)
 
 ## Run, debug, study my shit
 Just download this repository, and serve the content using the Jekyll built-in webserver.
