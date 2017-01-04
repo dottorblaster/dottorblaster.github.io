@@ -96,12 +96,23 @@ pre code {
 	font-size: 1.3rem;
 }
 
-.closure-icon {
+.icon-closure {
 	padding: 0.4rem;
+	color: rgb(169, 169, 169);
+}
+
+.icon-commentary {
+	padding-left: 0.5rem;
+	color: rgb(169, 169, 169);
+	transition: color 0.5s;
+}
+
+.icon-commentary:hover {
+	color: #303030;
 }
 
 .pagination {
-        margin: 0.3rem 0;
+	margin: 0.3rem 0;
 }
 
 .pagination-item {
