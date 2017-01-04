@@ -102,7 +102,7 @@ pre code {
 }
 
 .icon-commentary {
-	padding-left: 0.5rem;
+	padding-right: 0.5rem;
 	color: rgb(169, 169, 169);
 	transition: color 0.5s;
 }
