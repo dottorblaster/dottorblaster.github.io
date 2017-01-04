@@ -3,7 +3,7 @@ layout: link
 status: publish
 published: true
 title: How Terrible Code Gets Written by Perfectly Sane People
-origlink: http://dottorblaster.it
+origlink: https://ponyfoo.com/articles/terrible-code-sane-people
 date: 2017-01-03 18:04:38 +0100
 categories:
 - Category
