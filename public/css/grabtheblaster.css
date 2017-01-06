@@ -93,12 +93,12 @@ pre code {
 .post-closure {
 	margin-bottom: 2rem;
 	text-align: center;
-	font-size: 1.3rem;
+	font-size: 1rem;
 }
 
 .icon-closure {
 	padding: 0.4rem;
-	color: rgb(169, 169, 169);
+	color: #f4f4f4;
 }
 
 .icon-commentary {
