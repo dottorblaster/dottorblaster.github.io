@@ -15,7 +15,7 @@ tags:
 
 Tutto quello che ha un inizio, ha anche una fine. Sembrano le parole dell'Oracolo di Matrix, invece è solo banalmente quello che è successo negli ultimi tempi per me in Sourcesense; ho percepito che fosse arrivato in qualche modo il mio tempo, e che fosse venuto con questo il **momento di misurarmi con qualcosa di nuovo**.
 
-Nel momento in cui abbozzo questo post sto formattando la mia macchina aziendale, e mi vengono in mente un sacco di **esperiemze** che ho vissuto qui, e soprattutto un sacco di **persone** a cui dire grazie:
+Nel momento in cui abbozzo questo post sto formattando la mia macchina aziendale, e mi vengono in mente un sacco di **esperienze** che ho vissuto qui, e soprattutto un sacco di **persone** a cui dire grazie:
 
 - **Paolo Mariotti**: quando ero un imberbe fanciullo mi ha insegnato meraviglie frontendistiche e javascriptistiche (ma si dice?) che non avrei mai immaginato;
 - **Ludovico Cafarelli**: il mio sponsor, ha sempre creduto in me, e mi ha fatto sempre sbattere il muso sui lati peggiori del mio carattere;
