@@ -1,8 +1,9 @@
 ---
-layout: post
+layout: link
 status: publish
 published: true
 title: "Rendere un'app React completamente funzionale (e reattiva)"
+origlink: https://medium.freecodecamp.com/how-to-make-your-react-app-fully-functional-fully-reactive-and-able-to-handle-all-those-crazy-e5da8e7dac10#.i73rr52e2
 date: 2017-03-05 20:19:38 +0100
 categories:
 - Development
