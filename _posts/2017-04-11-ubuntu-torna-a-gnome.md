@@ -31,7 +31,7 @@ Non si è capito poi molto di che cosa abbia intenzione di fare Canonical per **
 
 Più di tutte le frasi sul futuro, questa ha attirato la mia attenzione in modo abbastanza coatto, lasciandomi incerto: è così vero che vengono abbandonati tutti i progetti relativi a Unity? L'alternativa è che **Unity** rimanga solamente come shell grafica, delegando tutto il comportamento sottostante a GNOME, che verrà reintegrato nel sistema operativo in maniera più pesante rispetto a come è già stato fatto sinora.
 
-In ancora un altro scenario, è possibile che Canonical lasci perdere Unity 8, e si concentri su Unity come shell grafica puramente detta, cotninuando quel filone di sviluppo, integrando gli stessi pezzi di GNOME che integra adesso; in questo contesto avrebbe comunque senso "we will shift our default Ubuntu desktop", dato che significherebbe solo "signori, abbiamo cambiato idea per la prossima release, e grazie per tutto il pesce".
+In ancora un altro scenario, è possibile che Canonical lasci perdere **Unity 8**, e si concentri su Unity come shell grafica puramente detta, cotninuando quel filone di sviluppo, integrando gli stessi pezzi di GNOME che integra adesso; in questo contesto avrebbe comunque senso "we will shift our default Ubuntu desktop", dato che significherebbe solo "signori, abbiamo cambiato idea per la prossima release, e grazie per tutto il pesce".
 
 ![Ubuntu GNOME](http://www.omgubuntu.co.uk/wp-content/uploads/2016/04/ubuntu-gnome-default-apps.jpg)
 
