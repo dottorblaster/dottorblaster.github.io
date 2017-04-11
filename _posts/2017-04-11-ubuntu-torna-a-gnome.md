@@ -44,4 +44,6 @@ Per gli anni a venire, mi auguro di rivedere **Ubuntu in prima fila per Linux su
 
 Piuttosto, a me non fanno impazzire le performance delle animazioni di **Mutter**, il window manager di GNOME Shell. Magari Canonical potrebbe contribuire con delle patch.
 
+P.S.: [Marco Usai](http://www.marcogusionsusai.com/) mi ha mandato uno splendido audio col suo virilissimo accento sardo per spingermi a pubblicare questo post. Purtroppo nella prima stesura ho dimenticato di menzionarlo.
+
 _Pics courtesy of [OMG! Ubuntu](http://www.omgubuntu.co.uk/) and [Arc Theme's GitHub](https://github.com/horst3180/Arc-theme/)_
