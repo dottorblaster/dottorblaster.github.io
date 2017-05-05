@@ -35,4 +35,6 @@ Come compagni di viaggio d'eccezione, uno dal Technical Advisory Group e uno dal
 
 Nel frattempo devo un grazie speciale a Paola Presutto, Andrea Benedetti (se sfonnamo! 😂) e Shelby Woods per aver reso tutto questo possibile. Kudos guys!
 
+Nel frattempo, [qui](https://www.linkedin.com/pulse/build-2017-come-code-us-andrea-benedetti) potete trovare la fantastica introduzione in parte tecnica, in parte fatta di sentimenti e amarcord puro scritta da **Andrea**.
+
 🍹
