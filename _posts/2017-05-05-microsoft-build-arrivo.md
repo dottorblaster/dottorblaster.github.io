@@ -19,7 +19,7 @@ tags:
 
 ![Microsoft Build 2017](https://venturebeat.com/wp-content/uploads/2016/12/Microsoft-Build-2016-sign-Novet.jpg)
 
-È già un po' di tempo che ho il piacere di stringere (metaforicamente dato che è elettronico) tra le mani il biglietto d'ingresso a **Microsoft Build 2017**, che si terrà a Seattle la settimana prossima. Lunedì ho il mio volo transoceanico e non potrei essere più eccitato così, soprattutto perché sono pieno di aspettative rispetto a quello che vedrò negli Stati Uniti.
+È già da un po' di tempo che ho il piacere di stringere (metaforicamente dato che è elettronico) tra le mani il biglietto d'ingresso a **Microsoft Build 2017**, che si terrà a Seattle la settimana prossima. Lunedì ho il mio volo transoceanico e non potrei essere più eccitato così, soprattutto perché sono pieno di aspettative rispetto a quello che vedrò negli Stati Uniti.
 
 Nello specifico, le cose su cui mi voglio concentrare saranno le sessioni di keynote in cui Microsoft condividerà la sua roadmap e le novità che ha in serbo, e ovviamente l'incontro con gli altri membri del programma **Technical Advisory Group**, di cui faccio parte.
 
