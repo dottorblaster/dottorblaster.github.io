@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: true
-title: Microsoft Build, aspettami che arrivo 😎
+title: Microsoft Build, arrivo 😎
 date: 2017-05-05 18:02:19 +0200
 categories: 
 - Linux
