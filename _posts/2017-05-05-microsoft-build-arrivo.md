@@ -31,7 +31,7 @@ Oltre la shell, però, sicuramente andrò a _sniffare_ qualche cosa d'interessan
 - **Azure Container Service**, perché sono sempre il solito aficionado di Docker;
 - **Linux**, perché chissà che Microsoft non abbia intenzione di portare altro software sul mio sistema operativo preferito.
 
-Come compagni di viaggio d'eccezione, uno dal Technical Advisory Group e uno come stampa, avrò [Piergiorgio Lucidi](http://www.open4dev.com/journal/2017/4/28/my-involvement-in-microsoft-tag-team-and-build-2017.html), già mio collega in Sourcesense, grande esperto di information management e gran chitarrista, e [Luca Annunziata](https://twitter.com/zeta3), nerd come pochi, runner, e barba d'oro per l'estate 2017. 😎
+Come compagni di viaggio d'eccezione, uno dal Technical Advisory Group e uno dal mondo del giornalismo, avrò [Piergiorgio Lucidi](http://www.open4dev.com/journal/2017/4/28/my-involvement-in-microsoft-tag-team-and-build-2017.html), già mio collega in Sourcesense, grande esperto di information management e gran chitarrista, e [Luca Annunziata](https://twitter.com/zeta3), nerd come pochi, runner, e barba d'oro per l'estate 2017. 😎
 
 Nel frattempo devo un grazie speciale a Paola Presutto, Andrea Benedetti (se sfonnamo! 😂) e Shelby Woods per aver reso tutto questo possibile. Kudos guys!
 
