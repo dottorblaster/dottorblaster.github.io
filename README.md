@@ -1,4 +1,4 @@
-# Grab The Blaster
+# Grab The Blaster 🚀
 ## Alessio Biancalana's italian weblog
 
 Well well, I finally made all my blog available under Jekyll.
@@ -7,7 +7,7 @@ Well well, I finally made all my blog available under Jekyll.
 - [Jekyll](http://jekyllrb.com/)
 - [Poole](https://github.com/poole/poole)
 - [GitHub Pages](https://pages.github.com/)
-- [Rake](https://github.com/ruby/rake)
+- [Thor](http://whatisthor.com/)
 - [lunr.js](http://lunrjs.com/)
 
 ## Run, debug, study my shit
@@ -20,4 +20,3 @@ $ git clone git@github.com:dottorblaster/dottorblaster.github.io.git
 $ cd dottorblaster.github.io
 $ jekyll serve
 ```
-
