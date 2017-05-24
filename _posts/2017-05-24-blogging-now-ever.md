@@ -16,3 +16,6 @@ tags:
 [Andrea](https://andrea.co/blog) ha ricondiviso una serie di motivazioni decisamente importanti riguardo al mantenere un **blog**, a prescindere da quante visualizzazioni possa attirare.
 
 Anche per me è la stessa cosa, identica: da una parte è vero che scrivo per diffondere informazioni che reputo rilevanti. Dall'altra, probabilmente comunque lo scopo primario dello scrivere per me rimane una sorta di **rifinitura** di me stesso.
+
+E dopo dieci anni, lo consiglio ancora.
+
