@@ -36,7 +36,7 @@ class Default < Thor
     puts("Created file: #{filename}")
   end
   
-  desc 'update PATH', 'Updates a given file path to match current date'
+  desc 'refresh PATH', 'Updates a given file path to match current date'
   def refresh(path)
     newpath = combine(path, dateify(post_name(path)))
     File.rename(path, newpath)
