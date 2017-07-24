@@ -23,5 +23,5 @@ github:
   repo:           https://github.com/dottorblaster/dottorblaster.github.io
 
 # Custom configs
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 
