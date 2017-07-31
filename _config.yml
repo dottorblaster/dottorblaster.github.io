@@ -4,6 +4,7 @@ markdown:         kramdown
 # Setup
 title:            Grab The Blaster
 description:      Un blog nerd il giusto di Alessio Biancalana
+tagline:          di Alessio Biancalana
 paginate:         5
 paginate_path:    '/page/:num'
 baseurl:          ''
