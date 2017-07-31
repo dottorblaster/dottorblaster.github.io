@@ -3,12 +3,13 @@ markdown:         kramdown
 
 # Setup
 title:            Grab The Blaster
-tagline:          di Alessio Biancalana
+description:      Un blog nerd il giusto di Alessio Biancalana
 paginate:         5
 paginate_path:    '/page/:num'
-baseurl:          '/'
+baseurl:          ''
 url:              'http://dottorblaster.it'
 permalink:        '/:year/:month/:title/'
+excerpt_separator: ""
 license:
   link:           'https://creativecommons.org/licenses/by-nc/3.0/'
   label:          'CC BY-NC'

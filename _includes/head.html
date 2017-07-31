@@ -6,7 +6,6 @@
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-
   <!-- Enable Graph API for Facebook integration -->
   <meta content="{{ site.title }}" property="og:site_name">
   {% if page.title %}
@@ -19,8 +18,8 @@
   {% else %}
     <meta content="website" property="og:type">
   {% endif %}
-  {% if page.description %}
-    <meta content="{{ page.description }}" property="og:description">
+  {% if page.excerpt %}
+    <meta content="{{ page.content | strip_html | xml_escape | strip_newlines | truncate: 500 }}" property="og:description">
   {% else %}
     <meta content="{{ site.description }}" property="og:description">
   {% endif %}
@@ -71,18 +70,18 @@
   </title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/poole.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/syntax.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/grabtheblaster.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}/public/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/{{ site.baseurl }}public/css/poole.css">
+  <link rel="stylesheet" href="/{{ site.baseurl }}public/css/syntax.css">
+  <link rel="stylesheet" href="/{{ site.baseurl }}public/css/grabtheblaster.css">
+  <link rel="stylesheet" href="/{{ site.baseurl }}public/font-awesome/css/font-awesome.min.css">
 
   <!-- Fonts -->
   <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700italic,700,400italic' rel='stylesheet' type='text/css' />
   <link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css' />
 
   <!-- Icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/public/apple-touch-icon-precomposed.png">
-  <link rel="shortcut icon" href="{{ site.baseurl }}/public/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="÷{{ site.baseurl }}public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/{{ site.baseurl }}public/favicon.ico">
 
   <!-- RSS -->
 <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url }}/feed.xml">
