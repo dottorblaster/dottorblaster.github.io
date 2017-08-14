@@ -21,7 +21,7 @@ Nel frattempo mi sono accorto di una cosa divertentissima:
 
 ![Firefox Nightly, Firebird logo](https://gitlab.com/dottorblaster/blog-images/raw/master/images/firefox-nightly-firebird.png)
 
-Nelle ultime nightly build il team, per controllare se la sostituzione dei loghi avveniva come previsto tra un rilascio e l'altro, ha deciso di controllare con un asset grafico un po' speciale, ovvero il logo di Firebird:
+Nelle ultime nightly build il team, per controllare se la sostituzione dei loghi avveniva come previsto tra un rilascio e l'altro, ha deciso di controllare con un asset grafico un po' speciale, ovvero il logo di **Firebird**:
 
 ![Firebird](http://www.andrewturnbull.net/mozilla/fb-061.png)
 
