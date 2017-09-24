@@ -11,7 +11,7 @@ E così, dopo **Linux** ho deciso che la prossima cosa di cui avrei imparato ogn
 
 Durante questi anni ho raggiunto svariati risultati soddisfacenti, come gli incontri più che ravvicinati con la community di **Arch Linux**, la mia distribuzione Linux preferita, vari contributi all'ecosistema **open source**, e una parentesi molto stimolante all'interno della comunità italiana relativa agli **open data**.
 
-Attualmente sono uno sviluppatore software a tempo pieno per [Uniquid](http://uniquid.com/), ma i side project mi affascinano, e ne ho sempre portato avanti qualcuno nel tempo libero. Per parlarne, basta [scrivermi](mailto:dottorblaster@gmail.com). Per il mio curriculum, c'è il mio [LinkedIn](https://it.linkedin.com/in/alessiobiancalana).
+Attualmente sono uno sviluppatore software a tempo pieno per [AdEspresso](https://adespresso.com/), ma i side project mi affascinano, e ne ho sempre portato avanti qualcuno nel tempo libero. Per parlarne, basta [scrivermi](mailto:dottorblaster@gmail.com). Per il mio curriculum, c'è il mio [LinkedIn](https://it.linkedin.com/in/alessiobiancalana).
 
 ### Come si usa questo blog
 Dato che non è immediatissimo, ci vuole anche un piccolo **foglietto illustrativo** per il blog stesso. Oltre i post tradizionali, che curano un argomento in maniera leggermente più ampia, nel corso di questi ultimi anni ho cominciato a scrivere dei piccoli **commentari**, contrassegnati con un'iconcina di due fumetti <i class="fa fa-comments-o"></i>.
