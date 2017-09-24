@@ -2,7 +2,7 @@
 layout: link
 status: publish
 published: true
-title: This is a default title
+title: XFree KWin, aka KWin senza XWayland
 origlink: https://blog.martin-graesslin.com/blog/2017/09/announcing-the-xfree-kwin-project/
 date: 2017-09-24 22:40:57 +0200
 categories:
