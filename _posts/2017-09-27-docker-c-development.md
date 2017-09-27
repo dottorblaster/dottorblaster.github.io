@@ -51,7 +51,7 @@ Niente di trascendentale: installo le **dipendenze dell'applicazione** (che cons
 ...
 
 build_docker:
-    sudo docker build -t grocery -f docker/Dockerfile .
+	sudo docker build -t grocery -f docker/Dockerfile .
 
 ...
 ```
