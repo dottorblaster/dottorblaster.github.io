@@ -92,7 +92,7 @@ docker_test:
 ...
 ```
 
-Su questo abbiamo un po' di cose da dire: costruendo il **container di test** esponiamo un volume, sul quale poi montiamo la nostra directory con i sorgenti.Subito dopo possiamo tramite un `make docker_test` inizializzare un container che prenda la nostra directory corrente, la monti come volume, e ricompili il codice eseguendo il binario.
+Su questo abbiamo un po' di cose da dire: costruendo il **container di test** esponiamo un volume, sul quale poi montiamo la nostra directory con i sorgenti. Subito dopo possiamo tramite un `make docker_test` inizializzare un container che prenda la nostra directory corrente, la monti come volume, e ricompili il codice eseguendo il binario.
 
 Tra l'altro mi sono accorto ora che c'è una inception perché questo è un goal di un Makefile che esegue un altro `make`, stavolta containerizzato.
 
