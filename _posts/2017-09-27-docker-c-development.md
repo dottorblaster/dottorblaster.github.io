@@ -102,4 +102,4 @@ Sono andato rapido, anche un po' troppo, perché ritengo che questo piccolo lavo
 
 Il progetto, per chiunque avesse voglia di dargli un occhio, è ovviamente su [GitHub](https://github.com/dottorblaster/grocery).
 
-_Image courtesy of Tit Petric, [whose post](https://scene-si.org/2016/04/01/how-to-live-inside-a-docker-container/) is amazing and full of interesting tips. 😁_
+_Image courtesy of Tit Petric, [whose post](https://scene-si.org/2016/04/01/how-to-live-inside-a-docker-container/) is amazing and full of interesting tips._ 😁
