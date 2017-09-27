@@ -23,7 +23,7 @@ All'inizio ho provato con una **macchina virtuale** e con qualche server sparso 
 ### Docker to the rescue
 Dopo aver dato una scorsa al manuale per togliere la ruggine sulla **sintassi dei Dockerfile**, ho deciso di creare il mio container per Grocery. Sono partito in realtà da quello definitivo che è veramente piccolino, creando una directory `docker` all'interno del mio repository e andandoci a scrivere questo file `Dockerfile`:
 
-```dockerfile
+```docker
 FROM alpine:3.6
 
 RUN apk update
@@ -65,7 +65,7 @@ Dato che il mio container "per la produzione" funzionava, ho deciso di muovermi 
 
 Ho quindi dotato la directory `docker` del mio progetto di un file `Dockerfile.test`, contenente quanto segue:
 
-```dockerfile
+```docker
 FROM alpine:3.6
 
 RUN apk update
