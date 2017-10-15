@@ -2,7 +2,7 @@
 layout: link
 status: publish
 published: true
-title: Marco Pracucci: stepping back from CTO and jumping into operations
+title: "Marco Pracucci: stepping back from CTO and jumping into operations"
 origlink: https://pracucci.com/stepping-back-from-cto-and-jumping-into-operations.html
 date: 2017-10-15 11:41:41 +0200
 categories:
