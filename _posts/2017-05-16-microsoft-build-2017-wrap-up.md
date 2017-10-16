@@ -15,7 +15,7 @@ tags:
 - microsoft build
 ---
 
-Nello [scorso post](http://dottorblaster.it/2017/05/microsoft-build-arrivo/), prima di sparire nell'ombra, ho dato notizia che sarei stato a Build, la conferenza annuale di Microsoft in cui si fa una review più o meno di tutte le novità presenti nelle piattaforme del colosso di Redmond. Ci sono andato invitato da loro, e nonostante la cosa mi abbia fatto molto piacere, ho pur sempre mantenuto l'atteggiamento che mi contraddistingue quando si parla dell'interazione tra me e **Microsoft**, ovvero un approccio onestamente critico e genuinamente (poco, ormai) sospettoso di cui potete osservare una diapositiva qui sotto.
+Nello [scorso post](http://dottorblaster.it/2017/05/microsoft-build-arrivo/), prima di sparire nell'ombra, ho dato notizia che sarei stato a [Build](https://build.microsoft.com/), la conferenza annuale di Microsoft in cui si fa una review più o meno di tutte le novità presenti nelle piattaforme del colosso di Redmond. Ci sono andato invitato da loro, e nonostante la cosa mi abbia fatto molto piacere, ho pur sempre mantenuto l'atteggiamento che mi contraddistingue quando si parla dell'interazione tra me e **Microsoft**, ovvero un approccio onestamente critico e genuinamente (poco, ormai) sospettoso di cui potete osservare una diapositiva qui sotto.
 
 ![Microsoft perplexed face](https://gitlab.com/dottorblaster/blog-images/raw/master/images/seattle_build_2017/IMG_20170512_132916.jpg)
 
