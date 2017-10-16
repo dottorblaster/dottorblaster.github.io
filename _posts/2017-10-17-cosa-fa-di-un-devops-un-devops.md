@@ -27,6 +27,6 @@ Ho pensato di annotare qui anche quello che gli ho lasciato come commento su Fac
 >
 > E sai meglio di me che è questo quello che fa veramente di un devops un devops, e che è la cosa più difficile da raggiungere perché in qualsiasi azienda vai, ti metteranno in mano l'infrastruttura dicendo "questo è il traguardo che vogliamo ottenere, ma non vogliamo muoverci di un millimetro per ottenerlo, tantomeno faticare".
 >
-> Comunque grande post :) concordo anche sulla scelta critica dei tool, anzi, aggiungo un punto mio: meno tool ma scelti bene fanno infinitamente meglio di tanti tool messi "tanto per", solo per far sganciare i soldi di qualche licenza :)
+> Comunque grande post :) concordo anche sulla scelta critica dei tool, anzi, aggiungo un punto mio: meno tool ma scelti bene fanno infinitamente meglio di tanti tool messi "tanto per", solo per far sganciare i soldi di qualche licenza ;)
 
 
