@@ -16,7 +16,7 @@ tags:
 
 Altro giro di **Homebrew su macOS**, altra storia dell'orrore (sort of: ne ho sentite di molto peggiori) su "cose a caso": scrivo "cose a caso" perché effettivamente non ho capito che cosa cacchio stesse cercando di fare il mio computer, e cosa diamine sia successo nel frattempo.
 
-Andando con ordine, questa settimana ho trovato un bug su un bot telegram che ho scritto in **Elixir**. Provando a compilare il fix in locale, ho trovato un'incompatibilità tra la **vecchia versione di Erlang** che avevo installata, e macOS High Sierra a cui ho aggiornato da poco. Ho deciso quindi di aggiornare i miei package locali, ma:
+Andando con ordine, questa settimana ho trovato un bug su [un bot Telegram](https://github.com/dottorblaster/vaporbot) che ho scritto in **Elixir**. Provando a compilare il fix in locale, ho trovato un'incompatibilità tra la **vecchia versione di Erlang** che avevo installata, e macOS High Sierra a cui ho aggiornato da poco. Ho deciso quindi di aggiornare i miei package locali, ma:
 
 ```
 Error: Your Xcode (8.3.spicci) is outdated. Please update to Xcode 9.0 (or delete it). Xcode can be updated from the App Store.
