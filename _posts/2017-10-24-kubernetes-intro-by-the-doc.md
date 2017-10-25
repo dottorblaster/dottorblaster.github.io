@@ -15,7 +15,7 @@ tags:
 - containerization
 ---
 
-Onestamente? Sono anni che voglio imparare [Kubernetes](https://kubernetes.io/). Peccato che per qualche motivo finisca sempre per capitolare; il più fallimentare dei miei tentativi è stato quando per far partire un numero spropositato di "minion" in [UniquID](http://uniquid.com/) che simulassero un dato comportamento ho infilato tutto in dei container: pur volendo imparare a installare un clustter Kubernetes, alla fine sono tornato per mancanza di tempo ad una gestione manuale tramite un programma in Python scritto da me.
+Onestamente? Sono anni che voglio imparare [Kubernetes](https://kubernetes.io/). Peccato che per qualche motivo finisca sempre per capitolare; il più fallimentare dei miei tentativi è stato quando per far partire un numero spropositato di "minion" in [UniquID](http://uniquid.com/) che simulassero un dato comportamento ho infilato tutto in dei container: pur volendo imparare a installare un cluster Kubernetes, alla fine sono tornato per mancanza di tempo ad una gestione manuale tramite un programma in Python scritto da me.
 
 Stufo della mia ignoranza, da qualche settimana ho deciso di partire con un crash course di **Kubernetes**. La prima cosa che ho fatto, avendo fallito completamente in passato con il setup di un cluster non capendo nemmeno dove mettere mano, è stata darmi una calmata installando **Minikube** sul mio computer.
 
