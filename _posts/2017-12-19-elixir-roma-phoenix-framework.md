@@ -1,3 +1,20 @@
+---
+layout: post
+status: publish
+published: true
+title: Phoenix Framework on fire 🔥 ad Elixir Roma
+date: 2017-12-19 20:35:43 +0100
+categories:
+- Development
+tags:
+- elixir
+- phoenix
+- framework
+- programmazione funzionale
+- programming
+- functional programming
+---
+
 Ultimamente stanno succedendo tante cose. Di alcune posso parlare liberamente, di altre meno: tra quelle di cui posso parlare c'è il fatto che mi sono appassionato un sacco ad **Elixir** (e in generale alla programmazione funzionale), e ho deciso di scrivere uno dei miei progetti nuovi con **Phoenix Framework**.
 
 È un'esperienza fantastica, sto rispolverando un sacco di concetti vecchi e sto assaporando un sacco di piccole novità; sinceramente devo dire che è forse il framework con cui sono più produttivo in generale. Mi sono trovato talmente bene durante questo viaggio con Phoenix che ho voluto condividere qualche settimana fa con i ragazzi di **Elixir Roma** il mio feedback, una volta ottenuta una buona dimestichezza sia con Elixir che con tutto quello che ci gira intorno.
