@@ -19,8 +19,8 @@ class Default < Thor
   end
 
   
-  desc 'go', 'Serves the blog locally through Jekyll\'s embedded server'
-  def go
+  desc 'serve', 'Serves the blog locally through Jekyll\'s embedded server'
+  def serve
     exec("jekyll serve")
   end
 
