@@ -80,3 +80,6 @@ iex(2)>
 ```
 
 Beh, per ora è tutto 😎
+
+[Vai alla parte 2](http://dottorblaster.it/2018/01/elixir-for-dummies-1/)
+
