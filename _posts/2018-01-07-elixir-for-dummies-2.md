@@ -58,6 +58,7 @@ iex(16)> "I'm studying #{lang}"
 Stiamo carburando? Stiamo carburando! Mancano ancora un po' di basi, tra cui le **strutture dati** fondamentali per non scrivere cose nonsense. Le vedremo in seguito.
 
 [Vai alla parte 1](http://dottorblaster.it/2018/01/elixir-for-dummies-1/)
+
 [Vai alla parte 3](http://dottorblaster.it/2018/02/elixir-for-dummies-3/)
 
 [^1]: Gli atomi sono una figata, chi conosce la programmazione funzionale penso li conosca bene. Per chi non la conosce, sono delle stringhe "on steroids"; ne parleremo più avanti in ogni caso.
