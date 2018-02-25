@@ -90,3 +90,6 @@ iex(11)> Enum.map(map_to_iterate, fn({k, v}) -> {k, "Look! #{v}"} end)
 ```
 
 Ma che cosa abbiamo appena fatto? Abbiamo usato una sintassi molto concisa per dichiarare il valore di ritorno della nostra funzione. Probabilmente ne parleremo di qui a breve: Elixir consente una **potenza espressiva** notevole, il che significa che in pochissime righe di codice possiamo fare parecchio. Questo significa anche, però, che ad un occhio meno allenato il codice possa risultare meno comprensibile.
+
+[Vai alla parte 2](http://dottorblaster.it/2018/01/elixir-for-dummies-2/)
+
