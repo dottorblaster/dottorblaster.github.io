@@ -42,6 +42,6 @@ Le **feature di Elixir** che ho apprezzato rispetto alla scrittura di un bot son
 A dire il vero volevo fare qualcosa di più, e pubblicare un client fatto decentemente per la Messenger API direttamente su [Hex](https://hex.pm/), ma non ci sono riuscito per mancanza di tempo.
 
 ### Conclusioni
-Dovremmo sempre dire dei "si" che non possiamo permetterci di dire. Da questo si, detto in un momento in cui ero pieno di lavoro e codice da scrivere (e non solo), ho ricavato il superamento di un limite, un bel talk, un bel software, e tantissimi amici che mi hanno fatto **una delle sorprese più belle di sempre**.
+Dovremmo sempre dire dei "sì" che non possiamo permetterci di dire. Da questo sì, detto in un momento in cui ero pieno di lavoro e codice da scrivere (e non solo), ho ricavato il superamento di un limite, un bel talk, un bel software, e tantissimi amici che mi hanno fatto **una delle sorprese più belle di sempre**.
 
 [^1]: Lo speaker pack comprende una maglietta ufficiale del Facebook Developer Circle, una penna, un'agenda e non mi ricordo più che altro. La maglietta è fica, davvero - come tutto il resto d'altronde. Ma la maglietta un po' di più.
