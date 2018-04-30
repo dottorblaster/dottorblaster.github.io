@@ -50,7 +50,7 @@ Nonostante io abbia cominciato a pistolare con molto poco successo con i linguag
 - Il compilatore. Erik ha mostrato pochissimo del compilatore ma è veramente fichissimo
 
 ### BEAM in Action: scrivere una web application con Elixir
-Qui si giocava in casa, ma è stato comunque un talk rilevantissimo: i carissimi **Claudio D'Alicandro** (già mio collega e fondatore di Elxir Roma) e **Gabriele Santomaggio** (eminenza dell'ecosistema Erlang) hanno presentato una panoramica dei vantaggi di programmare in Erlang o (ancora meglio) in Elixir per le proprie webapp, stressando il punto chiave alla base della keynote di Crockford della mattina.
+Qui si giocava in casa, ma è stato comunque un talk rilevantissimo: i carissimi **Claudio D'Alicandro** (già mio collega e fondatore di Elixir Roma) e **Gabriele Santomaggio** (eminenza dell'ecosistema Erlang) hanno presentato una panoramica dei vantaggi di programmare in Erlang o (ancora meglio) in Elixir per le proprie webapp, stressando il punto chiave alla base della keynote di Crockford della mattina.
 
 Ovvero il fatto che non solo **Asynchronous Message Passing** è il nuovo paradigma da inseguire, ma che grazie alle feature di actor modeling esposte dalla BEAM tramite (ad esempio) i GenServer, possiamo raggiungere questo status quo con Elixir in pochissime righe di codice.
 
