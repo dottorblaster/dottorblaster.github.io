@@ -65,7 +65,7 @@ Il talk di Emanuela è stato molto bello, perché ha contribuito secondo me a de
 
 Il nuovo Firefox per quanto mi riguarda è espressione perfetta di questo. E con le bellissime slide di Emanuela ho chiuso il mio giorno 1, lasciando perdere (mea culpa (?)) la birra finale dato che c'era una folla tale che sembrava un mosh pit ad un concerto dei Meshuggah.
 
-Dopo il birrozzo in realtà c'era un altro intervento di rilievo che però ho saltato per negligenza (perdonatemi ragazzi!), ovvero il già citato **Claudione D'Alicandro** insieme a **Enrico Risa** per un talk a due bocche, quattro mani e quattro gambe tipo Goro di Mortal Kombat sulla combinazione di codice Elixir e Rust per applicazioni distribuite e iperperformanti.
+Dopo il birrozzo in realtà c'era un altro intervento di rilievo che però ho saltato per negligenza (perdonatemi ragazzi!), ovvero **Federico Caprari** insieme a **Enrico Risa** per un talk a due bocche, quattro mani e quattro gambe tipo Goro di Mortal Kombat sulla combinazione di codice Elixir e Rust per applicazioni distribuite e iperperformanti.
 
 ### Giorno 2: "Ah ma siamo ad una conferenza?"
 Ultimamente sto provando una certa avversione nei confronti del mondo dei videogiochi, inspiegabilmente. Questo ha fatto si che il giorno 2, dove la track di game development era leggermente più nutrita, in preda ad una certa mancanza d'attenzione[^2], ho preferito **non guardare nessun talk** dato che la scaletta che ho visto ha solleticato a malapena la mia curiosità.
