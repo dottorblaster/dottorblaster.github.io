@@ -1,4 +1,5 @@
 require 'date'
+require 'colorize'
 
 class Default < Thor
 
@@ -31,16 +32,18 @@ class Default < Thor
 
   desc 'new SLUG', 'Creates a new post with the provided slug'
   def new(slug)
-    filename = "_posts/#{Date.today().to_s()}-#{slug}.md"
+    datename = dateify(slug)
+    filename = "_posts/#{datename}.md"
     File.new(filename, "w")
-    puts("Created file: #{filename}")
+    puts("Created file: ".green + "#{filename}".yellow)
   end
   
   desc 'refresh PATH', 'Updates a given file path to match current date'
   def refresh(path)
     newpath = combine(path, dateify(post_name(path)))
     File.rename(path, newpath)
-    puts("Refreshed file: #{newpath}")
+    puts("Refreshed file: #{newpath.yellow}")
   end
 
 end
+

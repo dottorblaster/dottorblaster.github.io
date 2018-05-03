@@ -3,7 +3,10 @@ GEM
   specs:
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
+    burstfm (0.1.0)
+      colorize (~> 0.8.1)
     colorator (1.1.0)
+    colorize (0.8.1)
     ffi (1.9.18)
     forwardable-extended (2.6.0)
     jekyll (3.6.2)
@@ -49,10 +52,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  burstfm
+  colorize
   jekyll
   jekyll-paginate
   kramdown
   thor
 
 BUNDLED WITH
-   1.16.0
+   1.16.1
