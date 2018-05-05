@@ -1,5 +1,6 @@
 require 'date'
 require 'colorize'
+require 'burstfm'
 
 class Default < Thor
 
@@ -43,6 +44,11 @@ class Default < Thor
     newpath = combine(path, dateify(post_name(path)))
     File.rename(path, newpath)
     puts("Refreshed file: #{newpath.yellow}")
+  end
+
+  desc 'fm', 'Generates front-matter YAML for a new post'
+  def fm
+    Burstfm.print()
   end
 
 end
