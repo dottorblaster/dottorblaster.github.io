@@ -93,5 +93,5 @@ Ma che cosa abbiamo appena fatto? Abbiamo usato una sintassi molto concisa per d
 
 [Vai alla parte 2](http://dottorblaster.it/2018/01/elixir-for-dummies-2/)
 
-[Vai alla parte 4](http://dottorblaster.it/2018/02/elixir-for-dummies-4/)
+[Vai alla parte 4](http://dottorblaster.it/2018/06/elixir-for-dummies-4/)
 
