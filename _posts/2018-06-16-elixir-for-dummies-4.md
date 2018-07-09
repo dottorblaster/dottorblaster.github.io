@@ -102,6 +102,8 @@ Adesso che sappiamo come definire funzioni ma soprattutto come definire moduli d
 
 [Vai alla parte 3](http://dottorblaster.it/2018/02/elixir-for-dummies-3/)
 
+[Vai alla parte 5](http://dottorblaster.it/2018/07/elixir-for-dummies-5/)
+
 [^1]: Per chi volesse approfondire, un buon esempio di early return in JavaScript è [qua](http://blog.timoxley.com/post/47041269194/avoid-else-return-early). È una tecnica che uso anch'io, ma in Elixir non si può, e non solo: in realtà per come è strutturato il linguaggio penso aiuti a fattorizzare meglio il codice. Se ne volete parlare, meglio scrivermi o venire al prossimo incontro di Elixir Roma ;-)
 
 [^2]: In realtà manca ancora un piccolo pezzettino, confido che lo vedremo presto. Avete visto la piccola magia che ho fatto dentro iex nell'ultimo snippet di codice? Si chiama pipe operator. Ma ne parleremo meglio la prossima volta.
