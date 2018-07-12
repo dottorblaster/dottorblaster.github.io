@@ -49,7 +49,9 @@ class Default < Thor
   desc 'fm', 'Generates front-matter YAML for a new post'
   option :title
   def fm
-    Burstfm.print()
+    puts '---'
+    Burstfm.print({ :title => options[:title] })
+    puts '---'
   end
 
 end
