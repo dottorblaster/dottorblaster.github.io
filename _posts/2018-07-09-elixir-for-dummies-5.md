@@ -92,3 +92,6 @@ Quello che ho appena fatto è molto semplice ma secondo me fa capire bene cosa a
 Ci siamo. Se avete afferrato come funziona il pipe operator, siete pronti per la prossima grande avventura, ovvero il **pattern matching**.
 
 [Vai alla parte 4](http://dottorblaster.it/2018/06/elixir-for-dummies-4/)
+
+[Vai alla parte 6](http://dottorblaster.it/2018/07/elixir-for-dummies-6/)
+
