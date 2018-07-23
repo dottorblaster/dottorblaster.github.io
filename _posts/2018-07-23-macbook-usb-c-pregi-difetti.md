@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: true
-title: MacBook con USB-C, morta-C-tua
+title: MacBook con USB-C, morta-C-tua 🔪
 date: 2018-07-23 18:55:36 +0200
 categories:
 - Tech
