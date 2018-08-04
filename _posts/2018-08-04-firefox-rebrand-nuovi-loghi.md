@@ -20,7 +20,7 @@ tags:
 
 Qualche giorno fa mi ha colpito una cosa che ho visto passarmi sotto gli occhi: si tratta delle **nuove icone** che il team di design di Firefox (ovviamente di Mozilla) sta pensando per le nuove versioni. Avevamo avuto un redesign anche per il recente aggiornamento dell'interfaccia, ma è stato solo un piccolo ridare forma all'icona del volpone che tutti amiamo, mentre con [questo aggiornamento](https://blog.mozilla.org/opendesign/evolving-the-firefox-brand/) abbiamo qualcosa di più corposo.
 
-Viene definito a monte infatti il **Firefox brand**, ovvero una intera famiglia di prodotti di cui alcuni esemplari già visibili a noi mortali come Firefox Focus, il browser dedicato alla privacy. in base ai due design system proposti e in base al logo che rappresenta il brand principale, poi tutto il resto viene di conseguenza.
+Viene definito a monte infatti il **Firefox brand**, ovvero una intera famiglia di prodotti di cui alcuni esemplari già visibili a noi mortali come Firefox Focus, il browser dedicato alla privacy. In base ai due design system proposti e in base al logo che rappresenta il brand principale, poi tutto il resto viene di conseguenza.
 
 ![Firefox main logos](http://ffp4g1ylyit3jdyti1hqcvtb-wpengine.netdna-ssl.com/opendesign/files/2018/07/Screen-Shot-2018-07-26-at-11.27.44-PM.png)
 
