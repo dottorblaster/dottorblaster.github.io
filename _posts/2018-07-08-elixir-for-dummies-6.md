@@ -71,3 +71,6 @@ iex> case {1, 2, 3} do
 In pratica rispetto a differenti pattern, il runtime come abbiamo già detto è in grado di riconoscere quello che si avvicina di più al caso corrente. In caso di mancato riconoscimento di un pattern, viene applicata la **soluzione più generica**, che in un `case` statement viene indicata con l'underscore come possiamo vedere dall'esempio.
 
 [Vai alla parte 5](http://dottorblaster.it/2018/07/elixir-for-dummies-5/)
+
+[Vai alla parte 7](http://dottorblaster.it/2018/09/elixir-for-dummies-7/)
+

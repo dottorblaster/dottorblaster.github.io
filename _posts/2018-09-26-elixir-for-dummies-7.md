@@ -204,6 +204,6 @@ Facciamo ripartire il server con `mix phx.server`. Puntiamo poi il browser su `h
 
 ![Phoenix today date application](https://gitlab.com/dottorblaster/blog-images/raw/master/images/elixir/phoenix_date_experiment.png)
 
-Per come la vedo io, Phoenix nasconde molto delle vere potenzialità (e dei veri problemi) che Elixir può offrire, ma non è che un grandissimo trampolino di lancio e una porta di facilissimo ingresso per chi vuole cominciare a scrivere codice con una curva di apprendimento bassissima.
+Per come la vedo io, Phoenix nasconde molto delle vere potenzialità (e dei veri problemi) che Elixir può offrire, ma non è che un **grandissimo trampolino di lancio** e una porta di facilissimo accesso per chi è un alchimista in erba e vuole cominciare a scrivere codice con una curva di apprendimento bassissima.
 
 [Vai alla parte 6](http://dottorblaster.it/2018/07/elixir-for-dummies-6/)
