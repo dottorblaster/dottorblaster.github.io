@@ -213,7 +213,7 @@ comments:
   content: "Kde o no? Bel problema, questi maledetti d.e. hanno troppi pro e troppi
     contro...\r\nPersonalmente prediligo Kde,anche se uso Gnome..."
 ---
-<p>Ebbene, comincio così la mia piccola relazione su KDE 3. Credevate che presentassi una relazione su KDE 4? Beh, sbaglio o porta sfortuna vedere la sposa prima del matrimonio?</p>
+<p>Ebbene, comincio così la mia piccola relazione su KDE 3. Credevate che presentassi una relazione su KDE 4? Beh, sbaglio o [censura dovuta ad eventu futuri che non avrei mai potuto prevedere]?</p>
 <p>Innanzi tutto esaminiamo come mi si è presentato KDE. L'ho installato sulla mia arch-box con un semplice</p>
 <blockquote><p>sudo pacman -S kde</p></blockquote>
 <p>E in una decina di minuti ho trovato l'ambiente bello e pronto, ovviamente non brandizzato, come è uscito dalle mani degli sviluppatori. Ho usato il mio account da laboratorio, per tenere la cartella home del mio account abituale asettica da eventuali impostazioni messe da KDE che avrebbero potuto inquinare il mio Gnome (mi è successo tempo fa). Loggatomi con blaster7, ho avviato la sessione KDE e in poco tempo, configurate quelle poche scemenze, mi è apparsa la famigerata schermata di KTip, forse uno dei programmi più invasivi al mondo. Praticamente dispensa consigli idioti su come utilizzare il tuo Destop Environment. E già medito un attentato mirato allo "sbracaggio" di KDE, ma non lo faccio per il bene comune e continuo ad esplorare.<a id="more"></a><a id="more-107"></a></p>
