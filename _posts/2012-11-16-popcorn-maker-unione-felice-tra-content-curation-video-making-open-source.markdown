@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: true
-title: 'Popcorn Maker: matrimonio felice tra content curation, video making, e open
+title: 'Popcorn Maker: unione felice tra content curation, video making, e open
   source'
 author:
   display_name: Bl@ster
