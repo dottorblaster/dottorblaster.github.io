@@ -19,7 +19,7 @@ Nella rete le notizie corrono veloci, e ormai tutti sanno che **Kevin Systrom e 
 
 > Mr. Systrom and Mr. Krieger did not give a reason for stepping down, according to the people, but said they planned to take time off after leaving Instagram. Mr. Systrom, 34, and Mr. Krieger, 32, have known each other since 2010, when they met and transformed a software project built by Mr. Systrom into what eventually became Instagram, which now has more than one billion users.
 
-Biasimarli proprio non posso. Questi due ragazzi hanno costruito un'applicazione in una notte, che consentisse di scattare delle foto in formato 4:3, ritoccarle per dar loro un effetto vintage (analogico), e condividerle su una timeline. Nessuno di loro (e nessuno in generale) ha mai voluto diventarci ricco, né immaginava che questo piccolo prototipo portasse a uno dei più grandi business del nostro tempo.
+Biasimarli proprio non posso. Questi due ragazzi hanno costruito un'applicazione in una notte, che consentisse di scattare delle foto in formato 1:1, ritoccarle per dar loro un effetto vintage (analogico), e condividerle su una timeline. Nessuno di loro (e nessuno in generale) ha mai voluto diventarci ricco, né immaginava che questo piccolo prototipo portasse a uno dei più grandi business del nostro tempo.
 
 Nessuno di loro immaginava di aver dato il via a quella che nel bene o nel male possiamo definire come una rivoluzione culturale ed estetica, che lega ancor più indissolubilmente un essere umano col suo modo di apparire, creando distorsioni e crepe nello specchio della realtà.
 
