@@ -203,7 +203,7 @@ comments:
 <p>È solo un avviso, questo, per notificare il mio cambio di contatto MSN.</p>
 <p style="text-align: center;"><img class="alignnone" src="http://img29.picoodle.com/data/img29/3/8/20/f_msnheadshotm_91a542b.png" alt="" width="261" height="261" /></p>
 <p>A cosa è dovuto? Beh, come alcuni dei miei lettori già sanno, c'è una lista di contatti MSN disponibile su rete ed2k/kad (o come dicono i profani, su emule :D ), denominata "troie con cam"; la cosa che mi spinge a cambiare contatto è il fatto che il mio, ormai vecchio, contatto, si trova in quella lista.</p>
-<p>Quindi, dato che mi si sono presentati aitanti giovanotti, con i quali ho chiacchierato amabilmente facendoli sfogare, svelandogli poi che ero un uomo etero senza cam e molto fedele alla sua donna, direi che c'è stato da divertirsi parecchio; ma si sa: il gioco è bello fintanto che dura poco, quindi svelo l'arcano.</p>
+<p>Quindi, dato che mi si sono presentati aitanti giovanotti, con i quali ho chiacchierato amabilmente facendoli sfogare, svelandogli poi che ero un uomo etero senza cam, direi che c'è stato da divertirsi parecchio; ma si sa: il gioco è bello fintanto che dura poco, quindi svelo l'arcano.</p>
 <p>Il nuovo contatto è: <strong>dottorblaster _at_ hotmail.it</strong></p>
 <p>La cosa divertente è che si sono presentate all'appello anche persone di una certa età, le quali se la sono letteralmente fatta addosso al pensiero che io potessi dirlo a mogli varie. Notare il fatto che non sapevo nemmeno chi fossero, ma si sono spaventate lo stesso.</p>
 <p>Ah, dimenticavo: se becco chi è stato a farmi 'sto scherzetto, gli faccio la festa. Non solo informatica.</p>
