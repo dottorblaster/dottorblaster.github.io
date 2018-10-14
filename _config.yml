@@ -27,3 +27,14 @@ github:
 # Custom configs
 plugins: [jekyll-paginate]
 
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Thorfile
+  - vim_provision.sh
+  - vimrc.vim
+  - README.md
+  - LICENSE.md
+  - CNAME
+  - .gitignore
+  - vendor
