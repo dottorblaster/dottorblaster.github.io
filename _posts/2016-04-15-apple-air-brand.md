@@ -24,6 +24,4 @@ Già l'anno scorso la release del primo **Air 12"** mi ha lasciato abbastanza pe
 
 Alla fine, **gli Air sono buone macchine**, e per quanto possano significare un compromesso, è una lineup che ho sempre apprezzato perché comunque rappresenta l'entry point nell'ecosistema Apple per chi non vuole spendere un fottiliardo. Il che, onestamente, è più che legittimo per qualsiasi consumatore.
 
-Questo natale per la lei ho preso un laptop. Ho preso un Macbook Air. E, beh, è una macchina su cui puoi far girare qualcosa di più pesante di **Vim** senza sentirti in colpa nei confronti della CPU risicata.
-
 Nice try, Apple.
