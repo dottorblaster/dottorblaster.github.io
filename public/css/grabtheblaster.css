@@ -151,15 +151,12 @@ a.pagination-item:hover {
 
 .social-icons {
 	text-align: center;
-	font-size: 2rem;
-	margin-top: -3.8rem;
-	margin-bottom: 1rem;
-	margin-left: 0.8rem;
-	letter-spacing: 0.8rem;
+	font-size: 1.4rem;
+	letter-spacing: 0.4rem;
 }
 
 .social-icons a {
-	color: #515151;
+	color: #999999;
 }
 
 .social-section {
@@ -203,6 +200,7 @@ a.pagination-item:hover {
 
 	.masthead-title {
 		width: auto;
+		display: inline;
 	}
 
 	.masthead-title a {
@@ -220,6 +218,13 @@ a.pagination-item:hover {
 	.masthead-title small {
 		display: inline;
 		text-align: left;
+	}
+
+	.social-icons {
+		display: inline;
+		font-size: 1.4rem;
+		margin-left: 5%;
+		vertical-align: middle;
 	}
 
 	.post-date {
