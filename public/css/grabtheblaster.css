@@ -4,7 +4,7 @@ html {
 }
 
 a {
-	color: #9825FB;
+	color: #6D18B5;
 	text-decoration: none;
 }
 
@@ -63,7 +63,7 @@ pre code {
 .masthead-title a {
 	display: block;
 	text-align: center;
-	color: #9825FB;
+	color: #6D18B5;
 	font-weight: bold;
 }
 
@@ -81,7 +81,7 @@ pre code {
 }
 
 .post-title, .post-title a {
-	color: #9825FB;
+	color: #6D18B5;
 }
 
 .post-title-link {
