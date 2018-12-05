@@ -19,14 +19,14 @@ layout: null
         <link>{{ post.origlink }}</link>
         <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
         <author>dottorblaster@gmail.com (Alessio Biancalana)</author>
-        <guid>http://dottorblaster.it{{ post.id }}</guid>
+        <guid>https://dottorblaster.it{{ post.id }}</guid>
         <description><![CDATA[ {{ post.content }} <p><a href="http://dottorblaster.it{{ post.url }}">★</a></p>]]></description>
       {% else %}
         <title>{{ post.title | xml_escape }}</title>
         <link>http://dottorblaster.it{{ post.url }}</link>
         <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
         <author>dottorblaster@gmail.com (Alessio Biancalana)</author>
-        <guid>http://dottorblaster.it{{ post.id }}</guid>
+        <guid>https://dottorblaster.it{{ post.id }}</guid>
         <description>{{ post.content | xml_escape }}</description>
       {% endif %}
     </item>
