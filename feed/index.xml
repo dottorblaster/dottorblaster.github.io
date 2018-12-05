@@ -20,7 +20,7 @@ layout: null
         <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
         <author>dottorblaster@gmail.com (Alessio Biancalana)</author>
         <guid>https://dottorblaster.it{{ post.id }}</guid>
-        <description><![CDATA[ {{ post.content }} <p><a href="http://dottorblaster.it{{ post.url }}">★</a></p>]]></description>
+        <description><![CDATA[ {{ post.content }} <p><a href="https://dottorblaster.it{{ post.url }}">★</a></p>]]></description>
       {% else %}
         <title>{{ post.title | xml_escape }}</title>
         <link>http://dottorblaster.it{{ post.url }}</link>
