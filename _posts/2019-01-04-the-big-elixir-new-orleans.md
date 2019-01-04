@@ -47,6 +47,8 @@ Fatto sta che **The Big Elixir** si è tenuta in un teatro. E i teatri a New Orl
 
 Quel linguaggio è Elixir. E un teatro di New Orleans è il posto dove ho scoperto che Elixir è soltando un linguaggio che mi piace. È una tecnologia che adoro.
 
+![The Big Elixir in a theater](https://gitlab.com/dottorblaster/blog-images/blob/master/images/NOLA-NYC/2018-11-10%2005.55.25%201.jpg)
+
 Dopo un benvenuto da parte degli organizzatori, ovvero **Joe Ellis**, **Nicky Mast** e **Bryan Joseph**, siamo partiti a bomba con la sessione di apertura: la keynote di **Josh Adams**. Adams è veramente uno che spacca: ha portato il suo punto di vista sulle similarità che hanno le piattaforme oggi, e cosa significhi nel 2018 "building a system", uno di produzione per giunta. Ci ha offerto uno spaccato incredibilmente preciso di come alcuni tratti di un progetto software siano straordinariamente comuni, di quali sono i tratti somatici di un buon progetto, come replicarli nei nostri e soprattutto quali sono le sue scelte per quanto riguarda Elixir. Siccome ha iniziato a sciorinare un sacco di roba, ed era tutto fichissimo, mi sono preso gli appunti sulle best practice da adottare in un progetto **Elixir**, che riporto qui sotto:
 
 - Process! Scegliete un buon tool di processo, e soprattutto applicatelo. Il processo fa parte del sistema che costruiamo, non ne è avulso. I passi che una feature compie prima di andare in produzione sono importanti quanto la feature stessa e quanto le tecnologie che usiamo.
@@ -156,6 +158,8 @@ E magari un giorno **viverci**. Chissà.
 ![Central Park boat](https://gitlab.com/dottorblaster/blog-images/raw/master/images/NOLA-NYC/2018-11-18%2002.46.58%201.jpg)
 
 _P.S.: Le foto dove ci sono io ritratto sono ad opera della mia meravigliosa Agnese._
+
+![Agnese](https://gitlab.com/dottorblaster/blog-images/raw/master/images/NOLA-NYC/2018-11-18%2002.25.36%201.jpg)
 
 [^1]: Volete cenni metereologici sulla Louisiana? Eccovene un paio, relativi al nostro soggiorno. Non appena siamo scesi dall'aereo, ci ha colti una cappa che ha rischiato seriamente di farci prendere un coccolone (termine per dire _un colpo_. Credevo fosse romano, ma il Garzanti mi stupisce e mi dice che è italiano). L'umidità regna sovrana, ma a tratti. Fortunatamente per noi era inverno, quindi ce la siamo cavata tra il caldo assurdo, il freschetto di alcune sere, ma soprattutto un tour nel bayou con tanto di alligatori interrotto improvvisamente da un piccolo uragano durante il quale la nostra barchetta stava per affondare dato che ha cominciato a piovere talmente tanto da allagarci. In salvo dagli alligatori che ci avrebbero sicuramente trinciati in parti uguali, ci siamo rifugiati nel centro visitatori. Non credo che dimenticherò mai l'immenso uomo di colore che mi si è parato davanti quando ho aperto la porta per guardare se c'era ancora la tempesta perfetta, il quale fradicio emergendo dalla coltre di pioggia mi ha guardato e con un sorrisone ci ha urlato "... and welcome to Louisiana, guys!"
 

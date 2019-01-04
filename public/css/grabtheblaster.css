@@ -9,6 +9,7 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 {
+	color: #6D18B5;
 	font-family: "Inconsolata", Helvetica, Arial, sans-serif;
 	font-weight: normal;
 	text-align: center;
