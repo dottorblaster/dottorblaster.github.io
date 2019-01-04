@@ -47,6 +47,8 @@ Fatto sta che **The Big Elixir** si è tenuta in un teatro. E i teatri a New Orl
 
 Quel linguaggio è Elixir. E un teatro di New Orleans è il posto dove ho scoperto che Elixir è soltando un linguaggio che mi piace. È una tecnologia che adoro.
 
+![The Big Elixir in a theater](https://gitlab.com/dottorblaster/blog-images/blob/master/images/NOLA-NYC/2018-11-10%2005.55.25%201.jpg)
+
 Dopo un benvenuto da parte degli organizzatori, ovvero **Joe Ellis**, **Nicky Mast** e **Bryan Joseph**, siamo partiti a bomba con la sessione di apertura: la keynote di **Josh Adams**. Adams è veramente uno che spacca: ha portato il suo punto di vista sulle similarità che hanno le piattaforme oggi, e cosa significhi nel 2018 "building a system", uno di produzione per giunta. Ci ha offerto uno spaccato incredibilmente preciso di come alcuni tratti di un progetto software siano straordinariamente comuni, di quali sono i tratti somatici di un buon progetto, come replicarli nei nostri e soprattutto quali sono le sue scelte per quanto riguarda Elixir. Siccome ha iniziato a sciorinare un sacco di roba, ed era tutto fichissimo, mi sono preso gli appunti sulle best practice da adottare in un progetto **Elixir**, che riporto qui sotto:
 
 - Process! Scegliete un buon tool di processo, e soprattutto applicatelo. Il processo fa parte del sistema che costruiamo, non ne è avulso. I passi che una feature compie prima di andare in produzione sono importanti quanto la feature stessa e quanto le tecnologie che usiamo.
