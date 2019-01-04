@@ -7,8 +7,12 @@ date: 2019-01-04 13:09:53 +0100
 categories:
 - Development
 tags:
-- first_tag
-- second_tag
+- new york
+- nyc
+- elixir
+- development
+- sviluppo
+- new orleans
 ---
 
 Ho aspettato troppo a scrivere questo post. Non avrei voluto farlo, vorrei aver documentato ogni briciola del mio viaggio oltre oceano, vorrei aver fotografato ancor più di quanto ho fatto, vorrei aver fatto di ogni cosa almeno il doppio, lo vorrei così tanto che già ho intenzione di tornare e troppo grande è la sensazione struggente che mi coglie ogni volta che ripenso a tutto quello che è successo una volta salito su quell'aereo, insieme ad [Agnese](http://www.killbilla.it/). Una volta varcato il confine americano. Una volta arrivato a toccare con un dito quello che è uno scampolo di vita da quelle parti così piene di tecnologia, di progresso a volte forzato.
