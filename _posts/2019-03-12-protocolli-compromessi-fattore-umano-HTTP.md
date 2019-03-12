@@ -25,7 +25,7 @@ Pensavamo che Internet avrebbe dato il potere alle persone di comunicare, e che 
 
 Chiaramente è successo il peggio del peggio. Invece di prenderci ciò che è nostro di diritto, la libertà di parola assoluta, abbiamo permesso ad altri di imporre la loro volontà e usurparcelo. Le telco hanno preso il controllo, anzi forse è meglio dire/_scrivere_ che lo hanno sempre avuto. Ci hanno resi schiavi e vacche da mungere, oggi tramite Facebook, domani tramite Instagram, dopodomani tramite la nuova moda del momento. Nonsense in quattro terzi su palmari in sedici noni.
 
-E oggi, oggi che Google dedica l'[ennesimo Doodle](https://www.google.com/doodles/30th-anniversary-of-the-world-wide-web) (e sarebbe ben ipocrita il contrario) al protocollo che le ha permesso di diventare un colosso da centodieci miliardi di fatturato e dodici miliardi di utile netto, parlando con Agnese lei mi ha detto:
+E oggi, oggi che Google dedica l'[ennesimo Doodle](https://www.google.com/doodles/30th-anniversary-of-the-world-wide-web) (e sarebbe ben ipocrita il contrario) al protocollo che le ha permesso di diventare un colosso da centodieci miliardi di fatturato e dodici miliardi di utile netto, parlando con [Agnese](http://www.killbilla.it/) lei mi ha detto:
 
 > È quello che avrebbe cambiato il mondo, se solo il mondo non fosse fatto di persone
 
