@@ -2,4 +2,5 @@ _site
 _devtarget
 _prod
 node_modules
+.DS_Store
 
