@@ -3,4 +3,5 @@ _devtarget
 _prod
 node_modules
 .DS_Store
+.jekyll-cache
 
