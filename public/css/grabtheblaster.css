@@ -4,12 +4,12 @@ html {
 }
 
 a {
-	color: #723E86;
+	color: #9E358F;
 	text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	color: #723E86;
+	color: #5E5184;
 	font-family: "Fira Sans", Helvetica, Arial, sans-serif;
 	font-weight: bold;
 	text-align: center;
@@ -64,7 +64,7 @@ pre code {
 .masthead-title a {
 	display: block;
 	text-align: center;
-	color: #723E86;
+	color: #5E5184;
 	font-weight: bold;
 }
 
@@ -82,7 +82,7 @@ pre code {
 }
 
 .post-title, .post-title a {
-	color: #723E86;
+	color: #5E5184;
 }
 
 .post-title-link {
@@ -181,11 +181,11 @@ a.pagination-item:hover {
 	border-radius: 3px;
 	border-style: solid;
 	border-width: 1px;
-	border-color: #723E86;
+	border-color: #5E5184;
 }
 
 .search-form input:focus {
-	border-color: #723E86;
+	border-color: #5E5184;
 }
 
 @media only screen and (min-width : 768px) {
