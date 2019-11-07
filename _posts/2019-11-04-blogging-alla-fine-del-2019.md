@@ -42,4 +42,4 @@ Eppure dal mio punto di vista avere un **blog** (o molti blog – se si scrive t
 
 > So one of the things I want to be thinking about is: How can I encourage readers of my blog to seek some of the benefits that _I_ get from it?
 
-[^1]: Veramente la gente sta appresso a TikTok? C'è un affare identico che avevano creato i founder di Twitter qualche temp fa, si chiamava Vine e faceva la stessa cosa. Perché le persone se ne sono sbattute le gonadi di Vine e adesso non si fà che parlare di una piattaforma uguale?
+[^1]: Veramente la gente sta appresso a TikTok? C'è un affare identico che avevano creato i founder di Twitter qualche tempo fa, si chiamava Vine e faceva la stessa cosa. Perché le persone se ne sono sbattute le gonadi di Vine e adesso non si fà che parlare di una piattaforma uguale?
