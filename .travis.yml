@@ -2,5 +2,7 @@ language: ruby
 rvm:
 - 2.6
 
-script: bundle exec jekyll build
+script:
+  - bundle exec jekyll build
+  - bundle exec rubocop Thorfile
 
