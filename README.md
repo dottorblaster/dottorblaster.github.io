@@ -18,5 +18,6 @@ Just download this repository, and serve the content using the Jekyll built-in w
 ```bash
 $ git clone git@github.com:dottorblaster/dottorblaster.github.io.git
 $ cd dottorblaster.github.io
-$ jekyll serve
+$ bundle install
+$ bundle exec thor serve
 ```
