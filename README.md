@@ -11,9 +11,7 @@ Well well, I finally made all my blog available under Jekyll.
 - [lunr.js](http://lunrjs.com/)
 
 ## Run, debug, study my shit
-Just download this repository, and serve the content using the Jekyll built-in webserver.
-
-(Updates are coming: now I manage all my blogging infrastructure using Grunt. Stay tuned if you are interested in this!)
+Just download this repository, and serve the content using the Jekyll built-in webserver. You can use Thor's `serve` task.
 
 ```bash
 $ git clone git@github.com:dottorblaster/dottorblaster.github.io.git
