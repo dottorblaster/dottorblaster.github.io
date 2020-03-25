@@ -16,7 +16,7 @@ tags:
 - smart working
 ---
 
-Avevo in mente da tanti giorni di scrivere qualcosa di strutturato riguardo al lavoro remoto, a questo **COVID-19** che ci costringe dentro casa, ma la verità è che mi sento un po' stanco e non riesco a scrivere per bene, il che è strano. Da una parte mi sento inibito, perché scrivere qualcosa tipo "come tirare fuori il meglio dal lavoro remoto" mi sembrerebbe irrispettoso verso le persone che per questa pandemia stanno male sul serio, dall'altra fatico davvero tanto a aprire Facebook, a leggere notizie di attualità.
+Avevo in mente da tanti giorni di scrivere qualcosa di strutturato riguardo al lavoro remoto, a questo **COVID-19** che ci costringe dentro casa, ma la verità è che mi sento un po' stanco e non riesco a scrivere per bene, il che è strano. Da una parte mi sento inibito, perché scrivere qualcosa tipo "come tirare fuori il meglio dal lavoro remoto" mi sembrerebbe irrispettoso verso le persone che per questa pandemia stanno male sul serio, dall'altra fatico davvero tanto ad aprire Facebook, a leggere notizie di attualità.
 
 E devo ammettere che mi pesa rinunciare a una **routine** che si era venuta a stabilire negli anni con la mia bellissima scrivania in ufficio, un posticino che mi sono curato per tanto tempo e a cui adesso mi è così difficile pensare in ottica di abbandono. Strano che a dire questo sia proprio io, che come "cornerstone" della mia vita lavorativa ho:
 
