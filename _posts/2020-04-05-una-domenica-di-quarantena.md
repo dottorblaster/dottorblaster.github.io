@@ -35,6 +35,6 @@ Nonostante questo però sto facendo **un sacco di cose**! Mentre [Agnese](http:/
 
 Tutto sommato poteva andarmi peggio. È una bella quarantena.
 
-[^1]: "Call of Duty non mi avrà mai" è stato uno dei motti videoludici sin dai primi vagiti della saga. Ragazzi, io i fissati degli sparatutto di guerra non li capisco, non c'è niente da fare, e come saga continua a farmi abbondantemente cacare. Tuttavia, questo Warzone, che è il battle royale[^2] di Call of Duty, 
+[^1]: "Call of Duty non mi avrà mai" è stato uno dei motti videoludici sin dai primi vagiti della saga. Ragazzi, io i fissati degli sparatutto di guerra non li capisco, non c'è niente da fare, e come saga continua a farmi abbondantemente cacare. Tuttavia, questo Warzone, che è il battle royale[^2] di Call of Duty, è un po' meno peggio degli altri e comunque giocato con gli amici ti fa fare due risate (insieme alle madonne di cui ho perso il conto, e credo abbiano perso il conto anche i miei vicini). _Nella prima release di questo post, avevo lasciato questa footnote in sospeso. Grazie [Julian](https://julianxhokaxhiu.com/)!_ 
 
 [^2]: Yay! Ho inserito la mia prima footnote dentro una footnote, come David Foster Wallace! Ma dicevo, anzi scrivevo: ormai le battle royale stanno ai giochi come le stories stanno ai social network. Tra un po' avremo una modalità battle royale anche dentro Excel, dove devi fare fuori Clippy entro un tempo limite.
