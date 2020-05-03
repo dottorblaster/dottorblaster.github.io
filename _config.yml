@@ -8,7 +8,7 @@ tagline:          di Alessio Biancalana
 paginate:         5
 paginate_path:    '/page/:num'
 baseurl:          ''
-url:              'http://dottorblaster.it'
+url:              'https://dottorblaster.it'
 permalink:        '/:year/:month/:title/'
 excerpt_separator: ""
 license:
