@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'MADE Dillan';
+    src: url('/public/made_dillan.otf') format('opentype');
+}
+
 html {
 	font-family: "PT Serif", Georgia, "Times New Roman", serif;
 	font-size: 16px;
@@ -9,10 +14,11 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	color: #5E5184;
-	font-family: "Fira Sans", Helvetica, Arial, sans-serif;
-	font-weight: bold;
+	color: #353535;
+	font-family: 'MADE Dillan', Helvetica, Arial, sans-serif;
+	font-weight: 400;
 	text-align: center;
+        letter-spacing: .02em;
 }
 
 p img {
@@ -64,17 +70,18 @@ pre code {
 .masthead-title a {
 	display: block;
 	text-align: center;
-	color: #5E5184;
-	font-weight: bold;
+	color: #353535;
+	font-weight: 400;
 }
 
 .masthead-title small {
 	font-size: 65%;
 	font-weight: 400;
-	color: #999999;
+	color: #666666;
 	letter-spacing: 0;
 	display: block;
 	text-align: center;
+        letter-spacing: 0.8px;
 }
 
 .post {
@@ -82,7 +89,7 @@ pre code {
 }
 
 .post-title, .post-title a {
-	color: #5E5184;
+	color: #353535;
 }
 
 .post-title-link {
@@ -181,11 +188,11 @@ a.pagination-item:hover {
 	border-radius: 3px;
 	border-style: solid;
 	border-width: 1px;
-	border-color: #5E5184;
+	border-color: #353535;
 }
 
 .search-form input:focus {
-	border-color: #5E5184;
+	border-color: #353535;
 }
 
 @media only screen and (min-width : 768px) {
