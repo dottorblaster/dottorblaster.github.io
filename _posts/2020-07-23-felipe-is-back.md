@@ -24,3 +24,5 @@ Dopo un paio di post di riscaldamento [Felipe è tornato a darci qualcosa di ser
 > Non sono mai stato più vicino all’idea di tornare a dedicarmi a pollycoke, non immaginate quanto mi piaccia farlo, ma francamente non so come potrei mai conciliare una vita pienamente funzionale con quella che so essere una passione in grado di monopolizzare tutto il mio tempo.
 
 E caro Felipe, tu non sai quanto mi ritrovi nelle tue parole :-) alla fine io ho scelto la via diametralmente opposta e di mestiere ho cominciato a fare lo sviluppatore :-D
+
+(ma si sta aggiornando questo blog?)
