@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: true
-title: "Bentornato Felipe :-)"
+title: 'Bentornato Felipe :-)'
 date: 2020-07-23 19:11:46 +0200
 categories:
 - Tech
@@ -11,7 +11,7 @@ tags:
 - felipe
 - blogging
 - linux
---
+---
 
 Proprio ieri scrollando pigramente Facebook sono capitato su un post bizzarro, un post di una vecchia pagina a cui avevo messo like credo un decennio fa, anno più anno meno. Ha catturato la mia attenzione perché ai miei occhi è sembrata quasi un'attività paranormale, e invece approfondendo e aprendo un altro paio di tab ho verificato che fosse reale.
 
@@ -25,4 +25,3 @@ Dopo un paio di post di riscaldamento [Felipe è tornato a darci qualcosa di ser
 
 E caro Felipe, tu non sai quanto mi ritrovi nelle tue parole :-) alla fine io ho scelto la via diametralmente opposta e di mestiere ho cominciato a fare lo sviluppatore :-D
 
-(ma si sta aggiornando questo blog?)
