@@ -26,4 +26,6 @@ Questa ingerenza da parte di Apple non solo come **stakeholder** finanziario ma 
 
 > Related question: how is the PR hit to Apple worth it for the money they’ll make through these WordPress IAP sales? And: how is developer fear a good thing for the platform?
 
+**Edit – 23 agosto**: Apple ha ritrattato, e [Davide Di Pumpo mi ha lasciato un commento meraviglioso](https://dottorblaster.it/2020/08/la-societa-tech-suo-futuro/).
+
 [^1]: Volevo trovare un autore indipendente a cui rimandare per la notizia che riguarda Apple, ma cercando non ne ho trovati quindi ho dovuto linkare una rivistona. :-(
