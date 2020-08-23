@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: true
-title: La società tech e il suo futuro
+title: La società tech e il suo futuro, negli occhi di Davide Di Pumpo
 date: 2020-08-23 15:46:40 +0200
 categories:
 - Tech
