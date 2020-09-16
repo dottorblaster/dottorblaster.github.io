@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'MADE Dillan';
-    src: url('/public/made_dillan.otf') format('opentype');
+    src: url('/public/made_dillan.woff2') format('woff2');
 }
 
 html {
