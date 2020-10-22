@@ -12,11 +12,11 @@ class Default < Thor
     end
 
     def combine(path, name)
-      File.dirname(path) + '/' + name
+      "#{File.dirname(path)}/#{name}"
     end
 
     def dateify(name)
-      Date.today.to_s + '-' + name
+      "#{Date.today}-#{name}"
     end
   end
 
