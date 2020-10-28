@@ -13,7 +13,3 @@ Durante questi anni ho raggiunto svariati risultati soddisfacenti, come gli inco
 
 Attualmente sono Senior Software Engineer in [Hootsuite](https://hootsuite.com/), ma i side project mi affascinano, e ne ho sempre portato avanti qualcuno nel tempo libero. Per parlarne, basta [scrivermi](mailto:dottorblaster@gmail.com). Per il mio curriculum, c'è il mio [LinkedIn](https://it.linkedin.com/in/alessiobiancalana).
 
-### Come si usa questo blog
-Dato che non è immediatissimo, ci vuole anche un piccolo **foglietto illustrativo** per il blog stesso. Oltre i post tradizionali, che curano un argomento in maniera leggermente più ampia, nel corso di questi ultimi anni ho cominciato a scrivere dei piccoli **commentari**, contrassegnati con un'iconcina di due fumetti <i class="fa fa-comments-o"></i>.
-
-I commentari prendono in considerazione un articolo scritto da qualcun altro, e l'header linka direttamente quell'articolo. Clickando sui balloon <i class="fa fa-comments-o"></i> invece si accede al permalink del post, dove è possibile lasciare un commento.
