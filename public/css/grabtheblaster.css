@@ -201,6 +201,13 @@ a.pagination-item:hover {
   border-color: #353535;
 }
 
+.webring-container {
+  text-align: center;
+  margin: 0.9rem auto;
+  max-width: 24rem;
+  line-height: 1;
+}
+
 @media only screen and (min-width: 768px) {
   /* Some responsive stuff :-))) */
 
