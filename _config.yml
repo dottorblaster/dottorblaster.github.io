@@ -25,7 +25,7 @@ github:
   repo:           https://github.com/dottorblaster/dottorblaster.github.io
 
 # Custom configs
-plugins: [jekyll-auto-image, jekyll-paginate]
+plugins: [jekyll-paginate]
 
 exclude:
   - Gemfile
