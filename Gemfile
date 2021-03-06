@@ -6,6 +6,4 @@ gem 'jekyll'
 gem 'jekyll-paginate'
 gem 'kramdown'
 gem 'thor'
-gem 'rmagick'
-gem 'rickshaw'
 gem 'rubocop', require: false
