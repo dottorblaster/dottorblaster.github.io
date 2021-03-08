@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install Imagemagick
-        run: apt install imagemagick
+        run: sudo apt-get install imagemagick
 
       - uses: actions/checkout@v2
 
