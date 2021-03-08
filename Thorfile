@@ -27,7 +27,7 @@ class Default < Thor
 
   desc 'build', 'Builds the static site'
   def build
-    exec('jekyll build')
+    exec('jekyll build --trace')
   end
 
   desc 'new SLUG', 'Creates a new post with the provided slug'
