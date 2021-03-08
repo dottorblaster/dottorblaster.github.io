@@ -27,7 +27,7 @@ module Jekyll
         }.first
 
         # Composite the two images over each other (witht the smaller text image being centred)
-        a = img.composite(text, Magick::CenterGravity, 0,0, Magick::OverCompositeOp)
+        a = img.composite!(text, Magick::CenterGravity, 0,0, Magick::OverCompositeOp)
 
         # Write out the file
         a.write("#{Dir.pwd}/opengraph/#{id}.png")
