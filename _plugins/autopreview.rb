@@ -14,23 +14,24 @@ module Jekyll
         puts "File exists #{Dir.pwd}/opengraph/#{id}.png}"
       else
         # Create an image list from ImageMagic using the base image
-        img = Magick::ImageList.new("#{Dir.pwd}/public/avatar-blaster.png")
+        img = Magick::ImageList.new
+        img.new_image(800, 500) { self.background_color = "#1D1F21" }
 
         # Create a caption of the title in a smaller area and center aligned.
         text = Magick::Image.read("caption:#{context["page"]["title"]}") {
-            self.fill = '#D85F46'
-            self.font = "SF-Pro-Display-Medium"
-            self.pointsize = 50
+            self.fill = '#FFFFFF'
+            self.font = "DejaVuSans"
+            self.pointsize = 40
             self.size = "800x500"
             self.gravity = Magick::CenterGravity
             self.background_color = "none"
         }.first
 
         # Composite the two images over each other (witht the smaller text image being centred)
-        a = img.composite!(text, Magick::CenterGravity, 0,0, Magick::OverCompositeOp)
+        final_image = img.composite!(text, Magick::CenterGravity, 0,0, Magick::OverCompositeOp)
 
         # Write out the file
-        a.write("#{Dir.pwd}/opengraph/#{id}.png")
+        final_image.write("#{Dir.pwd}/opengraph/#{id}.png")
       end
 
       site = context.registers[:site]
