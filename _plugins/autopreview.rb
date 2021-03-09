@@ -9,18 +9,25 @@ module Jekyll
 
     def render(context)
       id = context["page"]["id"].to_sha1
+      uri = "/opengraph/#{id}.png"
 
       if(File.exist?("#{Dir.pwd}/opengraph/#{id}.png"))
         puts "File exists #{Dir.pwd}/opengraph/#{id}.png}"
       else
         # Create an image list from ImageMagic using the base image
-        img = Magick::ImageList.new
-        img.new_image(800, 500) { self.background_color = "#1D1F21" }
+        background = Magick::Image.read("caption:#{context["page"]["date"]}") {
+            self.fill = '#FFFFFF'
+            self.font = "JetBrains-Mono-Bold"
+            self.pointsize = 13
+            self.size = "800x500"
+            self.gravity = Magick::SouthEastGravity
+            self.background_color = "#1D1F21"
+        }.first
 
         # Create a caption of the title in a smaller area and center aligned.
         text = Magick::Image.read("caption:#{context["page"]["title"]}") {
             self.fill = '#FFFFFF'
-            self.font = "DejaVuSans"
+            self.font = "JetBrains-Mono-Bold"
             self.pointsize = 40
             self.size = "800x500"
             self.gravity = Magick::CenterGravity
@@ -28,18 +35,15 @@ module Jekyll
         }.first
 
         # Composite the two images over each other (witht the smaller text image being centred)
-        final_image = img.composite!(text, Magick::CenterGravity, 0,0, Magick::OverCompositeOp)
+        final_image = background.composite(text, Magick::CenterGravity, 0,0, Magick::OverCompositeOp)
 
         # Write out the file
         final_image.write("#{Dir.pwd}/opengraph/#{id}.png")
       end
 
       site = context.registers[:site]
-
-      # Add the file to the list of static_files needed to be copied to the _site
       site.static_files << Jekyll::StaticFile.new(site, site.source, "/opengraph/", "#{id}.png")
 
-      uri = "/opengraph/#{id}.png"
       "<meta content=\"#{uri}\" property=\"article:section\">"
     end
   end
