@@ -29,6 +29,7 @@
   {% if page.date %}
     <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
     <meta content="{{ site.url }}/about/" property="article:author">
+    {% autopreview %}
   {% endif %}
   {% if page.categories %}
     {% for category in page.categories limit:1 %}
