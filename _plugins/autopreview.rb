@@ -21,7 +21,7 @@ module Jekyll
             self.fill = '#FFFFFF'
             self.font = "JetBrains-Mono-Bold"
             self.pointsize = 13
-            self.size = "800x500"
+            self.size = "1200x630"
             self.gravity = Magick::SouthEastGravity
             self.background_color = "#1D1F21"
         }.first
@@ -31,7 +31,7 @@ module Jekyll
             self.fill = '#FFFFFF'
             self.font = "JetBrains-Mono-Bold"
             self.pointsize = 40
-            self.size = "800x500"
+            self.size = "1200x630"
             self.gravity = Magick::CenterGravity
             self.background_color = "none"
         }.first
