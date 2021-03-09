@@ -9,8 +9,14 @@ jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Install JetBrains Mono
+        run: |
+          wget https://download.jetbrains.com/fonts/JetBrainsMono-2.225.zip
+          unzip JetBrainsMono-2.225.zip
+          sudo mv JetBrainsMono-*.ttf /usr/share/fonts/
+          sudo fc-cache -f -v
       - name: Install Imagemagick
-        run: sudo apt-get install imagemagick
+        run: sudo apt-get install imagemagick ghostscript
 
       - uses: actions/checkout@v2
 
