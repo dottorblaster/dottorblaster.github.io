@@ -9,7 +9,9 @@ module Jekyll
 
     def render(context)
       id = context["page"]["id"].to_sha1
-      uri = "/opengraph/#{id}.png"
+      site = context.registers[:site]
+      baseurl = site.config['url']
+      uri = "#{baseurl}/opengraph/#{id}.png"
 
       if(File.exist?("#{Dir.pwd}/opengraph/#{id}.png"))
         puts "File exists #{Dir.pwd}/opengraph/#{id}.png}"
@@ -41,11 +43,11 @@ module Jekyll
         final_image.write("#{Dir.pwd}/opengraph/#{id}.png")
       end
 
-      site = context.registers[:site]
       site.static_files << Jekyll::StaticFile.new(site, site.source, "/opengraph/", "#{id}.png")
 
       "<meta content=\"#{uri}\" property=\"article:section\">"
     end
   end
 end
+
 Liquid::Template.register_tag('autopreview', Jekyll::Autopreview)
