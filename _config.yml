@@ -35,6 +35,5 @@ exclude:
   - vimrc.vim
   - README.md
   - LICENSE.md
-  - CNAME
   - .gitignore
   - vendor
