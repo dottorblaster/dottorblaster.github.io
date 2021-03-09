@@ -23,7 +23,7 @@ jobs:
       run: |
         wget https://download.jetbrains.com/fonts/JetBrainsMono-2.225.zip
         unzip JetBrainsMono-2.225.zip
-        sudo mv JetBrainsMono-*.ttf /usr/share/fonts/
+        sudo mv fonts/ttf/JetBrainsMono-*.ttf /usr/share/fonts/
         sudo fc-cache -f -v
     - name: Setup Imagemagick
       run: sudo apt-get install imagemagick libmagickwand-dev ghostscript
