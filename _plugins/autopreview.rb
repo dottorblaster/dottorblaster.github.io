@@ -45,7 +45,7 @@ module Jekyll
 
       site.static_files << Jekyll::StaticFile.new(site, site.source, "/opengraph/", "#{id}.png")
 
-      "<meta content=\"#{uri}\" property=\"article:section\">"
+      "<meta content=\"#{uri}\" property=\"og:image\">"
     end
   end
 end
