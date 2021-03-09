@@ -33,7 +33,7 @@ jobs:
           token: ${{ secrets.GH_TOKEN }}
           target_branch: 'gh-pages'
           pre_build_commands: |
-            apk --update add imagemagick ghostscript sudo
+            apk --update add imagemagick imagemagick-dev imagemagick-c++ imagemagick-libs pkgconfig ghostscript sudo
             wget https://download.jetbrains.com/fonts/JetBrainsMono-2.225.zip
             unzip JetBrainsMono-2.225.zip
             mv fonts/ttf/JetBrainsMono-*.ttf /usr/share/fonts/
