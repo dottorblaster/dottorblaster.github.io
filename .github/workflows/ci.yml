@@ -8,36 +8,30 @@
 name: CI
 
 on:
-  push:
-    branches: [ master ]
   pull_request:
     branches: [ master ]
 
 jobs:
-  test:
-
+  build_and_deploy:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Install JetBrains Mono
-      run: |
-        wget https://download.jetbrains.com/fonts/JetBrainsMono-2.225.zip
-        unzip JetBrainsMono-2.225.zip
-        sudo mv fonts/ttf/JetBrainsMono-*.ttf /usr/share/fonts/
-        sudo fc-cache -f -v
-    - name: Setup Imagemagick
-      run: sudo apt-get install imagemagick libmagickwand-dev ghostscript
-    - uses: actions/checkout@v2
-    - name: Set up Ruby
-    # To automatically get bug fixes and new Ruby versions for ruby/setup-ruby,
-    # change this to (see https://github.com/ruby/setup-ruby#versioning):
-    # uses: ruby/setup-ruby@v1
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: 2.6
-    - name: Install dependencies
-      run: bundle install
-    - name: Build
-      run: bundle exec thor build
-    - name: Run rubocop over Thorfile
-      run: bundle exec rubocop Thorfile
+      - uses: actions/checkout@v2
+      # Use GitHub Actions' cache to cache dependencies on servers
+      - uses: actions/cache@v2
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+      - uses:  helaili/jekyll-action@v2
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+          build_only: true
+          pre_build_commands: |
+            apk --update add imagemagick imagemagick-dev imagemagick-c++ imagemagick-libs pkgconfig ghostscript sudo
+            wget https://download.jetbrains.com/fonts/JetBrainsMono-2.225.zip
+            unzip JetBrainsMono-2.225.zip
+            mv fonts/ttf/JetBrainsMono-*.ttf /usr/share/fonts/
+            sudo fc-cache -f -v
+            bundle install
+            bundle exec rubocop Thorfile
