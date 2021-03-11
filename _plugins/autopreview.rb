@@ -14,24 +14,31 @@ module Jekyll
       uri = "#{baseurl}/opengraph/#{id}.png"
 
       if(File.exist?("#{Dir.pwd}/opengraph/#{id}.png"))
-        puts "File exists #{Dir.pwd}/opengraph/#{id}.png}"
+        puts "Preview exists: #{id}.png"
       else
-        # Create an image list from ImageMagic using the base image
-        background = Magick::Image.read("caption:#{context["page"]["date"]}") {
-            self.fill = '#FFFFFF'
-            self.font = "JetBrains-Mono-Bold"
-            self.pointsize = 13
-            self.size = "1200x630"
-            self.gravity = Magick::SouthEastGravity
-            self.background_color = "#1D1F21"
-        }.first
+        background = Magick::ImageList.new("#{Dir.pwd}/public/cover-background.png")
+
+        tinytext = Magick::Draw.new
+        background.annotate(tinytext, 0,0,0,0, "#{context["page"]["date"]} \n") do
+          tinytext.gravity = Magick::SouthEastGravity # Text positioning
+          tinytext.pointsize = 20
+          tinytext.fill = "#FFFFFF" # Font color
+          tinytext.font = "JetBrains-Mono-Bold" # Font file; needs to be absolute
+        end
+
+        background.annotate(tinytext, 0,0,0,0, "→ dottorblaster.it\n") do
+          tinytext.gravity = Magick::SouthWestGravity # Text positioning
+          tinytext.pointsize = 20
+          tinytext.fill = "#FFFFFF" # Font color
+          tinytext.font = "JetBrains-Mono-Bold" # Font file; needs to be absolute
+        end
 
         # Create a caption of the title in a smaller area and center aligned.
         text = Magick::Image.read("caption:#{context["page"]["title"]}") {
             self.fill = '#FFFFFF'
             self.font = "JetBrains-Mono-Bold"
             self.pointsize = 40
-            self.size = "1200x630"
+            self.size = "1100x630"
             self.gravity = Magick::CenterGravity
             self.background_color = "none"
         }.first
@@ -41,9 +48,8 @@ module Jekyll
 
         # Write out the file
         final_image.write("#{Dir.pwd}/opengraph/#{id}.png")
+        site.static_files << Jekyll::StaticFile.new(site, site.source, "/opengraph/", "#{id}.png")
       end
-
-      site.static_files << Jekyll::StaticFile.new(site, site.source, "/opengraph/", "#{id}.png")
 
       "<meta content=\"#{uri}\" property=\"og:image\">"
     end
