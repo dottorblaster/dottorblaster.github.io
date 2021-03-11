@@ -33,4 +33,5 @@ jobs:
             unzip JetBrainsMono-2.225.zip
             mv fonts/ttf/JetBrainsMono-*.ttf /usr/share/fonts/
             sudo fc-cache -f -v
+            bundle install
             bundle exec rubocop Thorfile
