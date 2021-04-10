@@ -15,7 +15,7 @@ tags:
 - open source
 ---
 
-![https://netnewswire.com/images/NNW5Light.png](NetNewsWire 6 for Mac)
+![NetNewsWire 6 for Mac](https://netnewswire.com/images/NNW5Light.png)
 
 Qualche giorno fa Brent Simmons [ha dato l'annuncio](https://inessential.com/2021/03/27/netnewswire_6_0_for_mac) del lieto evento: uno dei progetti open source migliori di cui io abbia mai seguito gli sviluppi ha annunciato la versione 6.0, e quel software è proprio **NetNewsWire**.
 
