@@ -17,7 +17,7 @@ tags:
 
 ![NetNewsWire 6 for Mac](https://netnewswire.com/images/NNW5Light.png)
 
-Qualche giorno fa Brent Simmons [ha dato l'annuncio](https://inessential.com/2021/03/27/netnewswire_6_0_for_mac) del lieto evento: uno dei progetti open source migliori di cui io abbia mai seguito gli sviluppi ha annunciato la versione 6.0, e quel software è proprio **NetNewsWire**.
+Qualche giorno fa **Brent Simmons** [ha dato l'annuncio](https://inessential.com/2021/03/27/netnewswire_6_0_for_mac) del lieto evento: uno dei progetti open source migliori di cui io abbia mai seguito gli sviluppi ha annunciato la versione 6.0, e quel software è proprio **NetNewsWire**.
 
 Ma cominciamo dall'inizio: cos'è NetNewsWire? NetNewsWire è un lettore di feed RSS che sincronizza anche con Feedly, Feedbin, e un'altra buona caterva di servizi online per leggere i feed. Quest'ultima versione sincronizza anche i feed letti, nel caso in cui non usassimo nessuno di questi servizi, direttamente via iCloud; personalmente io sono un grosso fan dei **feed RSS** per praticamente qualsiasi cosa, e uso NetNewsWire principalmente come "interfaccia" per quanto riguarda il mio account Feedly.
 
