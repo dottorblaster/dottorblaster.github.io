@@ -28,7 +28,7 @@ Marcata come non fattibile la prima alternativa, ho passato una settimanella a c
 Ho scoperto che invece basta loggarsi su una macchina appena deployata e dare questo comando:
 
 ```sh
-# curl -sfL https://get.k3s.io | sh -
+$ curl -sfL https://get.k3s.io | sh -
 ```
 
 In questo modo, il nostro terminale sputerà un po' di informazioni e in pochissimo tempo avremo _davvero_ un master node Kubernetes perfettamente funzionante a cui connetterci. **K3s** non è _esattamente_ una distribuzione che include tutto quello che le distribuzioni canoniche di Kubernetes si portano dietro, ma valutando i miei bisogni ho deciso che potevo fare a meno di quelle che per me sono caratteristiche marginali.
@@ -36,7 +36,7 @@ In questo modo, il nostro terminale sputerà un po' di informazioni e in pochiss
 Per connetterci al cluster da fuori abbiamo bisogno di un `kubeconfig`, che possiamo trovare in questo modo. Con questo comando otterremo qualcosa del genere:
 
 ```yml
-# cat /etc/rancher/k3s/k3s.yaml
+$ cat /etc/rancher/k3s/k3s.yaml
 apiVersion: v1
 clusters:
 - cluster:
@@ -65,16 +65,16 @@ Dopo qualche secondo, con un `kubectl get all` dovremmo poter vedere le risorse 
 È necessario innanzi tutto scoprire quale è il **token** per connetterci al nostro master node:
 
 ```sh
-# cat /var/lib/rancher/k3s/server/node-token
+$ sudo cat /var/lib/rancher/k3s/server/node-token
 K10361c7ecce9548dc6b5d1fc32e69b42eeb6e8d00d5e097923d83b9b4604277a9d::server:c44ecc6b22fdd6d7d08ea321798150f8
 ```
 
 Dopodiché possiamo tranquillamente deployare un'altra istanza su un'altra macchina informandola di questo token e dell'URL del master node in modo che ci si vada a connettere:
 
 ```sh
-# export k3s_master_url="https://k3s-master:6443"
-# export k3s_token="K10361c7ecce9548dc6b5d1fc32e69b42eeb6e8d00d5e097923d83b9b4604277a9d::server:c44ecc6b22fdd6d7d08ea321798150f8"
-# curl -sfL https://get.k3s.io | K3S_URL=${k3s_master_url} K3S_TOKEN=${k3s_token} sh -
+$ export k3s_master_url="https://k3s-master:6443"
+$ export k3s_token="K10361c7ecce9548dc6b5d1fc32e69b42eeb6e8d00d5e097923d83b9b4604277a9d::server:c44ecc6b22fdd6d7d08ea321798150f8"
+$ curl -sfL https://get.k3s.io | K3S_URL=${k3s_master_url} K3S_TOKEN=${k3s_token} sh -
 ```
 
 Con un `kubectl cluster-info` dovremmo vedere che il nostro nodo nuovo di pacca ha fatto il suo lavoro. A questo punto possiamo iniziare a giocarci, scrivendo la configurazione di cui abbiamo bisogno nei nostro file YAML e applicandola con `kubectl apply -f`. Questo procedimento usa K3s e un hosting a basso costo, ma con un po' di fine tuning (soprattutto andando a parare su un hosting più affidabile per le macchine) possiamo deployare i nostri nodi in questa maniera anche in produzione[^1]. Personalmente ancora non ho trovato feature mancanti dentro K3s per progetti piccoli che mi facciano dire "no, K3s non va bene anche per applicazioni di media portata"; per quanto riguarda **Allacarta**, soprattutto, questo setup e un po' di hardening hanno decisamente salvato la giornata e mi hanno permesso di **non rinunciare a un modo di lavorare molto più reattivo** a cui ormai mi ero piuttosto assuefatto.
