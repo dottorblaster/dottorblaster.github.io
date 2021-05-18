@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: true
-title: "Kubernetes production-ready in piccolo: depoloyare un mini-cluster K3s"
+title: "Kubernetes production-ready in piccolo: deployare un mini-cluster K3s"
 date: 2021-05-18 20:47:32 +0200
 categories: 
 - Linux
@@ -17,7 +17,7 @@ tags:
 
 ![Linux, gerarchia del filesystem](https://gitlab.com/dottorblaster/blog-images/-/raw/master/images/computers/linux-filesystem.webp)
 
-Qualche settimana fa mi ha amabilmente scritto il **cloud provider** presso cui è ospitato il cluster Kubernetes di produzione di [AllaCarta](https://allacarta.menu/) informandomi del fatto che la beta del loro servizio **Kubernetes managed** (che ho provato ~a scrocco~ in anticipo fornendo dei prezioni feedback) sta giungendo a una fine. Dopo attimi di panico, mi sono appuntato tre strade possibili da vagliare:
+Qualche settimana fa mi ha amabilmente scritto il **cloud provider** presso cui è ospitato il cluster Kubernetes di produzione di [AllaCarta](https://allacarta.menu/) informandomi del fatto che la beta del loro servizio **Kubernetes managed** (che ho provato ~a scrocco~ in anticipo fornendo dei preziosi feedback) sta giungendo a una fine. Dopo attimi di panico, mi sono appuntato tre strade possibili da vagliare:
 
 - Rimanere col provider attuale, pagando, continuando a usare Kubernetes. Non ho tuttavia voglia di diventare povero, per quanto i loro costi siano molto più prevedibili di qualsiasi piattaforma cloud "mainstream". In fin dei conti, davvero impraticabile. Dato che AllaCarta è gratis a oggi, devo tagliare tutti i costi il più possibile. :-D;
 - Migrare a un metodo di deployment più tradizionale riutilizzando i **playbook Ansible** scritti in precedenza;
