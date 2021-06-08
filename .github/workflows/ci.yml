@@ -34,4 +34,5 @@ jobs:
             mv fonts/ttf/JetBrainsMono-*.ttf /usr/share/fonts/
             sudo fc-cache -f -v
             bundle install
+            gem pristine rmagick
             bundle exec rubocop Thorfile
