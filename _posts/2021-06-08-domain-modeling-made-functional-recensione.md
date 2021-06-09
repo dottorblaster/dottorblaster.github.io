@@ -25,7 +25,7 @@ Grossomodo il discorso viene portato avanti attraverso vari punti, primo tra cui
 
 A quel punto, avendo un dominio descritto in maniera **type-driven** e le cui funzioni utilizzano una raccolta di tipi ben definita, si passa ai side effect: validazione, parsing, gestione degli errori attraverso il i**modello two-track**[^1], chiamata di API esterne, persistenza.
 
-Tutto questo senza minimamente menzionare[^2] **monadi**, funtori, applicativi, o altra roba arcana che il lettore non avrebbe nemmeno la forza di approfondire; il vero valore di questo volume è **tenere un approccio estremamente semplice**, abbandonando i concetti accademici fuori dalla porta e concentrandosi esclusivamente sui benefici di un approccio del generare risultando in questo modo un super-pregevole distillato di buonissime pratiche che scorre estremamente veloce nella lettura e soprattutto nell'apprendimento.
+Tutto questo senza minimamente menzionare[^2] **monadi**, funtori, applicativi, o altra roba arcana che il lettore non avrebbe nemmeno la forza di approfondire; il vero valore di questo volume è **tenere un approccio estremamente semplice**, abbandonando i concetti accademici fuori dalla porta e concentrandosi esclusivamente sui benefici di un approccio di questo tipo, risultando in questo modo un super-pregevole distillato di buonissime pratiche che scorre estremamente veloce nella lettura e soprattutto nell'apprendimento.
 
 Un grazie speciale va a **Emanuele De Cupis**, che me l'ha consigliato.
 
