@@ -62,7 +62,7 @@ GEM
     rickshaw (0.5.0)
     rmagick (4.2.2)
     rouge (3.26.0)
-    rubocop (1.16.0)
+    rubocop (1.16.1)
       parallel (~> 1.10)
       parser (>= 3.0.0.0)
       rainbow (>= 2.2.2, < 4.0)
