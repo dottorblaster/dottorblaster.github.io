@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <link rel="canonical" href="/page/136/" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- Enable Graph API for Facebook integration -->
+  <meta content="Grab The Blaster" property="og:site_name">
+  
+    <meta content="Home" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="Un blog nerd il giusto di Alessio Biancalana" property="og:description">
+  
+  
+    <meta content="https://dottorblaster.it/page/136/" property="og:url">
+  
+  
+  
+  
+
+  <!--   Enable Twitter Cards support through metadata, thanks to http://davidensinger.com/2013/04/supporting-twitter-cards-with-jekyll/ -->
+<!--   <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@site_username">
+  <meta name="twitter:creator" content="@creator_username">
+  
+    <meta name="twitter:title" content="Home">
+  
+  
+    <meta name="twitter:url" content="https://dottorblaster.it/page/136/">
+   -->
+  <!-- This is from @stammy -->
+<!--   <meta name="twitter:description" content="
+  {% for post in paginator.posts %}
+  
+    {% if post.layout == &quot;link&quot; %}
+      
+        
+          {{ post.title }}
+        
+        
+      
+    {% else %}
+      
+        
+          {{ ...">
+  
+    <meta name="twitter:image:src" content="https://dottorblaster.it/path/to/image/logo.png">
+    -->
+
+  <title>
+    
+      Grab The Blaster &middot; di Alessio Biancalana
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/grabtheblaster.css">
+  <link rel="stylesheet" href="/public/font-awesome/css/font-awesome.min.css">
+
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700italic,700,400italic' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,700' rel='stylesheet' type='text/css' />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title="" href="https://dottorblaster.it/feed">
+</head>
+
+
+  <body>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=81489295682&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="container content">
+      <div class="masthead">
+        <h3 class="masthead-title">
+          <img src="/public/avatar-blaster.png" alt="Alessio Biancalana">
+          <a href="/" title="Home page">Grab The Blaster</a>
+          <small>di Alessio Biancalana</small>
+        </h3>
+        <div class="social-icons"><a href="/about/" title="About Me"><i class="fa fa-user-circle-o"></i></a> <a href="https://twitter.com/dottorblaster" title="Twitter - @dottorblaster"><i class="fa fa-twitter"></i></a> <a href="https://github.com/dottorblaster" title="GitHub - dottorblaster"><i class="fa fa-github"></i></a></div>
+      </div>
+
+      <div class="posts">
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2009/01/abilitare-rgba-in-murrine/" title="Abilitare RGBA in Murrine - di Alessio Biancalana">
+          Abilitare RGBA in Murrine
+        </a>
+      </h1>
+      <span class="post-date">20 Jan 2009</span>
+    
+
+    <p>Sembra una scemenza, ma dopo che il rendering RGBA del famigerato engine Murrine è stato reso opzionale, molti si sono trovati senza alcuna trasparenza.</p>
+<p>Per chi è dipendente da questa caratteristica, la cosa è stata un duro colpo da digerire, ma i più svelti si sono armati di Google e hanno cercato una soluzione al problema; soluzione che rimane ancora oscura ai più, poichè a quanto vedo nessuno ne parla abbastanza.</p>
+<p>Ho quindi deciso di fare questa mini-guida (come richiestomi da <strong><a href="http://www.archlinux.it/forum/profile.php?id=1002">YtseJammin</a></strong>), per sincerarmi che tutti i miei lettori possano permettersi un desktop trasparente <strong>come il vetro di Murano</strong>.</p>
+<p style="text-align: center;"><img class="alignnone" src="http://i41.tinypic.com/jb480j.jpg" alt="" width="250" height="229" /></p>
+<p style="text-align: left;">Prima di tutto, siate sicuri di avere un composite manager.</p>
+<p style="text-align: left;">Come cos'è? Quelle ombre che vedete. E quelle finestre che svolazzano gommose come la fanghiglia sulle gomme della vostra auto. Un programma che permette tali prodigi è detto composite manager, o <strong>compositor</strong>.</p>
+<p style="text-align: left;">In secondo luogo, accertatevi di avere l'engine Murrine, ovviamente. Ma oramai, chi non lo ha? Nelle distro Debian-based (Ubuntu, Debian, Mint e compagni minori) potete trovarlo sotto forma di pacchetto nominato <em>gtk2-engines-murrine</em>.</p>
+<p style="text-align: left;">In Arch, trovate la versione che ci serve pacchettizzata come gtk-engine-murrine-svn, in AUR. Installatela, tramite Yaourt, o MakePkg.</p>
+<p style="text-align: left;">Ho fatto riferimento ad una versione specifica di Murrine: più precisamente si tratta della versione SVN. In Ubuntu è già presente, mentre in Debian va compilata. Ma questa è un'altra storia, e procedo dando per scontato che si sappia già installare un engine da SVN.</p>
+<p style="text-align: left;">Beh, adesso che vi siete accertati di avere tutto, procedete, individuando un tema che adorate e che volete munito delle famigerate trasparenze. Editate il <strong>gtkrc</strong> del tema. Se non sapete minimamente cosa sia, lo spiego in parole povere: È il file che definisce il vostro tema; lo potete trovare nella cartella del tema che, se scaricato da voi, si troverà in ~/.themes, altrimenti se è un tema di sistema, in /usr/share/themes. Beh, editate questo file con un quasiasi editor di testo puro, sia esso vi, emacs, nano. Non faccio discriminazioni.</p>
+<p style="text-align: left;">Adesso, siete nel codice. Cercate un pezzo di codice che assomigli a questo; deve almeno inziare con <em>engine "murrine"</em>.</p>
+<p style="text-align: left;"><code> engine "murrine"<br />
+{<br />
+scrollbarstyle = 2 # Enable or disable circles, stripes, handles<br />
+listviewstyle = 0 # 0 = nothing, 1 = dotted<br />
+scrollbar_color             = "#d8d8d8" #"#5c8de6" #"#3f70c9" #"#efebe7" #"$<br />
+contrast = 1.0<br />
+menuitemstyle = 0 # 0 = flat, 1 = glassy, 2 = striped<br />
+glazestyle = 0 # 0 = flat hilight, 1 = curved hilight, 2 = concave styl$<br />
+menubarstyle = 2 # 0 = flat, 1 = glassy, 2 = gradient, 3 = striped<br />
+menubaritemstyle = 0 # 0 = menuitem look, 1 = button look<br />
+listviewheaderstyle = 0 # 0 = flat, 1 = glassy, 2 = raised<br />
+roundness = 2 # 0 = squared, 1 = old default, more will increase roundn$<br />
+animation = TRUE # FALSE = disabled, TRUE = enabled<br />
+hilight_ratio = 0.97<br />
+gradients = FALSE<br />
+menustyle = 0<br />
+}</code></p>
+<p style="text-align: left;">In questo spezzone, ed il vostro dovrebbe essere simile, si trovano tutte le opzioni configurabili del tema. Adesso, prima delle graffa, aggiungiamo questa.</p>
+<p style="text-align: left;"><code>rgba = TRUE</code></p>
+<p style="text-align: left;">Salviamo, cambiamo tema, e successivamente selezioniamo il tema da noi modificato.</p>
+<p style="text-align: left;">Non è successo nulla? Forse non avete ancora il compositor attivo; verificate che sia presente e funzionante. Se è disattivato, attivatelo e... magia :D</p>
+<p style="text-align: left;">Enjoy ;)</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2009/01/photoshop-e-linux-si-puo-fa-re/" title="Photoshop e Linux: si - può - fa - re! - di Alessio Biancalana">
+          Photoshop e Linux: si - può - fa - re!
+        </a>
+      </h1>
+      <span class="post-date">19 Jan 2009</span>
+    
+
+    <p style="text-align: center;"><img class="alignnone" src="http://i42.tinypic.com/1zf1tw4.jpg" alt="" width="573" height="368" /></p>
+<p style="text-align: center;"><em>Grafici, ormai non avete più scUSE¹.</em></p>
+<p style="text-align: left;"><em>-------------------------------</em></p>
+<p style="text-align: left;">[1]: Chiedo scusa, rimanenze di Gentoo.</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2009/01/deluge-110-impacchettato-per-archlinux/" title="Deluge 1.1.0 impacchettato per ArchLinux - di Alessio Biancalana">
+          Deluge 1.1.0 impacchettato per ArchLinux
+        </a>
+      </h1>
+      <span class="post-date">15 Jan 2009</span>
+    
+
+    <p>Ieri, aprendo Deluge per scaricare dei file tramite Torrent, mi è stata notificata l'uscita di una nuova versione, e visto che era di molto superiore a quella pacchettizzata dai maintainer di Arch, ho deciso di creare un piccolo backport. :)</p>
+<p style="text-align: center;"><img class="alignnone" src="http://i41.tinypic.com/28007id.jpg" alt="" width="458" height="327" /></p>
+<p>La nuova versione introduce delle migliorie nella gestione grafica; per il resto è sempre il nostro caro, vecchio, amato Deluge :D</p>
+<p><a href="http://www.mediafire.com/file/zngy0ty03tm/deluge-1.1.0-1-i686.pkg.tar.gz">SCARICAMI</a></p>
+<p>Che aspettate, correte a scaricare il pacchetto :lol:</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2008/12/pacman-cage/" title="Pacman Cage - di Alessio Biancalana">
+          Pacman Cage
+        </a>
+      </h1>
+      <span class="post-date">26 Dec 2008</span>
+    
+
+    <p>A quanto pare, questa utility che dovrebbe occuparsi di tenere ordinato il database di Pacman in modo che non sia frammentato, non funziona.</p>
+<p>Perciò ho distrutto il mio database.</p>
+<p>Mi aspetta una lunga notte di reinstallazioni forzate, prevedo.</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2008/12/linizio-della-fine-ovvero-blster-gentoo/" title="L'inizio della fine - ovvero Bl@ster @ Gentoo - di Alessio Biancalana">
+          L'inizio della fine - ovvero Bl@ster @ Gentoo
+        </a>
+      </h1>
+      <span class="post-date">18 Dec 2008</span>
+    
+
+    <p>Effettivamente, il titolo non è propriamente veritiero.</p>
+<p style="text-align: center;"><img class="alignnone" src="http://i41.tinypic.com/25sn12d.jpg" alt="" width="535" height="390" /></p>
+<p style="text-align: left;">Infatti, come potete vedere dall'immagine, o per meglio dire, da quello che stavo scrivendo al momento nel terminale, mi trovo ancora nella fase di installazione. Non ho ancora un sistema stabile su cui smanazzare libero servendomi di Portage e Nano, tuttavia l'installazione sta procedendo abbastanza tranquillamente.</p>
+<p style="text-align: left;">Spero veramente di riuscire a portare a termine questa installazione, che mi sta divertendo più di qualunque altra cosa mai fatta; per ora procedo con HandBook alla mano, due terminali aperti e Firefox che controlla la posta.</p>
+<p style="text-align: left;">Si comincia.</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/page/137"><i class="fa fa-chevron-circle-left"></i></a>
+  
+  
+    
+      <a class="pagination-item newer" href="/page/135"><i class="fa fa-chevron-circle-right"></i></a>
+    
+  
+</div>
+
+
+      <div class="footer">
+        <p>
+          &copy; Grab The Blaster is brought to you by Alessio Biancalana with <a href="http://jekyllrb.com/">Jekyll</a> and much ♥, under <a href="https://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC</a>.
+        </p>
+        <form class="search-form" action="/search" method="get">
+          <input type="text" placeholder="Cerca →" name="query">
+        </form>
+      </div>
+      <div class="webring-container">
+        <webring-banner>
+          <p>Member of <a href="https://retronerds.netlify.app"></a></p>
+          <a href="https://retronerds.netlify.app/prev">Previous</a>
+          <a href="https://retronerds.netlify.app/random">Random</a>
+          <a href="https://retronerds.netlify.app/next">Next</a>
+        </webring-banner>
+        <script async src="https://retronerds.netlify.app/embed.js" charset="utf-8"></script>
+      </div>
+    </div>
+
+  </body>
+</html>

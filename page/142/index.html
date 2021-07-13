@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <link rel="canonical" href="/page/142/" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- Enable Graph API for Facebook integration -->
+  <meta content="Grab The Blaster" property="og:site_name">
+  
+    <meta content="Home" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="Un blog nerd il giusto di Alessio Biancalana" property="og:description">
+  
+  
+    <meta content="https://dottorblaster.it/page/142/" property="og:url">
+  
+  
+  
+  
+
+  <!--   Enable Twitter Cards support through metadata, thanks to http://davidensinger.com/2013/04/supporting-twitter-cards-with-jekyll/ -->
+<!--   <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@site_username">
+  <meta name="twitter:creator" content="@creator_username">
+  
+    <meta name="twitter:title" content="Home">
+  
+  
+    <meta name="twitter:url" content="https://dottorblaster.it/page/142/">
+   -->
+  <!-- This is from @stammy -->
+<!--   <meta name="twitter:description" content="
+  {% for post in paginator.posts %}
+  
+    {% if post.layout == &quot;link&quot; %}
+      
+        
+          {{ post.title }}
+        
+        
+      
+    {% else %}
+      
+        
+          {{ ...">
+  
+    <meta name="twitter:image:src" content="https://dottorblaster.it/path/to/image/logo.png">
+    -->
+
+  <title>
+    
+      Grab The Blaster &middot; di Alessio Biancalana
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/grabtheblaster.css">
+  <link rel="stylesheet" href="/public/font-awesome/css/font-awesome.min.css">
+
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700italic,700,400italic' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,700' rel='stylesheet' type='text/css' />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title="" href="https://dottorblaster.it/feed">
+</head>
+
+
+  <body>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=81489295682&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="container content">
+      <div class="masthead">
+        <h3 class="masthead-title">
+          <img src="/public/avatar-blaster.png" alt="Alessio Biancalana">
+          <a href="/" title="Home page">Grab The Blaster</a>
+          <small>di Alessio Biancalana</small>
+        </h3>
+        <div class="social-icons"><a href="/about/" title="About Me"><i class="fa fa-user-circle-o"></i></a> <a href="https://twitter.com/dottorblaster" title="Twitter - @dottorblaster"><i class="fa fa-twitter"></i></a> <a href="https://github.com/dottorblaster" title="GitHub - dottorblaster"><i class="fa fa-github"></i></a></div>
+      </div>
+
+      <div class="posts">
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2008/06/kde-4-svn-per-arch-linux-dieci-minuti/" title="KDE 4 SVN per Arch Linux. Dieci minuti? - di Alessio Biancalana">
+          KDE 4 SVN per Arch Linux. Dieci minuti?
+        </a>
+      </h1>
+      <span class="post-date">25 Jun 2008</span>
+    
+
+    <p>Da qualche settimana ormai è iniziata l'estate, e sul mio hard disk ha trovato spazio anche KDE 4, ovviamente compilato da SVN.</p>
+<p>Siccome non penso di voler mai sprecare un secondo del mio tempo a compilare sorgenti SVN di KDE, mi affido quotidianamente ad un repository altamente nocivo per Arch che ho scoperto solo di recente.</p>
+<p>Vediamo quindi come installare KDE 4 sulla nostra Arch Linux, impacchettato quotidianamente; consiglio la lettura della procedura nel suo insieme, per evitare sorprese :D</p>
+<p>Aggiungiamo <strong>in cima</strong> al nostro pacman.conf le seguenti righe:</p>
+<p><code>[kde]<br /><br />
+Server = http://pkg.markconstable.com/kde/i686/</code></p>
+<p>Per Arch 64 basta sostituire "i686" con "x86_64".</p>
+<p>Adesso, occhio: desumo dal nome dei pacchetti che si sovrascrivano a KDE 3, quindi, cari utenti Arch che avete KDE 3.5, in caso non vi piaccia KDE 4 dovrete reinstallare successivamente la versione di Arch. Per gli utenti Gnome invece non sono indicati particolari problemi.<a id="more"></a><a id="more-178"></a></p>
+<p><code>pacman -Sy kde-svn</code></p>
+<p>Questo installerà KDE 4 sulla nostra macchina. Se vogliamo tutti i frizzi e i lazzi al completo, allora il gruppo da installare è <strong>kde-svn-all</strong>.</p>
+<p>Forse dovremo forzare addirittura l'installazione dei pacchetti per far andare alcune cose, ma non c'è da preoccuparsi; non ho riscontrato particolari malfunzionamenti.</p>
+<p>Mentre scarica e installa, prendetevi un caffè dato che sono un bel po' di pacchetti :D</p>
+<p>Fatto? Fatto! Riavviamo X e godiamoci KDE 4.</p>
+<p style="text-align: center;"><a title="KDE 4 di Blaster3, su Flickr" href="http://www.flickr.com/photos/fotoblaster/2610521550/"><img class="aligncenter" src="http://farm4.static.flickr.com/3129/2610521550_b593285794.jpg" alt="KDE 4" width="500" height="375" /></a></p>
+<p style="text-align: left;">Adesso non ci resta che divertirci e personalizzare un po' il tutto, specialmente Plasma...</p>
+<p style="text-align: center;"><a title="KDE 4... di Blaster3, su Flickr" href="http://www.flickr.com/photos/fotoblaster/2610521984/"><img src="http://farm4.static.flickr.com/3258/2610521984_e182997fc3.jpg" alt="KDE 4..." width="500" height="375" /></a></p>
+<p style="text-align: left;">Tornando a Gnome e rimuovendo KDE 4, mi è successo di dover ripristinare la copia di backup fatta in precedenza del file dei menù, poichè mi era misteriosamente scomparso Applicazioni:</p>
+<p style="text-align: left;"><code>sudo mv /etc/xdg/menus/applications.menu.pacsave  /etc/xdg/menus/applications.menu</code></p>
+<p style="text-align: left;">Beh, questo è tutto.</p>
+<p style="text-align: left;">Spero che per gli arcieri sia stata cosa utile :D</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2008/06/il-volpaccio-torna-allattacco-per-la-terza-volta/" title="Il volpaccio torna all'attacco per la terza volta! - di Alessio Biancalana">
+          Il volpaccio torna all'attacco per la terza volta!
+        </a>
+      </h1>
+      <span class="post-date">18 Jun 2008</span>
+    
+
+    <p>Come ogni buon software open che si rispetti, non poteva che essere salutato dal tripudio e dall'ovazione della folla: il nuovo Firefox 3, nome in codice Minefield, è uscito ieri stabilendo oltretutto il record di download giornalieri di un'applicazione. Che dire, un'entrata in scena col botto, quella del nuovo panda cinese (anche se io lo chiamo affettuosamente volpaccio), che però si è fatto notare per un piccolo incidente di percorso, o almeno per me ha perso dei punti.</p>
+<p>La lodevole iniziativa del Team Mozilla infatti, il Download Day, non è stata un completo successo: appena iniziata la maratona infatti, essendosi precipitati i fan del noto browser a scaricare la nuova versione, chi per Windows, chi per Linux, i server di mozilla.com e mozilla.org hanno collassato, e sono rimasti in piedi solo gli altri siti marcati Mozilla, come Mozilla Italia e Mozilla Europe. Facendo poi un accesso serale, mi sono accorto che finalmente l'Italia era stata presa in considerazione, così come l'Europa, quindi era aggiornata.</p>
+<p>A quel punto ho scaricato Firefox 3 e l'ho installato: a parte un piccolo problema, che però ho scoperto risiedere nel mio PC e non in Firefox (infatti mi è bastato purgare la mia installazione precedente), va tutto a meraviglia.</p>
+<p>Sono felicissimo, da Gnomer, di vedere che hanno integrato un buonissimo supporto ai controlli GTK+; le estensioni ci sono quasi tutte: secondo me quelle pochissime che mancano in qualche giorno saranno di nuovo disponibili.</p>
+<p>Che dire allora, se non <strong>enjoy</strong> :D</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2008/06/daniele-un-bambino-con-sindrome-di-keppen-lubinsky/" title="Daniele: un bambino con sindrome di Keppen-Lubinsky. - di Alessio Biancalana">
+          Daniele: un bambino con sindrome di Keppen-Lubinsky.
+        </a>
+      </h1>
+      <span class="post-date">16 Jun 2008</span>
+    
+
+    <p>Oggi mi sono imbattuto in <a href="http://www.danielefiorenza.com/">questo</a> giovane blog: si tratta dello spazio web di un bambino, Daniele Fiorenza, affetto da sindrome di Keppen-Lubinsky. Questa sindrome porta lipodistrofia, soprattutto per quanto riguarda il volto, e ritardo nello sviluppo motorio.</p>
+<p>Nonostante tutto ciò, dalle varie foto presenti sul sito si può evincere che Daniele, pur portando questo gravoso peso, è una persona felice. Lasciate qualche commento, e facciamoci sentire, noi del popolo della blogosfera. Ogni altra parola è inutile; sta a voi passare parola.</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2008/06/freebsd-roba-forte/" title="FreeBSD: roba forte! - di Alessio Biancalana">
+          FreeBSD: roba forte!
+        </a>
+      </h1>
+      <span class="post-date">02 Jun 2008</span>
+    
+
+    <p>Non c'è molto da dire sul prologo della storia: un po' di giorni fa, preso dalla voglia di provare qualcosa di nuovo, ho formattato l'intero hard drive da quaranta gigabyte per inserire poi nel lettore il CD 1 di FreeBSD.</p>
+<p>L'installazione di FreeBSD mi era stata riferita come particolarmente ostica da alcune persone di Cosenza conosciute all'OpenMind, così mi sono detto:</p>
+<blockquote><p>Se riesco con BSD, posso installare tutto!</p></blockquote>
+<p>Una volta cominciata quindi l'installazione, mi sono messo seduto e ho cominciato a premere in modo convulso sulla tastiera. È andato tutto bene, per fortuna, finchè non sono arrivato al partizionamento. :|</p>
+<p>L'installer infatti mi fa:</p>
+<blockquote><p>Vabeh, dobbiamo creare la partizione FreeBSD.</p></blockquote>
+<p>Gli ho risposto quindi in tono pacato:</p>
+<blockquote><p>Puoi anche spazzare via l'intero disco, non c'è problema.</p></blockquote>
+<p>Al che mi sono trovato davanti ad una domanda che non mi sarei mai aspettato: mi chiedeva di creare delle sotto-partizioni (o qualcosa di simile), al che ho cominciato ad andare nel panico, e ad accorgermi della prima differenza da Linux:</p>
+<p>La nomenclatura delle periferiche è completamente diversa: eth0, hda1... scordatevi tutto ciò.</p>
+<p>Per ben tre volte ho provato a creare queste sotto-partizioni manualmente, ma all'inizio del controllo di queste ultime, mi si diceva che ne mancava sempre qualcuna. Al che ho mandato gentilmente a quel paese l'installer, e ho usato l'opzione per l'auto-partizionamento.</p>
+<p>Risolta questa ultima bega (sia benedetto chi ha inventato l'automazione), l'installazione è cominciata.</p>
+<p>È anche finita. E velocemente anche :D<a id="more"></a><a id="more-175"></a></p>
+<p>Attraverso delle domande esaustive, l'installer mi ha chiesto cosa volevo fare con il mio sistema, e se volevo servizi aggiuntivi da attivare all'avvio. Mi ha fatto inoltre scegliere cosa attivare al boot e cosa no, da un nutrito elenco: è per questo che ho soprannominato l'installer di BSD Alfred il Maggiordomo.</p>
+<p>Tutto ciò è avvenuto verso le tre e mezza del pomeriggio; subito ho eseguito un reboot, dopo aver impostato la password di root, e mi sono loggato come root nel mio sistema BSD nuovo di zecca.</p>
+<p>Beh, non sono stato affatto intimorito dalla TTY, anzi, sono stato felice di passarci qualche ora (e anche di più) assieme, è sempre un'ottima persona con cui parlare. Soprattutto perchè fa sempre quel che le dici, senza ribattere, a meno che non sia del tutto impossibile ciò che le si chiede. A questo punto ho tentato di usare l'ottimo tool di BSD per installare pacchetti, di nome pkg_add (la fantasia regna in BSD eh...), e mi sono trovato davanti a dei mistici errori.</p>
+<p>Il giorno dopo, dalle tre e mezza del giorno prima che erano, mi sono riloggato in Arch e ho visto come si usa pkg_add. Imprecando ho visto che bastava solo aggiungere l'opzione -r per far prelevare l'ultima versione del pacchetto dai repository, senza preoccuparsi di specificare il nome per intero.</p>
+<p>Successivamente sono andato in crisi: gnome in BSD non esiste come package, bensì è chiamato gnome2. Anche questo per scoprirlo due ore.</p>
+<p>Qualche ora dopo, tornando, mi sono accorto che il mio bel Desktop Environment era finalmente installato. Ho così cominciato a smanettarci un po' su: innanzi tutto ho smesso di usare su e ho piazzato al suo posto sudo, il quale per essere configurato ha fatto un po' di bizze, in quanto /etc/sudoers era vuoto, ed era sostituito da /etc/sudoers.tmp o qualcosa del genere; arrangiandomi con pochissime conoscenze di vi, e visudo, ho dunque aggiunto il mio user alla lista, e ho avviato subito dopo GDM, loggandomi come blaster per via grafica.</p>
+<p>Ho notato che il mouse era stranamente lento. Gli ho dato una bella accelerata, come piace a noi Linuxiani :D</p>
+<p>Ho cominciato ad installare un po' di pacchetti, poi con Firefox ho navigato un po'. L'esperienza di utilizzo è stata quindi decisamente positiva: nei ports c'è qualunque cosa, e anche nei repository i precompilati non mancano.</p>
+<p>Sono ritornato ad Arch però perchè usando BSD ho potuto verificare come effettivamente non sia un sistema che punta all'usabilità; durante l'utilizzo si può vedere come BSD sia un sistema dedicato principalmente all'utilizzo server: se ci si logga da root, su tutte le altre TTY viene mandato un alert che avvisa di un login da root. Il wizard iniziale che chiede quali servizi attivare al boot permette di avere poi un sistema più sicuro, dato che non si hanno porte aperte se non quelle desiderate.</p>
+<p>Sicuramente ottima, ma per l'utenza desktop è molto meglio Linux: le applicazioni proliferano, anche se BSD ha un layer di compatibilità con esse, e c'è molto più supporto. Devo tuttavia spezzare una lancia a favore del sito di BSD: è pieno di guide che spiegano nel dettaglio ogni cosa; a BSD manca però la competenza e il supporto da parte di una community come quella Linux. Si può dire che Linux oggi è quello che è proprio grazie a noi utenti.</p>
+<p>Tuttavia, come ho già detto prima, userei BSD senza esitazione sul mio server: mi è sembrato un ottimo sistema, anche se non mi ha coccolato come sono coccolato da Linux.</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2008/05/open-source-day-perche-no/" title="Open Source Day: perchè no? - di Alessio Biancalana">
+          Open Source Day: perchè no?
+        </a>
+      </h1>
+      <span class="post-date">29 May 2008</span>
+    
+
+    <p>In questi giorni ho avuto un po' da fare, e questo ha a volte penalizzato la mia presenza in rete. In uno dei pochi lassi di tempo in cui tuttavia mi sono trovato online sul canale, <a href="http://linuxrevenge.wordpress.com/">Darkarix</a> ha colto l'occasione propizia per chiedermi se avevo piacere di recarmi con lui, assieme a <a href="http://notsecurity.com/">Nicola Greco</a>, all'Open Source Day.</p>
+<p>Dopo essermi informato sull'evento, apprendendo le principali nozioni dal <a href="http://www.oneopensource.it/27/05/2008/open-source-day-2008-il-10-giugno-a-roma/">post di Piergiorgio Lucidi su OneOpenSource</a>, ho visto che effettivamente il mio arrivo a Roma per la manifestazione non sarebbe stato così complicato, dato che quest'ultima si svolgerà il 10 Giugno all'ATAHotel Villa Pamphili, in una zona che conosco molto bene.</p>
+<p>Notificando dunque il mio prendere parte all'evento come spettatore ai miei genitori, ho deciso di partecipare. Spero che si possa entrare senza essere registrati <a href="http://www.segreteriaevento.com/">quì</a>, perchè io oltre ad essere minorenne non sono dipendente di nessuna azienda.</p>
+<p>Per meglio descrivere l'atmosfera in cui il magico trio sarà immerso, basta nominare organizzatori e sponsor dell'evento: al posto dei soliti LUG, o dell'associazione PizzæFichi di turno, abbiamo dei nomi altisonanti;</p>
+<p>Organizzatore/ice (come si dice?) di turno: <strong>RedHat</strong>. Questo per chiarire come non ci si trovi più nel clima giocoso di un LinuxDay o di un BarCamp.</p>
+<p>Come sponsor abbiamo MySQL, Sun, e altri nomi che non sto ad elencare ma che possono essere reperiti <a href="http://www.redhat.it/promo/opensourceday/sponsors.php">quì</a>.</p>
+<p>Una giornata, insomma, all'insegna si dell'Open Source, tuttavia senza alcun dubbio orientata verso il lato enterprise di questa macchina perfetta che è il codice aperto; voglio sfruttare al massimo l'evento quindi per vedere che aria tira dall'altra parte della barricata, dove girano i soldi. Certamente sarà una manifestazione istruttiva e costruttiva.</p>
+<p>E, cari lettori di zone limitrofe, non dimenticate di venire a cercare tre bambini in mezzo ad una folla di barbuti imborghesiti; vi aspetto per trasformare una specie di centro anziani dell'informatica in una cosetta un po' più vispa :D</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/page/143"><i class="fa fa-chevron-circle-left"></i></a>
+  
+  
+    
+      <a class="pagination-item newer" href="/page/141"><i class="fa fa-chevron-circle-right"></i></a>
+    
+  
+</div>
+
+
+      <div class="footer">
+        <p>
+          &copy; Grab The Blaster is brought to you by Alessio Biancalana with <a href="http://jekyllrb.com/">Jekyll</a> and much ♥, under <a href="https://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC</a>.
+        </p>
+        <form class="search-form" action="/search" method="get">
+          <input type="text" placeholder="Cerca →" name="query">
+        </form>
+      </div>
+      <div class="webring-container">
+        <webring-banner>
+          <p>Member of <a href="https://retronerds.netlify.app"></a></p>
+          <a href="https://retronerds.netlify.app/prev">Previous</a>
+          <a href="https://retronerds.netlify.app/random">Random</a>
+          <a href="https://retronerds.netlify.app/next">Next</a>
+        </webring-banner>
+        <script async src="https://retronerds.netlify.app/embed.js" charset="utf-8"></script>
+      </div>
+    </div>
+
+  </body>
+</html>

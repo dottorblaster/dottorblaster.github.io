@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <link rel="canonical" href="/page/134/" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- Enable Graph API for Facebook integration -->
+  <meta content="Grab The Blaster" property="og:site_name">
+  
+    <meta content="Home" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="Un blog nerd il giusto di Alessio Biancalana" property="og:description">
+  
+  
+    <meta content="https://dottorblaster.it/page/134/" property="og:url">
+  
+  
+  
+  
+
+  <!--   Enable Twitter Cards support through metadata, thanks to http://davidensinger.com/2013/04/supporting-twitter-cards-with-jekyll/ -->
+<!--   <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@site_username">
+  <meta name="twitter:creator" content="@creator_username">
+  
+    <meta name="twitter:title" content="Home">
+  
+  
+    <meta name="twitter:url" content="https://dottorblaster.it/page/134/">
+   -->
+  <!-- This is from @stammy -->
+<!--   <meta name="twitter:description" content="
+  {% for post in paginator.posts %}
+  
+    {% if post.layout == &quot;link&quot; %}
+      
+        
+          {{ post.title }}
+        
+        
+      
+    {% else %}
+      
+        
+          {{ ...">
+  
+    <meta name="twitter:image:src" content="https://dottorblaster.it/path/to/image/logo.png">
+    -->
+
+  <title>
+    
+      Grab The Blaster &middot; di Alessio Biancalana
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/grabtheblaster.css">
+  <link rel="stylesheet" href="/public/font-awesome/css/font-awesome.min.css">
+
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700italic,700,400italic' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,700' rel='stylesheet' type='text/css' />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title="" href="https://dottorblaster.it/feed">
+</head>
+
+
+  <body>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=81489295682&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="container content">
+      <div class="masthead">
+        <h3 class="masthead-title">
+          <img src="/public/avatar-blaster.png" alt="Alessio Biancalana">
+          <a href="/" title="Home page">Grab The Blaster</a>
+          <small>di Alessio Biancalana</small>
+        </h3>
+        <div class="social-icons"><a href="/about/" title="About Me"><i class="fa fa-user-circle-o"></i></a> <a href="https://twitter.com/dottorblaster" title="Twitter - @dottorblaster"><i class="fa fa-twitter"></i></a> <a href="https://github.com/dottorblaster" title="GitHub - dottorblaster"><i class="fa fa-github"></i></a></div>
+      </div>
+
+      <div class="posts">
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2009/02/debian-vs-mimetypes-problema-risolto/" title="Debian VS Mimetypes, problema risolto. - di Alessio Biancalana">
+          Debian VS Mimetypes, problema risolto.
+        </a>
+      </h1>
+      <span class="post-date">18 Feb 2009</span>
+    
+
+    <p>Succede a volte che un individuo, <a href="http://dottorblaster.it/2009/02/debian-batti-il-50">scrivendo</a> e facendo conoscere al mondo la propria opinione sul rilascio di <a href="http://debian.org">un dato sistema operativo</a> (magari universale), faccia nascere un piccolo dibattito su alcune questioni di rilevanza ben più elevata.</p>
+<p>Per esempio, la questione messa in ballo dai nuovi pacchetti in Debian Sid, i quali compromettono l'utilizzo dei mimetypes da parte di GNOME.</p>
+<p style="text-align: center;"><img class="alignnone" src="http://i40.tinypic.com/mwyzpu.jpg" alt="" width="218" height="250" /></p>
+<p><a href="http://telperion.wordpress.com/">Telperion</a> dunque <a href="http://dottorblaster.it/2009/02/debian-batti-il-50/#comment-6482">ha segnalato</a> il problema, proponendo la pronta soluzione.</p>
+<p>Abilitando il repository Experimental...</p>
+<blockquote><p><span id="intelliTXT">deb http://ftp.it.debian.org/debian/ experimental main contrib non-free</span></p></blockquote>
+<p><span id="intelliTXT">...nel nostro sources.list, possiamo facilmente ovviare a questo problema che sembra non dare pace a parecchi.</span></p>
+<blockquote><p><code>sudo apt-get update</code></p>
+<p><code>sudo apt-get install -s -t experimental metacity nautilus</code></p></blockquote>
+<p>Aggiorniamo la lista dei pacchetti, ed installiamo da Experimental Metacity e Nautilus, non ancora in Sid.</p>
+<p>A dire il vero, molte poche cose stanno passando in Sid dopo il recente avvento di Lenny, e la cosa mi inquieta non poco; dovrò usare Experimental per il resto della vita, o potrò prima o poi rivedere qualcosa di aggiornatissimo in Sid?</p>
+<p>Comunque, tutto è bene ciò che finisce bene; tra i due pacchetti litiganti, lo user gode :)</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2009/02/debian-batti-il-50/" title="Debian, batti il 5(.0)! - di Alessio Biancalana">
+          Debian, batti il 5(.0)!
+        </a>
+      </h1>
+      <span class="post-date">17 Feb 2009</span>
+    
+
+    <p>Ultimamente, ho notato che un evento come il rilascio di Debian, qualcosa di terribilmente maestoso, sorprendente, figherrimo e a dir poco <strong>epocale</strong>, è passato in sordina di fronte ad altre notizie.</p>
+<p>Ebbene, dopo <a href="http://www.pettinix.org/2009/02/15/rilasciata-debian-gnulinux-lenny-50/">aver parlato</a> Lobotomia del lato tecnico, io voglio scrivere qualcosa su quello che comporterà questo rilascio per me e altri amanti del bleeding edge.</p>
+<p style="text-align: center;"><img class="alignnone" src="http://www.ivan.agliardi.net/wordpress/wp-content/uploads/2008/02/logo_debian.jpg" alt="" width="218" height="250" /></p>
+<p>Beh, iniziamo col dire che è uscita Debian 5.0, ma questo penso che ormai si sappia; <strong>Debian Lenny</strong> è stata sguinzagliata e sta assaltando i desktop del pianeta, dove prima c'era Etch.</p>
+<p>Dopo la demagogia e la tautologia spicciola, scrivo qualcosa di abbastanza serio. Ricorderete certamente tutti che una versione di Debian, prima di essere rilasciata, comporta il freeze di tutti i repository, permettendo l'entrata di quei soli pacchetti che contengono bugfix o correzioni riguardanti comunque la sicurezza.</p>
+<p>Dunque, essendo stata rilasciata la nuova versione di Debian, adesso finalmente tutti i pacchetti che erano in Experimental, in attesa di poter scrosciare allegri nei repository di Sid, stanno entrando a far parte del ramo Unstable.</p>
+<p>Questo essenzialmente significa che presto noi Siddisti (e relativi utenti Squeeze, la nuova Testing), avremo l'onore di poter installare, con un colpo di APT, GNOME 2.24, Xorg 7.3, nuovi driver per le schede video e tante altre amenità che prima erano confinate al solo repository sperimentale.</p>
+<p>Buon aggiornamento dunque; mentre vi scrivo viene traslata in Unstable l'ultima versione di GIMP :D</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2009/02/windows-seven-a-quattro-applicazioni-ti-uccido-il-cane/" title="Windows Seven: a quattro applicazioni ti uccido il cane. - di Alessio Biancalana">
+          Windows Seven: a quattro applicazioni ti uccido il cane.
+        </a>
+      </h1>
+      <span class="post-date">15 Feb 2009</span>
+    
+
+    <p>Ho appreso da pochissimi minuti una notizia che mi ha fatto accapponare la pelle.</p>
+<p>Già sappiamo come Microsoft sia disposta a vendere lo stesso sistema operativo in più versioni per far credere di renderlo più appetibile alla folla, quando non è così.</p>
+<p style="text-align: center;"><img class="alignnone" src="http://i43.tinypic.com/2wn1zlc.jpg" alt="" width="350" height="317" /></p>
+<p>Da questa release, ebbene, l'arma è a doppio taglio: comprando la versione Starter di Windows Seven, infatti, dato che a Microsoft si daranno pochi soldi (relativamente), la casa produttrice si vendicherà sul nostro povero PC non permettendogli di aprire più di <strong>tre applicazioni contemporaneamente</strong>.</p>
+<p>Nelle altre versioni, il limite non risulta essere presente, ma comunque secondo me questo fatto è assolutamente vergognoso; è pur vero che quasi nessuno comprerà mai la Starter, perchè tra preinstallazioni e fanboy non credo che nessuno mai acquisterebbe la versione base del sistema operativo Microsoft, ma cavolo.</p>
+<p><em>Questo no, dai.</em></p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2009/02/gnome-22590-entra-di-volata-in-ubuntu-jaunty/" title="GNOME 2.25.90 entra di volata in Ubuntu Jaunty - di Alessio Biancalana">
+          GNOME 2.25.90 entra di volata in Ubuntu Jaunty
+        </a>
+      </h1>
+      <span class="post-date">12 Feb 2009</span>
+    
+
+    <p>Da pochi giorni gli utenti della Lepre africana si dilettano con le delizie offerte dall'ultima release instabile di GNOME. Compreso me. :D</p>
+<p style="text-align: center;"><img class="alignnone" src="http://i42.tinypic.com/mmqzja.jpg" alt="" width="590" height="550" /></p>
+<p style="text-align: left;">Di nuovo, ad essere sinceri, c'è ben poco; sembra più che altro una release con molti bugfix.</p>
+<p style="text-align: left;">Avevo citato tempo fa qualche novità, ma la cosa sembra essersi fermata lì; in sostanza, non aspettiamoci rivoluzioni con questa 2.26.</p>
+<p style="text-align: left;">E anche se non sembra, a me questo modo di fare piace :)</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2009/02/amsn-vs-emesene-chi-e-arrivato-dove/" title="aMSN VS EmEsEnE: chi è arrivato dove. - di Alessio Biancalana">
+          aMSN VS EmEsEnE: chi è arrivato dove.
+        </a>
+      </h1>
+      <span class="post-date">10 Feb 2009</span>
+    
+
+    <p style="text-align: left;">In questi ultimi giorni, molto si è parlato (copia-copia tra bloggers, me ne dispiaccio, ma in molti casi lo è stato, e senza approccio critico) delle ultime release SVN, dei rispettivi programmi di messaggistica istantanea dedicati al protocollo MSN.</p>
+<p style="text-align: left;">Dunque, dato che avevo a portata di mano un terminale vuoto e qualche attimo libero, ho fatto il checkout del trunk sperimentale di Emesene, e clonato il GIT di aMSN; sono rimasto piacevolmente impressionato dal fatto che entrambi, dalla mia ultima prova, hanno fatto passi da gigante.</p>
+<p style="text-align: center;"><img class="alignnone" src="http://i42.tinypic.com/2vbmwqx.jpg" alt="" width="599" height="572" /></p>
+<p style="text-align: left;">aMSN, finalmente, offre il suo frontend GTK+ che va oltre la schermata di login, arrivando persino a scaricare in maniera corretta la lista contatti; soffre di qualche bug nella conversazione, in quanto non supporta le emoticons. Si, si, avete letto bene. E non quelle personalizzate: nemmeno quelle standard.</p>
+<p style="text-align: left;">Stesso baco pare affliggere Emesene, il quale, come il contatto prova a mandare una emoticon (standard), ci mostra un bel quadratino bianco stampandoci nel teminale un fantastico "not found" relativo al file immagine della faccina inviataci.</p>
+<p style="text-align: left;">Tuttavia, gli scopi dei progetti sono diversi, e, sebbene Emesene 2 (codename "La Vendetta" by me) sia nato da pochissimo come ramo ipersperimentale, già surclassa in usabilità aMSN 2, il quale invece è in lavorazione da tempo immemore.</p>
+<p style="text-align: left;">Perchè ho detto che i progetti hanno scopi diversi? Beh, non è totalmente esatto, diciamo che si prefiggono di fornire un messenger funzionale per il protocollo MSN, ma cambia <em>il modo</em>.</p>
+<p style="text-align: left;">aMSN 2 punta sull'integrazione con tutti i desktop, mirando a diventare uno standard <em>de facto</em> tra gli utilizzatori GNU/Linux, il che non sarebbe male, mentre Emesene si pone come obiettivo il fornire il maggior numero di servizi (cam, emoticons personalizzate, chiamata audio), dotando il programma base di una sorta di scheletro, una infrastruttura in cui poi possa essere implementato ogni tipo di funzionalità sotto forma di plugin. Mai sentito parlare di Extreme Programming? Non è molto diverso.</p>
+<p style="text-align: left;">aMSN mi ha colpito per il fatto che poco tempo fa era inutilizzabile, mentre adesso permette addirittura di chattare, mentre Emesene si è dimostrato, dopo qualche problemino dovuto al trunk che proseguiva, un degno rivale, dedicato ai soli utenti GTK+, che però pare andare dritto come una freccia.</p>
+<p style="text-align: left;">Le uniche cose che mi deludono di Emesene, che in conclusione reputo migliore, sono l'estetica della finestra di chat, a dir poco aberrante, e la mancanza totale di una roadmap: alla lunga questo atteggiamento alla "và dove ti porta il cuore" potrebbe risultare negativo facendo degenerare il codice e generando anche qualche implosione sparsa, nonchè uccidere il vostro cane.</p>
+<p style="text-align: left;">Per aMSN invece appare tutto ben delineato, se non fosse che, secondo me, oggi, 10 Gennaio 2009, dovremmo stare utilizzandolo da tempo.</p>
+<p style="text-align: left;">In conclusione, <em>stèi tiùn'd</em>, vi terrò aggiornati :)</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/page/135"><i class="fa fa-chevron-circle-left"></i></a>
+  
+  
+    
+      <a class="pagination-item newer" href="/page/133"><i class="fa fa-chevron-circle-right"></i></a>
+    
+  
+</div>
+
+
+      <div class="footer">
+        <p>
+          &copy; Grab The Blaster is brought to you by Alessio Biancalana with <a href="http://jekyllrb.com/">Jekyll</a> and much ♥, under <a href="https://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC</a>.
+        </p>
+        <form class="search-form" action="/search" method="get">
+          <input type="text" placeholder="Cerca →" name="query">
+        </form>
+      </div>
+      <div class="webring-container">
+        <webring-banner>
+          <p>Member of <a href="https://retronerds.netlify.app"></a></p>
+          <a href="https://retronerds.netlify.app/prev">Previous</a>
+          <a href="https://retronerds.netlify.app/random">Random</a>
+          <a href="https://retronerds.netlify.app/next">Next</a>
+        </webring-banner>
+        <script async src="https://retronerds.netlify.app/embed.js" charset="utf-8"></script>
+      </div>
+    </div>
+
+  </body>
+</html>

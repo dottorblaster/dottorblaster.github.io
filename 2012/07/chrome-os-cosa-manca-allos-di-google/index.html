@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <link rel="canonical" href="/2012/07/chrome-os-cosa-manca-allos-di-google/" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- Enable Graph API for Facebook integration -->
+  <meta content="Grab The Blaster" property="og:site_name">
+  
+    <meta content="Chrome OS: cosa manca all'OS di Google" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="Abbiamo assistito, durante questi anni, al lento decollo dell’ecosistema Google, fatto di un lato mobile (Android, Google Play, annessi e connessi), ma anche di un lato più inerente le macchine “di produzione”. Nonostante gli ammennicoli che rendono meravigliosa la nostra vita come smartphone, televisori intelligenti e termostati più che furbi, il computer in senso stretto continua ad essere una componente fondamentale della nostra giornata, specificamente del nostro workflow: è in questo con..." property="og:description">
+  
+  
+    <meta content="https://dottorblaster.it/2012/07/chrome-os-cosa-manca-allos-di-google/" property="og:url">
+  
+  
+    <meta content="2012-07-15T08:48:49+00:00" property="article:published_time">
+    <meta content="https://dottorblaster.it/about/" property="article:author">
+    <meta content="https://dottorblaster.it/opengraph/911e8f9af2d47f7caee9b92406b7ece519e11dab.png" property="og:image">
+  
+  
+    
+    <meta content="Linux" property="article:section">
+    
+  
+  
+    
+    <meta content="android" property="article:tag">
+    
+    <meta content="google" property="article:tag">
+    
+    <meta content="applicazioni" property="article:tag">
+    
+    <meta content="chrome os" property="article:tag">
+    
+    <meta content="html" property="article:tag">
+    
+    <meta content="ide" property="article:tag">
+    
+  
+
+  <!--   Enable Twitter Cards support through metadata, thanks to http://davidensinger.com/2013/04/supporting-twitter-cards-with-jekyll/ -->
+<!--   <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@site_username">
+  <meta name="twitter:creator" content="@creator_username">
+  
+    <meta name="twitter:title" content="Chrome OS: cosa manca all'OS di Google">
+  
+  
+    <meta name="twitter:url" content="https://dottorblaster.it/2012/07/chrome-os-cosa-manca-allos-di-google/">
+   -->
+  <!-- This is from @stammy -->
+<!--   <meta name="twitter:description" content="Abbiamo assistito, durante questi anni, al lento decollo dell’ecosistema Google, fatto di un lato mobile (Android, Google Play, annessi e connessi), ma anche di un lato più inerente le macchine “di...">
+  
+    <meta name="twitter:image:src" content="https://dottorblaster.it/path/to/image/logo.png">
+    -->
+
+  <title>
+    
+      Chrome OS: cosa manca all'OS di Google &middot; Grab The Blaster
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/grabtheblaster.css">
+  <link rel="stylesheet" href="/public/font-awesome/css/font-awesome.min.css">
+
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700italic,700,400italic' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,700' rel='stylesheet' type='text/css' />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title="" href="https://dottorblaster.it/feed">
+</head>
+
+
+  <body>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=81489295682&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="container content">
+      <div class="masthead">
+        <h3 class="masthead-title">
+          <img src="/public/avatar-blaster.png" alt="Alessio Biancalana">
+          <a href="/" title="Home page">Grab The Blaster</a>
+          <small>di Alessio Biancalana</small>
+        </h3>
+        <div class="social-icons"><a href="/about/" title="About Me"><i class="fa fa-user-circle-o"></i></a> <a href="https://twitter.com/dottorblaster" title="Twitter - @dottorblaster"><i class="fa fa-twitter"></i></a> <a href="https://github.com/dottorblaster" title="GitHub - dottorblaster"><i class="fa fa-github"></i></a></div>
+      </div>
+
+      <div class="post">
+  <h1 class="post-title">Chrome OS: cosa manca all'OS di Google</h1>
+  <span class="post-date">15 Jul 2012</span>
+  <p>Abbiamo assistito, durante questi anni, al lento decollo dell’ecosistema Google, fatto di un lato mobile (<a href="http://www.android.com/">Android</a>, Google Play, annessi e connessi), ma anche di un lato più inerente le macchine “di produzione”. Nonostante gli ammennicoli che rendono meravigliosa la nostra vita come smartphone, televisori intelligenti e termostati più che furbi, il computer in senso stretto continua ad essere una componente fondamentale della nostra giornata, specificamente del nostro workflow: è in questo contesto che ha provato silenziosamente a tastare il terreno, per ora, <a href="http://it.wikipedia.org/wiki/Google_Chrome_OS">Chrome OS</a>.</p>
+<p>All’inizio ero scettico riguardo alla nuova creatura di Google: nonostante il kernel <strong>Linux</strong> al quale sono molto affezionato per vari motivi (compreso il fatto che il sottoscritto ormai usa quasi solo Linux da più di sei anni), faticavo a vedere un browser direttamente delegato ad interfaccia grafica e desktop environment di un sistema operativo – sia pure un browser meraviglioso come <strong>Chrome</strong>. Negli ultimi mesi però le cose sono cambiate.</p>
+<p style="text-align: center;"><img class="aligncenter" title="Chrome OS" src="http://i46.tinypic.com/15k67m.jpg" alt="Chrome OS" width="500" height="313" /></p>
+<p>È arrivato un launcher. Le applicazioni adesso vengono mostrate in una visuale più tradizionale, ed è presente una taskbar simile alla superbar di Windows 7 per gestirle. Ma, soprattutto, è arrivato un gestore di finestre: <strong>AuraWM</strong>, progetto open source nato proprio per rendere Chrome OS capace di attrarre l’utenza più smaliziata e soprattutto quelli che col PC qualcosa, effettivamente, fanno. Le tab non sono sufficienti come metodo di interazione: Google l’ha capito e ha messo un’eccellente pezza al suo lavoro, facendo tornare Chrome al suo mestiere di browser e mettendo al centro dello sviluppo un’esperienza utente meno nazista – sia pur basata su delle <strong>webview</strong> che a conti fatti sono sempre Chrome, seppure con un vestito diverso.</p>
+<p>Sono applicazioni aperte in finestra singola, o a tutto schermo, svincolate dalle ormai millenarie schede del browser. Fare questo significa portare la webapp al livello di applicazione “normale”, con una sua dignità; e se sui device mobili le applicazioni in <strong>HTML5</strong> et similia risultano approssimative, poco prestanti, sviluppate quasi da cioccolatai, su macchine più carrozzate e indicate come i <strong>ChromeBook</strong> o i ChromeBox o, più semplicemente, il mio laptop, un ambiente simile risulta avere, nonostante tutto, una coerenza di fondo non indifferente.</p>
+<p style="text-align: center;"><img class="aligncenter" title="Google Chrome" src="http://i50.tinypic.com/i5omye.jpg" alt="Google Chrome" width="500" height="341" /></p>
+<p>Uno store di webapp. <strong>Google Drive</strong>, che aumenta la potenza e la pervasività dell’equazione Chrome OS ancora una volta. E soprattutto un window manager, un application launcher ed un ecosistema di dispositivi venduti direttamente da <strong>Google</strong>. Cosa manca a tutto questo?</p>
+<h3>Un IDE</h3>
+<p>Ho trovato molto fastidioso non poter vedere, almeno per ora, una connessione tra il mio <strong>Android</strong> e il <strong>ChromeBox</strong> che vorrei ordinare nonostante il prezzo altino. Come è possibile sviluppare da Chrome OS per Android? Questa è ancora un’incognita, eppure è uno stakeholder gigantesco, considerato che Chrome OS stesso è di Google come Android: un po’ come Windows senza un IDE per <strong>Windows Phone</strong>. Non è una cosa piacevole, no?</p>
+<p>Secondariamente, oltre la programmazione Android che mi sembra già una priorità grossa, sarebbe necessario stilare delle <strong>HIG</strong> come è recentemente stato fatto per la UX mobile al fine di uniformare lo stile dell’esperienza web avuta da un utente usando <strong>Chrome OS</strong>. In fatto di design, il web con <strong>HTML5</strong> offre una frammentazione ancora superiore a quella che si ha nel settore mobile – dato che praticamente qualsiasi sito può proporre se stesso come applicazione. <strong>Twitter</strong> ha già fatto qualcosa del genere con il suo framework <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>; mi piacerebbe vedere Google rilasciare un suo IDE/framework per lo sviluppo di soluzioni third-party che nonostante tutto si integrino con la piattaforma – sia lato web, che lato client, facendo sentire l’utente in “casa Google”, sia quando i servizi sono offerti dal colosso dei media, sia nel caso opposto.</p>
+<h3>Applicazioni esterne (anche non-HTML)</h3>
+<p>In realtà tutto questo articolo e questi bisogni-non-bisogni derivano da una riflessione iniziale: negli ultimi tempi sto usando tantissimo Eclipse per <strong>Java</strong> e Dalvik. Avrei piacere che esistesse un modo per installare <a href="http://www.eclipse.org/">Eclipse</a> su Chrome OS, e permettere così in Chrome OS l’ingresso di quella userland legata alla “modalità offline”. Mi trovo purtroppo ancora legato (come tutti credo) a dei paradigmi di utilizzo che mi impedirebbero un uso profittevole di Chrome OS: una delle killer application sarebbe proprio Eclipse. Si, ok, esiste <strong>Cloud9</strong>, ma vuoi mettere?</p>
+<p>Insomma, anche da questo punto di vista  l’esperienza utente non è particolarmente felice, dato che il mondo professionale non è ancora votato al cloud in parecchi campi; magari un project manager può anche essere felice con il suo <a href="http://it.wikipedia.org/wiki/Diagramma_di_Gantt">Gantt</a> bel bello disegnato in cloud, ma un programmatore, un fotografo, un disegnatore CAD, non credo che possano essere altrettanto entusiasti di dire addio ad una gestione delle applicazioni come l’hanno sempre avuta.</p>
+
+</div>
+
+<div class="social-section">
+  <div class="fb-like" data-href="/2012/07/chrome-os-cosa-manca-allos-di-google/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-via="dottorblaster" data-lang="it" data-dnt="true">Tweet</a>
+</div>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'blasterhome'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/06/domain-modeling-made-functional-recensione/">
+            Recensione: Domain Modeling Made Functional, di Scott Wlaschin
+            <small>08 Jun 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/05/piccolo-kubernetes-production-ready-k3s/">
+            Kubernetes production-ready in piccolo: deployare un mini-cluster K3s
+            <small>18 May 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/04/adoro-kubernetes/">
+            Io adoro Kubernetes
+            <small>25 Apr 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+      <div class="footer">
+        <p>
+          &copy; Grab The Blaster is brought to you by Alessio Biancalana with <a href="http://jekyllrb.com/">Jekyll</a> and much ♥, under <a href="https://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC</a>.
+        </p>
+        <form class="search-form" action="/search" method="get">
+          <input type="text" placeholder="Cerca →" name="query">
+        </form>
+      </div>
+      <div class="webring-container">
+        <webring-banner>
+          <p>Member of <a href="https://retronerds.netlify.app"></a></p>
+          <a href="https://retronerds.netlify.app/prev">Previous</a>
+          <a href="https://retronerds.netlify.app/random">Random</a>
+          <a href="https://retronerds.netlify.app/next">Next</a>
+        </webring-banner>
+        <script async src="https://retronerds.netlify.app/embed.js" charset="utf-8"></script>
+      </div>
+    </div>
+
+  </body>
+</html>

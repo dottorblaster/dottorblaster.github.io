@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <link rel="canonical" href="/2016/11/arch-linux-wayland-gnome-shell-test-drive/" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- Enable Graph API for Facebook integration -->
+  <meta content="Grab The Blaster" property="og:site_name">
+  
+    <meta content="Arch Linux, Wayland e GNOME Shell - un giro di pista" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="Durante queste settimane, GNOME 3.22 è arrivato nei repository Extra di Arch Linux, e io non ho minimamente perso l’occasione di scaricare i pacchetti aggiornati e installarli immediatamente - a parte un paio di giorni di routine per lasciare agli sviluppatori il tempo di aggiustare eventuali bug sulle estensioni della community più blasonate. Durante l’uso non andava nemmeno poi male, se non che ad un certo punto mi sono trovato a voler riavviare GNOME Shell, e l’ambiente desktop mi ha recit..." property="og:description">
+  
+  
+    <meta content="https://dottorblaster.it/2016/11/arch-linux-wayland-gnome-shell-test-drive/" property="og:url">
+  
+  
+    <meta content="2016-11-01T07:26:31+00:00" property="article:published_time">
+    <meta content="https://dottorblaster.it/about/" property="article:author">
+    <meta content="https://dottorblaster.it/opengraph/17326bafac6bf39e2524cc71b01a62bfeb56c674.png" property="og:image">
+  
+  
+    
+    <meta content="Linux" property="article:section">
+    
+  
+  
+    
+    <meta content="gnome" property="article:tag">
+    
+    <meta content="wayland" property="article:tag">
+    
+    <meta content="arch linux" property="article:tag">
+    
+  
+
+  <!--   Enable Twitter Cards support through metadata, thanks to http://davidensinger.com/2013/04/supporting-twitter-cards-with-jekyll/ -->
+<!--   <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@site_username">
+  <meta name="twitter:creator" content="@creator_username">
+  
+    <meta name="twitter:title" content="Arch Linux, Wayland e GNOME Shell - un giro di pista">
+  
+  
+    <meta name="twitter:url" content="https://dottorblaster.it/2016/11/arch-linux-wayland-gnome-shell-test-drive/">
+   -->
+  <!-- This is from @stammy -->
+<!--   <meta name="twitter:description" content="Durante queste settimane, GNOME 3.22 è arrivato nei repository Extra di Arch Linux, e io non ho minimamente perso l’occasione di scaricare i pacchetti aggiornati e installarli immediatamente - a pa...">
+  
+    <meta name="twitter:image:src" content="https://dottorblaster.it/path/to/image/logo.png">
+    -->
+
+  <title>
+    
+      Arch Linux, Wayland e GNOME Shell - un giro di pista &middot; Grab The Blaster
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/grabtheblaster.css">
+  <link rel="stylesheet" href="/public/font-awesome/css/font-awesome.min.css">
+
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700italic,700,400italic' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,700' rel='stylesheet' type='text/css' />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title="" href="https://dottorblaster.it/feed">
+</head>
+
+
+  <body>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=81489295682&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="container content">
+      <div class="masthead">
+        <h3 class="masthead-title">
+          <img src="/public/avatar-blaster.png" alt="Alessio Biancalana">
+          <a href="/" title="Home page">Grab The Blaster</a>
+          <small>di Alessio Biancalana</small>
+        </h3>
+        <div class="social-icons"><a href="/about/" title="About Me"><i class="fa fa-user-circle-o"></i></a> <a href="https://twitter.com/dottorblaster" title="Twitter - @dottorblaster"><i class="fa fa-twitter"></i></a> <a href="https://github.com/dottorblaster" title="GitHub - dottorblaster"><i class="fa fa-github"></i></a></div>
+      </div>
+
+      <div class="post">
+  <h1 class="post-title">Arch Linux, Wayland e GNOME Shell - un giro di pista</h1>
+  <span class="post-date">01 Nov 2016</span>
+  <p>Durante queste settimane, <strong>GNOME 3.22</strong> è arrivato nei <strong>repository Extra di Arch Linux</strong>, e io non ho minimamente perso l’occasione di scaricare i pacchetti aggiornati e installarli immediatamente - a parte un paio di giorni di routine per lasciare agli sviluppatori il tempo di aggiustare eventuali bug sulle estensioni della community più blasonate. Durante l’uso non andava nemmeno poi male, se non che ad un certo punto mi sono trovato a voler <strong>riavviare GNOME Shell</strong>, e l’ambiente desktop mi ha recitato uno strano messaggio:</p>
+
+<p><img src="https://gitlab.com/dottorblaster/blog-images/raw/master/images/gnome_wayland_restart.png" alt="GNOME Shell: restart is not available on Wayland" /></p>
+
+<p>Ho fatto due cose quindi: la prima è stata controllare che effettivamente stessi usando <strong>Wayland</strong>, il che mi è stato confermato dalle informazioni su GNOME, e da qualche giro di <code class="language-plaintext highlighter-rouge">ps</code> in cui compariva chiaramente Chrome sotto XWayland e GDM sotto Wayland.</p>
+
+<p><img src="https://gitlab.com/dottorblaster/blog-images/raw/master/images/screen_gnome_wayland.png" alt="GNOME e Wayland" /></p>
+
+<p>La seconda è stata naturalmente dare una possibilità a <a href="https://en.wikipedia.org/wiki/Wayland_(display_server_protocol)">Wayland</a> come <strong>display server principale</strong>, e devo dire che sono piuttosto soddisfatto.</p>
+
+<p>Il supporto di GNOME a Wayland è ottimo infatti, e non ho sofferto di alcuna regressione grafica se non di <strong>qualche lag</strong> per quanto riguarda (stranamente) il cursore del mouse. Ogni tanto infatti, senza apparente motivo, rallenta per qualche secondo fino a bloccarsi un po’, poi riprende la sua corsa senza problemi. Il resto, beh, tutto ottimo: specialmente l’uso di XWayland da parte delle applicazioni che hanno tardato un po’ la corsa al nuovo server grafico, totalmente trasparente, senza artefatti e senza nessun fattore che metta a disagio l’utente.</p>
+
+<p>Queste prove le ho effettuate con una <strong>scheda video Intel</strong>; ovviamente mi dicono dalla regia che con un equipaggiamento Nvidia la situazione non è esattamente rose e fiori come la descrivo io. Nel frattempo però chi ha come me una situazione di doppia scheda video può tranquillamente lasciare la Nvidia spenta ed affidarsi alla Intel - a me non dà fastidio dato che la scheda “potente” la uso solo per giocare, e in questo periodo mi sono attaccato come una vongola alla mia PS4 e ad Overwatch. :-D</p>
+
+<p>Adesso, beh, c’è solo da sperare che Wayland migliori sempre di più, che i desktop environment lo sfruttino al meglio (dato che a livello di <a href="https://it.wikipedia.org/wiki/Compositing_window_manager">compositing</a> ognuno può scriversi la sua implementazione), e che per noi utenti tutto questo si traduca in un <strong>beneficio tangibile</strong>.</p>
+
+</div>
+
+<div class="social-section">
+  <div class="fb-like" data-href="/2016/11/arch-linux-wayland-gnome-shell-test-drive/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-via="dottorblaster" data-lang="it" data-dnt="true">Tweet</a>
+</div>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'blasterhome'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/06/domain-modeling-made-functional-recensione/">
+            Recensione: Domain Modeling Made Functional, di Scott Wlaschin
+            <small>08 Jun 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/05/piccolo-kubernetes-production-ready-k3s/">
+            Kubernetes production-ready in piccolo: deployare un mini-cluster K3s
+            <small>18 May 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/04/adoro-kubernetes/">
+            Io adoro Kubernetes
+            <small>25 Apr 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+      <div class="footer">
+        <p>
+          &copy; Grab The Blaster is brought to you by Alessio Biancalana with <a href="http://jekyllrb.com/">Jekyll</a> and much ♥, under <a href="https://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC</a>.
+        </p>
+        <form class="search-form" action="/search" method="get">
+          <input type="text" placeholder="Cerca →" name="query">
+        </form>
+      </div>
+      <div class="webring-container">
+        <webring-banner>
+          <p>Member of <a href="https://retronerds.netlify.app"></a></p>
+          <a href="https://retronerds.netlify.app/prev">Previous</a>
+          <a href="https://retronerds.netlify.app/random">Random</a>
+          <a href="https://retronerds.netlify.app/next">Next</a>
+        </webring-banner>
+        <script async src="https://retronerds.netlify.app/embed.js" charset="utf-8"></script>
+      </div>
+    </div>
+
+  </body>
+</html>

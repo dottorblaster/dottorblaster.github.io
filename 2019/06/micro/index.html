@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <link rel="canonical" href="/2019/06/micro/" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- Enable Graph API for Facebook integration -->
+  <meta content="Grab The Blaster" property="og:site_name">
+  
+    <meta content=""micro"" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="L’altro giorno ho visitato uno strano sito. Un sito carino, con un sacco di figure che pretendevano di spiegare alcune cose altrimenti complicate. E in tutto il sito, un po’ ovunque, campeggiava una parola con una radice che sempre più spesso vedo usare nell’informatica, e sempre più sovente impropriamente: “micro”. Ho sbattuto un paio di volte le palpebre, riconosciuto l’oggettiva validità dei concetti esposti, chiuso il browser e iniziato a pensare a tutte le volte che ho visto stampate su ..." property="og:description">
+  
+  
+    <meta content="https://dottorblaster.it/2019/06/micro/" property="og:url">
+  
+  
+    <meta content="2019-06-02T15:10:22+00:00" property="article:published_time">
+    <meta content="https://dottorblaster.it/about/" property="article:author">
+    <meta content="https://dottorblaster.it/opengraph/73c18c102ca43f091bc16189c5cae39ec53c3b71.png" property="og:image">
+  
+  
+    
+    <meta content="Development" property="article:section">
+    
+  
+  
+    
+    <meta content="microservices" property="article:tag">
+    
+    <meta content="microfrontents" property="article:tag">
+    
+    <meta content="micro" property="article:tag">
+    
+    <meta content="architectural patterns" property="article:tag">
+    
+  
+
+  <!--   Enable Twitter Cards support through metadata, thanks to http://davidensinger.com/2013/04/supporting-twitter-cards-with-jekyll/ -->
+<!--   <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@site_username">
+  <meta name="twitter:creator" content="@creator_username">
+  
+    <meta name="twitter:title" content=""micro"">
+  
+  
+    <meta name="twitter:url" content="https://dottorblaster.it/2019/06/micro/">
+   -->
+  <!-- This is from @stammy -->
+<!--   <meta name="twitter:description" content="
+
+L’altro giorno ho visitato uno strano sito. Un sito carino, con un sacco di figure che pretendevano di spiegare alcune cose altrimenti complicate. E in tutto il sito, un po’ ovunque, campeggiava ...">
+  
+    <meta name="twitter:image:src" content="https://dottorblaster.it/path/to/image/logo.png">
+    -->
+
+  <title>
+    
+      "micro" &middot; Grab The Blaster
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/grabtheblaster.css">
+  <link rel="stylesheet" href="/public/font-awesome/css/font-awesome.min.css">
+
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700italic,700,400italic' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,700' rel='stylesheet' type='text/css' />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title="" href="https://dottorblaster.it/feed">
+</head>
+
+
+  <body>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=81489295682&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="container content">
+      <div class="masthead">
+        <h3 class="masthead-title">
+          <img src="/public/avatar-blaster.png" alt="Alessio Biancalana">
+          <a href="/" title="Home page">Grab The Blaster</a>
+          <small>di Alessio Biancalana</small>
+        </h3>
+        <div class="social-icons"><a href="/about/" title="About Me"><i class="fa fa-user-circle-o"></i></a> <a href="https://twitter.com/dottorblaster" title="Twitter - @dottorblaster"><i class="fa fa-twitter"></i></a> <a href="https://github.com/dottorblaster" title="GitHub - dottorblaster"><i class="fa fa-github"></i></a></div>
+      </div>
+
+      <div class="post">
+  <h1 class="post-title">"micro"</h1>
+  <span class="post-date">02 Jun 2019</span>
+  <p><img src="https://gitlab.com/dottorblaster/blog-images/raw/master/images/computers/action-blur-close-up-735911.jpg" alt="Typing code" /></p>
+
+<p>L’altro giorno ho visitato uno strano sito. Un sito carino, con un sacco di figure che pretendevano di spiegare alcune cose altrimenti complicate. E in tutto il sito, un po’ ovunque, campeggiava una parola con una radice che sempre più spesso vedo usare nell’informatica, e sempre più sovente impropriamente: “micro”. Ho sbattuto un paio di volte le palpebre, riconosciuto l’oggettiva validità dei concetti esposti, chiuso il browser e iniziato a pensare a tutte le volte che ho visto stampate su uno schermo le parole che avevo appena letto.</p>
+
+<h3 id="backend-lalba-dei-microservizi">Backend: l’alba dei microservizi</h3>
+<p>Sono già un bel po’ di anni che mi sorbisco le auto-lodi masturbatorie di coloro che implementano <strong>architetture a microservizi</strong>, e c’è un pattern ricorrente che voglio mettere per iscritto: di solito la distanza tra il racconto e la realtà dei fatti è abissale. Ma andiamo per ordine: l’architettura a microservizi è una chimera a forma di cloud computing e cluster di container che ha preso forma qualche anno fa, venendo immediatamente presa come esempio di virtù da <em>qualsiasi</em> backend developer e architetto di sistemi software. Negli ultimi due o tre anni, non ho mai sostenuto un colloquio, che fosse per una posizione frontend, backend, full-stack o per andare a fare il cameriere senza che mi venisse messa in ottima luce la presenza nell’azienda X (che fosse Tesla, che fosse Amazon, che fosse l’enoteca sotto casa mia) di una sfavillante, scintillante, stupenda architettura a microservizi. Ci sono alcuni casi in cui ho fatto delle domande per approfondire e ho trovato qualcosa che mi ha convinto<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>. In altri momenti mi sono messo le mani nei capelli. Un caso tipico è l’approfondimento della piattaforma alla base dei servizi: gli incapaci (scusate ragazzi, ma non mi viene in mente un sinonimo caruccio) solitamente si vantano di avere tutti i servizi scritti in un solo linguaggio. Ora, delle due l’una: o il dominio che tratti è eccezionalmente ristretto, oppure da qualche parte stai usando <strong>un cucchiaio per piantare un chiodo nel muro</strong>.</p>
+
+<p>Oltre questo, la buzzword dei microservizi portata avanti dalle società di consulenza di mezzo mondo insieme a una manciata di manager saccenti e architetti sotto LSD ci ha portati alla dimenticanza del passato, ovvero che la <strong>Service Oriented Architecture</strong> di una volta era esattamente quello che adesso viene spacciato come architettura a microservizi, per un motivo molto semplice: nonostante la domanda fosse lì in bella vista, ha ricevuto la solita risposta per salvare capre e cavoli. Al quesito “quanto deve essere grande un microservizio?”, la risposta (beninteso: la risposta che darei anch’io ad oggi) è “dipende”.</p>
+
+<p>Questo chiaramente significa che c’è chi si è sentito in potere di definire la propria architettura “a microservizi” anche se di mezzo c’era un Enterprise Service Bus, che le architetture a microservices cercano di abbattere. O che altri hanno deciso che invece di fare cotract-based development potevano serializzare gli oggetti di dominio. In sostanza, “microservices” ha perso la propria indentità esattamente come tempo prima Service Oriented Architecture aveva perso la propria, con <strong>velenose parole</strong> in proposito da parte di Martin Fowler<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup>:</p>
+
+<blockquote>
+  <p>When we’ve talked about microservices a common question is whether this is just Service Oriented Architecture (SOA) that we saw a decade ago. There is merit to this point, because the microservice style is very similar to what some advocates of SOA have been in favor of. The problem, however, is that SOA means too many different things, and that most of the time that we come across something called “SOA” it’s significantly different to the style we’re describing here, usually due to a focus on ESBs used to integrate monolithic applications.</p>
+
+  <p>[…]</p>
+
+  <p>This common manifestation of SOA has led some microservice advocates to reject the SOA label entirely, although others consider microservices to be one form of SOA, perhaps service orientation done right. Either way, the fact that SOA means such different things means it’s valuable to have a term that more crisply defines this architectural style.</p>
+</blockquote>
+
+<p>In sostanza quello che sostengo è che esattamente come la Service Oriented Architecture sia diventata un meltin’ pot di qualsiasi soluzione “fattorizzata” per i backend applicativi architetturalmente parlando, anche la “microservices architecture” sia diventata una “microservices culture/tribe/community”, non fornendo un pattern vincolante. Perché è possibile dare un nome alle cose solo quando c’è un <strong>vincolo</strong> a tenerle assieme. Come la carbonara che è formata da abbondante uovo, abbondante pecorino, e abbondante guanciale.</p>
+
+<h3 id="frontend-lalba-dei-micro-frontend-appunto">Frontend: l’alba dei micro-frontend (appunto)</h3>
+<p>All’inizio del post ho menzionato un sito. Il sito in questione è <a href="https://micro-frontends.org/">Micro-frontends</a>, e descrive un’architettura per i frontend di applicazioni web che in queste ultime settimane ha fatto discutere la community in lungo e in largo. In generale il pattern è più o meno questo: metti <strong>svariate micro-applicazioni</strong> scritte nel linguaggio che vuoi, già compilate, nella stessa pagina, poi speri che succeda qualcosa. Nello specifico il minestrone di applicazioni dovrebbe funzionare accettando di venire orchestrato da un meccanismo di “IPC” (se sto parlando arabo c’è <a href="https://it.wikipedia.org/wiki/Comunicazione_tra_processi">Wikipedia</a>) che gestisce le informazioni da passare all’una o all’altra app. È una buona idea, ma di fatto ha molte limitazioni nel quotidiano, esattamente come nel quotidiano hanno delle limitazioni i microservizi e qualsiasi cosa che venga venduta come la panacea a un sacco di mali se non a tutti.</p>
+
+<p>Per esempio, i browser caricano <strong>tanti bundle</strong> ognuno con la propria versione di React, Angular o Vue? Per forza, altrimenti nulla di tutto questo sarebbe agnostico alla tecnologia che usano gli altri. Solo che tanti bundle pesano, per cui serve coordinamento per indirizzare questa criticità in modo che qualche altro meccanismo possa fornire delle librerie “common” (come i common chunks di Webpack?) che consentano a tutti i componenti di funzionare mantenendo i bundle a una dimensione accettabile. In questo modo si sposta la complessità sul lato architetturale, come per i microservizi, e si mantiene semplice il dominio di ogni componente, ma lo stesso Dan Abramov (che è il ragazzotto che ha scritto Redux) si è <a href="https://twitter.com/dan_abramov/status/1132493678730252288">espresso</a> in merito:</p>
+
+<blockquote>
+  <p>I don’t understand micro-frontends.</p>
+
+  <p>The problems they’re supposed to solve sound to me like they’re already solved by a good component model. So is this solving an organizational issue rather than technical one? Such as if two teams can’t agree on anything, even shared infra.</p>
+</blockquote>
+
+<p>E mi piace molto la <a href="https://twitter.com/lmatteis/status/1132667251453300736">risposta</a> che gli ha dato Luca Matteis<sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">3</a></sup>:</p>
+
+<blockquote>
+  <p>I think “micro-frontends” is an overloaded term. Facebook’s frontend has various teams working on different sections. They probably don’t share same tech (Ads uses different stuff from the Wall). You’d still call that micro-frontend I guess</p>
+</blockquote>
+
+<p>Esattamente come per i microservizi, tutto questo ha un <strong>costo in termini di governo dell’entropia</strong> che può generare. È per questo che chiunque dovrebbe riflettere benissimo prima di adottare un pattern del genere: perché le persone da cui viene, e le persone che lo propongono, lo propongono come soluzione ai <strong>loro</strong> problemi, problemi di un’azienda con:</p>
+
+<ul>
+  <li>Centinaia (se non migliaia) di dipendenti</li>
+  <li>Centinaia di pagine servite al secondo</li>
+  <li>Centinaia di repository e team</li>
+</ul>
+
+<p>Ho sentito parlare di micro-frontend di sfuggita da Facebook. Da Zalando. Ed esattamente come i microservizi, da piccole e medie imprese di quartiere che pensano a risolvere problemi che non hanno prima di mettere un punto a quelli che hanno (tipo la revenue per dipendente, che è un problema che nessun software per quanto ben scritto possa risolvere, ve lo garantisco).</p>
+
+<p><img src="https://gitlab.com/dottorblaster/blog-images/raw/master/images/computers/alphabet-blur-close-up-671629.jpg" alt="A keyboard" /></p>
+
+<h3 id="dare-un-nome-alle-cose">Dare un nome alle cose</h3>
+
+<p>E quindi siamo qua. Io ormai ogni volta che sento la parola “micro” come prefisso a qualcosa ho un riflesso della glottide che non è per niente bello da vedere, fidatevi. Allo stesso tempo in queste settimane durante le mie avventure ho capito che è possbile risolvere problemi anche leggendo <strong>paper di vent’anni fa</strong>, che le architetture alla fine sono sempre tutte un po’ diverse, e che ogni scarrafone è bello a mamma sua.</p>
+
+<p>Come scrivevo poco sopra, per dare un nome alle cose è necessario definirne i <strong>tratti formali</strong> che le tengano vincolate alla realtà. Per questo motivo preferisco sempre chi mi descrive minuziosamente quello che fa senza tentare di riassumerlo con una buzzword. E sempre per questo motivo all’interno del mio ultimo progetto ho definito un’architettura di servizi chiamata “molecule architecture”, che non voglio spiegarvi proprio perché non mi interessa che diventi uno standard, un pattern, una buzzword. Le ho dato un nome, una definizione formale, e mi tengo tutto stretto perché non ho l’ansia di far vedere quanto sono bravo (anzi, ne ho un po’ vergogna); né ho l’ansia di rifarmi al percorso di altri, se non in parte, perché sono conscio del fatto che le problematiche in cui incorro io sono diverse dalle criticità legate alla gestione del dominio di conoscenza di Netflix o Google o Facebook. Mi auguro che questa generazione di sviluppatori impari a riconoscere i pattern e ad applicare i design solo quando necessari, e che le persone imparino a fuggire dal “micro” a tutti i costi. Perché se è vero che spezzare i problemi è un buon modo per risolverne di grossi a un costo accettabile, una domanda assolutamente legittima è se questo tipo di separazioni dei concetti sia profittevole sul corto, medio, lungo termine. E per chi.</p>
+
+<p><em>Photos coutesy of <a href="https://www.instagram.com/soumilkmr/">Soumil K.</a> and <a href="https://www.instagram.com/marcell_and/">Marcellino Andrian</a></em></p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>Un caso paradossalmente è stato proprio Hootsuite, in cui addirittura senza saperlo ho trovato un buon esempio di architettura backend, per quanto un gomitolo di complessità rispetto ad alcune tematiche. Ma questa complessità è veramente un male? Ne parleremo. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p><a href="https://martinfowler.com/articles/microservices.html">Martin Fowler, “Microservices”. Marzo 2014</a> <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:3" role="doc-endnote">
+      <p>Ho riso un sacco quando mi sono trovato davanti la risposta di Luca. Ci ho lavorato insieme per quasi due anni in Hootsuite (anche se per pochissimo tempo nello stesso team), ed è una persona straordinariamente preparata. Leggere la sua risposta mandata da così lontano rispetto a quello che era l’ufficio che condividevamo, beh… mi ha fatto sentire la sua mancanza, ecco. <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+</div>
+
+<div class="social-section">
+  <div class="fb-like" data-href="/2019/06/micro/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-via="dottorblaster" data-lang="it" data-dnt="true">Tweet</a>
+</div>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'blasterhome'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/06/domain-modeling-made-functional-recensione/">
+            Recensione: Domain Modeling Made Functional, di Scott Wlaschin
+            <small>08 Jun 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/05/piccolo-kubernetes-production-ready-k3s/">
+            Kubernetes production-ready in piccolo: deployare un mini-cluster K3s
+            <small>18 May 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/04/adoro-kubernetes/">
+            Io adoro Kubernetes
+            <small>25 Apr 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+      <div class="footer">
+        <p>
+          &copy; Grab The Blaster is brought to you by Alessio Biancalana with <a href="http://jekyllrb.com/">Jekyll</a> and much ♥, under <a href="https://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC</a>.
+        </p>
+        <form class="search-form" action="/search" method="get">
+          <input type="text" placeholder="Cerca →" name="query">
+        </form>
+      </div>
+      <div class="webring-container">
+        <webring-banner>
+          <p>Member of <a href="https://retronerds.netlify.app"></a></p>
+          <a href="https://retronerds.netlify.app/prev">Previous</a>
+          <a href="https://retronerds.netlify.app/random">Random</a>
+          <a href="https://retronerds.netlify.app/next">Next</a>
+        </webring-banner>
+        <script async src="https://retronerds.netlify.app/embed.js" charset="utf-8"></script>
+      </div>
+    </div>
+
+  </body>
+</html>

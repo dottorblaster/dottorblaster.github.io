@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <link rel="canonical" href="/2019/04/visual-studio-code-gioie-dolori-cpu-100/" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- Enable Graph API for Facebook integration -->
+  <meta content="Grab The Blaster" property="og:site_name">
+  
+    <meta content="Visual Studio Code, gioie e dolori: CPU al 100% con la nuova versione" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="In questi ultimi – boh – due giorni, mi è capitato di riavviare il computer per dare una pulita e installare qualche aggiornamento di sistema rimasto lì a prendere un po’ di polvere (non sono più il ghepardo di una volta con gli aggiornamenti, devo dire); contestualmente ho riavviato Visual Studio Code e anche di quello ho automaticamente installato l’ultima versione.Purtroppo ho immediatamente notato qualche problemino, nel senso che aprendo più di due o tre file JavaScript (e facendo fronte..." property="og:description">
+  
+  
+    <meta content="https://dottorblaster.it/2019/04/visual-studio-code-gioie-dolori-cpu-100/" property="og:url">
+  
+  
+    <meta content="2019-04-11T12:50:45+00:00" property="article:published_time">
+    <meta content="https://dottorblaster.it/about/" property="article:author">
+    <meta content="https://dottorblaster.it/opengraph/f2b5873a05f0de6d5786bd97e880f9eefc6000e6.png" property="og:image">
+  
+  
+    
+    <meta content="Development" property="article:section">
+    
+  
+  
+    
+    <meta content="microsoft" property="article:tag">
+    
+    <meta content="visual studio code" property="article:tag">
+    
+    <meta content="code" property="article:tag">
+    
+    <meta content="visual studio" property="article:tag">
+    
+    <meta content="sviluppo" property="article:tag">
+    
+    <meta content="codice" property="article:tag">
+    
+    <meta content="debug" property="article:tag">
+    
+    <meta content="programmazione" property="article:tag">
+    
+    <meta content="coding" property="article:tag">
+    
+  
+
+  <!--   Enable Twitter Cards support through metadata, thanks to http://davidensinger.com/2013/04/supporting-twitter-cards-with-jekyll/ -->
+<!--   <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@site_username">
+  <meta name="twitter:creator" content="@creator_username">
+  
+    <meta name="twitter:title" content="Visual Studio Code, gioie e dolori: CPU al 100% con la nuova versione">
+  
+  
+    <meta name="twitter:url" content="https://dottorblaster.it/2019/04/visual-studio-code-gioie-dolori-cpu-100/">
+   -->
+  <!-- This is from @stammy -->
+<!--   <meta name="twitter:description" content="In questi ultimi – boh – due giorni, mi è capitato di riavviare il computer per dare una pulita e installare qualche aggiornamento di sistema rimasto lì a prendere un po’ di polvere (non sono più i...">
+  
+    <meta name="twitter:image:src" content="https://dottorblaster.it/path/to/image/logo.png">
+    -->
+
+  <title>
+    
+      Visual Studio Code, gioie e dolori: CPU al 100% con la nuova versione &middot; Grab The Blaster
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/grabtheblaster.css">
+  <link rel="stylesheet" href="/public/font-awesome/css/font-awesome.min.css">
+
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700italic,700,400italic' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,700' rel='stylesheet' type='text/css' />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title="" href="https://dottorblaster.it/feed">
+</head>
+
+
+  <body>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=81489295682&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="container content">
+      <div class="masthead">
+        <h3 class="masthead-title">
+          <img src="/public/avatar-blaster.png" alt="Alessio Biancalana">
+          <a href="/" title="Home page">Grab The Blaster</a>
+          <small>di Alessio Biancalana</small>
+        </h3>
+        <div class="social-icons"><a href="/about/" title="About Me"><i class="fa fa-user-circle-o"></i></a> <a href="https://twitter.com/dottorblaster" title="Twitter - @dottorblaster"><i class="fa fa-twitter"></i></a> <a href="https://github.com/dottorblaster" title="GitHub - dottorblaster"><i class="fa fa-github"></i></a></div>
+      </div>
+
+      <div class="post">
+  <h1 class="post-title">Visual Studio Code, gioie e dolori: CPU al 100% con la nuova versione</h1>
+  <span class="post-date">11 Apr 2019</span>
+  <p>In questi ultimi – boh – due giorni, mi è capitato di riavviare il computer per dare una pulita e installare qualche aggiornamento di sistema rimasto lì a prendere un po’ di polvere (non sono più il ghepardo di una volta con gli aggiornamenti, devo dire); contestualmente ho riavviato <strong>Visual Studio Code</strong> e anche di quello ho automaticamente installato l’ultima versione.</p>
+
+<p>Purtroppo ho immediatamente notato qualche problemino, nel senso che aprendo più di due o tre file <strong>JavaScript</strong> (e facendo frontend “for a living”, beh, mi capita spesso) la CPU andava al 100%, e non la smetteva mai se non occasionalmente. Non avendo tempo per indagare me lo sono tenuto così per qualche decina di ore, dopodiché appena ho avuto due minuti ho cominciato a scartabellare e greppare l’internet per capire cosa stava succedendo e come risolvere quello che ho scoperto essere un problema non solo mio, ma anzi di un sacco di altra gente.</p>
+
+<h3 id="tldr">tl;dr</h3>
+<p>Il comando in questione ha riportato ordine nel mio microcosmo, e penso che lo eseguirò anche sul resto delle mie workstation prima possibile:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">rm</span> <span class="nt">-rf</span> Library/Caches/typescript/<span class="k">*</span>
+</code></pre></div></div>
+
+<p>In pratica, non lo sapevo ma l’installazione di <strong>TypeScript</strong> distribuita con Visual Studio Code crea una <strong>cache</strong> relativa a un sacco di oggetti che vengono costantemente smanacciati dal compilatore e dall’editor. Con questo la eliminiamo annullando eventuali stalli o incoerenze, come nella migliore delle tradizioni di ogni meccanismo di caching: se qualcosa può corrompersi e generare falsi hit positivi o negativi, lo farà.</p>
+
+<h3 id="debuggare-visual-studio-code">Debuggare Visual Studio Code</h3>
+<p>Nel corso del mio <code class="language-plaintext highlighter-rouge">grep</code> dell’intera Internet, sono inciampato prima di tutto su un commento utile di uno sviluppatore di Visual Studio Code che consigliava di aprire l’<strong>inspector dei processi</strong> interni all’editor. Questo può essere fatto tramite il comando:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; Developer: Open Process Explorer
+</code></pre></div></div>
+
+<p>Possiamo impartire questo comando tramite il menu che appare premendo <code class="language-plaintext highlighter-rouge">CTRL-Shift-P</code> su Linux e Windows, o <code class="language-plaintext highlighter-rouge">Cmd-Shift-P</code> se siamo un Mac. Ci apparirà una finestra che mostra il consumo di risorse di ogni processo integrato, che nel system monitor tradizionale viene contrassegnato solo come <em>Code Helper</em>, il che non è un grande aiuto.</p>
+
+<p><img src="https://gitlab.com/dottorblaster/blog-images/raw/master/images/vs_code_ts_server.png" alt="Visual Studio Code TS server 100% CPU" /></p>
+
+<p>Viceversa questa simpatica finestra è veramente utile. Grazie a queste informazioni sono incappato in un sacco di maledizioni verso il <strong>TypeScript Language Server</strong>, che per la verità gestisce anche il normale JavaScript. Ho guardato queste tre issue:</p>
+
+<ul>
+  <li><a href="https://github.com/Microsoft/vscode/issues/63630">Latest VSCode Insiders electron_node tsserver.js taking 100% of CPU</a></li>
+  <li><a href="https://github.com/Microsoft/vscode/issues/71829">100% CPU used after upgrading to Mojave</a></li>
+  <li><a href="https://github.com/Microsoft/vscode/issues/71751">1.33 performance issues with TypeScript and JavaScript</a></li>
+</ul>
+
+<p>Leggendo l’ultima, capendo l’antifona, ho deciso di mettere in pratica il consiglio che la maggior parte dei commenti caldeggiavano. Come scritto sopra:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">rm</span> <span class="nt">-rf</span> Library/Caches/typescript/<span class="k">*</span>
+</code></pre></div></div>
+
+<p>Chiuso Visual Studio Code, riaperto, e il problema era svanito. Il sistema operativo ha giusto impiegato un po’ di tempo per ricostruire alcuni indici e la cache, dopodiché tutto è andato liscio come l’olio. Devo dire che non conoscevo l’inspector integrato per i processi di Code. Dovrei usarlo più spesso.</p>
+
+</div>
+
+<div class="social-section">
+  <div class="fb-like" data-href="/2019/04/visual-studio-code-gioie-dolori-cpu-100/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-via="dottorblaster" data-lang="it" data-dnt="true">Tweet</a>
+</div>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'blasterhome'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/06/domain-modeling-made-functional-recensione/">
+            Recensione: Domain Modeling Made Functional, di Scott Wlaschin
+            <small>08 Jun 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/05/piccolo-kubernetes-production-ready-k3s/">
+            Kubernetes production-ready in piccolo: deployare un mini-cluster K3s
+            <small>18 May 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/04/adoro-kubernetes/">
+            Io adoro Kubernetes
+            <small>25 Apr 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+      <div class="footer">
+        <p>
+          &copy; Grab The Blaster is brought to you by Alessio Biancalana with <a href="http://jekyllrb.com/">Jekyll</a> and much ♥, under <a href="https://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC</a>.
+        </p>
+        <form class="search-form" action="/search" method="get">
+          <input type="text" placeholder="Cerca →" name="query">
+        </form>
+      </div>
+      <div class="webring-container">
+        <webring-banner>
+          <p>Member of <a href="https://retronerds.netlify.app"></a></p>
+          <a href="https://retronerds.netlify.app/prev">Previous</a>
+          <a href="https://retronerds.netlify.app/random">Random</a>
+          <a href="https://retronerds.netlify.app/next">Next</a>
+        </webring-banner>
+        <script async src="https://retronerds.netlify.app/embed.js" charset="utf-8"></script>
+      </div>
+    </div>
+
+  </body>
+</html>

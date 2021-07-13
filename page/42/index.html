@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <link rel="canonical" href="/page/42/" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- Enable Graph API for Facebook integration -->
+  <meta content="Grab The Blaster" property="og:site_name">
+  
+    <meta content="Home" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="Un blog nerd il giusto di Alessio Biancalana" property="og:description">
+  
+  
+    <meta content="https://dottorblaster.it/page/42/" property="og:url">
+  
+  
+  
+  
+
+  <!--   Enable Twitter Cards support through metadata, thanks to http://davidensinger.com/2013/04/supporting-twitter-cards-with-jekyll/ -->
+<!--   <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@site_username">
+  <meta name="twitter:creator" content="@creator_username">
+  
+    <meta name="twitter:title" content="Home">
+  
+  
+    <meta name="twitter:url" content="https://dottorblaster.it/page/42/">
+   -->
+  <!-- This is from @stammy -->
+<!--   <meta name="twitter:description" content="
+  {% for post in paginator.posts %}
+  
+    {% if post.layout == &quot;link&quot; %}
+      
+        
+          {{ post.title }}
+        
+        
+      
+    {% else %}
+      
+        
+          {{ ...">
+  
+    <meta name="twitter:image:src" content="https://dottorblaster.it/path/to/image/logo.png">
+    -->
+
+  <title>
+    
+      Grab The Blaster &middot; di Alessio Biancalana
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/grabtheblaster.css">
+  <link rel="stylesheet" href="/public/font-awesome/css/font-awesome.min.css">
+
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700italic,700,400italic' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,700' rel='stylesheet' type='text/css' />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title="" href="https://dottorblaster.it/feed">
+</head>
+
+
+  <body>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=81489295682&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="container content">
+      <div class="masthead">
+        <h3 class="masthead-title">
+          <img src="/public/avatar-blaster.png" alt="Alessio Biancalana">
+          <a href="/" title="Home page">Grab The Blaster</a>
+          <small>di Alessio Biancalana</small>
+        </h3>
+        <div class="social-icons"><a href="/about/" title="About Me"><i class="fa fa-user-circle-o"></i></a> <a href="https://twitter.com/dottorblaster" title="Twitter - @dottorblaster"><i class="fa fa-twitter"></i></a> <a href="https://github.com/dottorblaster" title="GitHub - dottorblaster"><i class="fa fa-github"></i></a></div>
+      </div>
+
+      <div class="posts">
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2016/01/rainloop-email-software/" title="RainLoop: mettere in piedi una webmail senza sforzo - di Alessio Biancalana">
+          RainLoop: mettere in piedi una webmail senza sforzo
+        </a>
+      </h1>
+      <span class="post-date">03 Jan 2016</span>
+    
+
+    <p><img src="http://i65.tinypic.com/2jdqi4i.png" alt="RainLoop" /></p>
+
+<p>Et voilà: primo post del <strong>2016</strong>. :-)</p>
+
+<p>Con tutta questa <strong>cloud</strong> siamo abituati sin troppo ad usare le applicazioni all’interno del nostro browser; io stesso uso da sempre <strong>GMail</strong>, le altre applicazioni di Google e svariati servizi solo tramite un visualizzatore di pagine web. Da un po’ di tempo tuttavia sto meditando sia di mettere in piedi un mailserver personale, anche se non mi reputo in grado di sostenerne l’impegno - più che altro quello morale; viceversa, in ufficio la nostra <strong>webmail</strong> ha bisogno di una imponentissima svecchiata.</p>
+
+<p>In questo scenario il buon <a href="https://julianxhokaxhiu.com/">Julian</a> mi ha picchiettato più volte la spalla consigliandomi <a href="http://www.rainloop.net/">RainLoop</a>, un <strong>client email web-based</strong> che mi ha intrigato sin da subito: il traguardo di questa applicazione infatti è quello di fornire un’esperienza d’uso molto simile a quella di un servizio email offerto da un qualsiasi provider, unita chiaramente ai pregi di una (o un pool di queste, diciamo) casella email <strong>self-hosted</strong>.</p>
+
+<p>Fatte queste doverose premesse, in questi giorni ho cominciato a smacchinare per ottenere un’installazione di <strong>RainLoop</strong> funzionante su una macchina con <strong>CentOS</strong>; eccovi quindi una piccola recensione.</p>
+
+<h3 id="installazione">Installazione</h3>
+<p>Per imparare qualcosa in più su questo software (e sul mondo Red Hat, dato che di solito per le macchine uso <strong>Debian</strong>), ho preferito non installare RainLoop tramite <strong>Docker</strong> (visto che ha un suo <a href="https://github.com/jprjr/docker-rainloop">Dockerfile</a>), mettendo invece su un webserver Apache andando a completare una classica installazione <strong>LAMP</strong> (quindi con MySQL sotto le natiche).</p>
+
+<p>Scompattato il tarball di installazione (per cui gli sviluppatori forniscono anche qualche riga di scripting), installato qualche modulo PHP mancante e riavviato il webserver per l’ultima volta, ho avuto una bella sorpresa: tutto funzionante e zero sbattimento :-)</p>
+
+<h3 id="configurazione">Configurazione</h3>
+<p>RainLoop espone un path al quale possiamo <strong>configurare la webapp</strong> per modificarne alcuni comportamenti, tra cui l’accesso ai server di posta: nella sezione dei domini, ci basta infilare il nostro mailserver tramite una label, le impostazioni IMAP e quelle SMTP. Quando poi andremo a effettuare l’accesso, potremo utilizzare le credenziali della casella di posta: <strong>RainLoop farà da middleware</strong>, validando queste informazioni e <strong>sincronizzando la casella di posta</strong>. Non male, mh?</p>
+
+<p>Inoltre, ci sono anche delle opzioni apposite per il branding. Tramite l’acquisto di una licenza premium, possiamo anche fare l’upload di un logo personalizzato.</p>
+
+<h3 id="utilizzo">Utilizzo</h3>
+<p>L’uso è quello di un normale <strong>client web-based IMAP</strong>: abbiamo un pulsante per qualsiasi azione, e una semantica di ricerca per quanto riguarda i messaggi simile a quella usata da Google. La cosa che mi ha lasciato perplesso è che non ho ancora visto nulla per fare raggruppamento dei thread, probabilmente qualcuno avrà sviluppato un plugin per questo.</p>
+
+<p><em>Ecco qua, ho parlato troppo presto. RainLoop supporta il threading tradizionale di IMAP, basta attivarlo nelle opzioni. L’ho visto in <a href="https://github.com/RainLoop/rainloop-webmail/issues/46">questa issue su GitHub</a>.</em></p>
+
+<p>Insomma, un software che ti salva veramente la vita: la composizione di mail è ottima e offre tutto quello che può servirci, la lettura della posta anche, adattandosi sia a <strong>mail HTML</strong> potenzialmente molto antipatiche, sia ovviamente al testo semplice. Per quanto mi riguarda l’unica vera pecca di questo software è che i temi non sono veri temi, e il software non mi sembra ben estensibile.</p>
+
+<p>La <strong>scelta dei temi</strong> infatti non cambia la veste grafica di RainLoop, ma solo lo sfondo della webmail; allo stesso modo non apprezzo moltissimo il look ‘n feel dei pulsanti e delle barre, un po’ retrò e al quale a quanto pare dovrò abituarmi. Senza dubbio molto meglio dell’aspetto incartapecorito delle applicazioni concorrenti, non c’è che dire :-)</p>
+
+<p>Veramente troppo, troppo fico. Ho finalmente trovato un’alternativa agli antipatici <strong>client email</strong> desktop, che più di qualche volta presentano impuntamenti e ritrosie; spero che questo si comporti bene.</p>
+
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2015/12/addio-ian/" title="So long, and thanks for all the software - di Alessio Biancalana">
+          So long, and thanks for all the software
+        </a>
+      </h1>
+      <span class="post-date">31 Dec 2015</span>
+    
+
+    <p><img src="http://www.revista.espiritolivre.org/wp-content/uploads/2015/12/ian-murdock.jpg" alt="Ian Murdock" /></p>
+
+<p>Ian,</p>
+
+<p>Sei stato una tra le persone che più hanno contribuito a rendermi ciò che sono. Ora, presumo che dovremo cavarcela senza di te; sarà difficile.</p>
+
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2015/12/jekyll-flusso-pubblicazione/" title="Jekyll e il flusso di pubblicazione - di Alessio Biancalana">
+          Jekyll e il flusso di pubblicazione
+        </a>
+      </h1>
+      <span class="post-date">30 Dec 2015</span>
+    
+
+    <p><img src="http://i68.tinypic.com/2qbhnya.png" alt="Jekyll" /></p>
+
+<p>In un <a href="http://www.koolinus.net/blog/2015/12/del-perche-jekyll-mi-lascia-sempre-perplesso/">suo post</a>, <strong>Nicola</strong> mi ha elogiato di aver mantenuto il ritmo di pubblicazione nonostante il passaggio a <strong>Jekyll</strong>. Per chi non lo conoscesse, <a href="https://jekyllrb.com/">Jekyll</a> è il motore su cui si basa questo blog - o forse dovrei dire “non-motore” visto che di fatto è solo un generatore di siti statici. È vero, Jekyll da fuori sembra una figata assurda e quando poi ci sei dentro scopri che mentre tante cose sono facilissime rispetto a un CMS tradizionale, altre mancano di immediatezza, come la scrittura di un post. Visto che il buon <strong>kOoLiNuS</strong> si è dimostrato perplesso, vediamo di fare chiarezza su cosa influisca realmente in un flusso di pubblicazione basato su Jekyll, e anche su qualche aspetto collaterale.</p>
+
+<blockquote>
+  <p>Mentre lascio a te la lettura e la valutazione di questa mossa, volevo mettere in evidenza la frase finale. Jekyll sarà anche figo, ma è senz’altro geek e abbastanza tecnico… e quando nella vita si vuole stare comodi non sempre certe soluzioni sono tali da invogliarti ad approcciare alla scrittura.</p>
+
+  <p>Con l’eccezione di Dr.Blaster e Lucio, infatti, non conosco nessuno che una volta migrato su questa piattaforma abbia mantenuto il precedente ritmo di pubblicazione…</p>
+</blockquote>
+
+<h3 id="pregi-di-jekyll">Pregi di Jekyll</h3>
+<p>Sicuramente una delle cose più rilevanti, è che hai tutto in locale. Nel caso in cui tu voglia scrivere, hai tutto a disposizione per farlo: <strong>basta aprire l’editor di testo</strong>, iniziare a buttare giù qualcosa, riguardarlo, dargli una forma (e una formattazione). Quando hai finito, chiudi l’editor di testo e via: salvi il file e ti basta fare <strong>un commit e un push su GitHub</strong> (oppure rigenerare il sito, nel caso in cui tu non stia usando un sistema di Continuous Integration o GitHub Pages come faccio io). Tutto arabo vero? Ecco appunto: a questo arriviamo dopo.</p>
+
+<p>Un altro grandissimo pregio, è che praticamente <strong>non c’è bisogno di backup</strong>, dato che la larghissima maggioranza dei blog generati da Jekyll che conosco sono sotto un opportuno sistema di versioning. Jekyll, d’altronde, è pensato per fare proprio questo: mantenere il proprio blog tramite solo testo, un’alberatura di file grossomodo semplice e qualche comando da terminale. L’idea è geniale, anche perché espandendo il concetto espresso poco sopra, mantenendo tutto versionato e su un hosting Git/SVN, aggiungere contenuti non comporta praticamente sforzo, il backup si fa da sé, e così via.</p>
+
+<p>Oltre questo, troviamo anche una <strong>personalizzabilità invidiabile</strong>: basta modificare i template dei formati dei propri post, tramite il Liquid Templating Markup, per aggiungere nuovi custom post type e tanto altro. Insomma, una cosa per veri smanettoni smaliziati, il che ci porta direttamente ai difetti. :-D</p>
+
+<h3 id="difetti-di-jekyll">Difetti di Jekyll</h3>
+<p>Bello Jekyll, fico Jekyll, però è anche vero che per un blogger tutto questo significa alle volte una <strong>fatica bestiale</strong>. Nonostante l’infrastruttura perfetta infatti (dal punto di vista tecnico), il blogger è comunque una creatura che vive di impressione e ispirazione; la criticità quindi diventa proprio l’assenza di frontend, il fatto che senza strumenti che ti aiutino non riesci più a trovare quell’immediatezza, quel flusso di lavoro a cui ormai lungo i decenni il CMS ti ha abituato (nel mio caso, prima FlatNuke poi WordPress). A me Jekyll piace ancora, ma è anche vero che dopo più di un anno dalla migrazione, nell’intento di incrementare il ritmo di pubblicazione, ho cominciato a <a href="https://github.com/dottorblaster/burst">scrivere una gemma Ruby</a> che dovrebbe contenere una serie di helper. L’ho messa su GitHub come quasi tutto il mio codice, e penso che presto ne farò il push anche su <strong>RubyGems.org</strong> :-)</p>
+
+<p>Insomma, non è tutto oro quello che luccica, anzi: purtroppo nel caso di Jekyll è assolutamente reale che non c’è più quell’immediatezza che c’era con altri CMS; quello che è vero, tuttavia, è che lo strumento cambia il modo di scrivere, e sicuramente <strong>Jekyll ha fatto in modo che scrivessi cose leggermente più ponderate</strong>. Pian piano spero di arricchire Burst di funzionalità in modo da fornirmi tutto quello di cui ho bisogno.</p>
+
+<p>È troppo vero: Jekyll ha reso di me un blogger peggiore (forse? Dato che comunque non scrivo più così spesso), ma penso che mi abbia reso più riflessivo e un programmatore migliore, indubbiamente. Il fatto che mi abbia dato nuove necessità da soddisfare, e nuovi problemi da risolvere, per me è un pregio ma per altri senza dubbio può essere un freno. E lo sarà: non è fatto per uscire dall’ambito geek, e quello che deve fare lo fa eccellentemente.</p>
+
+<h3 id="difetti-ne-ha-però">Difetti? Ne ha, però…</h3>
+<p>È vero che usare un martello di un tipo piuttosto che di un altro tipo non cambia che il chiodo venga piantato, ma <strong>uno dei siti più belli</strong> che io abbia visto nell’ultimo anno è basato su Jekyll e merita una menzione: parlo del sito di <a href="http://www.opensensorsdata.it/">opensensorsdata</a>, e di tutti i sottodomini, rigorosamente jekyllizzati. È un esempio ottimo, secondo me, di come Jekyll possa corrispondere in modo più che ottimo a <strong>determinate esigenze aziendali</strong>.</p>
+
+<p><em>E ora scusate, devo andare a scrivere un software in Ruby per automatizzare la scrittura dei post per il mio blog basato sulla generazione di siti statici. A volte penso che, semplicemente, invece di automatizzare tutto solo per il gusto di farlo, dovrei semplicemente muovere il culo e scrivere di più :-)</em></p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h2 class="post-title post-title-link">
+        <a href="https://swift.org/blog/swift-linux-port/">
+          Swift per Linux
+        </a>
+        <a href="/2015/12/swift-linux/" title="permalink: Swift per Linux di Alessio Biancalana"><i class="fa fa-comments-o icon-commentary"></i></a>
+      </h2>
+    
+
+    <p>So che è “roba di Apple”, ma il <strong>port su Linux di Swift</strong> mi intriga. Alla fine da quello che ho visto è un incrocio tra Python e Javascript (che sono due linguaggi che infatti adoro), con operatori interessanti e il supporto alla GlibC. Chissà, magari ci farò qualcosa di più uno di questi giorni :-)</p>
+
+<p>Quello che è sicuro, è che per l’intanto il port su Linux è stato fatto. Sul sito ufficiale trovate i .deb disponibili per le ultime versioni di Ubuntu. Su Arch Linux, ovviamente, potete installarlo tramite il <a href="https://aur4.archlinux.org/packages/swift-language-git/">PKGBUILD che c’è su AUR</a>.</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h2 class="post-title post-title-link">
+        <a href="https://github.com/php/php-src/releases/tag/php-7.0.0">
+          PHP 7.0
+        </a>
+        <a href="/2015/12/php-7-0/" title="permalink: PHP 7.0 di Alessio Biancalana"><i class="fa fa-comments-o icon-commentary"></i></a>
+      </h2>
+    
+
+    <p>Evidentemente i ragazzi di <strong>PHP</strong> amano il <strong>brivido del rischio</strong> e dei ripensamenti:</p>
+
+<blockquote>
+  <p>After doing the last evaluations in the RMs circle before going for 7.0.0 RTM preparations, we came to the conclusion that the current state does not look reasonable to be packaged as the final release.</p>
+</blockquote>
+
+<p>Dopo lo stralcio di cui sopra di una mail al gruppo di lavoro, proprio due giorni fa è apparso il tag di <strong>PHP 7.0</strong>. Ovviamente, come tutte le creature appena nate, ne viene sconsigliato l’uso in produzione: handle with care :-)))</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/page/43"><i class="fa fa-chevron-circle-left"></i></a>
+  
+  
+    
+      <a class="pagination-item newer" href="/page/41"><i class="fa fa-chevron-circle-right"></i></a>
+    
+  
+</div>
+
+
+      <div class="footer">
+        <p>
+          &copy; Grab The Blaster is brought to you by Alessio Biancalana with <a href="http://jekyllrb.com/">Jekyll</a> and much ♥, under <a href="https://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC</a>.
+        </p>
+        <form class="search-form" action="/search" method="get">
+          <input type="text" placeholder="Cerca →" name="query">
+        </form>
+      </div>
+      <div class="webring-container">
+        <webring-banner>
+          <p>Member of <a href="https://retronerds.netlify.app"></a></p>
+          <a href="https://retronerds.netlify.app/prev">Previous</a>
+          <a href="https://retronerds.netlify.app/random">Random</a>
+          <a href="https://retronerds.netlify.app/next">Next</a>
+        </webring-banner>
+        <script async src="https://retronerds.netlify.app/embed.js" charset="utf-8"></script>
+      </div>
+    </div>
+
+  </body>
+</html>

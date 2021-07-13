@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <link rel="canonical" href="/page/129/" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- Enable Graph API for Facebook integration -->
+  <meta content="Grab The Blaster" property="og:site_name">
+  
+    <meta content="Home" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="Un blog nerd il giusto di Alessio Biancalana" property="og:description">
+  
+  
+    <meta content="https://dottorblaster.it/page/129/" property="og:url">
+  
+  
+  
+  
+
+  <!--   Enable Twitter Cards support through metadata, thanks to http://davidensinger.com/2013/04/supporting-twitter-cards-with-jekyll/ -->
+<!--   <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@site_username">
+  <meta name="twitter:creator" content="@creator_username">
+  
+    <meta name="twitter:title" content="Home">
+  
+  
+    <meta name="twitter:url" content="https://dottorblaster.it/page/129/">
+   -->
+  <!-- This is from @stammy -->
+<!--   <meta name="twitter:description" content="
+  {% for post in paginator.posts %}
+  
+    {% if post.layout == &quot;link&quot; %}
+      
+        
+          {{ post.title }}
+        
+        
+      
+    {% else %}
+      
+        
+          {{ ...">
+  
+    <meta name="twitter:image:src" content="https://dottorblaster.it/path/to/image/logo.png">
+    -->
+
+  <title>
+    
+      Grab The Blaster &middot; di Alessio Biancalana
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/grabtheblaster.css">
+  <link rel="stylesheet" href="/public/font-awesome/css/font-awesome.min.css">
+
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700italic,700,400italic' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,700' rel='stylesheet' type='text/css' />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title="" href="https://dottorblaster.it/feed">
+</head>
+
+
+  <body>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=81489295682&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="container content">
+      <div class="masthead">
+        <h3 class="masthead-title">
+          <img src="/public/avatar-blaster.png" alt="Alessio Biancalana">
+          <a href="/" title="Home page">Grab The Blaster</a>
+          <small>di Alessio Biancalana</small>
+        </h3>
+        <div class="social-icons"><a href="/about/" title="About Me"><i class="fa fa-user-circle-o"></i></a> <a href="https://twitter.com/dottorblaster" title="Twitter - @dottorblaster"><i class="fa fa-twitter"></i></a> <a href="https://github.com/dottorblaster" title="GitHub - dottorblaster"><i class="fa fa-github"></i></a></div>
+      </div>
+
+      <div class="posts">
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2009/04/gentoo-x86-ce-lho-fatta/" title="Gentoo ~x86: ce l'ho fatta. - di Alessio Biancalana">
+          Gentoo ~x86: ce l'ho fatta.
+        </a>
+      </h1>
+      <span class="post-date">30 Apr 2009</span>
+    
+
+    <p>Emergi di qua, emergi di là, emergi su, emergi giù.</p>
+<p>E si vola, si vola verso la meta di qualche overlay sapientemente gestito assieme alla mia Gentoo ~x86.</p>
+<p>Ma per ora non voglio esagerare, ho raggiunto il primo traguardo, e la cosa non è indifferente: ho una <strong>Gentoo ~x86 perfettamente funzionante</strong>, con kernel configurato all'osso e senza initrd; ma come è potuto accadere tutto ciò? Analizziamo insieme.</p>
+<p>Prima di tutto, ho scaricato gli stage e fatto le solite operazioni di rito, descritte ampiamente nell'handbook, e di cui ho dato solo un cenno nel mio precedente post riguardo Gentoo. Successivamente, settando quel che c'era da settare, ho scoperto che avevo scaricato lo stage sbagliato, e la variabile <strong>CHOST</strong> era impostata su <em>i486-pc-linux-gnu</em>. Poco male: reimpostata, e lanciato un <em>emerge -e world</em>, ma a quanto pare le grane non erano finite. Ovviamente sui primi pacchetti la compilazione si è piantata; ci ho messo molto poco a capire che mi attendeva un'affannosa ricompilazione del GCC e di altre belle cose che per compilare correttamente impiegano secoli.</p>
+<p>E così, ho emerso prima il GCC, poi di nuovo il mitico World. In conclusione, ho cominciato ad installare alcune cosette. Ma la nuvola nera incombeva ancora su di me. Nonostante tutte le compilazioni fossero andate perfettamente lisce, libXML rifiutava di compilare, a causa di un mistico errore di GCC.</p>
+<p>Visto che il cambio di CHOST (che causava appunto quell'errore) è fortemente sconsigliato, ho preferito non andare contro i <em>capoccioni</em>, ed ho reinstallato. E ari-emergi il mondo. Ovviamente, questa volta le cose sono andate molto meglio: andando in palestra ho potuto lanciare un tranquillissimo emerge gnome-light, per installare, dopo tutte le varie configurazioni del caso, sulla mia Gentoo nuova di pacca, il Desktop Environment che adoro.</p>
+<p>Tornando, ho trovato che tutto era andato liscio. Provo così a loggarmi, ma avevo scordato di dare i giusti permessi per quanto riguardava la cartella Home; con una passata di Chown ho risolto il problema, ed ho continuato a divertirmi fino ad arrivare al target sperato. Ho dovuto emergere qualche pacchetto di diversa versione rispetto a quella fornita in maniera predefinita, ma di problemi grandi non ne ho avuti.</p>
+<p style="text-align: center;"><img class="alignnone" src="http://i41.tinypic.com/4rdrad.jpg" alt="" width="584" height="376" /></p>
+<p style="text-align: left;">Da qui in poi, la strada sembra essere in discesa: si tratta solo di fare un po' di manutenzione ogni qual volta se ne presenta la necessità, e prestare un po' di attenzione agli aggiornamenti entranti.</p>
+<p style="text-align: left;">Ovviamente vi aggiornerò con ogni passo mosso in questo nuovo mondo pieno, per me, di eccitanti novità.</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2009/04/repository-nascente-per-arch-richieste-particolari/" title="Repository nascente per Arch: richieste particolari? - di Alessio Biancalana">
+          Repository nascente per Arch: richieste particolari?
+        </a>
+      </h1>
+      <span class="post-date">27 Apr 2009</span>
+    
+
+    <p>Visto che poco tempo fa è nata da me e <span class="submitted"><a title="Mostra il profilo utente." href="http://ilportalinux.it">M0rF3uS</a>, e cercavamo giustappunto idee su quali pacchetti includere nel repository, ho pensato bene di chiedere ai lettori delle mie pagine cosa ne pensassero e se avessero consigli sui pacchetti da includere.</span></p>
+<p style="text-align: center;"><span class="submitted"><img class="alignnone" src="http://img28.picoodle.com/img/img28/4/7/22/f_600pxArchlim_90bde0b.png" alt="" width="507" height="168" /><br />
+</span></p>
+<p><span class="submitted">Ovviamente, la richiesta è condivisa con tutti gli arcieri italiani.</span></p>
+<p><span class="submitted">Forza, mettiamo su una buona risorsa a livello italiano e, perchè no, mondiale, per estendere il parco di precompilati! :)<br />
+</span></p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2009/04/ancora-gentoo-ancora-gentoo/" title="Ancora Gentoo? Ancora Gentoo. - di Alessio Biancalana">
+          Ancora Gentoo? Ancora Gentoo.
+        </a>
+      </h1>
+      <span class="post-date">26 Apr 2009</span>
+    
+
+    <p>Il buon vecchio Catullo espresse quello che io provo per Gentoo in questa maniera:</p>
+<blockquote><p>Odi et amo. Quare id faciam, fortasse requiris?<br />
+Nescio, sed fieri sentio et excrucior.</p></blockquote>
+<p>Traduzione:</p>
+<blockquote><p>Odio e amo. Come faccia, mi chiedi forse?<br />
+Non lo so, ma sento che accade e mi tormento.</p></blockquote>
+<p style="text-align: center;"><img class="aligncenter" src="http://i39.tinypic.com/118mv5w.jpg" alt="" width="497" height="380" /></p>
+<p>È giunto il momento. Taglia e cuci sulle partizioni, estrazione dello Stage 3. Portage. E si comincia.</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2009/04/prendiamo-la-lepre-per-le-corna/" title="Prendiamo la Lepre per le corna ;) - di Alessio Biancalana">
+          Prendiamo la Lepre per le corna ;)
+        </a>
+      </h1>
+      <span class="post-date">23 Apr 2009</span>
+    
+
+    <p>Ormai in parecchi si saranno stufati di leggere la notizia sugli aggregatori, bombardati dai blog che riportano sempre la stessa notizia, ma non importa: questo è il mio blog, ed in virtù del fatto che ci faccio quello che mi pare, ho deciso di unirmi alla massa con un post in più per dare il benvenuto alla versione finale di Ubuntu 9.04 "Jaunty Jackalope".</p>
+<p>Una versione travagliata e con molto lavoro alle spalle, questa, per consentire un'esperienza utente ancora più gradevole, e, come svela in parte anche il codename, una release che ha puntato molte energie degli sviluppatori nello snellire il processo di boot, rendendolo corto, molto corto, fino a far sbarrare gli occhi ai più.</p>
+<p style="text-align: center;"><img class="alignnone" src="http://i39.tinypic.com/27zxb42.jpg" alt="" width="356" height="206" /><br />
+<em>Pistaaaaaaaaaah!!!</em></p>
+<p style="text-align: left;">Altre novità essenziali sono l'utilizzo di GNOME 2.26, che ha portato con sè delle novità essenziali, ad esempio l'introduzione di temi sonori e l'inserimento di PulseAudio in maniera predefinita. Lasciando da parte la mia opinione personale su PulseAudio, cioè la reinvenzione (inutile) della ruota, il changelog mi sembra abbastanza nutrito; ma non è finita qui: i nuovi sfondi sono stati giudicati dalla mia equipe di utenti medi come molto belli.</p>
+<p style="text-align: left;">Personalmente, il primo non mi piace molto: sembra infatti, con un "coso" del genere, di essere tornati al tempo di Dapper; per quanto riguarda il secondo wallpaper, che a mio parere riprende molto dal wallpaper ufficiale di KDE4, un plauso ai designer coinvolti sia nell'opera originale che nella "copia". Il lavoro è ottimo, e come sfondo predefinito avrei scelto quello, anzichè la <em>cacca zigrinata</em> che c'è al suo posto.</p>
+<p style="text-align: left;">Le scelte a proposito di software includono i soliti programmi, rinnovati in quanto a versioni: come GNOME 2.26, è presente anche Compiz 0.8.2, assieme alla solita dotazione tipicamente ubuntiana: Pidgin, GIMP e OpenOffice sono presenti anche loro in versione aggiornata, come sempre.</p>
+<p style="text-align: left;">Il sistema, nella prova consueta su strada, si dimostra molto più reattivo dei precedenti, e stupisce oltre che per il tempo di boot, anche per quello di login e per il boot delle applicazioni, veramente rapido. Jaunty quindi si prospetta come un sistema attivo, reattivo, e responsivo al massimo.</p>
+<p style="text-align: center;"><img class="alignnone" src="http://i44.tinypic.com/20gmlvn.jpg" alt="" width="485" height="369" /></p>
+<p style="text-align: center;"><em>Un plauso anche al creatore dell'artwork per la scelta della frase di Da Vinci.</em></p>
+<p style="text-align: left;">Un'ottima release, quindi, a mio parere, che a quanto pare ha ancora qualche problemino con i kernel custom, ma non sembra un problema riscontrato da molti, e soprattutto con i kernel precompilati si possono dormire sonni tranquilli.</p>
+<p style="text-align: left;">Unico difetto riscontrato da me, almeno per ora, è la presenza di un software quanto mai fastidioso, di nome Computer Janitor. Questa piccola peste si occupa per noi di ripulire il sistema dai pacchetti orfani, obsoleti o comunque inutilizzati. Ovviamente potrete immaginare il fatto che in passato questo piccolo diavoletto volesse rimuovermi mezzo Xorg, ed io spero vivamente che fossero problemi imputabili tranquillamente allo stato di Alpha della distribuzione, anche se adesso, di primo acchito, non ne sarei così sicuro.</p>
+<p style="text-align: left;">Resta dunque da vedere il discutibile comportamento di Janitor se verrà riproposto.</p>
+<p style="text-align: left;">Nel frattempo, attendo trepidante la prossima Ubuntu, la 9.10 "Karmic Koala", che farà sparire il tanto odiato arancione, per proporre un nuovo colore predefinito.</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2009/04/la-lancetta-si-alza-la-tua-vita-si-spezza/" title="La lancetta si alza, la tua vita si spezza. - di Alessio Biancalana">
+          La lancetta si alza, la tua vita si spezza.
+        </a>
+      </h1>
+      <span class="post-date">22 Apr 2009</span>
+    
+
+    <p>Guardate questo video, tutto, in silenzio.</p>
+<p style="text-align: center;"><object width="425" height="344" data="http://www.youtube.com/v/pgYA2c5iyzs&amp;color1=0xb1b1b1&amp;color2=0xcfcfcf&amp;feature=player_embedded&amp;fs=1" type="application/x-shockwave-flash"><param name="allowFullScreen" value="true" /><param name="src" value="http://www.youtube.com/v/pgYA2c5iyzs&amp;color1=0xb1b1b1&amp;color2=0xcfcfcf&amp;feature=player_embedded&amp;fs=1" /><param name="allowfullscreen" value="true" /></object></p>
+<p style="text-align: left;">Rilancio anch'io la "catena", spinto <a href="http://www.piplos.org/2009/04/21/reminder/">dalle</a> <a href="http://telperion.wordpress.com/2009/04/22/corri-corri-coglione/">segnalazioni</a>; chiunque volesse partecipare è ben accetto ovviamente.</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/page/130"><i class="fa fa-chevron-circle-left"></i></a>
+  
+  
+    
+      <a class="pagination-item newer" href="/page/128"><i class="fa fa-chevron-circle-right"></i></a>
+    
+  
+</div>
+
+
+      <div class="footer">
+        <p>
+          &copy; Grab The Blaster is brought to you by Alessio Biancalana with <a href="http://jekyllrb.com/">Jekyll</a> and much ♥, under <a href="https://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC</a>.
+        </p>
+        <form class="search-form" action="/search" method="get">
+          <input type="text" placeholder="Cerca →" name="query">
+        </form>
+      </div>
+      <div class="webring-container">
+        <webring-banner>
+          <p>Member of <a href="https://retronerds.netlify.app"></a></p>
+          <a href="https://retronerds.netlify.app/prev">Previous</a>
+          <a href="https://retronerds.netlify.app/random">Random</a>
+          <a href="https://retronerds.netlify.app/next">Next</a>
+        </webring-banner>
+        <script async src="https://retronerds.netlify.app/embed.js" charset="utf-8"></script>
+      </div>
+    </div>
+
+  </body>
+</html>

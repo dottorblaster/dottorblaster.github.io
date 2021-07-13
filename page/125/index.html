@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <link rel="canonical" href="/page/125/" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- Enable Graph API for Facebook integration -->
+  <meta content="Grab The Blaster" property="og:site_name">
+  
+    <meta content="Home" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="Un blog nerd il giusto di Alessio Biancalana" property="og:description">
+  
+  
+    <meta content="https://dottorblaster.it/page/125/" property="og:url">
+  
+  
+  
+  
+
+  <!--   Enable Twitter Cards support through metadata, thanks to http://davidensinger.com/2013/04/supporting-twitter-cards-with-jekyll/ -->
+<!--   <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@site_username">
+  <meta name="twitter:creator" content="@creator_username">
+  
+    <meta name="twitter:title" content="Home">
+  
+  
+    <meta name="twitter:url" content="https://dottorblaster.it/page/125/">
+   -->
+  <!-- This is from @stammy -->
+<!--   <meta name="twitter:description" content="
+  {% for post in paginator.posts %}
+  
+    {% if post.layout == &quot;link&quot; %}
+      
+        
+          {{ post.title }}
+        
+        
+      
+    {% else %}
+      
+        
+          {{ ...">
+  
+    <meta name="twitter:image:src" content="https://dottorblaster.it/path/to/image/logo.png">
+    -->
+
+  <title>
+    
+      Grab The Blaster &middot; di Alessio Biancalana
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/grabtheblaster.css">
+  <link rel="stylesheet" href="/public/font-awesome/css/font-awesome.min.css">
+
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700italic,700,400italic' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,700' rel='stylesheet' type='text/css' />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title="" href="https://dottorblaster.it/feed">
+</head>
+
+
+  <body>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=81489295682&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="container content">
+      <div class="masthead">
+        <h3 class="masthead-title">
+          <img src="/public/avatar-blaster.png" alt="Alessio Biancalana">
+          <a href="/" title="Home page">Grab The Blaster</a>
+          <small>di Alessio Biancalana</small>
+        </h3>
+        <div class="social-icons"><a href="/about/" title="About Me"><i class="fa fa-user-circle-o"></i></a> <a href="https://twitter.com/dottorblaster" title="Twitter - @dottorblaster"><i class="fa fa-twitter"></i></a> <a href="https://github.com/dottorblaster" title="GitHub - dottorblaster"><i class="fa fa-github"></i></a></div>
+      </div>
+
+      <div class="posts">
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2009/08/pronti-per-voi-webkitgtk-1-1-12/" title="Pronti per voi: WebKitGTK+ 1.1.12 - di Alessio Biancalana">
+          Pronti per voi: WebKitGTK+ 1.1.12
+        </a>
+      </h1>
+      <span class="post-date">09 Aug 2009</span>
+    
+
+    <p>Ieri, mentre <a href="http://dottorblaster.it/2009/08/nuovi-smanetti-nuovi-casini-debian-e-il-pacchetto-mancante/">smanettavo</a> con la mia nuova Debian Sid, ho notato installando i pacchetti relativi a WebKit, che la versione era la 1.1.12. Così, avendomi messo Apt la pulce nell'orecchio, controllato la versione del relativo pacchetto presente nei repository di Arch Linux, e mi è stata restituita per tutta risposta la versione 1.1.10. Ho così spulciato tra le dipendenze del nuovo WebKit, per vedere cosa ne intralciasse il mantenimento, e ho visto che necessita di libsoup, un software relativo al mio caro GNOME, alla  versione 2.27.4; ho così deciso di impacchettare il tutto e fornirvelo in dei comodi pacchetti installabili tranquillamente con Pacman.</p>
+<p style="text-align: center;"><img class="alignnone" src="http://i28.tinypic.com/21l4s41.jpg" alt="" width="538" height="327" /></p>
+<p style="text-align: left;">Dopo la compilazione relativamente breve di libsoup, che per fortuna non ha richiesto backport di alcun tipo dal GIT di GNOME, ho proceduto alla compilazione di WebKit; ho dovuto farlo stamattina presto, quando c'era ancora il fresco visto che altrimenti avrei fuso la CPU. :D</p>
+<p style="text-align: left;">Per tutti coloro che volessero aggiornare un po' la loro versione di WebKit per Arch Linux, dunque, ho sfornato questi due pacchetti, così da non far affaticare le vostre CPU su quel popo' di sorgente ;)</p>
+<p style="text-align: left;"><a href="http://dl.getdropbox.com/u/685412/libsoup-2.27.4-1-i686.pkg.tar.gz">LibSoup-2.27.4-1</a></p>
+<p style="text-align: left;"><a href="http://dl.getdropbox.com/u/685412/libwebkit-1.1.12-1-i686.pkg.tar.gz">LibWebKit-1.1.12-1</a></p>
+<p style="text-align: left;">P.S.: Pacchetti solo per i686. Non dispongo ancora di Arch64, lo sapete :D</p>
+<p style="text-align: left;">
+</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2009/08/nuovi-smanetti-nuovi-casini-debian-e-il-pacchetto-mancante/" title="Nuovi smanetti, nuovi casini: Debian e il pacchetto mancante - di Alessio Biancalana">
+          Nuovi smanetti, nuovi casini: Debian e il pacchetto mancante
+        </a>
+      </h1>
+      <span class="post-date">08 Aug 2009</span>
+    
+
+    <p>Stamattina, in preda ad un raptus, mi sono spostato nella directory radice della mia partizione di Ubuntu, e ho dato un deciso</p>
+<p><code>rm -rf *</code></p>
+<p>Per rimuovere tutti i file presenti. Diciamo che mi ero stufato di tenere una distribuzione di cui ormai non mi faccio nulla, a parte aggiornarla ogni tanto per sport :)</p>
+<p>Così mi sono invece armato della versione più recente di Debootstrap, mentre la partizione di Ubuntu veniva rasa al suolo dal mio impietoso comando, cosa che ha preso parecchio tempo, dopodichè:</p>
+<p><code>sudo debootstrap --arch=i386 sid /media/Debian</code></p>
+<p>In men che non si dica mi sono ritrovato con una perfetta versione minimale di Debian, ramo Unstable, installata su quella stessa partizione che cinque minuti prima aveva su Ubuntu.</p>
+<p style="text-align: center;"><img class="alignnone" src="http://i26.tinypic.com/2a4xqib.jpg" alt="" width="396" height="386" /></p>
+<p>Ho successivamente configurato la mia sexy Debby per aderire perfettamente alle mie preferenze, scrivendo un novello /etc/fstab, specificando l'hostname e modificando /etc/hosts in base alle mie esigenze; in fondo, oggi mi sono reso conto di quanto ho appreso con Arch e Gentoo, e di quanto i concetti alla base delle distribuzioni siano sempre un po' gli stessi :)</p>
+<p>Ho inserito le linee per Debian nel mio menu.lst, e ho rebootato per vedere l'effetto delle mie malefatte sul giocattolo (relativamente) nuovo. Fatto il login, scandalo! Faccio per aprire un terminale ma <em>sbam</em>, niente gestore di finestre. Riparando in fretta al metodo Bl@ster, ossia aggiungendo all'avvio in automatico Metacity, senza crearmi ulteriori problemi. Dopodichè, provo ad installare Compiz, e relativo gestore della configurazione, ma...</p>
+<p><em><strong>Houston, we have a problem.</strong></em></p>
+<p>Il pacchetto libprotobuf3 era richiesto come dipendenza da libcompizconfig0, ma tale pacchetto non c'era nei repository!</p>
+<p>Uh ma che bello, uh ma che divertente :D Dopo qualche minuto di smanetto mi è venuto in mente che forse potevo trovare quello che cercavo da un'altra parte.</p>
+<p>Ho così scaricato la versione presente nei repository di Squeeze, installandola a mano su Debian Sid; tutto è magicamente andato :)</p>
+<p>Se avete di questi problemi quindi, basta scaricare il pacchetto incriminato <a href="http://packages.debian.org/squeeze/i386/libprotobuf3/download">da qui</a>, e mandare a quel paese i problemi di dipendenze.</p>
+<p>Almeno per un'ora o poco meno :D</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2009/08/chrome-adesso-fa-anche-il-buttafuori/" title="Chrome adesso fa anche il buttafuori -.- - di Alessio Biancalana">
+          Chrome adesso fa anche il buttafuori -.-
+        </a>
+      </h1>
+      <span class="post-date">07 Aug 2009</span>
+    
+
+    <p>Stamattina stavo provando Chrome, e ho ricevuto un messaggio su Facebook. Controllando la mail, il caro sito mi avvisava che avevo delle nuove nella posta in arrivo, così faccio per andare a controllare e, bam :(</p>
+<p>Mi ritrovo a sbattere contro un muro. Un muro messo su dal mio caro Chrome (<em>caro mica tanto, Firefox rulez!</em> :D) che mi diceva che blablabla sulla sicurezza del certificato di Facebook.</p>
+<p style="text-align: center;"><img class="alignnone" src="http://i32.tinypic.com/e5le76.jpg" alt="" width="552" height="356" /></p>
+<p style="text-align: left;">Il problema che è sorto dunque è stato: in Firefox posso decidere se aggiungere un'eccezione ed entrare lo stesso a contatto con il sito incriminato; in Chrome questo non posso farlo.</p>
+<p style="text-align: left;">Spero che gli sviluppatori aggiungano presto l'opzione perchè così si limita potenzialmente di tantissimo la libertà dell'utente :D</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2009/07/ahi-un-picchio-mi-ha-beccato/" title="Ahi! Un Picchio mi ha beccato! - di Alessio Biancalana">
+          Ahi! Un Picchio mi ha beccato!
+        </a>
+      </h1>
+      <span class="post-date">29 Jul 2009</span>
+    
+
+    <p>E così, il fatidico momento è arrivato.</p>
+<p>Il <a href="http://picchiopc.blogspot.com/">Picchio</a> più blasonato della rete ha lasciato un uovo anche nella mia mailbox :D e prontamente io ho risposto donandogli in omaggio il mio contatto Skype per iniziare l'intervista.</p>
+<p>Intervista la quale può essere letta a <a href="http://picchiopc.blogspot.com/2009/07/intervista-blaster.html">questo indirizzo</a> :)</p>
+<p>Buona lettura, e non dimenticate di lasciare un commento se vi è piaciuta, se vi ha fatto schifo, se avete rigettato la colazione o qualunque pasto, o se per finire di leggerla siete corsi in un punto internet mentre andavate a fare la spesa. :P</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2009/07/xf86-video-intel-2-8-0-e-fra-noi/" title="Xf86-video-intel 2.8.0 è fra noi :) - di Alessio Biancalana">
+          Xf86-video-intel 2.8.0 è fra noi :)
+        </a>
+      </h1>
+      <span class="post-date">22 Jul 2009</span>
+    
+
+    <p>Chi mi conosce bene sa che sono stato <strong>uno tra i più grandi avversatori</strong> della scelta fatta dagli sviluppatori di Intel: dare la precedenza al metodo di accelerazione UXA dichiarandolo deprecato ed <em>eliminando ogni supporto ad EXA e XAA</em> mi sembrava una forzatura, una scelta stupida che avrebbe solo intaccato la stima di quei pochi utenti che Linux ha acquisito sul fronte Intel.</p>
+<p><strong>Poi questi driver</strong>. Stamattina, vista la notizia, mi sono precipitato ad aggiornare a manina il driver sulla mia Arch, comprendente anche Mesa 7.5, Xserver 1.6.2 e tante altre sciccherie che solo noi testers (tsè! :D) possiamo permetterci di avere.</p>
+<p style="text-align: center;"><img class="alignnone" src="http://i26.tinypic.com/dgrxp5.jpg" alt="" width="554" height="413" /></p>
+<p style="text-align: left;">Dunque, riavviando, ho sgranchito le articolazioni di pollici, alluci, e tutto ciò che ci sta di mezzo, ed ho finalmente testato l'ultimo driver partorito dalla nota casa di microprocessori.</p>
+<p style="text-align: left;">Sbalordito, ho visto con i miei occhi che le prestazioni, a distanza solo di qualche commit, sono migliorate tantissimo. Grazie a Mesa 7.5, tra l'altro, non ho più un odioso flickering che avevo scoperto dovuto agli effetti di fade; Mesa e sciccherie a parte, il driver funziona, e ho constatato che non sento più una grossa mancanza di EXA. Qualche mese, ad essere pessimisti, e penso davvero che UXA diverrà pari a EXA se non addirittura migliore.</p>
+<p style="text-align: left;">Nota bene: <em>non utilizzo il Kernel Mode Setting</em>.</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/page/126"><i class="fa fa-chevron-circle-left"></i></a>
+  
+  
+    
+      <a class="pagination-item newer" href="/page/124"><i class="fa fa-chevron-circle-right"></i></a>
+    
+  
+</div>
+
+
+      <div class="footer">
+        <p>
+          &copy; Grab The Blaster is brought to you by Alessio Biancalana with <a href="http://jekyllrb.com/">Jekyll</a> and much ♥, under <a href="https://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC</a>.
+        </p>
+        <form class="search-form" action="/search" method="get">
+          <input type="text" placeholder="Cerca →" name="query">
+        </form>
+      </div>
+      <div class="webring-container">
+        <webring-banner>
+          <p>Member of <a href="https://retronerds.netlify.app"></a></p>
+          <a href="https://retronerds.netlify.app/prev">Previous</a>
+          <a href="https://retronerds.netlify.app/random">Random</a>
+          <a href="https://retronerds.netlify.app/next">Next</a>
+        </webring-banner>
+        <script async src="https://retronerds.netlify.app/embed.js" charset="utf-8"></script>
+      </div>
+    </div>
+
+  </body>
+</html>

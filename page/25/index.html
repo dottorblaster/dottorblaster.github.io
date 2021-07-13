@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <link rel="canonical" href="/page/25/" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- Enable Graph API for Facebook integration -->
+  <meta content="Grab The Blaster" property="og:site_name">
+  
+    <meta content="Home" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="Un blog nerd il giusto di Alessio Biancalana" property="og:description">
+  
+  
+    <meta content="https://dottorblaster.it/page/25/" property="og:url">
+  
+  
+  
+  
+
+  <!--   Enable Twitter Cards support through metadata, thanks to http://davidensinger.com/2013/04/supporting-twitter-cards-with-jekyll/ -->
+<!--   <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@site_username">
+  <meta name="twitter:creator" content="@creator_username">
+  
+    <meta name="twitter:title" content="Home">
+  
+  
+    <meta name="twitter:url" content="https://dottorblaster.it/page/25/">
+   -->
+  <!-- This is from @stammy -->
+<!--   <meta name="twitter:description" content="
+  {% for post in paginator.posts %}
+  
+    {% if post.layout == &quot;link&quot; %}
+      
+        
+          {{ post.title }}
+        
+        
+      
+    {% else %}
+      
+        
+          {{ ...">
+  
+    <meta name="twitter:image:src" content="https://dottorblaster.it/path/to/image/logo.png">
+    -->
+
+  <title>
+    
+      Grab The Blaster &middot; di Alessio Biancalana
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/grabtheblaster.css">
+  <link rel="stylesheet" href="/public/font-awesome/css/font-awesome.min.css">
+
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700italic,700,400italic' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,700' rel='stylesheet' type='text/css' />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title="" href="https://dottorblaster.it/feed">
+</head>
+
+
+  <body>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=81489295682&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="container content">
+      <div class="masthead">
+        <h3 class="masthead-title">
+          <img src="/public/avatar-blaster.png" alt="Alessio Biancalana">
+          <a href="/" title="Home page">Grab The Blaster</a>
+          <small>di Alessio Biancalana</small>
+        </h3>
+        <div class="social-icons"><a href="/about/" title="About Me"><i class="fa fa-user-circle-o"></i></a> <a href="https://twitter.com/dottorblaster" title="Twitter - @dottorblaster"><i class="fa fa-twitter"></i></a> <a href="https://github.com/dottorblaster" title="GitHub - dottorblaster"><i class="fa fa-github"></i></a></div>
+      </div>
+
+      <div class="posts">
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2017/02/ansible-primi-passi/" title="Ansible: primi passi - di Alessio Biancalana">
+          Ansible: primi passi
+        </a>
+      </h1>
+      <span class="post-date">11 Feb 2017</span>
+    
+
+    <p><img src="https://www.ansible.com/hs-fs/hubfs/2016_Images/Home/bg_mango_desk.jpg" alt="Ansible" /></p>
+
+<p>Durante il mio <a href="http://dottorblaster.it/2017/02/farewell-sourcesense/">periodo in Sourcesense</a> ho imparato parecchio su un software di configuration management di cui non ero molto pratico all’inizio, ovvero <strong>Chef</strong>: <a href="https://devopsrecipes.info/">Eugenio</a> mi ha insegnato veramente di tutto su quello che considero uno dei sistemi più completi per l’orchestrazione della propria infrastruttura, tuttavia proprio in questi giorni mi sono trovato per le mani qualcosa di meraviglioso, ovvero (finalmente) qualcosa che infrastrutturalmente era un <strong>green-field project</strong>.</p>
+
+<p>Da <a href="https://en.wikipedia.org/wiki/Greenfield_project">Wikipedia</a>:</p>
+
+<blockquote>
+  <p>In many disciplines a <strong>greenfield project</strong> is one that lacks constraints imposed by prior work. The analogy is to that of construction on <a href="https://en.wikipedia.org/wiki/Greenfield_land">greenfield land</a> where there is no need to work within the constraints of existing buildings or infrastructure.</p>
+</blockquote>
+
+<p>Dovendo fare una scelta e avendo del tempo per stare dietro all’infrastruttura senza fretta, ho preferito privilegiare la conoscenza di un nuovo strumento, e ho deciso di dare una chance ad <strong>Ansible</strong>, di cui in parecchi mi avevano parlato bene durante le chiacchierate ai meetup.</p>
+
+<h3 id="primo-impatto">Primo impatto</h3>
+
+<p>Il <strong>primo impatto</strong> con Ansible non è malaccio, alla fine fornisce un’infrastruttura di configuration management completamente agentless in cui abbiamo una Ansible Control Machine (ovvero anche il nostro computer) e i vari host, che sono banalmente IP associati a delle label che li raggruppano. Successivamente abbiamo i <strong>playbook</strong>, dei file con descrittori scritti in <strong>YAML</strong> che vanno a specificare cosa fare su un determinato host o altro. Il range di cose che possiamo specificare è infinito, dato che possiamo installare pacchetti ma anche installare file tramite template e così via, fino all’installazione di software tramite le gemme Ruby o Python Pip, o addirittura l’istanziazione/orchestrazione di container Docker.</p>
+
+<p>Questo è possibile perché <strong>Ansible è ben ingegnerizzato</strong>, e oltre ai playbook permette di scrivere dei <strong>moduli</strong> (in Python) che consentono di specificare comportamenti personalizzati invocando delle action precise. Alcuni di questi moduli sono parte di Ansible stesso out-of-the-box, come il modulo relativo a docker, che permette di fare cose simili:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Create a data container</span>
+  <span class="na">docker_container</span><span class="pi">:</span>
+    <span class="na">name</span><span class="pi">:</span> <span class="s">mydata</span>
+    <span class="na">image</span><span class="pi">:</span> <span class="s">busybox</span>
+    <span class="na">volumes</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">/data</span>
+</code></pre></div></div>
+
+<p>E questi sono solo i primi esempi di cosa possiamo fare. Il fatto che in tutto questo non ci siano agent di mezzo, ma basti solo un <code class="language-plaintext highlighter-rouge">ssh-copy-id</code> e qualche riga di YAML per aggiungere un nodo all’infrastruttura e configurarlo è veramente fantastico, anche perché dal punto di vista di gestione è praticamente a sforzo zero, e non dipende da <strong>barbatrucchi</strong> assurdi.</p>
+
+<p>Imparate le basi, mi è rimasto solo da misurarmi con qualche piccolo trucchetto per far quadrare la situazione come piaceva a me.</p>
+
+<h3 id="trucchetti">Trucchetti</h3>
+
+<p>Tra Puppet, Chef, Ansible e Saltstack non ho mai visto un sistema di configuration management privo di trucchetti per semplificarsi la vita. Mi spiego: su Chef per esempio la configurazione di <code class="language-plaintext highlighter-rouge">knife</code> e della workstation dello sviluppatore secondo me rimane un po’ macchinosa. Oltre questo, ci sono una serie di piccoli inganni tipo i symlink per gestire più configurazioni insieme ed altro che non vengono molto (anzi, per niente) pubblicizzati dal manuale. Essendo però gli unici modi per ovviare a queste (secondo me) <strong>falle di design</strong>, la community è arrivata persino a sviluppare dei piccoli programmi Ruby per fare proprio queste cose qui.</p>
+
+<p><strong>Ansible</strong> non sfugge a questa regola, grossomodo: io ho da subito avuto un problema col fatto che avrei voluto memorizzare in un unico repository Git tutte le informazioni riguardo i miei playbook e riguardo i server, ma la manualistica di base consiglia di mantenere la lista degli host nel file di configurazione <code class="language-plaintext highlighter-rouge">/etc/ansible/hosts</code>.</p>
+
+<p>È una cazzata.</p>
+
+<p>Ansible stesso, ho scoperto dopo un po’, permette di dargli in pasto un altro file in cui vengono descritti gli host (detto inventory file), da un path arbitrario, residente anche nella directory in cui ci troviamo (ovvero il workspace in cui manteniamo i playbook). In questo modo possiamo avere <strong>file multipli che descrivono gli host di infrastrutture separate</strong>, condividendo comunque i playbook da lanciare sulle macchine, e consentendoci di memorizzare tutto all’interno di un unico repository Git che fungerà da singola fonte di verità per il nostro pattern di <strong>Infrastructure As Code</strong>.</p>
+
+<p>Quello che basterà fare successivamente sarà puntare al nostro file chiamato <code class="language-plaintext highlighter-rouge">infrastructure</code> invocando Ansible e dandogli in pasto il playbook da eseguire:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>ansible-playbook <span class="nt">-i</span> infrastructure playbook-number-one.yml
+</code></pre></div></div>
+
+<p>Rubo dalla <a href="http://docs.ansible.com/ansible/playbooks_best_practices.html#directory-layout">documentazione ufficiale</a> anche un albero di come è indicato tenere il workspace del repository dei playbook. Come si può vedere, nessuno ci dice di tenere gli host in un file lì dentro, ma come per magia nelle best practice il file compare da solo. Nice job 😁</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>production
+staging
+
+group_vars/
+   group1
+   group2
+host_vars/
+   hostname1
+   hostname2
+
+library/
+filter_plugins/
+
+site.yml
+webservers.yml
+dbservers.yml
+
+roles/
+    common/
+        tasks/
+            main.yml
+        handlers/
+            main.yml
+        templates/
+            ntp.conf.j2
+        files/
+            bar.txt
+            foo.sh
+        vars/
+            main.yml
+        defaults/
+            main.yml
+        meta/
+            main.yml
+        library/
+        lookup_plugins/
+
+    webtier/
+    monitoring/
+    fooapp/
+</code></pre></div></div>
+
+<p>Tutto molto molto carino.</p>
+
+<h3 id="business-as-usual-i-ruoli-e-tutto-il-resto">Business as usual: i ruoli e tutto il resto</h3>
+
+<p>Il resto della roba che Ansible mette a disposizione è molto simile a Chef, ma senza la complicazione di avere un agent che gira sulle macchine. Abbiamo i <strong>ruoli</strong>, che possono essere scaricati anche da <a href="https://galaxy.ansible.com/">Ansible Galaxy</a> installandoli nel proprio repository, e che permettono di partire da una base già solida per quanto riguarda il riuso dei playbook dato che fungono da “moduli” in cui organizzare lo stato desiderato delle macchine. Abbiamo il templating, come ho già scritto, e un linguaggio che anche se non è simile a Ruby e non è potente allo stesso modo, fa decisamente quello che serve permettendoci persino di iterare attraverso oggetti multipli (esempio: la copia di più file, o l’installazione di più pacchetti nella stessa action).</p>
+
+<p>Personalmente ho trovato Ansible molto comodo rispetto ad altre soluzioni di configuration management. <strong>Non ho nemmeno provato Ansible Tower</strong>, che Red Hat tenta di appizzarci appena diamo un’occhiata al sito. Sembra una figata, ma semplicemente non ne ho ancora avuto bisogno e mi sento di dire che sto bene così. Non so cosa possa fornire in più rispetto al sistema manuale, forse qualche chicca di eyecandy. Chef di solito lo gestivo in combo con la web console anche per motivi di usabilità, con Ansible non mi sento in pericolo sotto questo aspetto.</p>
+
+<h3 id="conclusioni">Conclusioni</h3>
+
+<p>Prima di questa piccola esperienza, continuavo a chiedermi come mai nessuno avesse la mia stessa opinione sui tool di <strong>configuration management</strong>. Dopo aver provato Puppet e Ansible, credevo semplicemente che nessuno avesse pensato a risolvere i problemi in una maniera molto più terra-terra, sicuramente meno adatta alle infrastrutture giganti formato Facebook, ma molto più <strong>alla portata di chiunque</strong> non voglia stare ad impazzire appresso alle sue macchine.</p>
+
+<p>Chef nello specifico è fantastico, ma trovo che non avendo io un milione di macchine non sia esattamente quello che mi serve. Viceversa a me serve qualcosa che si connetta ad un’altra macchina o ad un altro set di macchine, e faccia da <strong>grosso wrapper di SSH</strong>, senza il bisogno di un server centrale o di client strani che si eseguono ogni tot minuti.</p>
+
+<p>La risposta alle mie domande è stata Ansible.</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2017/02/farewell-sourcesense/" title="Time for a goodbye - di Alessio Biancalana">
+          Time for a goodbye
+        </a>
+      </h1>
+      <span class="post-date">05 Feb 2017</span>
+    
+
+    <p>Tutto quello che ha un inizio, ha anche una fine. Sembrano le parole dell’Oracolo di Matrix, invece è solo banalmente quello che è successo negli ultimi tempi per me in Sourcesense; ho percepito che fosse arrivato in qualche modo il mio tempo, e che fosse venuto con questo il <strong>momento di misurarmi con qualcosa di nuovo</strong>.</p>
+
+<p>Nel momento in cui abbozzo questo post sto formattando la mia macchina aziendale, e mi vengono in mente un sacco di <strong>esperienze</strong> che ho vissuto qui, e soprattutto un sacco di <strong>persone</strong> a cui dire grazie:</p>
+
+<ul>
+  <li><strong>Paolo Mariotti</strong>: quando ero un imberbe fanciullo mi ha insegnato meraviglie frontendistiche e javascriptistiche (ma si dice?) che non avrei mai immaginato;</li>
+  <li><strong>Ludovico Cafarelli</strong>: il mio sponsor, ha sempre creduto in me, e mi ha fatto sempre sbattere il muso sui lati peggiori del mio carattere;</li>
+  <li><strong>Matteo Nobili</strong>: perché è pelato;</li>
+  <li><strong>Eugenio Marzo</strong>: i nostri venerdì in Viale Europa mi hanno insegnato che c’è sempre una soluzione a qualsiasi problema che sarebbe meglio non far sapere troppo in giro perché fa cagare (e ricordati le best practice!);</li>
+  <li><strong>Piergiorgio Lucidi</strong>: lui e il suo gemello malvagio Piergioegio (che è nato quando gli hanno sbagliato il badge al Devoxx) mi hanno insegnato a conciliare la ricerca continua di novità con un approccio più orientato al mondo enterprise;</li>
+  <li><strong>Manuel Felici</strong>: il pulcino di tutti che adesso è un bel basilisco;</li>
+  <li><strong>Valerio Luzzi</strong>: no matter the day, every day is sushi day.</li>
+</ul>
+
+<p><img src="https://gitlab.com/dottorblaster/blog-images/raw/master/images/sourcesense/img_4718.jpg" alt="Atlassian Roadshow by Sourcesense" /></p>
+
+<p>Con <strong>Sourcesense</strong> ho raggiunto dei traguardi notevoli, come notevoli sono state le persone che mi hanno accompagnato nel mio viaggio.</p>
+
+<p>Chiariamoci: è decisamente una Sourcesense diversa dalla <a href="https://www.cnet.com/news/the-open-source-ceo-gianugo-rabellino-sourcesense-part-16/">Sourcesense che ha fondato Gianugo Rabellino</a>. <strong>Non è una realtà immune dalle arrabbiature</strong>, anzi: tuttavia è una compagnia che mi ha fatto crescere in modo esagerato, insegnandomi a lavorare con persone alle quali non ero esattamente affine (che non è banale), dando valore a tutto il ventaglio delle mie capacità, mettendomi alla prova e non facendomi annoiare mai.</p>
+
+<p><strong>A chi applica</strong> oggi per una posizione in Sourcesense, dico che fa bene: rispetto alla media delle società di consulenza romane, è un’azienda che spicca e che ha anche delle potenzialità di sbocco interessanti vista la sede a Milano e soprattutto quella a Londra. Chi sa forgiare il proprio cammino nel modo giusto da Sourcesense può ottenere <strong>esperienze internazionali</strong> e l’<strong>expertise</strong> di vicini di scrivania veramente preparati e appassionati. Forse tra i più appassionati e preparati che possiate mai trovare a Roma.</p>
+
+<h3 id="fork">fork()</h3>
+
+<p>Non ho lasciato Sourcesense per l’ignoto. Presto arriveranno <strong>novità</strong>. Qualcuno già le sa, ma prima di fare annunci a gran voce vorrei ambientarmi e capire che direzione ho intrapreso (si, non lo so nemmeno io…).</p>
+
+<p>Alle persone che ho incontrato in questi anni, come a quelle che ho menzionato direttamente pocanzi, devo un <strong>enorme ringraziamento</strong>, perché sono tra quelle responsabili di ciò che sono oggi. E io sono molto fiero di quello che sono oggi, almeno per i tratti positivi del mio carattere 😁</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>:wq
+</code></pre></div></div>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h2 class="post-title post-title-link">
+        <a href="https://nodejs.org/en/blog/announcements/nodejs-certified-developer-program/">
+          La Node.js Foundation lancia il Node.js Certification Program
+        </a>
+        <a href="/2017/01/nodejs-certification-program/" title="permalink: La Node.js Foundation lancia il Node.js Certification Program di Alessio Biancalana"><i class="fa fa-comments-o icon-commentary"></i></a>
+      </h2>
+    
+
+    <p>Non c’è molto da dire su questo, ma è una piacevole notizia che la <a href="https://nodejs.org">Node.js Foundation</a> abbia deciso di aprire il suo <strong>programma di certificazioni su Node.js</strong>:</p>
+
+<blockquote>
+  <p>Node.js Foundation is worked closely with The Linux Foundation to create the blueprint and process for administering the program. The Linux Foundation offers a neutral home for running training and certification programs, thanks to its close involvement with the open source community.</p>
+</blockquote>
+
+<p>Onestamente penso che questo aiuterà Node ad affermarsi sul mercato, e ad essere una piattaforma considerata maggiormente come <strong>enterprise-ready</strong>, per quanto possa essere considerata enterprise-ready una piattaforma che fa leva su un linguaggio debolmente tipizzato e tradizionalmente ritenuta “da frontendari”.</p>
+
+<p>Nonostante questo, a ognuno le sue pecche, e a me piace. 😬</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h2 class="post-title post-title-link">
+        <a href="https://rustyshelf.org/2017/01/07/my-next-mac-mini/">
+          Il Mac Mini è morto, lunga vita al Mac Mini
+        </a>
+        <a href="/2017/01/mac-mini-revamp/" title="permalink: Il Mac Mini è morto, lunga vita al Mac Mini di Alessio Biancalana"><i class="fa fa-comments-o icon-commentary"></i></a>
+      </h2>
+    
+
+    <p><strong>Russell Ivanovic</strong> ha scritto un pezzo interessante che avevo inspiegabilmente perso, in cui spiega il suo iter da un Mac Mini in salotto ad un <strong>Mini PC Intel</strong> con Windows 10:</p>
+
+<blockquote>
+  <p>Do I actually need this computer to run macOS? I quickly realised I don’t. I need Chrome, I need a few basic apps and I need my Elgato EyeTV Diversity USB stick to be supported so I can watch TV. It turns out there’s another OS that has all those: Windows. I’ve had Windows 10 on a gaming PC I built over 6 months ago and I’ve not had a single problem with it. It’s never bothered me, needed rebooting because it was flakey or even broken a sweat doing all the things I’ve asked of it.</p>
+</blockquote>
+
+<p>Quello che continuo a non capire è come mai Apple continui ad inseguire la chimera di una rivoluzione sui propri laptop, senza consegnare alla propria utenza degli <strong>attrezzi con cui lavorare</strong> fuori da quello specifico fattore di forma. La cosa che per molti anni mi ha affascinato di Apple (a prescindere dai prezzi folli) era questa: hai bisogno di un mini PC? C’è il Mac Mini. Un portatile? A bizzeffe tra MacBook e MacBook Pro (che all’epoca erano veramente Pro). Necessità di lavorare con un hardware super-duper? Ecco il MacPro.</p>
+
+<p>Una variegatura (e non ho parlato degli iMac) che oggi è solo un ricordo, con una linea d’offerta ridotta non dico al lumicino ma, beh, quasi - e soprattutto utenti che delusi si guardano intorno per scoprire che <strong>Microsoft</strong> può dargli quello che Apple ormai si rifiuta di dare. O addirittura che <strong>Linux</strong> è un’alternativa possibile.</p>
+
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2017/01/kde-slimbook/" title="KDE Slimbook, ultrabook (fichissimo) con il cuore di un draghetto - di Alessio Biancalana">
+          KDE Slimbook, ultrabook (fichissimo) con il cuore di un draghetto
+        </a>
+      </h1>
+      <span class="post-date">27 Jan 2017</span>
+    
+
+    <p><img src="http://kde.slimbook.es/images/galeria/resizedimages/5_work.jpg" alt="KDE Slimbook" /></p>
+
+<p>Ieri sera tra una sessione di terminale e l’altra ho visto spuntare come funghi in giro per l’internet una cosa molto, molto affascinante, ovvero il <a href="http://kde.slimbook.es/">KDE Slimbook</a>. Mi ha fatto alzare la testa per due ordini di motivi:</p>
+
+<ul>
+  <li>Il primo è che è <strong>pensato per la mobilità</strong>, con un design che prende a piene mani dal MacBook Air di Apple, la quale però non ha intenzione (pare) di avventurarsi in un revamp di quella specifica linea;</li>
+  <li>Il secondo è la realizzazione portata avanti a stretto contatto con la <strong>community di KDE</strong>, tramite l’interazione con dei membri selezionati molto vicini al progetto. Quello che è venuto fuori è un prodotto a mio parere competitivo, forte di una metodologia di creazione che in pochi possono permettersi di adottare e in ancora meno hanno effettivamente voglia di applicare.</li>
+</ul>
+
+<p>A riguardo, è interessante leggere sicuramente il post ufficiale di <a href="https://dot.kde.org/2017/01/26/kde-and-slimbook-release-laptop-kde-fans">KDE</a> ma anche quello di <a href="https://apachelog.wordpress.com/2017/01/26/kde-slimbook/">Harald Sitter</a>:</p>
+
+<blockquote>
+  <p>Naturally, as one of the neon developers, I was doing some software work to help this along. Last year already we switched to a more reliable graphics driver. Our installer got a face-lift to make it more visually appealing. The installer gained an actually working OEM installation mode. A hardware integration feature was added to our package pool to make sure the KDE Slimbook works perfectly out of the box. The device looks and feels awesome. Plasma’s stellar look and feel complements it very well making for a perfect overall experience.</p>
+</blockquote>
+
+<h3 id="il-form-factor">Il form factor</h3>
+<p>Sicuramente guardando al form factor cadiamo nella trappola del “not invented here”, per il semplice fatto che viene sfruttato un concetto di scocca già implementato da altri e rodato fino allo sfinimento, per consegnare all’utente un’esperienza che non porta nulla di nuovo.</p>
+
+<p>Da una parte è vero che questa macchina è una <strong>copia spudorata di un MacBook Air</strong>, dall’altro lato è vero allo stesso modo che nello specifico il MacBook Air ha un feeling estremamente sexy, e dato che a molti attuali utenti Apple (soprattutto power user) interessa un revamp di qualcosa di simile, potrebbe addirittura far alzare un sopracciglio a chi cerca <strong>un buon rimpiazzo per il proprio Mac</strong> e vuole passare a Linux.</p>
+
+<p><img src="http://kde.slimbook.es/images/galeria/resizedimages/1_cover.jpg" alt="KDE Slimbook logo" /></p>
+
+<h3 id="la-spesa">La spesa</h3>
+<p>Un <strong>KDE Slimbook</strong> non viene via a poco, anzi. Però con la combo che ho scelto io viene comunque 300 euro meno di un Macbook, che insomma, buttali via. Quello che mi piacerebbe capire invece è quanto, a fronte della spesa abbastanza elevata, mi venga restituito in qualità costruttiva: <strong>il confronto con un MacBook viene spontaneo</strong>, e sicuramente pur costando un prodotto Apple un occhio della testa è vero che una volta pagato quel rene che ti viene chiesto, hai un prodotto che dura un sacco di tempo (parlando di computer, eh, beninteso: con i telefoni è tutta un’altra storia) e rimane solido come appena uscito dalla scatola.</p>
+
+<p>Prodotti wannabe-equipollenti, con la stessa <strong>scocca</strong>, purtroppo all’interno non risultano essere assemblati a dovere, nei casi più eclatanti addirittura messi insieme col nastro adesivo, e alla fine pur pagando sensibilmente meno si rinuncia ad avere un portatile rock-solid.</p>
+
+<p>Siccome a me questo aspetto del mio MacBook Pro piace molto, sarei curioso di sapere come si pone lo SlimBook da questo punto di vista. Ovviamente questa strizzata d’occhio non troppo velata significa che se state leggendo questo post e me ne inviate uno sarà mia cura recensirlo con tutti i crismi.</p>
+
+<p>Tornando al punto iniziale, ho visto che recentemente Apple ha impoverito molto persino le possibilità di configurazione degli Air, mentre questo laptop ha una flessibilità molto alta in fase di build, permettendoci di <strong>arrivare fino a 16GB di RAM</strong> (dove un MacBook Air arriva a 8GB ed è grasso che cola).</p>
+
+<h3 id="linux-come-cittadino-di-prima-classe">Linux come cittadino di prima classe</h3>
+<p>Quello che mi ha affascinato enormemente di questo progetto è ciò che hanno fatto gli sviluppatori di KDE/KDE Neon con l’aiuto di un manufacturer che voleva semplicemente offrire un ultrabook con Linux. Quello in cui si è tramutato il tutto è stato un piacevole tentativo (riuscito, poi bisogna vedere se le persone premieranno lo sforzo) di fornire a un bacino di utenza di base non enorme la possibilità di avere un hardware testato e ritestato su cui ottimizzare i comportamenti del software, una sorta di <strong>macchina di riferimento</strong> su cui eseguire benchmark di qualsiasi tipo da quelli di usabilità a quelli di comportamento.</p>
+
+<p>Questo rende <strong>Linux un cittadino di prima classe</strong> su questo laptop esattamente come macOS sui Mac, e me lo rende onestamente appetibile, anche perché per un tempo abbastanza lungo dopo essermi allontanato dal fronte GNOME sono stato un vero e proprio fanboy <strong>KDE</strong>. Date queste premesse, e data la flessibilità che offre la piattaforma di Plasma, penso che un OEM abbia spazio per inserire tante personalizzazioni senza rovinare l’esperienza utente di base di KDE. Allo stesso tempo sono piacevolmente sorpreso di come gli sviluppatori di KDE si stiano preoccupando di come possa apparire la loro software compilation su una macchina e su quella soltando, andando a risolvere problemi che riguardano anche il coupling tra la componente “interattiva” del computer e quella “fisica”.</p>
+
+<p>Detto ciò, sono molto, molto curioso di capire come possa performare un altro sistema Linux su questo hardware, tipo <strong>Arch Linux con GNOME Shell</strong>. 😬 😬 😬</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/page/26"><i class="fa fa-chevron-circle-left"></i></a>
+  
+  
+    
+      <a class="pagination-item newer" href="/page/24"><i class="fa fa-chevron-circle-right"></i></a>
+    
+  
+</div>
+
+
+      <div class="footer">
+        <p>
+          &copy; Grab The Blaster is brought to you by Alessio Biancalana with <a href="http://jekyllrb.com/">Jekyll</a> and much ♥, under <a href="https://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC</a>.
+        </p>
+        <form class="search-form" action="/search" method="get">
+          <input type="text" placeholder="Cerca →" name="query">
+        </form>
+      </div>
+      <div class="webring-container">
+        <webring-banner>
+          <p>Member of <a href="https://retronerds.netlify.app"></a></p>
+          <a href="https://retronerds.netlify.app/prev">Previous</a>
+          <a href="https://retronerds.netlify.app/random">Random</a>
+          <a href="https://retronerds.netlify.app/next">Next</a>
+        </webring-banner>
+        <script async src="https://retronerds.netlify.app/embed.js" charset="utf-8"></script>
+      </div>
+    </div>
+
+  </body>
+</html>

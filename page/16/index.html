@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <link rel="canonical" href="/page/16/" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- Enable Graph API for Facebook integration -->
+  <meta content="Grab The Blaster" property="og:site_name">
+  
+    <meta content="Home" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="Un blog nerd il giusto di Alessio Biancalana" property="og:description">
+  
+  
+    <meta content="https://dottorblaster.it/page/16/" property="og:url">
+  
+  
+  
+  
+
+  <!--   Enable Twitter Cards support through metadata, thanks to http://davidensinger.com/2013/04/supporting-twitter-cards-with-jekyll/ -->
+<!--   <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@site_username">
+  <meta name="twitter:creator" content="@creator_username">
+  
+    <meta name="twitter:title" content="Home">
+  
+  
+    <meta name="twitter:url" content="https://dottorblaster.it/page/16/">
+   -->
+  <!-- This is from @stammy -->
+<!--   <meta name="twitter:description" content="
+  {% for post in paginator.posts %}
+  
+    {% if post.layout == &quot;link&quot; %}
+      
+        
+          {{ post.title }}
+        
+        
+      
+    {% else %}
+      
+        
+          {{ ...">
+  
+    <meta name="twitter:image:src" content="https://dottorblaster.it/path/to/image/logo.png">
+    -->
+
+  <title>
+    
+      Grab The Blaster &middot; di Alessio Biancalana
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/grabtheblaster.css">
+  <link rel="stylesheet" href="/public/font-awesome/css/font-awesome.min.css">
+
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700italic,700,400italic' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,700' rel='stylesheet' type='text/css' />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title="" href="https://dottorblaster.it/feed">
+</head>
+
+
+  <body>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=81489295682&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="container content">
+      <div class="masthead">
+        <h3 class="masthead-title">
+          <img src="/public/avatar-blaster.png" alt="Alessio Biancalana">
+          <a href="/" title="Home page">Grab The Blaster</a>
+          <small>di Alessio Biancalana</small>
+        </h3>
+        <div class="social-icons"><a href="/about/" title="About Me"><i class="fa fa-user-circle-o"></i></a> <a href="https://twitter.com/dottorblaster" title="Twitter - @dottorblaster"><i class="fa fa-twitter"></i></a> <a href="https://github.com/dottorblaster" title="GitHub - dottorblaster"><i class="fa fa-github"></i></a></div>
+      </div>
+
+      <div class="posts">
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2018/01/elixir-for-dummies-2/" title="Elixir per idioti /2, tipi e operazioni sui tipi - di Alessio Biancalana">
+          Elixir per idioti /2, tipi e operazioni sui tipi
+        </a>
+      </h1>
+      <span class="post-date">09 Jan 2018</span>
+    
+
+    <p>Visto che abbiamo imparato come configurare Elixir sulla nostra macchina, un po’ di esperimenti e un approccio di base.</p>
+
+<p>I tipi sono interi, numeri (in virgola mobile), booleani, atomi<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>, e stringhe.</p>
+
+<p>Possiamo giochicchiarci in <code class="language-plaintext highlighter-rouge">iex</code>:</p>
+
+<div class="language-elixir highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">iex</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">&gt;</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span>
+<span class="mi">3</span>
+<span class="n">iex</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">&gt;</span> <span class="s2">"hello"</span> <span class="o">&lt;&gt;</span> <span class="s2">"world"</span>
+<span class="s2">"helloworld"</span>
+<span class="n">iex</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">&gt;</span> <span class="no">false</span> <span class="o">||</span> <span class="no">true</span>
+<span class="no">true</span>
+<span class="n">iex</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span><span class="o">&gt;</span> <span class="n">!true</span>
+<span class="no">false</span>
+<span class="n">iex</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span><span class="o">&gt;</span> <span class="n">!false</span>
+<span class="no">true</span>
+<span class="n">iex</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span><span class="o">&gt;</span> <span class="no">true</span> <span class="o">==</span> <span class="no">true</span>
+<span class="no">true</span>
+<span class="n">iex</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span><span class="o">&gt;</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">2</span>
+<span class="no">true</span>
+<span class="n">iex</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span><span class="o">&gt;</span> <span class="mi">2</span> <span class="o">==</span> <span class="s2">"2"</span>
+<span class="no">false</span>
+<span class="n">iex</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span><span class="o">&gt;</span> <span class="mi">2</span> <span class="o">==</span> <span class="mf">2.0</span>
+<span class="no">true</span>
+<span class="n">iex</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><span class="o">&gt;</span> <span class="mi">2</span> <span class="o">===</span> <span class="mf">2.0</span>
+<span class="no">false</span>
+</code></pre></div></div>
+
+<p>Cose che possiamo notare sin da subito: le <strong>operazioni con tipi discordanti</strong> non funzionano, al contrario per esempio di JavaScript dove possiamo sommare stringhe e numeri indistintamente ottenendo una concatenazione (per esempio, grazie al casting implicito “molto libertino”); oltre questo, la comparazione con l’operatore <code class="language-plaintext highlighter-rouge">==</code> è debolmente tipizzata, ma i tipi compatibili tra loro sono molti meno. <code class="language-plaintext highlighter-rouge">2</code> è diverso da <code class="language-plaintext highlighter-rouge">"2"</code> ma è uguale a <code class="language-plaintext highlighter-rouge">2.0</code>, che è in virgola mobile.</p>
+
+<p>L’uguaglianza con il numero in virgola mobile viene falsificata da una comparazione “strict”, ovvero con triplo uguale, che fa anche un check del tipo.</p>
+
+<p>I tipi li considero sempre la parte noiosa, ma vanno studiati; tra le cose divertenti invece abbiamo l’<strong>interpolazione di stringhe</strong>, che è abbastanza utile:</p>
+
+<div class="language-elixir highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">iex</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span><span class="o">&gt;</span> <span class="n">lang</span> <span class="o">=</span> <span class="s2">"Elixir"</span>
+<span class="s2">"Elixir"</span>
+<span class="n">iex</span><span class="p">(</span><span class="mi">16</span><span class="p">)</span><span class="o">&gt;</span> <span class="s2">"I'm studying </span><span class="si">#{</span><span class="n">lang</span><span class="si">}</span><span class="s2">"</span>
+<span class="s2">"I'm studying Elixir"</span>
+</code></pre></div></div>
+
+<p>Stiamo carburando? Stiamo carburando! Mancano ancora un po’ di basi, tra cui le <strong>strutture dati</strong> fondamentali per non scrivere cose nonsense. Le vedremo in seguito.</p>
+
+<p><a href="http://dottorblaster.it/2018/01/elixir-for-dummies-1/">Vai alla parte 1</a></p>
+
+<p><a href="http://dottorblaster.it/2018/02/elixir-for-dummies-3/">Vai alla parte 3</a></p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>Gli atomi sono una figata, chi conosce la programmazione funzionale penso li conosca bene. Per chi non la conosce, sono delle stringhe “on steroids”; ne parleremo più avanti in ogni caso. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2018/01/elixir-for-dummies-1/" title="Elixir per idioti /1 - di Alessio Biancalana">
+          Elixir per idioti /1
+        </a>
+      </h1>
+      <span class="post-date">07 Jan 2018</span>
+    
+
+    <p>Visto che ci siamo cominciamo l’anno nuovo col piede giusto, e diamo il via alla serie di post “Elixir per idioti”, ovvero appunti sparsi, confusi e ordinati semicasualmente sul mio viaggio nell’ecosistema di <strong>Elixir</strong>.</p>
+
+<p>Bando alle ciance, iniziamo:</p>
+
+<h3 id="why">Why</h3>
+<p>Elixir è un linguaggio con una sintassi molto simile a quella di Ruby che però, contrariamente appunto a Ruby, sfrutta la potenza della <strong>BEAM</strong>, ovvero la virtual machine di Erlang, e dell’ecosistema OTP per costruire ed eseguire applicazioni per la maggior parte di rete, a bassa latenza, distribuite, fault-tolerant.</p>
+
+<p>Quello che a me fa impazzire è che oltre ad essere un <strong>vero gioiellino</strong> per le web application ed in generale la programmazione distribuita, la sintassi funzionale impura Ruby-like lo rende in realtà un meraviglioso giocattolino general purpose, che diventa adatto per costruire qualsiasi tipo di programma, anche un CLI tool o altro.</p>
+
+<p>Il sito ufficiale del linguaggio è <a href="http://elixir-lang.github.io/">elixir-lang.github.io</a>.</p>
+
+<h3 id="setup">Setup</h3>
+
+<p>Il setup dell’ambiente è abbastanza facile. Su macOS:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>brew <span class="nb">install </span>elixir
+</code></pre></div></div>
+
+<p>Su <strong>Linux</strong> leggermente meno, ma dipende dalla distribuzione che usiamo. In genere abbiamo il pacchetto <code class="language-plaintext highlighter-rouge">elixir</code> nei repository della nostra distribuzione. Per Arch Linux è sufficiente un:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># pacman -S elixir</span>
+</code></pre></div></div>
+
+<p><strong>Ubuntu e Debian</strong> per esempio prevedono che venga usato il repository di pacchetti di Erlang Solutions:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>wget https://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb
+<span class="nv">$ </span><span class="nb">sudo </span>dpkg <span class="nt">-i</span> erlang-solutions_1.0_all.deb
+<span class="nv">$ </span><span class="nb">sudo </span>apt-get update
+<span class="nv">$ </span><span class="nb">sudo </span>apt-get <span class="nb">install </span>esl-erlang elixir
+</code></pre></div></div>
+
+<p>In caso di necessità comunque, informazioni aggiornate possono essere trovate sulla <a href="http://elixir-lang.github.io/install.html">pagina ufficiale</a>.</p>
+
+<h3 id="repl">REPL</h3>
+<p>Figata! Ora che abbiamo il nostro setup possiamo divertirci con il <strong>REPL</strong>.</p>
+
+<blockquote>
+  <p>A Read–Eval–Print Loop (REPL), also known as an interactive toplevel or language shell, is a simple, interactive computer programming environment that takes single user inputs (i.e. single expressions), evaluates them, and returns the result to the user; a program written in a REPL environment is executed piecewise. The term is most usually used to refer to programming interfaces similar to the classic Lisp machine interactive environment. Common examples include command line shells and similar environments for programming languages, and is particularly characteristic of scripting languages.</p>
+</blockquote>
+
+<p><a href="https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop">Wikipedia</a> ci dà una definizione abbastanza precisa di cos’è un REPL, ed io ad oggi considero questo tipo di applicativo la via più breve per imparare un linguaggio di programmazione, sperimentare funzioni specifiche e scoprire sempre cose nuove riguardo gli internals.</p>
+
+<blockquote>
+  <p>Tip: moltissimi altri linguaggi hanno un REPL incluso nell’ambiente di sviluppo, come Python (<code class="language-plaintext highlighter-rouge">python</code>), JavaScript (<code class="language-plaintext highlighter-rouge">node</code> o la stessa console di Chrome), Ruby (<code class="language-plaintext highlighter-rouge">irb</code>), Haskell (<code class="language-plaintext highlighter-rouge">ghci</code>).</p>
+</blockquote>
+
+<p>Il nostro REPL nello specifico si chiama <code class="language-plaintext highlighter-rouge">iex</code>. Lanciandolo nel terminale ci dà un po’ di informazioni utili, dopodiché sta a noi cominciare a fabbricare <strong>i nostri elisir</strong>:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>blaster at gandalf <span class="k">in</span> <span class="o">[</span>~]
+22:02:51 › iex
+Erlang/OTP 20 <span class="o">[</span>erts-9.2] <span class="o">[</span><span class="nb">source</span><span class="o">]</span> <span class="o">[</span>64-bit] <span class="o">[</span>smp:8:8] <span class="o">[</span>ds:8:8:10] <span class="o">[</span>async-threads:10] <span class="o">[</span>hipe] <span class="o">[</span>kernel-poll:false] <span class="o">[</span>dtrace]
+
+Interactive Elixir <span class="o">(</span>1.5.3<span class="o">)</span> - press Ctrl+C to <span class="nb">exit</span> <span class="o">(</span><span class="nb">type </span>h<span class="o">()</span> ENTER <span class="k">for </span><span class="nb">help</span><span class="o">)</span>
+iex<span class="o">(</span>1<span class="o">)&gt;</span>
+</code></pre></div></div>
+
+<p>Ci siamo.</p>
+
+<h3 id="hello-world">Hello world</h3>
+<p>Il percorso di apprendimento di un nuovo linguaggio comincia sempre con un <strong>hello world</strong>.</p>
+
+<div class="language-elixir highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">iex</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">&gt;</span> <span class="no">IO</span><span class="o">.</span><span class="n">puts</span><span class="p">(</span><span class="s2">"hello world!"</span><span class="p">)</span>
+<span class="n">hello</span> <span class="n">world!</span>
+<span class="ss">:ok</span>
+<span class="n">iex</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">&gt;</span>
+</code></pre></div></div>
+
+<p>Beh, per ora è tutto 😎</p>
+
+<p><a href="http://dottorblaster.it/2018/01/elixir-for-dummies-2/">Vai alla parte 2</a></p>
+
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h2 class="post-title post-title-link">
+        <a href="https://lists.debian.org/debian-devel-announce/2017/12/msg00003.html">
+          Debian Alioth diventerà Debian Salsa
+        </a>
+        <a href="/2017/12/debian-passa-a-gitlab/" title="permalink: Debian Alioth diventerà Debian Salsa di Alessio Biancalana"><i class="fa fa-comments-o icon-commentary"></i></a>
+      </h2>
+    
+
+    <p>Debian ha deciso di dare una rinfrescata alla sua developer experience, così il giorno di Natale con una mail su <code class="language-plaintext highlighter-rouge">debian-devel-announce</code> Alexander Wirt ha annunciato l’entrata in beta di <strong>Debian Salsa</strong>, il progetto che andrà a rimpiazzare pian piano il buon vecchio <strong>Debian Alioth</strong>.</p>
+
+<blockquote>
+  <p>Since summer we have worked on our git.debian.org replacement based on GitLab. I am really happy to say that we are launching the beta of our service today. Please keep in mind that it is a beta, we don’t expect any database resets, but under unexpected circumstances it might still happen.</p>
+
+  <p>The new service is available at <code class="language-plaintext highlighter-rouge">https://salsa.debian.org</code>. Every active Debian
+Developer already has an account. Please request a password reset via <code class="language-plaintext highlighter-rouge">https://salsa.debian.org/users/sign_in</code> – your login is either your Debian login or Debian e-mail address. SSH Keys from udldap get synced into your account.</p>
+</blockquote>
+
+<p>Alioth per anni ed anni ha servito bene la community, ma si tratta di andare avanti: per quanto funzionale, sicuramente sarà meglio passare a qualcosa di graficamente più accattivante e soprattutto funzionalmente aderente a quello che si aspettano i contributor reclutati di recente.</p>
+
+<p>Quel qualcosa è stato identificato in <strong>GitLab</strong>, di cui non ho mai fatto mistero di essere un grande fan. Mi fa veramente piacere che un altro grande player del panorama opensource si aggiunga al portfolio di adopter di GitLab, dato che è una piattaforma meravigliosa.</p>
+
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2017/12/anziani-bambini-api-lente/" title="Anziani, bambini, e API lente - di Alessio Biancalana">
+          Anziani, bambini, e API lente
+        </a>
+      </h1>
+      <span class="post-date">25 Dec 2017</span>
+    
+
+    <p>Noi programmatori (o in generale noi del reparto IT, per così dire) siamo abituati a vedere la tecnologia in un modo strano: siamo spesso abituati ai <strong>disservizi</strong>, a interfacce che non mostrano esattamente quello che non dovrebbero, ad errori a runtime eccetera. Per quanto possano essere distanti da questo modo di pensare, persino i nostri coetanei che non si occupano di informatica seguono questa linea di pensiero, e aspettano due minuti prima di dare fuoco ad un dispositivo che non risponde.</p>
+
+<p>Viceversa, ho avuto modo di osservare di recente un bambino e un’aziana a contatto con la tecnologia, ed entrambi al primo spinner mancante (segno di caricamento) e davanti ad un interfaccia che non segnava quello che loro si aspettavano hanno letteralmente dato fuori di matto. Tap a caso sull’interfaccia, se siamo fortunati <strong>refresh compulsivi</strong> altrimenti solo banali <strong>lamenti a voce</strong> contro il device, eccetera eccetera.</p>
+
+<p>Ovviamente emerge sempre di più la necessità per il futuro di UI progettate bene, ma anche di <strong>backend performanti</strong> e livelli di trasporto che siano in grado di rendere onore a queste performance.</p>
+
+<p>Riguardo il trasporto delle informazioni, ovviamente bisogna solo aumentare la copertura hi-perf sul territorio nazionale (e parlo per noi). Riguardo i backend performanti <strong>Rust</strong> ed <strong>Elixir</strong> sono due linguaggi che a me piacciono molto e che potebbero fungere da soluzioni.</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2017/12/romajs-lazy-loading-angular/" title="RomaJS natalizio, tra Angular su vasta scala e lazy loading - di Alessio Biancalana">
+          RomaJS natalizio, tra Angular su vasta scala e lazy loading
+        </a>
+      </h1>
+      <span class="post-date">23 Dec 2017</span>
+    
+
+    <p>Che meraviglia le festività natalizie, e che c’è di meglio delle festività di Natale se non i <strong>meetup prefestivi</strong>? Ci si fa gli auguri, tra quei pochi che riescono a presenziare sfuggendo ai parenti, alle cene aziendali, agli eventi dove è del tutto assente il coding, e tra una fetta di pandoro e l’altra<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> si parla di cose veramente interessanti. Questo mese abbiamo avuto due talk eccezionali:</p>
+
+<ul>
+  <li>“Angular su progetti da milioni di euro” di <strong>Alessandro Avolio</strong>,</li>
+  <li>“Image loading techniques” di <strong>Guido D’Orsi</strong>.</li>
+</ul>
+
+<p>Il talk di Alessandro, “Angular su progetti da milioni di euro”, è stato una conferma per alcuni aspetti, illuminante per altri. Mi ha dato spunto su alcune pratiche da introdurre nei prossimi progetti e mi ha chiarito alcuni dubbi che avevo riguardo lo sviluppo agile in consulenza. È molto interessante come il team di cui fa parte Alessandro abbia in qualche modo potuto <strong>segregare il proprio dominio applicativo</strong> rispetto ai produttori delle API (ovvero gli sviluppatori backend dello stesso team); le domande alla fine hanno fioccato, e gli argomenti delle questioni poste sono stati tra i più disparati: dalla compilazione del bundle al processo agile del team<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup>. Sicuramente è stata anche un’occasione notevole per mettere alla prova un framework di questo tipo su progetti che non siano la solita todo app, ma qualcosa di <strong>molto più reale</strong> (dove, ahimé, il <strong>rischio di farsi male</strong> aumenta esponenzialmente).</p>
+
+<p>Guido invece ci ha presentato varie <strong>tecniche per gestire il lazy loading</strong> delle immagini nel nostro sito. Ancora una volta abbiamo avuto un talk “no-slides”, con live coding e tutto il resto: Guido mi fa impazzire, perché ogni volta che porta un talk del genere fa delle cose assurde, come quando ha scritto un Virtual DOM senza colpo ferire. Anche questo talk è stato pieno di spunti, dato che non solo nella prima parte ci siamo concentrati molto sulle <strong>performance di caricamento</strong>, ma nella seconda abbiamo anche analizzato <strong>tecniche per la produzione di placeholder</strong> leggermente più impattanti dal punto di vista delle performance che però siano decisamente più belli a vedersi.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>Nessuna fetta di pandoro è stata mangiata a RomaJS in questo meeting, è un’idea che come tutte le idee veramente buone mi è venuta troppo tardi. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>Alessandro, hai svicolato sul “cosa fanno le altre 30 persone” ma noi non ti daremo mai tregua 😈 <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/page/17"><i class="fa fa-chevron-circle-left"></i></a>
+  
+  
+    
+      <a class="pagination-item newer" href="/page/15"><i class="fa fa-chevron-circle-right"></i></a>
+    
+  
+</div>
+
+
+      <div class="footer">
+        <p>
+          &copy; Grab The Blaster is brought to you by Alessio Biancalana with <a href="http://jekyllrb.com/">Jekyll</a> and much ♥, under <a href="https://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC</a>.
+        </p>
+        <form class="search-form" action="/search" method="get">
+          <input type="text" placeholder="Cerca →" name="query">
+        </form>
+      </div>
+      <div class="webring-container">
+        <webring-banner>
+          <p>Member of <a href="https://retronerds.netlify.app"></a></p>
+          <a href="https://retronerds.netlify.app/prev">Previous</a>
+          <a href="https://retronerds.netlify.app/random">Random</a>
+          <a href="https://retronerds.netlify.app/next">Next</a>
+        </webring-banner>
+        <script async src="https://retronerds.netlify.app/embed.js" charset="utf-8"></script>
+      </div>
+    </div>
+
+  </body>
+</html>

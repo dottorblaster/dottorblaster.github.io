@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <link rel="canonical" href="/2014/06/telegram-linux-arriva-sigram-finalmente/" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- Enable Graph API for Facebook integration -->
+  <meta content="Grab The Blaster" property="og:site_name">
+  
+    <meta content="Telegram per Linux: arriva Sigram (finalmente)" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="Già ho avuto modo di esprimermi molto favorevolmente nei confronti di Telegram, che al tempo dell'ormai &quot;storico&quot; down di Whatsapp aveva preso il volo come l'alternativa per la messaggistica più gettonata. Nonostante i dubbi sulla sua politica per quanto riguarda l'open source e la privacy degli utenti, comunque l'avevo reputato decisamente più sicuro del concorrente Whatsapp e personalmente ho avuto modo di apprezzare la possibilità di avere delle API pubbliche che permettessero lo..." property="og:description">
+  
+  
+    <meta content="https://dottorblaster.it/2014/06/telegram-linux-arriva-sigram-finalmente/" property="og:url">
+  
+  
+    <meta content="2014-06-18T09:39:09+00:00" property="article:published_time">
+    <meta content="https://dottorblaster.it/about/" property="article:author">
+    <meta content="https://dottorblaster.it/opengraph/72ee50bba9d723aa5ae3c04fba66281c6c7b612e.png" property="og:image">
+  
+  
+    
+    <meta content="Linux" property="article:section">
+    
+  
+  
+    
+    <meta content="open source" property="article:tag">
+    
+    <meta content="web" property="article:tag">
+    
+    <meta content="telegram" property="article:tag">
+    
+    <meta content="whatsapp" property="article:tag">
+    
+    <meta content="messaging" property="article:tag">
+    
+  
+
+  <!--   Enable Twitter Cards support through metadata, thanks to http://davidensinger.com/2013/04/supporting-twitter-cards-with-jekyll/ -->
+<!--   <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@site_username">
+  <meta name="twitter:creator" content="@creator_username">
+  
+    <meta name="twitter:title" content="Telegram per Linux: arriva Sigram (finalmente)">
+  
+  
+    <meta name="twitter:url" content="https://dottorblaster.it/2014/06/telegram-linux-arriva-sigram-finalmente/">
+   -->
+  <!-- This is from @stammy -->
+<!--   <meta name="twitter:description" content="
+Già ho avuto modo di esprimermi molto favorevolmente nei confronti di Telegram, che al tempo dell'ormai &quot;storico&quot; down di Whatsapp aveva preso il volo come l'alternativa per la messaggis...">
+  
+    <meta name="twitter:image:src" content="https://dottorblaster.it/path/to/image/logo.png">
+    -->
+
+  <title>
+    
+      Telegram per Linux: arriva Sigram (finalmente) &middot; Grab The Blaster
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/grabtheblaster.css">
+  <link rel="stylesheet" href="/public/font-awesome/css/font-awesome.min.css">
+
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700italic,700,400italic' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,700' rel='stylesheet' type='text/css' />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title="" href="https://dottorblaster.it/feed">
+</head>
+
+
+  <body>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=81489295682&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="container content">
+      <div class="masthead">
+        <h3 class="masthead-title">
+          <img src="/public/avatar-blaster.png" alt="Alessio Biancalana">
+          <a href="/" title="Home page">Grab The Blaster</a>
+          <small>di Alessio Biancalana</small>
+        </h3>
+        <div class="social-icons"><a href="/about/" title="About Me"><i class="fa fa-user-circle-o"></i></a> <a href="https://twitter.com/dottorblaster" title="Twitter - @dottorblaster"><i class="fa fa-twitter"></i></a> <a href="https://github.com/dottorblaster" title="GitHub - dottorblaster"><i class="fa fa-github"></i></a></div>
+      </div>
+
+      <div class="post">
+  <h1 class="post-title">Telegram per Linux: arriva Sigram (finalmente)</h1>
+  <span class="post-date">18 Jun 2014</span>
+  <p><img class="aligncenter" src="http://www.labs.sialan.org/sites/sialan-projects/files/sigram-file-sending.png" alt="Sigram, Telegram per Linux" width="615" height="615" /></p>
+<p>Già ho avuto modo di <strong>esprimermi molto favorevolmente</strong> nei confronti di <a href="http://dottorblaster.it/2014/03/telegram-pro-e-contro/">Telegram</a>, che al tempo dell'ormai "storico" down di <strong>Whatsapp</strong> aveva preso il volo come l'alternativa per la messaggistica più gettonata. Nonostante i dubbi sulla sua politica per quanto riguarda l'<strong>open source</strong> e la privacy degli utenti, comunque l'avevo reputato decisamente più sicuro del concorrente Whatsapp e personalmente ho avuto modo di apprezzare la possibilità di avere delle <strong>API pubbliche</strong> che permettessero lo sviluppo di <strong>client di terze parti</strong>.</p>
+<p><a href="https://itunes.apple.com/it/app/messenger-for-telegram/id747648890?mt=12">Telegram per Mac</a> è un gran software, con il quale mi sono trovato piuttosto bene negli scorsi mesi, ma sinceramente lavorando la stragrande maggioranza del tempo sul mio <strong>desktop Linux</strong> (si applari, avete sentito bene) ho sentito la mancanza di un client nativo per questa piattaforma, potendo solo fare affidamento su <a href="http://zhukov.github.io/webogram/">Webogram</a>, un client web-based di cui è disponibile anche l'<strong>app per Chrome</strong>.</p>
+<p>Per fortuna, come ho letto su <a href="http://feedproxy.google.com/~r/webupd8/~3/YS6MHN9hBeE/sigram-native-linux-desktop-telegram.html">WebUpd8</a>, è stato sviluppato <a href="http://labs.sialan.org/projects/sigram">Sigram</a>, un <strong>client per Telegram che gira su Linux</strong> e utilizza tutte le mie tecnologie preferite:</p>
+<ul>
+<li>C;</li>
+<li>C++;</li>
+<li>Qt;</li>
+<li>QML.</li>
+</ul>
+<p>Praticamente un sogno a occhi aperti per chi ama le <strong>librerie Qt</strong> - e perché no, anche la loro portabilità. L'interfaccia non è nemmeno malaccio, giocoforza <strong>QML</strong> rende tutto il software un po' <strong>webbarolo</strong> e il gusto degli sviluppatori, evidentemente deformato da eventuali esperienze in Silicon Valley (se non sono dei residenti), ha fatto si che implementassero <strong>questa UI flattona</strong> (neologismi come se piovesse oggi eh) che però non si accorda molto bene con Unity o con qualsiasi ambiente desktop presente su Linux. Forse con <strong>KDE</strong> va un po' meglio, ma siamo lì.</p>
+<p>Per quanto riguarda l'installazione, in maniera molto spartana, dagli sviluppatori vengono forniti dei <strong>pacchetti .deb</strong> che dovrebbero andar bene sia su Ubuntu che su Debian. Viceversa, per le altre distribuzioni, mentre alcune non sono supportate, per le più popolari Fedora (e OpenSUSE?) e Arch Linux abbiamo una <strong>assortimento non ufficiale di RPM e PKGBUILD</strong>.</p>
+<p>Nel complesso, sono molto soddisfatto. Un grande <strong>grazie</strong> agli sviluppatori, e un <strong>buon Telegram</strong> come sempre a tutti.</p>
+
+</div>
+
+<div class="social-section">
+  <div class="fb-like" data-href="/2014/06/telegram-linux-arriva-sigram-finalmente/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-via="dottorblaster" data-lang="it" data-dnt="true">Tweet</a>
+</div>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'blasterhome'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/06/domain-modeling-made-functional-recensione/">
+            Recensione: Domain Modeling Made Functional, di Scott Wlaschin
+            <small>08 Jun 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/05/piccolo-kubernetes-production-ready-k3s/">
+            Kubernetes production-ready in piccolo: deployare un mini-cluster K3s
+            <small>18 May 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/04/adoro-kubernetes/">
+            Io adoro Kubernetes
+            <small>25 Apr 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+      <div class="footer">
+        <p>
+          &copy; Grab The Blaster is brought to you by Alessio Biancalana with <a href="http://jekyllrb.com/">Jekyll</a> and much ♥, under <a href="https://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC</a>.
+        </p>
+        <form class="search-form" action="/search" method="get">
+          <input type="text" placeholder="Cerca →" name="query">
+        </form>
+      </div>
+      <div class="webring-container">
+        <webring-banner>
+          <p>Member of <a href="https://retronerds.netlify.app"></a></p>
+          <a href="https://retronerds.netlify.app/prev">Previous</a>
+          <a href="https://retronerds.netlify.app/random">Random</a>
+          <a href="https://retronerds.netlify.app/next">Next</a>
+        </webring-banner>
+        <script async src="https://retronerds.netlify.app/embed.js" charset="utf-8"></script>
+      </div>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <link rel="canonical" href="/page/32/" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- Enable Graph API for Facebook integration -->
+  <meta content="Grab The Blaster" property="og:site_name">
+  
+    <meta content="Home" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="Un blog nerd il giusto di Alessio Biancalana" property="og:description">
+  
+  
+    <meta content="https://dottorblaster.it/page/32/" property="og:url">
+  
+  
+  
+  
+
+  <!--   Enable Twitter Cards support through metadata, thanks to http://davidensinger.com/2013/04/supporting-twitter-cards-with-jekyll/ -->
+<!--   <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@site_username">
+  <meta name="twitter:creator" content="@creator_username">
+  
+    <meta name="twitter:title" content="Home">
+  
+  
+    <meta name="twitter:url" content="https://dottorblaster.it/page/32/">
+   -->
+  <!-- This is from @stammy -->
+<!--   <meta name="twitter:description" content="
+  {% for post in paginator.posts %}
+  
+    {% if post.layout == &quot;link&quot; %}
+      
+        
+          {{ post.title }}
+        
+        
+      
+    {% else %}
+      
+        
+          {{ ...">
+  
+    <meta name="twitter:image:src" content="https://dottorblaster.it/path/to/image/logo.png">
+    -->
+
+  <title>
+    
+      Grab The Blaster &middot; di Alessio Biancalana
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/grabtheblaster.css">
+  <link rel="stylesheet" href="/public/font-awesome/css/font-awesome.min.css">
+
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700italic,700,400italic' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,700' rel='stylesheet' type='text/css' />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title="" href="https://dottorblaster.it/feed">
+</head>
+
+
+  <body>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=81489295682&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="container content">
+      <div class="masthead">
+        <h3 class="masthead-title">
+          <img src="/public/avatar-blaster.png" alt="Alessio Biancalana">
+          <a href="/" title="Home page">Grab The Blaster</a>
+          <small>di Alessio Biancalana</small>
+        </h3>
+        <div class="social-icons"><a href="/about/" title="About Me"><i class="fa fa-user-circle-o"></i></a> <a href="https://twitter.com/dottorblaster" title="Twitter - @dottorblaster"><i class="fa fa-twitter"></i></a> <a href="https://github.com/dottorblaster" title="GitHub - dottorblaster"><i class="fa fa-github"></i></a></div>
+      </div>
+
+      <div class="posts">
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2016/08/intel-linux-tearing/" title="Intel, Linux e il mistero del tearing - di Alessio Biancalana">
+          Intel, Linux e il mistero del tearing
+        </a>
+      </h1>
+      <span class="post-date">28 Aug 2016</span>
+    
+
+    <p><em>(Ovvero, nel caso specifico, come velocizzare le animazioni di GNOME Shell)</em></p>
+
+<p>Per la serie “non si finisce mai di imparare”, torniamo a parlare di <strong>Linux</strong>; al rientro dalla vacanze, nonostante l’esperienza più che discreta con <a href="http://dottorblaster.it/2016/08/macos-resta-al-palo-windows-10-mi-stupisce/">Windows 10</a>, ho deciso di dare una piallata a KDE sulla mia <strong>Arch Linux</strong> per dare una possibilità a <strong>GNOME Shell</strong>, dato che in molti nonostante io non fossi particolarmente convinto me ne hanno parlato più che bene.</p>
+
+<p>A questo credo che dedicherò un post a parte; quello che invece voglio trattare in questo momento è una “feature” di cui sono venuto a conoscenza solo oggi riguardante i <strong>driver grafici Intel su Linux</strong>, che hanno cominciato a darmi qualche noia con <strong>GNOME</strong>; nello specifico con la Shell ho sempre notato che le animazioni erano veramente poco fluide, con cali di FPS a manetta durante qualsiasi effetto grafico.</p>
+
+<p>Avevo deciso di classificare la cosa come un “non sei tu, sono io”, ma oggi girovagando per l’internet mi sono imbattuto in un tizio sul forum di Arch che aveva lo stesso problema, al quale hanno consigliato di puntare il dito verso l’<strong>opzione TearFree</strong> dei driver, misteriosamente disabilitata out of the box nel mio e nel suo caso.</p>
+
+<p>Dopo un giretto su <a href="https://wiki.archlinux.org/index.php/Intel_graphics#Tear-free_video">Arch Wiki</a> ho trovato quello che mi serviva; ho aperto il <strong>file di configurazione</strong> dei miei driver (vuoto):</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>vim /etc/X11/xorg.conf.d/20-intel.conf
+</code></pre></div></div>
+
+<p>E ho riempito il file con questa roba:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Section <span class="s2">"Device"</span>
+	Identifier  <span class="s2">"Intel Graphics"</span>
+	Driver      <span class="s2">"intel"</span>
+	Option      <span class="s2">"TearFree"</span>    <span class="s2">"true"</span>
+EndSection
+</code></pre></div></div>
+
+<p>E al riavvio, magicamente, GNOME è diventato <strong>performante come un ghepardo</strong>.</p>
+
+<p>Quello che non capisco, è come questa roba sia <strong>disabilitata out of the box</strong>, visto l’incremento di FPS pauroso che mi ha offerto praticamente dal nulla. Su Arch Wiki c’è scritto che con il <strong>DRI</strong> abilitato anche TearFree dovrebbe essere abilitato di default. Ovviamente sulla mia macchina manco l’ombra.</p>
+
+<p>Tutto è bene, quel che finisce bene.</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h2 class="post-title post-title-link">
+        <a href="http://docmanhattan.blogspot.it/2016/08/come-era-internet-nel-1995.html">
+          Internet nel 1995, vista da Topolino
+        </a>
+        <a href="/2016/08/internet-topolino/" title="permalink: Internet nel 1995, vista da Topolino di Alessio Biancalana"><i class="fa fa-comments-o icon-commentary"></i></a>
+      </h2>
+    
+
+    <p>Il <strong>Dottor Manhattan</strong> sul suo blog racconta l’Internet del 1995 vista da Topolino. Un tuffo nel passato:</p>
+
+<blockquote>
+  <p>Nel bollino rosso si segnala il rischio coppini di cui sopra, perché prima dell’avvento delle tariffe flat si pagavano gli scatti della telefonata tra casa propria e “il nodo di collegamento alla rete”.</p>
+</blockquote>
+
+<p>E quanti <strong>coppini</strong> ho ricevuto, io da <strong>mamma Blaster</strong>, che si è accollata certe bollette astronomiche senza mai tirare un fiato :°-)</p>
+
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2016/08/chrome-apps-farewell/" title="Farewell Chrome Apps - di Alessio Biancalana">
+          Farewell Chrome Apps
+        </a>
+      </h1>
+      <span class="post-date">20 Aug 2016</span>
+    
+
+    <p><img src="https://c2.staticflickr.com/8/7281/27519596232_09ffe1bded_k.jpg" alt="Google Chrome" /></p>
+
+<p>E così, è successo: <strong>Google</strong> ha iniziato a dire ufficialmente che nel giro di un paio d’anni <a href="https://www.engadget.com/2016/08/19/google-ending-chrome-apps-for-mac-and-windows/">eliminerà la possibilità di eseguire le cosiddette Chrome Apps</a>, ovvero <strong>applicazioni all’interno di Google Chrome</strong> – almeno per quanto riguarda Windows, macOS e Linux. Chiaramente questa possibilità penso rimarrà confinata al loro <strong>ChromeOS</strong>.</p>
+
+<p>ChromeOS sul quale si continua a lavorare, e per il quale è stata annunciata proprio poche ore fa una <a href="https://www.engadget.com/2016/08/19/unlock-chrome-os-with-pin/">nuova feature</a> (il PIN di sblocco al posto della password di Google); questo a riprova del fatto che secondo me la strategia di <strong>centralizzare in Chrome</strong> le operazioni degli utenti da parte di Google è <strong>fallita miseramente</strong>.</p>
+
+<h3 id="chrome-runtime-vs-electron">Chrome runtime VS Electron</h3>
+<p>Col tempo infatti ha preso piede sì l’idea di <strong>eseguire delle webapp su desktop</strong>, ma in modo molto diverso da come Google aveva concepito la cosa; mentre a Mountain View si cercava di rendere Chrome il motore immobile dell’ambiente desktop, legando di fatto l’esecuzione delle applicazioni a quella del browser, anche se in finestre separate, GitHub ha tirato fuori dal cilindro un suo <strong>container agnostico</strong> per applicazioni web.</p>
+
+<p>Il risultato usando <strong>Electron</strong> è molto meglio, dato che non è in nessun modo legato al browser in uso, e le applicazioni risultano molto, molto meglio integrate nel sistema operativo. Così l’idea delle <strong>Chrome Apps</strong> per macOS, Windows, Linux è andata a morire in favore di un sistema che a fronte di una omogeneità maggiore col sistema operativo e con l’ambiente desktop anziché col browser offre comunque un agnosticismo di fondo che consente di portare il codice su tutte le piattaforme senza troppi sbattimenti.</p>
+
+<h3 id="tutti-amano-i-runtime-a-nessuno-piace-il-contenitore">Tutti amano i runtime, a nessuno piace il contenitore</h3>
+<p>Secondo me le Chrome Apps (che per un periodo stavano prendendo piede) sono state uccise dai runtime per una ragione molto semplice: a tutti piace il runtime, mentre a nessuno piace vedere una <strong>webapp</strong> “vestita” da app desktop con così poca cura, e con così poca differenza rispetto al sito che la rappresenta.</p>
+
+<p>A me è sempre sembrata una presa in giro, e mentre le Chrome Apps cominciano ad essere allontanate persino dai loro creatori, i runtime simili ad Electron (addirittura compatbili con questo) crescono di numero: <a href="https://github.com/mozilla/positron">Mozilla</a> ha il suo, e <a href="http://dottorblaster.it/2016/06/epiphany-electron/">GNOME</a> agogna la possibilità di trasformare un pezzo di <strong>Epiphany</strong> in una shell simile.</p>
+
+<p>Di positivo c’è che trovo che <strong>Chrome</strong> stia tornando pian piano a fare solo il browser. Ed è una cosa di cui c’è da essere contenti.</p>
+
+<p><em>Photo courtesy of <a href="https://www.flickr.com/photos/thomashawk/27519596232/">Thomas Hawk</a></em></p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h2 class="post-title post-title-link">
+        <a href="https://auth0.com/blog/bootstrapping-a-react-project/">
+          Bootstrapping a React project
+        </a>
+        <a href="/2016/08/bootstrapping-a-react-project/" title="permalink: Bootstrapping a React project di Alessio Biancalana"><i class="fa fa-comments-o icon-commentary"></i></a>
+      </h2>
+    
+
+    <p>Effettivamente, dovrei cominciare a scrivere della mia esperienza con <strong>React</strong>, che in qualche coppia di settimane è diventata piuttosto estesa. Intanto però, mi annoto questo articolo sul blog di <strong>Auth0</strong> sul kickstart di un progetto con React, che può tornare utile.</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h2 class="post-title post-title-link">
+        <a href="https://azure.microsoft.com/en-us/blog/powershell-is-open-sourced-and-is-available-on-linux/">
+          PowerShell is open sourced and is available on Linux
+        </a>
+        <a href="/2016/08/powershell-linux-open-source/" title="permalink: PowerShell is open sourced and is available on Linux di Alessio Biancalana"><i class="fa fa-comments-o icon-commentary"></i></a>
+      </h2>
+    
+
+    <p><strong>PowerShell</strong> non solo è <strong>open source</strong> (possiamo vedere tutto il codice su <a href="https://github.com/PowerShell/PowerShell">GitHub</a>), ma possiamo installarla anche su Linux e macOS.</p>
+
+<blockquote>
+  <p>As we port PowerShell to Linux, we are making sure that we are a first class citizen on that platform. We fit in well with the architecture, idioms and existing tools. This was pretty easy as most of the original PowerShell team had deep Unix backgrounds and that shows in our design.</p>
+</blockquote>
+
+<p>A me come shell non piace tantissimo, ma sono un grande fan della disponibilità dei software su ogni piattaforma e della possibilità di ampia scelta. Non so cos’altro abbia in mente <strong>Microsoft</strong>, ma io posso solo fare i <strong>complimenti</strong>.</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/page/33"><i class="fa fa-chevron-circle-left"></i></a>
+  
+  
+    
+      <a class="pagination-item newer" href="/page/31"><i class="fa fa-chevron-circle-right"></i></a>
+    
+  
+</div>
+
+
+      <div class="footer">
+        <p>
+          &copy; Grab The Blaster is brought to you by Alessio Biancalana with <a href="http://jekyllrb.com/">Jekyll</a> and much ♥, under <a href="https://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC</a>.
+        </p>
+        <form class="search-form" action="/search" method="get">
+          <input type="text" placeholder="Cerca →" name="query">
+        </form>
+      </div>
+      <div class="webring-container">
+        <webring-banner>
+          <p>Member of <a href="https://retronerds.netlify.app"></a></p>
+          <a href="https://retronerds.netlify.app/prev">Previous</a>
+          <a href="https://retronerds.netlify.app/random">Random</a>
+          <a href="https://retronerds.netlify.app/next">Next</a>
+        </webring-banner>
+        <script async src="https://retronerds.netlify.app/embed.js" charset="utf-8"></script>
+      </div>
+    </div>
+
+  </body>
+</html>

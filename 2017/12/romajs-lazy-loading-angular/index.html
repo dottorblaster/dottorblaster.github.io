@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <link rel="canonical" href="/2017/12/romajs-lazy-loading-angular/" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- Enable Graph API for Facebook integration -->
+  <meta content="Grab The Blaster" property="og:site_name">
+  
+    <meta content="RomaJS natalizio, tra Angular su vasta scala e lazy loading" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="Che meraviglia le festività natalizie, e che c’è di meglio delle festività di Natale se non i meetup prefestivi? Ci si fa gli auguri, tra quei pochi che riescono a presenziare sfuggendo ai parenti, alle cene aziendali, agli eventi dove è del tutto assente il coding, e tra una fetta di pandoro e l’altra1 si parla di cose veramente interessanti. Questo mese abbiamo avuto due talk eccezionali:  “Angular su progetti da milioni di euro” di Alessandro Avolio,  “Image loading techniques” di Guido D’..." property="og:description">
+  
+  
+    <meta content="https://dottorblaster.it/2017/12/romajs-lazy-loading-angular/" property="og:url">
+  
+  
+    <meta content="2017-12-23T19:32:03+00:00" property="article:published_time">
+    <meta content="https://dottorblaster.it/about/" property="article:author">
+    <meta content="https://dottorblaster.it/opengraph/8633f00973cfbfbdbee8a7120c88a7f22a5d84b4.png" property="og:image">
+  
+  
+    
+    <meta content="Open Source" property="article:section">
+    
+  
+  
+    
+    <meta content="javascript" property="article:tag">
+    
+    <meta content="development" property="article:tag">
+    
+    <meta content="romajs" property="article:tag">
+    
+    <meta content="angular" property="article:tag">
+    
+  
+
+  <!--   Enable Twitter Cards support through metadata, thanks to http://davidensinger.com/2013/04/supporting-twitter-cards-with-jekyll/ -->
+<!--   <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@site_username">
+  <meta name="twitter:creator" content="@creator_username">
+  
+    <meta name="twitter:title" content="RomaJS natalizio, tra Angular su vasta scala e lazy loading">
+  
+  
+    <meta name="twitter:url" content="https://dottorblaster.it/2017/12/romajs-lazy-loading-angular/">
+   -->
+  <!-- This is from @stammy -->
+<!--   <meta name="twitter:description" content="Che meraviglia le festività natalizie, e che c’è di meglio delle festività di Natale se non i meetup prefestivi? Ci si fa gli auguri, tra quei pochi che riescono a presenziare sfuggendo ai parenti,...">
+  
+    <meta name="twitter:image:src" content="https://dottorblaster.it/path/to/image/logo.png">
+    -->
+
+  <title>
+    
+      RomaJS natalizio, tra Angular su vasta scala e lazy loading &middot; Grab The Blaster
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/grabtheblaster.css">
+  <link rel="stylesheet" href="/public/font-awesome/css/font-awesome.min.css">
+
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700italic,700,400italic' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,700' rel='stylesheet' type='text/css' />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title="" href="https://dottorblaster.it/feed">
+</head>
+
+
+  <body>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=81489295682&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="container content">
+      <div class="masthead">
+        <h3 class="masthead-title">
+          <img src="/public/avatar-blaster.png" alt="Alessio Biancalana">
+          <a href="/" title="Home page">Grab The Blaster</a>
+          <small>di Alessio Biancalana</small>
+        </h3>
+        <div class="social-icons"><a href="/about/" title="About Me"><i class="fa fa-user-circle-o"></i></a> <a href="https://twitter.com/dottorblaster" title="Twitter - @dottorblaster"><i class="fa fa-twitter"></i></a> <a href="https://github.com/dottorblaster" title="GitHub - dottorblaster"><i class="fa fa-github"></i></a></div>
+      </div>
+
+      <div class="post">
+  <h1 class="post-title">RomaJS natalizio, tra Angular su vasta scala e lazy loading</h1>
+  <span class="post-date">23 Dec 2017</span>
+  <p>Che meraviglia le festività natalizie, e che c’è di meglio delle festività di Natale se non i <strong>meetup prefestivi</strong>? Ci si fa gli auguri, tra quei pochi che riescono a presenziare sfuggendo ai parenti, alle cene aziendali, agli eventi dove è del tutto assente il coding, e tra una fetta di pandoro e l’altra<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> si parla di cose veramente interessanti. Questo mese abbiamo avuto due talk eccezionali:</p>
+
+<ul>
+  <li>“Angular su progetti da milioni di euro” di <strong>Alessandro Avolio</strong>,</li>
+  <li>“Image loading techniques” di <strong>Guido D’Orsi</strong>.</li>
+</ul>
+
+<p>Il talk di Alessandro, “Angular su progetti da milioni di euro”, è stato una conferma per alcuni aspetti, illuminante per altri. Mi ha dato spunto su alcune pratiche da introdurre nei prossimi progetti e mi ha chiarito alcuni dubbi che avevo riguardo lo sviluppo agile in consulenza. È molto interessante come il team di cui fa parte Alessandro abbia in qualche modo potuto <strong>segregare il proprio dominio applicativo</strong> rispetto ai produttori delle API (ovvero gli sviluppatori backend dello stesso team); le domande alla fine hanno fioccato, e gli argomenti delle questioni poste sono stati tra i più disparati: dalla compilazione del bundle al processo agile del team<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup>. Sicuramente è stata anche un’occasione notevole per mettere alla prova un framework di questo tipo su progetti che non siano la solita todo app, ma qualcosa di <strong>molto più reale</strong> (dove, ahimé, il <strong>rischio di farsi male</strong> aumenta esponenzialmente).</p>
+
+<p>Guido invece ci ha presentato varie <strong>tecniche per gestire il lazy loading</strong> delle immagini nel nostro sito. Ancora una volta abbiamo avuto un talk “no-slides”, con live coding e tutto il resto: Guido mi fa impazzire, perché ogni volta che porta un talk del genere fa delle cose assurde, come quando ha scritto un Virtual DOM senza colpo ferire. Anche questo talk è stato pieno di spunti, dato che non solo nella prima parte ci siamo concentrati molto sulle <strong>performance di caricamento</strong>, ma nella seconda abbiamo anche analizzato <strong>tecniche per la produzione di placeholder</strong> leggermente più impattanti dal punto di vista delle performance che però siano decisamente più belli a vedersi.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>Nessuna fetta di pandoro è stata mangiata a RomaJS in questo meeting, è un’idea che come tutte le idee veramente buone mi è venuta troppo tardi. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>Alessandro, hai svicolato sul “cosa fanno le altre 30 persone” ma noi non ti daremo mai tregua 😈 <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+</div>
+
+<div class="social-section">
+  <div class="fb-like" data-href="/2017/12/romajs-lazy-loading-angular/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-via="dottorblaster" data-lang="it" data-dnt="true">Tweet</a>
+</div>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'blasterhome'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/06/domain-modeling-made-functional-recensione/">
+            Recensione: Domain Modeling Made Functional, di Scott Wlaschin
+            <small>08 Jun 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/05/piccolo-kubernetes-production-ready-k3s/">
+            Kubernetes production-ready in piccolo: deployare un mini-cluster K3s
+            <small>18 May 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/04/adoro-kubernetes/">
+            Io adoro Kubernetes
+            <small>25 Apr 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+      <div class="footer">
+        <p>
+          &copy; Grab The Blaster is brought to you by Alessio Biancalana with <a href="http://jekyllrb.com/">Jekyll</a> and much ♥, under <a href="https://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC</a>.
+        </p>
+        <form class="search-form" action="/search" method="get">
+          <input type="text" placeholder="Cerca →" name="query">
+        </form>
+      </div>
+      <div class="webring-container">
+        <webring-banner>
+          <p>Member of <a href="https://retronerds.netlify.app"></a></p>
+          <a href="https://retronerds.netlify.app/prev">Previous</a>
+          <a href="https://retronerds.netlify.app/random">Random</a>
+          <a href="https://retronerds.netlify.app/next">Next</a>
+        </webring-banner>
+        <script async src="https://retronerds.netlify.app/embed.js" charset="utf-8"></script>
+      </div>
+    </div>
+
+  </body>
+</html>

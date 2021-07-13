@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <link rel="canonical" href="/2017/11/codemotion-milan-2017-retrospective/" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- Enable Graph API for Facebook integration -->
+  <meta content="Grab The Blaster" property="og:site_name">
+  
+    <meta content="Codemotion Milan 2017: siamo tutti una unica grande famiglia (serverless) 💻 🚀 🏎" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="… e il cui albero genealogico è memorizzato su una blockchain. Ma scherzi a parte 😎Sono passate a malapena ventiquattro ore dal mio ritorno a casa dopo questo Codemotion Milan 2017; ho fatto fatica a cominciare la scrittura di questa retrospettiva per il semplice fatto che in due giorni sono successe tante, troppe cose – e insieme ai “fatti” ci metto anche tutte le informazioni da metabolizzare e rielaborare. In ogni caso, sono veramente grato a tutto l’ecosistema italiano del software develo..." property="og:description">
+  
+  
+    <meta content="https://dottorblaster.it/2017/11/codemotion-milan-2017-retrospective/" property="og:url">
+  
+  
+    <meta content="2017-11-13T07:40:44+00:00" property="article:published_time">
+    <meta content="https://dottorblaster.it/about/" property="article:author">
+    <meta content="https://dottorblaster.it/opengraph/4a073fcd725a5ac9cfc41691afaa72f1bc9ebe6e.png" property="og:image">
+  
+  
+    
+    <meta content="Development" property="article:section">
+    
+  
+  
+    
+    <meta content="codemotion" property="article:tag">
+    
+    <meta content="codemotion milan" property="article:tag">
+    
+    <meta content="serverless" property="article:tag">
+    
+    <meta content="blockchain" property="article:tag">
+    
+    <meta content="conferenze" property="article:tag">
+    
+    <meta content="cicinelli non fa ridere" property="article:tag">
+    
+    <meta content="devops" property="article:tag">
+    
+    <meta content="docker" property="article:tag">
+    
+  
+
+  <!--   Enable Twitter Cards support through metadata, thanks to http://davidensinger.com/2013/04/supporting-twitter-cards-with-jekyll/ -->
+<!--   <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@site_username">
+  <meta name="twitter:creator" content="@creator_username">
+  
+    <meta name="twitter:title" content="Codemotion Milan 2017: siamo tutti una unica grande famiglia (serverless) 💻 🚀 🏎">
+  
+  
+    <meta name="twitter:url" content="https://dottorblaster.it/2017/11/codemotion-milan-2017-retrospective/">
+   -->
+  <!-- This is from @stammy -->
+<!--   <meta name="twitter:description" content="… e il cui albero genealogico è memorizzato su una blockchain. Ma scherzi a parte 😎
+
+
+
+Sono passate a malapena ventiquattro ore dal mio ritorno a casa dopo questo Codemotion Milan 2017; ho fatto fa...">
+  
+    <meta name="twitter:image:src" content="https://dottorblaster.it/path/to/image/logo.png">
+    -->
+
+  <title>
+    
+      Codemotion Milan 2017: siamo tutti una unica grande famiglia (serverless) 💻 🚀 🏎 &middot; Grab The Blaster
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/grabtheblaster.css">
+  <link rel="stylesheet" href="/public/font-awesome/css/font-awesome.min.css">
+
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700italic,700,400italic' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,700' rel='stylesheet' type='text/css' />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title="" href="https://dottorblaster.it/feed">
+</head>
+
+
+  <body>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=81489295682&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="container content">
+      <div class="masthead">
+        <h3 class="masthead-title">
+          <img src="/public/avatar-blaster.png" alt="Alessio Biancalana">
+          <a href="/" title="Home page">Grab The Blaster</a>
+          <small>di Alessio Biancalana</small>
+        </h3>
+        <div class="social-icons"><a href="/about/" title="About Me"><i class="fa fa-user-circle-o"></i></a> <a href="https://twitter.com/dottorblaster" title="Twitter - @dottorblaster"><i class="fa fa-twitter"></i></a> <a href="https://github.com/dottorblaster" title="GitHub - dottorblaster"><i class="fa fa-github"></i></a></div>
+      </div>
+
+      <div class="post">
+  <h1 class="post-title">Codemotion Milan 2017: siamo tutti una unica grande famiglia (serverless) 💻 🚀 🏎</h1>
+  <span class="post-date">13 Nov 2017</span>
+  <p>… <em>e il cui albero genealogico è memorizzato su una blockchain</em>. Ma scherzi a parte 😎</p>
+
+<p><img src="https://gitlab.com/dottorblaster/blog-images/raw/master/images/codemotion2017milan/23380156_1683594904996144_3433341846844884429_n.jpg" alt="Codemotion Milan 2017" /></p>
+
+<p>Sono passate a malapena ventiquattro ore dal mio ritorno a casa dopo questo <strong>Codemotion Milan 2017</strong>; ho fatto fatica a cominciare la scrittura di questa retrospettiva per il semplice fatto che in due giorni sono successe tante, troppe cose – e insieme ai “fatti” ci metto anche tutte le informazioni da metabolizzare e rielaborare. In ogni caso, sono veramente grato a tutto l’ecosistema italiano del software development per avermi regalato due giorni da sogno.</p>
+
+<h3 id="giorno-1">Giorno 1</h3>
+<p>Il primo impatto che ho avuto con Codemotion Milano è stato a causa della nuova location di quest’anno: passata la fila per il badge mi sono trovato catapultato in qualcosa di nuovo, ossia il <strong>BASE Milano</strong>. Un posto decisamente diverso dal Politecnico che ha ospitato la conferenza sino ad ora. Essendo un gigantesco open space, non pensavo che avrebbe funzionato bene suddividere lo spazio tramite “enclosures” per poi dare ai partecipanti un paio di cuffie a testa per ascoltare gli speaker in mezzo alla confusione generale; e invece dopo la keynote session in cui guardavo la location abbastanza sfiduciato, devo dire che con quelle cuffie abbiamo ingranato alla grande.</p>
+
+<p>A proposito di keynote session, la keynote è stata spettacolare: innanzi tutto un applauso ai ragazzi di Codemotion per averci portato Salvatore “antirez” Sanfilippo, e un applauso ad <strong>antirez</strong> stesso, che con i suoi feedback su <strong>8 anni di sviluppo di Redis</strong> mi ha fatto veramente emozionare parecchio. Ho avuto occasione di parlarci anche in separata sede, sia in caffetteria che durante la cena speaker (grazie a Francesco per avermi portato con sé!), ed è una persona di una saggezza infinita, di un’intelligenza rara, e di una purezza che in altri rockstar developer di oggi fatico a trovare. Mi ha colpito, e devo dire che le chiacchierate con lui mi hanno aperto la mente su svariati temi.</p>
+
+<p><img src="https://gitlab.com/dottorblaster/blog-images/raw/master/images/codemotion2017milan/antirez.jpg" alt="Io, antirez e il buon Luca Ronca" /></p>
+
+<p>Proseguendo, ho seguito <strong>Luciano Mammino</strong> con il suo “Cracking JWT tokens: a tale of magic, Node.JS and parallel computing”: un talk veramente ben confezionato, non proprio entry level ma nemmeno così esoterico che ha mostrato alcune vulnerabilità relative a <strong>JSON Web Token</strong>, specialmente per quanto concerne i secret. Usate sempre secret robusti e memorizzati nei vault giusti!</p>
+
+<p>Nei due giorni, a partire da dopo il talk di Luciano, ho persino avuto degli incontri più e meno ravvicinati con i ragazzi del Team per la Trasformazione Digitale del governo italiano. Nello specifico ho incontrato più da vicino <strong>Riccardo Iaconelli</strong>, mentre il buon Alessandro Ranellucci l’ho solo visto da lontano, e mi è piaciuto molto che durante un evento del genere i nostri eroi abbiano trovato il modo di ritagliarsi un momento per raccogliere proposte dai community leader che erano presenti.</p>
+
+<p>Dopo il pranzo del primo giorno ho seguito <strong>Lorenzo Barbieri</strong> di Microsoft che parlava di Functions As A Service su Azure, e malgrado il suo talk mi sia piaciuto molto l’ho trovato un po’ troppo orientato ai CTO e poco ai developer smaliziati. Mi rendo conto che c’era poco tempo per spiegare tutto, ma un po’ più di codice e qualche esempio visto più profondamente mi avrebbe fatto piacere. A parte il contenuto su cui per forza di cose immagino abbia dovuto tagliare, per me Lorenzo rimane uno dei punti di riferimento per quanto riguarda le tecniche di public speaking 😸</p>
+
+<p>Poi è stato il turno di <strong>James Ferguson</strong>, direttamente da SkyScanner: il suo “A design system. A year in review.” è stato una bella sorpresa, perché ha affrontato alcuni temi che sto tentando di sviscerare anche in azienda, e mi ha dato dei consigli utilissimi, come il fatto di gestire il proprio design system tramite <strong>un’architettura monorepo basata su Lerna e Storybook</strong>. In ogni caso, è stato interessante vedere che per adottare un design system in maniera sensata, il primo ostacolo da superare sia proprio la mente delle persone, e in quello può sicuramente servire un bravo facilitatore che riesca a mettere tutti sul binario giusto per cooperare.</p>
+
+<p><img src="https://gitlab.com/dottorblaster/blog-images/raw/master/images/codemotion2017milan/23517880_1682809125074722_6683526407323154081_n.jpg" alt="Matteo Manchi: React Native in practice" /></p>
+
+<p>Subito dopo è stata la volta del mio amichetto <strong>Matteo “takeno” Manchi</strong>, con “React Native for multi-platform mobile applications”. Che dire? Un talk essenziale, fatto bene, che fa capire le potenzialità di <strong>React Native</strong> a chi non lo conosce, e soprattutto a chi è interessato ad adottarlo per un uso aziendale. Di più non posso dire, o mi perderei in lodi dato che Matteo ha una dialettica veramente affine alla mia, con cui riesce sempre a catturarmi (e spero a catturare anche gli altri!).</p>
+
+<p>Dopodiché, il meetup dei meetup con <strong>Andrea Ferlito a fare da boss della situa</strong>. 🚀</p>
+
+<p>E dopo ancora, la cena speaker durante la quale abbiamo formato un <strong>meraviglioso manipolo</strong> con Matteo Manchi (again! Ma ve l’ho detto che gli voglio bene), Marco Liberati, Francesco “de-vasto” Malatesta e Mattia “raibaz” Tommasone, ascoltando <strong>antirez che parlava di università, di Golang, e di un sacco di altre cose</strong>. ❤️</p>
+
+<h3 id="giorno-2">Giorno 2</h3>
+<p>Il secondo giorno ancora un po’ insonnolito ho seguito <strong>Justin Cormack</strong> di Docker con “The 10 Container Security Tricks That Will Help You Sleep At Night”: alcuni consigli erano un po’ triti, altri veramente non banali. Oltretutto Justin è stato disponibile per le domande anche dopo durante il networking. In particolare, tra i consigli ho apprezzato molto quello sul <strong>distruggere spesso i container</strong> in modo che attaccanti malevoli non abbiano la possibilità di aprire una backdoor di lunga durata bensì debbano sempre riprovare a sfruttare le falle (falle che con container circa “rolling release” vengono sempre patchate, oltretutto).</p>
+
+<p>Rafal Gancarz, con “Serverless for the Enterprise”, era partito benissimo, poi nonostante abbia mantenuto il suo talk su un livello più che decente, ha deciso di infilare dopo un hello world con Amazon Lambda il suo personale punto di vista sul catalogo serverless di Amazon, prodotto per prodotto. Diciamo che per quanto abbia provato a seguirlo e per quanto la qualità fosse comunque presente, la parte centrale del talk è stata un po’ sterile.</p>
+
+<p>Uno slot l’ho saltato per andare a pranzo con la mia amica Alice ❤️</p>
+
+<p>E sono tornato a bomba con il talk di <strong>Francescone Malatesta</strong>: “Costruire una Community: ‘What You Give is What You Get’”, dove il mio stimatissimo esimio collega ha messo in luce i vantaggi di partecipare alla vita delle community che troviamo sulla nostra strada durante la nostra vita professionale e non. Sinceramente mi è anche scesa la lacrimuccia quando ha annunciato di voler lasciare Laravel-Italia. Dopodiché tra una chiacchiera e l’altra ho dato il mio arrivederci allo zio Chicco, e avendo fatto un ultimo giro per salutare tutti gli amici sono corso in stazione per il treno, per andare a casa.</p>
+
+<p>Alla fine di tutto questo, ho <strong>solo un consiglio</strong>, rivolto specialmente agli speaker che hanno affrontato le tematiche blockchain e serverless computing: fateci vedere casi reali. Ci siamo rotti il 🍆 di assistere a talk che sembrano la versione un po’ più lunga e discorsiva di “Serverless 101”, e come funziona una blockchain lo sappiamo da un bel po’, tra proof of work e distributed consensus. Fateci vedere applicazioni reali, ve ne prego. Casi di studio, codice, e così via: vogliamo vedervi mettere le mani tra lo sporco, si chiama Codemotion, non Slidemotion, quindi vedete di darvi una smossa e per la “big thing” dell’anno prossimo (tanto ‘sta roba sarà già passata di moda) portate qualcosa di ciccione e di impegnativo da farci digerire.</p>
+
+<p>Gli amici che mi hanno fatto passare due giorni memorabili si meritano una menzione speciale qui sotto (e per chi non ci fosse, sappiate che la cosa è <em>puramente intenzionale</em> (scherzo)):</p>
+
+<ul>
+  <li>Luciano Mammino (ti devo ancora un caffè mortacci mia! Giuro che la prossima volta mando a cagare tutti quelli che ci interrompono)</li>
+  <li>Marco Vito “mavimo” Moscaritolo</li>
+  <li>Francesco Malatesta (again)</li>
+  <li>Matteo “takeno” Manchi (again)</li>
+  <li>Marco Liberati (again)</li>
+  <li>Alessandro “lifeisfoo” Miliucci</li>
+  <li>Giuseppe “sanfra” Sanfrancesco</li>
+  <li>Daniele “wifau” Faugiana</li>
+  <li>Enrico “wolf4ood” Risa</li>
+  <li>Niko “mogui” Usai</li>
+  <li>Angelo Quercioli</li>
+  <li>Roberto “rebtoor” Alfieri</li>
+  <li>Luca “zeta3” Annunziata</li>
+  <li>Luca Ronca, Davide Barbesino, Gabriele Genta e tutta la stupenda ciurma di AdEspresso</li>
+</ul>
+
+<p>Ad maiora! 🚀</p>
+
+</div>
+
+<div class="social-section">
+  <div class="fb-like" data-href="/2017/11/codemotion-milan-2017-retrospective/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-via="dottorblaster" data-lang="it" data-dnt="true">Tweet</a>
+</div>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'blasterhome'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/06/domain-modeling-made-functional-recensione/">
+            Recensione: Domain Modeling Made Functional, di Scott Wlaschin
+            <small>08 Jun 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/05/piccolo-kubernetes-production-ready-k3s/">
+            Kubernetes production-ready in piccolo: deployare un mini-cluster K3s
+            <small>18 May 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/04/adoro-kubernetes/">
+            Io adoro Kubernetes
+            <small>25 Apr 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+      <div class="footer">
+        <p>
+          &copy; Grab The Blaster is brought to you by Alessio Biancalana with <a href="http://jekyllrb.com/">Jekyll</a> and much ♥, under <a href="https://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC</a>.
+        </p>
+        <form class="search-form" action="/search" method="get">
+          <input type="text" placeholder="Cerca →" name="query">
+        </form>
+      </div>
+      <div class="webring-container">
+        <webring-banner>
+          <p>Member of <a href="https://retronerds.netlify.app"></a></p>
+          <a href="https://retronerds.netlify.app/prev">Previous</a>
+          <a href="https://retronerds.netlify.app/random">Random</a>
+          <a href="https://retronerds.netlify.app/next">Next</a>
+        </webring-banner>
+        <script async src="https://retronerds.netlify.app/embed.js" charset="utf-8"></script>
+      </div>
+    </div>
+
+  </body>
+</html>

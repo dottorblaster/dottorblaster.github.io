@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <link rel="canonical" href="/page/85/" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- Enable Graph API for Facebook integration -->
+  <meta content="Grab The Blaster" property="og:site_name">
+  
+    <meta content="Home" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="Un blog nerd il giusto di Alessio Biancalana" property="og:description">
+  
+  
+    <meta content="https://dottorblaster.it/page/85/" property="og:url">
+  
+  
+  
+  
+
+  <!--   Enable Twitter Cards support through metadata, thanks to http://davidensinger.com/2013/04/supporting-twitter-cards-with-jekyll/ -->
+<!--   <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@site_username">
+  <meta name="twitter:creator" content="@creator_username">
+  
+    <meta name="twitter:title" content="Home">
+  
+  
+    <meta name="twitter:url" content="https://dottorblaster.it/page/85/">
+   -->
+  <!-- This is from @stammy -->
+<!--   <meta name="twitter:description" content="
+  {% for post in paginator.posts %}
+  
+    {% if post.layout == &quot;link&quot; %}
+      
+        
+          {{ post.title }}
+        
+        
+      
+    {% else %}
+      
+        
+          {{ ...">
+  
+    <meta name="twitter:image:src" content="https://dottorblaster.it/path/to/image/logo.png">
+    -->
+
+  <title>
+    
+      Grab The Blaster &middot; di Alessio Biancalana
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/grabtheblaster.css">
+  <link rel="stylesheet" href="/public/font-awesome/css/font-awesome.min.css">
+
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700italic,700,400italic' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,700' rel='stylesheet' type='text/css' />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title="" href="https://dottorblaster.it/feed">
+</head>
+
+
+  <body>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=81489295682&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="container content">
+      <div class="masthead">
+        <h3 class="masthead-title">
+          <img src="/public/avatar-blaster.png" alt="Alessio Biancalana">
+          <a href="/" title="Home page">Grab The Blaster</a>
+          <small>di Alessio Biancalana</small>
+        </h3>
+        <div class="social-icons"><a href="/about/" title="About Me"><i class="fa fa-user-circle-o"></i></a> <a href="https://twitter.com/dottorblaster" title="Twitter - @dottorblaster"><i class="fa fa-twitter"></i></a> <a href="https://github.com/dottorblaster" title="GitHub - dottorblaster"><i class="fa fa-github"></i></a></div>
+      </div>
+
+      <div class="posts">
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2012/04/linux-3-3-2-no-problem-ma-la-macchia-resta/" title="Linux 3.3.2: no problem, ma la macchia resta - di Alessio Biancalana">
+          Linux 3.3.2: no problem, ma la macchia resta
+        </a>
+      </h1>
+      <span class="post-date">20 Apr 2012</span>
+    
+
+    <p>Poco tempo fa è apparso un <a href="http://www.oneopensource.it/13/04/2012/linux-3-3-1-wireless-atheros-non-funzionante-in-attesa-di-patch/">post su OneOpenSource</a> scritto dal medesimo che spiegava come <strong>Linux 3.3.1</strong> introducesse dei bug gravissimi nella gestione di schede wireless <strong>Atheros</strong>, precisamente facenti uso del driver ath9k incluso in Linux già da parecchi anni. A quanto pare infatti, gli sviluppatori hanno deciso di farsi qualche risata alle nostre spalle.</p>
+<p>Con <strong>Linux 3.3.2</strong> rilasciato stabile su <a href="http://kernel.org/">kernel.org</a> ho voluto dare una chance alla mainline 3.3 per vedere cosa diavolo succedesse, e invece mi sono trovato connesso alla rete WPA2 di <a href="http://lug.uniroma2.it/">Roma2LUG</a> in men che non si dica. Tutto è bene quel che finisce bene, tuttavia volevo lasciarmi a qualche considerazione da vecchia di paese riguardo l'accaduto, precisamente sul meccanismo di QA e signoff sia del kernel <strong>Linux</strong> che del suo pacchetto in <strong>Arch Linux</strong>.</p>
+<p>Mi domando infatti cosa diavolo sia venuto in mente agli sviluppatori da due lati: innanzi tutto rilasciare una modifica del genere <strong>senza testare</strong>. È vero infatti che uno in genere è sicuro di quello che scrive e "if it compiles, it works", tuttavia ho esaminato la patch (capirai, 'sta perizia tecnica hahah) e ho visto che è stata tolta una porzione di codice veramente miserrima, mentre le aggiunte sono state parecchie in confronto. Mi è sembrato come se ci si fosse <strong>dimenticati</strong> di inserire delle syscall in mezzo al codice; qualcosa del tipo "Massì, fàmo così, che ce frega,che ce 'mporta, male che va ci arriva qualche mail minatoria" - e infatti è andata male. Non commento solo perchè in quanto a programmatore sono un'emerito imbecille e non sono al livello, sicuramente, di chi ha scritto ath9k, però insomma. Qualche riserva me la prenderei.</p>
+<p>La mia seconda perplessità è riguardo il meccanismo di <strong>signoff di Arch Linux</strong>. Quando è arrivata la mail "please signoff linux-3.3.1" la gente a che pensava? Era tempo di YouPorn? Mi fa strano, perchè comunque gli sviluppatori di Arch di solito scoprono eventuali malfunzionamenti abbastanza in fretta. La <strong>patata bollente</strong> stavolta è scappata dalle mani di tutti, ed è finita in terra. Peccato: sinora il meccanismo di QA (se così si può chiamare, dato che non lo è in maniera letterale) aveva retto parecchio bene a eventi di questo tipo.</p>
+<p>Questo è lo spazio riservato alle considerazioni che mi sono concesso. Le riflessioni che ne sono derivate, magari ve le racconto nel prossimo post ;)</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2012/04/kernel-divinita-e-pastiere-napoletane/" title="Kernel, divinità, e pastiere napoletane - di Alessio Biancalana">
+          Kernel, divinità, e pastiere napoletane
+        </a>
+      </h1>
+      <span class="post-date">16 Apr 2012</span>
+    
+
+    <blockquote>Certo, <strong>non è una passeggiata</strong>. Se non si ha un animo smanettone è meglio lasciare perdere. Non perché sia impossibile, ma perché a conti fatti <strong>non cambia l'esperienza utente</strong>.&lt;/p&gt;</blockquote>
+<p><a href="http://www.vencizon.co.vu/2012/04/how-to-compiliamo-il-nostro-kernel.html">Questo post di Vincenzo</a> mi ha colpito molto, non solo perché non è la solita sequenza fritta e rifritta di comandi, ma soprattutto perché dice una verità immensa, cioè che ricompilare il kernel <strong>Linux</strong> ad un utente medio (ma anche medio-alto) non serve assolutamente a niente, a meno che non ci siano moduli che per qualche strano motivo non vengono inclusi nella distribuzioni standard.</p>
+<p>Tutta didattica e poca altra roba quindi. Poi oh, ha usato una <a href="http://dottorblaster.it/2008/04/compilare-il-kernel-alla-debian/">mia guida</a> linkandola e ringraziandomi. Io però ho deciso che mi preparerà <strong>una pastiera</strong> di sua mano, dato che, si sa, <em>verba volant, pastierae manent</em>.</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2012/04/quelli-che-in-italia-non-sarebbe-mai-nato/" title="Quelli che "In Italia non sarebbe mai nato" - di Alessio Biancalana">
+          Quelli che "In Italia non sarebbe mai nato"
+        </a>
+      </h1>
+      <span class="post-date">12 Apr 2012</span>
+    
+
+    <p>Ecco qua; all'ennesima startup di successo, dopo il caso <strong>Jobs</strong> planetario, si cominciano a vedere gli articoli che ne descrivono pregi, difetti, la storia, e proprio dai magazine italiani cominciano a fuoriuscire degli splendidi coccodrilli; stavolta <a href="http://www.linkiesta.it/instagram-venture-capital">ci si mette Linkiesta</a>, illustrando perchè <strong>Instagram</strong> in Italia non sarebbe mai nata.</p>
+<p>Io direi che anche basta con queste cose. In Italia abbiamo <strong>startup di successo</strong> che si tengono in piedi, magari un po' traballanti, con gli stessi sforzi e gli stessi sogni delle persone che sono dietro <strong>Instagram</strong>: la volontà di costruire qualcosa di nuovo. E, dico io, in Italia Instagram non sarebbe mai nata perchè siamo bravissimi a piangerci addosso e nessuno invece si da da fare per trovare l'uscita dal labirinto. In Italia Instagram non sarebbe mai nata perchè al posto di costruire alternative e sistemi anche burocratici fattibili la gente è impegnatissima a manifestare disagio per cose banali che sarebbero risolvibili senza <strong>frignare</strong> tanto.</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2012/04/prodotti-piattaforme-e-leffetto-instagram/" title="Prodotti, piattaforme, e l'effetto Instagram - di Alessio Biancalana">
+          Prodotti, piattaforme, e l'effetto Instagram
+        </a>
+      </h1>
+      <span class="post-date">08 Apr 2012</span>
+    
+
+    <p>Ho notato un comportamento chiave nel mercato del software: nel caso di attività multipiattaforma, si genera una sorta di onda anomala per cui all'arrivo di un software blasonato su una piattaforma concorrente, vengono <strong>disintegrate le alternative</strong>, a prescindere dalle criticità e dai pregi dell'una e delle altre. Mi spiego meglio.</p>
+<h3>This world will be mine...</h3>
+<p>Proprio con l'arrivo del problema dell'essere multipiattaforma, sono cominciate ad esistere nel settore informatico una serie di ricorrenze per cui un software, diventato <strong>leader di mercato</strong>, comincia a fare le sue belle cosine su una piattaforma sola e la portabilità viene considerata un po' poco. D'altra parte, gli utenti di altri sistemi operativi, CMS, browser o cose simili cominciano a desiderare spasmodicamente quel software, e sperabilmente sfruttano potenziali concorrenti; nel campo dell'open source si incappa oltretutto nella creazione <strong>ex novo</strong> di altri software che facciano la stessa cosa, altrimenti dei volontari si uniranno a progetti esistenti per implementare le feature di cui c'è la necessità in qualcosa di già presente nel mondo dei programmi.</p>
+<p>Contemporaneamente, però, in generale il motore immobile di tutto questo, ossia il software leader di mercato che è presente sull'altra piattaforma, <strong>costituisce il driver fondamentale</strong> per quanto riguarda le caratteristiche di ciò che un software di quel tipo deve avere. Una grossa minaccia per la creatività di chi, occluso dalla cecità istigata dalla voglia di quella determinata caratteristica, invece potrebbe sfornare tanto di buono che non viene a galla. <strong>Follow the leader</strong>. E gli altri?</p>
+<h3>... and you're first in line</h3>
+<p><img class="alignleft" title="Instagram Android" alt="" src="http://farm8.staticflickr.com/7251/7777545366_b7b83160e7_n.jpg" width="320" height="320" />Il nostro ecosistema di software che essenzialmente fanno tutti un po' la stessa cosa, capeggiati da un driver di mercato che detta feature e altro, è dispersivo. Ognuno coltiva il proprio orticello, e in genere anche se c'è un software più "corposo" degli altri comunque non è sufficientemente autonomo in campo di feature design da dare filo da torcere al competitor principale, anzi; spesso <strong>alcuni pregi non vengono capiti</strong>, e ci si concentra su delle cose magari risolvibili invece di prendere atto di alcune peculiarità che, magari, sarebbero decretatrici della fine di qualsiasi progetto concorrente.</p>
+<p>Un giorno, il leader di mercato decide che i dati di crescita non sono più abbastanza grandi, oppure (e l'uno non esclude l'altro) vuole semplicemente un'altra fetta di utenza tutta per sé; lo squalo decide di mangiare il gattino in quattro e quattr'otto, e annuncia l'inizio dello sviluppo del software per la piattaforma concorrente a quella corrente. <strong>Leak di volontari</strong>, e <strong>disinteresse per i progetti</strong> che sinora erano stati tenuti in vita solo dalla volontà di vedere un prodotto simile al leader per la piattaforma concorrente, sono i sintomi più comuni dopo un annuncio del genere.</p>
+<p>Il gigante del mercato così fagocita tutto il resto, inglobando quei progetti che, giustamente, non hanno saputo fare di meglio che restare nella sua scia invece che proporre alternative intelligenti e feature innovative che avrebbero potuto decretare il successo della piattaforma alternativa e il balzo in testa di un <strong>nuovo leader</strong>, almeno in alcune fette di mercato.</p>
+<h3>L'effetto Instagram</h3>
+<p><img class="alignright" title="Effetto Instagram" alt="Effetto Instagram" src="http://farm8.staticflickr.com/7277/6897501016_b69507bffa_n.jpg" width="320" height="320" />Quanto di cui sopra, mi piace formalizzarlo come "effetto Instagram". L'intuizione infatti mi è venuta mentre osservavo il trend sempre crescente di <strong>Instagram</strong> su iOS, e quando ho visto la notizia della pianificazione dell'applicazione per <strong>Android</strong> ho potuto notare come molti avessero già deciso per lo switch da altre piattaforme, compreso il sottoscritto per vari motivi. Software come <strong>PicPlz</strong> e Lightbox hanno quindi ricevuto una poderosa ridimensionata al proprio volume di attività dal momento in cui Instagram ha fatto la propria comparsa sul Google Play Store.</p>
+<p>È solo un caso, ma ce ne sono a decine di simili, come <strong>GIMP</strong> o LMMS, software assolutamente buoni ma che crollerebbero se un market driver come <strong>Adobe</strong> decidesse per qualche motivo di fare il grande passo verso Linux. Rimarrebbero software per hobbisti, gratuiti e nient'altro, non in grado di offrire niente di più.</p>
+<p>Nel caso specifico, PicPlz ha puntato semplicemente ad essere <strong>un'alternativa ad Instagram per Android</strong> senza minimamente calcolare che il fattore che ha determinato il successo di Instagram non è stato qualcosa come la presenza di filtri (dato che quelli di Instagram fanno alquanto cagare, e scusate il francese) o la possibilità di modificare le foto, bensì la sua componente hipster (io ho Instagram → io ho un iPhone → io mi posso permettere un device da 700 euro) e la comunità su cui l'applicazione scala parecchio bene, che si è formata e adesso conta veramente tantissimi membri attivi. L'<strong>aspetto social</strong> è sempre stato sottovalutato da applicazioni come PicPlz che oltre a fare la stessa cosa che faceva Instagram la facevano pure maluccio, per quanto riguarda l'aspetto community, e infatti adesso sono state fagocitate e buttate nel calderone di quelle cose che ormai non servono più. Fine del bel sogno di gloria.</p>
+<h3>Evitare l'effetto Instagram</h3>
+<p>La parola d'ordine è solo una: <strong>differenziarsi</strong>. Fare l'<strong>Instagram</strong> dei poveri o il Photoshop aggratis è un conto, iniziare ad introdurre qualche feature degna è un altro paio di maniche. E se il tuo progetto non deve morire, deve differenziare la propria offerta da quella dei competitor, non importa quale piattaforma si prenda come riferimento.</p>
+<p>Magari lavorare secondo la <a href="http://meedabyte.com/2012/03/04/the-co-operation-advantage-and-the-new-theory-of-niches/">Teoria delle Nicchie</a> di <strong>Simone</strong> ;)</p>
+<p><em>Photos courtesy of <a href="http://www.flickr.com/photos/jfingas/7777545366/in/photostream/">jfingas</a>, <a href="http://www.flickr.com/photos/windkoh/6897501016/in/photostream/">WindKoh</a></em></p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2012/04/gnome-the-breakage-3-4/" title="GNOME "The Breakage" 3.4 - di Alessio Biancalana">
+          GNOME "The Breakage" 3.4
+        </a>
+      </h1>
+      <span class="post-date">03 Apr 2012</span>
+    
+
+    <p>Di solito mi scorno con <a href="http://telperion.wordpress.com/">telperion</a> per quanto riguarda l'argomento desktop e dintorni, sia perchè siamo di fazioni diverse (non opposte) per ideologie e paradigmi, sia per altri motivi; tornando a fare i seri dalle solite scemenze invece, ci siamo confrontati su qualcosa di nuovo: <strong>GNOME 3.4</strong>. Figo? Non figo? Bello? Brutto? Eccetera. Ho scritto un <a href="http://www.oneopensource.it/03/04/2012/gnome-3-4-e-pronto/">post su OneOpenSource</a> linkando un articolo di <strong>Joe Brockmeier</strong> che secondo me merita la lettura, se non altro perchè a mio parere è una buona cifra di cosa l'utente finale può aspettarsi.</p>
+<p>Telperion da buon insider invece mi ha commentato così:</p>
+<blockquote><p>da quel che ho visto:<br />
+temi gtk3.4 di nuovo incompatibili con i 3.2, il nuovo adwaita mi sembra peggio del vecchio 3.2, in più ora i temi sono pure compilati (gtk.gresource) e quindi per fare qualche modifica bisogna procurarsi il sorgente.<br />
+Ogni rilascio un “pain in the ass”, sarebbe meglio un rilascio stabile ogni 2-3 anni dell’infrastuttura (lib) con solo correzioni e aggiunte di funzionalità senza api-break, e aggiornamenti semestarli dei soli programmi vari di gnome, questo per dare un minimo di stabilità.<br />
+Non si può ogni sei mesi riscrivere temi estensioni e quant’altro.<br />
+La stabilità per un tempo ragionevole, è essenziale.</p></blockquote>
+<p>Ora, io dico, ma è veramente necessario che ci sia un <strong>API breakage</strong> mostruoso come quello di cui si parla? Non solo a livello di sviluppo, ma anche a livello di community building - terreno sul quale mio malgrado sto diventando un esperto - <strong>GNOME 2.32</strong> risultava avere una filosofia di rilasci vincente, dato che permetteva la retrocompatibilità con il 99,99% dei temi in circolazione. Differentemente, ormai su GNOME 3.4 ad ogni release viene rotto qualcosa e i developer di cose limitrofe piangono.</p>
+<p>Oh, quando uno c'ha ragione, <strong>c'ha ragione</strong>.</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/page/86"><i class="fa fa-chevron-circle-left"></i></a>
+  
+  
+    
+      <a class="pagination-item newer" href="/page/84"><i class="fa fa-chevron-circle-right"></i></a>
+    
+  
+</div>
+
+
+      <div class="footer">
+        <p>
+          &copy; Grab The Blaster is brought to you by Alessio Biancalana with <a href="http://jekyllrb.com/">Jekyll</a> and much ♥, under <a href="https://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC</a>.
+        </p>
+        <form class="search-form" action="/search" method="get">
+          <input type="text" placeholder="Cerca →" name="query">
+        </form>
+      </div>
+      <div class="webring-container">
+        <webring-banner>
+          <p>Member of <a href="https://retronerds.netlify.app"></a></p>
+          <a href="https://retronerds.netlify.app/prev">Previous</a>
+          <a href="https://retronerds.netlify.app/random">Random</a>
+          <a href="https://retronerds.netlify.app/next">Next</a>
+        </webring-banner>
+        <script async src="https://retronerds.netlify.app/embed.js" charset="utf-8"></script>
+      </div>
+    </div>
+
+  </body>
+</html>

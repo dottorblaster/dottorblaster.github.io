@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <link rel="canonical" href="/page/62/" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- Enable Graph API for Facebook integration -->
+  <meta content="Grab The Blaster" property="og:site_name">
+  
+    <meta content="Home" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="Un blog nerd il giusto di Alessio Biancalana" property="og:description">
+  
+  
+    <meta content="https://dottorblaster.it/page/62/" property="og:url">
+  
+  
+  
+  
+
+  <!--   Enable Twitter Cards support through metadata, thanks to http://davidensinger.com/2013/04/supporting-twitter-cards-with-jekyll/ -->
+<!--   <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@site_username">
+  <meta name="twitter:creator" content="@creator_username">
+  
+    <meta name="twitter:title" content="Home">
+  
+  
+    <meta name="twitter:url" content="https://dottorblaster.it/page/62/">
+   -->
+  <!-- This is from @stammy -->
+<!--   <meta name="twitter:description" content="
+  {% for post in paginator.posts %}
+  
+    {% if post.layout == &quot;link&quot; %}
+      
+        
+          {{ post.title }}
+        
+        
+      
+    {% else %}
+      
+        
+          {{ ...">
+  
+    <meta name="twitter:image:src" content="https://dottorblaster.it/path/to/image/logo.png">
+    -->
+
+  <title>
+    
+      Grab The Blaster &middot; di Alessio Biancalana
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/grabtheblaster.css">
+  <link rel="stylesheet" href="/public/font-awesome/css/font-awesome.min.css">
+
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700italic,700,400italic' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,700' rel='stylesheet' type='text/css' />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title="" href="https://dottorblaster.it/feed">
+</head>
+
+
+  <body>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=81489295682&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="container content">
+      <div class="masthead">
+        <h3 class="masthead-title">
+          <img src="/public/avatar-blaster.png" alt="Alessio Biancalana">
+          <a href="/" title="Home page">Grab The Blaster</a>
+          <small>di Alessio Biancalana</small>
+        </h3>
+        <div class="social-icons"><a href="/about/" title="About Me"><i class="fa fa-user-circle-o"></i></a> <a href="https://twitter.com/dottorblaster" title="Twitter - @dottorblaster"><i class="fa fa-twitter"></i></a> <a href="https://github.com/dottorblaster" title="GitHub - dottorblaster"><i class="fa fa-github"></i></a></div>
+      </div>
+
+      <div class="posts">
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2013/10/ghost-ovvero-nodejs-blogging/" title="Ghost - ovvero NodeJS + blogging - di Alessio Biancalana">
+          Ghost - ovvero NodeJS + blogging
+        </a>
+      </h1>
+      <span class="post-date">15 Oct 2013</span>
+    
+
+    <p><img class="aligncenter" alt="Ghost" src="http://i1.createsend5.com/ei/t/B2/348/993/csimport/newsletterlaunch.141308.jpg" width="720" height="330" /></p>
+<p>Parlavamo giusto di <a href="http://dottorblaster.it/2013/10/blogging-engine-filosofia-varie-ed-eventuali/">piattaforme di blogging</a>, e finalmente ci siamo: <a href="http://ghost.org/">Ghost</a>, il software che su Kickstarter aveva debuttato come il "nuovo WordPress" ha fatto il suo exploit oggi con un degno annuncio di rilascio via email e un sito web molto ben curato, che ci lascia disporre della nostra bacheca per scaricare il codice e farne il <strong>deploy attraverso BitNami</strong> (l'avevamo visto insieme con <a href="http://dottorblaster.it/2013/03/gitlab-bitnami-ne-fornisce-installer/">GitLab</a>) o in autonomia. Mi fa molto piacere, ad essere sincero, che finalmente <strong>WordPress</strong> abbia un concorrente per quanto riguarda il <strong>blogging</strong>.</p>
+<p>Nonostante il proliferare di piattaforme simili, nessuno aveva la stessa <strong>estendibilità</strong>, e le stesse proprietà di openness come <strong>Ghost</strong>, che al momento attuale si presenta come l'alternativa più attuabile per chi ha voglia di migrare il proprio <strong>CMS</strong> a un'infrastruttura simile a quella a cui è già abituato, e al tempo stesso trovarsi con uno strumento migliore con cui scrivere, apposito per questo. Uno strumento migliore con cui scrivere, già, perché Ghost include una serie di cose carine come una live preview di quello che scriviamo, e supporta il <strong>Markdown</strong> come linguaggio di formattazione.</p>
+<p>Mi sono già iscritto per fare un <strong>giro di prova</strong>: purtroppo per il momento si può solo scaricare il codice per andare "live" in maniera se vogliamo distribuita, che poi è proprio quello che mi aspetto dal progetto. Gli sviluppi immediatamente futuri però prevedono la possibilità di iniziare un proprio blog con Ghost su una <strong>piattaforma</strong> mantenuta dagli sviluppatori (in maniera simile a <strong>wordpress.com</strong> per intenderci), ed essendo io più che pigro per accollarmi lo sforzo di un deploy di software che nessuno mi ha chiesto (:D), attenderò questa feature.</p>
+<p>Poi oh, ragazzi: è scritto in <strong>NodeJS</strong>. Vogliamo mettere? ;)</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2013/10/blogging-engine-filosofia-varie-ed-eventuali/" title="Blogging engine: filosofia, varie ed eventuali - di Alessio Biancalana">
+          Blogging engine: filosofia, varie ed eventuali
+        </a>
+      </h1>
+      <span class="post-date">11 Oct 2013</span>
+    
+
+    <p><img class="aligncenter" alt="reading" src="http://farm5.staticflickr.com/4053/4673591089_15b0208bd6_z.jpg" width="640" height="425" /></p>
+<p><a href="http://michel.sylvestre.me/post/moving-to-scriptogr.am">Michel Alexandre Salim</a> ha scritto proprio qualche ora fa un interessante post sulle motivazioni che l'hanno portato ad abbandonare <strong>WordPress</strong> in favore di <a href="http://scriptogr.am/">Scriptogram</a>. Anch'io non nascondo di aver pensato a qualcosa di simile, ma sono sempre stato fermato da una considerazione di carattere più filosofico che tecnico: come <strong>blogging platform</strong> infatti WordPress non è il massimo, e ormai in quanto a built-in feature è un carrozzone obsoleto. Non supporta nemmeno nativamente <strong>Markdown</strong>, al contrario di tutte le piattaforme più "trendy" di adesso.</p>
+<p>Però è WordPress che, oltre ad essere l'engine per grossissima mole di siti e blog al mondo, ha stabilito una certa prassi nel rilascio di codice relativo all'<strong>infrastruttura di rete distribuita</strong> che abbiamo adesso. Mi domando: è giusto favorire meccanismi accentratori che conferiscono più potere ad una piattaforma centralizzata che ad un utente, impossibilitato ad installare il <strong>CMS</strong> che più gli piace in locale per il suo uso e consumo personale? Quanto possiamo permetterci di <strong>cedere il passo</strong> rispetto a qualcosa di simile?</p>
+<p>Sicuramente WordPress tramonterà: il tempo passa, le tecnologie cambiano e purtroppo va accettato il fatto che i prodotti muoiano per un <strong>turnover</strong> agile di sviluppatori,società competitor e dei software stessi. Io però mi auguro che WordPress tenga testa a tutti i suoi concorrenti ancora per molto, e soprattutto nella maniera più <strong>open source</strong> possibile. Certo, è vero che comunque quello che conta è una <strong>API affidabile</strong> e ben integrabile per mantenere integro un ecosistema (ed <strong>RSS</strong> lo è, di fatto), ma sarebbe carino che tutti comprendessero che cosa significa essere utenti di un servizio, ed essere invece <strong>provider</strong> del servizio che usiamo noi stessi.</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2013/10/freebsd-installare-sorgenti-del-kernel-svn-senza-impazzire/" title="FreeBSD: installare i sorgenti del kernel con SVN senza impazzire - di Alessio Biancalana">
+          FreeBSD: installare i sorgenti del kernel con SVN senza impazzire
+        </a>
+      </h1>
+      <span class="post-date">02 Oct 2013</span>
+    
+
+    <p>È <strong>più di un mese</strong> che non scrivo nulla qui, per il semplice fatto che sono stato troppo preso tra <a href="http://dottorblaster.it/2013/07/vi-racconto-posto-dove-lavoro/">lavoro</a> ed esami - e pazzescamente l'unico momento in cui scrivere un post un po' più faceto ce l'ho proprio in congiunzione con l'inizio dei nuovi corsi in università. E visto che avevo quel poco di tempo libero, non solo ho deciso di riscrivere qui (ovviamente), ma ho deciso di farlo mentre mi divertivo con una <strong>macchinina FreeBSD</strong> che ho a casa, con cui sto facendo un po' di cose carine.</p>
+<p><img class="aligncenter" alt="FreeBSD" src="http://farm4.staticflickr.com/3568/3489353270_3bb7c95443_z.jpg" width="640" height="426" /></p>
+<p>Il problema è che al momento ce l'ho dentro macchina virtuale: questo esige che io compili il <strong>modulo VirtualBox</strong> per le guest additions, ma le dipendenze sono parecchie: tra queste, nei port, si esige anche che io abbia installato il <strong>codice sorgente del kernel</strong>, che in fase di installazione ho deciso di omettere per conto mio. Come possiamo quindi installare i sorgenti del <strong>kernel FreeBSD</strong> senza impazzire? Facile: <strong>usiamo Subversion</strong>. Ovviamente, se non l'abbiamo fatto prima, installiamo SVN tramite il "comodo, pratico" sistema di port.</p>
+<p><code># cd /usr/ports/devel/subversion<br />
+# make install</code></p>
+<p>Dopodiché, la cosa più rapida, anziché scaricarci tutto il sorgente di mezza <strong>FreeBSD</strong> (vedere per credere: basta dare un'occhiata all'<a href="http://svn.freebsd.org/base/stable/9">SVN tree</a> per capire di cosa parlo), è prendere a mano tramite <strong>SVN</strong> il sorgente della sola <strong>directory ./sys</strong> contenente il kernel del sistema operativo nella sua forma più primordiale.</p>
+<p><code># svn co svn://svn.freebsd.org/base/stable/9/sys /usr/src/sys</code></p>
+<p>La vostra macchina comincerà a macinare il <strong>download</strong> con la dovuta perizia. Aspettate qualche minuto (anche qualche decina: dipende dalla vostra connessione di banda), dopodiché tornate al vostro terminale e compilate i moduli che volete.</p>
+<p>P.S.: Ho scritto questo post perché cercando in rete una guida alla gestione dei sorgenti mi sono trovato smarrito, invece con questi <strong>semplici passaggi</strong> (ovviamente homemade) ho risolto il mio problema.</p>
+<p><em>Photo courtesy of <a href="http://www.flickr.com/photos/mollenborg/3489353270/">Kristian Mollenborg</a></em></p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2013/08/groklaw-chiude-auguri-pj/" title="Groklaw chiude, auguri PJ - di Alessio Biancalana">
+          Groklaw chiude, auguri PJ
+        </a>
+      </h1>
+      <span class="post-date">20 Aug 2013</span>
+    
+
+    <p>E così, un altro dei migliori blog al mondo su tecnologia e argomenti "limitrofi" - ovvero <a href="http://www.groklaw.net/article.php?story=20130818120421175">Groklaw</a> - chiude, per colpa di <strong>PRISM</strong>, <strong>NSA</strong>, e così via.</p>
+<blockquote><p>There is now no shield from forced exposure. Nothing in that parenthetical thought list is terrorism-related, but no one can feel protected enough from forced exposure any more to say anything the least bit like that to anyone in an email, particularly from the US out or to the US in, but really anywhere. You don't expect a stranger to read your private communications to a friend. And once you know they can, what is there to say? Constricted and distracted. That's it exactly. That's how I feel.</p></blockquote>
+<p><img class="aligncenter" alt="email" src="http://farm8.staticflickr.com/7009/6645640933_f654911385.jpg" width="500" height="333" /></p>
+<p>Lo sapevamo già, ma non c'era stato mai nessuno a farci notare che quello che dicevamo, cioè che il <strong>Free Software</strong> e l'<strong>Open Source</strong> sono importanti per preservare i nostri diritti e per impedire che venga violata l'intimità della comunicazione tra individui, fosse (e sia) una cosa ancor più sacrosanta di quanto abbiamo mai potuto immaginare. Mai come ora, la questione sulla privacy è attuale e mai come ora possiamo fare qualcosa per ribaltare tutto questo.</p>
+<p>Probabilmente cambierò <strong>mailbox</strong>. Attualmente la mia casella email è ospitata su <a href="http://www.businessinsider.com/gmail-privacy-google-court-brief-2013-8">Google Apps</a>, ma non credo di avere ancora il fegato di restarci: purtroppo, il mondo del cloud e del tech in generale sta evolvendo nel modo peggiore che ciascuno di noi avrebbe potuto immaginare. Siamo <strong>sorvegliati costantemente da script, trigger e quant'altro</strong>. PJ ha mollato, io non credo di volerlo fare mai, ma il punto è che adesso sto seriamente considerando l'idea di ospitarmi una VPS e mollare alcuni aspetti della mia private cloud tornando ad un approccio, se vogliamo, old school.</p>
+<p>E con "seriamente considerando", intendo che ho una <strong>macchina virtuale pronta al deploy</strong> e una carta di credito sufficientemente munita di risorse.</p>
+<p><em>Photo courtesy of <a href="http://www.flickr.com/photos/thegajman/6645640933/">Gajman</a></em></p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2013/08/android-aosp-ha-perso-suo-pezzo-da-90-che-ha-fatto-bene-ad-andarsene/" title="Android: AOSP ha perso il suo pezzo da 90. Che ha fatto bene ad andarsene. - di Alessio Biancalana">
+          Android: AOSP ha perso il suo pezzo da 90. Che ha fatto bene ad andarsene.
+        </a>
+      </h1>
+      <span class="post-date">08 Aug 2013</span>
+    
+
+    <p>Sapete chi è <strong>Jean-Baptiste Quéru</strong>? No? Dovreste. O almeno, se usate <strong>Android</strong>, e una ROM modificata o qualsiasi altro progetto sul vostro smartphone che assomigli anche solo lontanamente ad Android, a quest'uomo dovete molto. Si tratta infatti del maintainer dell'<strong>Android Open Source Project</strong>, che negli ultimi anni si è sbattuto tantissimo per farci avere delle release degne di questo nome dove tutto fosse a posto, non ci fossero errori bislacchi di compilazione, e la <strong>community</strong> potesse lavorare sul "suo" codice senza impazzire.</p>
+<p>Oggi si è dimesso. E io lo capisco, e lo supporto.</p>
+<p><img class="aligncenter" alt="Android" src="http://farm5.staticflickr.com/4011/4407979507_82e0e427de.jpg" width="500" height="334" /></p>
+<p>La motivazione delle dimissioni del <strong>maintainer del progetto AOSP</strong> è spiegata molto bene in un suo <a href="https://plus.google.com/112218872649456413744/posts/9HHRURorE7g">post su Google+</a> dove dichiara ufficialmente:</p>
+<blockquote><p>There's no point being the maintainer of an Operating System that can't boot to the home screen on its flagship device for lack of GPU support, especially when I'm getting the blame for something that I don't have authority to fix myself and that I had anticipated and escalated more than 6 months ahead.</p></blockquote>
+<p>Ovviamente <strong>Jean-Baptiste</strong> si è dimesso per una ragione che da lungo tempo gli porta noie; questa è solo l'ultima goccia che fa traboccare un vaso pieno di soprusi, letteralmente, riservati agli hacker che operano su Android con piattaforma <strong>Qualcomm</strong>: se infatti nonostante la mancanza di specifiche Samsung si è dimostrata abbastanza comprensiva con gli <strong>hacker</strong> mandandogli device per i test e "aiutando" la community a suo modo, Qualcomm continua a fare muro dai tempi del <strong>Nexus One</strong>, device in cui abbiamo dovuto forzatamente smettere di credere per il motivo più semplice del mondo. Al momento dell'upgrade ad Android 4.0, Qualcomm si è rifiutata di rilasciare i suoi driver binari per la <strong>GPU Adreno 200</strong> che c'era dentro, e tanti utenti <strong>CyanogenMod</strong> se lo sono brutalmente preso in quel posto.</p>
+<p>Loro, e gli utenti di <strong>HTC Desire</strong> che era sostanzialmente il "cugino" col trackpad ottico del Nexus One.</p>
+<p><img class="aligncenter" alt="Nexus One Android" src="http://farm6.staticflickr.com/5131/5547851770_3598506559.jpg" width="500" height="333" /></p>
+<p>Io sostengo Jean-Baptiste e il suo atto, per un semplice motivo: <strong>Google è cambiata molto in questi anni</strong>. Ha cambiato volto, ha cambiato pratiche, è diventata una società che guarda al fatturato e che non ha più paura di deludere i suoi fan e i suoi utenti, a volte anche passando sopra qualche loro diritto. Forse è stata sempre così? Forse. Di sicuro non lo dava molto a vedere.</p>
+<p>Le dimissioni di Quéru sono le dimissioni di noi tutti, la <strong>perdita di fiducia</strong> in qualcosa che aveva iniziato in un verso e sta finendo nel verso opposto: è stato probabilmente il più grande community leader degli ultimi anni, tenendoci informati di tutto e lavorando per noi, e adesso getta all'aria tutto con aria mascolina e un "fuck this, I'm out". Personalmente, non servirà a niente ma quantomeno lo apprezzo: Google dovrebbe fare più attenzione a questo tipo di <strong>criticità</strong>, e dovrebbe quantomeno intimare ai produttori di rilasciare le specifiche dei propri blob proprietari in modo da poter ottenere quantomeno un'immagine di ripristino decente per l'hardware che io compro.</p>
+<p><img class="aligncenter" alt="Droid" src="http://farm3.staticflickr.com/2777/4333416050_d4746de688.jpg" width="500" height="313" /></p>
+<p>Spero che con questo atto Android non diventi <strong>meno open</strong>. Si, è inutile che commentiate con i soliti <strong>argomenti da bimbiminkia</strong>: il codice è lì, potete leggerlo e modificarlo, persino inviare le vostre modifiche a Google, quindi Android è open. Il problema è che fino a oggi potevate inviare le vostre modifiche a Jean-Baptiste, il quale faceva <strong>code review</strong> e vi faceva sapere in breve. Adesso, chissà?</p>
+<p>A <strong>Jean-Baptiste Quéru</strong> va il mio <strong>grazie</strong> più profondo, il mio <strong>complimento</strong> più intimo per il lavoro svolto, e un <strong>in bocca al lupo</strong> grandissimo per il futuro.</p>
+<p><em>Photos courtesy of <a href="http://www.flickr.com/photos/laihiu/4407979507/">Lai Ryanne</a>, <a href="http://www.flickr.com/photos/johanl/5547851770/">Johan Larsson</a>, <a href="http://www.flickr.com/photos/felixmontino/4333416050/">Felix Montino</a></em></p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/page/63"><i class="fa fa-chevron-circle-left"></i></a>
+  
+  
+    
+      <a class="pagination-item newer" href="/page/61"><i class="fa fa-chevron-circle-right"></i></a>
+    
+  
+</div>
+
+
+      <div class="footer">
+        <p>
+          &copy; Grab The Blaster is brought to you by Alessio Biancalana with <a href="http://jekyllrb.com/">Jekyll</a> and much ♥, under <a href="https://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC</a>.
+        </p>
+        <form class="search-form" action="/search" method="get">
+          <input type="text" placeholder="Cerca →" name="query">
+        </form>
+      </div>
+      <div class="webring-container">
+        <webring-banner>
+          <p>Member of <a href="https://retronerds.netlify.app"></a></p>
+          <a href="https://retronerds.netlify.app/prev">Previous</a>
+          <a href="https://retronerds.netlify.app/random">Random</a>
+          <a href="https://retronerds.netlify.app/next">Next</a>
+        </webring-banner>
+        <script async src="https://retronerds.netlify.app/embed.js" charset="utf-8"></script>
+      </div>
+    </div>
+
+  </body>
+</html>

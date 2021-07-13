@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <link rel="canonical" href="/2021/01/actor-modeling-hoverlord/" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- Enable Graph API for Facebook integration -->
+  <meta content="Grab The Blaster" property="og:site_name">
+  
+    <meta content="Mamma, ho costruito una libreria di actor modeling per NodeJS" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="Qualche tempo fa in un attimo di follia ho cominciato a farmi qualche schemino per portare alcune delle mie feature preferite di Elixir su NodeJS, per il semplice fatto che potevano essermi utili anche lì. Può sembrare che io stia cercando di avvitare un bullone con un cucchiaio, ma ci sono un paio di verità di cui preferisco fare un bel listato:  Credo fermamente che l’actor model sia un paradigma vincente che consente di gestire la concorrenza in un modo in cui gli esseri umani, mentalmente..." property="og:description">
+  
+  
+    <meta content="https://dottorblaster.it/2021/01/actor-modeling-hoverlord/" property="og:url">
+  
+  
+    <meta content="2021-01-31T17:25:10+00:00" property="article:published_time">
+    <meta content="https://dottorblaster.it/about/" property="article:author">
+    <meta content="https://dottorblaster.it/opengraph/66535d1c3aa716db6a188ca3b9def7dba814b325.png" property="og:image">
+  
+  
+    
+    <meta content="Development" property="article:section">
+    
+  
+  
+    
+    <meta content="nodejs" property="article:tag">
+    
+    <meta content="node" property="article:tag">
+    
+    <meta content="javascript" property="article:tag">
+    
+    <meta content="backend" property="article:tag">
+    
+    <meta content="actor model" property="article:tag">
+    
+    <meta content="concurrency" property="article:tag">
+    
+  
+
+  <!--   Enable Twitter Cards support through metadata, thanks to http://davidensinger.com/2013/04/supporting-twitter-cards-with-jekyll/ -->
+<!--   <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@site_username">
+  <meta name="twitter:creator" content="@creator_username">
+  
+    <meta name="twitter:title" content="Mamma, ho costruito una libreria di actor modeling per NodeJS">
+  
+  
+    <meta name="twitter:url" content="https://dottorblaster.it/2021/01/actor-modeling-hoverlord/">
+   -->
+  <!-- This is from @stammy -->
+<!--   <meta name="twitter:description" content="
+
+Qualche tempo fa in un attimo di follia ho cominciato a farmi qualche schemino per portare alcune delle mie feature preferite di Elixir su NodeJS, per il semplice fatto che potevano essermi utili...">
+  
+    <meta name="twitter:image:src" content="https://dottorblaster.it/path/to/image/logo.png">
+    -->
+
+  <title>
+    
+      Mamma, ho costruito una libreria di actor modeling per NodeJS &middot; Grab The Blaster
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/grabtheblaster.css">
+  <link rel="stylesheet" href="/public/font-awesome/css/font-awesome.min.css">
+
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700italic,700,400italic' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,700' rel='stylesheet' type='text/css' />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title="" href="https://dottorblaster.it/feed">
+</head>
+
+
+  <body>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=81489295682&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="container content">
+      <div class="masthead">
+        <h3 class="masthead-title">
+          <img src="/public/avatar-blaster.png" alt="Alessio Biancalana">
+          <a href="/" title="Home page">Grab The Blaster</a>
+          <small>di Alessio Biancalana</small>
+        </h3>
+        <div class="social-icons"><a href="/about/" title="About Me"><i class="fa fa-user-circle-o"></i></a> <a href="https://twitter.com/dottorblaster" title="Twitter - @dottorblaster"><i class="fa fa-twitter"></i></a> <a href="https://github.com/dottorblaster" title="GitHub - dottorblaster"><i class="fa fa-github"></i></a></div>
+      </div>
+
+      <div class="post">
+  <h1 class="post-title">Mamma, ho costruito una libreria di actor modeling per NodeJS</h1>
+  <span class="post-date">31 Jan 2021</span>
+  <p><img src="https://gitlab.com/dottorblaster/blog-images/-/raw/master/images/hoverlord-1.png" alt="Hoverlord: actor model in action" /></p>
+
+<p>Qualche tempo fa in un attimo di follia ho cominciato a farmi qualche schemino per portare alcune delle mie feature preferite di <strong>Elixir</strong> su NodeJS, per il semplice fatto che potevano essermi utili anche lì. Può sembrare che io stia cercando di avvitare un bullone con un cucchiaio, ma ci sono un paio di verità di cui preferisco fare un bel listato:</p>
+
+<ul>
+  <li><strong>Credo fermamente che l’<a href="https://en.wikipedia.org/wiki/Actor_model">actor model</a> sia un paradigma vincente</strong> che consente di gestire la concorrenza in un modo in cui gli esseri umani, mentalmente, non vadano a pestarsi i piedi mentalmente con altre elucubrazioni passate o future. Nella mia testa quello che avviene quando programmo un <a href="https://hexdocs.pm/elixir/GenServer.html">GenServer</a> in Erlang è molto, molto più fluido di quello che avviene quando scrivo un thread in C o una goroutine;</li>
+  <li><a href="https://nodejs.org/api/worker_threads.html">NodeJS offre i Worker</a>, un’entità software di cui è possibile fare spawn a cui fare offloading del lavoro del main thread. I worker process sono un’area all’interno della quale secondo me la ricerca non è ancora al suo picco.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></li>
+</ul>
+
+<p>Quindi date queste doverose premesse ho sentito di poter dare un microscopico contributo all’ecosistema JavaScript con una libreria che consente di fare <code class="language-plaintext highlighter-rouge">spawn</code> di un worker process con del codice arbitrario all’interno. Allo stesso tempo il processo che viene avviato avrà una primitiva <code class="language-plaintext highlighter-rouge">receive</code> a disposizione che gli consentirà di ricevere i messaggi che gli vengono inviati. A questo punto data l’infrastruttura di comunicazione sottostante sarà possibile dividere la nostra applicazione in più attori dalla logica separata.</p>
+
+<p>Lo snippet che c’è nel README è abbastanza esplicativo, la libreria (che si chiama <a href="https://github.com/dottorblaster/hoverlord">hoverlord</a>) consente di fare una cosa del genere:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">http</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">http</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">const</span> <span class="p">{</span> <span class="nx">spawn</span><span class="p">,</span> <span class="nx">send</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">hoverlord</span><span class="dl">'</span><span class="p">);</span>
+
+<span class="nx">spawn</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="p">{</span> <span class="nx">receive</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">hoverlord</span><span class="dl">'</span><span class="p">);</span>
+  <span class="nx">receive</span><span class="p">((</span><span class="nx">_state</span><span class="p">,</span> <span class="p">{</span> <span class="nx">content</span> <span class="p">})</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">`log: </span><span class="p">${</span><span class="nx">message</span><span class="p">}</span><span class="s2">`</span><span class="p">);</span>
+  <span class="p">});</span>
+<span class="p">},</span> <span class="dl">'</span><span class="s1">logger</span><span class="dl">'</span><span class="p">);</span>
+
+<span class="nx">spawn</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="p">{</span> <span class="nx">receive</span><span class="p">,</span> <span class="nx">send</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">hoverlord</span><span class="dl">'</span><span class="p">);</span>
+  <span class="k">return</span> <span class="nx">receive</span><span class="p">((</span><span class="nx">state</span><span class="p">,</span> <span class="nx">message</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="k">switch</span> <span class="p">(</span><span class="nx">message</span><span class="p">.</span><span class="nx">content</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">case</span> <span class="dl">'</span><span class="s1">ping</span><span class="dl">'</span><span class="p">:</span>
+        <span class="kd">const</span> <span class="nx">newState</span> <span class="o">=</span> <span class="nx">state</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+        <span class="nx">send</span><span class="p">(</span><span class="dl">'</span><span class="s1">logger</span><span class="dl">'</span><span class="p">,</span> <span class="nx">newState</span><span class="p">);</span>
+        <span class="k">return</span> <span class="nx">newState</span><span class="p">;</span>
+      <span class="nl">default</span><span class="p">:</span>
+        <span class="k">return</span> <span class="nx">state</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">},</span> <span class="mi">0</span><span class="p">);</span>
+<span class="p">},</span> <span class="dl">'</span><span class="s1">stateReducer</span><span class="dl">'</span><span class="p">);</span>
+
+<span class="nx">http</span>
+  <span class="p">.</span><span class="nx">createServer</span><span class="p">((</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">send</span><span class="p">(</span><span class="dl">'</span><span class="s1">stateReducer</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">ping</span><span class="dl">'</span><span class="p">);</span>
+    <span class="nx">res</span><span class="p">.</span><span class="nx">writeHead</span><span class="p">(</span><span class="mi">200</span><span class="p">);</span>
+    <span class="nx">res</span><span class="p">.</span><span class="nx">end</span><span class="p">(</span><span class="s2">`Current process\n </span><span class="p">${</span><span class="nx">process</span><span class="p">.</span><span class="nx">pid</span><span class="p">}</span><span class="s2">`</span><span class="p">);</span>
+  <span class="p">})</span>
+  <span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="mi">4000</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>In pratica cosa abbiamo qui? Abbiamo un processo principale che avvia il webserver per un’applicazione web (tramite l’<strong>HTTP server di Node</strong>, niente di esoterico), il quale risponde a ogni richiesta sulla rotta principale con il PID del processo facendo però <strong>aumentare un contatore mantenuto in un processo separato</strong>, e facendo <strong>loggare quello stesso stato a un altro processo ancora</strong>.</p>
+
+<p>Ovviamente il lavoro non è terminato, ma per cose semplici hoverlord fa il suo lavoro in maniera veramente cristallina, tant’è che io stesso sono rimasto stupito provando a <strong>scrivere un po’ di test con Jest</strong> e cominciando a stressare un bel po’ il design. Finora è sempre andato tutto bene, quindi se provate a usarla e beccate qualche bel bug vi prego di <a href="https://github.com/dottorblaster/hoverlord/issues">aprire una issue</a>.</p>
+
+<p>Devo dirmi da solo che questo è il progetto più interessante a cui abbia lavorato ultimamente, e la cosa allucinante è che è tutto merito mio (dell’<em>interessanza</em>, intendo). Ho sempre desiderato scrivere una cosa del genere, ma non sapevo da dove partire. Finalmente dopo quasi un decennio di esperienza sul campo con <strong>JavaScript</strong> sono riuscito a farmi passare la sindrome dell’impostore, e sono troppo felice di aver trovato il tempo e l’area giusta su cui focalizzare i miei sforzi per un po’.</p>
+
+<h3 id="direzione-del-progetto-evoluzioni-future-eccetera">Direzione del progetto, evoluzioni future eccetera</h3>
+<p>Una volta dimostrato che è possibile avere delle primitive di <code class="language-plaintext highlighter-rouge">spawn</code> e <code class="language-plaintext highlighter-rouge">receive</code> simili negli intenti a quelle di Erlang, sia pure con le dovute differenze tecnologiche, la più grande criticità di hoverlord è quella di avere una funzione di <code class="language-plaintext highlighter-rouge">require</code> patchata in modo da usare come path primario quello del progetto JavaScript originale e non la <code class="language-plaintext highlighter-rouge">/tmp</code> dove viene memorizzato il chunk di codice JavaScript “spawnato”. Questa cosa in un progetto reale mostra delle crepe non banali, e devo studiare meglio come superarla perché allo stadio attuale fare <code class="language-plaintext highlighter-rouge">require</code> di alcune funzioni dentro gli attori di hoverlord <em>è un problema</em>.</p>
+
+<p>Questa è anche una grossa chiamata alle armi: se qualcuno avesse lo stomaco per leggersi il codice di hoverlord (be warned) non credo di potercela fare da solo.</p>
+
+<h3 id="ringraziamenti">Ringraziamenti</h3>
+<ul>
+  <li><a href="https://github.com/balanza">Emanuele De Cupis</a>, per aver provato per primo la libreria e avermi dato alcuni utilissimi feedback - nonché per il suo stupendo tentativo di testare hoverlord in un setup end-to-end;</li>
+  <li><a href="https://github.com/Raibaz/">Mattia Tommasone</a> per aver scritto la prima PR “di terzi” rendendo il tutto uno sforzo corale e non più un progetto solista;</li>
+  <li><a href="https://github.com/gsora">Gianguido Sorà</a> per avermi fatto da <a href="https://it.wikipedia.org/wiki/Rubber_duck_debugging">rubber duck</a> durante le feste di Natale, specialmente riguardo il meccanismo di hashing degli attori.</li>
+</ul>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>Una prima versione di hoverlord usava la Cluster API al posto dei worker process. <a href="https://github.com/mcollina">Matteo Collina</a> e <a href="https://github.com/delvedor">Tomas Della Vedova</a> mi hanno convinto ben presto del fatto che fosse una scelta fallimentare :-) <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+</div>
+
+<div class="social-section">
+  <div class="fb-like" data-href="/2021/01/actor-modeling-hoverlord/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-via="dottorblaster" data-lang="it" data-dnt="true">Tweet</a>
+</div>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'blasterhome'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/06/domain-modeling-made-functional-recensione/">
+            Recensione: Domain Modeling Made Functional, di Scott Wlaschin
+            <small>08 Jun 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/05/piccolo-kubernetes-production-ready-k3s/">
+            Kubernetes production-ready in piccolo: deployare un mini-cluster K3s
+            <small>18 May 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/04/adoro-kubernetes/">
+            Io adoro Kubernetes
+            <small>25 Apr 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+      <div class="footer">
+        <p>
+          &copy; Grab The Blaster is brought to you by Alessio Biancalana with <a href="http://jekyllrb.com/">Jekyll</a> and much ♥, under <a href="https://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC</a>.
+        </p>
+        <form class="search-form" action="/search" method="get">
+          <input type="text" placeholder="Cerca →" name="query">
+        </form>
+      </div>
+      <div class="webring-container">
+        <webring-banner>
+          <p>Member of <a href="https://retronerds.netlify.app"></a></p>
+          <a href="https://retronerds.netlify.app/prev">Previous</a>
+          <a href="https://retronerds.netlify.app/random">Random</a>
+          <a href="https://retronerds.netlify.app/next">Next</a>
+        </webring-banner>
+        <script async src="https://retronerds.netlify.app/embed.js" charset="utf-8"></script>
+      </div>
+    </div>
+
+  </body>
+</html>

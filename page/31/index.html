@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <link rel="canonical" href="/page/31/" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- Enable Graph API for Facebook integration -->
+  <meta content="Grab The Blaster" property="og:site_name">
+  
+    <meta content="Home" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="Un blog nerd il giusto di Alessio Biancalana" property="og:description">
+  
+  
+    <meta content="https://dottorblaster.it/page/31/" property="og:url">
+  
+  
+  
+  
+
+  <!--   Enable Twitter Cards support through metadata, thanks to http://davidensinger.com/2013/04/supporting-twitter-cards-with-jekyll/ -->
+<!--   <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@site_username">
+  <meta name="twitter:creator" content="@creator_username">
+  
+    <meta name="twitter:title" content="Home">
+  
+  
+    <meta name="twitter:url" content="https://dottorblaster.it/page/31/">
+   -->
+  <!-- This is from @stammy -->
+<!--   <meta name="twitter:description" content="
+  {% for post in paginator.posts %}
+  
+    {% if post.layout == &quot;link&quot; %}
+      
+        
+          {{ post.title }}
+        
+        
+      
+    {% else %}
+      
+        
+          {{ ...">
+  
+    <meta name="twitter:image:src" content="https://dottorblaster.it/path/to/image/logo.png">
+    -->
+
+  <title>
+    
+      Grab The Blaster &middot; di Alessio Biancalana
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/grabtheblaster.css">
+  <link rel="stylesheet" href="/public/font-awesome/css/font-awesome.min.css">
+
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700italic,700,400italic' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,700' rel='stylesheet' type='text/css' />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title="" href="https://dottorblaster.it/feed">
+</head>
+
+
+  <body>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=81489295682&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="container content">
+      <div class="masthead">
+        <h3 class="masthead-title">
+          <img src="/public/avatar-blaster.png" alt="Alessio Biancalana">
+          <a href="/" title="Home page">Grab The Blaster</a>
+          <small>di Alessio Biancalana</small>
+        </h3>
+        <div class="social-icons"><a href="/about/" title="About Me"><i class="fa fa-user-circle-o"></i></a> <a href="https://twitter.com/dottorblaster" title="Twitter - @dottorblaster"><i class="fa fa-twitter"></i></a> <a href="https://github.com/dottorblaster" title="GitHub - dottorblaster"><i class="fa fa-github"></i></a></div>
+      </div>
+
+      <div class="posts">
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2016/10/la-cosa-giusta-react-html-server-side/" title="La cosa giusta - di Alessio Biancalana">
+          La cosa giusta
+        </a>
+      </h1>
+      <span class="post-date">07 Oct 2016</span>
+    
+
+    <p><img src="https://c2.staticflickr.com/6/5017/29333109874_720a986515_b.jpg" alt="Minified Javascript" /></p>
+
+<p>Nell’ultimo periodo, ho iniziato a <strong>rivedere alcune idee</strong> che mi ero fatto riguardo un’applicazione da scrivere nel tempo libero per testare alcune tecnologie sul campo. Quello che ho iniziato a scrivere era un banalissimo pastebin, dato che in azienda non avevamo un’istanza di un software del genere, e ho pensato che ci potesse fare comodo.</p>
+
+<p>All’inizio volevo mettere in piedi un backend di API REST, composto di microservizi, con un frontend impostato con <a href="https://vuejs.org/">VueJS</a> che fosse una single page app. <strong>Per un pastebin però è troppa roba</strong>. Pur avendo pistolato con un’implementazione del backend primitiva e con un frontendino basato su <a href="http://materializecss.com/">Materialize</a>, ho iniziato a pensare di “buttare” (non è la parola adatta) tutto e scrivere dei template server-side.</p>
+
+<p>Quello che mi ha sorpreso, è stato leggere in questi giorni una serie di post che mi hanno fatto alzare il sopracciglio. Nell’ordine:</p>
+
+<ul>
+  <li><a href="https://robots.thoughtbot.com/announcing-constable-our-first-open-source-phoenix-application">Announcing Constable, an open source Phoenix application</a></li>
+  <li><a href="https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f#.uuqjgprol">How it feels to learn JavaScript in 2016</a></li>
+  <li><a href="https://robots.thoughtbot.com/how-we-replaced-react-with-phoenix">How We Replaced React with Phoenix</a></li>
+  <li><a href="https://gist.github.com/threepointone/c382856fd2e2c325f8d230e85d85499b">Questo gist senza titolo</a>, ma stupendo</li>
+</ul>
+
+<p>Sto per addentrarmi in una questione squisitamente relativa allo sviluppo web, che mi rendo conto essere una cosa che di riffa o di raffa non ho mai trattato ad un livello così profondamente tecnico su questo blog. Get ready.</p>
+
+<blockquote>
+  <p>We started with a JSON API and a React front end and slowly migrated to server rendered HTML.</p>
+</blockquote>
+
+<h3 id="best-practice">Best practice</h3>
+<p>La cosa che mi ha lasciato impressionato è stata leggere in meno di una settimana svariati articoli, umoristici o meno, che riportavano l’attenzione proprio su questo aspetto: <strong>sviluppare la solita single page app</strong> con approccio REST e tutto il rest-o (hahah), è veramente considerabile come una sorta di dogma? Ovviamente no. Pare che invece, affrontata nel modo inverso (ovvero, posso <em>non</em> scrivere una SPA?), la questione appaia drammatica. <strong>Se non usi React non sei nessuno</strong>. Se non hai una single page app da sviluppare non sei nessuno. Se non ti schieri nella faida (perché tale sembra) tra Angular e React, sei irrilevante.</p>
+
+<p>Lo sviluppo web sta subendo sicuramente una svolta in questi anni, ma forse è troppo repentina perché le persone non la subiscano come una sorta di religione emergente, per cui all’interno dei vari user group e delle community ormai si sente parlare in modo ossessivo di <strong>nuovi framework</strong> che fanno le stesse cose dei vecchi framework, ma cambiando una virgola nei parametri da passare ai costruttori (costruttori? Ho detto costruttori?).</p>
+
+<p>Puoi pronunciare le parole “generiamo HTML server-side” solo se affianco ci infili “il nostro Javascript è isomorfico”. Altrimenti ti inseguono con un forcone.</p>
+
+<p>Ironia a parte, a me pare che ci sia una frazione di persone che al posto di pensare con la propria testa vada appresso alle mode in modo cieco. Questo a volte porta dei risultati, altre volte porta alcuni irresponsabili a fare dei danni non da poco.</p>
+
+<h3 id="ho-scritto-unapp-mvc-e-mi-è-piaciuto">Ho scritto un’app MVC e mi è piaciuto</h3>
+<p>Non c’è nessuna colpa nel seguire un approccio che è ritenuto legacy dalla maggior parte degli sviluppatori “alla moda”. Quando scriviamo un programma, dobbiamo tenere conto di alcuni fattori che non sono solo semplicemente quale <strong>approccio</strong>, nell’istante in cui apriamo l’editor di testo vuoto, è considerato il più corretto.</p>
+
+<ul>
+  <li>Quanto <strong>debito tecnico</strong> abbiamo nei confronti di un approccio più innovativo</li>
+  <li>Che tipo di <strong>caratteristiche</strong> dobbiamo sviluppare</li>
+  <li>Quanto sarà facile che arrivino <strong>contributi</strong> complicando eventualmente l’architettura</li>
+</ul>
+
+<p>Sono solo tre delle domande infinite che mi sono trovato ad affrontare progettando un’applicazione da zero. A volte può capitare di dover <strong>sacrificare qualche tecnologia molto alla moda</strong> perché le persone con cui lavori non la capirebbero mai, perché non hai tempo per studiare e la consegna è tra tre quarti di giornata, o perché semplicemente fare in un certo modo (in <em>quel</em> modo, il modo troppo fico) sarebbe sbagliato (!).</p>
+
+<p>Prendiamo l’esempio del mio stupidissimo pastebin: ha senso immaginare una single-page application con un sistema di rotte per un diamine di affare che prende del testo e lo renderizza un po’ più carino? Decisamente no. Ha senso utilizzare React, invece, per accelerare lo sviluppo di una webapp altamente dinamica? Decisamente si.</p>
+
+<p>Spesso alle persone (e, attenzione, io ricado in questo esempio parecchie volte :-D) piace tirare in mezzo tecnologie e pattern all’ultima moda solo per <strong>sperimentare</strong>, senza considerare tutti gli aspetti di contorno e l’intento dell’attività che si sta svolgendo.</p>
+
+<h3 id="ma-quindi-ti-fa-schifo-react">Ma quindi ti fa schifo React?</h3>
+<p>No, anzi. Mi sono trovato di recente in una situazione spinosa pur avendo un margine di tempo per studiare. Ero da solo, e improvvisamente mi sono trovato con la richiesta pendente sulla testa di scrivere una webapp che facesse determinate cose. Potendo scegliere cosa tirare in campo per <strong>facilitarmi la vita</strong>, ho deciso di utilizzare <a href="https://facebook.github.io/react/">React</a>, e sono ancora vivo nonchè molto soddisfatto.</p>
+
+<p>Tuttavia, il punto della questione è un altro: oggi è il 6 ottobre 2016. Ci sono cose che nel 2016 possono ancora essere impiegate con tantissima efficacia.</p>
+
+<p><strong>JQuery</strong> ha ancora da dire la sua nel 2016.</p>
+
+<p>Un’<strong>architettura monolitica</strong> ha ancora da dire la sua nel 2016.</p>
+
+<p>L’<strong>HTML server-side</strong> ha ancora da dire la sua (e ne ha ben donde) nel 2016.</p>
+
+<p>E probabilmente, lo <strong>sviluppatore più anziano del vostro ufficio</strong> ha ancora da dire la sua nel 2016.</p>
+
+<h3 id="sviluppa-responsabilmente">Sviluppa responsabilmente</h3>
+<p>Si, dico proprio a te che stai leggendo. Lo so che ti piace sperimentare. Lo so che è molto più facile ascoltare gli altri in maniera cieca. Ma guarda che stai facendo, stai usando React, che incentiva gli <strong>stili inline</strong>, quando gli stili inline sono stati demonizzati per anni, insieme al templating schiantato dentro il codice, e insieme a tutta una serie di cose che React fa e ti costringe a fare.</p>
+
+<p>Quando sei davanti a una directory vuota, trepidante nell’attesa di scrivere il primo file del progetto, <strong>accendi il cervello</strong>, e chiediti quale sia veramente <strong>la cosa giusta</strong>.</p>
+
+<p>È gratis.</p>
+
+<p><em>Photo courtesy of <a href="https://www.flickr.com/photos/143842337@N03/29333109874">ThoroughlyReviewed</a></em></p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2016/10/theres-app-for-that-applicazioni/" title="There's an app for that - di Alessio Biancalana">
+          There's an app for that
+        </a>
+      </h1>
+      <span class="post-date">02 Oct 2016</span>
+    
+
+    <p>È passato un po’ di tempo dall’ultimo post, perché purtroppo è passato un po’ di tempo dall’ultima volta in cui ho avuto davvero la mente fresca e serena per scrivere con calma. Ho preferito aspettare che questa condizione tornasse da sé senza impormela.</p>
+
+<p>Ma ordunque, tuffiamoci nell’argomento; <a href="https://medium.com/@linuxbird/quanto-fa-schifo-il-mondo-delle-app-e7eca6557cca#.a44nzdw0e">LinuxBird</a>, in un suo post di cui condivido particolarmente alcuni punti:</p>
+
+<blockquote>
+  <p>Ma poi questo fantomatico mondo delle app esiste davvero? […] Ma ve li ricordate i pipponi della narrazione turbo-ottimista? E il coding, e il mondo delle app che è il futuro, e crea la tua app e diventa milionario, e hackathon di qua, e hackathon di là… Tutta una colossale bolla mediatica.</p>
+</blockquote>
+
+<p>Ora, non mi soffermo sulla <strong>bolla degli hackathon</strong>, dato che comunque sono un tipo di eventi che a me piace molto (hackathon inteso come hackathon, quindi come gente che scrive codice in fretta, non altro, beninteso), ma effettivamente <strong>l’ecosistema di app</strong> merita qualche considerazione tagliente e anche qualche lancia spezzata a suo favore, secondo me.</p>
+
+<p>Infatti, è vero che comunque le persone non usano tantissime applicazioni e per quanto uno possa trovare utile che uno smartphone faccia anche il caffè sicuramente <strong>non è che stia tutto il giorno sugli store</strong> a spippolare per installare cose, va anche detto che comunque io conosco parecchie persone (professionisti di svariati settori) che hanno più delle cinque applicazioni standard installate sul proprio handset.</p>
+
+<p>Penso che la verità, da questo punto di vista, stia nel mezzo: è vero che non ci dobbiamo aspettare che i nostri terminali contengano più di un tot di applicazioni (a meno di non essere installatori compulsivi di roba a caso), ma in genere <strong>qualche app più “specialistica”</strong>, particolare, senza dubbio viene installata. Fosse anche solo uno Snapseed, un Aviary per il ritocco di foto, o un giochetto carino, o un gestore di spese.</p>
+
+<h3 id="rivoluzioni-ed-involuzioni">Rivoluzioni ed involuzioni</h3>
+<p>Per quanto riguarda la “rivoluzione delle app” tanto acclamata e risoltasi in un nulla di fatto, direi piuttosto di cercare il responsabile nei <strong>terminali di fatto poco potenti</strong> per fare tante cose che invece vorremmo delegare, appunto, a questi attrezzi. È per questo che <a href="http://dottorblaster.it/2016/09/un-computer-in-ogni-casa/">usiamo ancora il PC</a>, ed è per questo che secondo me negli anni assisteremo ancora ad evoluzioni inaspettate dell’ecosistema tecnologico che ci circonda, fatto di ciappilli inutili su cui non facciamo altro che fare <strong>cippiciappi con le dita</strong>, e macchine potentissime che si riducono a Facebook machine da duemila dollari.</p>
+
+<p>È impossibile delegare del calcolo estremo a una CPU che poco ha di dedicato alle operazioni complesse. Quel tipo di CPU (e di interfaccia grafica…) è più adatto alle “cagate”, e l’<strong>insieme delle cagate computabili</strong> da un hardware del genere, interagibile con un’interfaccia del genere, è piuttosto ridotto.</p>
+
+<h3 id="e-lidea-da-un-milione-di-dollari">E l’idea da un milione di dollari?</h3>
+<p><strong>Non è un problema</strong> mettersi a sviluppare adesso qualcosa che possa avere un qualche valore, sia per gli utenti finali che per il nostro portafoglio. Solo che bisogna studiare un po’.</p>
+
+<p>È una sesquipedale stupidaggine che un’applicazione possa sostenersi con un sistema “pay once, get stuff for life”, come qualche tempo fa tutte le applicazioni (soprattutto per iOS) sponsorizzavano. Su Android col tempo si sono andate affermando versioni premium di applicazioni con pubblicità integrata, spesso poco elegante, spesso troppo invasiva. <strong>Marco Arment</strong> di recente ha cominciato ad affrontare questo discorso con degli <a href="https://marco.org/2016/09/09/overcast-ads">approcci interessanti su iOS</a>, sperimentando di fatto un design meno intrusivo per i banner pubblicitari, cosa che ho visto anche in molte applicazioni Android il cui design si è andato affinando col tempo.</p>
+
+<p>Ecco, il modello c’è ed è più o meno questo; quello che manca come sempre è una trovata per far aprire quello che hai fatto alle persone, ma nonostante ormai gran parte delle possibilità sia stata cannibalizzata a dovere, penso che ci siano ancora delle zone d’ombra e delle nicche non soddisfatte (vedasi, appunto, il caso di Arment con <strong>Overcast</strong>).</p>
+
+<p>Non mi soffermo oltre. Ho del codice da scrivere, per qualche side project :-D</p>
+
+<p><em>Questo post è dedicato alla #PinguiniMarciChallenge. ;-)</em></p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2016/09/un-computer-in-ogni-casa/" title="Un computer in ogni casa - di Alessio Biancalana">
+          Un computer in ogni casa
+        </a>
+      </h1>
+      <span class="post-date">20 Sep 2016</span>
+    
+
+    <p>Se penso all’utilizzo che faccio oggi del <strong>computer</strong>, rispetto a quello che ne facevo ieri, mi metto quasi a ridere. Viceversa, se penso all’utilizzo che ho provato a fare alcune volte del mio tablet, rischiando l’incaprettamento delle dita, mi viene da piangere.</p>
+
+<p>È così, e non possiamo farci niente: per quanto abbiano provato ad inculcarci il concetto secondo cui possiamo fare moltissime più cose dal <strong>tablet</strong>, dallo smartphone, e chi più ne ha più ne metta, la verità dei fatti è che c’è sempre e ci sarà sempre qualcun altro che non riuscirà minimamente a usare tali strumenti come dei <strong>supporti adeguati</strong> al lavoro che fa.</p>
+
+<h3 id="fruizione--creazione">Fruizione / Creazione</h3>
+<p>Purtroppo quello che viene fuori dall’esperienza d’uso di un dispositivo di questi con cui si è tanto spippolato negli ultimi anni è che per quanto potente, è adatto solo alla <strong>fruizione di contenuti</strong>. La <strong>creazione</strong> di contenuti che non siano dei meme o delle cose simili è estremamente complicata con questi attrezzi, per cui in realtà molte persone hanno abbandonato progressivamente la voglia di impegnarsi in qualcosa di più profondo (un blog?) per passare a qualcosa di decisamente più temporaneo, <strong>effimero</strong>, senza sforzo, come un post su Facebook o su Twitter. Figuriamoci quando si passa al montaggio video, al rendering 3D, cose di cui un hardware del genere non è nemmeno capace.</p>
+
+<h3 id="il-sacro-monolite">Il sacro monolite</h3>
+<p>Alla fine il computer desktop tradizionale non è diventato solo uno strumento professionale, ma questi marchingegni così usabili, così lisci, così perfetti, così maneggevoli, hanno contribuito in un certo senso ad aumentare l’aura mistica che circonda l’attrezzatura che normalmente utilizza un “utente normale del PC”. E allo stesso tempo, se vogliamo, ci si è resi piano piano conto che nessun form factor va bene per fare qualsiasi cosa, tranne uno: il <strong>personal computer</strong>, che così ingombrante rispetto a un tablet, ma versatile come ognuno dei nostri strumenti elettronici combinati, è comunque indispensabile per chiunque decida di fare qualcosa di più che postare su Facebook.</p>
+
+<h3 id="credits">Credits</h3>
+<p>Questo post è scaturito da una riflessione <a href="https://medium.com/@linuxbird/once-we-were-bloggers-d9d9d62539c5#.4i4bauvcu">stimolata</a> da <a href="https://medium.com/@linuxbird">@Linuxbird</a> per la <strong>#PinguiniMarciChallenge</strong>. Ed esattamente come voleva lui, non è stato pensato, non è stato “scalettato”, non è stato nemmeno (quasi) riletto.</p>
+
+<p>:-)</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2016/09/gnome-shell-dopo-tanto-tempo/" title="GNOME Shell - dopo tanto tempo - di Alessio Biancalana">
+          GNOME Shell - dopo tanto tempo
+        </a>
+      </h1>
+      <span class="post-date">11 Sep 2016</span>
+    
+
+    <p>Era già da un po’ che volevo iniziare a scrivere questo post, ma per impegni personali ho sempre rimandato. E ho rimandato anche quello precedente, il che è divertente: avevo infatti intenzione (e non l’ho fatto!) di scrivere, da agosto scorso, di come io sia tornato a casa, e abbia <strong>distrutto tutte le partizioni</strong> del disco rigido del mio PC fisso per tornare ad installare, dopo parecchio tempo, <strong>Arch Linux</strong>.</p>
+
+<h3 id="back-to-arch">Back to Arch</h3>
+<p>Alla fine, renderò quel post un piccolo paragrafo di questo. <strong>Tornare su Arch Linux</strong> è, nell’ultimo anno, probabilmente la cosa più sensata che io abbia fatto con le mie macchine. Sul laptop per motivi di autonomia e assenza di voglia di sbattimento continuo ad avere <strong>macOS</strong>, viceversa sul fisso non solo ho sbragato tutto ciò che c’era di preesistente per ripartire con un ambiente pulito, ma stufo di tutti i problemini e gli impuntamenti che le altre distribuzioni mi avevano riservato (frustrandomi) ho deciso di provare a calcare la strada che una volta mi era stata <strong>più congeniale</strong>, per scoprire che è ancora il mio percorso preferito.</p>
+
+<p>Forse su questo avrò da dire di più in seguito.</p>
+
+<p>Ho scritto <a href="https://github.com/dottorblaster/pacnews">pacnews</a>.</p>
+
+<p>Ma soprattutto, ho <strong>installato GNOME Shell</strong>, la scorsa settimana, per prendermi una pausa di riflessione da KDE; ed il risultato è stato totalmente inaspettato.</p>
+
+<h3 id="il-setup">Il setup</h3>
+<p>Per l’occasione, ho deciso di avvalermi di un assistente d’eccezione: così mentre il package manager sbrigava il lavoro sporco ho chiamato <a href="http://blog.gsora.xyz/">Gianguido</a>, che la scena GNOME negli ultimi tempi l’ha seguita molto più di me, e gli ho chiesto consiglio.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>pacman <span class="nt">-Rcs</span> kde
+<span class="nv">$ </span><span class="nb">sudo </span>pacman <span class="nt">-S</span> gnome gnome-extra
+</code></pre></div></div>
+
+<p>Con i comandi di rito ho avuto un <strong>setup abbastanza pulito di GNOME</strong> sulla mia macchina. Quello che però non sono ancora riuscito a digerire della nuova <strong>GUI</strong>, purtroppo, è il tema di default che gli sviluppatori hanno deciso di disegnare ed adottare: se infatti dall’esterno può apparire anche gradevole, personalmente non lo trovo molto bello, anche se devo giudicarlo molto funzionale. Essendo stato consigliato da Gianguido riguardo l’<strong>installare un tema</strong> dato che nel tempo c’è stata una proliferazione discreta, ho optato per sostituire il secolare (ormai) Adwaita con un <strong>più ammiccante Arc</strong>, sia per quanto riguarda la GUI delle applicazioni, sia per quanto riguarda GNOME Shell.</p>
+
+<p><img src="https://gitlab.com/dottorblaster/blog-images/raw/master/images/gnome3_vanilla.png" alt="GNOME 3 vanilla" /></p>
+
+<h3 id="estensioni">Estensioni</h3>
+<p>Già che c’ero, mi sono fatto consigliare qualche estensione per rendere ancora più personalizzata la mia esperienza. Dato che ormai avevo sostituito il tema di default (e non volevo rinunciare a una dock) potevo anche <strong>andare all-in con le customizzazioni</strong> no?</p>
+
+<p>Attualmente sono arrivato ad avere questo pool di estensioni attivo:</p>
+
+<ul>
+  <li><strong>User themes</strong>, per attivare il tema personalizzato Arc per la Shell;</li>
+  <li><strong>Dash to dock</strong>, per la dock: devo dire che svolge meravigliosamente il suo compito anche se va un po’ configurata;</li>
+  <li><strong>Impatience</strong>, che è un simpatico trick per configurare la durata delle animazioni della Shell, dato che le performance non mi hanno convinto del tutto anche se di questo parleremo poi.</li>
+</ul>
+
+<h3 id="performance">Performance</h3>
+<p>Sinceramente, il <strong>lato performance</strong> mi sembra il più grosso caveat di <strong>GNOME</strong>. Sinceramente credo di aver ritrovato un po’ di pace interiore con questa impostazione attuale (estensioni incluse), quindi sono portato a comparare il tutto al mio vecchio desktop GNOME di anni fa, preso da una memoria lasciata al volo su Facebook:</p>
+
+<p><img src="https://gitlab.com/dottorblaster/blog-images/raw/master/images/1916834_1521768761191_1878241_n.jpg" alt="GNOME 2.30" /></p>
+
+<p><em>(Poi dicono che questi social media ci fanno male)</em></p>
+
+<p>In quanto a performance secondo me il mio ambiente attuale non è paragonabile all’<strong>ambiente di cui ho nostalgia, basato su GNOME e Compiz</strong>. Trovo però che sia un <strong>buon compromesso</strong> rispetto all’offerta attuale dei desktop Linux, che trovo funzionale ma poco prestante rispetto alle soluzioni offerte dalla concorrenza.</p>
+
+<p>La cosa secondo me più grave è che per raggiungere qualcosa di decente io abbia non solo dovuto installare un’estensione per far durare meno le <strong>animazioni di Mutter</strong> (che io, per inciso, trovo <strong>esageratamente</strong> lente), ma abbia anche dovuto applicare una <a href="http://dottorblaster.it/2016/08/intel-linux-tearing/">configurazione particolare</a> al mio driver video che a quanto pare non era abilitata, e senza la quale, detto senza peli sulla lingua, GNOME non gira molto bene.</p>
+
+<p>A lato, va detto che secondo me Mutter e la Shell hanno <strong>qualche problema con la memoria</strong>, nel senso che ne allocano molta, ne consumano parecchia, e soprattutto la Shell va riavviata dopo qualche giorno di utilizzo continuo altrimenti comincia a soffrire di un po’ di <strong>micro-lag</strong>.</p>
+
+<h3 id="applicazioni-e-user-experience">Applicazioni e user experience</h3>
+<p>Nonostante l’aspetto relativo alle performance non stia proprio brillando in casa GNOME, e nonostante io venga comunque da un’<strong>esperienza Plasma 5</strong> che al contrario è velocissimo in ogni animazione e ogni azione, <strong>sono molto soddisfatto dell’uso del desktop nel quotidiano</strong>. Le applicazioni si fanno usare volentieri, e non sento nessun tipo di mancanza in confronto ad ambienti desktop molto più blasonati come quello di <strong>macOS</strong>.</p>
+
+<p>Addirittura, ho cominciato a fare qualche ricerchina per applicazioni che usino tutte le nuove feature delle <strong>GTK3</strong>, e se ne cominciano a trovare parecchie.</p>
+
+<p><img src="https://gitlab.com/dottorblaster/blog-images/raw/master/images/gnome3_mine.png" alt="GNOME 3 custom" /></p>
+
+<p>Una cosa che mi ha lasciato stupefatto è quanto <strong>Nautilus e l’handling dei file</strong> in tutto l’ambiente sia rimasto al top: nonostante qualche funzionalità in meno rispetto al passato (e infatti tempo addietro usavo Nauilus ricompilato con il patchset dell’Elementary Project), il file manager rimane una delle applicazioni più curate. Al contrario di KDE, è possibile trascinare i file da un posto all’altro (tipo, ehm, il browser) senza incorrere in side effect inaspettati. Immagino che questo sia comunque un merito dell’ambiente nel complesso (quindi di file manager, gestore finestre et al.), più che un merito del singolo programma.</p>
+
+<p>L’effetto di <strong>preview delle finestre nel workspace</strong>, nonostante da queste parti sia ad utilizzo notevolmente ridotto a causa della dock, è comunque abbastanza piacevole e non mi dà così tanta noia come me ne dava i primi tempi in cui provai GNOME. Probabilmente il fattore abitudine influisce tanto su queste scelte e questi “sentimenti”, e devo dire che se ho avuto qualche difficoltà ad adattarmi a GNOME nel tempo è stato anche perché l’aggiornamento improvviso sulle distribuzioni Linux che uso di più mi ha fatto sentire un “homeless di GNOME 2” più di quanto io sia abituato a credere.</p>
+
+<p>La cosa che mi fa storcere il naso di più, in ogni caso, è come il <strong>setup di default</strong> non soddisfi il mio gusto personale e come sono abituato a lavorare; il fatto che gli sviluppatori di GNOME cerchino addirittura di osteggiare le personalizzazioni è persino più grave. Però nonostante questo <strong>comincio ad affezionarmi</strong>.</p>
+
+<p><img src="https://gitlab.com/dottorblaster/blog-images/raw/master/images/gnome3_prod.png" alt="GNOME 3 while working" /></p>
+
+<h3 id="impressioni-finali">Impressioni finali</h3>
+<p>Dopo qualche settimana di <strong>uso costante di GNOME</strong>, posso dire “viva GNOME!” seppur con qualche riserva. Esattamente come KDE va fatto del fine tuning per far funzionare tutto in modo che possa usarlo un essere umano normale. Le applicazioni sono belle, il desktop fa quello che dovrebbe fare e fa quello che ci si aspetta che un ambiente desktop debba fare. È sicuramente meno scarno di altri miei setup passati, e credo che rimarrà comunque il <strong>mio desktop environment</strong> per moltissimo tempo, dato che è esattamente quello che volevo.</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2016/09/gitlab-hosting-immagini/" title="Gestire le immagini statiche tramite Git: why not - di Alessio Biancalana">
+          Gestire le immagini statiche tramite Git: why not
+        </a>
+      </h1>
+      <span class="post-date">02 Sep 2016</span>
+    
+
+    <p>Stamattina ho avuto un’<strong>illuminazione da toilette</strong>. Dicesi illuminazione da toilette quel momento chiarificatore di ogni cosa, che accade generalmente la mattina tra quando prendi il caffè e quando ti vesti. Ossia quando sei (circa) seduto sul tuo augusto trono casalingo ad espletare le funzioni corporali di un essere umano medio.</p>
+
+<p>Erano mesi che ragionavo su una tematica particolare: questo blog ha sempre usato un hosting esterno per le immagini; come posso fare a portarmele dentro casa, o comunque su una piattaforma dove io abbia un controllo decisamente maggiore? Così ho analizzato varie soluzioni:</p>
+
+<ul>
+  <li><strong>Amazon S3</strong></li>
+  <li><a href="https://minio.io/">Minio</a></li>
+  <li><strong>Apache/nginx</strong> e un FTP custom</li>
+  <li>Un <strong>servizio di image hosting</strong> anche a pagamento</li>
+</ul>
+
+<p>Mi è passata circa immediatamente la voglia di fare un censimento di ogni roba simile che ci fosse sull’internet. S3 l’ho escluso perché costa un pacco di soldi. <strong>Minio</strong> non fa esattamente quello che volevo io, e per concludere, beh, anche Apache o nginx non hanno decisamente la comodità di offrirmi un’interfaccia caruccia per fare queste cose.</p>
+
+<p>Viceversa stamattina, l’<strong>illuminazione</strong>. Sono andato al computer, ancora con tutto lo sventramento di C aperto dalla sera prima, e ho fatto questo:</p>
+
+<p><img src="https://gitlab.com/dottorblaster/blog-images/raw/master/images/epiphany_gitlab_repoblog.png" alt="Gitlab epiphany" /></p>
+
+<p>Vedrò di gestire le immagini (d’ora in poi) tramite <strong>Git</strong>, e un repository pubblico su <strong>Gitlab</strong> creato per l’occasione. Mi sono detto che essendo un fan di Git così assiduo (diamine, persino questo blog è basato su Git), forse ha senso provare ad approfittare un po’ di quello che offre Gitlab.</p>
+
+<p>Vi faremo sapere. :-D</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/page/32"><i class="fa fa-chevron-circle-left"></i></a>
+  
+  
+    
+      <a class="pagination-item newer" href="/page/30"><i class="fa fa-chevron-circle-right"></i></a>
+    
+  
+</div>
+
+
+      <div class="footer">
+        <p>
+          &copy; Grab The Blaster is brought to you by Alessio Biancalana with <a href="http://jekyllrb.com/">Jekyll</a> and much ♥, under <a href="https://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC</a>.
+        </p>
+        <form class="search-form" action="/search" method="get">
+          <input type="text" placeholder="Cerca →" name="query">
+        </form>
+      </div>
+      <div class="webring-container">
+        <webring-banner>
+          <p>Member of <a href="https://retronerds.netlify.app"></a></p>
+          <a href="https://retronerds.netlify.app/prev">Previous</a>
+          <a href="https://retronerds.netlify.app/random">Random</a>
+          <a href="https://retronerds.netlify.app/next">Next</a>
+        </webring-banner>
+        <script async src="https://retronerds.netlify.app/embed.js" charset="utf-8"></script>
+      </div>
+    </div>
+
+  </body>
+</html>

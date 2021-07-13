@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <link rel="canonical" href="/2021/02/da-grande-voglio-essere-bryan-cantrill/" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- Enable Graph API for Facebook integration -->
+  <meta content="Grab The Blaster" property="og:site_name">
+  
+    <meta content="Da grande voglio essere Bryan Cantrill: tre talk da vedere (più bonus track)" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="Da qualche mese ho preso l’abitudine di spendere un’oretta al giorno del mio tempo guardando dei talk, vista anche la carenza di conferenze dal vivo (tipologia di evento a cui ero molto affezionato) e non apprezzando tantissimo il formato delle conferenze online - banalmente perché tante volte avere la chattina al posto di una birra in un centro conferenze sminuisce un po’ l’intera esperienza.Ma sto divagando. Qualche settimana fa Elastic si è esibita in un corposo relicensing di ElasticSearc..." property="og:description">
+  
+  
+    <meta content="https://dottorblaster.it/2021/02/da-grande-voglio-essere-bryan-cantrill/" property="og:url">
+  
+  
+    <meta content="2021-02-07T11:42:40+00:00" property="article:published_time">
+    <meta content="https://dottorblaster.it/about/" property="article:author">
+    <meta content="https://dottorblaster.it/opengraph/0a84de665d3c061179a2bcce96c0bbf0bd1c548a.png" property="og:image">
+  
+  
+    
+    <meta content="Category" property="article:section">
+    
+  
+  
+    
+    <meta content="first_tag" property="article:tag">
+    
+    <meta content="second_tag" property="article:tag">
+    
+  
+
+  <!--   Enable Twitter Cards support through metadata, thanks to http://davidensinger.com/2013/04/supporting-twitter-cards-with-jekyll/ -->
+<!--   <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@site_username">
+  <meta name="twitter:creator" content="@creator_username">
+  
+    <meta name="twitter:title" content="Da grande voglio essere Bryan Cantrill: tre talk da vedere (più bonus track)">
+  
+  
+    <meta name="twitter:url" content="https://dottorblaster.it/2021/02/da-grande-voglio-essere-bryan-cantrill/">
+   -->
+  <!-- This is from @stammy -->
+<!--   <meta name="twitter:description" content="Da qualche mese ho preso l’abitudine di spendere un’oretta al giorno del mio tempo guardando dei talk, vista anche la carenza di conferenze dal vivo (tipologia di evento a cui ero molto affezionato...">
+  
+    <meta name="twitter:image:src" content="https://dottorblaster.it/path/to/image/logo.png">
+    -->
+
+  <title>
+    
+      Da grande voglio essere Bryan Cantrill: tre talk da vedere (più bonus track) &middot; Grab The Blaster
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/grabtheblaster.css">
+  <link rel="stylesheet" href="/public/font-awesome/css/font-awesome.min.css">
+
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700italic,700,400italic' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,700' rel='stylesheet' type='text/css' />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title="" href="https://dottorblaster.it/feed">
+</head>
+
+
+  <body>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=81489295682&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="container content">
+      <div class="masthead">
+        <h3 class="masthead-title">
+          <img src="/public/avatar-blaster.png" alt="Alessio Biancalana">
+          <a href="/" title="Home page">Grab The Blaster</a>
+          <small>di Alessio Biancalana</small>
+        </h3>
+        <div class="social-icons"><a href="/about/" title="About Me"><i class="fa fa-user-circle-o"></i></a> <a href="https://twitter.com/dottorblaster" title="Twitter - @dottorblaster"><i class="fa fa-twitter"></i></a> <a href="https://github.com/dottorblaster" title="GitHub - dottorblaster"><i class="fa fa-github"></i></a></div>
+      </div>
+
+      <div class="post">
+  <h1 class="post-title">Da grande voglio essere Bryan Cantrill: tre talk da vedere (più bonus track)</h1>
+  <span class="post-date">07 Feb 2021</span>
+  <p>Da qualche mese ho preso l’abitudine di spendere un’oretta al giorno del mio tempo <strong>guardando dei talk</strong>, vista anche la carenza di conferenze dal vivo (tipologia di evento a cui ero molto affezionato) e non apprezzando tantissimo il formato delle conferenze online - banalmente perché tante volte avere la chattina al posto di una birra in un centro conferenze sminuisce un po’ l’intera esperienza.</p>
+
+<p>Ma sto divagando. Qualche settimana fa <strong>Elastic si è esibita in un corposo relicensing di ElasticSearch</strong>, che io preferisco non commentare perché l’azione in sé si commenta abbastanza da sola. Quello che potete leggere in merito lo trovate sul <a href="https://drewdevault.com/2021/01/19/Elasticsearch-does-not-belong-to-Elastic.html">blog di Drew DeVault</a>, dove è linkato un talk molto affine alla questione presa in esame, ovvero un talk di <strong>Bryan Cantrill</strong> del 2011 su Solaris e IllumOS. È stato proprio in questa sede che ho (ri)scoperto la figura di Cantrill, un ingegnere controverso perseguitato per metà della sua vita da una risposta oggettivamente stupida su <code class="language-plaintext highlighter-rouge">comp.sys.sun.hardware</code>, dagli infiniti meriti tecnologici, e soprattutto un uomo che potrei stare ad ascoltare per ore semplicemente perché sì. Siccome sono andato in fissa, praticamente la mia ultima settimana è stata un continuo approfondimento delle opinioni, dello stile, dei meriti tecnici e del software stesso scritto da lui, accorgendomi che avevo letto di recente anche <a href="http://dtrace.org/blogs/bmc/2020/10/11/rust-after-the-honeymoon/">“Rust after the honeymoon”</a>.</p>
+
+<p>Questo dover ammettere che ogni volta che inciampo su un suo contenuto me lo spolpi voracemente mi ha fatto venire voglia di scrivere questo post in cui vi linko tre suoi talk che secondo me spiegano abbastanza bene come mai da grande io voglia essere Bryan Cantrill.</p>
+
+<h3 id="fork-yeah-the-rise-and-development-of-illumos">Fork Yeah! The Rise and Development of Illumos</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-zRN7XLCRhc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<p>Questo è il talk che citavo sopra: IllumOS era appena nato dalle ceneri di Solaris, e se c’è una cosa di cui quest’uomo è estremamente fiero è l’aver lavorato al fianco dei giganti prima dell’acquisizione di Sun, essendo poi diventato egli stesso un gigante scrivendo <a href="https://github.com/opendtrace/opendtrace">DTrace</a>. A parte le cose divertenti come le prese in giro rispetto a Oracle e ai vari personaggi dell’epoca, una cosa che adoro di questo talk è il porre l’accento in maniera particolare sul <strong>principio fondante di Sun</strong> (che purtroppo è stato il suo canto del cigno):</p>
+
+<blockquote>
+  <p>Kicked ass, had fun, loved our customers, changed computing forever.</p>
+</blockquote>
+
+<p>Il che per quanto mi riguarda è quello che cerco di fare ogni giorno.</p>
+
+<h3 id="debugging-under-fire-keep-your-head-when-systems-have-lost-their-mind">Debugging Under Fire: Keep your Head when Systems have Lost their Mind</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/30jNsCVLpAE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<p>Il mio meccanismo di scoperta su YouTube è pressoché quello di tutti: vedo una cosa interessante nella sidebar dei video correlati, la clicko. È così che mi sono imbattuto in questo video, perché mi ha solleticato il fatto che mentre di solito tutti parliamo di best practice quando è tutto a posto e in ordine, veramente in pochi parlano di quello che dovresti fare quando c’è un incidente veramente grosso in produzione. La maggior parte dei talk con <strong>approccio SRE</strong> ti dicono cose come “vedi salire la metrica rossa sul grafichetto, fai squillare il PagerDuty di tutti, leggi l’handbook che hai preparato col tuo team”.</p>
+
+<p>Questo è stato il primo e unico talk che io abbia mai visto che spiega cosa passa veramente per la testa di un software engineer durante un <strong>incidente in produzione</strong> nei primi due minuti: “Please don’t be me”.</p>
+
+<h3 id="principles-of-technology-leadership">Principles of Technology Leadership</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9QMGAtxUlAc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<p>Devo dire che questo talk mi ha incuriosito parecchio su quello che succede alla Monktoberfest, tanto che quando riprenderà in presenza vorrei andarci. Oltre l’apprezzamento per la conferenza dalle tematiche più umane che tecniche, comunque, questo talk mi ha fatto morire perché come dice uno dei commenti “voglio mettermi <em>Always be hustlin’</em> pronunciato da Bryan Cantrill come suoneria del cellulare” ma soprattutto ho adorato, adorato, <em>adorato</em> la <strong>critica feroce agli Amazon’s technology leadership principles</strong> insieme a quelli di Uber.</p>
+
+<h3 id="bonus-track-the-summer-of-rust">Bonus track: The summer of Rust</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LjFM8vw3pbU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<p>Secondo voi è possibile che un coefficiente di stima già alto per una persona vada improvvisamente fuori scala con qualcosa che è una “bonus track” e non avevi nemmeno preventivato di metterlo in un post che ti eri appuntato da settimane? Con questo talk ho scoperto che almeno per me è possibile, non tanto per le affermazioni riguardo Rust, ma per quelle che precedono il racconto su Rust, che riguardano <strong>JavaScript</strong>, e con le quali da JavaScript software engineer ho empatizzato un sacco. Non avevo mai sentito qualcuno dire ad alta voce quello che già pensavo da me: “<strong>JavaScript is Lisp in C’s clothing</strong>” - ed è veramente strano, <em>veramente</em> strano che a dirlo sia una persona che si professa “not a programming language guy”, perché persone che invece si ammantano di un’oscura aura di mistero adorando discutere tutto il giorno di language design alla fine della fiera non sono mai arrivate a comprendere questa verità profonda.</p>
+
+<p>E questo è un grosso indice di quanto l’ecosistema IT mondiale sia rotto in gran parte, dato che da una parte ci sono persone che dicono cose del genere e dall’altra ci sono persone convinte che un full-stack developer possa fare from zero to hero in sei mesi con un bootcamp che a questo punto non saprei come definire se non “miracoloso” dati i risultati che promette.</p>
+
+<p>Alla luce di un’affermazione del genere, mi sento di scrivere anch’io qualcosa in merito: se veramente volete scoprire da dove viene JavaScript e comprenderne alcuni meccanismi che possono sembrare oscuri, <strong>studiate OCaml. Studiate il Lisp. Studiate il C.</strong> Fatelo bene, poi tornate a dirmi che non capite le scelte di design che stanno dietro al lexing o ad altre meccaniche.</p>
+
+<h3 id="wrap-up">Wrap-up</h3>
+<p>Di seguito una <strong>lista di commenti</strong> su YouTube a video di questo genere, che ho raccolto durante le mie visioni semplicemente scrollando un po’ con la rotella del mouse, coi quali concordo in maniera smodata:</p>
+
+<ul>
+  <li>“I feel like I am watching a stand up comedian, but with topics I like to listen too.”</li>
+  <li>“This guy has more stories to tell than all of my great grandfathers combined”</li>
+  <li>“I am an hour in and this man has just now mentioned Rust for the first time… and can I just say, I completely forgot that this talk was about Rust and I do not care. I’m loving this”</li>
+  <li>“when you let bryan cantrill have caffeine, a halo appears around his head”</li>
+  <li>“This talk is more entertaining than a lot of Netflix comedy shows, thanks for it.”</li>
+  <li>“His energetic speech style is truly one of a kind. Loves it.”</li>
+</ul>
+
+<p>Devo dire che raramente mi è capitato di sentire talk che mi ispirassero così tanto in materia di system programming e in materia di software engineering più in generale. Che altro? Boh, vado a guardarmene un altro. Spero di essermi fatto capire. Sicuramenter Bryan Cantrill ci sarebbe riuscito meglio.</p>
+
+</div>
+
+<div class="social-section">
+  <div class="fb-like" data-href="/2021/02/da-grande-voglio-essere-bryan-cantrill/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-via="dottorblaster" data-lang="it" data-dnt="true">Tweet</a>
+</div>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'blasterhome'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/06/domain-modeling-made-functional-recensione/">
+            Recensione: Domain Modeling Made Functional, di Scott Wlaschin
+            <small>08 Jun 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/05/piccolo-kubernetes-production-ready-k3s/">
+            Kubernetes production-ready in piccolo: deployare un mini-cluster K3s
+            <small>18 May 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/04/adoro-kubernetes/">
+            Io adoro Kubernetes
+            <small>25 Apr 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+      <div class="footer">
+        <p>
+          &copy; Grab The Blaster is brought to you by Alessio Biancalana with <a href="http://jekyllrb.com/">Jekyll</a> and much ♥, under <a href="https://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC</a>.
+        </p>
+        <form class="search-form" action="/search" method="get">
+          <input type="text" placeholder="Cerca →" name="query">
+        </form>
+      </div>
+      <div class="webring-container">
+        <webring-banner>
+          <p>Member of <a href="https://retronerds.netlify.app"></a></p>
+          <a href="https://retronerds.netlify.app/prev">Previous</a>
+          <a href="https://retronerds.netlify.app/random">Random</a>
+          <a href="https://retronerds.netlify.app/next">Next</a>
+        </webring-banner>
+        <script async src="https://retronerds.netlify.app/embed.js" charset="utf-8"></script>
+      </div>
+    </div>
+
+  </body>
+</html>

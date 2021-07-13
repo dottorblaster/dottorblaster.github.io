@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <link rel="canonical" href="/2012/07/arch-linux-addio-ad-rc-conf-kiss/" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- Enable Graph API for Facebook integration -->
+  <meta content="Grab The Blaster" property="og:site_name">
+  
+    <meta content="Arch Linux: addio ad rc.conf. KISS?" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="In questi giorni ho letto una RFC all'interno della mailing list arch-dev, che si è poi tramutata col tempo in una solida realtà, malgrado la scelta snaturata che propone: Arch Linux, a causa del passaggio a systemd, dirà addio ad rc.conf come unica unità di configurazione del sistema operativo. Mi sono fatto un paio di domande sulla questione, e su come questo potesse riflettersi in maniera positiva su un utente Arch. Fortunatamente, poi, comprendo abbastanza lo spagnolo e il post di Rafael ..." property="og:description">
+  
+  
+    <meta content="https://dottorblaster.it/2012/07/arch-linux-addio-ad-rc-conf-kiss/" property="og:url">
+  
+  
+    <meta content="2012-07-28T14:42:18+00:00" property="article:published_time">
+    <meta content="https://dottorblaster.it/about/" property="article:author">
+    <meta content="https://dottorblaster.it/opengraph/7de89b8535d7263bc2a130276118ab639c99b163.png" property="og:image">
+  
+  
+    
+    <meta content="Linux" property="article:section">
+    
+  
+  
+    
+    <meta content="Arch" property="article:tag">
+    
+    <meta content="Arch Linux" property="article:tag">
+    
+    <meta content="linux" property="article:tag">
+    
+    <meta content="rc.conf" property="article:tag">
+    
+    <meta content="KISS" property="article:tag">
+    
+  
+
+  <!--   Enable Twitter Cards support through metadata, thanks to http://davidensinger.com/2013/04/supporting-twitter-cards-with-jekyll/ -->
+<!--   <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@site_username">
+  <meta name="twitter:creator" content="@creator_username">
+  
+    <meta name="twitter:title" content="Arch Linux: addio ad rc.conf. KISS?">
+  
+  
+    <meta name="twitter:url" content="https://dottorblaster.it/2012/07/arch-linux-addio-ad-rc-conf-kiss/">
+   -->
+  <!-- This is from @stammy -->
+<!--   <meta name="twitter:description" content="In questi giorni ho letto una RFC all'interno della mailing list arch-dev, che si è poi tramutata col tempo in una solida realtà, malgrado la scelta snaturata che propone: Arch Linux, a causa del p...">
+  
+    <meta name="twitter:image:src" content="https://dottorblaster.it/path/to/image/logo.png">
+    -->
+
+  <title>
+    
+      Arch Linux: addio ad rc.conf. KISS? &middot; Grab The Blaster
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/grabtheblaster.css">
+  <link rel="stylesheet" href="/public/font-awesome/css/font-awesome.min.css">
+
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700italic,700,400italic' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,700' rel='stylesheet' type='text/css' />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title="" href="https://dottorblaster.it/feed">
+</head>
+
+
+  <body>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=81489295682&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="container content">
+      <div class="masthead">
+        <h3 class="masthead-title">
+          <img src="/public/avatar-blaster.png" alt="Alessio Biancalana">
+          <a href="/" title="Home page">Grab The Blaster</a>
+          <small>di Alessio Biancalana</small>
+        </h3>
+        <div class="social-icons"><a href="/about/" title="About Me"><i class="fa fa-user-circle-o"></i></a> <a href="https://twitter.com/dottorblaster" title="Twitter - @dottorblaster"><i class="fa fa-twitter"></i></a> <a href="https://github.com/dottorblaster" title="GitHub - dottorblaster"><i class="fa fa-github"></i></a></div>
+      </div>
+
+      <div class="post">
+  <h1 class="post-title">Arch Linux: addio ad rc.conf. KISS?</h1>
+  <span class="post-date">28 Jul 2012</span>
+  <p>In questi giorni ho letto una <strong>RFC</strong> all'interno della mailing list arch-dev, che si è poi tramutata col tempo in una solida realtà, malgrado la scelta snaturata che propone: <strong>Arch Linux</strong>, a causa del passaggio a <a href="http://en.wikipedia.org/wiki/Systemd">systemd</a>, dirà addio ad <strong>rc.conf</strong> come unica unità di configurazione del sistema operativo. Mi sono fatto un paio di domande sulla questione, e su come questo potesse riflettersi in maniera positiva su un utente Arch. Fortunatamente, poi, comprendo abbastanza lo spagnolo e il <a href="http://www.rafaelrojas.net/2012/07/27/adios-al-etcrc-conf/">post di Rafael Rojas</a> mi ha aiutato a capire meglio la situazione.</p>
+<h3>Che palle</h3>
+<p>Primo paragrafo in cui mi lamento. In fondo, ho sempre apprezzato <strong>Arch Linux</strong> per la sua semplicità e la sua monoliticità, che mi permette di avere un sistema configurato e funzionante, sapendo dove mettere le mani, in <strong>pochissimo tempo</strong>. Tramite la migrazione a systemd tutto questo viene messo in gioco ripudiando <strong>rc.conf</strong> come fonte unica del sapere, e rendendolo un mero file di gestione dei demoni, mentre il resto viene affidato non ad un altro file, ma ad una serie di <strong>microglobuline</strong> sparse per il filesystem; io che sono fondamentalmente una persona molto pigra credo che verrò salvato da tutta questa accidia solamente per intercessione della modalità splittata di <strong>vim</strong>.</p>
+<p>Pessimismo e fastidio.</p>
+<h3>KISS?</h3>
+<p>Come sopra. Quanto è <a href="http://it.wikipedia.org/wiki/KISS_(informatica)">KISS</a> qualcosa del genere? Il mio metro di paragone su queste piccolezze è sempre <strong>Gentoo Linux</strong>: non potrebbe esistere distro più complicata e soggetta alla frammentazione (nonostante <strong>make.conf</strong>), per quanto mi riguarda, quindi mi rifaccio sempre agli esempi dettatimi dall'esperienza. Purtroppo, la gestione attraverso microfile di configurazione diffusi un po' ovunque avviene anche sulla famosa distro di <strong>Robbins</strong>, e questo mi porta a pensare che non solo si stia andando verso un approccio meno KISS, ma che ci si stia dirigendo con una scelta del genere verso una strada che, dal <strong>KISS</strong>, non potrebbe essere più lontana.</p>
+<p><strong>KISS my ass</strong>, è proprio il caso di dirlo. :D</p>
+<p><img class="aligncenter" title="Linux Machine" src="http://farm3.staticflickr.com/2472/3797070188_ece79b25b3.jpg" alt="Linux Machine" width="500" height="333" /></p>
+<h3>Effetti collaterali positivi</h3>
+<p>Alcuni mi hanno accusato di essere sempre troppo indulgente con le scelte dei developer di <strong>Arch Linux</strong>, ma la verità è che qualsiasi cosa sia stata fatta fino ad ora, comunque hanno incontrato il mio consenso, anche rimuovendo l'installer grafico (<strong>AIF</strong>) e sostituendolo con degli script, per non parlare del link simbolico da /lib verso <strong>/usr/lib</strong>. Entrambe scelte discutibili, ma che seguono una filosofia di fondo che approvo e della quale mi faccio spesso portatore.</p>
+<p>Anche questa scelta come tutte ha degli effetti collaterali non negativi; come diceva un tizio famoso, la verità sta nel mezzo, e chi sono io per confutarlo? <strong>Arch Linux</strong> potrà quindi aderire in toto ad un nuovo standard, ed essere maggiormente apprezzata da chi si affanna per portare in maniera più indolore possibile l'ordine in quel caos che a volte si rivela essere il panorama <strong>Linux</strong> in generale.</p>
+<p>Con l'affermazione di un <a href="http://it.wikipedia.org/wiki/Init">sistema di init</a> standard de facto che interagisce in maniera così profonda con il sistema, e l'adozione di un software ormai maturo ma ancora agli albori per quanto riguarda la diffusione e gli sviluppi "futuri" come lo è <strong>systemd</strong>, mi sento orgoglioso di appartenere all'utenza e alla comunità di una distribuzione che si fa sempre scrupolo di rimanere aggiornata sia banalmente in tema di versioni del software, che in tema di adozioni di concetti (sempre a prescindere dal <strong>KISS</strong>).</p>
+<h3>Abbandonare Arch Linux</h3>
+<p>C'è chi magari troverà sin troppo fastidiosa questa scelta e deciderà che magari è venuta la volta buona di provare qualche altra <strong>distribuzione</strong>. È libero di farlo. Pur non gradendo io personalmente che <strong>rc.conf</strong> venga <del>"droppato"</del> reso non preferenziale (pardon) in maniera così brusca per una soluzione così suddivisa e per gente che - diciamocelo - non ha niente di meglio da fare che ravanare il proprio filesystem alla ricerca di tali <strong>follicoli di configurazione</strong>, in ogni caso apprezzo <strong>Arch Linux</strong> per l'approccio KISS applicato in tutti gli aspetti in cui una distribuzione Linux possa essere personalizzata.</p>
+<p>Continuerò quindi ad usarla felicemente. Sono comunque fortunato, e non vorrei essere nei panni di chi si è trovato ad installare in questi giorni: auguri, per leggervi tutto il manuale degli <strong>scriptini</strong> ci vuole voglia :D</p>
+<p><em>Photo courtesy of <a href="http://www.flickr.com/photos/telwink/3797070188/in/photostream/">telwink</a></em></p>
+
+</div>
+
+<div class="social-section">
+  <div class="fb-like" data-href="/2012/07/arch-linux-addio-ad-rc-conf-kiss/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-via="dottorblaster" data-lang="it" data-dnt="true">Tweet</a>
+</div>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'blasterhome'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/06/domain-modeling-made-functional-recensione/">
+            Recensione: Domain Modeling Made Functional, di Scott Wlaschin
+            <small>08 Jun 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/05/piccolo-kubernetes-production-ready-k3s/">
+            Kubernetes production-ready in piccolo: deployare un mini-cluster K3s
+            <small>18 May 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/04/adoro-kubernetes/">
+            Io adoro Kubernetes
+            <small>25 Apr 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+      <div class="footer">
+        <p>
+          &copy; Grab The Blaster is brought to you by Alessio Biancalana with <a href="http://jekyllrb.com/">Jekyll</a> and much ♥, under <a href="https://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC</a>.
+        </p>
+        <form class="search-form" action="/search" method="get">
+          <input type="text" placeholder="Cerca →" name="query">
+        </form>
+      </div>
+      <div class="webring-container">
+        <webring-banner>
+          <p>Member of <a href="https://retronerds.netlify.app"></a></p>
+          <a href="https://retronerds.netlify.app/prev">Previous</a>
+          <a href="https://retronerds.netlify.app/random">Random</a>
+          <a href="https://retronerds.netlify.app/next">Next</a>
+        </webring-banner>
+        <script async src="https://retronerds.netlify.app/embed.js" charset="utf-8"></script>
+      </div>
+    </div>
+
+  </body>
+</html>

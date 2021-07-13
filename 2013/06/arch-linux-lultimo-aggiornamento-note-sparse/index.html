@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <link rel="canonical" href="/2013/06/arch-linux-lultimo-aggiornamento-note-sparse/" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- Enable Graph API for Facebook integration -->
+  <meta content="Grab The Blaster" property="og:site_name">
+  
+    <meta content="Arch Linux e l'ultimo aggiornamento: note sparse" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="Qualche decina di minuti fa, preso da un irrefrenabile impulso per le cose pericolosamente fighe a mezzanotte e mezza con un occhio aperto e uno chiuso, mi sono preso il portatile e carezzandolo amorevolmente ho aggiornato Arch Linux, eseguendo l'update di cui si vociferava in giro che accorpa un sacco di roba (al momento non ho ricordi precisi, ho sonno) tra cui le varie /usr/bin, /usr/sbin, /vattelapesca/soreta/sbin, in un'unica directory.Visto che è una roba strana e pericolosa, e che a me..." property="og:description">
+  
+  
+    <meta content="https://dottorblaster.it/2013/06/arch-linux-lultimo-aggiornamento-note-sparse/" property="og:url">
+  
+  
+    <meta content="2013-06-03T22:10:45+00:00" property="article:published_time">
+    <meta content="https://dottorblaster.it/about/" property="article:author">
+    <meta content="https://dottorblaster.it/opengraph/539780e68cbb13ea83edf9a4d5875da70bba7019.png" property="og:image">
+  
+  
+    
+    <meta content="Linux" property="article:section">
+    
+  
+  
+    
+    <meta content="Arch Linux" property="article:tag">
+    
+  
+
+  <!--   Enable Twitter Cards support through metadata, thanks to http://davidensinger.com/2013/04/supporting-twitter-cards-with-jekyll/ -->
+<!--   <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@site_username">
+  <meta name="twitter:creator" content="@creator_username">
+  
+    <meta name="twitter:title" content="Arch Linux e l'ultimo aggiornamento: note sparse">
+  
+  
+    <meta name="twitter:url" content="https://dottorblaster.it/2013/06/arch-linux-lultimo-aggiornamento-note-sparse/">
+   -->
+  <!-- This is from @stammy -->
+<!--   <meta name="twitter:description" content="Qualche decina di minuti fa, preso da un irrefrenabile impulso per le cose pericolosamente fighe a mezzanotte e mezza con un occhio aperto e uno chiuso, mi sono preso il portatile e carezzandolo am...">
+  
+    <meta name="twitter:image:src" content="https://dottorblaster.it/path/to/image/logo.png">
+    -->
+
+  <title>
+    
+      Arch Linux e l'ultimo aggiornamento: note sparse &middot; Grab The Blaster
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/grabtheblaster.css">
+  <link rel="stylesheet" href="/public/font-awesome/css/font-awesome.min.css">
+
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700italic,700,400italic' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,700' rel='stylesheet' type='text/css' />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title="" href="https://dottorblaster.it/feed">
+</head>
+
+
+  <body>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=81489295682&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="container content">
+      <div class="masthead">
+        <h3 class="masthead-title">
+          <img src="/public/avatar-blaster.png" alt="Alessio Biancalana">
+          <a href="/" title="Home page">Grab The Blaster</a>
+          <small>di Alessio Biancalana</small>
+        </h3>
+        <div class="social-icons"><a href="/about/" title="About Me"><i class="fa fa-user-circle-o"></i></a> <a href="https://twitter.com/dottorblaster" title="Twitter - @dottorblaster"><i class="fa fa-twitter"></i></a> <a href="https://github.com/dottorblaster" title="GitHub - dottorblaster"><i class="fa fa-github"></i></a></div>
+      </div>
+
+      <div class="post">
+  <h1 class="post-title">Arch Linux e l'ultimo aggiornamento: note sparse</h1>
+  <span class="post-date">03 Jun 2013</span>
+  <p>Qualche decina di minuti fa, preso da un irrefrenabile impulso per le cose pericolosamente fighe a mezzanotte e mezza con un occhio aperto e uno chiuso, mi sono preso il portatile e carezzandolo amorevolmente ho <strong>aggiornato Arch Linux</strong>, eseguendo l'update di cui si vociferava in giro che <strong>accorpa un sacco di roba</strong> (al momento non ho ricordi precisi, ho sonno) tra cui le varie /usr/bin, /usr/sbin, /vattelapesca/soreta/sbin, in un'unica directory.</p>
+<p><img class="aligncenter" alt="Linux" src="http://farm1.staticflickr.com/62/170196999_566a32f878.jpg" width="500" height="337" /></p>
+<p>Visto che è una <strong>roba strana e pericolosa</strong>, e che a me come al solito è andata parecchio liscia, lascio qualche <strong>nota sparsa</strong> ai "bambini meno fortunati di me", come li chiamava mia nonna, perché è sempre bene indicare la via ai nuovi adepti (dato che altrove gli <strong>archer</strong> vengono tacciati di essere una setta, e dato che probabilmente lo siamo: la setta dei Tafazzi).</p>
+<ul>
+<li><span style="line-height: 13px;">Occhio a quello che fate: questo aggiornamento vi può <strong>spaccare il sistema</strong> e se non sapete quello che state facendo con ogni singolo comando della procedura, lo dico per voi, cambiate spassionatamente <strong>distro</strong> oppure passate direttamente a Windows che fate prima;</span></li>
+<li>Occhio ai pacchetti che lasciano roba dentro le <strong>directory di cui fare il merge</strong>: potete controllare di non avere nemmeno un capello fuori posto con dei check specifici elencati nella <a href="https://www.archlinux.org/news/binaries-move-to-usrbin-requiring-update-intervention/">news di riferimento</a>;</li>
+<li>Se l'aggiornamento non vuole proseguire non è perché avete un computer capriccioso: <strong>non forzate assolutamente l'upgrade</strong> o rischiate di trovarvi davanti alla faccia un fermacarte, nel mio caso con un ottimo monitor da 15" e una ottima tastiera a isola. Ma se non <strong>aggiustate</strong> poi con parecchie bestemmie, rimane un fermacarte. Anche se è vero che, se forzate l'upgrade in circostanze simili, forse dovreste pensare a una conseguenza come quella del punto 1 (si, lo so, non li sto numerando ma tanto fate voi).</li>
+</ul>
+<p>Adesso vado a letto ché <strong>c'ho sonno</strong> e voglio leggermi un po' dei libri di Martin. Mi raccomando, non spaccate il PC, voglio continuare a credere nella bontà del genere umano.</p>
+<p>Sinceramente, a titolo del tutto personale, vorrei sperare di non ritrovarmi ugualmente domani con un fermacarte in mano: <strong>Arch Linux</strong> mi piace, ma questi aggiornamenti un po' buttati così (premesso che ho voglia di gestirli, comunque) certe volte fanno girare las pelotas, e non poco.</p>
+<p><em>Photo courtesy of <a href="http://www.flickr.com/photos/minusbaby/170196999/">Richard Alexander Caraballo</a></em></p>
+
+</div>
+
+<div class="social-section">
+  <div class="fb-like" data-href="/2013/06/arch-linux-lultimo-aggiornamento-note-sparse/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-via="dottorblaster" data-lang="it" data-dnt="true">Tweet</a>
+</div>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'blasterhome'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/06/domain-modeling-made-functional-recensione/">
+            Recensione: Domain Modeling Made Functional, di Scott Wlaschin
+            <small>08 Jun 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/05/piccolo-kubernetes-production-ready-k3s/">
+            Kubernetes production-ready in piccolo: deployare un mini-cluster K3s
+            <small>18 May 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/04/adoro-kubernetes/">
+            Io adoro Kubernetes
+            <small>25 Apr 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+      <div class="footer">
+        <p>
+          &copy; Grab The Blaster is brought to you by Alessio Biancalana with <a href="http://jekyllrb.com/">Jekyll</a> and much ♥, under <a href="https://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC</a>.
+        </p>
+        <form class="search-form" action="/search" method="get">
+          <input type="text" placeholder="Cerca →" name="query">
+        </form>
+      </div>
+      <div class="webring-container">
+        <webring-banner>
+          <p>Member of <a href="https://retronerds.netlify.app"></a></p>
+          <a href="https://retronerds.netlify.app/prev">Previous</a>
+          <a href="https://retronerds.netlify.app/random">Random</a>
+          <a href="https://retronerds.netlify.app/next">Next</a>
+        </webring-banner>
+        <script async src="https://retronerds.netlify.app/embed.js" charset="utf-8"></script>
+      </div>
+    </div>
+
+  </body>
+</html>

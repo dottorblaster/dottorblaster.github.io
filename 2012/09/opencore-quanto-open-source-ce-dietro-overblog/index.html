@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <link rel="canonical" href="/2012/09/opencore-quanto-open-source-ce-dietro-overblog/" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- Enable Graph API for Facebook integration -->
+  <meta content="Grab The Blaster" property="og:site_name">
+  
+    <meta content="#opencore - Quanto open source c'è dietro OverBlog" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="In questo periodo come sapete sono stato un po' impegnato con il progetto #opencore, di cui vi ho già parlato. Il mio trofeo più grande, ad ora, rimane quello di essere riuscito a porre qualche domanda al CTO di OverBlog, Xavier Hausherr, che si è dimostrato molto gentile ed ha risposto anche a questioni spinose sull'open source. OverBlog è una piattaforma ottima per aprire un proprio blog, ed ero proprio curioso di sapere come fosse composta l'infrastruttura alla base di questa piattaforma c..." property="og:description">
+  
+  
+    <meta content="https://dottorblaster.it/2012/09/opencore-quanto-open-source-ce-dietro-overblog/" property="og:url">
+  
+  
+    <meta content="2012-09-12T08:16:07+00:00" property="article:published_time">
+    <meta content="https://dottorblaster.it/about/" property="article:author">
+    <meta content="https://dottorblaster.it/opengraph/e4f4a533bcec6c85af587020bb89949ff27a1ab9.png" property="og:image">
+  
+  
+    
+    <meta content="Open Source" property="article:section">
+    
+  
+  
+    
+    <meta content="open source" property="article:tag">
+    
+    <meta content="opencore" property="article:tag">
+    
+    <meta content="overblog" property="article:tag">
+    
+  
+
+  <!--   Enable Twitter Cards support through metadata, thanks to http://davidensinger.com/2013/04/supporting-twitter-cards-with-jekyll/ -->
+<!--   <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@site_username">
+  <meta name="twitter:creator" content="@creator_username">
+  
+    <meta name="twitter:title" content="#opencore - Quanto open source c'è dietro OverBlog">
+  
+  
+    <meta name="twitter:url" content="https://dottorblaster.it/2012/09/opencore-quanto-open-source-ce-dietro-overblog/">
+   -->
+  <!-- This is from @stammy -->
+<!--   <meta name="twitter:description" content="In questo periodo come sapete sono stato un po' impegnato con il progetto #opencore, di cui vi ho già parlato. Il mio trofeo più grande, ad ora, rimane quello di essere riuscito a porre qualche dom...">
+  
+    <meta name="twitter:image:src" content="https://dottorblaster.it/path/to/image/logo.png">
+    -->
+
+  <title>
+    
+      #opencore - Quanto open source c'è dietro OverBlog &middot; Grab The Blaster
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/grabtheblaster.css">
+  <link rel="stylesheet" href="/public/font-awesome/css/font-awesome.min.css">
+
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700italic,700,400italic' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,700' rel='stylesheet' type='text/css' />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title="" href="https://dottorblaster.it/feed">
+</head>
+
+
+  <body>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=81489295682&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="container content">
+      <div class="masthead">
+        <h3 class="masthead-title">
+          <img src="/public/avatar-blaster.png" alt="Alessio Biancalana">
+          <a href="/" title="Home page">Grab The Blaster</a>
+          <small>di Alessio Biancalana</small>
+        </h3>
+        <div class="social-icons"><a href="/about/" title="About Me"><i class="fa fa-user-circle-o"></i></a> <a href="https://twitter.com/dottorblaster" title="Twitter - @dottorblaster"><i class="fa fa-twitter"></i></a> <a href="https://github.com/dottorblaster" title="GitHub - dottorblaster"><i class="fa fa-github"></i></a></div>
+      </div>
+
+      <div class="post">
+  <h1 class="post-title">#opencore - Quanto open source c'è dietro OverBlog</h1>
+  <span class="post-date">12 Sep 2012</span>
+  <p>In questo periodo come sapete sono stato un po' impegnato con il <a href="http://dottorblaster.it/2012/09/opencore-ovvero-quanto-open-source-ce-dietro-a/">progetto #opencore</a>, di cui vi ho già parlato. Il mio trofeo più grande, ad ora, rimane quello di essere riuscito a porre qualche domanda al <strong>CTO</strong> di OverBlog, <strong>Xavier Hausherr</strong>, che si è dimostrato molto gentile ed ha risposto anche a questioni spinose sull'open source. <strong>OverBlog</strong> è una piattaforma ottima <a href="http://it.over-blog.com/">per aprire un proprio blog</a>, ed ero proprio curioso di sapere come fosse composta l'infrastruttura alla base di questa piattaforma che, sin dal primo sguardo, mi ha sempre dato l'idea di <strong>uno strumento molto complesso</strong> e raffinato sul quale viene svolto ogni giorno tantissimo lavoro.</p>
+<p>Ho quindi "marchiato" anche OverBlog con le mie cinque domande, grazie a <strong>Paolo Mulè</strong>, country manager italiano di OverBlog, che, all'idea dell'intervista un po' più da smanettone, si è subito offerto di fare da intermediario tra me e il team di sviluppo. Un <strong>grazie</strong> quindi a lui e a Xavier.</p>
+<p><img class="aligncenter" title="OverBlog" src="http://i47.tinypic.com/2ms0s95.png" alt="OverBlog" width="500" height="241" /></p>
+<h3>L'intervista</h3>
+<p>Come si pone <strong>OverBlog</strong> rispetto al concetto di libertà? C'è una roadmap specifica o più generalmente un atteggiamento mentale sul fatto di permettere agli utenti di "smanettare" più a fondo con la piattaforma?</p>
+<blockquote><p>Il nostro desiderio è far sentire i blogger a casa propria quando usano OverBlog. Per far questo, vogliamo offrire loro quanta più libertà possibile, attraverso la creazione e la <strong>personalizzazione dei temi</strong>, la flessibilità dei layout e l’organizzazione dei contenuti, il rilascio di una <strong>API</strong> e di alcuni widget che verranno configurati grazie ad un sistema contributivo. Quindi possiamo dire che sulla questione c’è <strong>una roadmap molto chiara</strong>.</p></blockquote>
+<p>Ogni piattaforma fa affidamento su una serie di applicativi più o meno critici, come un webserver e un'infrastruttra cloud. Questi sono generalmente descritti come uno "stack software". Com'è costruito lo <strong>stack software di OverBlog</strong>? Quali sono le applicazioni che ne sono alla base? Sono <strong>open source</strong>?</p>
+<blockquote><p>Il nuovo OverBlog è stato costruito per essere flessibile al massimo in termini di sviluppo e scalabilità. La colonna portante di OverBlog è la <strong>Service-oriented Architecture</strong> (SOA).</p>
+<p>Ogni progetto è indipendente: da una parte abbiamo i cosiddetti “servizi core” (Blog, Commenti, Utenti, eccetera), dall’altra abbiamo i veri e propri “siti web” (nello specifico l’Interfaccia di Amministrazione e il Portale). Questa configurazione permette ad ogni progetto di sfruttare le tecnologie che meglio soddisfano le sue specifiche necessità, senza alcun limite.</p>
+<p>Allo stato attuale, per quello che concerne il livello di <strong>backend</strong>, i nostri progetti sono costruiti in PHP con il framework <strong>Symfony 2</strong>. Utilizziamo, per lo storage di dati, i seguenti sistemi: Postgresql, MySQL, <strong>Redis</strong> e Memcache.</p>
+<p>Il layer di <strong>frontend</strong> è anch’esso sviluppato in PHP con Symfony 2. Per il Javascript, usiamo il framework YUI, con un layer di housing chiamato <strong>Yoshioka</strong> (<a href="https://github.com/hadrienl/yoshioka.js">https://github.com/hadrienl/yoshioka.js</a>), disponibile gratuitamente.</p>
+<p>I nostri servizi comunicano l’uno con l’altro attraverso un layer di trasporto binario chiamato <strong>Thrift</strong>, creato da <strong>Facebook</strong> e incubato da Apache. Abbiamo fatto parecchio lavoro di ingegnerizzazione su questo punto in particolare, per assicurarci delle ottime performance, e siamo veramente soddisfatti del risultato.</p>
+<p>Invitiamo a dare un’occhiata alle nostre slide, presentate al Symfony Live 2012 a Parigi, che spiegano questi punti dettagliatamente: <a href="http://fr.slideshare.net/xkobal/the-use-of-symfony2-overblog">http://fr.slideshare.net/xkobal/the-use-of-symfony2-overblog</a></p>
+<p>Per tutti i server, utilizziamo la distribuzione Linux Debian. Le pagine sono distribuite tramite Apache. Il tutto è ospitato su dei server VmWare che ci permettono una grande flessibilità nel creare nuove macchine e questo, di conseguenza, aiuta tantissimo nella sfida per la scalabilità.</p></blockquote>
+<p>Parliamo di sviluppo e programmatori. Quali sono gli <strong>strumenti fondamentali</strong> (IDE, VCS, altro) usati dai developer di OverBlog? Puoi descrivermi la tipica workstation di uno sviluppatore di OverBlog?</p>
+<blockquote><p>La cassetta degli attrezzi di ogni sviluppatore di OverBlog comprende quasi sempre gli stessi tool:</p>
+<p>- Lavoriamo tutti su piattaforma Mac, con una <strong>macchina virtuale Debian-based</strong> “fatta in casa” e una configurazione centralizzata grazie a <strong>Puppet</strong>. Questo rende il tutto molto facile da aggiornare. C’è anche installato tutto il software che serve per eseguire l’intera piattaforma OverBlog in locale!</p>
+<p>- Sviluppiamo in PHP 5.4</p>
+<p>- I developer del frontend usano <strong>NodeJS</strong></p>
+<p>- Tutti i nostri sorgenti sono ospitati su <strong>GitHub</strong></p>
+<p>- Per quello che concerne l’IDE, i nostri tool sono <strong>Netbeans</strong>, Textmate e, ancora, PhpStorm</p></blockquote>
+<p>Sarebbe carino se <strong>Timekiwi/OverBlog</strong> fossero open source. C'è qualche piano futuro per rendere tutto questo lavoro open source (sotto GPL, o Apache) e disponibile per i power user?</p>
+<blockquote><p><strong>OverBlog</strong> non è concepito per essere open source. Ci sono parecchie ragioni per questa scelta, incluso il fatto che il codice deve in primis performare su un’infrastruttura estesa come quella che usiamo noi. <strong>Non è assolutamente inteso per essere utilizzato come motore per un blog singolo</strong> su un server, come fanno alcuni dei nostri competitor.</p>
+<p>In ogni caso, essendo noi stessi fautori e fruitori di open source, rilasciamo alcune parti dello sviluppo che portiamo avanti e dei miglioramenti che apportiamo come <strong>Thrift</strong> (al quale abbiamo contribuito), parecchi bundle di Symfony, il nostro framework javascript <a href="https://github.com/hadrienl/yoshioka.js">Yoshioka.js</a> e, sicuramente, un po’ di altri progetti nel prossimo futuro. Questi progetti sono disponibili su GitHub: <a href="https://github.com/ebuzzing">https://github.com/ebuzzing</a></p></blockquote>
+<p>Hai 400 caratteri per dirmi qualsiasi cosa sull'open source e l'open culture.</p>
+<blockquote><p>Sin dalla sua creazione, nel 2004, <strong>OverBlog</strong> ha sempre usato o contribuito a progetti <strong>open source</strong>, come Postgresql, Symfony, Thrift, o altro. Un’espressione che ci piace, e che riassume il nostro pensiero, recita: “Perché reinventare la ruota quando qualcun altro l'ha creata così bene?”</p>
+<p>L’open source ci aiuta a sviluppare <strong>OverBlog</strong>, il che sarebbe difficile da fare usando software proprietario: la piattaforma che abbiamo creato è estremamente specifica, e necessita di essere spinta molto più lontano di quanto qualsiasi software basilare ci permetterebbe di fare. E conosciamo tutti la difficoltà di far evolvere un software non libero!</p>
+<p>In cambio, <strong>ripaghiamo la community open source</strong> pubblicando i miglioramenti che abbiamo apportato sviluppando il software stesso.</p></blockquote>
+
+</div>
+
+<div class="social-section">
+  <div class="fb-like" data-href="/2012/09/opencore-quanto-open-source-ce-dietro-overblog/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-via="dottorblaster" data-lang="it" data-dnt="true">Tweet</a>
+</div>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'blasterhome'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/06/domain-modeling-made-functional-recensione/">
+            Recensione: Domain Modeling Made Functional, di Scott Wlaschin
+            <small>08 Jun 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/05/piccolo-kubernetes-production-ready-k3s/">
+            Kubernetes production-ready in piccolo: deployare un mini-cluster K3s
+            <small>18 May 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/04/adoro-kubernetes/">
+            Io adoro Kubernetes
+            <small>25 Apr 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+      <div class="footer">
+        <p>
+          &copy; Grab The Blaster is brought to you by Alessio Biancalana with <a href="http://jekyllrb.com/">Jekyll</a> and much ♥, under <a href="https://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC</a>.
+        </p>
+        <form class="search-form" action="/search" method="get">
+          <input type="text" placeholder="Cerca →" name="query">
+        </form>
+      </div>
+      <div class="webring-container">
+        <webring-banner>
+          <p>Member of <a href="https://retronerds.netlify.app"></a></p>
+          <a href="https://retronerds.netlify.app/prev">Previous</a>
+          <a href="https://retronerds.netlify.app/random">Random</a>
+          <a href="https://retronerds.netlify.app/next">Next</a>
+        </webring-banner>
+        <script async src="https://retronerds.netlify.app/embed.js" charset="utf-8"></script>
+      </div>
+    </div>
+
+  </body>
+</html>

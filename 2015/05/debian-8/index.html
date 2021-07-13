@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <link rel="canonical" href="/2015/05/debian-8/" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- Enable Graph API for Facebook integration -->
+  <meta content="Grab The Blaster" property="og:site_name">
+  
+    <meta content="Debian 8 - recensione minimale, tips and tricks" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="Durante questa settimana, seppure il periodo sia stato abbastanza distruttivo, ho trovato il tempo per aggiornare tutte le mie macchine che usano Debian a Debian 8.0, nome in codice Jessie, che offre diversi miglioramenti (almeno per me… :-D) da parecchi punti di vista differenti. Bando alle ciance, vediamo subito un po’ di cose nuove di questa release che arriva dopo due anni di lavori dal precedente rilascio “Wheezy” (Debian 7.0.0, taggato maggio 2013).Nuove feature di Debian 8In Debian 8 t..." property="og:description">
+  
+  
+    <meta content="https://dottorblaster.it/2015/05/debian-8/" property="og:url">
+  
+  
+    <meta content="2015-05-04T09:51:00+00:00" property="article:published_time">
+    <meta content="https://dottorblaster.it/about/" property="article:author">
+    <meta content="https://dottorblaster.it/opengraph/a25f8728e1150290dda2eb8ecfd73268195bb737.png" property="og:image">
+  
+  
+    
+    <meta content="Linux" property="article:section">
+    
+  
+  
+    
+    <meta content="debian" property="article:tag">
+    
+    <meta content="linux" property="article:tag">
+    
+    <meta content="unix" property="article:tag">
+    
+  
+
+  <!--   Enable Twitter Cards support through metadata, thanks to http://davidensinger.com/2013/04/supporting-twitter-cards-with-jekyll/ -->
+<!--   <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@site_username">
+  <meta name="twitter:creator" content="@creator_username">
+  
+    <meta name="twitter:title" content="Debian 8 - recensione minimale, tips and tricks">
+  
+  
+    <meta name="twitter:url" content="https://dottorblaster.it/2015/05/debian-8/">
+   -->
+  <!-- This is from @stammy -->
+<!--   <meta name="twitter:description" content="
+
+Durante questa settimana, seppure il periodo sia stato abbastanza distruttivo, ho trovato il tempo per aggiornare tutte le mie macchine che usano Debian a Debian 8.0, nome in codice Jessie, che o...">
+  
+    <meta name="twitter:image:src" content="https://dottorblaster.it/path/to/image/logo.png">
+    -->
+
+  <title>
+    
+      Debian 8 - recensione minimale, tips and tricks &middot; Grab The Blaster
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/grabtheblaster.css">
+  <link rel="stylesheet" href="/public/font-awesome/css/font-awesome.min.css">
+
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700italic,700,400italic' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,700' rel='stylesheet' type='text/css' />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title="" href="https://dottorblaster.it/feed">
+</head>
+
+
+  <body>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=81489295682&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="container content">
+      <div class="masthead">
+        <h3 class="masthead-title">
+          <img src="/public/avatar-blaster.png" alt="Alessio Biancalana">
+          <a href="/" title="Home page">Grab The Blaster</a>
+          <small>di Alessio Biancalana</small>
+        </h3>
+        <div class="social-icons"><a href="/about/" title="About Me"><i class="fa fa-user-circle-o"></i></a> <a href="https://twitter.com/dottorblaster" title="Twitter - @dottorblaster"><i class="fa fa-twitter"></i></a> <a href="https://github.com/dottorblaster" title="GitHub - dottorblaster"><i class="fa fa-github"></i></a></div>
+      </div>
+
+      <div class="post">
+  <h1 class="post-title">Debian 8 - recensione minimale, tips and tricks</h1>
+  <span class="post-date">04 May 2015</span>
+  <p><img src="http://i60.tinypic.com/1531xlv.jpg" alt="Debian 8, aggiornamento da tablet" /></p>
+
+<p>Durante questa settimana, seppure il periodo sia stato abbastanza distruttivo, ho trovato il tempo per aggiornare tutte le mie macchine che usano Debian a <strong>Debian 8.0</strong>, nome in codice Jessie, che offre diversi miglioramenti (almeno per me… :-D) da parecchi punti di vista differenti. Bando alle ciance, vediamo subito un po’ di cose nuove di questa release che arriva dopo due anni di lavori dal precedente rilascio “Wheezy” (Debian 7.0.0, taggato maggio 2013).</p>
+
+<h2 id="nuove-feature-di-debian-8">Nuove feature di Debian 8</h2>
+<p>In <strong>Debian 8</strong> troviamo tutti i pacchetti aggiornati del caso, con le dovute patch. per quanto riguarda invece i miglioramenti distro-specifici, abbiamo un nutrito elenco di cose succose, di cui già il primo punto basta per stimolare discussioni (ma diciamo anche flame, ndr.) di durata tendente a infinito.</p>
+
+<ul>
+  <li><strong>Systemd</strong> <em>finalmente</em> diventa il nuovo gestore di demoni, il che significa che possiamo comunque estirparlo e reinstallare SysV o qualsiasi altro sistema di init, ma in maniera predefinita ci puppiamo lui che, a bocce ferme, io giudico comunque l’init system che ha risolto in maniera più efficiente i problemi che sono stati evidenziati nel tempo durante l’uso di softwareun po’ più anziano. Certo, l’ha fatto a modo suo e adesso i log di sistema sono un blob binario di cui difficilmente senza <em>journalctl</em> capirei qualcosa, ma vabbeh: ogni soluzione si porta appresso nuovi problemi, ci mancherebbe.</li>
+  <li><strong>GNOME 3.14</strong> è il nuovo ambiente desktop incluso nella piattaforma Debian, il che ci fa molto piacere, perché con la release 3.14 è cominciato un processo di rinnovamento del supporto hardware che si è concluso (forse?) con la 3.16, e che rende il ramo stable di Debian di fatto al passo coi tempi per quanto riguarda i monitor HiDPI e tutta quella tipologia di hardware.</li>
+  <li><strong>MariaDB</strong> ha sostituito MySQL come database relazionale; di fatto pur essendo un drop-in replacement e non cambiando praticamente nulla per l’utente finale se non sul lungo termine, è una buona scelta dato il <a href="https://blog.mariadb.org/mariadb-foundation-takes-next-steps-to-community-governance/">modello di governance</a> migliore adottato dal progetto.</li>
+  <li><strong>Cinnamon e MATE</strong> entrano a far parte del pool di pacchetti ufficiale di Debian. Se GNOME vi fa schifo, adesso avete ancora più alternative tra cui scegliere, e potete sentirvi degli hipster fichissimi rispetto a chi ha scelto di usare XFCE o KDE.</li>
+</ul>
+
+<h2 id="upgrade-barometer">Upgrade barometer</h2>
+<p>L’upgrade barometer è una cosa fichissima che prendo in prestito dal <a href="https://about.gitlab.com/blog/">blog di GitLab</a> :-D L’aggiornamento non vi porterà via troppo tempo. Io non facendomi troppi problemi anche su cosette dove ho la produzione (personale) ho lanciato l’aggiornamento con:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>apt-get update
+<span class="nv">$ </span><span class="nb">sudo </span>apt-get dist-upgrade
+</code></pre></div></div>
+
+<p>Dopo aver modificato il mio sources.list puntandolo a <em>stable</em>.</p>
+
+<p>Ognuno dei server che ho aggiornato ha dovuto ricevere qualche pacca sul sedere prima di andare a dovere:</p>
+
+<ul>
+  <li><strong>Ungoliant</strong>, la prima macchina che ho aggiornato, è andata liscia come l’olio;</li>
+  <li><strong>Morgoth</strong>, invece, si è impuntato e nonostante la migrazione felice a Debian 8, non mi voleva far entrare su GitLab. Per questo motivo ho dovuto menargli delle sprangate, dopodiché è andato tutto a posto (senza nemmeno reinstallare cose specifiche per questa release - vedi sotto);</li>
+  <li><strong>Sauron</strong> invece, dato che non mettevo mano da un po’ alle configurazioni di Apache, ha deciso senza che me ne accorgessi (oppure era qualche dialogo che ho letto troppo distrattamente mentre giocavo a Bloodborne) che era ora di farmi riprendere la mano con i webserver, quindi ha cancellato tutti i miei VirtualHost.</li>
+</ul>
+
+<p>Chicca finale: ho aggiornato tutte le macchine tramite una sessione di screen aperta <strong>in SSH sul mio Nexus 9</strong> (come vedete in figura). Nonostante queste piccole incomprensioni col sistema operativo, Debian 8 è comunque promossa, e in generale l’upgrade è andato abbastanza liscio. Chiunque stia pensando che dovrei eseguire i miei servizi come <strong>Docker</strong> container ha ragione, e per la verità lo faccio con parecchie cose, ma con queste mi pesa veramente tanto il sedere e non c’ho voglia di impostarmi un’infrastruttura di container anche per servire due pagine statiche. :-D</p>
+
+<h2 id="gitlab-facciamolo-ripartire-a-manate">GitLab: facciamolo ripartire a manate</h2>
+<p>Dato che siamo dei <strong>sysadmin sufficientemente coatti</strong>, non ci fermerà mica un errorino? Spulciando i log di GitLab ho visto che era “solo timido”, quindi a seguito di una <strong>migrazione da Debian 7 a Debian 8</strong> bastano i seguenti comandi per ripristinarne tutte le funzionalità:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Lancia i datatabase, i quali necessitano di migrazione</span>
+<span class="nv">$ </span><span class="nb">sudo </span>gitlab-ctl start postgresql
+<span class="nv">$ </span><span class="nb">sudo </span>gitlab-ctl start redis
+
+<span class="c"># Riconfigura GitLab migrando tutto a Debian 8</span>
+<span class="nv">$ </span><span class="nb">sudo </span>gitlab-ctl reconfigure
+</code></pre></div></div>
+
+<p>A posto? A posto. E via, verso nuove avventure :-F</p>
+
+</div>
+
+<div class="social-section">
+  <div class="fb-like" data-href="/2015/05/debian-8/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-via="dottorblaster" data-lang="it" data-dnt="true">Tweet</a>
+</div>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'blasterhome'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/06/domain-modeling-made-functional-recensione/">
+            Recensione: Domain Modeling Made Functional, di Scott Wlaschin
+            <small>08 Jun 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/05/piccolo-kubernetes-production-ready-k3s/">
+            Kubernetes production-ready in piccolo: deployare un mini-cluster K3s
+            <small>18 May 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/04/adoro-kubernetes/">
+            Io adoro Kubernetes
+            <small>25 Apr 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+      <div class="footer">
+        <p>
+          &copy; Grab The Blaster is brought to you by Alessio Biancalana with <a href="http://jekyllrb.com/">Jekyll</a> and much ♥, under <a href="https://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC</a>.
+        </p>
+        <form class="search-form" action="/search" method="get">
+          <input type="text" placeholder="Cerca →" name="query">
+        </form>
+      </div>
+      <div class="webring-container">
+        <webring-banner>
+          <p>Member of <a href="https://retronerds.netlify.app"></a></p>
+          <a href="https://retronerds.netlify.app/prev">Previous</a>
+          <a href="https://retronerds.netlify.app/random">Random</a>
+          <a href="https://retronerds.netlify.app/next">Next</a>
+        </webring-banner>
+        <script async src="https://retronerds.netlify.app/embed.js" charset="utf-8"></script>
+      </div>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <link rel="canonical" href="/2020/12/elixir-for-dummies-8/" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- Enable Graph API for Facebook integration -->
+  <meta content="Grab The Blaster" property="og:site_name">
+  
+    <meta content="Elixir per idioti /8, costruiamo una API REST super semplice" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="È un sacco di tempo che non parliamo di Elixir, e il nostro percorso era rimasto un po’ appeso con la parte 7, dove avevamo creato un’applicazioncina di prova con Phoenix Framework. Se vogliamo fare cose più complicate come modellare un microservizio tutto nostro attorno a un dominio ben preciso però qualcosa come quello che abbiamo visto è limitante, perché visualizzare delle paginette web limita un pochino l’interoperabilità che possiamo avere con altri servizi.E se al posto di pagine web v..." property="og:description">
+  
+  
+    <meta content="https://dottorblaster.it/2020/12/elixir-for-dummies-8/" property="og:url">
+  
+  
+    <meta content="2020-12-13T14:50:31+00:00" property="article:published_time">
+    <meta content="https://dottorblaster.it/about/" property="article:author">
+    <meta content="https://dottorblaster.it/opengraph/4a47e32ab0aaeef17c9b845c632239d60001ad25.png" property="og:image">
+  
+  
+    
+    <meta content="Development" property="article:section">
+    
+  
+  
+    
+    <meta content="elixir" property="article:tag">
+    
+    <meta content="erlang" property="article:tag">
+    
+    <meta content="elixir per idioti" property="article:tag">
+    
+    <meta content="mix" property="article:tag">
+    
+    <meta content="api" property="article:tag">
+    
+    <meta content="api rest" property="article:tag">
+    
+    <meta content="rest" property="article:tag">
+    
+    <meta content="restful" property="article:tag">
+    
+  
+
+  <!--   Enable Twitter Cards support through metadata, thanks to http://davidensinger.com/2013/04/supporting-twitter-cards-with-jekyll/ -->
+<!--   <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@site_username">
+  <meta name="twitter:creator" content="@creator_username">
+  
+    <meta name="twitter:title" content="Elixir per idioti /8, costruiamo una API REST super semplice">
+  
+  
+    <meta name="twitter:url" content="https://dottorblaster.it/2020/12/elixir-for-dummies-8/">
+   -->
+  <!-- This is from @stammy -->
+<!--   <meta name="twitter:description" content="È un sacco di tempo che non parliamo di Elixir, e il nostro percorso era rimasto un po’ appeso con la parte 7, dove avevamo creato un’applicazioncina di prova con Phoenix Framework. Se vogliamo far...">
+  
+    <meta name="twitter:image:src" content="https://dottorblaster.it/path/to/image/logo.png">
+    -->
+
+  <title>
+    
+      Elixir per idioti /8, costruiamo una API REST super semplice &middot; Grab The Blaster
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/grabtheblaster.css">
+  <link rel="stylesheet" href="/public/font-awesome/css/font-awesome.min.css">
+
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700italic,700,400italic' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,700' rel='stylesheet' type='text/css' />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title="" href="https://dottorblaster.it/feed">
+</head>
+
+
+  <body>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=81489295682&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="container content">
+      <div class="masthead">
+        <h3 class="masthead-title">
+          <img src="/public/avatar-blaster.png" alt="Alessio Biancalana">
+          <a href="/" title="Home page">Grab The Blaster</a>
+          <small>di Alessio Biancalana</small>
+        </h3>
+        <div class="social-icons"><a href="/about/" title="About Me"><i class="fa fa-user-circle-o"></i></a> <a href="https://twitter.com/dottorblaster" title="Twitter - @dottorblaster"><i class="fa fa-twitter"></i></a> <a href="https://github.com/dottorblaster" title="GitHub - dottorblaster"><i class="fa fa-github"></i></a></div>
+      </div>
+
+      <div class="post">
+  <h1 class="post-title">Elixir per idioti /8, costruiamo una API REST super semplice</h1>
+  <span class="post-date">13 Dec 2020</span>
+  <p>È un sacco di tempo che non parliamo di Elixir, e il nostro percorso era rimasto un po’ appeso con <a href="https://dottorblaster.it/2018/09/elixir-for-dummies-7/">la parte 7</a>, dove avevamo creato un’applicazioncina di prova con Phoenix Framework. Se vogliamo fare cose più complicate come modellare un microservizio tutto nostro attorno a un dominio ben preciso però qualcosa come quello che abbiamo visto è limitante, perché visualizzare delle paginette web limita un pochino l’interoperabilità che possiamo avere con altri servizi.</p>
+
+<p>E se al posto di pagine web volessimo servire dei JSON in puro stile <strong>API REST-ful</strong><sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>?</p>
+
+<p><strong>Elixir e Phoenix</strong> coprono anche questo caso d’uso in maniera eccellente. In realtà potremmo fare il tutto anche senza Phoenix solo usando il webserver che ne è alla base, cioè Cowboy, ma Phoenix offre una serie di semplificazioni “on top” che ci rendono leggermente più semplice la vita, accorciano in maniera notevole questo tutorial, e risultano anche comode per evoluzioni future della nostra piccola API, come il supporto out-of-the-box a JWT<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup>.</p>
+
+<p>Bando alle ciance, andiamo a creare il nostro nuovo progettino:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>mix new tiny_echo_api <span class="nt">--no-webpack</span> <span class="nt">--no-ecto</span>
+</code></pre></div></div>
+
+<p>Usando lo <strong>scaffolder di Phoenix</strong>, che è fatto molto bene, andiamo a dichiarare che stiamo creando un nuovo progetto senza bisogno di frontend (<code class="language-plaintext highlighter-rouge">--no-webpack</code>) e senza strato di persistenza su database (<code class="language-plaintext highlighter-rouge">--no-ecto</code>)<sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">3</a></sup>.</p>
+
+<p>Spostiamoci nella directory che è stata appena creata, installiamo le dipendenze del nostro progetto e facciamolo partire:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cd </span>tiny_api
+<span class="nv">$ </span>mix deps.get
+<span class="nv">$ </span>mix phx.server
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">localhost:4000</code> ci mostrerà la solita paginetta di benvenuto, non diamole troppa attenzione, e andiamo immediatamente a <strong>implementare un nuovo endpoint che prende in input una stringa, e ce la restituisce dentro un JSON</strong>. Non un grande servizio in sé, ma è un ottimo modo per fare tutto il giro, vedere cosa ci mette a dispozione Phoenix e eventualmente cominciare a costruirci sopra qualcosa.</p>
+
+<p>Apriamo il router, che abbiamo già visto nell’episodio precedente:</p>
+
+<div class="language-elixir highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># lib/tiny_api_web/router.ex</span>
+
+<span class="k">defmodule</span> <span class="no">TinyApiWeb</span><span class="o">.</span><span class="no">Router</span> <span class="k">do</span>
+  <span class="kn">use</span> <span class="no">TinyApiWeb</span><span class="p">,</span> <span class="ss">:router</span>
+
+  <span class="n">pipeline</span> <span class="ss">:browser</span> <span class="k">do</span>
+    <span class="n">plug</span> <span class="ss">:accepts</span><span class="p">,</span> <span class="p">[</span><span class="s2">"html"</span><span class="p">]</span>
+    <span class="n">plug</span> <span class="ss">:fetch_session</span>
+    <span class="n">plug</span> <span class="ss">:fetch_flash</span>
+    <span class="n">plug</span> <span class="ss">:protect_from_forgery</span>
+    <span class="n">plug</span> <span class="ss">:put_secure_browser_headers</span>
+  <span class="k">end</span>
+
+  <span class="n">pipeline</span> <span class="ss">:api</span> <span class="k">do</span>
+    <span class="n">plug</span> <span class="ss">:accepts</span><span class="p">,</span> <span class="p">[</span><span class="s2">"json"</span><span class="p">]</span>
+  <span class="k">end</span>
+
+  <span class="n">scope</span> <span class="s2">"/"</span><span class="p">,</span> <span class="no">TinyApiWeb</span> <span class="k">do</span>
+    <span class="n">pipe_through</span> <span class="ss">:browser</span>
+
+    <span class="n">get</span> <span class="s2">"/"</span><span class="p">,</span> <span class="no">PageController</span><span class="p">,</span> <span class="ss">:index</span>
+  <span class="k">end</span>
+
+  <span class="c1"># Other scopes may use custom stacks.</span>
+  <span class="c1"># scope "/api", TinyApiWeb do</span>
+  <span class="c1">#   pipe_through :api</span>
+  <span class="c1"># end</span>
+
+  <span class="c1"># Enables LiveDashboard only for development</span>
+  <span class="c1">#</span>
+  <span class="c1"># If you want to use the LiveDashboard in production, you should put</span>
+  <span class="c1"># it behind authentication and allow only admins to access it.</span>
+  <span class="c1"># If your application does not have an admins-only section yet,</span>
+  <span class="c1"># you can use Plug.BasicAuth to set up some basic authentication</span>
+  <span class="c1"># as long as you are also using SSL (which you should anyway).</span>
+  <span class="k">if</span> <span class="no">Mix</span><span class="o">.</span><span class="n">env</span><span class="p">()</span> <span class="ow">in</span> <span class="p">[</span><span class="ss">:dev</span><span class="p">,</span> <span class="ss">:test</span><span class="p">]</span> <span class="k">do</span>
+    <span class="kn">import</span> <span class="no">Phoenix</span><span class="o">.</span><span class="no">LiveDashboard</span><span class="o">.</span><span class="no">Router</span>
+
+    <span class="n">scope</span> <span class="s2">"/"</span> <span class="k">do</span>
+      <span class="n">pipe_through</span> <span class="ss">:browser</span>
+      <span class="n">live_dashboard</span> <span class="s2">"/dashboard"</span><span class="p">,</span> <span class="ss">metrics:</span> <span class="no">TinyApiWeb</span><span class="o">.</span><span class="no">Telemetry</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>E andiamo a modificare le rotte dichiarate in questo modo:</p>
+
+<div class="language-elixir highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">scope</span> <span class="s2">"/"</span><span class="p">,</span> <span class="no">TinyApiWeb</span> <span class="k">do</span>
+  <span class="n">pipe_through</span> <span class="ss">:browser</span>
+
+  <span class="n">get</span> <span class="s2">"/"</span><span class="p">,</span> <span class="no">PageController</span><span class="p">,</span> <span class="ss">:index</span>
+  <span class="n">get</span> <span class="s2">"/echo/:payload"</span><span class="p">,</span> <span class="no">EchoController</span><span class="p">,</span> <span class="ss">:echo</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>In questo modo andiamo a dichiarare una nuova rotta disponibile solo in GET che ha la forma <code class="language-plaintext highlighter-rouge">/echo/qualcosa</code>, e andremo poi a fare in modo che quando noi chiamiamo la nostra applicazione sulla rotta <code class="language-plaintext highlighter-rouge">/echo/qualcosa</code> quella ci risponda a sua volta <code class="language-plaintext highlighter-rouge">qualcosa</code> dentro un JSON di risposta.</p>
+
+<p>Nel router abbiamo dichiarato che andremo a pescare la funzione <code class="language-plaintext highlighter-rouge">echo</code> da un controller chiamato <code class="language-plaintext highlighter-rouge">EchoController</code>; Phoenix si aspetterà il modulo corrispondente, quindi andiamolo a creare, mettendoci dentro anche l’implementazione della funzione <code class="language-plaintext highlighter-rouge">echo</code>:</p>
+
+<div class="language-elixir highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># lib/tiny_api_web/controllers/echo_controller.ex</span>
+
+<span class="k">defmodule</span> <span class="no">TinyApiWeb</span><span class="o">.</span><span class="no">EchoController</span> <span class="k">do</span>
+  <span class="nv">@moduledoc</span> <span class="sd">"""
+  This module handles echo requests and replies back
+  with an echo JSON containing the word used by the request.
+  """</span>
+
+  <span class="kn">use</span> <span class="no">TinyApiWeb</span><span class="p">,</span> <span class="ss">:controller</span>
+
+  <span class="k">def</span> <span class="n">echo</span><span class="p">(</span><span class="n">conn</span><span class="p">,</span> <span class="n">params</span><span class="p">)</span> <span class="k">do</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="p">%{</span><span class="s2">"reply"</span> <span class="o">=&gt;</span> <span class="n">params</span><span class="p">[</span><span class="s2">"payload"</span><span class="p">]}</span>
+    <span class="n">json</span><span class="p">(</span><span class="n">conn</span><span class="p">,</span> <span class="n">response</span><span class="p">)</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>Eccoci qua: come vediamo abbiamo <strong>definito il modulo</strong> <code class="language-plaintext highlighter-rouge">TinyApiWeb.EchoController</code>, ci abbiamo messo addirittura una bellissima <code class="language-plaintext highlighter-rouge">@moduledoc</code> per aiutare chi si imbatte in questo modulo a capire che cosa fa (Elixir dispone di utility che generano automaticamente la documentazione corrispondente da queste annotazioni), gli abbiamo detto di comportarsi come un controller Phoenix attraverso l’uso di <code class="language-plaintext highlighter-rouge">use</code>, e abbiamo <strong>implementato la funzione</strong> <code class="language-plaintext highlighter-rouge">echo</code>, che va poi a rispondere usando la funzione <code class="language-plaintext highlighter-rouge">json</code> messaci a disposizione da Phoenix per poter rispondere direttamente usando la mappa che abbiamo dichiarato.</p>
+
+<p>Facciamo ripartire il servizio con <code class="language-plaintext highlighter-rouge">mix phx.server</code> e andiamo a vedere su <code class="language-plaintext highlighter-rouge">http://localhost:4000/echo/this-is-an-answer</code> che cosa abbiamo combinato:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>curl localhost:4000/echo/this-is-an-answer
+<span class="o">{</span><span class="s2">"reply"</span>:<span class="s2">"this-is-an-answer"</span><span class="o">}</span>
+</code></pre></div></div>
+
+<h3 id="bonus-trick-usare-la-destrutturazione">Bonus trick: usare la destrutturazione</h3>
+<p>Volendo sfruttare la potenza della sintassi di Elixir, possiamo implementare la funzione <code class="language-plaintext highlighter-rouge">echo</code> in un altro modo, andando a usare la <strong>destrutturazione</strong> per tirare fuori il campo <code class="language-plaintext highlighter-rouge">payload</code> dai parametri della chiamata poi poi andare a costruire la mappa con la risposta direttamente inline:</p>
+
+<div class="language-elixir highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="n">echo</span><span class="p">(</span><span class="n">conn</span><span class="p">,</span> <span class="n">params</span><span class="p">)</span> <span class="k">do</span>
+  <span class="p">%{</span><span class="s2">"payload"</span> <span class="o">=&gt;</span> <span class="n">payload</span><span class="p">}</span> <span class="o">=</span> <span class="n">params</span>
+  <span class="n">json</span><span class="p">(</span><span class="n">conn</span><span class="p">,</span> <span class="p">%{</span><span class="s2">"reply"</span> <span class="o">=&gt;</span> <span class="n">payload</span><span class="p">})</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>Oppure, volendo essere più concisi, andando a sfruttare tutto quello che la sintassi di Elixir ci mette a disposizione, così da scrivere tutto su una sola riga:</p>
+
+<div class="language-elixir highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="n">echo</span><span class="p">(</span><span class="n">conn</span><span class="p">,</span> <span class="p">%{</span><span class="s2">"payload"</span> <span class="o">=&gt;</span> <span class="n">payload</span><span class="p">}),</span> <span class="k">do</span><span class="p">:</span> <span class="n">json</span><span class="p">(</span><span class="n">conn</span><span class="p">,</span> <span class="p">%{</span><span class="s2">"reply"</span> <span class="o">=&gt;</span> <span class="n">payload</span><span class="p">})</span>
+</code></pre></div></div>
+
+<p>A voi giudicare se in questo modo si perde di leggibilità. Quello che andiamo a fare in questo modo è <strong>utilizzare il pattern matching insieme alla destrutturazione</strong> direttamente nella firma della funzione. Le tre implementazioni che abbiamo visto sono assolutamente equivalenti.</p>
+
+<p>Volete implementare un nuovo endpoint nel vostro servizio? Adesso avete visto come funziona tutto il giro. Potete sbizzarrirvi: fatelo! :-)</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>In realtà questo termine è abusatissimo, dato che REST è un paradigma che presuppone che le risorse vengano richiamate in un certo modo. Per ora facciamo solo finta che un’API REST ben scritta sia una API che segue la semantica HTTP (GET/POST/eccetera) e restituisce una risposta in JSON. Magari in futuro vediamo insieme come deve essere fatta una API REST-ful “a modino”, mh? ;-) <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>Anche qui, su JSON Web Token ci si potrebbe scrivere una bibbia: per brevità questo lo demandiamo ad un altro post perché non è lo scopo di questa trattazione, tantomeno per una persona alle prime armi con un nuovo stack. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:3" role="doc-endnote">
+      <p>Mentre Webpack è il tool che si occupa di mettere insieme tutto il JavaScript che scriviamo nelle nostre applicazioni, e che Phoenix include in modo automatico, Ecto è la libreria che viene utilizzata per comunicare con il database della nostra applicazione, che di default è PostgreSQL. Ecto è uno strumento ultrapotente, lo vedremo nel dettaglio in un episodio in futuro! <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+</div>
+
+<div class="social-section">
+  <div class="fb-like" data-href="/2020/12/elixir-for-dummies-8/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-via="dottorblaster" data-lang="it" data-dnt="true">Tweet</a>
+</div>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'blasterhome'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/06/domain-modeling-made-functional-recensione/">
+            Recensione: Domain Modeling Made Functional, di Scott Wlaschin
+            <small>08 Jun 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/05/piccolo-kubernetes-production-ready-k3s/">
+            Kubernetes production-ready in piccolo: deployare un mini-cluster K3s
+            <small>18 May 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/04/adoro-kubernetes/">
+            Io adoro Kubernetes
+            <small>25 Apr 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+      <div class="footer">
+        <p>
+          &copy; Grab The Blaster is brought to you by Alessio Biancalana with <a href="http://jekyllrb.com/">Jekyll</a> and much ♥, under <a href="https://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC</a>.
+        </p>
+        <form class="search-form" action="/search" method="get">
+          <input type="text" placeholder="Cerca →" name="query">
+        </form>
+      </div>
+      <div class="webring-container">
+        <webring-banner>
+          <p>Member of <a href="https://retronerds.netlify.app"></a></p>
+          <a href="https://retronerds.netlify.app/prev">Previous</a>
+          <a href="https://retronerds.netlify.app/random">Random</a>
+          <a href="https://retronerds.netlify.app/next">Next</a>
+        </webring-banner>
+        <script async src="https://retronerds.netlify.app/embed.js" charset="utf-8"></script>
+      </div>
+    </div>
+
+  </body>
+</html>

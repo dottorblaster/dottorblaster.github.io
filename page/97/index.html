@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <link rel="canonical" href="/page/97/" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- Enable Graph API for Facebook integration -->
+  <meta content="Grab The Blaster" property="og:site_name">
+  
+    <meta content="Home" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="Un blog nerd il giusto di Alessio Biancalana" property="og:description">
+  
+  
+    <meta content="https://dottorblaster.it/page/97/" property="og:url">
+  
+  
+  
+  
+
+  <!--   Enable Twitter Cards support through metadata, thanks to http://davidensinger.com/2013/04/supporting-twitter-cards-with-jekyll/ -->
+<!--   <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@site_username">
+  <meta name="twitter:creator" content="@creator_username">
+  
+    <meta name="twitter:title" content="Home">
+  
+  
+    <meta name="twitter:url" content="https://dottorblaster.it/page/97/">
+   -->
+  <!-- This is from @stammy -->
+<!--   <meta name="twitter:description" content="
+  {% for post in paginator.posts %}
+  
+    {% if post.layout == &quot;link&quot; %}
+      
+        
+          {{ post.title }}
+        
+        
+      
+    {% else %}
+      
+        
+          {{ ...">
+  
+    <meta name="twitter:image:src" content="https://dottorblaster.it/path/to/image/logo.png">
+    -->
+
+  <title>
+    
+      Grab The Blaster &middot; di Alessio Biancalana
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/grabtheblaster.css">
+  <link rel="stylesheet" href="/public/font-awesome/css/font-awesome.min.css">
+
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700italic,700,400italic' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,700' rel='stylesheet' type='text/css' />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title="" href="https://dottorblaster.it/feed">
+</head>
+
+
+  <body>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=81489295682&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="container content">
+      <div class="masthead">
+        <h3 class="masthead-title">
+          <img src="/public/avatar-blaster.png" alt="Alessio Biancalana">
+          <a href="/" title="Home page">Grab The Blaster</a>
+          <small>di Alessio Biancalana</small>
+        </h3>
+        <div class="social-icons"><a href="/about/" title="About Me"><i class="fa fa-user-circle-o"></i></a> <a href="https://twitter.com/dottorblaster" title="Twitter - @dottorblaster"><i class="fa fa-twitter"></i></a> <a href="https://github.com/dottorblaster" title="GitHub - dottorblaster"><i class="fa fa-github"></i></a></div>
+      </div>
+
+      <div class="posts">
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2011/08/kwin-e-opengl-es-2-0-facciamolo-con-arch-linux/" title="KWin e OpenGL ES 2.0: facciamolo con Arch Linux - di Alessio Biancalana">
+          KWin e OpenGL ES 2.0: facciamolo con Arch Linux
+        </a>
+      </h1>
+      <span class="post-date">03 Aug 2011</span>
+    
+
+    <p>Ho parlato nel mio precedente post di <strong><a href="http://dottorblaster.it/2011/08/pacman-ve-lo-racconto-io/">come sia flessibile</a></strong> Arch Linux in virtù delle possibilità che <strong>Pacman</strong> ci dà, di ricompilare grazie ad ABS qualunque pacchetto presente nei repository ufficiali, o di crearcene di nuovi. Oggi voglio dirvi un paio di cose interessanti su <strong>KDE 4.7.0</strong> e KWin: la nuova release di KDE infatti tra le novità vede proprio tanta carne al fuoco per il suo gestore di finestre, rinnovato in tanti aspetti, e facente uso adesso, se ricompilato con le giuste flag, di OpenGL ES.</p>
+<p><strong>OpenGL ES</strong>, ossia OpenGL for Embedded Systems è un particolare comparto del famoso framework grafico che si avvantaggia delle API messe a disposizione dai dispositivi integrati per aumentare le prestazioni, specialmente sui chipset Tegra2 e altri componenti di quel "parentado". <strong>Kwin</strong> fa uso di tutto ciò? Dall'ultima release, certo. Possiamo quindi ricompilare un pezzo di KDE (compreso il gestore di finestre) per abilitare tutto ciò, e possiamo farlo facilmente dal momento che abbiamo <strong>ABS</strong> come nostro potente alleato. Andiamo quindi in una directory vuota che adotteremo come workspace:</p>
+<p><code>$ yaourt -G kdebase-workspace</code></p>
+<p>Al posto di usare yaourt potete anche sincronizzare con il comando abs tutto il tree e copiarvi il <strong>PKGBUILD</strong> a mano, ma sinceramente così è più comodo, anche se richiede che abbiate installato, ovviamente, il blasonatissimo tool.</p>
+<p>Purtroppo dobbiamo ricompilare tutto il workspace solo per quattro cose di KWin, ma pazienza. Dobbiamo solo aspettare che il processore faccia il suo sporco lavoro per compiacerci. Intanto installatevi <em>libgles</em> e <em>libegl</em>, poi a questo punto:</p>
+<p><code>$ cd kdebase-workspace &amp;&amp; vim PKGBUILD</code></p>
+<p>Al posto di <strong>vim</strong> potete usare l'editor di testo che preferite, basta che agiate con cognizione di causa :D</p>
+<p>Dopo aver aperto il file, localizzate facilmente queste righe:</p>
+<p><code>-DKWIN_MOBILE_EFFECTS=OFF \<br />
+-DWITH_OpenGLES=OFF \<br />
+-DKWIN_BUILD_WITH_OPENGLES=OFF</code></p>
+<p>E tramutatele in:</p>
+<p><code>-DKWIN_MOBILE_EFFECTS=OFF \<br />
+-DWITH_OpenGLES=ON \<br />
+-DKWIN_BUILD_WITH_OPENGLES=ON</code></p>
+<p>Perfetto. Abbiamo abilitato ciò che ci serve. Adesso, possiamo tranquillamente lanciare il processo di build:</p>
+<p><code>$ makepkg</code></p>
+<p>Attendiamo. Io ho un dual core e tutto il compilame vario ha impiegato una quindicina di minuti per finire il tutto; sicuramente sul vostro esacore con hypertreading ci metterà molto meno. Appena finito, dopo una breve (spero per voi o dovete far controllare l'hard drive) fase di impacchettamento, makepkg ci sputerà fuori un pacchetto pronto per essere installato sul nostro sistema.</p>
+<p><code># pacman -U *.pkg.*</code></p>
+<p>Con questo comando andiamo a sostituire il pacchetto creato dal buon <strong>Andrea 'BaSh' Scarpino</strong> (che ringrazio per la distribuzione di KDE che ci offre, sempre impeccabile) con il nostro. Riavviate e godetevi lo spettacolo... spettacolo che, ovviamente, per chi non gode di OpenGL ES si concluderà con un imbombamento generale del compositing di KWin. Per voi fortunati che avete schede video compatibili con queste estensioni, se non fate questo procedimento sarete passibili di pena di morte. Ché io <strong>non posso</strong>.</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2011/08/pacman-ve-lo-racconto-io/" title="Pacman. Ve lo racconto io. - di Alessio Biancalana">
+          Pacman. Ve lo racconto io.
+        </a>
+      </h1>
+      <span class="post-date">01 Aug 2011</span>
+    
+
+    <p>Negli ultimi tempi, mi è stata fatta spesso e volentieri la domanda clue del perchè uso <strong>Arch Linux</strong>: cosa rende <strong>Pacman</strong> un package manager migliore? O comunque, in cosa esso si distingue da gestori di pacchetti blasonatissimi come APT o Yum, o anche Zypper? In questo articolo che scrivo adesso, provo a fare mente locale, sia per me che per le persone che mi hanno fatto spesse volte questa domanda; in quanto <strong>AUR</strong> packager, cercherò di mantenere comunque un tono critico sulla questione e non convincervi che il vino è buono solo perchè io sono l'oste. Un grazie speciale a Zidagar che mi ha per così dire triggerato, dato che senza il suo <strong><a href="http://friendfeed.com/linux-italia/ca7b7bf1/pacman-vs-apt-ragazzi-non-ho-mai-provato-e-da-buon">domandone</a></strong> di sabato (e successivi commenti) su Linux Italia non sarei stato stimolato così intensamente a scrivere un post del genere. Allora, pronti? ;)</p>
+<h3>Semplicità prima di tutto</h3>
+<p><strong>Pacman</strong> è un gestore di pacchetti semplice, sia come ovvio nel funzionamento e nel comportamento, che nella sintassi: è infatti molto più comodo, almeno per me, usare Pacman piuttosto che qualsiasi altro gestore di pacchetti. Appendendo infatti lettere singole alle opzioni più generali possiamo generare comandi che eseguano più di una azione, così se di solito abbiamo bisogno di più comandi o di stringhe chilometriche ed espressioni regolari lunghe un miglio, il package manager di Arch Linux ci viene incontro mettendo a nostra disposizione la possibilità di fare millemila cose con un solo, brevissimo comando.</p>
+<p>In cosa si traduce questo? Beh, ovviamente si traduce nel fatto che possiamo usare tutte quelle ore sprecate a digitare caratteri su caratteri in qualcosa di molto più proficuo, come patchare un software o rimediare a qualche configurazione errata di sistema che sicuramente avrete dimenticato nel posto sbagliato al momento sbagliato. Quindi insomma, niente di trascendentale se uno ha le competenze, ma tutto di guadagnato.</p>
+<p>C'è poi un discorso di funzionamento di base, che almeno a me è molto comodo: se altri gestori complicati incorrono per esempio in problemi di dipendenze e configurazioni lasciate in sospeso, grazie al fatto che la configurazione viene svolta in gran parte dall'utente e c'è molta poca dinamicità in fase di installazione, comunque una volta dato un comando di gestione dei pacchetti è veramente molto difficile se non impossibile che il package manager si pianti a metà del lavoro dicendo che c'è quel pacchetto non configurato e quell'altro in attesa di cose mistiche. Altro tempo libero dunque, che possiamo dedicare a leggere un buon libro, ad esempio <strong>L'Etica Hacker</strong> di Pekka Himanen.</p>
+<h3>Flessibilità quanto basta (cioè molto)</h3>
+<p>Sicuramente Pacman è concepito in maniera tale da risultare <strong>molto flessibile</strong>. Il suo concetto di semplicità fa si che con un comando io possa agire chirurgicamente sui pacchetti installati, rimuovendone alcuni senza compromettere il funzionamento del sistema di gestione del software, fregandomene poi di tutto ciò che è il sistema di dipendenze. Questo significa che per sostituire un pacchetto dipendenza di altri, mi basta rimuoverlo e, facendo un po' d'attenzione, inserire il mio nuovo pacchetto non dando troppo fastidio ai software in esecuzione: in questo modo avrò personalizzato il sistema senza dover scoperchiare necessariamente tutto; la magia è resa possibile dal fatto che Pacman viene distribuito insieme ad un set di script che lo completano e che sono il suo vero punto di forza.</p>
+<p>Se infatti la gestione del software risulta semplice ed agevole, comunque la flessibilità estrema (anche se non quanto Portage ovviamente) viene raggiunta concependo Pacman non come un sistema di gestione dei pacchetti, ma come un sistema di ibridazione tra la manutenzione tradizionale dei programmi tramite il paradigma a pacchetti, e la <strong>gestione dei ports</strong>. I ports sono quella cosa che ha reso tanto famosi BSD e Gentoo: file di testo addetti a istruire un sistema di script su come compilare ed installare un determinato tarball. Assieme a Pacman abbiamo quindi makepkg che si occupa di creare pacchetti dai PKGBUILD, ossia i file testuali che noi o altri scriviamo per compilare un software senza problemi. E assieme a Pacman e makepkg, ci viene fornito l'<strong>ABS</strong>, ossia l'Arch Build System, il quale consiste di tutti i file <strong>PKGBUILD</strong> dei pacchetti presenti nei repository ufficiali.</p>
+<p>Avete capito bene. Questo significa che se non ci sta bene come è stato compilato un pacchetto dagli sviluppatori della distro, possiamo prenderci il PKGBUILD, personalizzare tutto in base alle nostre esigenze, dai metadati di pacchetto alle flag, al processo di build, e poi darlo in pasto a makepkg che ci sputerà fuori dopo la fase di compilazione e impacchettamento, un pacchetto fatto da noi secondo le nostre esigenze. Questa modularità fa si che Pacman possa essere utilizzato in maniera assolutamente proficua anche per server, o per configurazioni particolari che magari hanno bisogno del tale software compilato in una certa maniera (flag particolari, e quant'altro).</p>
+<p>In aggiunta a questo, è anche semplicissimo e facilissimo mantenere un repository per Pacman, soprattutto con l'ausilio di un paio di scriptini editi dalla comunità, ma di questo magari ve ne parlo un'altra volta.</p>
+<h3>Pacman sa farsi da parte</h3>
+<p>Volete il pezzo forte? Il bello di Pacman è che se non ci sta bene come funziona, possiamo sostituirlo. Ebbene si, possiamo mandarlo a quel paese allegramente e gestire il nostro software in mille altre maniere :D</p>
+<p>Questo è possibile grazie alle <strong>libalpm</strong>, ossia le LIBraries for Arch Linux Package Management, scritte in maniera separata da Pacman, il quale è solo un wrapper di questi file: esistono package manager alternativi, come il famosissimo Clyde, che purtroppo è defunto da poco per mancanza di tempo da parte dello sviluppatore principale; tra l'altro, essendo stato io un utente di <strong>Clyde</strong> in passato, invito fortemente chi sa programmare (non io che sono, detto chiaramente, una pippa come developer) a prendere in mano il progetto. Insomma, Pacman sa fare le cose in maniera semplice, pulita, non sporca, mangia poco e disturba ancora meno, come abbiamo visto. Ma vale veramente la pena passare ad Arch Linux (e a Pacman) se si vive bene senza?</p>
+<h3>Pacman VS The Others</h3>
+<p>Non ho molte parole da spendere in questo caso. Posso dire che, sicuramente, utilizzare una distro come Arch Linux che ha un approccio radicale e assolutamente nuovo al software, è un'esperienza di vita. Se quindi siete un po' annoiati una domenica pomeriggio, anzichè sbragarvi sul divano a fare niente, prendetevi <strong>Virtualbox</strong> e mettete su una bella macchina virtuale con l'ultimo media di installazione di Arch impostato per il boot. Sicuramente, non solo vi divertirete un mondo, ma forse vi piacerà così tanto come è fatta la distribuzione, e come è fatto Pacman, da dargli una chance sulla vostra workstation.</p>
+<p>Sicuramente il buon Pacman manca di un'interfaccia grafica adeguata; APT possiede ad esempio <strong>Synaptic</strong>, ma proprio per questo, se per fare operazioni complesse con APT abbiamo bisogno del suo blasonato frontend, grazie alla semplicità di cui sopra Pacman non ha bisogno di queste cose: dalla CLI abbiamo tutto ciò che ci serve, senza doverci complicare ulteriormente la vita.</p>
+<p>Che la Forza sia con voi.</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2011/07/nuovo-android-market-le-mie-impressioni/" title="Nuovo Android Market: le mie impressioni - di Alessio Biancalana">
+          Nuovo Android Market: le mie impressioni
+        </a>
+      </h1>
+      <span class="post-date">29 Jul 2011</span>
+    
+
+    <p>Vediamo. Da un po' di settimane, ormai, è stata rilasciata questa nuova spettacolosissima versione dell'<strong>Android Market</strong>, che apporta modifiche pesanti sia all'interfaccia, come risulta sin da subito, sia, come è meno visibile, a tutta una serie di algoritmi sottostanti per il download e la gestione delle applicazioni. Avendo usato un po' tutta questa robaccia sin da subito, dato che da buon curiosone ho immediatamente sostituito il "vecchio" Market con l'ultimo, posso dire di essermi fatto un'opinione su questa release e sul suo primo update, ovviamente correttivo di alcune delle lacune che andrò a descrivere.</p>
+<h3>La nuova interfaccia</h3>
+<p>Tutto ciò ha portato una polemica molto grande. La nuova interfaccia dell'Android Market infatti si palesa con una nuova schermata per le app "pubblicizzate" che a molti ha ricordato, per via sul suo stile un po' a blocchi, Windows Phone 7. In realtà dopo due minuti di uso approfondito ci si accorge che lo stile grafico forse un po' <strong>Metro-style</strong> (got the point) viene abbandonato nelle altre tab, le quali godono di un design pulito, funzionale, e introducono delle belle cosette fondamentali di cui sentivamo molto la mancanza, come tutte quelle fantastiche sciccherie fattibili attraverso il sistema di rating e che Google ha tardato ad implementare per mancanza di tempo, mancanza di voglia, o semplicemente la necessità di portare a tutti un sistema funzionante piuttosto che sprecarsi in queste - diciamolo - scemenze di secondo piano.</p>
+<p>Ora però che abbiamo il re dei sistemi mobile tra le nostre mani, era necessario adottare un marketplace più maturo, ed eccoci qua. Interfaccia rinnovata, molto bella sia nel suo comparto a blocchetti per le "featured apps" che nel suo layout più tradizionale a lista di coppie. Il problema è che tutto ciò, incredibilmente, si è riflesso in una scattosità del tutto: il <strong>Market</strong> nella sua ultima release è diventato elefantiaco in quanto a prestazioni grafiche, cosa inaccettabile, e anche se con l'ultimo update le cose sono migliorate sensibilmente, comunque lo scrolling è poco fluido, e l'interfaccia molto poco reattiva.</p>
+<h3>Il substrato</h3>
+<p>Insieme all'interfaccia grafica, è cambiato anche il <strong>modo di gestire le applicazioni</strong> nell'Android Market. Per carità, non mi riferisco ai link sulla memoria fisica, i quali sono rimasti invariati, bensì agli algoritmi utilizzati per l'installazione parallela di più applicazioni: se infatti prima le applicazioni venivano scaricate ed installate in parallelo, sforzando parecchio la CPU e producendo anche più di un errore, il nuovo gestore di download e installazioni procede in una finestra di due applicazioni installate in contemporanea, e anzi è maggiormente restrittivo, nel senso che mentre un'app viene installata la successiva viene scaricata. Non vengono quindi mandati in esecuzione due processi di installazione (e di download, anche) simultanei, per favorire l'assenza di errori durante il processo di aggiornamento.</p>
+<p>Purtroppo l'aggiornamento andato a buon fine non è qualcosa che il nuovo Market contempla :D</p>
+<p>Con questo intendo dire che nonostante la bontà dei nuovi algoritmi, il marketplace risulta ancora in uno stato embrionale: una volta aggiornata una specifica applicazione, questa risulta ancora in download. E l'ultimo update <em>non</em> ha corretto questo fastidioso comportamento. Bisogna quindi (lo suggerisco) fare riferimento al <strong>sistema di notifiche</strong> il quale ci dice correttamente cosa sta succedendo.</p>
+<h3>Conclusioni</h3>
+<p>Che dire quindi? Tutto ciò mi stuzzica. Mi aspetto che mentre <strong>Google</strong> lavora al sistema operativo rimedi a un po' di questi bachi che sinceramente sono molto fastidiosi, dato che comunque in fase di gestione del software installato non mi fanno avere le idee molto chiare su cosa ha finito di scaricare, cosa no, eccetera eccetera. Inoltre, purtroppo, se questo aggiornamento per l'interfaccia dell'Android Market poteva essere una cosa decisamente buona, giusta e benvenuta, comunque l'interfaccia grafica così poco snella mi fa rabbrividire, e se penso che posseggo un Desire (1GHz di CPU), tremo al pensiero di come può viaggiare un'applicazione del genere su dispositivi con una CPU un po' più ristretta.</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2011/07/delirio-informatico/" title="Delirio informatico - di Alessio Biancalana">
+          Delirio informatico
+        </a>
+      </h1>
+      <span class="post-date">28 Jul 2011</span>
+    
+
+    <p>Che poi, pensavo, in uno dei miei deliri, che effettivamente il fatto che una macchina si pianti è un episodio abbastanza comune, specialmente con sistemi che gestiscono i problemi alla solita vecchia maniera, e cioè con un freeze totale delle risorse.</p>
+<p>Ma allora, perchè diavolo invece di inventare combinazioni palesemente per le emergenze, i produttori non hanno introdotto, o meglio il form factor comune delle tastiere non è stato modificato per inserire un centoseiesimo tasto che svolga la funzione di <strong>CTRL-ALT-CANC</strong>, anche solo quella? Tanto, sono sicuro che sarebbe consumato quasi quanto la mia "a", che già non si vede più.</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2011/07/linux-3-0/" title="Linux 3.0 - di Alessio Biancalana">
+          Linux 3.0
+        </a>
+      </h1>
+      <span class="post-date">22 Jul 2011</span>
+    
+
+    <p>Mi scuso se non mi sono fatto sentire per parecchio, ma ho avuto un sacco da fare nell'ultimo periodo e non ho trovato proprio tempo per aggiornare questo angolino di miei rantoli personali.</p>
+<p>Insomma, come <a href="http://www.oneopensource.it/22/07/2011/rilasciato-linux-3-0-si-pensa-gia-alla-release-3-1/">abbiamo scritto</a> stamattina tra mille peripezie in redazione, è arrivato <strong>Linux 3.0</strong>; ce ne parla come al solito KernelNewbies, rendendoci il changelog più a portata di umano, e personalmente penso che comunque tutto ciò sia bene e sia un evento epocale, anche perchè stiamo assistendo a tutta una rivoluzione nel sistema di release del kernel.</p>
+<p>Poi, postilla a parte, continua a venirmi in mente che "Succederà quando sarà rilasciato Linux 3"  era un intercalare molto usato una persona a me molto cara, che purtroppo non è più fra noi anche se ci guarda dal paradiso degli hacker.</p>
+<p>Ancora una nota: questo post l'ho scritto con la nuova modalità distractionless di WordPress. Una figata immensa, posso dirvelo.</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/page/98"><i class="fa fa-chevron-circle-left"></i></a>
+  
+  
+    
+      <a class="pagination-item newer" href="/page/96"><i class="fa fa-chevron-circle-right"></i></a>
+    
+  
+</div>
+
+
+      <div class="footer">
+        <p>
+          &copy; Grab The Blaster is brought to you by Alessio Biancalana with <a href="http://jekyllrb.com/">Jekyll</a> and much ♥, under <a href="https://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC</a>.
+        </p>
+        <form class="search-form" action="/search" method="get">
+          <input type="text" placeholder="Cerca →" name="query">
+        </form>
+      </div>
+      <div class="webring-container">
+        <webring-banner>
+          <p>Member of <a href="https://retronerds.netlify.app"></a></p>
+          <a href="https://retronerds.netlify.app/prev">Previous</a>
+          <a href="https://retronerds.netlify.app/random">Random</a>
+          <a href="https://retronerds.netlify.app/next">Next</a>
+        </webring-banner>
+        <script async src="https://retronerds.netlify.app/embed.js" charset="utf-8"></script>
+      </div>
+    </div>
+
+  </body>
+</html>

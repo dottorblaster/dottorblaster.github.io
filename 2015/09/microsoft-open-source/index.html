@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <link rel="canonical" href="/2015/09/microsoft-open-source/" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- Enable Graph API for Facebook integration -->
+  <meta content="Grab The Blaster" property="og:site_name">
+  
+    <meta content="Microsoft e l'open source – analisi e impressioni su una nuova open source company" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="Analizzare il comportamento di Microsoft negli ultimi anni nei confronti dell’open source non è una cosa facile, tant’è che non so come iniziare, dato che non si può fare un preambolo efficace per parlare di una compagnia che è stata in grado, in relativamente pochissimo tempo, di passare da un approccio totalmente esclusivo verso l’ecosistema open ad uno inclusivo per buona parte del business plan orientato agli sviluppatori, passando per una fase in cui si respirava un clima del tipo “si, l..." property="og:description">
+  
+  
+    <meta content="https://dottorblaster.it/2015/09/microsoft-open-source/" property="og:url">
+  
+  
+    <meta content="2015-09-18T18:30:00+00:00" property="article:published_time">
+    <meta content="https://dottorblaster.it/about/" property="article:author">
+    <meta content="https://dottorblaster.it/opengraph/89faa693883959d22c86e6712741e49710e57a90.png" property="og:image">
+  
+  
+    
+    <meta content="Tech" property="article:section">
+    
+  
+  
+    
+    <meta content="microsoft" property="article:tag">
+    
+    <meta content="open source" property="article:tag">
+    
+    <meta content="linux" property="article:tag">
+    
+  
+
+  <!--   Enable Twitter Cards support through metadata, thanks to http://davidensinger.com/2013/04/supporting-twitter-cards-with-jekyll/ -->
+<!--   <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@site_username">
+  <meta name="twitter:creator" content="@creator_username">
+  
+    <meta name="twitter:title" content="Microsoft e l'open source – analisi e impressioni su una nuova open source company">
+  
+  
+    <meta name="twitter:url" content="https://dottorblaster.it/2015/09/microsoft-open-source/">
+   -->
+  <!-- This is from @stammy -->
+<!--   <meta name="twitter:description" content="
+
+Analizzare il comportamento di Microsoft negli ultimi anni nei confronti dell’open source non è una cosa facile, tant’è che non so come iniziare, dato che non si può fare un preambolo efficace pe...">
+  
+    <meta name="twitter:image:src" content="https://dottorblaster.it/path/to/image/logo.png">
+    -->
+
+  <title>
+    
+      Microsoft e l'open source – analisi e impressioni su una nuova open source company &middot; Grab The Blaster
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/grabtheblaster.css">
+  <link rel="stylesheet" href="/public/font-awesome/css/font-awesome.min.css">
+
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700italic,700,400italic' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,700' rel='stylesheet' type='text/css' />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title="" href="https://dottorblaster.it/feed">
+</head>
+
+
+  <body>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=81489295682&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="container content">
+      <div class="masthead">
+        <h3 class="masthead-title">
+          <img src="/public/avatar-blaster.png" alt="Alessio Biancalana">
+          <a href="/" title="Home page">Grab The Blaster</a>
+          <small>di Alessio Biancalana</small>
+        </h3>
+        <div class="social-icons"><a href="/about/" title="About Me"><i class="fa fa-user-circle-o"></i></a> <a href="https://twitter.com/dottorblaster" title="Twitter - @dottorblaster"><i class="fa fa-twitter"></i></a> <a href="https://github.com/dottorblaster" title="GitHub - dottorblaster"><i class="fa fa-github"></i></a></div>
+      </div>
+
+      <div class="post">
+  <h1 class="post-title">Microsoft e l'open source – analisi e impressioni su una nuova open source company</h1>
+  <span class="post-date">18 Sep 2015</span>
+  <p><img src="http://i60.tinypic.com/opurkk.jpg" alt="Si: quello sono io. Davanti alla sede di Microsoft a Peschiera :-)" /></p>
+
+<p>Analizzare il comportamento di <strong>Microsoft</strong> negli ultimi anni nei confronti dell’open source non è una cosa facile, tant’è che non so come iniziare, dato che non si può fare un preambolo efficace per parlare di una compagnia che è stata in grado, in relativamente pochissimo tempo, di passare da un approccio totalmente esclusivo verso l’ecosistema open ad uno inclusivo per buona parte del business plan orientato agli sviluppatori, passando per una fase in cui si respirava un clima del tipo “si, l’<strong>open source</strong> è figo, ma è roba per smanettoni e fricchettoni, adesso vi facciamo vedere noi come giocano i bimbi grandi”. Volendo affrontare una questione come questa in relativamente poco tempo, senza perdere settimane, sicuramente ci è utile un’analisi storica condotta a spanne sull’operato di Microsoft lungo il tempo.</p>
+
+<h3 id="la-vecchia-microsoft-halloween-documents-fud--co">La vecchia Microsoft: Halloween Documents, FUD &amp; co.</h3>
+<p>Microsoft è sempre stata la più grande <strong>bestia nera</strong>, se vogliamo al pari di Apple, verso <strong>Linux</strong> e l’approccio open source. Prima di affrontare la Microsoft attuale, è impossibile dimenticare specie per chi è più affezionato ai “vecchi tempi” alcuni atteggiamenti ostili da parte dell’azienda di Redmond, condotti sia in maniera subdola che in maniera più palese, e che una volta portati alla luce hanno reso Bill Gates il nemico pubblico numero 1 di ogni OSS enthusiast, e Microsoft una compagnia da screditare in ogni possibile occasione, per ricambiare la <strong>pubblicità negativa</strong> che questa poteva permettersi di riversare su Linux, BSD, tecnologie e filosofie attigue con parecchia facilità.</p>
+
+<p>La prova più lampante e famosa dell’antico atteggiamento negativo di Microsoft verso la community open source e verso alcuni progetti - Linux in testa - emerge soprattutto da una serie di documenti confidenziali ormai divenuti famosissimi, ovvero gli <strong>Halloween Documents</strong>, di cui di seguito è possibile leggere uno stralcio:</p>
+
+<blockquote>
+  <p>David Stutz makes a very good point: in competing with Microsoft’s level of desktop integration, “commodity protocols actually become the means of integration” for OSS projects. OSS projects have been able to gain a foothold in many server applications because of the wide utility of highly commoditized, simple protocols. By extending these protocols and developing new protocols, we can deny OSS projects entry into the market. […]  There is a large amount of IQ being expended in various IETF working groups which are quickly creating the architectural model for integration for these OSS projects.</p>
+</blockquote>
+
+<p>I documenti possono essere trovati in giro per internet, arricchiti da una mole ingente di commenti di <strong>Eric Raymond</strong>. Per qualsiasi persona che voglia divenire un software architect di successo, sono sicuramente un bene da mantenere e consultare costantemente dato che - concediamo al nemico l’onore delle armi - molte affermazioni di Microsoft sono azzeccate, e in questi paper è possibile trovare un’analisi più che corretta riguardo come un <strong>mercato formato da standard e sorgenti aperti</strong> sia intrinsecamente superiore.</p>
+
+<p>Col tempo, Microsoft ha affinato le sue tecniche di persuasione nei confronti del consumatore, <strong>lasciando tuttavia al palo i power user</strong> e gli sviluppatori, che col tempo hanno iniziato a guardarsi intorno; così, mentre tutto sommato per gli utenti finali le condizioni di operatività sono rimaste circa le stesse, <strong>Linux e Mac OS X</strong> hanno cominciato ad attrarre, per la loro ricchezza di funzionalità e di API, gli utenti più smaliziati, portando specie le persone che usavano Linux a mantenere un tipo di pensiero molto più svincolato dalle logiche commerciali imposte dai competitor (Apple tra tutti, nonostante il sistema Unix-like alla base dei Mac). Col tempo la posizione di Microsoft presso i developer si è indebolita tantissimo, mantenendo tuttavia saldi alcuni baluardi come <strong>Visual Studio</strong>, considerato da moltissimi un eccellente strumento di sviluppo. Nonostante il successo di Visual Studio, però, Microsoft ha visto la propria reputazione indebolirsi giorno dopo giorno, così tra il fallimento di Windows Vista e gli eventi non proprio felicissimi legati all’acquisizione di Nokia, il successore di Bill Gates, ovvero <strong>Steve Ballmer</strong>, ha deciso qualche anno fa di rinunciare al suo titolo di CEO in favore di qualcun altro - con un messaggio importante per il nuovo arrivato nell’arena, ovvero <strong>Satya Nadella</strong>:</p>
+
+<blockquote>
+  <p>Microsoft will need to be bold and make big bets to succeed in this new environment.</p>
+</blockquote>
+
+<p>Una patata bollente che l’eccellente Satya tuttavia avrebbe saputo trattare egregiamente, almeno secondo la mia valutazione.</p>
+
+<h3 id="la-nuova-microsoft-open-source-linux-e-tanto-coraggio">La nuova Microsoft: open source, Linux, e tanto coraggio</h3>
+<blockquote>
+  <p>Microsoft loves Linux […] We will have always first class support for Linux distributions, this is something I want to make sure to drill home.</p>
+</blockquote>
+
+<p>Nadella pronuncia queste frasi nemmeno troppo timidamente, su un palco non troppo noto durante un webcast sulla cloud; decisamente un grosso passo avanti, che ribalta le concezioni che anche i più affezionati al mondo tecnologico avevano a proposito di <strong>Microsoft</strong>. Come si è potuti arrivare a questo? Gradualmente, è chiaro: innanzi tutto è bene infatti ricordare che durante durante l’amministrazione Ballmer l’azienda aveva cominciato ad offrire già ben presto, oltre la possibilità di utilizzare chiaramente Windows Server, anche immagini Linux da installare sulle proprie macchine virtuali che risiedevano su <strong>Azure</strong>, il provider cloud di cui Microsoft è signora e padrona. Ampliando questa <strong>offerta UNIX/Linux</strong> col tempo, di fatto la compagnia ha spalancato le porte a smanettoni di ogni “razza”, facendo si che sulla stessa piattaforma convergessero gli affezionati ai prodotti storici di Microsoft, ma anche accogliendo tutta una nuova fetta di utenza incuriosita dalla variegata offerta “di Linux” proveniente da Microsoft.</p>
+
+<p>Satya Nadella non poteva fare altrimenti quindi: dato che da sempre nell’ecosistema da cui lui proviene l’azione è sempre stata dove c’era Linux, ha continuato a far si che l’azienda di cui adesso è CEO spingesse l’acceleratore proprio su questa piattaforma, <strong>anche a costo di creare un apparente ossimoro</strong> nell’offerta di Microsoft stessa.</p>
+
+<p>C’è poco da fare, oggi come oggi, anche per aziende del calibro di Microsoft o di altri colossi: c’è bisogno di <strong>confrontarsi con l’ecosistema open</strong>, e proprio a Redmond hanno scelto di confrontarsi con Linux prima, poi con tanti altri microambiti, andando a coprire una vasta parte del panorama del codice aperto disponibile. Potremo fidarci? Può mai essere che un’azienda riesca a <strong>rinunciare con tanta leggerezza</strong> ad un’eredità così pesante, e ad offrire un servizio di prima categoria utilizzando di fatto il prodotto di una community che per anni è riuscita a rappresentare il competitor numero uno di quella stessa corporate? È così facile, o forse non lo è? Forse non lo è, no. Forse Microsoft è riuscita a mettersi tutto dietro le spalle solo dopo un momento difficile. E almeno per come si sta comportando adesso, merita un biscottino.</p>
+
+<h3 id="è-davvero-possibile">È davvero possibile?</h3>
+<p>La mossa che a Redmond hanno messo in atto lungo più e più anni è veramente interessante, tanto da essere da me reputata un <strong>caso di studio</strong> esemplare. Chiaramente non credo che sia possibile mettere una pietra sopra alle divergenze avute con la community Linux in particolare, e con l’ecosistema open in generale, con tutta questa leggerezza. Per poterlo fare ci vogliono anni di costante lavoro (che Microsoft ha messo sul piatto senza esitare, pare), e anche la volontà di mettersi in gioco su un terreno impervio come questo.</p>
+
+<p>A tale proposito <strong>ho avuto più di qualche chiacchierata con Microsoft Italia</strong>, e le intenzioni di base non mi sono sembrate malvagie, anzi: sicuramente c’è la <strong>voglia di mettersi in gioco</strong> per fare qualcosa che non solo viene riconosciuto come “mai fatto” da gran parte dell’azienda (certo, possiamo parlare di Open Tech, ma in che percentuale l’azienda era focalizzata su “compiti” che riguardavano un repository pubblico?), ma da parte di tutti (almeno le persone con cui ho parlato) c’è la volontà di farlo “bene”, nel modo giusto.</p>
+
+<p>Arrivare a <strong>fare open source nel modo giusto</strong>, ovvero non solo aprendo cose a caso nel proprio parco software ma mostrando anche un vero sforzo nei confronti della community per accettare feedback e inviare miglioramenti a progetti sparsi e nemmeno così ben strutturati in giro per GitHub, richiede che tutta un’azienda come quella presa in esame cambi il suo punto di vista radicalmente, in maniera drastica. Quindi è possibile? Probabilmente si, ma <strong>con riserva</strong>: ci sono alcuni atteggiamenti in Microsoft, alcune piccolezze, che lasciano spazio a delle insinuazioni riguardo tutto questo amore per l’open source. Ad esempio, recentemente è stato dimostrato che i controlli che venivano fatti con Windows 8/8.1 riguardo <strong>Secure Boot</strong> e la presenza di altri sistemi operativi, con Windows 10 diventano ancora più pressanti. Un bel tallone d’Achille per chi usa entrambe le piattaforme, e che trova pregi e difetti in una e nell’altra. Anche perché, <strong>se costringi l’utente a scegliere</strong>, non è detto che scelga te.</p>
+
+<p>Nonostante questo, però, Microsoft ha dimostrato della sana voglia di fare, non solo nei confronti dei suoi stessi prodotti che sono addirittura stati aperti su <strong>GitHub</strong> invece che su CodePlex (grande gesto di umiltà e allo stesso tempo grossa furberia, dato che ormai GitHub è la piattaforma dove la maggior parte degli sviluppatori ospita il proprio codice - e di conseguenza dove viene inviata la maggior parte dei contributi), ma anche nei confronti di “terzi”, come ad esempio la <strong>nuova versione di AngularJS</strong>, targata prevalentemente Google e Microsoft, la quale ha iniziato a portare codice TypeScript direttamente dentro Angular. Questo ed altri episodi, nonostante tutto, testimoniano un <strong>commitment che non può essere ignorato o denigrato</strong>; giudicare un contributo di buona qualità come qualcosa di inaccettabile sarebbe fallace a prescindere.</p>
+
+<h3 id="cose-che-microsoft-può-fare-meglio">Cose che Microsoft può fare meglio</h3>
+<p>Uno sforzo come quello di Microsoft non è assolutamente da considerare poca cosa, e non si può certo restare indifferenti come alcune persone sono rimaste di fronte a tutto questo; tuttavia, <strong>nulla è perfetto e tutto è migliorabile</strong> e per questo anche Microsoft può migliorare decisamente nella gestione della propria strategia in materia di open source. Una delle cose che mi hanno colpito di più per esempio è che ancora ci sia <strong>moltissimo codice di Microsoft ospitato su CodePlex</strong>; certo, ci sta ed è legittimo che la propria “casa” sia ritenuta una piattaforma privilegiata. Nonostante questo però, Microsoft impostando la sua politica di condivisione del codice in questo nuovo modo ha stabilito di riconoscere che la conversazione sta da un’altra parte (cioè su GitHub): in futuro quindi spero che ogni repository venga comunque portato <strong>da CodePlex a GitHub</strong>, dato che comunque anche volendo riportare la situazione più “dentro i suoi confini” è un’azienda che ha fatto un grosso passo di esposizione all’esterno, e non credo che possa tornare indietro o permettersi atteggiamenti di apertura parziale.</p>
+
+<p>Il secondo punto che voglio stressare parlando della strategia di condivisione di Microsoft, è proprio quello relativo all’<strong>advocacy</strong> che i vari membri della community (vediamo per un momento i membri di questo circolo come una community a sé) perseguono nei confronti dell’azienda. È vero infatti che la compagnia si è aperta alle contribuzioni esterne su prodotti che in ambito enterprise godono di un certo successo (e, aehm, di un certo fatturato generato), ed è vero che a Redmond in un momento di giramento di testa hanno deciso di produrre <strong>un editor di testo con debugger integrato che facesse pienamente concorrenza a Sublime Text</strong>, ma le due cose non sono minimamente correlate, e questo l’azienda dovrebbe capirlo. Le persone che contribuiscono ai progetti open source probabilmente non si curano del fatto che Microsoft regali Visual Studio alle startup, e nel caso in cui gli interessi, lo sanno già. La comunicazione di Microsoft riguardo l’apertura e i progetti a cui è possibile contribuire deve subire un passo in avanti ulteriore, stimolando non tanto il sentimento, che è quello che paga a breve termine, quanto <strong>la volontà di costruire un prodotto insieme</strong>, che a lungo termine come dimostrano le linee temporali di altre compagnie è qualcosa che tende a certificare un approccio vincente. Vogliamo fare di un mal comune un mezzo gaudio? Facciamolo e siamo assolutori: in realtà un atteggiamento di questo tipo manca in parecchie compagnie ritenute da tutti oltre che sedicenti superstar dell’open source, indipendentemente che i campioni per questa statistica vengano presi dall’ecosistema enterprise o dall’underground.</p>
+
+<p>Se della filosofia abbiamo avuto tempo di stancarci oltremodo, è anche vero che chi ha cercato di vendere la proverbiale batteria di pentole alla comunità OSS adesso è morto e sepolto. <strong>Microsoft sembra indirizzata su un approccio virtuoso</strong>, ma non si può mai sapere.</p>
+
+<p>Il terzo punto di miglioramento, piuttosto, è una derivazione del primo, e mi concentro su questo perché penso che vada a coronare l’insieme di azioni che l’azienda può intraprendere immediatamente per correggere il tiro, ampliare la sua audience e ricavare il massimo in termini di feedback e contributi esterni. C’è il bisogno essenziale che Microsoft, infatti, continui a <strong>mantenere un effort sui progetti correntemente aperti</strong>, e renda <strong>open source</strong> nuovi progetti. In questo modo, sicuramente verrà confermato il commitment iniziale per il quale si sarà sforzata parecchio, ma soprattutto <strong>verrà aumentato il fattore di fiducia</strong> da parte di una community che comunque, nel tempo, è cresciuta spaventosamente. Microsoft ha visto ingrossarsi sempre più le fila dei suoi contributori esterni, e aumentare il bacino di progetti su cui lavorare insieme a una community costituita da dipendenti e “alieni” alla realtà aziendale non farà altro che avvicinare gli sviluppatori e gli amanti dei progetti portati avanti nel modo giusto a credere in questo nuovo assetto aziendale.</p>
+
+<p><img src="http://i61.tinypic.com/24262i0.jpg" alt="Senza parole... :-D" /></p>
+
+<h3 id="lopen-source-come-valore-di-business">L’open source come valore di business</h3>
+<p><strong>Alan Ho</strong> in <a href="http://www.zdnet.com/article/using-open-source-to-deliver-business-value/">“Using open source to deliver business value”</a> mette a fuoco cinque punti, diciamo pure molto focalizzati sul punto di vista enterprise, per cui l’open source consente di raggiungere un valore di business complessivo più alto. Ho si concentra essenzialmente su:</p>
+
+<ul>
+  <li>Sicurezza;</li>
+  <li>Affidabilità;</li>
+  <li>Interoperabilità;</li>
+  <li>Efficienza dei costi.</li>
+</ul>
+
+<p>Nonostante siano cinque aspetti molto validi, in più sicuramente <strong>aprire il proprio codice</strong> a contributi esterni e contribuire ad altri progetti tramite un’identità aziendale mette in gioco tutta una serie di fattori umani per cui il prodotto finale può effettivamente essere migliore: un’azienda che coopera con altre aziende mutuando il rapporto tra sé stessa e l’esterno tramite una community che fa da zona franca incappa in una commistione che rende i confini della compagnia labili e sfumati, facilitando lo scambio di opinioni, lo scambio di best practice e l’adozione di queste ultime, portando a un valore finale per l’utente sicuramente migliore (a livello di performance, e altri aspetti tra cui quelli menzionati sopra).</p>
+
+<p>Un esempio notevole di questo è la <strong>collaborazione tra Microsoft e Google per Angular 2</strong>: tutto il codice è stato portato in TypeScript con l’aiuto di Microsoft, Microsoft stessa si è messa in gioco per fare questo (ricevendo complimenti e critiche), ma soprattutto Google ne ha guadagnato in dialogo con un concorrente. E sicuramente, tutto questo sarà positivo per il prodotto. Se vi interessa potete leggere di qualche internal <a href="http://blogs.msdn.com/b/somasegar/archive/2015/03/05/typescript-lt-3-angular.aspx">qui</a>.</p>
+
+<p><strong>Microsoft</strong>, quindi, sembra aver capito che l’open source rappresenta un valore aggiunto non indifferente per molti dei software che ha aperto e per i software ai quali sta contribuendo. Spero che continui a perseguire questa strada, perché sembra dare frutti notevoli.</p>
+
+<h3 id="azure">Azure</h3>
+<p>Quando si prova a dirimere la questione del <strong>rapporto tra Microsoft e l’open source</strong>, secondo me uno dei nodi centrali diventa immediatamente la piattaforma <strong>Azure</strong>. Cito da Wikipedia:</p>
+
+<blockquote>
+  <p>Microsoft Azure […] is a cloud computing platform and infrastructure, created by Microsoft, for building, deploying and managing applications and services […] It provides both PaaS and IaaS services and supports many different programming languages, tools and frameworks, including both Microsoft-specific and third-party software and systems.</p>
+</blockquote>
+
+<p>Per quanto mi riguarda, ho avuto modo di provare approfonditamente Azure grazie a Microsoft, e devo dire che <strong>ne sono rimasto piacevolmente colpito</strong> non tanto per quanto i servizi che vengono offerti riguardo le opzioni di Platform As A Service, quanto per quelli di Infrastructure As A Service; se infatti ho trovato difficoltoso adattare il mio flusso di lavoro al fatto che le mie applicazioni fossero eseguite su un’infrastruttura Windows (con relativi file di configurazione lungo i quali non mi so muovere con la stessa confidenza di cui godo con Linux e Unix in generale), questo non è assolutamente successo nel momento in cui ho <strong>istanziato delle macchine in cloud con l’ultima versione di Ubuntu o CentOS</strong>.</p>
+
+<p>In questo <strong>Microsoft ha dimostrato lungimiranza</strong>, spirito di coopetition e soprattutto ha abbandonato la supponenza per un atteggiamento decisamente meno ostile: comprendendo che la community Linux era qualcosa di facilmente “catturabile” in quanto ad interessi, è andata esattamente nella giusta direzione, tentando di infrastrutturare un servizio cloud più che degno di nota come architettura hardware, con un buon pannello di amministrazione, finendo di fatto comunque a <strong>vendere Linux ai linuxiani</strong>, con buona pace di entrambe le parti e mutuo guadagno più che proficuo per tutti gli attori in scena. Ormai sono anni che Azure offre immagini Linux, e Microsoft sembra tutt’altro che intenzionata a smettere di offrire una commodity di questo tipo: addirittura è stata molto, molto veloce nel dotarsi immediatamente di immagini <strong>CoreOS</strong> (ad esempio), data l’impennata che ha avuto la pratica della containerizzazione nell’amministrazione di infrastrutture orientate alla cloud.</p>
+
+<p>Altre chicche molto open che troviamo dentro Azure? Una su tutte: la PaaS, che pure non ho avuto troppo occasione di apprezzare per via del fatto che non mi andava di prendere confidenza con quello specifico flusso di lavoro, supporta benissimo out of the box il deploy da un repository git, e ovviamente <strong>il principe della situazione è ancora una volta GitHub</strong>. Mi ha colpito, piccola osservazione tecnica, anche il fatto che fosse possibile impostare con un paio di click la <strong>continuous delivery</strong> per ogni commit che avviene su un determinato branch.</p>
+
+<h3 id="dotnet-roslyn">DotNet, Roslyn</h3>
+<p>La ciliegina sulla torta viene per ultima: vicino al Natale del 2014, <strong>Microsoft</strong> decide infatti di fare un grosso regalo alla community open source, specialmente quella coinvolta nello sviluppo di applicazioni con tecnologia .Net; con un grosso passo avanti e un atto di fede piuttosto ingente <strong>rende open source tutto il core di .Net</strong>. Su <strong>GitHub</strong>. Il che significa che, come dicevo sopra, l’azienda un tempo simbolo di chiusura e di una certa ottica di business ha riconosciuto in GitHub il posto ideale per intavolare una conversazione con realtà diverse da quella interna.</p>
+
+<p>In breve <strong>i commit sul progetto hanno raggiunto picchi elevatissimi</strong>: la piattaforma <strong>Roslyn</strong>, che fornisce i compilatori per C# e Visual Basic, open già dall’aprile di quell’anno, registra numeri da record che Microsoft si <a href="http://blogs.msdn.com/b/dotnet/archive/2015/04/06/a-journey-through-open-source-the-trials-amp-triumphs-in-roslyn-s-first-year-of-open-source.aspx">affretta a condividere</a> dopo un lungo viaggio percorso insieme alla propria community di affezionati. Community che viene ingaggiata massicciamente, fidelizzata, incentivata con dei gadget meravigliosi come le <strong>tazze con l’hash del proprio primo commit</strong> su .Net Core. Il report di Febbraio di quest’anno sull’andamento del progetto è meraviglioso: mostra un sentimento di vero legame tra ecosistema aziendale e contributor esterni.</p>
+
+<p>Allo stesso modo, quello che è interessante vedere avvicinandosi sempre di più alla data di “rilascio open” è come l’azienda in sé sia rimasta stupita dal <strong>numero di fork</strong> che il progetto ha generato in così poco tempo. Delle numeriche più estese vengono infatti diffuse nel <a href="http://blogs.msdn.com/b/dotnet/archive/2015/01/28/net-core-open-source-update.aspx">report del 28 gennaio</a>:</p>
+
+<blockquote>
+  <p>One metric totally made my day. When browsing the graphs of the corefx repo, GitHub displays the following […] Indeed we’ve more than 1,000 forks! Of course, this a total vanity metric and not indicative of the true number of engagements we have. But we’re still totally humbled by the massive amount of interest we see from the community. And we’re also a tiny bit proud. But the total number of pull requests is pretty high. In total, we’re approaching 250 pull requests since last November (which includes both, contributors from community as well as Microsoft)</p>
+</blockquote>
+
+<p>Che dire? Sembra che Microsoft c’abbia veramente preso gusto: sicuramente .Net è <strong>un prodotto a cui ha giovato l’apertura</strong>, anche se sinceramente penso che se Microsoft non avesse accompagnato l’apertura del sorgente al supporto multipiattaforma non si sarebbe verificato questo boom. In ogni caso, è sempre bello vedere quando un’iniziativa di questo genere trova persone capaci di apprezzarla, e dimostra coi risultati tangibili quanto, condotto con raziocinio, il <strong>processo open</strong> possa arrecare un valore aggiunto al prodotto in oggetto (pur non divenendo una caratteristica primaria).</p>
+
+<p><img src="https://farm7.staticflickr.com/6185/6144618538_9b42127682_o.jpg" alt="Microsoft Build" /></p>
+
+<h3 id="valutazioni-finali">Valutazioni finali</h3>
+<p>Di base, <strong>Microsoft mi ha stupito</strong>, e credo che abbia stupito moltissime persone con i suoi “ultimi” sommovimenti. L’azienda ha riconfigurato la propria politica in relativamente poco tempo, dimostrando una <strong>maturità</strong> tardiva per certi aspetti (solo ora l’open source ha assunto il ruolo spettantegli? Non sarà tardi?), invidiabilmente precoce per altri (non è facile per una grande azienda cambiare mindset secondo queste tempistiche). Poste le opportune premesse, penso che si possa esprimere un giudizio complessivamente buono, anche se ci sono tante sfumature da ritoccare e una strategia da rinforzare massicciamente, dato che per quanto mi riguarda Microsoft è appena all’inizio del suo cammino che potrebbe portarla a diventare un’azienda totalmente nuova.</p>
+
+<p>Andando per punti, <strong>tre pro</strong>:</p>
+
+<ul>
+  <li>Un <strong>contributo attivo</strong> verso le tecnologie che danno una forma al futuro, da Linux (Hyper-V? Anyone?) ad AngularJS;</li>
+  <li><strong>Azure che supporta Linux</strong> in maniera più che ottima;</li>
+  <li>La community è effettivamente in grado di <strong>percepire la vicinanza dell’azienda</strong>, specie su tematiche chiave come .Net (ché uno dice vorrei vedere, ma non è scontato).</li>
+</ul>
+
+<p>E naturalmente <strong>tre contro</strong>:</p>
+
+<ul>
+  <li><strong>Advocacy di tool</strong> anziché del processo: l’ecosistema open non è un terreno promozionale gratuito, ma una infrastruttura a cui bisogna sapersi interfacciare;</li>
+  <li>Un <strong>supporto ancora scarno a Linux sul desktop</strong>: non pretendo troppo, solo di non continuare a tendere la mano a Unix/Linux sui server, andando poi a minare tramite Secure Boot l’installazione di Linux su desktop. Microsoft, stacci: ci piace Linux, siamo pure in pochi, faccelo usare;</li>
+  <li><strong>Poca distribuzione del codice di applicazioni</strong> veramente importanti: Microsoft continua a portare sue applicazioni su iOS e specialmente Android, ma non dà valore aggiunto se non quello di puro business a questi eventi tramite l’apertura del codice. Le applicazioni funzionano molto bene, e proprio perché funzionano bene sarebbe interessante leggere cosa c’è sotto.</li>
+</ul>
+
+<p>Analizzando e mescolando questi fattori, penso che si possa assegnare a Microsoft un <strong>7 in pagella</strong> per quanto concerne il tema <strong>open source</strong>. Lo vedo come un voto sincero, e d’incoraggiamento a fare sempre meglio aprendo ancora più codice e accettando che la community arrivi fin quasi a dare una forma propria a questa compagnia. Conosco gli ostacoli, so che è una forma ideale che do al mio pensiero, e che a tendere seppur aperta come azienda, Microsoft è estremamente difficile che accetti un <strong>compromesso</strong> simile. Nonostante questo però, rimango un inguaribile ottimista.</p>
+
+</div>
+
+<div class="social-section">
+  <div class="fb-like" data-href="/2015/09/microsoft-open-source/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-via="dottorblaster" data-lang="it" data-dnt="true">Tweet</a>
+</div>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'blasterhome'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/06/domain-modeling-made-functional-recensione/">
+            Recensione: Domain Modeling Made Functional, di Scott Wlaschin
+            <small>08 Jun 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/05/piccolo-kubernetes-production-ready-k3s/">
+            Kubernetes production-ready in piccolo: deployare un mini-cluster K3s
+            <small>18 May 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/04/adoro-kubernetes/">
+            Io adoro Kubernetes
+            <small>25 Apr 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+      <div class="footer">
+        <p>
+          &copy; Grab The Blaster is brought to you by Alessio Biancalana with <a href="http://jekyllrb.com/">Jekyll</a> and much ♥, under <a href="https://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC</a>.
+        </p>
+        <form class="search-form" action="/search" method="get">
+          <input type="text" placeholder="Cerca →" name="query">
+        </form>
+      </div>
+      <div class="webring-container">
+        <webring-banner>
+          <p>Member of <a href="https://retronerds.netlify.app"></a></p>
+          <a href="https://retronerds.netlify.app/prev">Previous</a>
+          <a href="https://retronerds.netlify.app/random">Random</a>
+          <a href="https://retronerds.netlify.app/next">Next</a>
+        </webring-banner>
+        <script async src="https://retronerds.netlify.app/embed.js" charset="utf-8"></script>
+      </div>
+    </div>
+
+  </body>
+</html>

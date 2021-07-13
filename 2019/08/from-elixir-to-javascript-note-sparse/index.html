@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <link rel="canonical" href="/2019/08/from-elixir-to-javascript-note-sparse/" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- Enable Graph API for Facebook integration -->
+  <meta content="Grab The Blaster" property="og:site_name">
+  
+    <meta content="From JavaScript to Elixir to JavaScript – note sparse su andata e ritorno" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="In questo periodo di totale nullafacenza che sono le ferie mie e di Agnese ho preso la palla al balzo per dare un’aggiornata globale a un progetto che ha preso un numero imbarazzante di star su GitHub, che aveva bisogno di tantissimo amore (non ci mettevo mano letteralmente da anni), e che aveva anche un discreto numero di notifiche di sicurezza dovute a librerie non aggiornate.Sto parlando di Stocazzo As A Service, un esperimento divertente che mi ha permesso illo tempore di sperimentare un ..." property="og:description">
+  
+  
+    <meta content="https://dottorblaster.it/2019/08/from-elixir-to-javascript-note-sparse/" property="og:url">
+  
+  
+    <meta content="2019-08-15T18:25:24+00:00" property="article:published_time">
+    <meta content="https://dottorblaster.it/about/" property="article:author">
+    <meta content="https://dottorblaster.it/opengraph/2cf0cfc5ce9c810ac7ea92af94a3e30d9069fb8d.png" property="og:image">
+  
+  
+    
+    <meta content="Development" property="article:section">
+    
+  
+  
+    
+    <meta content="javascript" property="article:tag">
+    
+    <meta content="ecmascript" property="article:tag">
+    
+    <meta content="elixir" property="article:tag">
+    
+    <meta content="functional" property="article:tag">
+    
+    <meta content="functional programming" property="article:tag">
+    
+    <meta content="programmazione funzionale" property="article:tag">
+    
+    <meta content="immutabilità" property="article:tag">
+    
+    <meta content="erlang" property="article:tag">
+    
+    <meta content="js" property="article:tag">
+    
+  
+
+  <!--   Enable Twitter Cards support through metadata, thanks to http://davidensinger.com/2013/04/supporting-twitter-cards-with-jekyll/ -->
+<!--   <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@site_username">
+  <meta name="twitter:creator" content="@creator_username">
+  
+    <meta name="twitter:title" content="From JavaScript to Elixir to JavaScript – note sparse su andata e ritorno">
+  
+  
+    <meta name="twitter:url" content="https://dottorblaster.it/2019/08/from-elixir-to-javascript-note-sparse/">
+   -->
+  <!-- This is from @stammy -->
+<!--   <meta name="twitter:description" content="
+
+In questo periodo di totale nullafacenza che sono le ferie mie e di Agnese ho preso la palla al balzo per dare un’aggiornata globale a un progetto che ha preso un numero imbarazzante di star su G...">
+  
+    <meta name="twitter:image:src" content="https://dottorblaster.it/path/to/image/logo.png">
+    -->
+
+  <title>
+    
+      From JavaScript to Elixir to JavaScript – note sparse su andata e ritorno &middot; Grab The Blaster
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/grabtheblaster.css">
+  <link rel="stylesheet" href="/public/font-awesome/css/font-awesome.min.css">
+
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700italic,700,400italic' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,700' rel='stylesheet' type='text/css' />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title="" href="https://dottorblaster.it/feed">
+</head>
+
+
+  <body>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=81489295682&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="container content">
+      <div class="masthead">
+        <h3 class="masthead-title">
+          <img src="/public/avatar-blaster.png" alt="Alessio Biancalana">
+          <a href="/" title="Home page">Grab The Blaster</a>
+          <small>di Alessio Biancalana</small>
+        </h3>
+        <div class="social-icons"><a href="/about/" title="About Me"><i class="fa fa-user-circle-o"></i></a> <a href="https://twitter.com/dottorblaster" title="Twitter - @dottorblaster"><i class="fa fa-twitter"></i></a> <a href="https://github.com/dottorblaster" title="GitHub - dottorblaster"><i class="fa fa-github"></i></a></div>
+      </div>
+
+      <div class="post">
+  <h1 class="post-title">From JavaScript to Elixir to JavaScript – note sparse su andata e ritorno</h1>
+  <span class="post-date">15 Aug 2019</span>
+  <p><img src="https://gitlab.com/dottorblaster/blog-images/raw/master/images/js-code.jpg" alt="JS Code" /></p>
+
+<p>In questo periodo di totale nullafacenza che sono le ferie mie e di Agnese ho preso la palla al balzo per dare un’aggiornata globale a un progetto che ha preso un numero imbarazzante di star su GitHub, che aveva bisogno di tantissimo amore (non ci mettevo mano letteralmente da anni), e che aveva anche un discreto numero di notifiche di sicurezza dovute a librerie non aggiornate.</p>
+
+<p>Sto parlando di <a href="https://github.com/dottorblaster/stocazzo">Stocazzo As A Service</a>, un esperimento divertente che mi ha permesso illo tempore di sperimentare un po’ con <strong>Hapi</strong>, un framework per lo sviluppo di applicazioni web, e che ha persino ricevuto qualche pull request interessante.</p>
+
+<p>Ci ho messo abbastanza poco a capire che non sarebbe bastato <strong>aggiornare le dipendenze</strong>, e che in realtà la codebase aveva bisogno di una riscrittura totale in barba a tutte le raccomandazioni del tipo “non andare a rompere quello che funziona” che ogni guru del software vi darebbe. Non essendo un pazzo suicida però ho deciso di lavorare iterativamente, seguendo la regola del boy scout, un sacco di cautela e la <strong>suite di test</strong> che avevo già scritto in precedenza.</p>
+
+<p>Siccome vengo da anni di <strong>JavaScript</strong> ma soprattutto anche da (meno) anni di <strong>Elixir</strong> nel tempo libero, ho sentito subito la mancanza di alcune cosette:</p>
+
+<ul>
+  <li>Un formatter come <code class="language-plaintext highlighter-rouge">mix format</code>;</li>
+  <li>Un tool di analisi statica come Credo;</li>
+  <li>Pipe operator e immutabilità.</li>
+</ul>
+
+<p>Siccome per quanto riguarda la terza non potevo farci niente (almeno non sul momento), ho deciso di concentrarmi sul rendere la mia <strong>toolchain</strong> un po’ più confortevole, quindi ho aggiunto <a href="https://prettier.io/">Prettier</a> e ho configurato npm per formattare tutto tipo <code class="language-plaintext highlighter-rouge">mix format</code>; successivamente, ho dato un bel giro di vite alla codebase esistente aggiungendo <a href="https://eslint.org/">ESLint</a> al progetto con una configurazione abbastanza generica.</p>
+
+<p>A quel punto ho aggiornato le <strong>librerie di testing</strong> (<a href="https://github.com/hapijs/code">Code</a> per expectation e <a href="https://github.com/hapijs/lab">Lab</a> per la test instrumentation) e ho cominciato a vedere cosa si rompeva. L’interfaccia col webserver in realtà non era cambiata molto: il brutto del guardare indietro al codice che hai scritto tanto tempo fa è più che altro lo sguardo lanciato nel baratro degli errori di gioventù che hai commesso. Tipo un modulo <code class="language-plaintext highlighter-rouge">utils</code> e una serie di funzioni dentro che fanno “cose” fantasiose coi parametri che gli passi. Ho stracoperto quella parte di test, <strong>perché era la parte più debole</strong>, poi ho portato tutto alla nuova versione di Hapi, che è leggermente diversa nel funzionamento dato che si basa molto su <code class="language-plaintext highlighter-rouge">async</code> e <code class="language-plaintext highlighter-rouge">await</code>. Contestualmente ho aggiornato la test suite, in modo da usare nuove funzioni.</p>
+
+<p>L’ultimo passo è stato cominciare a riscrivere la libreria di “utils” che avevo partorito all’epoca. Ormai forte di una test suite a prova di bomba, non potevo rompere niente e sono stato guidato dai test rotti alla ricerca di eventuali problemi.</p>
+
+<p>Ci ho messo un paio d’ore a fare tutto, forse tre. Non era una codebase particolarmente larga, quindi mi sono potuto permettere il lusso di farle un lifting completo.</p>
+
+<p>“Che c’è di nuovo?” Direte voi, miei lettori. “È una storia di un refactoring come tanti altri”. Ed è vero. Quello che ho notato però è come la mia esperienza con un altro linguaggio e un’altra piattaforma mi abbia condotto alla ricerca del miglior tooling per fare quello di cui avevo bisogno, e come io abbia messo in pratica best practice totalmente trasversali.</p>
+
+<p>In parole povere, sono convinto che <strong>nel momento in cui impariamo un nuovo linguaggio</strong>, o un nuovo tool, <strong>impariamo un nuovo modo di lavorare</strong> oppure <strong>perfezioniamo il metodo che abbiamo già</strong>. E questo, almeno per me, è incredibilmente incoraggiante, perché con questa esperienza ho avuto modo di toccare con mano quanto il tempo che ho speso su <a href="https://elixir-lang.org/">Elixir</a> abbia cambiato in meglio le mie abitudini in maniera estremamente profonda.</p>
+
+<p><em>Photo courtesy of <a href="https://unsplash.com/@codestorm">Safar Safarov</a></em></p>
+
+</div>
+
+<div class="social-section">
+  <div class="fb-like" data-href="/2019/08/from-elixir-to-javascript-note-sparse/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-via="dottorblaster" data-lang="it" data-dnt="true">Tweet</a>
+</div>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'blasterhome'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/06/domain-modeling-made-functional-recensione/">
+            Recensione: Domain Modeling Made Functional, di Scott Wlaschin
+            <small>08 Jun 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/05/piccolo-kubernetes-production-ready-k3s/">
+            Kubernetes production-ready in piccolo: deployare un mini-cluster K3s
+            <small>18 May 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/04/adoro-kubernetes/">
+            Io adoro Kubernetes
+            <small>25 Apr 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+      <div class="footer">
+        <p>
+          &copy; Grab The Blaster is brought to you by Alessio Biancalana with <a href="http://jekyllrb.com/">Jekyll</a> and much ♥, under <a href="https://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC</a>.
+        </p>
+        <form class="search-form" action="/search" method="get">
+          <input type="text" placeholder="Cerca →" name="query">
+        </form>
+      </div>
+      <div class="webring-container">
+        <webring-banner>
+          <p>Member of <a href="https://retronerds.netlify.app"></a></p>
+          <a href="https://retronerds.netlify.app/prev">Previous</a>
+          <a href="https://retronerds.netlify.app/random">Random</a>
+          <a href="https://retronerds.netlify.app/next">Next</a>
+        </webring-banner>
+        <script async src="https://retronerds.netlify.app/embed.js" charset="utf-8"></script>
+      </div>
+    </div>
+
+  </body>
+</html>

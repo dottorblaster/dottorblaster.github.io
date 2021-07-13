@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <link rel="canonical" href="/page/13/" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- Enable Graph API for Facebook integration -->
+  <meta content="Grab The Blaster" property="og:site_name">
+  
+    <meta content="Home" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="Un blog nerd il giusto di Alessio Biancalana" property="og:description">
+  
+  
+    <meta content="https://dottorblaster.it/page/13/" property="og:url">
+  
+  
+  
+  
+
+  <!--   Enable Twitter Cards support through metadata, thanks to http://davidensinger.com/2013/04/supporting-twitter-cards-with-jekyll/ -->
+<!--   <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@site_username">
+  <meta name="twitter:creator" content="@creator_username">
+  
+    <meta name="twitter:title" content="Home">
+  
+  
+    <meta name="twitter:url" content="https://dottorblaster.it/page/13/">
+   -->
+  <!-- This is from @stammy -->
+<!--   <meta name="twitter:description" content="
+  {% for post in paginator.posts %}
+  
+    {% if post.layout == &quot;link&quot; %}
+      
+        
+          {{ post.title }}
+        
+        
+      
+    {% else %}
+      
+        
+          {{ ...">
+  
+    <meta name="twitter:image:src" content="https://dottorblaster.it/path/to/image/logo.png">
+    -->
+
+  <title>
+    
+      Grab The Blaster &middot; di Alessio Biancalana
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/grabtheblaster.css">
+  <link rel="stylesheet" href="/public/font-awesome/css/font-awesome.min.css">
+
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700italic,700,400italic' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,700' rel='stylesheet' type='text/css' />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title="" href="https://dottorblaster.it/feed">
+</head>
+
+
+  <body>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=81489295682&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="container content">
+      <div class="masthead">
+        <h3 class="masthead-title">
+          <img src="/public/avatar-blaster.png" alt="Alessio Biancalana">
+          <a href="/" title="Home page">Grab The Blaster</a>
+          <small>di Alessio Biancalana</small>
+        </h3>
+        <div class="social-icons"><a href="/about/" title="About Me"><i class="fa fa-user-circle-o"></i></a> <a href="https://twitter.com/dottorblaster" title="Twitter - @dottorblaster"><i class="fa fa-twitter"></i></a> <a href="https://github.com/dottorblaster" title="GitHub - dottorblaster"><i class="fa fa-github"></i></a></div>
+      </div>
+
+      <div class="posts">
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2018/07/elixir-for-dummies-5/" title="Elixir per idioti /5, pipe operator e pipeline di funzioni - di Alessio Biancalana">
+          Elixir per idioti /5, pipe operator e pipeline di funzioni
+        </a>
+      </h1>
+      <span class="post-date">09 Jul 2018</span>
+    
+
+    <p>Quando ho approcciato <strong>Elixir</strong> per la prima volta, una tra le cose più complicate con cui ho avuto a che fare è stata proprio l’abituarmi a leggere il codice di altri e a capire alcune particolarità del linguaggio, una su tutte il pipe operator. Ve l’ho mostrato nello scorso episodio: il <strong>pipe operator</strong> (<code class="language-plaintext highlighter-rouge">|&gt;</code>) è un operatore particolare che permette di passare l’output di una funzione direttamente alla funzione successiva come primo argomento.</p>
+
+<p>Questo significa che noi possiamo scrivere qualcosa di questo tipo:</p>
+
+<div class="language-elixir highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="no">IO</span><span class="o">.</span><span class="n">puts</span><span class="p">(</span><span class="n">divide_by_two</span><span class="p">(</span><span class="n">square</span><span class="p">(</span><span class="mi">10</span><span class="p">)))</span>
+</code></pre></div></div>
+
+<p>In una forma migliore, che è questa:</p>
+
+<div class="language-elixir highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">10</span> <span class="o">|&gt;</span> <span class="n">square</span><span class="p">()</span> <span class="o">|&gt;</span> <span class="n">divide_by_two</span><span class="p">()</span> <span class="o">|&gt;</span> <span class="no">IO</span><span class="o">.</span><span class="n">puts</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p>E possiamo anche <strong>formattarlo</strong> perché sia più ordinato:</p>
+
+<div class="language-elixir highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">10</span>
+<span class="o">|&gt;</span> <span class="n">square</span><span class="p">()</span>
+<span class="o">|&gt;</span> <span class="n">divide_by_two</span><span class="p">()</span>
+<span class="o">|&gt;</span> <span class="no">IO</span><span class="o">.</span><span class="n">puts</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p>Il funzionamento del pipe operator è abbastanza semplice, si tratta solo di prenderci la mano e di cominciare a “pensare per pipeline”, ovvero immaginare il proprio codice come una <strong>sequenza di funzioni</strong> per cui l’argomento iniziale che noi forniamo passa attraverso, esattamente come una catena di montaggio, e viene di volta in volta “evoluto” in qualcos’altro.</p>
+
+<p>Personalmente questo concetto di <strong>pipeline</strong> è qualcosa che mi piace molto, perché permette di architettare il codice in maniera migliore e soprattutto di giocare alle scatole cinesi, per cui una funzione può semplicemente assumere la forma di una grossissima catena di montaggio:</p>
+
+<div class="language-elixir highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="n">huge_pipeline</span><span class="p">(</span><span class="n">number</span><span class="p">)</span> <span class="k">do</span>
+  <span class="n">number</span>
+  <span class="o">|&gt;</span> <span class="n">some_function</span><span class="p">()</span>
+  <span class="o">|&gt;</span> <span class="n">some_other_function</span><span class="p">()</span>
+  <span class="o">|&gt;</span> <span class="n">wow</span><span class="p">()</span>
+  <span class="o">|&gt;</span> <span class="n">such</span><span class="p">()</span>
+  <span class="o">|&gt;</span> <span class="n">code</span><span class="p">()</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>Ogni funzione di quelle che abbiamo indicato applicherà le sue modifiche al numero in entrata e l’output come abbiamo detto verrà passato alla successiva. Facile no? Proviamo a definire qualche funzione e a <strong>giocare col pipe operator</strong> per capire meglio.</p>
+
+<div class="language-elixir highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">iex</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">&gt;</span> <span class="k">defmodule</span> <span class="no">SimpleMath</span> <span class="k">do</span>
+<span class="o">...</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">&gt;</span>   <span class="k">def</span> <span class="n">square</span><span class="p">(</span><span class="n">number</span><span class="p">),</span> <span class="k">do</span><span class="p">:</span> <span class="n">number</span><span class="o">*</span><span class="n">number</span>
+<span class="o">...</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">&gt;</span>   <span class="k">def</span> <span class="n">divide_by_two</span><span class="p">(</span><span class="n">number</span><span class="p">),</span> <span class="k">do</span><span class="p">:</span> <span class="n">number</span><span class="o">/</span><span class="mi">2</span>
+<span class="o">...</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">&gt;</span> <span class="k">end</span>
+<span class="p">{</span><span class="ss">:module</span><span class="p">,</span> <span class="no">SimpleMath</span><span class="p">,</span>
+ <span class="o">&lt;&lt;</span><span class="mi">70</span><span class="p">,</span> <span class="mi">79</span><span class="p">,</span> <span class="mi">82</span><span class="p">,</span> <span class="mi">49</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">196</span><span class="p">,</span> <span class="mi">66</span><span class="p">,</span> <span class="mi">69</span><span class="p">,</span> <span class="mi">65</span><span class="p">,</span> <span class="mi">77</span><span class="p">,</span> <span class="mi">65</span><span class="p">,</span> <span class="mi">116</span><span class="p">,</span> <span class="mi">85</span><span class="p">,</span> <span class="mi">56</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">147</span><span class="p">,</span>
+   <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">69</span><span class="p">,</span> <span class="mi">108</span><span class="p">,</span> <span class="mi">105</span><span class="p">,</span> <span class="mi">120</span><span class="p">,</span> <span class="mi">105</span><span class="p">,</span> <span class="mi">114</span><span class="p">,</span> <span class="mi">46</span><span class="p">,</span> <span class="mi">83</span><span class="p">,</span> <span class="mi">105</span><span class="p">,</span> <span class="mi">109</span><span class="p">,</span> <span class="mi">112</span><span class="p">,</span> <span class="mi">108</span><span class="p">,</span>
+   <span class="mi">101</span><span class="p">,</span> <span class="mi">77</span><span class="p">,</span> <span class="mi">97</span><span class="p">,</span> <span class="mi">116</span><span class="p">,</span> <span class="mi">104</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">95</span><span class="p">,</span> <span class="mi">95</span><span class="p">,</span> <span class="mi">105</span><span class="p">,</span> <span class="mi">110</span><span class="p">,</span> <span class="o">...&gt;&gt;</span><span class="p">,</span> <span class="p">{</span><span class="ss">:divide_by_two</span><span class="p">,</span> <span class="mi">1</span><span class="p">}}</span>
+<span class="n">iex</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">&gt;</span> <span class="no">SimpleMath</span><span class="o">.</span><span class="n">square</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="mi">4</span>
+<span class="n">iex</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">&gt;</span> <span class="k">defmodule</span> <span class="no">HugeModule</span> <span class="k">do</span>
+<span class="o">...</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">&gt;</span>   <span class="k">def</span> <span class="n">great_function</span><span class="p">(</span><span class="n">number</span><span class="p">)</span> <span class="k">do</span>
+<span class="o">...</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">&gt;</span>     <span class="n">number</span>
+<span class="o">...</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">&gt;</span>     <span class="o">|&gt;</span> <span class="no">SimpleMath</span><span class="o">.</span><span class="n">square</span><span class="p">()</span>
+<span class="o">...</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">&gt;</span>     <span class="o">|&gt;</span> <span class="no">SimpleMath</span><span class="o">.</span><span class="n">divide_by_two</span><span class="p">()</span>
+<span class="o">...</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">&gt;</span>   <span class="k">end</span>
+<span class="o">...</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">&gt;</span> <span class="k">end</span>
+<span class="p">{</span><span class="ss">:module</span><span class="p">,</span> <span class="no">HugeModule</span><span class="p">,</span>
+ <span class="o">&lt;&lt;</span><span class="mi">70</span><span class="p">,</span> <span class="mi">79</span><span class="p">,</span> <span class="mi">82</span><span class="p">,</span> <span class="mi">49</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">152</span><span class="p">,</span> <span class="mi">66</span><span class="p">,</span> <span class="mi">69</span><span class="p">,</span> <span class="mi">65</span><span class="p">,</span> <span class="mi">77</span><span class="p">,</span> <span class="mi">65</span><span class="p">,</span> <span class="mi">116</span><span class="p">,</span> <span class="mi">85</span><span class="p">,</span> <span class="mi">56</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">178</span><span class="p">,</span>
+   <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">69</span><span class="p">,</span> <span class="mi">108</span><span class="p">,</span> <span class="mi">105</span><span class="p">,</span> <span class="mi">120</span><span class="p">,</span> <span class="mi">105</span><span class="p">,</span> <span class="mi">114</span><span class="p">,</span> <span class="mi">46</span><span class="p">,</span> <span class="mi">72</span><span class="p">,</span> <span class="mi">117</span><span class="p">,</span> <span class="mi">103</span><span class="p">,</span> <span class="mi">101</span><span class="p">,</span> <span class="mi">77</span><span class="p">,</span> <span class="mi">111</span><span class="p">,</span>
+   <span class="mi">100</span><span class="p">,</span> <span class="mi">117</span><span class="p">,</span> <span class="mi">108</span><span class="p">,</span> <span class="mi">101</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">95</span><span class="p">,</span> <span class="mi">95</span><span class="p">,</span> <span class="mi">105</span><span class="p">,</span> <span class="mi">110</span><span class="p">,</span> <span class="o">...&gt;&gt;</span><span class="p">,</span> <span class="p">{</span><span class="ss">:great_function</span><span class="p">,</span> <span class="mi">1</span><span class="p">}}</span>
+<span class="n">iex</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span><span class="o">&gt;</span> <span class="no">HugeModule</span><span class="o">.</span><span class="n">great_function</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="mf">12.5</span>
+<span class="n">iex</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span><span class="o">&gt;</span> <span class="no">HugeModule</span><span class="o">.</span><span class="n">great_function</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+<span class="mf">200.0</span>
+<span class="n">iex</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span><span class="o">&gt;</span>
+</code></pre></div></div>
+
+<p>Ok, ce l’ho fatta. Giuro che non sto barando, ho scritto ‘sto polpettone nella shell di Elixir, <code class="language-plaintext highlighter-rouge">iex</code>, di cui vi ho già parlato.</p>
+
+<p>Quello che ho appena fatto è molto semplice ma secondo me fa capire bene cosa abbiamo davanti: ho scritto un modulo <code class="language-plaintext highlighter-rouge">SimpleMath</code> simile a quello dell’episodio precedente, dopodiché in un altro modulo (per comodità) ho riusato queste funzioni definite precedentemente <strong>orchestrando una pipeline</strong> composta da queste due procedure e il classico valore in input.</p>
+
+<p>Ci siamo. Se avete afferrato come funziona il pipe operator, siete pronti per la prossima grande avventura, ovvero il <strong>pattern matching</strong>.</p>
+
+<p><a href="http://dottorblaster.it/2018/06/elixir-for-dummies-4/">Vai alla parte 4</a></p>
+
+<p><a href="http://dottorblaster.it/2018/07/elixir-for-dummies-6/">Vai alla parte 6</a></p>
+
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2018/06/elixir-for-dummies-4/" title="Elixir per idioti /4, definire moduli e funzioni - di Alessio Biancalana">
+          Elixir per idioti /4, definire moduli e funzioni
+        </a>
+      </h1>
+      <span class="post-date">16 Jun 2018</span>
+    
+
+    <p>La scorsa volta, che ormai è stata un po’ di tempo fa, avevamo visto come operare sulle liste tramite le funzioni messe a disposizione dal modulo Enum. Un modulo non è altro che una <strong>raccolta di funzioni</strong>, come una scatola degli attrezzi; possiamo usare i moduli per organizzare meglio il nostro codice e raggruppare le funzioni che scriviamo per affinità. Adesso riprendiamo le basi del linguaggio e poniamoci una domanda: cosa succederebbe se io volessi scrivere <strong>un modulo tutto mio con blackjack e squillo di lusso</strong> in cui raggruppare le mie funzioni?</p>
+
+<p>È abbastanza semplice, ci basta usare <code class="language-plaintext highlighter-rouge">defmodule</code>. Un modulo <strong>Elixir</strong> ha questa faccia:</p>
+
+<div class="language-elixir highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">defmodule</span> <span class="no">Hello</span> <span class="k">do</span>
+  <span class="k">def</span> <span class="n">salute</span><span class="p">(</span><span class="n">name</span><span class="p">)</span> <span class="k">do</span>
+    <span class="no">IO</span><span class="o">.</span><span class="n">puts</span><span class="p">(</span><span class="s2">"I salute you, "</span> <span class="o">&lt;&gt;</span> <span class="n">name</span><span class="p">)</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="n">sayhello</span><span class="p">(</span><span class="n">name</span><span class="p">)</span> <span class="k">do</span>
+    <span class="no">IO</span><span class="o">.</span><span class="n">puts</span><span class="p">(</span><span class="s2">"Hello, "</span> <span class="o">&lt;&gt;</span> <span class="n">name</span><span class="p">)</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>Insieme a <code class="language-plaintext highlighter-rouge">defmodule</code> stiamo imparando anche come definire delle funzioni. Una funzione in Elixir si compone della keyword <code class="language-plaintext highlighter-rouge">def</code>, un nome, e degli argomenti (quelli passati tra parentesi). In seguito possiamo richiamare le funzioni del modulo che abbiamo definito in questo modo:</p>
+
+<div class="language-elixir highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="no">Hello</span><span class="o">.</span><span class="n">salute</span><span class="p">(</span><span class="s2">"Alessio"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>E otterremo che venga stampato a schermo un saluto col nostro nome, come da codice. Se vogliamo provare a giocare un po’ con la definizione dei moduli possiamo <strong>buttare giù uno script Elixir</strong> al volo, creando un file chiamato <code class="language-plaintext highlighter-rouge">hello.exs</code> con questo contenuto:</p>
+
+<div class="language-elixir highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">defmodule</span> <span class="no">Hello</span> <span class="k">do</span>
+  <span class="k">def</span> <span class="n">salute</span><span class="p">(</span><span class="n">name</span><span class="p">)</span> <span class="k">do</span>
+    <span class="no">IO</span><span class="o">.</span><span class="n">puts</span><span class="p">(</span><span class="s2">"I salute you, </span><span class="si">#{</span><span class="n">name</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="n">sayhello</span><span class="p">(</span><span class="n">name</span><span class="p">)</span> <span class="k">do</span>
+    <span class="no">IO</span><span class="o">.</span><span class="n">puts</span><span class="p">(</span><span class="s2">"Hello, </span><span class="si">#{</span><span class="n">name</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="no">Hello</span><span class="o">.</span><span class="n">salute</span><span class="p">(</span><span class="s2">"Alessio"</span><span class="p">)</span>
+<span class="no">Hello</span><span class="o">.</span><span class="n">sayhello</span><span class="p">(</span><span class="s2">"Arcibaldo"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Per eseguirlo ci basta spostarci nella directory dove si trova e lanciarlo con il comando <code class="language-plaintext highlighter-rouge">elixir</code>:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>elixir hello.exs
+I salute you, Alessio
+Hello, Arcibaldo
+</code></pre></div></div>
+
+<p>Possiamo definire quanti <strong>moduli</strong> vogliamo. In uno script piccolo di un solo file fatichiamo a vedere l’utilità di una cosa simile, ma quando abbiamo tanti file e un progetto che comincia ad assumere una stazza importante, l’ordine è fondamentale. Per quanto riguarda la creazione di un nuovo progetto (non uno script piccolino, proprio un progetto di quelli potenzialmente grandi) da zero vi rimando al <a href="http://francesco.codes/2018/05/11/come-configurare-un-primo-progetto-elixir-ed-effettivamente-e-semplicissimo/">post di Francesco</a>, che illustra molto bene il tool che viene usato per gestire i progetti in Elixir, Mix, insieme al suo uso più comune, ovvero <code class="language-plaintext highlighter-rouge">mix new</code>.</p>
+
+<h3 id="la-keyword-return-in-elixir">La keyword <code class="language-plaintext highlighter-rouge">return</code> in Elixir</h3>
+<p>Vale la pena spendere due parole, dato che stiamo parlando per la prima volta davvero di <strong>funzioni</strong>, su come definire i valori di ritorno delle proprie funzioni in Elixir. Al posto di usare <code class="language-plaintext highlighter-rouge">return</code> come in tantissimi altri linguaggi, tra cui JavaScript, Java, o Ruby, in Elixir il valore di ritorno di una funzione è semplicemente l’ultima espressione che scriviamo dentro di essa.</p>
+
+<p>Per dare un occhio più approfondito a questa piccola particolarità possiamo definire un modulo che si occupi di fare piccole operazioni sui numeri:</p>
+
+<div class="language-elixir highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">defmodule</span> <span class="no">SimpleMath</span> <span class="k">do</span>
+  <span class="k">def</span> <span class="n">divide_by_two</span><span class="p">(</span><span class="n">number</span><span class="p">)</span> <span class="k">do</span>
+    <span class="n">number</span><span class="o">/</span><span class="mi">2</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="n">square</span><span class="p">(</span><span class="n">number</span><span class="p">)</span> <span class="k">do</span>
+    <span class="n">number</span><span class="o">*</span><span class="n">number</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="n">sum_three</span><span class="p">(</span><span class="n">number</span><span class="p">)</span> <span class="k">do</span>
+    <span class="n">number</span><span class="o">+</span><span class="mi">3</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>Salvando questo modulo come <code class="language-plaintext highlighter-rouge">simple_math.ex</code> possiamo caricarlo dentro <code class="language-plaintext highlighter-rouge">iex</code> e farci degli esperimenti:</p>
+
+<div class="language-elixir highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">iex</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">&gt;</span> <span class="n">import_file</span><span class="p">(</span><span class="s2">"simple_math.ex"</span><span class="p">)</span>
+<span class="p">{</span><span class="ss">:module</span><span class="p">,</span> <span class="no">SimpleMath</span><span class="p">,</span>
+ <span class="o">&lt;&lt;</span><span class="mi">70</span><span class="p">,</span> <span class="mi">79</span><span class="p">,</span> <span class="mi">82</span><span class="p">,</span> <span class="mi">49</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">56</span><span class="p">,</span> <span class="mi">66</span><span class="p">,</span> <span class="mi">69</span><span class="p">,</span> <span class="mi">65</span><span class="p">,</span> <span class="mi">77</span><span class="p">,</span> <span class="mi">65</span><span class="p">,</span> <span class="mi">116</span><span class="p">,</span> <span class="mi">85</span><span class="p">,</span> <span class="mi">56</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">159</span><span class="p">,</span>
+   <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">69</span><span class="p">,</span> <span class="mi">108</span><span class="p">,</span> <span class="mi">105</span><span class="p">,</span> <span class="mi">120</span><span class="p">,</span> <span class="mi">105</span><span class="p">,</span> <span class="mi">114</span><span class="p">,</span> <span class="mi">46</span><span class="p">,</span> <span class="mi">83</span><span class="p">,</span> <span class="mi">105</span><span class="p">,</span> <span class="mi">109</span><span class="p">,</span> <span class="mi">112</span><span class="p">,</span> <span class="mi">108</span><span class="p">,</span>
+   <span class="mi">101</span><span class="p">,</span> <span class="mi">77</span><span class="p">,</span> <span class="mi">97</span><span class="p">,</span> <span class="mi">116</span><span class="p">,</span> <span class="mi">104</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">95</span><span class="p">,</span> <span class="mi">95</span><span class="p">,</span> <span class="mi">105</span><span class="p">,</span> <span class="mi">110</span><span class="p">,</span> <span class="o">...&gt;&gt;</span><span class="p">,</span> <span class="p">{</span><span class="ss">:sum_three</span><span class="p">,</span> <span class="mi">1</span><span class="p">}}</span>
+<span class="n">iex</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">&gt;</span> <span class="mi">4</span> <span class="o">|&gt;</span> <span class="no">SimpleMath</span><span class="o">.</span><span class="n">divide_by_two</span> <span class="o">|&gt;</span> <span class="no">IO</span><span class="o">.</span><span class="n">puts</span>
+<span class="mf">2.0</span>
+<span class="ss">:ok</span>
+<span class="n">iex</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">&gt;</span>
+</code></pre></div></div>
+
+<p>Come vediamo, all’interno delle funzioni ci basta usare un’espressione per identificarla come <strong>valore di ritorno</strong>. Se volessimo la stringa <code class="language-plaintext highlighter-rouge">ciao</code> come valore di ritorno, non dovremmo fare altro che scrivere <code class="language-plaintext highlighter-rouge">"ciao"</code> alla fine della funzione. Per chi viene da altri linguaggi questa è una differenza non da poco, dato che Elixir non è strutturato per permettere per esempio i cosiddetti “early return”<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> all’interno delle funzioni. Io però con questo meccanismo ho preso confidenza abbastanza in fretta.</p>
+
+<p>Adesso che sappiamo come definire funzioni ma soprattutto come definire moduli dove raccogliere le nostre funzioni, possiamo mantenere il codice ordinato. Non ci resta altro che cominciare con qualche piccolo progettino<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup>.</p>
+
+<p><a href="http://dottorblaster.it/2018/02/elixir-for-dummies-3/">Vai alla parte 3</a></p>
+
+<p><a href="http://dottorblaster.it/2018/07/elixir-for-dummies-5/">Vai alla parte 5</a></p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>Per chi volesse approfondire, un buon esempio di early return in JavaScript è <a href="http://blog.timoxley.com/post/47041269194/avoid-else-return-early">qua</a>. È una tecnica che uso anch’io, ma in Elixir non si può, e non solo: in realtà per come è strutturato il linguaggio penso aiuti a fattorizzare meglio il codice. Se ne volete parlare, meglio scrivermi o venire al prossimo incontro di Elixir Roma ;-) <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>In realtà manca ancora un piccolo pezzettino, confido che lo vedremo presto. Avete visto la piccola magia che ho fatto dentro iex nell’ultimo snippet di codice? Si chiama pipe operator. Ma ne parleremo meglio la prossima volta. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2018/06/react-europe-2018/" title="React Europe 2018: riportando tutto a casa - di Alessio Biancalana">
+          React Europe 2018: riportando tutto a casa
+        </a>
+      </h1>
+      <span class="post-date">11 Jun 2018</span>
+    
+
+    <p><img src="https://gitlab.com/dottorblaster/blog-images/raw/master/images/react-europe-2018-paris/2018-05-22%2011.22.40%201.jpg" alt="React Europe 2018 with some lovely aliens" /></p>
+
+<p>Sono passate un po’ di settimane e ho sedimentato quello che ho visto andando a <strong>React Europe</strong> (grazie ad AdEspresso, che mi ha pagato viaggio e biglietto). Oltre i francesi che parlano come sempre un pessimo inglese e come di consueto fingono persino di non capire quando qualcuno tenta di chiedergli qualcosa che non sia “water”, in realtà ho visto parecchie cose riguardanti React e non solo; e adesso mi riporto tutto a casa, in una parafrasi del titolo del primo disco dei Modena City Ramblers che belli ma non ci vivrei quanto ci pare, ma è stato uno dei dischi della mia formazione e quindi ve lo beccate.</p>
+
+<p>È stata una bellissima conferenza, che mi ha fatto soprattutto misurare le competenze che ho acquisito nel tempo su questa libreria e su questo stack (<strong>Redux</strong> et similia), facendomi rendere conto sia di quanto io valga come sviluppatore React, sia di <strong>quanta strada</strong> io debba ancora fare prima di potermi considerare come uno che ha una conoscenza approfondita di come funziona React al suo interno. Ho anche notato che per mia fortuna ho dei colleghi che sono in grado di insegnarmi ogni giorno qualcosa di nuovo.</p>
+
+<p><img src="https://gitlab.com/dottorblaster/blog-images/raw/master/images/react-europe-2018-paris/2018-06-10%2011.57.15%201.jpg" alt="React Europe 2018: the stage" /></p>
+
+<h3 id="la-sessione-di-keynote-di-ken-wheeler">La sessione di keynote di Ken Wheeler</h3>
+<p>Il mio talk preferito è stato la sessione di keynote di Ken. Ho conosciuto Ken l’anno scorso durante il mio giro a Redmond per Build, e devo dire che sono rimasto impressionato da due cose: è l’unica persona oltre Sean Larkin che mi abbia mai consigliato di provare a scrivere un plugin per webpack, ma soprattutto è un <strong>adorabile americanissimo patriotticissimo cialtrone</strong>.</p>
+
+<p><img src="https://gitlab.com/dottorblaster/blog-images/raw/master/images/react-europe-2018-paris/2018-06-11%2011.54.57%201.jpg" alt="Ken Wheeler &amp;&amp; React 16" /></p>
+
+<p>Con il suo savoir faire ci ha introdotto le novità di <strong>React 16</strong>, le nuove API (tra cui la Context API, che passa da essere etichettata come magia nera ad essere un cittadino di prima classe), tutto applicato ad un caso di studio dove trasformava un e-commerce di baguette in un e-commerce di pane in cassetta statunitense con tanto di stelle e strisce sullo sfondo. Ha fatto ridere ed è stato d’impatto – quasi come beccarlo a pranzo e vedere che si ricordava di me.</p>
+
+<h3 id="i-trend-css-in-js-e-render-props">I trend: CSS in JS e render props</h3>
+<p><strong>CSS-in-JS</strong> è un trend che nella community React ha sempre fatto discutere. Anche quest’anno, con la fioritura di un sacco di librerie dedicate a questo paradigma che consente di includere il codice dello stile CSS di un elemento all’interno del suo codice JavaScript, abbiamo avuto di che parlare insieme a tutti gli speaker. Chiunque parlasse di CSS ha menzionato l’uso di una libreria CSS-in-JS; il discorso nel suo complesso è troppo ampio per essere affrontato in questo post, ma direi che anche se ormai è stato sdoganato come sia possibile programmare secondo questo approccio e questa organizzazione, larga parte della community ha ancora le sue perplessità e in tanti utilizzano ancora Sass e CSS legacy standalone.</p>
+
+<p>L’altro trend su cui non ho visto nessuno speaker fare silenzio (circa) è quello delle <strong>render props</strong>. L’anno scorso Michael Jackson, l’autore di <strong>React Router</strong>, ha tenuto <a href="https://www.youtube.com/watch?v=BcVAq3YFiuc">un talk</a> in cui spiegava come secondo lui i componenti di alto ordine fossero sopravvalutati e secondo lui non risolvessero il mistero principale che è quello della fonte di provenienza dei dati su cui fare logica mentre si sviluppa un componente. Contestualmente ha introdotto il concetto di render prop, ovvero una prop di un componente che non fa altro che eseguire una funzione passando in input dei valori relativi allo stato interno di quel componente stesso.</p>
+
+<p>Questo permette, avendo un componente con una sua logica di stato, di <strong>iniettare il comportamento di rendering dall’esterno</strong>. È interessante, e in AdEspresso abbiamo cominciato già da un po’ ad usare le render prop per i nostri componenti: devo dire che una volta afferrato il concetto (che di suo è semplice per chi ha una conoscenza di React superiore all’hello world) ci si abitua in fretta e il codice finale risulta molto pulito.</p>
+
+<p>Team come quello di <a href="https://www.apollographql.com/">Apollo</a> hanno riscritto la propria suite di componenti React passando da un approccio basato sugli higher order component a un <strong>approccio basato su render props</strong>. Gli esempi che sono stati fatti live mi hanno convinto che sia un approccio virtuoso, anche se come sempre non esiste né il martello d’oro né il proiettile d’argento.</p>
+
+<h3 id="varie-ed-eventuali-la-francia-il-cibo">Varie ed eventuali: la Francia, il cibo</h3>
+<p>Parigi è un posto particolare, accattivante, con uno stile tutto suo. Personalmente ho trovato modo di scontrarmi con i francesi anche nelle piccole cose, e ho trovato chi effettivamente ha finto di non parlare una parola di inglese davanti a me, chi veramente non lo parlava, e chi non mi ha rivolto la parola per i motivi più bislacchi. Nonostante la fauna, il posto è accattivante e ho capito due cose: la prima è che ci dovrò tornare, dato che non ho trovato il tempo né le forze di andare in centro a visitare posti come Notre-Dame; la seconda è che anche se a me non è piaciuta molto (per il poco che ho visto), capisco benissimo chi la ama alla follia data la sua particolarità anche nelle minuzie di una periferia come quella di <strong>Charenton-le-Pont</strong> dove eravamo noi.</p>
+
+<p><img src="https://gitlab.com/dottorblaster/blog-images/raw/master/images/react-europe-2018-paris/2018-06-10%2011.52.11%201.jpg" alt="Charenton-le-pont" /></p>
+
+<p>Lo so che è come giudicare Roma andando solo al centro commerciale Roma Est, ma questi sono gli strumenti euristici che ho. Accontentatevi.</p>
+
+<p><img src="https://gitlab.com/dottorblaster/blog-images/raw/master/images/react-europe-2018-paris/2018-06-10%2011.45.29%201.jpg" alt="Charenton-le-pont skyline" /></p>
+
+<p>La conferenza nel suo complesso invece non solo ha esibito dei talk e degli speaker di <strong>grandissima qualità</strong>, ma è la prima convention di sviluppatori dove (perdonate la trivialità, lo so) vedo offrire un buffet di cibi tipici di una qualità veramente sopraffina, tra panini al fois gras, salmone affumicato e non, altri tipi di pesce, quiche mastodontiche e una selezione di formaggi da far girare la testa.</p>
+
+<p>Il primo giorno tra i miei gusti non proprio facilissimi in fatto di pesce e il fatto che oggettivamente il pranzo è stato meno particolare, il mio piatto è stato il tipico piatto da conferenza.</p>
+
+<p><img src="https://gitlab.com/dottorblaster/blog-images/raw/master/images/react-europe-2018-paris/2018-06-05%2010.03.28%201.jpg" alt="React Europe 2018, giorno 1: il cibo" /></p>
+
+<p>Il secondo giorno invece tra i mini hamburger di manzo e di salmone cucinati sul momento, il salmone e una generale maggiore varietà io, Gabriele, Mattia e Andrea abbiamo opposto molta meno resistenza al preludio dell’abbiocco post-prandiale. Che, sì, è un modo molto colto per dire che ci siamo sfondati di cibo.</p>
+
+<p><img src="https://gitlab.com/dottorblaster/blog-images/raw/master/images/react-europe-2018-paris/2018-06-05%2010.01.25%201.jpg" alt="React Europe 2018: un food post" /></p>
+
+<p>Ma consentitemi di riprendere l’argomento francesi e spocchia per un paragrafo almeno: è mai possibile che alla domanda “do you speak english?” si abbia come unica risposta uno sguardo scocciato? È mai possibile che visto un turista palesemente estero lo si approcci parlando solo in francese e anche in maniera piuttosto incomprensibile per uno che ha orecchio verso un sacco di lingue? Ma soprattutto, è mai possibile che per le dieci di sera chiudano tutti i posti che ti possono dare un minimo di conforto culinario? Io questo non lo so, buona serata a tutti. Quello che so è che il mix di bellezza architettonica, spocchia degli autoctoni e cucina oggettivamente caratteristica, buona e varia, fa sì che Parigi ti rimanga nel cuore a prescindere dal sentimento negativo o positivo che susciti, come una sorta di post-it con scritto “ricordati che sei stato qui”.</p>
+
+<p><img src="https://gitlab.com/dottorblaster/blog-images/raw/master/images/react-europe-2018-paris/2018-06-10%2011.49.08%201.jpg" alt="Street photography in giro per Parigi a gradire" /></p>
+
+<p>E anche se quando i francesi parlano inglese non si capisce un benemerito, anche se sono andato a letto senza una cena che non fosse un pacchetto di patatine, anche se ho appurato che i parigini<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> a domanda non rispondono affatto, mi porterò sempre dietro quanto mi sono divertito, quante <strong>cose assurde</strong> ho visto (come la replicazione di un event store basato su Redux attraverso nodi multipli), e quante <strong>persone fantastiche</strong> ho incontrato<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup>.</p>
+
+<p><img src="https://gitlab.com/dottorblaster/blog-images/raw/master/images/react-europe-2018-paris/2018-06-11%2011.56.13%201.jpg" alt="Charenton Ecoles" /></p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>Anche se credo che i parigini veri definirebbero quelli che ho incontrato io dei provincialotti. Tuttavia, penso che cambiando l’ordine dei francesi il risultato non cambi. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>Primi fra tutti i miei colleghi Gabriele, Mattia e Andrea. Un cuore per voi ragazzi, siete stati dei compagni di conferenza fantastici! <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h2 class="post-title post-title-link">
+        <a href="https://www.quora.com/How-does-Marco-Arment-use-Instapaper/answer/Marco-Arment">
+          Come usa Instapaper Marco Arment?
+        </a>
+        <a href="/2018/06/how-does-marco-arment-use-instapaper/" title="permalink: Come usa Instapaper Marco Arment? di Alessio Biancalana"><i class="fa fa-comments-o icon-commentary"></i></a>
+      </h2>
+    
+
+    <p>Stamattina sul mio digest di Quora ho beccato una vecchia risposta di <strong>Marco Arment</strong> alla domanda su come lui stesso usasse <strong>Instapaper</strong>. La cosa che mi fa ridere è che lui non solo ha risposto, ma nella risposta parla di sé in terza persona come se dovesse tirare a indovinare:</p>
+
+<blockquote>
+  <p>And if I had to guess, I’d imagine that he doesn’t use Evernote or Facebook much, he auto-sends liked articles to App.net for testing, and he auto-sends all archived articles to Pinboard. He also has Twitter and Tumblr linked but doesn’t auto-post there, preferring instead to manually select when to post.</p>
+</blockquote>
+
+<p>Mi ci sono fatto sopra una risata di cuore. È uno strano ragazzo.</p>
+
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2018/05/microsoft-build-2018/" title="Microsoft Build 2018, scartabellando tra le cose interessanti - di Alessio Biancalana">
+          Microsoft Build 2018, scartabellando tra le cose interessanti
+        </a>
+      </h1>
+      <span class="post-date">30 May 2018</span>
+    
+
+    <p>Anche quest’anno si è tenuto il solito appuntamento con la conferenza per sviluppatori di Microsoft, ovvero <strong>Microsoft Build</strong>, dove come sempre sono state concentrate le novità rilevanti del 2017 e di questa prima metà di 2018. Per quanto mi riguarda, piuttosto che concentrarmi sulla conferenza in generale, (a cui questa volta non ho potuto assistere di persona al contrario dell’<a href="http://dottorblaster.it/2017/05/microsoft-build-2017-wrap-up/">anno scorso</a>) per il mio commentario ho scelto tre cose che mi hanno colpito particolarmente. Sul resto glisserò sia perché sono parti di stack che al momento non mi interessano, sia perché voglio parlare prevalentemente di <strong>Unix</strong>.</p>
+
+<p>Prima di Unix però parliamo di qualcosa che non c’entra molto, ovvero <strong>Windows 10</strong>: su Windows 10 arriverà una nuova feature chiamata <strong>Sets</strong>. Microsoft ha deciso che, bene, vi piacevano le tab del browser? Vi piace tenere sott’occhio un sacco di roba tutta insieme? E allora perché non rendere “tabbed”, a schede, la navigazione su <em>tutti i programmi</em>? Abbiamo un simbolo simile a quello della nuova tab del browser, sulla barra del titolo delle finestre, con cui possiamo aprire nella stessa finestra dove stiamo modificando un documento di Word, Excel, o ritoccando una foto, un’altra applicazione con degli altri contenuti. In questo modo le finestre stesse si trasformano in spazi di lavoro a sé stanti.</p>
+
+<p>E devo dire, cara Microsoft, anche se penso che questa visione vada raffinata, che sia lo stesso un’ottima intuizione. Props.</p>
+
+<p>Ma ora veniamo alle cose importanti (che sono le cose che piacciono a me e le cose più bizzarre): Microsoft ha annunciato in occasione di questo<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> Build che Notepad introdurrà il supporto a LF, ovvero ai <strong>terminatori di riga Unix</strong>. È la fine di un’epoca, considerato che i terminatori di riga sono sempre stati il grande cruccio degli sviluppatori non-Unix<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup>, che git ha introdotto un’opzione apposta per correggerli in automatico, e che Microsoft ha sempre adottato un atteggiamento un po’ protettivo da una parte (per esempio Visual Studio li supporta e ci mancherebbe altro), mentre dall’altra prendi un developer, trattalo male, lascialo aspettare per ore - giorni - anni - prima di implementare una cosa del genere, mandandolo per le piste col suo amministratore di sistema e coi suoi colleghi. Ma appunto.</p>
+
+<p>L’altra novità che mi ha colpito è stata la voce “Open Linux shell here” nel file manager. Di solito è molto difficile trovare roba di questo tipo integrata in Windows e disponibile in questo modo, spiattellata in faccia in questo modo. Questo perché esattamente come macOS Windows non privilegia molto i <strong>power user</strong>, anzi: le opzioni che possono compromettere la stabilità vengono ben nascoste. In questo caso non solo troviamo una bella voce di menu da veri nerdoni, ma la troviamo anche riguardante Linux e la sua shell inclusa dentro Windows. Onestamente lo trovo non solo utile, ma un altro passo di Microsoft nella direzione di una strategia inclusiva nei confronti di Linux e di tutta la community che lo “foraggia”<sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">3</a></sup>.</p>
+
+<p>Quanto è fico tutto il resto? È fico, è fico. Ma io rimango:</p>
+
+<ul>
+  <li>Un nerdone</li>
+  <li>Un power user</li>
+  <li>Un linuxaro</li>
+</ul>
+
+<p>E quindi i miei takeaway (insieme ai lavioli gambeli del cinese sotto casa) sono questi.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>o di questa? Build è femminile, mi dissero dalla regia. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>e anche di noi Unix guys dato che ci trovavamo i repository impestati di zozzerie committate da utenti Windows. Perdonatemi ragazzi di Microsoft, ma è così. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:3" role="doc-endnote">
+      <p>perdonatemi il termine. È tardi, e non me ne sta venendo in mente uno migliore. <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/page/14"><i class="fa fa-chevron-circle-left"></i></a>
+  
+  
+    
+      <a class="pagination-item newer" href="/page/12"><i class="fa fa-chevron-circle-right"></i></a>
+    
+  
+</div>
+
+
+      <div class="footer">
+        <p>
+          &copy; Grab The Blaster is brought to you by Alessio Biancalana with <a href="http://jekyllrb.com/">Jekyll</a> and much ♥, under <a href="https://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC</a>.
+        </p>
+        <form class="search-form" action="/search" method="get">
+          <input type="text" placeholder="Cerca →" name="query">
+        </form>
+      </div>
+      <div class="webring-container">
+        <webring-banner>
+          <p>Member of <a href="https://retronerds.netlify.app"></a></p>
+          <a href="https://retronerds.netlify.app/prev">Previous</a>
+          <a href="https://retronerds.netlify.app/random">Random</a>
+          <a href="https://retronerds.netlify.app/next">Next</a>
+        </webring-banner>
+        <script async src="https://retronerds.netlify.app/embed.js" charset="utf-8"></script>
+      </div>
+    </div>
+
+  </body>
+</html>

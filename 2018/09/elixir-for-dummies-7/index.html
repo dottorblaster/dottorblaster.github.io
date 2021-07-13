@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <link rel="canonical" href="/2018/09/elixir-for-dummies-7/" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- Enable Graph API for Facebook integration -->
+  <meta content="Grab The Blaster" property="og:site_name">
+  
+    <meta content="Elixir per idioti /7, mettiamo le mani in pasta con Phoenix Framework" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="Visto che abbiamo scavato sempre più a fondo nelle basi del linguaggio, proviamo a fare qualcosa di più cicciotto con il framework web del momento, ovvero Phoenix. Phoenix Framework è, come abbiamo appena detto, un framework per il web che ci permette di sviluppare il nostro backend in Elixir seguendo quello che a grandi linee sembra un pattern MVC. In realtà come tutti i framework di ultime generazione, può essere piegato per sviluppare backend REST/RESTful. Ma con tutti questi acronimi abbi..." property="og:description">
+  
+  
+    <meta content="https://dottorblaster.it/2018/09/elixir-for-dummies-7/" property="og:url">
+  
+  
+    <meta content="2018-09-26T17:45:47+00:00" property="article:published_time">
+    <meta content="https://dottorblaster.it/about/" property="article:author">
+    <meta content="https://dottorblaster.it/opengraph/114c77d544841e472d164f6145efdb316d0ad25a.png" property="og:image">
+  
+  
+    
+    <meta content="Development" property="article:section">
+    
+  
+  
+    
+    <meta content="elixir" property="article:tag">
+    
+    <meta content="phoenix framework" property="article:tag">
+    
+    <meta content="phoenix" property="article:tag">
+    
+    <meta content="linguaggi" property="article:tag">
+    
+    <meta content="sviluppo software" property="article:tag">
+    
+    <meta content="software development" property="article:tag">
+    
+  
+
+  <!--   Enable Twitter Cards support through metadata, thanks to http://davidensinger.com/2013/04/supporting-twitter-cards-with-jekyll/ -->
+<!--   <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@site_username">
+  <meta name="twitter:creator" content="@creator_username">
+  
+    <meta name="twitter:title" content="Elixir per idioti /7, mettiamo le mani in pasta con Phoenix Framework">
+  
+  
+    <meta name="twitter:url" content="https://dottorblaster.it/2018/09/elixir-for-dummies-7/">
+   -->
+  <!-- This is from @stammy -->
+<!--   <meta name="twitter:description" content="Visto che abbiamo scavato sempre più a fondo nelle basi del linguaggio, proviamo a fare qualcosa di più cicciotto con il framework web del momento, ovvero Phoenix. Phoenix Framework è, come abbiamo...">
+  
+    <meta name="twitter:image:src" content="https://dottorblaster.it/path/to/image/logo.png">
+    -->
+
+  <title>
+    
+      Elixir per idioti /7, mettiamo le mani in pasta con Phoenix Framework &middot; Grab The Blaster
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/grabtheblaster.css">
+  <link rel="stylesheet" href="/public/font-awesome/css/font-awesome.min.css">
+
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700italic,700,400italic' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,700' rel='stylesheet' type='text/css' />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title="" href="https://dottorblaster.it/feed">
+</head>
+
+
+  <body>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=81489295682&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="container content">
+      <div class="masthead">
+        <h3 class="masthead-title">
+          <img src="/public/avatar-blaster.png" alt="Alessio Biancalana">
+          <a href="/" title="Home page">Grab The Blaster</a>
+          <small>di Alessio Biancalana</small>
+        </h3>
+        <div class="social-icons"><a href="/about/" title="About Me"><i class="fa fa-user-circle-o"></i></a> <a href="https://twitter.com/dottorblaster" title="Twitter - @dottorblaster"><i class="fa fa-twitter"></i></a> <a href="https://github.com/dottorblaster" title="GitHub - dottorblaster"><i class="fa fa-github"></i></a></div>
+      </div>
+
+      <div class="post">
+  <h1 class="post-title">Elixir per idioti /7, mettiamo le mani in pasta con Phoenix Framework</h1>
+  <span class="post-date">26 Sep 2018</span>
+  <p>Visto che abbiamo scavato sempre più a fondo nelle basi del linguaggio, proviamo a fare qualcosa di più cicciotto con il framework web del momento, ovvero Phoenix. <strong>Phoenix Framework</strong> è, come abbiamo appena detto, un framework per il web che ci permette di sviluppare il nostro backend in Elixir seguendo quello che a grandi linee sembra un pattern <a href="https://it.wikipedia.org/wiki/Model-view-controller">MVC</a>. In realtà come tutti i framework di ultime generazione, può essere piegato per sviluppare backend REST/RESTful. Ma con tutti questi acronimi abbiamo già messo troppa carne al fuoco.</p>
+
+<p>Dato che abbiamo già un’installazione funzionante di <strong>Elixir</strong>, possiamo usare Mix per installare il pacchetto di Phoenix:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>mix archive.install https://github.com/phoenixframework/archives/raw/master/phx_new.ez
+</code></pre></div></div>
+
+<p>Per quanto riguarda le <strong>utility che ci facilitano la vita sul frontend</strong>, avremo bisogno anche di <strong>NodeJS</strong>. Su macOS io lo installo tramite Homebrew:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>brew <span class="nb">install </span>node
+</code></pre></div></div>
+
+<p>Su una distribuzione Linux Debian-based come Ubuntu dobbiamo invece scaricare il pacchetto più aggiornato o servirci direttamente dei repository ufficiali:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>apt-get <span class="nb">install </span>nodejs
+</code></pre></div></div>
+
+<p>Per poi fare un link mano in modo che il comando <code class="language-plaintext highlighter-rouge">node</code> faccia partire NodeJS.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">ln</span> <span class="nt">-s</span> /usr/bin/nodejs /usr/bin/node
+</code></pre></div></div>
+
+<p>Una volta dati questi comandi, siamo pronti. In teoria avremmo bisogno di configurare anche un database PostgreSQL in locale in modo da poter salvare eventuali dati, ma questo è già qualcosa di più avanzato. Abbiamo una serie di <strong>task Mix</strong> che ci aiutano con la creazione di un nuovo progetto; attraverso <code class="language-plaintext highlighter-rouge">mix phx.new</code> possiamo creare una nuova struttura e soprattutto definire di cosa abbiamo bisogno. Possiamo escludere il frontend e possiamo escludere la parte di interfaccia al database se non ci servono.</p>
+
+<p>Per il mio esempio escluderò di aver bisogno del database.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>mix phx.new my_phoenix_demo <span class="nt">--no-ecto</span>
+</code></pre></div></div>
+
+<p>Abbiamo di seguito un output dei file creati e qualche indicazione utile per cominciare a muovere i nostri primi passi con, dopo tanto parlare di massimi sistemi, un esempio di applicazione reale:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* creating my_phoenix_demo/config/config.exs
+* creating my_phoenix_demo/config/dev.exs
+* creating my_phoenix_demo/config/prod.exs
+* creating my_phoenix_demo/config/prod.secret.exs
+* creating my_phoenix_demo/config/test.exs
+* creating my_phoenix_demo/lib/my_phoenix_demo/application.ex
+* creating my_phoenix_demo/lib/my_phoenix_demo.ex
+* creating my_phoenix_demo/lib/my_phoenix_demo_web/channels/user_socket.ex
+* creating my_phoenix_demo/lib/my_phoenix_demo_web/views/error_helpers.ex
+* creating my_phoenix_demo/lib/my_phoenix_demo_web/views/error_view.ex
+* creating my_phoenix_demo/lib/my_phoenix_demo_web/endpoint.ex
+* creating my_phoenix_demo/lib/my_phoenix_demo_web/router.ex
+* creating my_phoenix_demo/lib/my_phoenix_demo_web.ex
+* creating my_phoenix_demo/mix.exs
+* creating my_phoenix_demo/README.md
+* creating my_phoenix_demo/test/support/channel_case.ex
+* creating my_phoenix_demo/test/support/conn_case.ex
+* creating my_phoenix_demo/test/test_helper.exs
+* creating my_phoenix_demo/test/my_phoenix_demo_web/views/error_view_test.exs
+* creating my_phoenix_demo/lib/my_phoenix_demo_web/gettext.ex
+* creating my_phoenix_demo/priv/gettext/en/LC_MESSAGES/errors.po
+* creating my_phoenix_demo/priv/gettext/errors.pot
+* creating my_phoenix_demo/lib/my_phoenix_demo_web/controllers/page_controller.ex
+* creating my_phoenix_demo/lib/my_phoenix_demo_web/templates/layout/app.html.eex
+* creating my_phoenix_demo/lib/my_phoenix_demo_web/templates/page/index.html.eex
+* creating my_phoenix_demo/lib/my_phoenix_demo_web/views/layout_view.ex
+* creating my_phoenix_demo/lib/my_phoenix_demo_web/views/page_view.ex
+* creating my_phoenix_demo/test/my_phoenix_demo_web/controllers/page_controller_test.exs
+* creating my_phoenix_demo/test/my_phoenix_demo_web/views/layout_view_test.exs
+* creating my_phoenix_demo/test/my_phoenix_demo_web/views/page_view_test.exs
+* creating my_phoenix_demo/.gitignore
+* creating my_phoenix_demo/assets/brunch-config.js
+* creating my_phoenix_demo/assets/css/app.css
+* creating my_phoenix_demo/assets/css/phoenix.css
+* creating my_phoenix_demo/assets/js/app.js
+* creating my_phoenix_demo/assets/js/socket.js
+* creating my_phoenix_demo/assets/package.json
+* creating my_phoenix_demo/assets/static/robots.txt
+* creating my_phoenix_demo/assets/static/images/phoenix.png
+* creating my_phoenix_demo/assets/static/favicon.ico
+
+Fetch and install dependencies? [Yn] Y
+* running mix deps.get
+* running cd assets &amp;&amp; npm install &amp;&amp; node node_modules/brunch/bin/brunch build
+* running mix deps.compile
+
+We are all set! Go into your application by running:
+
+    $ cd my_phoenix_demo
+
+Start your Phoenix app with:
+
+    $ mix phx.server
+
+You can also run your app inside IEx (Interactive Elixir) as:
+
+    $ iex -S mix phx.server
+
+</code></pre></div></div>
+
+<p>L’unica cosa che ci viene chiesta è se vogliamo già scaricare le prime dipendenze e cominiciare con una prima compilazione del progetto Elixir e degli asset grafici (JavaScript e quant’altro).</p>
+
+<p>Possiamo provare subito il nostro <em>hello world</em>, entrando nella directory che abbiamo creato e dando i comandi che ci consiglia lo stesso Phoenix:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cd </span>my_phoenix_demo
+<span class="nv">$ </span>mix phx.server
+Compiling 12 files <span class="o">(</span>.ex<span class="o">)</span>
+Generated my_phoenix_demo app
+<span class="o">[</span>info] Running MyPhoenixDemoWeb.Endpoint with Cowboy using http://0.0.0.0:4000
+19:23:19 - info: compiled 6 files into 2 files, copied 3 <span class="k">in </span>1.3 sec
+</code></pre></div></div>
+
+<p>Puntando il nostro browser all’indirizzo <code class="language-plaintext highlighter-rouge">http://localhost:4000/</code> possiamo vedere la nostra applicazione che gira.</p>
+
+<p><img src="https://gitlab.com/dottorblaster/blog-images/raw/master/images/elixir/phoenix_homepage.png" alt="Phoenix hello world" /></p>
+
+<p>All’interno della directory abbiamo tutti i file della nostra nuova applicazione Phoenix, tra cui i controller, il router, e i template HTML (file di estensione <code class="language-plaintext highlighter-rouge">.eex</code>). Proviamo a vedere com’è fatto il <strong>router</strong>, che è un po’ il punto nevralgico dove avviene lo smistamento delle chiamate al nostro server:</p>
+
+<div class="language-elixir highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># lib/my_phoenix_demo_web/router.ex</span>
+
+<span class="k">defmodule</span> <span class="no">MyPhoenixDemoWeb</span><span class="o">.</span><span class="no">Router</span> <span class="k">do</span>
+  <span class="kn">use</span> <span class="no">MyPhoenixDemoWeb</span><span class="p">,</span> <span class="ss">:router</span>
+
+  <span class="n">pipeline</span> <span class="ss">:browser</span> <span class="k">do</span>
+    <span class="n">plug</span> <span class="ss">:accepts</span><span class="p">,</span> <span class="p">[</span><span class="s2">"html"</span><span class="p">]</span>
+    <span class="n">plug</span> <span class="ss">:fetch_session</span>
+    <span class="n">plug</span> <span class="ss">:fetch_flash</span>
+    <span class="n">plug</span> <span class="ss">:protect_from_forgery</span>
+    <span class="n">plug</span> <span class="ss">:put_secure_browser_headers</span>
+  <span class="k">end</span>
+
+  <span class="n">pipeline</span> <span class="ss">:api</span> <span class="k">do</span>
+    <span class="n">plug</span> <span class="ss">:accepts</span><span class="p">,</span> <span class="p">[</span><span class="s2">"json"</span><span class="p">]</span>
+  <span class="k">end</span>
+
+  <span class="n">scope</span> <span class="s2">"/"</span><span class="p">,</span> <span class="no">MyPhoenixDemoWeb</span> <span class="k">do</span>
+    <span class="n">pipe_through</span> <span class="ss">:browser</span> <span class="c1"># Use the default browser stack</span>
+
+    <span class="n">get</span> <span class="s2">"/"</span><span class="p">,</span> <span class="no">PageController</span><span class="p">,</span> <span class="ss">:index</span>
+  <span class="k">end</span>
+
+  <span class="c1"># Other scopes may use custom stacks.</span>
+  <span class="c1"># scope "/api", MyPhoenixDemoWeb do</span>
+  <span class="c1">#   pipe_through :api</span>
+  <span class="c1"># end</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>Quello del router è un <a href="https://it.wikipedia.org/wiki/Domain-specific_language">DSL</a> specifico creato apprositamente per specificare gli endpoint della nostra applicazione e redirezionare le richieste allo specifico controller di competenza. In questo caso, abbiamo solo una rotta che rappresenta la home page.</p>
+
+<p>Proviamo ad aggiungere una rotta nuova che mostri all’utente una pagina con la data odierna. Modifichiamo il router in questo modo:</p>
+
+<div class="language-elixir highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">scope</span> <span class="s2">"/"</span><span class="p">,</span> <span class="no">MyPhoenixDemoWeb</span> <span class="k">do</span>
+  <span class="n">pipe_through</span> <span class="ss">:browser</span> <span class="c1"># Use the default browser stack</span>
+
+  <span class="n">get</span> <span class="s2">"/"</span><span class="p">,</span> <span class="no">PageController</span><span class="p">,</span> <span class="ss">:index</span>
+  <span class="n">get</span> <span class="s2">"/today-date"</span><span class="p">,</span> <span class="no">PageController</span><span class="p">,</span> <span class="ss">:date</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>In questo modo ogni volta che fare una richiesta a <code class="language-plaintext highlighter-rouge">/today-date</code>, verrà eseguita la funzione <code class="language-plaintext highlighter-rouge">date</code> all’interno del <code class="language-plaintext highlighter-rouge">PageController</code> (che è appunto un controller. Lo dice la parola stessa). Andiamo aggiungerla quindi:</p>
+
+<div class="language-elixir highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># lib/my_phoenix_demo_web/controllers/page_controller.ex</span>
+
+<span class="k">defmodule</span> <span class="no">MyPhoenixDemoWeb</span><span class="o">.</span><span class="no">PageController</span> <span class="k">do</span>
+  <span class="kn">use</span> <span class="no">MyPhoenixDemoWeb</span><span class="p">,</span> <span class="ss">:controller</span>
+
+  <span class="k">def</span> <span class="n">index</span><span class="p">(</span><span class="n">conn</span><span class="p">,</span> <span class="n">_params</span><span class="p">)</span> <span class="k">do</span>
+    <span class="n">render</span> <span class="n">conn</span><span class="p">,</span> <span class="s2">"index.html"</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="n">date</span><span class="p">(</span><span class="n">conn</span><span class="p">,</span> <span class="n">params</span><span class="p">)</span> <span class="k">do</span>
+    <span class="n">today_date</span> <span class="o">=</span> <span class="no">Date</span><span class="o">.</span><span class="n">utc_today</span><span class="p">()</span> <span class="o">|&gt;</span> <span class="no">Date</span><span class="o">.</span><span class="n">to_string</span>
+    <span class="n">render</span> <span class="n">conn</span><span class="p">,</span> <span class="s2">"date.html"</span><span class="p">,</span> <span class="ss">today_date:</span> <span class="n">today_date</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>Ho appunto creato la <strong>nuova funzione</strong> che prende la data, fa uso del <a href="http://dottorblaster.it/2018/07/elixir-for-dummies-5/">pipe operator</a> di cui abbiamo già parlato e inietta il valore in un template che poi renderizza. Andiamo quindi a creare questo template, che sarà il file <code class="language-plaintext highlighter-rouge">lib/my_phoenix_demo_web/templates/page/date.html.eex</code>:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p&gt;</span>Today is: <span class="nt">&lt;</span><span class="err">%=</span> <span class="err">@</span><span class="na">today_date</span> <span class="err">%</span><span class="nt">&gt;&lt;/p&gt;</span>
+</code></pre></div></div>
+
+<p>Facciamo ripartire il server con <code class="language-plaintext highlighter-rouge">mix phx.server</code>. Puntiamo poi il browser su <code class="language-plaintext highlighter-rouge">http://localhost:4000/today-date</code> e via, il gioco è fatto. potremo osservare l’agognato risultato del nostro lavoro. E non finisce qui: quello che abbiamo imparato molto a grandi linee è come sviluppare una feature seguendo un pattern MVC di base, ma possiamo fare anche altro. Per esempio, io uso Phoenix per fare bootstrap anche solo di applicazioni server-side che forniscano API RESTful.</p>
+
+<p><img src="https://gitlab.com/dottorblaster/blog-images/raw/master/images/elixir/phoenix_date_experiment.png" alt="Phoenix today date application" /></p>
+
+<p>Per come la vedo io, Phoenix nasconde molto delle vere potenzialità (e dei veri problemi) che Elixir può offrire, ma non è che un <strong>grandissimo trampolino di lancio</strong> e una porta di facilissimo accesso per chi è un alchimista in erba e vuole cominciare a scrivere codice con una curva di apprendimento bassissima.</p>
+
+<p><a href="http://dottorblaster.it/2018/07/elixir-for-dummies-6/">Vai alla parte 6</a></p>
+
+<p><a href="http://dottorblaster.it/2020/12/elixir-for-dummies-8/">Vai alla parte 8</a></p>
+
+</div>
+
+<div class="social-section">
+  <div class="fb-like" data-href="/2018/09/elixir-for-dummies-7/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-via="dottorblaster" data-lang="it" data-dnt="true">Tweet</a>
+</div>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'blasterhome'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/06/domain-modeling-made-functional-recensione/">
+            Recensione: Domain Modeling Made Functional, di Scott Wlaschin
+            <small>08 Jun 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/05/piccolo-kubernetes-production-ready-k3s/">
+            Kubernetes production-ready in piccolo: deployare un mini-cluster K3s
+            <small>18 May 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/04/adoro-kubernetes/">
+            Io adoro Kubernetes
+            <small>25 Apr 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+      <div class="footer">
+        <p>
+          &copy; Grab The Blaster is brought to you by Alessio Biancalana with <a href="http://jekyllrb.com/">Jekyll</a> and much ♥, under <a href="https://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC</a>.
+        </p>
+        <form class="search-form" action="/search" method="get">
+          <input type="text" placeholder="Cerca →" name="query">
+        </form>
+      </div>
+      <div class="webring-container">
+        <webring-banner>
+          <p>Member of <a href="https://retronerds.netlify.app"></a></p>
+          <a href="https://retronerds.netlify.app/prev">Previous</a>
+          <a href="https://retronerds.netlify.app/random">Random</a>
+          <a href="https://retronerds.netlify.app/next">Next</a>
+        </webring-banner>
+        <script async src="https://retronerds.netlify.app/embed.js" charset="utf-8"></script>
+      </div>
+    </div>
+
+  </body>
+</html>

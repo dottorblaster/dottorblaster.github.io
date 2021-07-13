@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <link rel="canonical" href="/" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- Enable Graph API for Facebook integration -->
+  <meta content="Grab The Blaster" property="og:site_name">
+  
+    <meta content="Home" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="Un blog nerd il giusto di Alessio Biancalana" property="og:description">
+  
+  
+    <meta content="https://dottorblaster.it/" property="og:url">
+  
+  
+  
+  
+
+  <!--   Enable Twitter Cards support through metadata, thanks to http://davidensinger.com/2013/04/supporting-twitter-cards-with-jekyll/ -->
+<!--   <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@site_username">
+  <meta name="twitter:creator" content="@creator_username">
+  
+    <meta name="twitter:title" content="Home">
+  
+  
+    <meta name="twitter:url" content="https://dottorblaster.it/">
+   -->
+  <!-- This is from @stammy -->
+<!--   <meta name="twitter:description" content="
+  {% for post in paginator.posts %}
+  
+    {% if post.layout == &quot;link&quot; %}
+      
+        
+          {{ post.title }}
+        
+        
+      
+    {% else %}
+      
+        
+          {{ ...">
+  
+    <meta name="twitter:image:src" content="https://dottorblaster.it/path/to/image/logo.png">
+    -->
+
+  <title>
+    
+      Grab The Blaster &middot; di Alessio Biancalana
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/grabtheblaster.css">
+  <link rel="stylesheet" href="/public/font-awesome/css/font-awesome.min.css">
+
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700italic,700,400italic' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,700' rel='stylesheet' type='text/css' />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title="" href="https://dottorblaster.it/feed">
+</head>
+
+
+  <body>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=81489295682&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="container content">
+      <div class="masthead">
+        <h3 class="masthead-title">
+          <img src="/public/avatar-blaster.png" alt="Alessio Biancalana">
+          <a href="/" title="Home page">Grab The Blaster</a>
+          <small>di Alessio Biancalana</small>
+        </h3>
+        <div class="social-icons"><a href="/about/" title="About Me"><i class="fa fa-user-circle-o"></i></a> <a href="https://twitter.com/dottorblaster" title="Twitter - @dottorblaster"><i class="fa fa-twitter"></i></a> <a href="https://github.com/dottorblaster" title="GitHub - dottorblaster"><i class="fa fa-github"></i></a></div>
+      </div>
+
+      <div class="posts">
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2021/06/domain-modeling-made-functional-recensione/" title="Recensione: Domain Modeling Made Functional, di Scott Wlaschin - di Alessio Biancalana">
+          Recensione: Domain Modeling Made Functional, di Scott Wlaschin
+        </a>
+      </h1>
+      <span class="post-date">08 Jun 2021</span>
+    
+
+    <p><img src="https://gitlab.com/dottorblaster/blog-images/-/raw/master/images/domain_modeling_made_functional.png" alt="Domain Modeling Made Functional" /></p>
+
+<p>Ed eccoci qui con una nuova recensione: in questo periodo oltre a <a href="https://dottorblaster.it/2021/02/pragmatic-programmer-recensione/">ripassare le basi</a> ho deciso di rendere leggermente più formale la mia preparazione in termini di <strong>functional programming</strong>, specialmente nei termini di quella zona grigia che è il punto di contatto tra il mondo accademico, come viene tradotta una dimostrazione in codice (che è davvero dove un linguaggio fortemente espressivo dà il suo meglio) e il mondo del business, in particolare delle applicazioni web, dove questi principi di design possono aiutare a far crescere una codebase nella maniera più pulita possibile - soprattutto guardando al codice attraverso la lente del tempo.</p>
+
+<p><strong>Domain Modeling Made Functional</strong> viene in nostro soccorso proprio per assisterci durante alcune scelte all’inizio di un nuovo progetto, dotandoci di un po’ di disciplina, insegnandoci un po’ di Domain-Driven Design, e mostrandoci senza troppi giri di parole come il DDD viene espresso al suo meglio attraverso la programmazione funzionale.</p>
+
+<p>Grossomodo il discorso viene portato avanti attraverso vari punti, primo tra cui il <strong>type system</strong> di un linguaggio funzionale. Nel libro viene usato <strong>F#</strong>, personalmente ho trovato che tantissimi esempi si adattassero al modo che il manuale e il compilatore di <strong>Rust</strong> consigliano di trattare il codice, specialmente nella gestione dei side-effect (usando i <code class="language-plaintext highlighter-rouge">Result</code>). Dalla descrizione del type system viene poi srotolata un po’ di roba utile, come il fatto di usare le firme delle funzioni <strong>non tanto come rete di sicurezza a compile-time quanto come una buona documentazione mantenuta in tempo reale di come funziona il dominio</strong>.</p>
+
+<p>A quel punto, avendo un dominio descritto in maniera <strong>type-driven</strong> e le cui funzioni utilizzano una raccolta di tipi ben definita, si passa ai side effect: validazione, parsing, gestione degli errori attraverso il i<strong>modello two-track</strong><sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>, chiamata di API esterne, persistenza.</p>
+
+<p>Tutto questo senza minimamente menzionare<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup> <strong>monadi</strong>, funtori, applicativi, o altra roba arcana che il lettore non avrebbe nemmeno la forza di approfondire; il vero valore di questo volume è <strong>tenere un approccio estremamente semplice</strong>, abbandonando i concetti accademici fuori dalla porta e concentrandosi esclusivamente sui benefici di un approccio di questo tipo, risultando in questo modo un super-pregevole distillato di buonissime pratiche che scorre estremamente veloce nella lettura e soprattutto nell’apprendimento.</p>
+
+<p>Un grazie speciale va a <strong>Emanuele De Cupis</strong>, che me l’ha consigliato.</p>
+
+<p>Se lo volete comprare, <a href="https://pragprog.com/titles/swdddf/domain-modeling-made-functional/">questa è la pagina del libro sulla Pragmatic Bookshelf</a>: non c’è modo migliore di spendere i vostri soldi, e potete stare sicuri del fatto che sia un consiglio sincero perché non ci rimedio una lira :-)</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>Non sapete cosa sia il modello two-track? Non sapevo neanche io che si chiamasse così, ma se fate JavaScript di mestiere e usate le promise è quello che succede se avete una serie di <code class="language-plaintext highlighter-rouge">.then()</code> concatenati e alla fine di tutto un <code class="language-plaintext highlighter-rouge">.catch()</code> che gestisce l’errore avvenuto in qualsiasi punto della catena. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>Effettivamente viene fatto una volta sola. Un buon portale per chi è alle prime armi e vuole approfondire anche quegli aspetti più matematici legati a quel tipo di strutture dati. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2021/05/piccolo-kubernetes-production-ready-k3s/" title="Kubernetes production-ready in piccolo: deployare un mini-cluster K3s - di Alessio Biancalana">
+          Kubernetes production-ready in piccolo: deployare un mini-cluster K3s
+        </a>
+      </h1>
+      <span class="post-date">18 May 2021</span>
+    
+
+    <p><img src="https://gitlab.com/dottorblaster/blog-images/-/raw/master/images/computers/linux-filesystem.webp" alt="Linux, gerarchia del filesystem" /></p>
+
+<p>Qualche settimana fa mi ha amabilmente scritto il <strong>cloud provider</strong> presso cui è ospitato il cluster Kubernetes di produzione di <a href="https://allacarta.menu/">AllaCarta</a> informandomi del fatto che la beta del loro servizio <strong>Kubernetes managed</strong> (che ho provato ~a scrocco~ in anticipo fornendo dei preziosi feedback) sta giungendo a una fine. Dopo attimi di panico, mi sono appuntato tre strade possibili da vagliare:</p>
+
+<ul>
+  <li>Rimanere col provider attuale, pagando, continuando a usare Kubernetes. Non ho tuttavia voglia di diventare povero, per quanto i loro costi siano molto più prevedibili di qualsiasi piattaforma cloud “mainstream”. In fin dei conti, davvero impraticabile. Dato che AllaCarta è gratis a oggi, devo tagliare tutti i costi il più possibile. :-D;</li>
+  <li>Migrare a un metodo di deployment più tradizionale riutilizzando i <strong>playbook Ansible</strong> scritti in precedenza;</li>
+  <li>Deployare un cluster Kubernetes per conto mio e provare a riapplicare tutta la configurazione del mio cluster di prod.</li>
+</ul>
+
+<p>Marcata come non fattibile la prima alternativa, ho passato una settimanella a cercare di far fare briscola ai miei playbook Ansible con le nuove macchine di staging che avevo deployato, ma ce n’era sempre una tra versioni che non andavano più bene e altro. L’altra sera, così, in preda a un raptus, ho deciso di provare davvero a vedere se deployare un <strong>cluster K3s mononodo di test</strong> fosse una cosa proibitiva a livello di sforzo e know-how richiesto.</p>
+
+<p>Ho scoperto che invece basta loggarsi su una macchina appena deployata e dare questo comando:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>curl <span class="nt">-sfL</span> https://get.k3s.io | sh -
+</code></pre></div></div>
+
+<p>In questo modo, il nostro terminale sputerà un po’ di informazioni e in pochissimo tempo avremo <em>davvero</em> un master node Kubernetes perfettamente funzionante a cui connetterci. <strong>K3s</strong> non è <em>esattamente</em> una distribuzione che include tutto quello che le distribuzioni canoniche di Kubernetes si portano dietro, ma valutando i miei bisogni ho deciso che potevo fare a meno di quelle che per me sono caratteristiche marginali.</p>
+
+<p>Per connetterci al cluster da fuori abbiamo bisogno di un <code class="language-plaintext highlighter-rouge">kubeconfig</code>, che possiamo trovare in questo modo. Con questo comando otterremo qualcosa del genere:</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">$ cat /etc/rancher/k3s/k3s.yaml</span>
+<span class="na">apiVersion</span><span class="pi">:</span> <span class="s">v1</span>
+<span class="na">clusters</span><span class="pi">:</span>
+<span class="pi">-</span> <span class="na">cluster</span><span class="pi">:</span>
+    <span class="na">certificate-authority-data</span><span class="pi">:</span> <span class="s">LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUJlRENDQVIyZ0F3SUJBZ0lCQURBS0JnZ3Foa2pPUFFRREFqQWpNU0V3SHUREQmhyTTNNdGMyVnkKZG1WeUxXTmhRREUyTVRrNU1EWXdNRFF3SGhjTk1qRXdOVEF4TWpFMU16STBXaGNOTXpFd05ESTVNakUxTXpJMApXakFqTVNFd0h3WURWUVFEREJock0zTXRjMlZ5ZG1WeUxXTmhRREUyTVRrNU1EWXdNRFF3V1RBVEJnY3Foa2pPClBRSUJCZ2dxaGtqT1BRTUJCd05DQUFSRzNUY0FCVE9hTFRaT1piUG51QlFEbGNtMTAxMEw5VDF3SVR0TUR5TWIKR0s0YitHTG8xenVOQXRETE1uNjhIWlI5UTRYbFJySzJuVWJnVG1ucUhlb2JvMEl3UURBT0JnTlZIUThCQWY4RQpCQU1DQXFRd0R3WURWUjBUQVFIL0JBVXdBd0VCL3pBZEJnTlZIUTRFRmdRVXZ6QlU3bUtTRUF3NFQ5RDJuOWNNCm9FQkRzVlF3Q2dZSUtvWkl6ajBFQXdJRFNRQXdSZ0lVjZzLzN6RmhkTUsxNFpENU5tRGc5ZG9zdUViOXYKaVFsdU93UHp5bmNDQWlFQWxWK2FYWCtnTENZR3dzTXJBNU1yaWkrSGl3T1hlYVJMWUIvWFAvQVR2Mm89Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K</span>
+    <span class="na">server</span><span class="pi">:</span> <span class="s">https://127.0.0.1:6443</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">default</span>
+<span class="na">contexts</span><span class="pi">:</span>
+<span class="pi">-</span> <span class="na">context</span><span class="pi">:</span>
+    <span class="na">cluster</span><span class="pi">:</span> <span class="s">default</span>
+    <span class="na">user</span><span class="pi">:</span> <span class="s">default</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">default</span>
+<span class="na">current-context</span><span class="pi">:</span> <span class="s">default</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">Config</span>
+<span class="na">preferences</span><span class="pi">:</span> <span class="pi">{}</span>
+<span class="na">users</span><span class="pi">:</span>
+<span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">default</span>
+  <span class="na">user</span><span class="pi">:</span>
+    <span class="na">client-certificate-data</span><span class="pi">:</span> <span class="s">LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUJrRENDQVRlZ0F3SUJBZ0lJZm9FNytndXpLS0V3Q2dZSUtvWkl6ajBFQXdJd0l6RWhNQjhHQTFVRUF3d1kKYXpOekxXTnNhV1Z1ZEMxallVQXhOakU1T1RBMk1EQTBNQjRYRFRJeE1EVXdNVEl4TlRNeU5Gb1hEVEl5TURVdwpNVEl4TlRNeU5Gb3dNREVYTUJVR0ExVUVDaE1PYzNmRHVnRPbTFoYzNSbGNuTXhGVEFUQmdOVkJBTVRESE41CmMzUmxiVHBoWkcxcGJqQlpNQk1HQnlxR1NNNDlBZ0VHQ0NxR1NNNDlBd0VIQTBJQUJFMnI3ZXp0dmFnZkRhdnMKd2VhL01WclhiV3RXb0ZGc2FRaVlVTXZxMDNiZlNzdXFHWEYyTUlpRzZ1UG1uOEZwNnRMcG9vQzVQWGp4Zmo3RgpNRUxKM2FpalNEQkdNQTRHQTFVZER3RUIvd1FFQXdJRm9EQVRCZ05WSFNVRUREQUtCZ2dyQmdFRkJRY0RBakFmCkJnTlZIU010RBV2dCVFA4VDJNNHhOVmlHTlBPT0ZKOG12c1ovUjJnakFLQmdncWhrak9QUVFEQWdOSEFEQkUKQWlCd2dubFl0MUczdGtuR1NQOEViNm5UMHU5MFQvRWZJZnZNWkR2aVBtZTY0QUlnT2M0UjM0aGJqRE1xejlzbgpHY2oyTDdIcFNad1Z2Z3lXd0xhdGFzQjR6Y1k9Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0KLS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUJkekNDQVIyZ0F3SUJBZ0lCQURBS0JnZ3Foa2pPUFFRREFqQWpNU0V3SHdZRFZRUUREQmhyTTNNdFkyeHAKWlc1MExXTmhRREUyTVRrNU1EWXdNRFF3SGhjTk1qRXdOVEF4TWpFMU16STBXaGNOTXpFd05ESTVNakUxTXpJMApXakFqTVNFd0h3WURWUVFEREJock0zTXRZMnhwWlc1MExXTmhRREUyTVRrNU1EWXdNRFF3V1RBVEJnY3Foa2pPClBRSUJCZ2dxaGtqT1BRTUJCd05DQUFTSnFaOSsyNkViZ1hVUTllRlIrWFc1eGw3OEptcGdYbHZSVzZQU2M2Q0IKUTNmRk95dkFFRkhGQ1FleGwxbS9GUkluVjVWL1pmZFN6R2pvS3ZpODMzZFRvMEl3UURBT0JnTlZIUThCQWY4RQpCQU1DQXFRd0R3WURWUjBUQVFIL0JBVXdBd0VCL3pBZEJnTlZIUTRFRmdRVXovRTlqT01UVlloalR6amhTZkpyCjdHZjBkb0l3Q2dZSUtvWkl6ajBFQXdJRFNBQXdSUUlnZjh5SUdFa3JzcFhINWNTL1pmMVlEUlB5ZXJBQ01SdmwKVFNxUXBRSzJSNVlDSVFDeE10S0Y4R2xzYVRZc1AxK0xRUlFyNUZtSXVvcE81RVJjM2VXYmp3YlJGQT09Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K</span>
+    <span class="na">client-key-data</span><span class="pi">:</span> <span class="s">LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUs5Snkraks3SW02Wm5xUm91Z1Jsa3NsaVFjbENzQlk0NWdTZTFOaEZPWXNvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFVGF2dDdPMjlxQjhOcSt6QjVyOHhXdGRtyVGR0OUt5Nm9aY1hZdwppSWJxNCthZndXbnEwdW1pZ0xrOWVQRitQc1V3UXNuZHFBPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQo=</span>
+</code></pre></div></div>
+
+<p>Come possiamo vedere, alla voce riguardante l’indirizzo del server abbiamo un affascinante <code class="language-plaintext highlighter-rouge">127.0.0.1</code> che dobbiamo <strong>sostituire con l’IP pubblico della macchina</strong> che abbiamo deployato, o con l’IP privato se stiamo dietro una bella VPN. Fatto questo, il file è effettivamente un kubeconfig valido che possiamo salvare e utilizzare facendolo digerire al nostro <code class="language-plaintext highlighter-rouge">kubectl</code>. Ci sono vari modi per farlo che spero conosciate; non ho intenzione di ammorbarvi in questa sede spiegandovi quale è il mio preferito.</p>
+
+<p>Dopo qualche secondo, con un <code class="language-plaintext highlighter-rouge">kubectl get all</code> dovremmo poter vedere le risorse dentro il nostro cluster mononodo appena deployato, che giustamente saranno prossime allo zero. Prima di iniziare a deployarci delle applicazioni sopra potremmo guardare se è il caso di attaccare al nostro master node qualche <strong>worker node</strong> in modo da consentire al nostro sistema un po’ di respiro se lo vogliamo far andare a regime.</p>
+
+<p>È necessario innanzi tutto scoprire quale è il <strong>token</strong> per connetterci al nostro master node:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo cat</span> /var/lib/rancher/k3s/server/node-token
+K10361c7ecce9548dc6b5d1fc32e69b42eeb6e8d00d5e097923d83b9b4604277a9d::server:c44ecc6b22fdd6d7d08ea321798150f8
+</code></pre></div></div>
+
+<p>Dopodiché possiamo tranquillamente deployare un’altra istanza su un’altra macchina informandola di questo token e dell’URL del master node in modo che ci si vada a connettere:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">export </span><span class="nv">k3s_master_url</span><span class="o">=</span><span class="s2">"https://k3s-master:6443"</span>
+<span class="nv">$ </span><span class="nb">export </span><span class="nv">k3s_token</span><span class="o">=</span><span class="s2">"K10361c7ecce9548dc6b5d1fc32e69b42eeb6e8d00d5e097923d83b9b4604277a9d::server:c44ecc6b22fdd6d7d08ea321798150f8"</span>
+<span class="nv">$ </span>curl <span class="nt">-sfL</span> https://get.k3s.io | <span class="nv">K3S_URL</span><span class="o">=</span><span class="k">${</span><span class="nv">k3s_master_url</span><span class="k">}</span> <span class="nv">K3S_TOKEN</span><span class="o">=</span><span class="k">${</span><span class="nv">k3s_token</span><span class="k">}</span> sh -
+</code></pre></div></div>
+
+<p>Con un <code class="language-plaintext highlighter-rouge">kubectl cluster-info</code> dovremmo vedere che il nostro nodo nuovo di pacca ha fatto il suo lavoro. A questo punto possiamo iniziare a giocarci, scrivendo la configurazione di cui abbiamo bisogno nei nostro file YAML e applicandola con <code class="language-plaintext highlighter-rouge">kubectl apply -f</code>. Questo procedimento usa K3s e un hosting a basso costo, ma con un po’ di fine tuning (soprattutto andando a parare su un hosting più affidabile per le macchine) possiamo deployare i nostri nodi in questa maniera anche in produzione<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>. Personalmente ancora non ho trovato feature mancanti dentro K3s per progetti piccoli che mi facciano dire “no, K3s non va bene anche per applicazioni di media portata”; per quanto riguarda <strong>AllaCarta</strong>, soprattutto, questo setup e un po’ di hardening hanno decisamente salvato la giornata e mi hanno permesso di <strong>non rinunciare a un modo di lavorare molto più reattivo</strong> a cui ormai mi ero piuttosto assuefatto.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>In realtà in produzione abbiamo bisogno di una serie di accorgimenti in più, e soprattutto dato che K3s non supporta il <strong>multi-master</strong> non possiamo proprio stare senza pensieri. Tuttavia, penso che per il setup per la validazione di un prototipo una cosa del genere vada più che bene. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2021/04/adoro-kubernetes/" title="Io adoro Kubernetes - di Alessio Biancalana">
+          Io adoro Kubernetes
+        </a>
+      </h1>
+      <span class="post-date">25 Apr 2021</span>
+    
+
+    <p><img src="https://gitlab.com/dottorblaster/blog-images/-/raw/master/images/kubernetes/adoro_kubernetes.png" alt="dottorblaster adora Kubernetes" /></p>
+
+<p>Stavo pensando di buttare giù un post qualsiasi tanto per ricominciare a scrivere dato che mi lamento di non avere mai tempo, e ho pensato che non vi ho mai palesato un paio di fatti: il primo è che <a href="https://allacarta.menu/">AllaCarta</a> da qualche tempo gira completamente su <strong>Kubernetes</strong>, il secondo è che, per dirlo con poche parole, io <em>adoro</em> Kubernetes in ogni sua distribuzione e forma.</p>
+
+<p>Come mai? Innanzi tutto va detto che io sono mortalmente affascinato, come i miei lettori di lunga data sanno, dalle opinioni coraggiose, e <a href="https://mbuffett.com/posts/kubernetes-setup/">“Unironically Using Kubernetes for my Personal Blog”</a> è una delle mie preferite. Dopodiché, devo dire che due sono le cose che mi hanno fatto avvicinare a questa tecnologia che volevo apprendere da tempo: il fatto che un <a href="https://github.com/Gsantomaggio">formidabile individuo</a> mi abbia convinto a mandare un po’ di commit al progetto <a href="https://github.com/kf5i/k3ai-core">k3ai</a>, e il fatto di aver capito che Kubernetes stesse veramente “mangiando il mondo”. Così mi sono spinto un po’ più in là, ho cominciato a studiare e per acquisire un po’ di conoscenza pratica in qualche settimana ho <strong>portato AllaCarta da un paio di macchine deployate tramite Ansible a un cluster full-fledged Kubernetes</strong>.</p>
+
+<p>Devo dire che a parte lo scollinamento iniziale, è stato abbastanza semplice. Nel farlo ho scoperto persino un po’ di cose su cui da fuori è molto facile soprassedere.</p>
+
+<h3 id="si-fa-presto-a-dire-kubernetes">Si fa presto a dire Kubernetes</h3>
+<p>Innanzi tutto Kubernetes non è “Kubernetes”, ma esattamente come Linux vuol dire tutto e niente esistono svariate distribuzioni di Kubernetes che lo rendono un bundle utilizzabile e uno strumento meno grezzo del core che siamo stati abituati a concepire nei primi anni di vita di questo <strong>adorabile orchestrator di quartiere</strong>.</p>
+
+<p>Tra le distribuzioni che possiamo vedere più spesso in giro possiamo trovare <a href="https://k3s.io/">K3s</a>, <a href="https://microk8s.io/">MicroK8s</a>, <a href="https://minikube.sigs.k8s.io/docs/">minikube</a>, <a href="https://rancher.com/products/rke/">Rancher Kubernetes Engine</a>. Fanno tutte un po’ la stessa cosa, semplicemente esattamente come le distribuzioni di Linux alcune sono più adatte ad alcuni use case di altre: il mio amico <a href="https://github.com/CDimonaco">Carmine</a> per esempio sta mettendo in piedi una guida abbastanza esaustiva su come deployare il proprio cluster RKE su delle VPS Hetzner, io invece sono un appassionato di K3s perché è facile come uno schiocco di dita metterci su dei begli ambienti di continuous integration per le proprie applicazioni<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>.</p>
+
+<h3 id="kubernetes-è-una-piattaforma">Kubernetes è una piattaforma</h3>
+<p>Letto il titolo qui sopra? Molto bene: come tale, Kubernetes è piuttosto flessibile rispetto a quello che ci installiamo sopra, e non intendo solo i classici deployment di applicazioni, che sono la cosa più comune: è possibile <strong>estendere le funzionalità del proprio cluster Kubernetes attraverso l’uso di particolari “operator”</strong> (oltre che tramite le <a href="https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/">Custom Resource Definition</a>), ovvero delle estensioni software che provvedono a smazzare il grosso del lavoro per noi quando si presentano tematiche un po’ più complesse e soprattutto generalizzate/generalizzabili, come il provisioning di un cluster PostgreSQL a bordo della nostra infrastruttura.</p>
+
+<p>È molto bene di solito sapere che cosa avviene sotto il cofano di un operatore perché non conoscere profondamente il suo funzionamento può portarci a credere che stia avvenendo qualcosa sulla nostra infrastruttura di produzione che è assolutamente lontano da quello che in realtà sta succedendo, tuttavia penso che ci sia ancora tantissimo terreno inesplorato in tema di <strong>Kubernetes operator</strong>, che siano molto utili banalmente perché semplificano tanto lavoro, ma che siano un’astrazione da usare solo dopo aver compreso le basi.</p>
+
+<p>Alcuni operatori sono una bomba allucinante, quasi talmente tanto che non è possibile concepire un cluster senza questi installati. Alcuni esempi? Datadog per il monitoraggio, <strong>Argo CD</strong> per la continuous delivery (attraverso <a href="https://www.gitops.tech/">GitOps</a>). Questo ovviamente rischia di rendere la curva di apprendimento dell’ecosistema Kubernetes estremamente ripida, e rischia anche di creare una frammentazione allucinante nell’ecosistema dato che a questo punto non esiste un cluster che sia uguale a un altro. Ma la flessibilità e la potenza portano con loro questi lati negativi, quindi sapete che c’è? Non lamentatevi.</p>
+
+<p>Non sprecate tempo né fiato nel farlo.</p>
+
+<p>Se pensate che sia “troppo”, guess what: l’informatica è un lavoro più duro di quanto credevate. Potete mettervi a studiare o andare a fare i crimpatori di cavi dentro qualche data center - sempre ammesso che lo sappiate fare: crimpare un cavo per bene è un’operazione da osservare con cura.</p>
+
+<h3 id="la-tematica-dei-costi">La tematica dei costi</h3>
+<p>Infine, il momento della dolorosa come dicono in alcuni ristoranti: ma <strong>quanto costa</strong>? Heh, il problema è che è vero: Kubernetes non costa come una Lamborghini, ma di sicuro costa come una qualsiasi bella automobile che potete vedere in un concessionario. Il numero delle macchine di cui fare il provisioning lievita o comunque aumenta anche solo un po’ a seconda della strategia che utilizziamo per gestire l’hardware che sta sotto il nostro cluster. Quello che però spesso non viene contato nel foglio di calcolo del budget infrastrutturale sono le ore uomo spese a connettere le macchine tra loro, a far parlare due VPS che stanno sotto un cluster Percona (un esempio tra tanti). Kubernetes rende queste operazioni leggermente più semplici portando in fondo all’anno un risparmio in ore uomo non indifferente banalmente per via dei principi di configuration-as-code che segue. Possiamo salvare la configurazione del cluster in dei file YML e riapplicarla.</p>
+
+<p>Se non avete mai usato <strong>configuration-as-code</strong> come paradigma, scoprirete quanto può essere utile quando le cose vanno storte. Rideployare un’applicazione in qualche minuto è un fattore da non sottovalutare, specie se come il sottoscritto avete un pet project che fate girare da soli.</p>
+
+<h3 id="insomma">Insomma…</h3>
+<p>Non è facile riassumere tutto quello che uno può imparare in settimane di deep dive su <strong>Kubernetes</strong>. Personalmente, non ci ho nemmeno provato: questi sono solo alcuni dei concetti che ho elaborato e che sto studiando. Da un punto di vista di piattaforma, Kubernetes è il nuovo Linux e rappresenta la koiné dialektos del mercato applicativo. Una piattaforma che può abilitarvi a fare le cose con uno schiocco di dita se solo studiate a sufficienza per averne la preparazione.</p>
+
+<p>Non fatevi cogliere alla sprovvista.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>O anche deployare degli applicativi completi. K3s è full-K8s compliant rispetto alle API, e anche se è particolarmente indicato per ambienti piccoli non c’è dubbio che possiamo deployarci anche un bell’MVP in produzione. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2021/04/netnewswire-6/" title="Arriva NetNewsWire 6 per Mac - di Alessio Biancalana">
+          Arriva NetNewsWire 6 per Mac
+        </a>
+      </h1>
+      <span class="post-date">10 Apr 2021</span>
+    
+
+    <p><img src="https://netnewswire.com/images/NNW5Light.png" alt="NetNewsWire 6 for Mac" /></p>
+
+<p>Qualche giorno fa <strong>Brent Simmons</strong> <a href="https://inessential.com/2021/03/27/netnewswire_6_0_for_mac">ha dato l’annuncio</a> del lieto evento: uno dei progetti open source migliori di cui io abbia mai seguito gli sviluppi ha annunciato la versione 6.0, e quel software è proprio <strong>NetNewsWire</strong>.</p>
+
+<p>Ma cominciamo dall’inizio: cos’è NetNewsWire? NetNewsWire è un lettore di feed RSS che sincronizza anche con Feedly, Feedbin, e un’altra buona caterva di servizi online per leggere i feed. Quest’ultima versione sincronizza anche i feed letti, nel caso in cui non usassimo nessuno di questi servizi, direttamente via iCloud; personalmente io sono un grosso fan dei <strong>feed RSS</strong> per praticamente qualsiasi cosa, e uso NetNewsWire principalmente come “interfaccia” per quanto riguarda il mio account Feedly.</p>
+
+<p>Ho un’applicazione di questo tipo per ogni dispositivo che uso, il mio Macbook non fa eccezione, e devo dire di non essere mai stato così soddisfatto di un feed reader, anche perché di NetNewsWire <strong>posso vedere tutto il codice su Github</strong>, che è una cosa molto particolare se consideriamo che stiamo parlando di un’applicazione per Mac.</p>
+
+<p>Brent Simmons <a href="https://inessential.com/2021/04/07/the_lack_of_a_price_tag_seems_almost_criminal">ne parla parecchio</a>, e si concentra spesso sullo stimolare questo tipo di sforzo per quanto riguarda l’ecosistema Apple, persino <a href="https://github.com/Ranchero-Software/NetNewsWire/blob/main/Technotes/HowToSupportNetNewsWire.markdown">nella guida ai contributi</a> per il suo lettore di feed:</p>
+
+<blockquote>
+  <p>First thing: don’t send money. This app is <a href="https://inessential.com/2015/06/30/love">written for love</a>, not money. :)</p>
+
+  <p>NetNewsWire is all about three things:</p>
+
+  <ul>
+    <li>The open web</li>
+    <li>High-quality open source Mac and iOS apps</li>
+    <li>The community that loves both of the above</li>
+  </ul>
+
+  <p>Supporting all these things takes <em>work</em>.</p>
+</blockquote>
+
+<p>In poche parole: <strong>NetNewsWire è il mio lettore di feed preferito per Mac</strong>. Questa nuova versione introduce un bel po’ di novità. È <strong>open source</strong>. Spero di avervi fatto venire voglia di usarlo.</p>
+
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2021/03/appena-ho-una-mano-libera/" title="Appena ho una mano libera - di Alessio Biancalana">
+          Appena ho una mano libera
+        </a>
+      </h1>
+      <span class="post-date">20 Mar 2021</span>
+    
+
+    <p>Questo periodo sto facendo un sacco, un sacco, un sacchissimo di cose.</p>
+
+<p>Sto <a href="https://gitlab.com/news-flash/news_flash/-/issues/50">dando una mano</a> con quelle poche conoscenze di Rust che ho a mantenere <strong>il mio feed reader per Linux preferito</strong>.</p>
+
+<p>Sto lentamente <a href="https://github.com/apache/couchdb/pull/3398">riprendendo</a> a contribuire a <strong>CouchDB</strong>.</p>
+
+<p><a href="https://www.gitbar.it/episodes/ep65-ammutinati-sindrome-impostore">Mi sto ammutinando</a>, insieme a un gruppo di amici invasati, una volta a settimana, occupando in modo coatto il <strong>podcast</strong> di un caro amico.</p>
+
+<p>Ma soprattutto, ho <strong>una casa nuova</strong> da sistemare e arredare insieme ad <a href="http://www.killbilla.it/">Agnese</a>. Oggi ho finito di installare e attivare la connessione internet mentre arrivava un fracco di elettrodomestici nuovi.</p>
+
+<p>Tutto questo per dire: avrei un sacco di cosette da scrivere, ma al momento mi trovo con troppa roba per le mani. A prestissimo!</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/page/2"><i class="fa fa-chevron-circle-left"></i></a>
+  
+  
+    <span class="pagination-item newer"><i class="fa fa-chevron-circle-right"></i></span>
+  
+</div>
+
+
+      <div class="footer">
+        <p>
+          &copy; Grab The Blaster is brought to you by Alessio Biancalana with <a href="http://jekyllrb.com/">Jekyll</a> and much ♥, under <a href="https://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC</a>.
+        </p>
+        <form class="search-form" action="/search" method="get">
+          <input type="text" placeholder="Cerca →" name="query">
+        </form>
+      </div>
+      <div class="webring-container">
+        <webring-banner>
+          <p>Member of <a href="https://retronerds.netlify.app"></a></p>
+          <a href="https://retronerds.netlify.app/prev">Previous</a>
+          <a href="https://retronerds.netlify.app/random">Random</a>
+          <a href="https://retronerds.netlify.app/next">Next</a>
+        </webring-banner>
+        <script async src="https://retronerds.netlify.app/embed.js" charset="utf-8"></script>
+      </div>
+    </div>
+
+  </body>
+</html>

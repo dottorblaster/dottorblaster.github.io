@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <link rel="canonical" href="/2021/05/piccolo-kubernetes-production-ready-k3s/" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- Enable Graph API for Facebook integration -->
+  <meta content="Grab The Blaster" property="og:site_name">
+  
+    <meta content="Kubernetes production-ready in piccolo: deployare un mini-cluster K3s" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="Qualche settimana fa mi ha amabilmente scritto il cloud provider presso cui è ospitato il cluster Kubernetes di produzione di AllaCarta informandomi del fatto che la beta del loro servizio Kubernetes managed (che ho provato ~a scrocco~ in anticipo fornendo dei preziosi feedback) sta giungendo a una fine. Dopo attimi di panico, mi sono appuntato tre strade possibili da vagliare:  Rimanere col provider attuale, pagando, continuando a usare Kubernetes. Non ho tuttavia voglia di diventare povero,..." property="og:description">
+  
+  
+    <meta content="https://dottorblaster.it/2021/05/piccolo-kubernetes-production-ready-k3s/" property="og:url">
+  
+  
+    <meta content="2021-05-18T18:47:32+00:00" property="article:published_time">
+    <meta content="https://dottorblaster.it/about/" property="article:author">
+    <meta content="https://dottorblaster.it/opengraph/d6f313a16d6d852b8c485d0b70de0895e8f00e17.png" property="og:image">
+  
+  
+    
+    <meta content="Linux" property="article:section">
+    
+  
+  
+    
+    <meta content="kubernetes" property="article:tag">
+    
+    <meta content="k3s" property="article:tag">
+    
+    <meta content="container" property="article:tag">
+    
+    <meta content="kubectl" property="article:tag">
+    
+    <meta content="orchestrazione" property="article:tag">
+    
+    <meta content="orchestration" property="article:tag">
+    
+  
+
+  <!--   Enable Twitter Cards support through metadata, thanks to http://davidensinger.com/2013/04/supporting-twitter-cards-with-jekyll/ -->
+<!--   <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@site_username">
+  <meta name="twitter:creator" content="@creator_username">
+  
+    <meta name="twitter:title" content="Kubernetes production-ready in piccolo: deployare un mini-cluster K3s">
+  
+  
+    <meta name="twitter:url" content="https://dottorblaster.it/2021/05/piccolo-kubernetes-production-ready-k3s/">
+   -->
+  <!-- This is from @stammy -->
+<!--   <meta name="twitter:description" content="
+
+Qualche settimana fa mi ha amabilmente scritto il cloud provider presso cui è ospitato il cluster Kubernetes di produzione di AllaCarta informandomi del fatto che la beta del loro servizio Kubern...">
+  
+    <meta name="twitter:image:src" content="https://dottorblaster.it/path/to/image/logo.png">
+    -->
+
+  <title>
+    
+      Kubernetes production-ready in piccolo: deployare un mini-cluster K3s &middot; Grab The Blaster
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/grabtheblaster.css">
+  <link rel="stylesheet" href="/public/font-awesome/css/font-awesome.min.css">
+
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700italic,700,400italic' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,700' rel='stylesheet' type='text/css' />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title="" href="https://dottorblaster.it/feed">
+</head>
+
+
+  <body>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=81489295682&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="container content">
+      <div class="masthead">
+        <h3 class="masthead-title">
+          <img src="/public/avatar-blaster.png" alt="Alessio Biancalana">
+          <a href="/" title="Home page">Grab The Blaster</a>
+          <small>di Alessio Biancalana</small>
+        </h3>
+        <div class="social-icons"><a href="/about/" title="About Me"><i class="fa fa-user-circle-o"></i></a> <a href="https://twitter.com/dottorblaster" title="Twitter - @dottorblaster"><i class="fa fa-twitter"></i></a> <a href="https://github.com/dottorblaster" title="GitHub - dottorblaster"><i class="fa fa-github"></i></a></div>
+      </div>
+
+      <div class="post">
+  <h1 class="post-title">Kubernetes production-ready in piccolo: deployare un mini-cluster K3s</h1>
+  <span class="post-date">18 May 2021</span>
+  <p><img src="https://gitlab.com/dottorblaster/blog-images/-/raw/master/images/computers/linux-filesystem.webp" alt="Linux, gerarchia del filesystem" /></p>
+
+<p>Qualche settimana fa mi ha amabilmente scritto il <strong>cloud provider</strong> presso cui è ospitato il cluster Kubernetes di produzione di <a href="https://allacarta.menu/">AllaCarta</a> informandomi del fatto che la beta del loro servizio <strong>Kubernetes managed</strong> (che ho provato ~a scrocco~ in anticipo fornendo dei preziosi feedback) sta giungendo a una fine. Dopo attimi di panico, mi sono appuntato tre strade possibili da vagliare:</p>
+
+<ul>
+  <li>Rimanere col provider attuale, pagando, continuando a usare Kubernetes. Non ho tuttavia voglia di diventare povero, per quanto i loro costi siano molto più prevedibili di qualsiasi piattaforma cloud “mainstream”. In fin dei conti, davvero impraticabile. Dato che AllaCarta è gratis a oggi, devo tagliare tutti i costi il più possibile. :-D;</li>
+  <li>Migrare a un metodo di deployment più tradizionale riutilizzando i <strong>playbook Ansible</strong> scritti in precedenza;</li>
+  <li>Deployare un cluster Kubernetes per conto mio e provare a riapplicare tutta la configurazione del mio cluster di prod.</li>
+</ul>
+
+<p>Marcata come non fattibile la prima alternativa, ho passato una settimanella a cercare di far fare briscola ai miei playbook Ansible con le nuove macchine di staging che avevo deployato, ma ce n’era sempre una tra versioni che non andavano più bene e altro. L’altra sera, così, in preda a un raptus, ho deciso di provare davvero a vedere se deployare un <strong>cluster K3s mononodo di test</strong> fosse una cosa proibitiva a livello di sforzo e know-how richiesto.</p>
+
+<p>Ho scoperto che invece basta loggarsi su una macchina appena deployata e dare questo comando:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>curl <span class="nt">-sfL</span> https://get.k3s.io | sh -
+</code></pre></div></div>
+
+<p>In questo modo, il nostro terminale sputerà un po’ di informazioni e in pochissimo tempo avremo <em>davvero</em> un master node Kubernetes perfettamente funzionante a cui connetterci. <strong>K3s</strong> non è <em>esattamente</em> una distribuzione che include tutto quello che le distribuzioni canoniche di Kubernetes si portano dietro, ma valutando i miei bisogni ho deciso che potevo fare a meno di quelle che per me sono caratteristiche marginali.</p>
+
+<p>Per connetterci al cluster da fuori abbiamo bisogno di un <code class="language-plaintext highlighter-rouge">kubeconfig</code>, che possiamo trovare in questo modo. Con questo comando otterremo qualcosa del genere:</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">$ cat /etc/rancher/k3s/k3s.yaml</span>
+<span class="na">apiVersion</span><span class="pi">:</span> <span class="s">v1</span>
+<span class="na">clusters</span><span class="pi">:</span>
+<span class="pi">-</span> <span class="na">cluster</span><span class="pi">:</span>
+    <span class="na">certificate-authority-data</span><span class="pi">:</span> <span class="s">LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUJlRENDQVIyZ0F3SUJBZ0lCQURBS0JnZ3Foa2pPUFFRREFqQWpNU0V3SHUREQmhyTTNNdGMyVnkKZG1WeUxXTmhRREUyTVRrNU1EWXdNRFF3SGhjTk1qRXdOVEF4TWpFMU16STBXaGNOTXpFd05ESTVNakUxTXpJMApXakFqTVNFd0h3WURWUVFEREJock0zTXRjMlZ5ZG1WeUxXTmhRREUyTVRrNU1EWXdNRFF3V1RBVEJnY3Foa2pPClBRSUJCZ2dxaGtqT1BRTUJCd05DQUFSRzNUY0FCVE9hTFRaT1piUG51QlFEbGNtMTAxMEw5VDF3SVR0TUR5TWIKR0s0YitHTG8xenVOQXRETE1uNjhIWlI5UTRYbFJySzJuVWJnVG1ucUhlb2JvMEl3UURBT0JnTlZIUThCQWY4RQpCQU1DQXFRd0R3WURWUjBUQVFIL0JBVXdBd0VCL3pBZEJnTlZIUTRFRmdRVXZ6QlU3bUtTRUF3NFQ5RDJuOWNNCm9FQkRzVlF3Q2dZSUtvWkl6ajBFQXdJRFNRQXdSZ0lVjZzLzN6RmhkTUsxNFpENU5tRGc5ZG9zdUViOXYKaVFsdU93UHp5bmNDQWlFQWxWK2FYWCtnTENZR3dzTXJBNU1yaWkrSGl3T1hlYVJMWUIvWFAvQVR2Mm89Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K</span>
+    <span class="na">server</span><span class="pi">:</span> <span class="s">https://127.0.0.1:6443</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">default</span>
+<span class="na">contexts</span><span class="pi">:</span>
+<span class="pi">-</span> <span class="na">context</span><span class="pi">:</span>
+    <span class="na">cluster</span><span class="pi">:</span> <span class="s">default</span>
+    <span class="na">user</span><span class="pi">:</span> <span class="s">default</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">default</span>
+<span class="na">current-context</span><span class="pi">:</span> <span class="s">default</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">Config</span>
+<span class="na">preferences</span><span class="pi">:</span> <span class="pi">{}</span>
+<span class="na">users</span><span class="pi">:</span>
+<span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">default</span>
+  <span class="na">user</span><span class="pi">:</span>
+    <span class="na">client-certificate-data</span><span class="pi">:</span> <span class="s">LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUJrRENDQVRlZ0F3SUJBZ0lJZm9FNytndXpLS0V3Q2dZSUtvWkl6ajBFQXdJd0l6RWhNQjhHQTFVRUF3d1kKYXpOekxXTnNhV1Z1ZEMxallVQXhOakU1T1RBMk1EQTBNQjRYRFRJeE1EVXdNVEl4TlRNeU5Gb1hEVEl5TURVdwpNVEl4TlRNeU5Gb3dNREVYTUJVR0ExVUVDaE1PYzNmRHVnRPbTFoYzNSbGNuTXhGVEFUQmdOVkJBTVRESE41CmMzUmxiVHBoWkcxcGJqQlpNQk1HQnlxR1NNNDlBZ0VHQ0NxR1NNNDlBd0VIQTBJQUJFMnI3ZXp0dmFnZkRhdnMKd2VhL01WclhiV3RXb0ZGc2FRaVlVTXZxMDNiZlNzdXFHWEYyTUlpRzZ1UG1uOEZwNnRMcG9vQzVQWGp4Zmo3RgpNRUxKM2FpalNEQkdNQTRHQTFVZER3RUIvd1FFQXdJRm9EQVRCZ05WSFNVRUREQUtCZ2dyQmdFRkJRY0RBakFmCkJnTlZIU010RBV2dCVFA4VDJNNHhOVmlHTlBPT0ZKOG12c1ovUjJnakFLQmdncWhrak9QUVFEQWdOSEFEQkUKQWlCd2dubFl0MUczdGtuR1NQOEViNm5UMHU5MFQvRWZJZnZNWkR2aVBtZTY0QUlnT2M0UjM0aGJqRE1xejlzbgpHY2oyTDdIcFNad1Z2Z3lXd0xhdGFzQjR6Y1k9Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0KLS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUJkekNDQVIyZ0F3SUJBZ0lCQURBS0JnZ3Foa2pPUFFRREFqQWpNU0V3SHdZRFZRUUREQmhyTTNNdFkyeHAKWlc1MExXTmhRREUyTVRrNU1EWXdNRFF3SGhjTk1qRXdOVEF4TWpFMU16STBXaGNOTXpFd05ESTVNakUxTXpJMApXakFqTVNFd0h3WURWUVFEREJock0zTXRZMnhwWlc1MExXTmhRREUyTVRrNU1EWXdNRFF3V1RBVEJnY3Foa2pPClBRSUJCZ2dxaGtqT1BRTUJCd05DQUFTSnFaOSsyNkViZ1hVUTllRlIrWFc1eGw3OEptcGdYbHZSVzZQU2M2Q0IKUTNmRk95dkFFRkhGQ1FleGwxbS9GUkluVjVWL1pmZFN6R2pvS3ZpODMzZFRvMEl3UURBT0JnTlZIUThCQWY4RQpCQU1DQXFRd0R3WURWUjBUQVFIL0JBVXdBd0VCL3pBZEJnTlZIUTRFRmdRVXovRTlqT01UVlloalR6amhTZkpyCjdHZjBkb0l3Q2dZSUtvWkl6ajBFQXdJRFNBQXdSUUlnZjh5SUdFa3JzcFhINWNTL1pmMVlEUlB5ZXJBQ01SdmwKVFNxUXBRSzJSNVlDSVFDeE10S0Y4R2xzYVRZc1AxK0xRUlFyNUZtSXVvcE81RVJjM2VXYmp3YlJGQT09Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K</span>
+    <span class="na">client-key-data</span><span class="pi">:</span> <span class="s">LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUs5Snkraks3SW02Wm5xUm91Z1Jsa3NsaVFjbENzQlk0NWdTZTFOaEZPWXNvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFVGF2dDdPMjlxQjhOcSt6QjVyOHhXdGRtyVGR0OUt5Nm9aY1hZdwppSWJxNCthZndXbnEwdW1pZ0xrOWVQRitQc1V3UXNuZHFBPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQo=</span>
+</code></pre></div></div>
+
+<p>Come possiamo vedere, alla voce riguardante l’indirizzo del server abbiamo un affascinante <code class="language-plaintext highlighter-rouge">127.0.0.1</code> che dobbiamo <strong>sostituire con l’IP pubblico della macchina</strong> che abbiamo deployato, o con l’IP privato se stiamo dietro una bella VPN. Fatto questo, il file è effettivamente un kubeconfig valido che possiamo salvare e utilizzare facendolo digerire al nostro <code class="language-plaintext highlighter-rouge">kubectl</code>. Ci sono vari modi per farlo che spero conosciate; non ho intenzione di ammorbarvi in questa sede spiegandovi quale è il mio preferito.</p>
+
+<p>Dopo qualche secondo, con un <code class="language-plaintext highlighter-rouge">kubectl get all</code> dovremmo poter vedere le risorse dentro il nostro cluster mononodo appena deployato, che giustamente saranno prossime allo zero. Prima di iniziare a deployarci delle applicazioni sopra potremmo guardare se è il caso di attaccare al nostro master node qualche <strong>worker node</strong> in modo da consentire al nostro sistema un po’ di respiro se lo vogliamo far andare a regime.</p>
+
+<p>È necessario innanzi tutto scoprire quale è il <strong>token</strong> per connetterci al nostro master node:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo cat</span> /var/lib/rancher/k3s/server/node-token
+K10361c7ecce9548dc6b5d1fc32e69b42eeb6e8d00d5e097923d83b9b4604277a9d::server:c44ecc6b22fdd6d7d08ea321798150f8
+</code></pre></div></div>
+
+<p>Dopodiché possiamo tranquillamente deployare un’altra istanza su un’altra macchina informandola di questo token e dell’URL del master node in modo che ci si vada a connettere:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">export </span><span class="nv">k3s_master_url</span><span class="o">=</span><span class="s2">"https://k3s-master:6443"</span>
+<span class="nv">$ </span><span class="nb">export </span><span class="nv">k3s_token</span><span class="o">=</span><span class="s2">"K10361c7ecce9548dc6b5d1fc32e69b42eeb6e8d00d5e097923d83b9b4604277a9d::server:c44ecc6b22fdd6d7d08ea321798150f8"</span>
+<span class="nv">$ </span>curl <span class="nt">-sfL</span> https://get.k3s.io | <span class="nv">K3S_URL</span><span class="o">=</span><span class="k">${</span><span class="nv">k3s_master_url</span><span class="k">}</span> <span class="nv">K3S_TOKEN</span><span class="o">=</span><span class="k">${</span><span class="nv">k3s_token</span><span class="k">}</span> sh -
+</code></pre></div></div>
+
+<p>Con un <code class="language-plaintext highlighter-rouge">kubectl cluster-info</code> dovremmo vedere che il nostro nodo nuovo di pacca ha fatto il suo lavoro. A questo punto possiamo iniziare a giocarci, scrivendo la configurazione di cui abbiamo bisogno nei nostro file YAML e applicandola con <code class="language-plaintext highlighter-rouge">kubectl apply -f</code>. Questo procedimento usa K3s e un hosting a basso costo, ma con un po’ di fine tuning (soprattutto andando a parare su un hosting più affidabile per le macchine) possiamo deployare i nostri nodi in questa maniera anche in produzione<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>. Personalmente ancora non ho trovato feature mancanti dentro K3s per progetti piccoli che mi facciano dire “no, K3s non va bene anche per applicazioni di media portata”; per quanto riguarda <strong>AllaCarta</strong>, soprattutto, questo setup e un po’ di hardening hanno decisamente salvato la giornata e mi hanno permesso di <strong>non rinunciare a un modo di lavorare molto più reattivo</strong> a cui ormai mi ero piuttosto assuefatto.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>In realtà in produzione abbiamo bisogno di una serie di accorgimenti in più, e soprattutto dato che K3s non supporta il <strong>multi-master</strong> non possiamo proprio stare senza pensieri. Tuttavia, penso che per il setup per la validazione di un prototipo una cosa del genere vada più che bene. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+</div>
+
+<div class="social-section">
+  <div class="fb-like" data-href="/2021/05/piccolo-kubernetes-production-ready-k3s/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-via="dottorblaster" data-lang="it" data-dnt="true">Tweet</a>
+</div>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'blasterhome'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/06/domain-modeling-made-functional-recensione/">
+            Recensione: Domain Modeling Made Functional, di Scott Wlaschin
+            <small>08 Jun 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/04/adoro-kubernetes/">
+            Io adoro Kubernetes
+            <small>25 Apr 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/04/netnewswire-6/">
+            Arriva NetNewsWire 6 per Mac
+            <small>10 Apr 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+      <div class="footer">
+        <p>
+          &copy; Grab The Blaster is brought to you by Alessio Biancalana with <a href="http://jekyllrb.com/">Jekyll</a> and much ♥, under <a href="https://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC</a>.
+        </p>
+        <form class="search-form" action="/search" method="get">
+          <input type="text" placeholder="Cerca →" name="query">
+        </form>
+      </div>
+      <div class="webring-container">
+        <webring-banner>
+          <p>Member of <a href="https://retronerds.netlify.app"></a></p>
+          <a href="https://retronerds.netlify.app/prev">Previous</a>
+          <a href="https://retronerds.netlify.app/random">Random</a>
+          <a href="https://retronerds.netlify.app/next">Next</a>
+        </webring-banner>
+        <script async src="https://retronerds.netlify.app/embed.js" charset="utf-8"></script>
+      </div>
+    </div>
+
+  </body>
+</html>

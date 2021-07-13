@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <link rel="canonical" href="/page/23/" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- Enable Graph API for Facebook integration -->
+  <meta content="Grab The Blaster" property="og:site_name">
+  
+    <meta content="Home" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="Un blog nerd il giusto di Alessio Biancalana" property="og:description">
+  
+  
+    <meta content="https://dottorblaster.it/page/23/" property="og:url">
+  
+  
+  
+  
+
+  <!--   Enable Twitter Cards support through metadata, thanks to http://davidensinger.com/2013/04/supporting-twitter-cards-with-jekyll/ -->
+<!--   <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@site_username">
+  <meta name="twitter:creator" content="@creator_username">
+  
+    <meta name="twitter:title" content="Home">
+  
+  
+    <meta name="twitter:url" content="https://dottorblaster.it/page/23/">
+   -->
+  <!-- This is from @stammy -->
+<!--   <meta name="twitter:description" content="
+  {% for post in paginator.posts %}
+  
+    {% if post.layout == &quot;link&quot; %}
+      
+        
+          {{ post.title }}
+        
+        
+      
+    {% else %}
+      
+        
+          {{ ...">
+  
+    <meta name="twitter:image:src" content="https://dottorblaster.it/path/to/image/logo.png">
+    -->
+
+  <title>
+    
+      Grab The Blaster &middot; di Alessio Biancalana
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/grabtheblaster.css">
+  <link rel="stylesheet" href="/public/font-awesome/css/font-awesome.min.css">
+
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700italic,700,400italic' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,700' rel='stylesheet' type='text/css' />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title="" href="https://dottorblaster.it/feed">
+</head>
+
+
+  <body>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=81489295682&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="container content">
+      <div class="masthead">
+        <h3 class="masthead-title">
+          <img src="/public/avatar-blaster.png" alt="Alessio Biancalana">
+          <a href="/" title="Home page">Grab The Blaster</a>
+          <small>di Alessio Biancalana</small>
+        </h3>
+        <div class="social-icons"><a href="/about/" title="About Me"><i class="fa fa-user-circle-o"></i></a> <a href="https://twitter.com/dottorblaster" title="Twitter - @dottorblaster"><i class="fa fa-twitter"></i></a> <a href="https://github.com/dottorblaster" title="GitHub - dottorblaster"><i class="fa fa-github"></i></a></div>
+      </div>
+
+      <div class="posts">
+  
+  <div class="post">
+    
+      <h2 class="post-title post-title-link">
+        <a href="https://medium.com/blackode/common-pitfalls-in-elixir-coding-a9f8a5db2877">
+          Trappole più comuni in Elixir
+        </a>
+        <a href="/2017/04/elixir-pitfalls/" title="permalink: Trappole più comuni in Elixir di Alessio Biancalana"><i class="fa fa-comments-o icon-commentary"></i></a>
+      </h2>
+    
+
+    <p>Recentemente mi sono appassionato molto ad <strong>Elixir</strong>, linguaggio funzionale che fa uso della <strong>Erlang VM</strong> per definire una piattaforma veramente versatile orientata ai processi isolati comunicanti via messaggi.</p>
+
+<p>In particolare questo post che ho letto di recente su Blackode mette in luce alcuni aspetti particolari del linguaggio con i quali chi non ha confidenza rischia di fare <strong>assunzioni un po’ troppo coraggiose</strong>.</p>
+
+<p>Un ottimo esempio:</p>
+
+<blockquote>
+  <p>We think that the result of <code class="language-plaintext highlighter-rouge">list ++ value</code> would be <code class="language-plaintext highlighter-rouge">[1,2,3,4,5,99]</code> but in general it will be <code class="language-plaintext highlighter-rouge">[1,2,3,4,5|99]</code>. This is a improper list. You cannot use <code class="language-plaintext highlighter-rouge">length</code> function over. In proper list, when you iterate over the list, the tail would be <code class="language-plaintext highlighter-rouge">[]</code> empty list. This is different with the improper list.</p>
+</blockquote>
+
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2017/04/ubuntu-torna-a-gnome/" title="Ubuntu, il ritorno a GNOME, e al diavolo la convergenza - di Alessio Biancalana">
+          Ubuntu, il ritorno a GNOME, e al diavolo la convergenza
+        </a>
+      </h1>
+      <span class="post-date">11 Apr 2017</span>
+    
+
+    <p><img src="https://camo.githubusercontent.com/b07bd2390cdd348e6404e46a97e3f35d2be5c25e/687474703a2f2f692e696d6775722e636f6d2f7444314f4251332e706e67" alt="Ubuntu Unity with Arc Teme" /></p>
+
+<p>Ti <strong>gratti la testa</strong> pensando che magari non hai letto bene i titoli dei feed una settimana fa, poi sgrani gli occhi, capisci che diamine accade, ti fai una risata, fai sedimentare, decidi di scrivere, ti interrompono, cancelli tutto, il lavoro entra a gamba tesa minando definitivamente la tua produttività di infimo scrittore.</p>
+
+<p>È così che dopo una settimana sei ancora lì a cercare le parole per commentare un evento del genere: <strong>Ubuntu abbandona Unity, e passa a GNOME</strong>. Dopo anni di scatole rotte con la convergenza, con questo e con quest’altro, e dopo aver creato un brand niente male con la propria fichissima (secondo alcuni) interfaccia grafica, tutto alle ortiche perché giustamente chi se ne frega della convergenza ora che l’ultima moda è l’IoT che <em>appizza</em> le informazioni nel cloud, il quale sicuramente è un business che per <strong>Linux</strong> funziona meglio.</p>
+
+<blockquote>
+  <p>We will shift our default Ubuntu desktop back to GNOME for Ubuntu 18.04 LTS.</p>
+</blockquote>
+
+<p>Ma è davvero così?</p>
+
+<h3 id="incertezze">Incertezze</h3>
+<p>Non si è capito poi molto di che cosa abbia intenzione di fare Canonical per <strong>Ubuntu 18.04 LTS</strong>, se non (per il momento) degli straordinari proclami su Unity e GNOME: quello che viene detto, è che in realtà “continueremo a sviluppare il miglior desktop di sempre”, ma non si capisce se questo sia riferibile a Unity 7 o all’esperienza desktop globale, <strong>integrando GNOME</strong> alla perfezione e applicando delle patch qua e là per far sentire gli utenti meno spaesati.</p>
+
+<blockquote>
+  <p>We will continue to produce the most usable open source desktop in the world, to maintain the existing LTS releases, to work with our commercial partners to distribute that desktop, to support our corporate customers who rely on it, and to delight the millions of IoT and cloud developers who innovate on top of it.</p>
+</blockquote>
+
+<p>Più di tutte le frasi sul futuro, questa ha attirato la mia attenzione in modo abbastanza coatto, lasciandomi incerto: è così vero che vengono abbandonati tutti i progetti relativi a Unity? L’alternativa è che <strong>Unity</strong> rimanga solamente come shell grafica, delegando tutto il comportamento sottostante a GNOME, che verrà reintegrato nel sistema operativo in maniera più pesante rispetto a come è già stato fatto sinora.</p>
+
+<p>In ancora un altro scenario, è possibile che Canonical lasci perdere <strong>Unity 8</strong>, e si concentri su Unity come shell grafica puramente detta, cotninuando quel filone di sviluppo, integrando gli stessi pezzi di GNOME che integra adesso; in questo contesto avrebbe comunque senso “we will shift our default Ubuntu desktop”, dato che significherebbe solo “signori, abbiamo cambiato idea per la prossima release, e grazie per tutto il pesce”.</p>
+
+<p><img src="http://www.omgubuntu.co.uk/wp-content/uploads/2016/04/ubuntu-gnome-default-apps.jpg" alt="Ubuntu GNOME" /></p>
+
+<p>Oppure ancora, come molti hanno già scritto, ed è importante notare che non sono stati smentiti da nessuno (anzi, Mark Shuttleworth stesso domenica ha <a href="http://www.omgubuntu.co.uk/2017/04/whats-next-ubuntu-desktop-mark-shuttleworth">avallato questa ipotesi</a>), Ubuntu passerà veramente a GNOME. Questo mi farebbe veramente molto piacere, perché la distribuzione Linux di Shuttleworth rientrerebbe nel “mainstream” delle distribuzioni Linux normali – per così dire – abbandonando lo sviluppo di un fattore realmente distintivo, concentrandosi sulle cose che non funzionano e migliorandole. Non solo per Ubuntu, ma per <strong>Linux in sé</strong>, marchio dal quale Ubuntu (al contrario di Android, possiamo dirlo) non è mai stata capace di affrancarsi del tutto. Ed è meglio così.</p>
+
+<h3 id="coopetition">Coopetition</h3>
+<p>In quest’ottica forse si potrà ricominciare a vedere Ubuntu come un <strong>contributor attivo della comunità</strong> e dell’upstream Linux principale. Questo upstream ad ora comprende un numero indefinito di “cose” tra cui le principali, Linux/Xorg/Wayland/KDE/GNOME – e basta. <strong>Mir</strong>, ad esempio, non ha mai visto vera luce e non ha mai cercato di ritagliarsi uno spazio in questo ecosistema, preferendo stare al margine. Data anche l’ingerenza di Red Hat, sicuramente queste sono scelte che non pagano, mentre è molto più virtuoso cercare di contribuire all’ecosistema Wayland con il proprio compositor, con i <strong>propri bugfix</strong>, in definitiva con il proprio codice.</p>
+
+<p>Per gli anni a venire, mi auguro di rivedere <strong>Ubuntu in prima fila per Linux su desktop</strong>, esattamente come gli anni passati, ma senza schierarsi a parte con un brand diverso dicendo “noi siamo più fighi”, perché tanto Linux non credo che abbia bisogno di questo. Non ne ha bisogno e non ne avrà mai bisogno perché non è così che l’ecosistema è stato generato, e non è decisamente così che il segmento microscopico mondiale di utenza Linux vede ciò che è necessario.</p>
+
+<p>Piuttosto, a me non fanno impazzire le performance delle animazioni di <strong>Mutter</strong>, il window manager di GNOME Shell. Magari Canonical potrebbe contribuire con delle patch.</p>
+
+<p>P.S.: <a href="http://www.marcogusionsusai.com/">Marco Usai</a> mi ha mandato uno splendido audio col suo virilissimo accento sardo per spingermi a pubblicare questo post. Purtroppo nella prima stesura ho dimenticato di menzionarlo.</p>
+
+<p><em>Pics courtesy of <a href="http://www.omgubuntu.co.uk/">OMG! Ubuntu</a> and <a href="https://github.com/horst3180/Arc-theme/">Arc Theme’s GitHub</a></em></p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2017/03/codemotion-rome-2017/" title="Codemotion Rome 2017 – inseguire elefanti 🐘 fino alla luna 🌝 - di Alessio Biancalana">
+          Codemotion Rome 2017 – inseguire elefanti 🐘 fino alla luna 🌝
+        </a>
+      </h1>
+      <span class="post-date">30 Mar 2017</span>
+    
+
+    <p><img src="https://scontent-mxp1-1.xx.fbcdn.net/v/t31.0-8/17493187_1426673517354952_3696839757769955049_o.jpg?oh=92a9d2a10151882f3983a657086ee224&amp;oe=5997AA0E" alt="Codemotion Rome 2017 - To the Moon" /></p>
+
+<p>Come al solito volevo scrivere prima questo post, ma in questo periodo sembro avere un backlog abbastanza scombinato (e i capelli un po’ dritti). Questa scombinatezza di piani però non mi ha distolto dall’andare lo scorso weekend al Codemotion, e farmi avvolgere dall’amicizia di tante persone che non vedevo da tantissimo tempo, dal calore di chi vedo spesso a Roma, ma soprattutto dalla <strong>preparazione degli speaker</strong> di cui quest’anno mi sono goduto i talk.</p>
+
+<p>Non so se è per qualche ragione particolare, ma quest’anno per me è stato <strong>il Codemotion più bello di tutti</strong>. Forse ho sentito di più la mia missione di “portatore di novità” in quanto a bagaglio culturale aziendale, forse effettivamente gli speaker di quest’anno avevano qualcosa in più (vero <a href="https://twitter.com/CodemotionIT/status/845332514986246144">Luca</a>? Vero <a href="https://twitter.com/CodemotionIT/status/845664742370922499">Matteo</a>?), o forse semplicemente sotto alcuni punti di vista ero <strong>più rilassato</strong> tanto da riuscire a godermi meglio l’evento, ma nessun Codemotion mai fatto supera per me quello di quest’anno.</p>
+
+<p><img src="https://scontent-mxp1-1.xx.fbcdn.net/v/t31.0-8/17311011_1427034813985489_1882145759412928618_o.jpg?oh=6ea6eab74f9cf6ea902230dfc9eeb9c1&amp;oe=5955DED0" alt="Codemotion è anche vedere cirpo incantato in questo modo" /></p>
+
+<h3 id="che-cosa-ho-seguito">Che cosa ho seguito</h3>
+<p>Molto del valore che ha avuto per me la conferenza quest’anno sicuramente lo devo agli speech che ho scelto di seguire, e con un pizzico di fortuna (può capitare il talk leggermente fiacco) ho piazzato tutte le mie scommesse sui cavalli giusti, nonché ovviamente su persone che mi hanno fatto portare a casa un <strong>bagaglio clamoroso di conoscenze e sentimenti</strong>.</p>
+
+<p>Nello specifico, e in rigoroso ordine cronologico:</p>
+
+<ul>
+  <li><strong>Giorgio Natili - Unethical JavaScript</strong>: La voce sexy di Giorgio mista al suo accento “peggiore di Mario” (parole sue) di solito è sinonimo di qualità. Anche questa volta non mi ha deluso, parlando di best practice miste a un po’ di ultimo grido per scrivere codice leggibile facendo un po’ meno gli hipster e un po’ di più i ragazzi gentili nei confronti dei colleghi che dovranno mantenere le nostre applicazioni. Messaggio principale: “Scrivi sempre il codice come se il prossimo maintainer fosse un pazzo psicopatico che sa dove vivi”.</li>
+  <li><strong>Luca Lanziani - Introduzione a NodeJS</strong>: Durante il meetup preserale della meravigliosa community di <a href="http://romajs.org/">RomaJS</a> (di cui <a href="http://dottorblaster.it/2017/03/chatops-botstation-romajs/">qui</a> alcuni esempi di figaggine) Luca ha presentato le basi per scrivere Javascript sul server senza paura e con un minimo di cognizione di causa. La cosa interessante è che era stata preventivata un’introduzione un pelo più profonda (e interattiva), cosa andata improvvisamente a monte visti due fattori: l’aula pienissima di persone, e il fatto che in pochi in realtà si erano già confrontati con NodeJS anche solo in maniera embrionale. Rispolverare le basi è sempre interessante, bisognerebbe farlo periodicamente con ogni tecnologia o framework, e date queste premesse anche i più senior hanno potuto (imho) portare comunque a casa un valore aggiunto.</li>
+  <li><strong>Russ Olsen - To The Moon</strong>: Troppo inspirational anche per una track inspirational. Russ Olsen ha descritto il percorso dalla terra alla luna, le decisioni strategiche che hanno condotto a questo traguardo, gli ostacoli, e le storie di uomini che hanno gettato il cuore oltre quegli ostacoli. Ho pianto come un vitello, e ho anche riscoperto il motivo per cui faccio quello che faccio, ogni giorno.</li>
+  <li><strong>Luciano Mammino - Universal Javascript Web Applications with React</strong>: Non avevo mai visto uno speech di Luciano, è molto bravo e ha introdotto un concetto interessante, demistificando il concetto di Universal Javascript (ossia il codice che può essere eseguito in maniera indiscriminata lato server e lato browser), mostrando come attraverso una serie di best practice e facendo riferimento a determinate librerie si possa raggiungere questo risultato con poco sforzo.</li>
+  <li><strong>Ronnie Chen - Staying Alive: Patterns for Failure Management From the Bottom of the Ocean</strong>: Rimanendo nella stessa aula, ho avuto il piacere di seguire Ronnie Chen, Data Engineer di Slack che ha parlato di pattern per la gestione del fallimento, facendo riferimento a uno degli oggetti più pericolosi per chi fa il sub, ovvero il rebreather. Prendendo spunto dalle procedure di emergenza in caso di malfunzionamento dei rebreather, e dalle best practice (come le checklist pre-immersione) per verificare in maniera preventiva l’operatività di questi, Ronnie ha illustrato come portare questi pattern all’interno di una tech company. Il paragone tra un server sotto botta e un rebreather che ama far scherzi è stato particolarmente efficace.</li>
+  <li><strong>Nicola Iarocci - RESTful Services Made Easy: The Eve REST API Framework</strong>: Il talk di Nicola è stato un hands-on interessante su un framework che ha sviluppato lui per servizi web REST in Python. A parte l’apprezzatissima scelta tecnica di basarsi su Flask per gestire le richieste agli endpoint, mi è risultata veramente efficace la strategia di far gestire praticamente qualsiasi cosa a livello di configurazione, dando la possibilità al programmatore di inserirsi nel ciclo di vita della API solo quando ne ha realmente bisogno. In questo modo secondo me il time to market si abbassa di un casino di tempo.</li>
+  <li><strong>Matteo Manchi - React Native for multi-platform mobile applications</strong>: Non avevo mai approcciato le applicazioni Android o iOS, se non per qualche ora totale della mia vita. React Native sembra un buon approccio allo sviluppo mobile per massimizzare la condivisione del codice su più piattaforme, e riuscire comunque a non perderci in performance renderizzando in ogni caso componenti grafici nativi. Matteo poi, come speaker, è veramente bestiale, tiene l’attenzione del pubblico e qualsiasi concetto lo esprime in maniera molto chiara, senza fronzoli, e sempre con qualche battutina che alleggerisce il clima. Come ultimo speech è stato veramente una boccata d’aria fresca, e non ho avvertito minimamente la pesantezza di tutta la conferenza sulle spalle. Plus: appena uscito volevo andare a scrivere JS per mobile. 😂</li>
+  <li><strong>Alberto Brandolini - Chasing Elephants</strong>: Alberto è stato un keynoter veramente tosto. Il suo talk è stato controverso, perché da un lato ha celebrato ancora una volta il “perché lo facciamo”, dall’altro mi ha fatto venire un po’ di depressione specialmente con le sue frasi riguardo il fatto che nessuna azienda italiana ha mai visto un senior developer in faccia. Sono tendenzialmente d’accordo, e questo mi intristisce molto. Anche qui un bagaglio molto interessante da portare a casa: “good developers go where good developers are; good developers are compulsive learners”.</li>
+</ul>
+
+<p><img src="https://scontent-mxp1-1.xx.fbcdn.net/v/t31.0-8/16487438_1427033990652238_536123441536884459_o.jpg?oh=370bcc20d2f536bd9ef783ffd956c5bf&amp;oe=5952B5DB" alt="Alberto Brandolini - Chasing Elephants at Codemotion 2017" /></p>
+
+<h3 id="il-pelo-nelluovo">Il pelo nell’uovo</h3>
+<p>“Ma ha anche dei difetti” è un meme che mi fa sempre ridere. E anche questo Codemotion, come quelli passati, e come la <strong>Panda 4x4</strong>, ha anche i suoi difetti. Difetti minimi, per carità, ma vale la pena andare a trovare il pelo nell’uovo per evitare lo status quo, no? 😇</p>
+
+<p>In realtà come miglioramento marginale quello che ho potuto vedere è che molto della conferenza era spostato sul lato architetturale dello sviluppo di un’applicazione, o sul frontend. Una cosa a cui mi piacerebbe assistere sarebbe una maggior <strong>diversificazione tra le piattaforme</strong> utilizzate, mentre il feeling di quello che propone la comunità (che mi rendo conto che non sia esattamente controllabile da Codemotion) è sempre un po’ “Javascript, Java - e poi ci sono i soliti ignoti tipo Golang e Elixir”.</p>
+
+<p>Mi rendo conto che sia meno appetibile, e che vada contro i miei stessi interessi, ma a me piacerebbe vedere anche <strong>altri tipi</strong> di informatici come gli esperti di networking confrontarsi a Codemotion, eventualmente a scapito di Javascript che quest’anno ha avuto una track dedicata.</p>
+
+<p>D’altra parte mi fa piacere che una tecnologia che mi piace tanto come questa abbia una track tutta sua e un <strong>percorso privilegiato</strong>… forse un po’ troppo? Dopo questa critica, in ogni caso, sono sicuro che <a href="https://twitter.com/guidoxx">Guido</a> mi verrà a prendere per un orecchio in ufficio 😂</p>
+
+<h3 id="ending-theme">Ending theme</h3>
+<p>Siamo arrivati in fondo. Spero che Codemotion continui così, è una grande conferenza con i suoi punti di forza e le sue contraddizioni. Mi fa piacere che in molti continuino a frequentarla, e che ormai sia il punto di riferimento in Italia. Al di là dell’aspetto tecnico, è anche un modo per <strong>incontrare tantissimi amici</strong> che altrimenti non vedrei mai, e un momento per dire “ok, stacco gli occhi dal monitor”.</p>
+
+<p>Al prossimo Codemotion 😎</p>
+
+<p><em>Images courtesy of <a href="https://www.facebook.com/pg/Codemotion.Italy/photos/?tab=albums">Codemotion</a>. Thanks guys!</em></p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2017/03/chatops-botstation-romajs/" title="ChatOps, Botstation, e un momento di relax con RomaJS - di Alessio Biancalana">
+          ChatOps, Botstation, e un momento di relax con RomaJS
+        </a>
+      </h1>
+      <span class="post-date">26 Mar 2017</span>
+    
+
+    <p>Nell’ultimo mese ho avuto a che fare con un po’ di <strong>grattacapi interessanti</strong>; in particolare, con il mio nuovo team ci siamo trovati nella condizione antipatica di dover svolgere alcuni task ripetitivi senza che tutti conoscessero esattamente le operazioni da svolgere e i comandi da dare in pasto alle macchine.</p>
+
+<p>Per questo motivo ho deciso di introdurre un po’ di pratiche <strong>ChatOps</strong> (<a href="https://www.pagerduty.com/blog/what-is-chatops/">qui</a> qualche informazione in più), in modo da avere un bot a disposizione che mi consentisse di dedicarmi alle cose importanti, senza essere infastidito dal “come si fa”, da una miriade di cose ripetitive, e così via. Il primo passo è stato studiare un po’ la piattaforma di Slack (che usiamo in <a href="http://uniquid.com/">UniquID</a>) e capire cosa potevo fare grazie alla libreria <code class="language-plaintext highlighter-rouge">slackbots</code> per NodeJS; il passo induttivo, invece, è stato dare forma a un <strong>piccolo minion</strong> che prendesse i comandi dal team e li trasformasse in azioni reali.</p>
+
+<p><img src="https://scontent-mxp1-1.xx.fbcdn.net/v/t31.0-8/17311204_1420403281365731_2398660245613338328_o.jpg?oh=82349afff59b02bebb132dfd63b819e4&amp;oe=59665D75" alt="Alessio Biancalana at RomaJS, ChatOps" /></p>
+
+<h3 id="chatops-è-divertimento">ChatOps è divertimento</h3>
+<p>Immediatamente mi sono accorto che a meno di qualche ritocco era tutto pronto: una forma simpatica del bot ne ha facilitato l’adozione da parte del team, che in meno di poche ore aveva già accolto il nuovo arrivato e il suo cervello artificiale con tanti sorrisi. Lui è ancora lì che fa cose per noi, quando gliele chiediamo, e ogni tanto aggiungiamo <strong>qualche funzione che potrebbe essere utile</strong> – insieme ad altre sicuramente più facete.</p>
+
+<p>Una cosa che ho notato è che adesso pur mantenendo un <strong>debito tecnico</strong> abbastanza elevato sulle attività sistemistiche, comunque il team è in grado di gestirle senza degli specialisti, senza frustrarsi, e avendo comunque nei casi peggiori una linea guida su come diavolo fare una determinata cosa, data proprio dal sorgente del bot.</p>
+
+<p>Codice sorgente che allo stato attuale, dopo un po’ di macchinazioni, è diventato all’incirca quello che segue:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">Botstation</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">botstation</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">bot</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Botstation</span><span class="p">.</span><span class="nx">Bot</span><span class="p">();</span>
+ 
+<span class="nx">bot</span><span class="p">.</span><span class="nx">config</span><span class="p">({</span>
+    <span class="na">key</span><span class="p">:</span> <span class="dl">'</span><span class="s1">xoxb-157105193143-eJdSjJRttSCU2DAd3IdAtBoi</span><span class="dl">'</span><span class="p">,</span>
+    <span class="na">name</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Dat Bot</span><span class="dl">'</span>
+<span class="p">});</span>
+ 
+<span class="nx">bot</span><span class="p">.</span><span class="nx">task</span><span class="p">({</span>
+    <span class="na">name</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Help</span><span class="dl">"</span><span class="p">,</span>
+    <span class="na">matcher</span><span class="p">:</span> <span class="dl">"</span><span class="s2">isMessage</span><span class="dl">"</span><span class="p">,</span>
+    <span class="na">content</span><span class="p">:</span> <span class="dl">"</span><span class="s2">!help</span><span class="dl">"</span><span class="p">,</span>
+    <span class="na">exec</span><span class="p">:</span> <span class="p">(</span><span class="nx">bot</span><span class="p">,</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">params</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="nx">bot</span><span class="p">.</span><span class="nx">postMessage</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">channel</span><span class="p">,</span> <span class="dl">'</span><span class="s1">Do you need help?</span><span class="dl">'</span><span class="p">,</span> <span class="nx">params</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">});</span>
+ 
+<span class="nx">bot</span><span class="p">.</span><span class="nx">start</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Bot started!</span><span class="dl">'</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<h3 id="botstation">Botstation</h3>
+<p>Il codice qui sopra non è campato in aria, bensì deriva da un lavoro di semplificazione che ho fatto su ciò che avevo in un momento precedente; ho realizzato infatti che non ci sono moltissimi framework per scrivere bot, così ho provato a buttarne giù uno mio, con una API architettata in modo da poter aggiungere quanti task mi servivano nascondendo tutta la (poca per il momento, a dir la verità) complessità di gestione del websocket, degli eventi del bot, e così via. Ho chiamato questa nuova creatura <strong>Botstation</strong>.</p>
+
+<p>Il prossimo passo che vorrei intraprendere è quello di rendere <a href="https://github.com/uniquid/botstation">Botstation</a> multipiattaforma, scrivendo un meccanismo per cui <strong>avendo a disposizione vari adapter</strong> (Slack, Telegram, Facebook) si riesca a mettere in piedi un chatbot senza sforzo nascondendo la complessità della diversità dei servizi e delle loro API. Solo che non ho tempo di farlo adesso 😁</p>
+
+<p>Fortunatamente, però, ho visto che i vari wrapper per le API di Telegram e compari sono orientati agli eventi nella stessa maniera.</p>
+
+<h3 id="romajs-chatops-in-compagnia-con-birra-e-taralli">RomaJS: ChatOps in compagnia con birra e taralli</h3>
+<p>Ho presentato questo piccolo lavoretto allo scorso <strong>RomaJS</strong> (<a href="http://romajs.org/">veniteci a trovare</a>!), credendo di fare solo da riempitivo perché non c’era nessun altro che portasse uno speech di livello. A sorpresa, invece, le persone sono rimaste abbastanza colpite sia dall’approccio ChatOps, fortemente orientato al cazzeggio inter-team, sia dalla facilità con cui è possibile scrivere un chatbot – con o senza Botstation, che ora come ora funge solo da wrapper di Slackbots.</p>
+
+<p><img src="https://scontent-mxp1-1.xx.fbcdn.net/v/t31.0-8/17218644_1420408228031903_7820429815842101660_o.jpg?oh=d132ea1d3b01399acce68d17b27e8e13&amp;oe=59571A3D" alt="RomaJS: ChatOps in compagnia con birra e taralli" /></p>
+
+<p>Avrei dovuto scrivere questo post parecchi giorni fa, ma purtroppo sono state settimane complicate ed è stato veramente difficile mettere insieme i pezzi per via degli impegni di questi giorni. Un aspetto veramente stimolante è stato incontrare anche a <strong>Codemotion</strong>, in questi giorni appena passati, svariate persone che mi hanno chiesto come stesse andando lo sviluppo di Botstation e mi hanno esposto alcune domande e alcuni dubbi.</p>
+
+<p>Io ovviamente sono stato felicissimo dell’<strong>impatto</strong> (seppur piccolo) che sta avendo un framework del genere, che onestamente avevo iniziato a scrivere solamente come esercizio personale. 😎</p>
+
+<h3 id="quindi">Quindi?</h3>
+
+<p>Riassumendo:</p>
+
+<ul>
+  <li><strong>ChatOps</strong> vi aiuta a liberarvi del peso di task orientati alla sistemistica, ripetitivi, noiosi;</li>
+  <li>Un <strong>bot</strong> utile è sempre ben accolto; un bot con funzioni aggiuntive stupide, insensate e ironiche ancora di più perché migliora il morale</li>
+  <li><strong>Botstation</strong> vi può aiutare, se usate Slack. Presto vi potrà aiutare anche se usate altre piattaforme di messaggistica 👌</li>
+</ul>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h2 class="post-title post-title-link">
+        <a href="http://venturebeat.com/2017/03/09/google-launches-its-slack-competitor-hangouts-chat/">
+          Hangouts è appena diventato un competitor di Slack
+        </a>
+        <a href="/2017/03/hangouts-slack-competitor/" title="permalink: Hangouts è appena diventato un competitor di Slack di Alessio Biancalana"><i class="fa fa-comments-o icon-commentary"></i></a>
+      </h2>
+    
+
+    <blockquote>
+  <p>Using Google Hangouts is often about videoconferencing, but it’s also about collaboration in many different forms. Over the past few years, the company has evolved its strategy to one centered around team productivity and chat.</p>
+</blockquote>
+
+<p>E così comincia la transizione verso un nuovo tipo di terreno, assolutamente fertile, sul quale <strong>Hangouts</strong> si innesta e va a diventare un competitor diretto di Slack.</p>
+
+<p>Il guaio è che mentre l’applicazione di Google per quanto riguarda la conversazione scritta è in mezzo al guado da un bel po’ mancando occasioni e fallendo l’affermazione come <strong>tool di collaborazione di massa</strong>, altri hanno saputo mettersi in risalto in maniera più significante.</p>
+
+<p>Per esempio <strong>Slack</strong>, che ormai è il centro della comunicazione di parecchie community, di un sacco di aziende, e in generale di tutte quelle organizzazioni che preferiscono centralizzare il lavoro nello stesso posto in cui avviene tutta la comunicazione interna.</p>
+
+<p>Microsoft con <strong>Teams</strong> ha provato ad imporsi su questo terreno, avendo già un bel bacino di clienti Office, ma pare che non stia funzionando. La traction di Slack aumenta, e vedremo cosa sarà capace di tirare fuori Google oltre qualche bot e qualche caratteristica aggiuntiva.</p>
+
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/page/24"><i class="fa fa-chevron-circle-left"></i></a>
+  
+  
+    
+      <a class="pagination-item newer" href="/page/22"><i class="fa fa-chevron-circle-right"></i></a>
+    
+  
+</div>
+
+
+      <div class="footer">
+        <p>
+          &copy; Grab The Blaster is brought to you by Alessio Biancalana with <a href="http://jekyllrb.com/">Jekyll</a> and much ♥, under <a href="https://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC</a>.
+        </p>
+        <form class="search-form" action="/search" method="get">
+          <input type="text" placeholder="Cerca →" name="query">
+        </form>
+      </div>
+      <div class="webring-container">
+        <webring-banner>
+          <p>Member of <a href="https://retronerds.netlify.app"></a></p>
+          <a href="https://retronerds.netlify.app/prev">Previous</a>
+          <a href="https://retronerds.netlify.app/random">Random</a>
+          <a href="https://retronerds.netlify.app/next">Next</a>
+        </webring-banner>
+        <script async src="https://retronerds.netlify.app/embed.js" charset="utf-8"></script>
+      </div>
+    </div>
+
+  </body>
+</html>

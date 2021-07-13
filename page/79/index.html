@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <link rel="canonical" href="/page/79/" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- Enable Graph API for Facebook integration -->
+  <meta content="Grab The Blaster" property="og:site_name">
+  
+    <meta content="Home" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="Un blog nerd il giusto di Alessio Biancalana" property="og:description">
+  
+  
+    <meta content="https://dottorblaster.it/page/79/" property="og:url">
+  
+  
+  
+  
+
+  <!--   Enable Twitter Cards support through metadata, thanks to http://davidensinger.com/2013/04/supporting-twitter-cards-with-jekyll/ -->
+<!--   <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@site_username">
+  <meta name="twitter:creator" content="@creator_username">
+  
+    <meta name="twitter:title" content="Home">
+  
+  
+    <meta name="twitter:url" content="https://dottorblaster.it/page/79/">
+   -->
+  <!-- This is from @stammy -->
+<!--   <meta name="twitter:description" content="
+  {% for post in paginator.posts %}
+  
+    {% if post.layout == &quot;link&quot; %}
+      
+        
+          {{ post.title }}
+        
+        
+      
+    {% else %}
+      
+        
+          {{ ...">
+  
+    <meta name="twitter:image:src" content="https://dottorblaster.it/path/to/image/logo.png">
+    -->
+
+  <title>
+    
+      Grab The Blaster &middot; di Alessio Biancalana
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/grabtheblaster.css">
+  <link rel="stylesheet" href="/public/font-awesome/css/font-awesome.min.css">
+
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700italic,700,400italic' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,700' rel='stylesheet' type='text/css' />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title="" href="https://dottorblaster.it/feed">
+</head>
+
+
+  <body>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=81489295682&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="container content">
+      <div class="masthead">
+        <h3 class="masthead-title">
+          <img src="/public/avatar-blaster.png" alt="Alessio Biancalana">
+          <a href="/" title="Home page">Grab The Blaster</a>
+          <small>di Alessio Biancalana</small>
+        </h3>
+        <div class="social-icons"><a href="/about/" title="About Me"><i class="fa fa-user-circle-o"></i></a> <a href="https://twitter.com/dottorblaster" title="Twitter - @dottorblaster"><i class="fa fa-twitter"></i></a> <a href="https://github.com/dottorblaster" title="GitHub - dottorblaster"><i class="fa fa-github"></i></a></div>
+      </div>
+
+      <div class="posts">
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2012/07/arch-linux-addio-ad-rc-conf-kiss/" title="Arch Linux: addio ad rc.conf. KISS? - di Alessio Biancalana">
+          Arch Linux: addio ad rc.conf. KISS?
+        </a>
+      </h1>
+      <span class="post-date">28 Jul 2012</span>
+    
+
+    <p>In questi giorni ho letto una <strong>RFC</strong> all'interno della mailing list arch-dev, che si è poi tramutata col tempo in una solida realtà, malgrado la scelta snaturata che propone: <strong>Arch Linux</strong>, a causa del passaggio a <a href="http://en.wikipedia.org/wiki/Systemd">systemd</a>, dirà addio ad <strong>rc.conf</strong> come unica unità di configurazione del sistema operativo. Mi sono fatto un paio di domande sulla questione, e su come questo potesse riflettersi in maniera positiva su un utente Arch. Fortunatamente, poi, comprendo abbastanza lo spagnolo e il <a href="http://www.rafaelrojas.net/2012/07/27/adios-al-etcrc-conf/">post di Rafael Rojas</a> mi ha aiutato a capire meglio la situazione.</p>
+<h3>Che palle</h3>
+<p>Primo paragrafo in cui mi lamento. In fondo, ho sempre apprezzato <strong>Arch Linux</strong> per la sua semplicità e la sua monoliticità, che mi permette di avere un sistema configurato e funzionante, sapendo dove mettere le mani, in <strong>pochissimo tempo</strong>. Tramite la migrazione a systemd tutto questo viene messo in gioco ripudiando <strong>rc.conf</strong> come fonte unica del sapere, e rendendolo un mero file di gestione dei demoni, mentre il resto viene affidato non ad un altro file, ma ad una serie di <strong>microglobuline</strong> sparse per il filesystem; io che sono fondamentalmente una persona molto pigra credo che verrò salvato da tutta questa accidia solamente per intercessione della modalità splittata di <strong>vim</strong>.</p>
+<p>Pessimismo e fastidio.</p>
+<h3>KISS?</h3>
+<p>Come sopra. Quanto è <a href="http://it.wikipedia.org/wiki/KISS_(informatica)">KISS</a> qualcosa del genere? Il mio metro di paragone su queste piccolezze è sempre <strong>Gentoo Linux</strong>: non potrebbe esistere distro più complicata e soggetta alla frammentazione (nonostante <strong>make.conf</strong>), per quanto mi riguarda, quindi mi rifaccio sempre agli esempi dettatimi dall'esperienza. Purtroppo, la gestione attraverso microfile di configurazione diffusi un po' ovunque avviene anche sulla famosa distro di <strong>Robbins</strong>, e questo mi porta a pensare che non solo si stia andando verso un approccio meno KISS, ma che ci si stia dirigendo con una scelta del genere verso una strada che, dal <strong>KISS</strong>, non potrebbe essere più lontana.</p>
+<p><strong>KISS my ass</strong>, è proprio il caso di dirlo. :D</p>
+<p><img class="aligncenter" title="Linux Machine" src="http://farm3.staticflickr.com/2472/3797070188_ece79b25b3.jpg" alt="Linux Machine" width="500" height="333" /></p>
+<h3>Effetti collaterali positivi</h3>
+<p>Alcuni mi hanno accusato di essere sempre troppo indulgente con le scelte dei developer di <strong>Arch Linux</strong>, ma la verità è che qualsiasi cosa sia stata fatta fino ad ora, comunque hanno incontrato il mio consenso, anche rimuovendo l'installer grafico (<strong>AIF</strong>) e sostituendolo con degli script, per non parlare del link simbolico da /lib verso <strong>/usr/lib</strong>. Entrambe scelte discutibili, ma che seguono una filosofia di fondo che approvo e della quale mi faccio spesso portatore.</p>
+<p>Anche questa scelta come tutte ha degli effetti collaterali non negativi; come diceva un tizio famoso, la verità sta nel mezzo, e chi sono io per confutarlo? <strong>Arch Linux</strong> potrà quindi aderire in toto ad un nuovo standard, ed essere maggiormente apprezzata da chi si affanna per portare in maniera più indolore possibile l'ordine in quel caos che a volte si rivela essere il panorama <strong>Linux</strong> in generale.</p>
+<p>Con l'affermazione di un <a href="http://it.wikipedia.org/wiki/Init">sistema di init</a> standard de facto che interagisce in maniera così profonda con il sistema, e l'adozione di un software ormai maturo ma ancora agli albori per quanto riguarda la diffusione e gli sviluppi "futuri" come lo è <strong>systemd</strong>, mi sento orgoglioso di appartenere all'utenza e alla comunità di una distribuzione che si fa sempre scrupolo di rimanere aggiornata sia banalmente in tema di versioni del software, che in tema di adozioni di concetti (sempre a prescindere dal <strong>KISS</strong>).</p>
+<h3>Abbandonare Arch Linux</h3>
+<p>C'è chi magari troverà sin troppo fastidiosa questa scelta e deciderà che magari è venuta la volta buona di provare qualche altra <strong>distribuzione</strong>. È libero di farlo. Pur non gradendo io personalmente che <strong>rc.conf</strong> venga <del>"droppato"</del> reso non preferenziale (pardon) in maniera così brusca per una soluzione così suddivisa e per gente che - diciamocelo - non ha niente di meglio da fare che ravanare il proprio filesystem alla ricerca di tali <strong>follicoli di configurazione</strong>, in ogni caso apprezzo <strong>Arch Linux</strong> per l'approccio KISS applicato in tutti gli aspetti in cui una distribuzione Linux possa essere personalizzata.</p>
+<p>Continuerò quindi ad usarla felicemente. Sono comunque fortunato, e non vorrei essere nei panni di chi si è trovato ad installare in questi giorni: auguri, per leggervi tutto il manuale degli <strong>scriptini</strong> ci vuole voglia :D</p>
+<p><em>Photo courtesy of <a href="http://www.flickr.com/photos/telwink/3797070188/in/photostream/">telwink</a></em></p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2012/07/internet-la-liberta-despressione-quarantaquattro-parole-fila-sei-col-resto-di-due/" title="Internet e la libertà d'espressione: quarantaquattro parole in fila per sei col resto di due - di Alessio Biancalana">
+          Internet e la libertà d'espressione: quarantaquattro parole in fila per sei col resto di due
+        </a>
+      </h1>
+      <span class="post-date">25 Jul 2012</span>
+    
+
+    <p>Da questo meraviglioso <a href="http://blog.tagliaerbe.com/2012/07/internet-commenti-eccesso-democrazia.html">post di TagliaErbe</a>, mi permetto di fare la ripresa di uno stralcio:</p>
+<blockquote><p><em>Ciao,</em></p>
+<p>sono il proprietario del forum.<br />
+sono il prorietario del software dove il forum gira.<br />
+sono il proprietario della macchina (server) dove il software del server gira.<br />
+sono quello che paga la bolletta delle luce per alimentare il server.<br />
+sono quello che paga l’affitto dello spazio nella palazzina dove questa macchina risiede.<br />
+sono quello che paga la banda utilizzata, ho pagato anche i pochi byte del trasferimento di questo tuo post sul server.<br />
+li ho pagati io.</p>
+<p>Questo è un forum privato<br />
+su un server privato<br />
+di una società privata<br />
+che appartiene ad un privato.</p>
+<p>Al sottoscritto.</p>
+<p>Qui niente è giusto o sbagliato. Qui tutto o è rispettoso delle regole che io ho dato a questo forum per il bene generale, o non lo è.</p>
+<p>Tu non lo sei.</p>
+<p><em>Adieu.</em></p></blockquote>
+<p>Ritengo che a volte l'unico rimedio sia la <strong>rimozione coatta</strong> di certe figure dai propri "spazi di lavoro". Sono un editor, e di castronerie pubblicate tanto per dire anche nelle press che gestisco, effettivamente ce ne sono. Non so cosa effettivamente mi trattenga dal pubblicare un post simile un giorno di questi: spero solo che, come si dice a <strong>Roma</strong>, la pompa mi regga ancora per molto.</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2012/07/online/" title="Back online - di Alessio Biancalana">
+          Back online
+        </a>
+      </h1>
+      <span class="post-date">25 Jul 2012</span>
+    
+
+    <p>Nella giornata di ieri il datacenter che ospita questo blog è stato colpito da non so cosa, probabilmente la <strong>peste ner(d)a</strong>, e quindi sono stato offline per un bel po'. A seguito, una serie di cose che ho pensato, e che continuo a pensare mentre scrivo questo post per ragguagliarvi del fatto che, come potete constatare, sono tornato:</p>
+<ul>
+<li>Spero che Google non mi penalizzi le <strong>SERP</strong> per 24 ore e passa filate offline;</li>
+<li>Spero di riuscire a riportare tutto come era prima;</li>
+<li>Per ripristinare gli ultimi post mi sono fatto un <strong>buciodec**o</strong> così;</li>
+<li>Complimenti a <strong>HostingPerTe</strong> che mi ha risolto il problema in così poco tempo andando a ripescare un <strong>backup non fatto da me</strong> senza dirmi di arrangiarmi.</li>
+</ul>
+<p>E cose simili. Ovviamente complimentoni anche al sottoscritto che, come detto sopra, ha lavorato in maniera non indifferente greppando la cache di <strong>Google</strong> per riportare tutti i post mancanti al loro nido. Attualmente sto ripristinando le modifiche fatte al tema negli ultimi giorni, il resto è tutto nell'ovile, bene o male.</p>
+<p>Ad maiora.</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2012/07/velocizzare-lapertura-delle-applicazioni-su-kde/" title="Velocizzare l'apertura delle applicazioni su KDE - di Alessio Biancalana">
+          Velocizzare l'apertura delle applicazioni su KDE
+        </a>
+      </h1>
+      <span class="post-date">21 Jul 2012</span>
+    
+
+    <p>Effettivamente, uno dei difetti più grandi di <strong>KDE</strong> è l’apertura non velocissima di alcune applicazioni. Mi dispiace vedere una macchina piuttosto carrozzata far “finta” di arrancare a volte, quando in realtà è solo questione di applicare un po’ di <strong>tweaking</strong>. È così che ho ritrovato <a href="http://kdemonkey.blogspot.it/2008_04_01_archive.html">un post</a> sepolto nel web che spiega come il meccanismo di <strong>caching</strong> di alcuni componenti di KDE sia attivato solo in circostanze specifiche.</p>
+<p style="text-align: center;"><img class="aligncenter" title="Unix Toolbox" src="http://farm1.staticflickr.com/26/45345136_dadb433659.jpg" alt="Unix Toolbox" width="500" height="375" /></p>
+<p>Il comando magico:</p>
+<p><code>mkdir -p ~/.compose-cache</code></p>
+<p>Crea una directory chiamata <strong>.compose-cache</strong> (giustappunto) che si occupa di contenere tutti i dati sul caching di alcuni campi di ricerca e di digitazione. Con questo piccolo trucchetto sono riuscito ad aumentare sensibilmente le prestazioni di <a href="http://kde.org/">KDE</a>; non capisco come mai questo comportamento, presente da anni, non sia ancora reso <strong>predefinito</strong>.</p>
+<p>La spiegazione, dal post:</p>
+<blockquote><p>Per i curiosi riguardo quello che succede, questa cosa abilita un’ottimizzazione che Lubos [...] ha introdotto tempo fa e che, riscritta, è stata integrata in libx11. Normalmente allo startup le applicazioni leggono le informazioni sui metodi di input da /usr/share/X11/locale/&lt;your locale&gt;/Compose. Questo file Compose è veramente lungo (&gt;5000 linee per il file en_US.UTF-8) e ci vuole tempo perché venga processato. Libx11 può creare una cache delle informazioni parsare che sia più veloce da leggere sequenzialmente; userà una cache esistente in /var/cache/libx11/compose o ne creerà una in ~/.compose-cache se la directory esiste già.</p></blockquote>
+<p>Piccolo escamotage raccomandato a chiunque usi <strong>KDE</strong>. Non ve ne pentirete.</p>
+<p><em>Photo courtesy of <a href="http://www.flickr.com/photos/harshadsharma/45345136/in/photostream/">Harshad Sharma</a></em></p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2012/07/di-blog-dave-winer-apprezzamenti/" title="Di blog, Dave Winer, e apprezzamenti - di Alessio Biancalana">
+          Di blog, Dave Winer, e apprezzamenti
+        </a>
+      </h1>
+      <span class="post-date">17 Jul 2012</span>
+    
+
+    <p>Una delle persone che più stimo nell’intero panorama di innovatori tecnologici, quasi più di <strong>Linus Torvalds</strong>, Tim Berners-Lee e Bill Gates (non potete negare che non sia una figura di spicco, e lo dico mio malgrado da Linux user), è <strong>Dave Winer</strong>. Letterale inventore del blogging, ricercatore sicuramente nei fatti che ha scoperto l’<strong>RSS</strong> ed i suoi molteplici utilizzi – dal semplice blogging al podcasting – è una figura che soprattutto di recente mi ispira più di tanti altri.</p>
+<p style="text-align: center;"><img class="aligncenter" title="Dave Winer" src="http://farm2.staticflickr.com/1326/1068514071_1dcad467ce.jpg" alt="Dave Winer" width="500" height="348" /></p>
+<p>Ho particolarmente apprezzato, e penso che continuerò ad apprezzare dal mio <strong>Android</strong> tramite Pocket <a href="http://gizmodo.com/5926282/why-dave-winer-invented-the-blog">questo articolo di Gizmodo</a>, “Why Dave Winer invented the blog”, che descrive le circostanze praticamente casuali che portarono ormai un numero moderato di anni fa Winer a sedersi, davanti al suo terminale, e “inventare” il <strong>blog</strong>. Il post. La <em>really simple syndacation</em>.</p>
+<p>Devo tanto a <strong>Dave Winer</strong>, perché alla fine se oggi sono quello che sono (come editor e giornalista), e posso permettermi di blaterare quanto voglio su uno spazio vettoriale di righe e paragrafi, lo devo principalmente a lui. Spero di incontrarlo, prima o poi. Senz’altro gli offrirei una birra.</p>
+<p><em>Photo courtesy of <a href="http://www.flickr.com/photos/laughingsquid/1068514071/">Scott Beale</a></em></p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/page/80"><i class="fa fa-chevron-circle-left"></i></a>
+  
+  
+    
+      <a class="pagination-item newer" href="/page/78"><i class="fa fa-chevron-circle-right"></i></a>
+    
+  
+</div>
+
+
+      <div class="footer">
+        <p>
+          &copy; Grab The Blaster is brought to you by Alessio Biancalana with <a href="http://jekyllrb.com/">Jekyll</a> and much ♥, under <a href="https://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC</a>.
+        </p>
+        <form class="search-form" action="/search" method="get">
+          <input type="text" placeholder="Cerca →" name="query">
+        </form>
+      </div>
+      <div class="webring-container">
+        <webring-banner>
+          <p>Member of <a href="https://retronerds.netlify.app"></a></p>
+          <a href="https://retronerds.netlify.app/prev">Previous</a>
+          <a href="https://retronerds.netlify.app/random">Random</a>
+          <a href="https://retronerds.netlify.app/next">Next</a>
+        </webring-banner>
+        <script async src="https://retronerds.netlify.app/embed.js" charset="utf-8"></script>
+      </div>
+    </div>
+
+  </body>
+</html>

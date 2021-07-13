@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <link rel="canonical" href="/2016/04/gitlab-contribution/" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- Enable Graph API for Facebook integration -->
+  <meta content="Grab The Blaster" property="og:site_name">
+  
+    <meta content="I patched GitLab and I liked it" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="Un software che apprezzo veramente tanto (e chi segue questo blog lo sa visto che ne parlo abbastanza spesso) è GitLab. Visto che ultimamente ho avuto anche un’esperienza ravvicinata con GitLab in un ambiente enterprise con migliaia di push giornaliere, ho imparato anche un po’ più profondamente com’è fatto il progetto in sé: con questo presupposto, ho deciso di inviare un contributo scemo.Non mi piaceva infatti la disposizione di alcuni elementi grafici, e secondo me mancava un margine in un..." property="og:description">
+  
+  
+    <meta content="https://dottorblaster.it/2016/04/gitlab-contribution/" property="og:url">
+  
+  
+    <meta content="2016-04-08T17:35:04+00:00" property="article:published_time">
+    <meta content="https://dottorblaster.it/about/" property="article:author">
+    <meta content="https://dottorblaster.it/opengraph/3969c097feafe1ece1813590b093ecac3a781d82.png" property="og:image">
+  
+  
+    
+    <meta content="Tech" property="article:section">
+    
+  
+  
+    
+    <meta content="gitlab" property="article:tag">
+    
+    <meta content="git" property="article:tag">
+    
+  
+
+  <!--   Enable Twitter Cards support through metadata, thanks to http://davidensinger.com/2013/04/supporting-twitter-cards-with-jekyll/ -->
+<!--   <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@site_username">
+  <meta name="twitter:creator" content="@creator_username">
+  
+    <meta name="twitter:title" content="I patched GitLab and I liked it">
+  
+  
+    <meta name="twitter:url" content="https://dottorblaster.it/2016/04/gitlab-contribution/">
+   -->
+  <!-- This is from @stammy -->
+<!--   <meta name="twitter:description" content="
+
+Un software che apprezzo veramente tanto (e chi segue questo blog lo sa visto che ne parlo abbastanza spesso) è GitLab. Visto che ultimamente ho avuto anche un’esperienza ravvicinata con GitLab i...">
+  
+    <meta name="twitter:image:src" content="https://dottorblaster.it/path/to/image/logo.png">
+    -->
+
+  <title>
+    
+      I patched GitLab and I liked it &middot; Grab The Blaster
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/grabtheblaster.css">
+  <link rel="stylesheet" href="/public/font-awesome/css/font-awesome.min.css">
+
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700italic,700,400italic' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,700' rel='stylesheet' type='text/css' />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title="" href="https://dottorblaster.it/feed">
+</head>
+
+
+  <body>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=81489295682&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="container content">
+      <div class="masthead">
+        <h3 class="masthead-title">
+          <img src="/public/avatar-blaster.png" alt="Alessio Biancalana">
+          <a href="/" title="Home page">Grab The Blaster</a>
+          <small>di Alessio Biancalana</small>
+        </h3>
+        <div class="social-icons"><a href="/about/" title="About Me"><i class="fa fa-user-circle-o"></i></a> <a href="https://twitter.com/dottorblaster" title="Twitter - @dottorblaster"><i class="fa fa-twitter"></i></a> <a href="https://github.com/dottorblaster" title="GitHub - dottorblaster"><i class="fa fa-github"></i></a></div>
+      </div>
+
+      <div class="post">
+  <h1 class="post-title">I patched GitLab and I liked it</h1>
+  <span class="post-date">08 Apr 2016</span>
+  <p><img src="http://i64.tinypic.com/f210r5.png" alt="GitLab commit" /></p>
+
+<p>Un software che apprezzo veramente tanto (e chi segue questo blog lo sa visto che ne parlo abbastanza spesso) è <strong>GitLab</strong>. Visto che ultimamente ho avuto anche un’esperienza ravvicinata con GitLab in un ambiente enterprise con migliaia di push giornaliere, ho imparato anche un po’ più profondamente com’è fatto il progetto in sé: con questo presupposto, ho deciso di inviare un contributo scemo.</p>
+
+<p>Non mi piaceva infatti la disposizione di alcuni elementi grafici, e secondo me mancava un margine in un punto preciso; così mi sono letto le contribution guideline, e ho fatto una piccolissima modifica, sottoponendola poi tramite <a href="https://gitlab.com/gitlab-org/gitlab-ce/merge_requests/3505">merge request</a> al core team.</p>
+
+<p>Devo dire che tutto il <strong>processo</strong> mi ha lasciato molto soddisfatto; grazie alla continuous delivery pipeline che hanno in casa loro, oggi ho visto applicato in produzione il cambiamento che ho apportato (una scemenza, ma ne sono comunque fiero :-D), e a valle di questo processo di contribuzione conclusosi nel migliore dei modi mi sento di fare un po’ di appunti:</p>
+
+<ul>
+  <li>Il <strong>triaging delle merge request</strong> è lento, ma questo dipende anche dal fatto che ci sono “pochi” addetti, mentre il numero di contributor esterni è abbastanza alto;</li>
+  <li>Le <strong>contribution guideline</strong> indicano come processo ideale quello di fare fork, creare un <strong>feature branch</strong>, poi chiedere la merge request dal feature branch in master. Secondo me questo non è ottimale, dato che la creazione del feature branch per modifiche di poco conto (come la mia) non inficia la review della richiesta che viene fatta dopo ed è solo uno step in più che appesantisce il workflow;</li>
+  <li>Mi è stato chiesto di assicurarmi che <strong>la build</strong> del mio commit fosse verde. Questo è sacrosanto, viceversa secondo me non è sacrosanto che uno step della pipeline di testing restituisca un <strong>esito non deterministico</strong>.</li>
+</ul>
+
+<p>Tenendo a mente soprattutto l’ultima pillola e fissandola come un <strong>antipattern dell’ambito QA/operations</strong>, sono molto contento del risultato.</p>
+
+<p>Daje :-)</p>
+
+</div>
+
+<div class="social-section">
+  <div class="fb-like" data-href="/2016/04/gitlab-contribution/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-via="dottorblaster" data-lang="it" data-dnt="true">Tweet</a>
+</div>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'blasterhome'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/06/domain-modeling-made-functional-recensione/">
+            Recensione: Domain Modeling Made Functional, di Scott Wlaschin
+            <small>08 Jun 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/05/piccolo-kubernetes-production-ready-k3s/">
+            Kubernetes production-ready in piccolo: deployare un mini-cluster K3s
+            <small>18 May 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/04/adoro-kubernetes/">
+            Io adoro Kubernetes
+            <small>25 Apr 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+      <div class="footer">
+        <p>
+          &copy; Grab The Blaster is brought to you by Alessio Biancalana with <a href="http://jekyllrb.com/">Jekyll</a> and much ♥, under <a href="https://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC</a>.
+        </p>
+        <form class="search-form" action="/search" method="get">
+          <input type="text" placeholder="Cerca →" name="query">
+        </form>
+      </div>
+      <div class="webring-container">
+        <webring-banner>
+          <p>Member of <a href="https://retronerds.netlify.app"></a></p>
+          <a href="https://retronerds.netlify.app/prev">Previous</a>
+          <a href="https://retronerds.netlify.app/random">Random</a>
+          <a href="https://retronerds.netlify.app/next">Next</a>
+        </webring-banner>
+        <script async src="https://retronerds.netlify.app/embed.js" charset="utf-8"></script>
+      </div>
+    </div>
+
+  </body>
+</html>

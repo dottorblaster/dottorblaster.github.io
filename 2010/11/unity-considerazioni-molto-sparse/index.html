@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <link rel="canonical" href="/2010/11/unity-considerazioni-molto-sparse/" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- Enable Graph API for Facebook integration -->
+  <meta content="Grab The Blaster" property="og:site_name">
+  
+    <meta content="Unity: considerazioni (molto) sparse" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="A quanto pare alla fine è successo: il famoso Light Desktop alla fine sarà veramente incluso in Ubuntu come ambiente di default. È un colpo. Per chi? Per tutti. Per me, che uso Ubuntu per alcune cose, per mia madre, per mia sorella, per tutti gli utenti. È dura vedersi cambiare l'interfaccia utente davanti agli occhi, così di punto in bianco. Infatti al primo impatto con questa news ho pensato: Shuttleworth e i suoi accoliti sono diventati matti; questa è la volta buona che affondiamo Linux c..." property="og:description">
+  
+  
+    <meta content="https://dottorblaster.it/2010/11/unity-considerazioni-molto-sparse/" property="og:url">
+  
+  
+    <meta content="2010-11-02T22:55:21+00:00" property="article:published_time">
+    <meta content="https://dottorblaster.it/about/" property="article:author">
+    <meta content="https://dottorblaster.it/opengraph/1d2b1a0980e26ff4f9e28ad1baebffd00e4eeaba.png" property="og:image">
+  
+  
+    
+    <meta content="Linux" property="article:section">
+    
+  
+  
+    
+    <meta content="Ubuntu" property="article:tag">
+    
+    <meta content="GNOME" property="article:tag">
+    
+    <meta content="PPA" property="article:tag">
+    
+    <meta content="XFCE" property="article:tag">
+    
+    <meta content="OSX" property="article:tag">
+    
+  
+
+  <!--   Enable Twitter Cards support through metadata, thanks to http://davidensinger.com/2013/04/supporting-twitter-cards-with-jekyll/ -->
+<!--   <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@site_username">
+  <meta name="twitter:creator" content="@creator_username">
+  
+    <meta name="twitter:title" content="Unity: considerazioni (molto) sparse">
+  
+  
+    <meta name="twitter:url" content="https://dottorblaster.it/2010/11/unity-considerazioni-molto-sparse/">
+   -->
+  <!-- This is from @stammy -->
+<!--   <meta name="twitter:description" content="A quanto pare alla fine è successo: il famoso Light Desktop alla fine sarà veramente incluso in Ubuntu come ambiente di default. È un colpo. Per chi? Per tutti. Per me, che uso Ubuntu per alcune co...">
+  
+    <meta name="twitter:image:src" content="https://dottorblaster.it/path/to/image/logo.png">
+    -->
+
+  <title>
+    
+      Unity: considerazioni (molto) sparse &middot; Grab The Blaster
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/grabtheblaster.css">
+  <link rel="stylesheet" href="/public/font-awesome/css/font-awesome.min.css">
+
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700italic,700,400italic' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,700' rel='stylesheet' type='text/css' />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title="" href="https://dottorblaster.it/feed">
+</head>
+
+
+  <body>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=81489295682&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="container content">
+      <div class="masthead">
+        <h3 class="masthead-title">
+          <img src="/public/avatar-blaster.png" alt="Alessio Biancalana">
+          <a href="/" title="Home page">Grab The Blaster</a>
+          <small>di Alessio Biancalana</small>
+        </h3>
+        <div class="social-icons"><a href="/about/" title="About Me"><i class="fa fa-user-circle-o"></i></a> <a href="https://twitter.com/dottorblaster" title="Twitter - @dottorblaster"><i class="fa fa-twitter"></i></a> <a href="https://github.com/dottorblaster" title="GitHub - dottorblaster"><i class="fa fa-github"></i></a></div>
+      </div>
+
+      <div class="post">
+  <h1 class="post-title">Unity: considerazioni (molto) sparse</h1>
+  <span class="post-date">02 Nov 2010</span>
+  <p>A quanto pare alla fine è successo: il famoso <strong>Light Desktop</strong> alla fine sarà veramente incluso in Ubuntu come ambiente di default. È un colpo. Per chi? Per tutti. Per me, che uso <strong>Ubuntu</strong> per alcune cose, per mia madre, per mia sorella, per tutti gli utenti. È dura vedersi cambiare l'interfaccia utente davanti agli occhi, così di punto in bianco. Infatti al primo impatto con questa news ho pensato: Shuttleworth e i suoi accoliti sono diventati matti; questa è la volta buona che affondiamo Linux con tutte le scarpe.</p>
+<h3>Sicuri? ._.</h3>
+<p>Tuttavia, questo ha lati positivi e negativi: <strong>analizziamoli</strong>. Il primo argomento a favore di Unity Desktop è che <em>GNOME Shell attualmente fa cagare</em>. Eh già, se siete stitici GNOME Shell allo stato attuale può essere una mano santa per i vostri intestini, tanto che Alessia Marcuzzi con il suo Activia rimarrebbe disoccupata; la Shell infatti, mi è stato riferito da persone abbastanza in alto (aehm), è un po' in alto mare e a quanto pare fa un sacco di cose fighe ma... ermh... è <strong>un'accozzaglia</strong> di cose fighe. Dimenticate l'ordine che regna sovrano nelle interfacce gnomiche e immaginate un grosso polpettone di roba figa in salsa GTK3. Ecco. :|</p>
+<h3>Dimmi che window manager usi e ti dirò se fai schifo</h3>
+<p>La seconda cosa che mi fa preferire Unity a GNOME3 è che a quanto pare Canonical si è accorta dei gravi bachi di usabilità e spruzzi di letame che c'erano nell'Interfaccia per Esseri Umani e ha deciso di riparare: <strong>a partire da Mutter</strong>, quella specie di <em>meltin' pot tra Metacity e Clutter</em>, un window manager senza identità il cui destino è solo quello, a mia opinione e vedendone prestazioni e caratteristiche, di essere <strong>soppiantato</strong> in favore di alternative molto più prestanti, potenti, configurabili. Ebbene si, sto parlando di <strong>Compiz</strong>, il quale farà ufficialmente parte di Unity a tempo pieno: perchè gioisco? Perchè con i PC ormai siamo arrivati ad un punto dove le macchine che non supportano un compositor sono veramente poche, oltretutto il window management in Unity sarà proprio opera di Compiz 0.9, su cui praticamente tutti hanno spalato cacca, ma intanto grazie a lui potremo usufruire di compositing anche in 2D. E tutto ciò è bellissimo perchè Compiz rende Unity finalmente un'alternativa appetibile: dando un bel calcio assestato negli <em>obesi glutei</em> di Mutter, la lentezza di <strong>Unity</strong> (ereditata da GNOME Shell proprio in virtù dell'aberrante pezzo di software che è Mutter) si trasforma in una straordinaria velocità.</p>
+<h3>Dock ("Grande Giove!" - Ah no, quello era Doc)</h3>
+<p>Con ciò quindi, Unity si appresta ad essere una vera e propria <em>interfaccia strafiga</em>. Ma veramente eh, roba che gli sviluppatori si sono accorti che la dockbar sviluppata da loro era <em>leggermente per ipovedenti</em>, e anche se per ora non è prevista la possibilità di configurarla un po' a piacere proprio, comunque <strong>avrà almeno l'autohide</strong>, così nei nostri desktop non avremo le finestre che fanno le contorsioni per adattarsi a pixel e pixel rubati da quella cosa. Io sono un amante delle dock, se leggete i miei post lo sapete, però che cavolo: se fai un software come una dock devi farlo fatto bene, altrimenti non serve a nulla. È per questo che penso che entro qualche mese avremo anche su Unity una dock come si deve, con un pannello di configurazione e almeno la possibilità di decidere se avere icone per ipovedenti o no. :D</p>
+<h3>AppMenu aka GlobalMenubar, perchè si, perchè no</h3>
+<p>Aspetto su cui non mi esprimo: <strong>la global menubar</strong>. Non mi piace il globalmenù così come viene implementato da Canonical, anzi, così com'è uscito dall'editor del programmatore che l'ha fatto. Non dovrei dirlo perchè quel codice lo mantengo impacchettabile per Arch Linux (LOL) però è così. Ormai non posso nascondermi, a me piace l'interfaccia utente di <strong>OSX</strong>, quindi dovreste trovarmi immensamente favorevole a tutto ciò. Il fatto è che Aqua è il risultato di una serie di studi, e <strong>c'è una ragione</strong> se la menubar sta lì in alto: la ragione è che le funzionalità "menuistiche" dell'applicazione si integrano con le funzionalità "menuistiche" (che parola strana, neologismi figherrimi, tsk :P) del sistema, come un banale copia-incolla, o una funzione di ricerca. In Linux, o meglio in GNOME/Unity/KDE/XFCE questo non succede, quindi ditemi perchè caspio io dovrei andare a <strong>prendermi il disturbo</strong> di cambiare pure finestra per clickare una differente menubar. Non ha senso. Nè dal punto di vista dell'usabilità, nè dal punto di vista estetico. Mi consenta.</p>
+<h3>L'utenza? Ah si, quella cosa tra schermo e sedia...</h3>
+<p>Dopo questa sfilza di aspetti positivi per cui io vengo nelle mutande, dato che Canonical ha finalmente deciso di dotare il suo OS di <strong>una personalità</strong>, un po' copiata ma pur sempre una personalità, che probabilmente si ripercuoterà in parte sulla personalità di Linux in generale, tuttavia bisogna ritornare al punto primo con cui ho iniziato: ma... <strong>gli utenti</strong>? È vero, gli utenti di Ubuntu sono essenzialmente smanettoni o comunque persone che non si spaventano vedendo cose nuove, ma non è del tutto così, perchè se da un lato c'è chi è disfattista e non vede niente di buono in Linux sui desktop, c'è invece chi mi fa avere <strong>feedback estremamente positivi</strong> sull'adozione di Linux nel mondo, e in special modo di Ubuntu.</p>
+<p>Ora, con questo cambio di rotta preannunciato da Lucid e Maverick, <strong>Natty sarà il giro di boa</strong>: mia madre è un'entusiasta di Ubuntu e non me ne preoccupo, sicuramente gradirà la dockbar e l'approccio maggiormente incentrato sull'applicazione e non sulla finestra, ma gli altri? Tutti quelli che sono abituati a GNOME? Faccio un pronostico di sole tre parole: daje cor PPA (ovvero "vai col PPA" t.d. Bl@ster). Essì, sicuramente ci sarà uno sparuto utente che manterrà GNOME 2 che a quanto pare tra un po' di mesi sarà defunto con mio <strong>immenso cordoglio</strong> (dispiace sempre un po' quando l'ambiente desktop su cui hai lavorato per anni viene "dismesso"), anzi, dotandomi della mia <em>super vista magica</em> posso dire che è probabile che Canonical mantenga GNOME così com'è ora nei repository di Ubuntu, per rendere il cambiamento meno traumatico. E se non lo fanno sono dei deficienti, perchè introdurre un'interfaccia del genere è sicuramente una mossa coraggiosa e da campioni, ma bisogna mantenere la retrocompatibilità, c4$$o. Almeno per un paio di versioni. <strong>Almeno</strong>.</p>
+<h3>Note a margine</h3>
+<p>Mutter è una cagata pazzesca. [cit.]<br />
+Novantadue minuti di applausi. [ari-cit.]</p>
+<h3>Bibliografia</h3>
+<p>Non c'è :D<br />
+Un sacco di post in giro per la rete a dir la verità, ma se dovessi linkare tutto ciò che ho letto su questo fenomeno di massa che è Unity, praticamente dovrei incollare il mio feed reader qua per intero. Ogni anno divento più pigro. <strong>Ho compiuto vent'anni</strong> il 12 Ottobre ma la cosa è passata in sordina, avevo da fare. Il risultato è che non incollerò nulla. Il post però è farina del mio sacco, se copiate una sola parola (comprese le congiunzioni e gli articoli) voglio il riconoscimento e un linkback, così mi aumenta il pagerank.</p>
+<h3>Sei un deficiente</h3>
+<p>Si, ma se fate quanto scritto sopra vi offro una birra, davvero.</p>
+
+</div>
+
+<div class="social-section">
+  <div class="fb-like" data-href="/2010/11/unity-considerazioni-molto-sparse/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-via="dottorblaster" data-lang="it" data-dnt="true">Tweet</a>
+</div>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'blasterhome'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/06/domain-modeling-made-functional-recensione/">
+            Recensione: Domain Modeling Made Functional, di Scott Wlaschin
+            <small>08 Jun 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/05/piccolo-kubernetes-production-ready-k3s/">
+            Kubernetes production-ready in piccolo: deployare un mini-cluster K3s
+            <small>18 May 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="https://dottorblaster.it/2021/04/adoro-kubernetes/">
+            Io adoro Kubernetes
+            <small>25 Apr 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+      <div class="footer">
+        <p>
+          &copy; Grab The Blaster is brought to you by Alessio Biancalana with <a href="http://jekyllrb.com/">Jekyll</a> and much ♥, under <a href="https://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC</a>.
+        </p>
+        <form class="search-form" action="/search" method="get">
+          <input type="text" placeholder="Cerca →" name="query">
+        </form>
+      </div>
+      <div class="webring-container">
+        <webring-banner>
+          <p>Member of <a href="https://retronerds.netlify.app"></a></p>
+          <a href="https://retronerds.netlify.app/prev">Previous</a>
+          <a href="https://retronerds.netlify.app/random">Random</a>
+          <a href="https://retronerds.netlify.app/next">Next</a>
+        </webring-banner>
+        <script async src="https://retronerds.netlify.app/embed.js" charset="utf-8"></script>
+      </div>
+    </div>
+
+  </body>
+</html>

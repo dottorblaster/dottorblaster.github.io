@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <link rel="canonical" href="/page/8/" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- Enable Graph API for Facebook integration -->
+  <meta content="Grab The Blaster" property="og:site_name">
+  
+    <meta content="Home" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="Un blog nerd il giusto di Alessio Biancalana" property="og:description">
+  
+  
+    <meta content="https://dottorblaster.it/page/8/" property="og:url">
+  
+  
+  
+  
+
+  <!--   Enable Twitter Cards support through metadata, thanks to http://davidensinger.com/2013/04/supporting-twitter-cards-with-jekyll/ -->
+<!--   <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@site_username">
+  <meta name="twitter:creator" content="@creator_username">
+  
+    <meta name="twitter:title" content="Home">
+  
+  
+    <meta name="twitter:url" content="https://dottorblaster.it/page/8/">
+   -->
+  <!-- This is from @stammy -->
+<!--   <meta name="twitter:description" content="
+  {% for post in paginator.posts %}
+  
+    {% if post.layout == &quot;link&quot; %}
+      
+        
+          {{ post.title }}
+        
+        
+      
+    {% else %}
+      
+        
+          {{ ...">
+  
+    <meta name="twitter:image:src" content="https://dottorblaster.it/path/to/image/logo.png">
+    -->
+
+  <title>
+    
+      Grab The Blaster &middot; di Alessio Biancalana
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/grabtheblaster.css">
+  <link rel="stylesheet" href="/public/font-awesome/css/font-awesome.min.css">
+
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700italic,700,400italic' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,700' rel='stylesheet' type='text/css' />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title="" href="https://dottorblaster.it/feed">
+</head>
+
+
+  <body>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=81489295682&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="container content">
+      <div class="masthead">
+        <h3 class="masthead-title">
+          <img src="/public/avatar-blaster.png" alt="Alessio Biancalana">
+          <a href="/" title="Home page">Grab The Blaster</a>
+          <small>di Alessio Biancalana</small>
+        </h3>
+        <div class="social-icons"><a href="/about/" title="About Me"><i class="fa fa-user-circle-o"></i></a> <a href="https://twitter.com/dottorblaster" title="Twitter - @dottorblaster"><i class="fa fa-twitter"></i></a> <a href="https://github.com/dottorblaster" title="GitHub - dottorblaster"><i class="fa fa-github"></i></a></div>
+      </div>
+
+      <div class="posts">
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2019/08/google-calendar-spam-fastidio/" title="Truffe via Google Calendar, pessimismo e fastidio - di Alessio Biancalana">
+          Truffe via Google Calendar, pessimismo e fastidio
+        </a>
+      </h1>
+      <span class="post-date">31 Aug 2019</span>
+    
+
+    <p>Ne hanno già parlato ampiamente tanti blogger, su tutti voglio citare <a href="https://www.aldolat.it/2019/sicurezza/la-truffa-via-google-calendar/">Aldo</a>:</p>
+
+<blockquote>
+  <p>Questa mattina ho ricevuto un invito tramite Google Calendar a partecipare a un “evento” in cui avrei vinto un iPhone. L’invito era ripetuto per 5 giorni, dal 23 al 27 agosto. Ovviamente l’invito conteneva un link.</p>
+</blockquote>
+
+<p>A quanto pare, l’orbe terracqueo ha scoperto che se invii una <strong>email con un invito a un evento su Google Calendar</strong>, quell’evento viene subito aggiunto al calendario con tanto di notifiche ricorrenti su partecipazioni, accettazioni e quant’altro. E gli spammer hanno capito che era terreno fertile.</p>
+
+<p>Ne sono molto <strong>infastidito</strong>: è una feature che usavo da anni, e pare che l’unico modo per scongiurare l’eventualità che questo tipo di evento ricapiti sia disabilitare la possibilità che GMail faccia questa cosa. Sempre dal post di Aldo:</p>
+
+<blockquote>
+  <p>È possibile evitare del tutto questa truffa, cambiando due impostazioni generali di Google Calendar, che sono attive di default. Basta disattivare in “Impostazioni generali” &gt; “Impostazioni evento” &gt; “Aggiungi automaticamente gli inviti”, mettendolo su “No, mostra solo gli inviti a cui ho risposto”, mentre, poco più sotto, in “Opzioni di visualizzazione” disattivare “Mostra eventi rifiutati”.</p>
+</blockquote>
+
+<p>Io però sono estremamente contrariato: semplicemente vorrei che Google disabilitasse questo tipo di comportamento per le email marcate come spam. Altrimenti si viene condannati a smettere di usare qualcosa di comodo, semplicemente per via di uno <strong>scriteriato abuso da parte di qualcun altro</strong>.</p>
+
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2019/08/from-elixir-to-javascript-note-sparse/" title="From JavaScript to Elixir to JavaScript – note sparse su andata e ritorno - di Alessio Biancalana">
+          From JavaScript to Elixir to JavaScript – note sparse su andata e ritorno
+        </a>
+      </h1>
+      <span class="post-date">15 Aug 2019</span>
+    
+
+    <p><img src="https://gitlab.com/dottorblaster/blog-images/raw/master/images/js-code.jpg" alt="JS Code" /></p>
+
+<p>In questo periodo di totale nullafacenza che sono le ferie mie e di Agnese ho preso la palla al balzo per dare un’aggiornata globale a un progetto che ha preso un numero imbarazzante di star su GitHub, che aveva bisogno di tantissimo amore (non ci mettevo mano letteralmente da anni), e che aveva anche un discreto numero di notifiche di sicurezza dovute a librerie non aggiornate.</p>
+
+<p>Sto parlando di <a href="https://github.com/dottorblaster/stocazzo">Stocazzo As A Service</a>, un esperimento divertente che mi ha permesso illo tempore di sperimentare un po’ con <strong>Hapi</strong>, un framework per lo sviluppo di applicazioni web, e che ha persino ricevuto qualche pull request interessante.</p>
+
+<p>Ci ho messo abbastanza poco a capire che non sarebbe bastato <strong>aggiornare le dipendenze</strong>, e che in realtà la codebase aveva bisogno di una riscrittura totale in barba a tutte le raccomandazioni del tipo “non andare a rompere quello che funziona” che ogni guru del software vi darebbe. Non essendo un pazzo suicida però ho deciso di lavorare iterativamente, seguendo la regola del boy scout, un sacco di cautela e la <strong>suite di test</strong> che avevo già scritto in precedenza.</p>
+
+<p>Siccome vengo da anni di <strong>JavaScript</strong> ma soprattutto anche da (meno) anni di <strong>Elixir</strong> nel tempo libero, ho sentito subito la mancanza di alcune cosette:</p>
+
+<ul>
+  <li>Un formatter come <code class="language-plaintext highlighter-rouge">mix format</code>;</li>
+  <li>Un tool di analisi statica come Credo;</li>
+  <li>Pipe operator e immutabilità.</li>
+</ul>
+
+<p>Siccome per quanto riguarda la terza non potevo farci niente (almeno non sul momento), ho deciso di concentrarmi sul rendere la mia <strong>toolchain</strong> un po’ più confortevole, quindi ho aggiunto <a href="https://prettier.io/">Prettier</a> e ho configurato npm per formattare tutto tipo <code class="language-plaintext highlighter-rouge">mix format</code>; successivamente, ho dato un bel giro di vite alla codebase esistente aggiungendo <a href="https://eslint.org/">ESLint</a> al progetto con una configurazione abbastanza generica.</p>
+
+<p>A quel punto ho aggiornato le <strong>librerie di testing</strong> (<a href="https://github.com/hapijs/code">Code</a> per expectation e <a href="https://github.com/hapijs/lab">Lab</a> per la test instrumentation) e ho cominciato a vedere cosa si rompeva. L’interfaccia col webserver in realtà non era cambiata molto: il brutto del guardare indietro al codice che hai scritto tanto tempo fa è più che altro lo sguardo lanciato nel baratro degli errori di gioventù che hai commesso. Tipo un modulo <code class="language-plaintext highlighter-rouge">utils</code> e una serie di funzioni dentro che fanno “cose” fantasiose coi parametri che gli passi. Ho stracoperto quella parte di test, <strong>perché era la parte più debole</strong>, poi ho portato tutto alla nuova versione di Hapi, che è leggermente diversa nel funzionamento dato che si basa molto su <code class="language-plaintext highlighter-rouge">async</code> e <code class="language-plaintext highlighter-rouge">await</code>. Contestualmente ho aggiornato la test suite, in modo da usare nuove funzioni.</p>
+
+<p>L’ultimo passo è stato cominciare a riscrivere la libreria di “utils” che avevo partorito all’epoca. Ormai forte di una test suite a prova di bomba, non potevo rompere niente e sono stato guidato dai test rotti alla ricerca di eventuali problemi.</p>
+
+<p>Ci ho messo un paio d’ore a fare tutto, forse tre. Non era una codebase particolarmente larga, quindi mi sono potuto permettere il lusso di farle un lifting completo.</p>
+
+<p>“Che c’è di nuovo?” Direte voi, miei lettori. “È una storia di un refactoring come tanti altri”. Ed è vero. Quello che ho notato però è come la mia esperienza con un altro linguaggio e un’altra piattaforma mi abbia condotto alla ricerca del miglior tooling per fare quello di cui avevo bisogno, e come io abbia messo in pratica best practice totalmente trasversali.</p>
+
+<p>In parole povere, sono convinto che <strong>nel momento in cui impariamo un nuovo linguaggio</strong>, o un nuovo tool, <strong>impariamo un nuovo modo di lavorare</strong> oppure <strong>perfezioniamo il metodo che abbiamo già</strong>. E questo, almeno per me, è incredibilmente incoraggiante, perché con questa esperienza ho avuto modo di toccare con mano quanto il tempo che ho speso su <a href="https://elixir-lang.org/">Elixir</a> abbia cambiato in meglio le mie abitudini in maniera estremamente profonda.</p>
+
+<p><em>Photo courtesy of <a href="https://unsplash.com/@codestorm">Safar Safarov</a></em></p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2019/07/migliorare-codice-elixir-in-tre-mosse/" title="Migliorare il proprio codice Elixir in tre mosse - di Alessio Biancalana">
+          Migliorare il proprio codice Elixir in tre mosse
+        </a>
+      </h1>
+      <span class="post-date">28 Jul 2019</span>
+    
+
+    <p><img src="https://gitlab.com/dottorblaster/blog-images/raw/master/images/artem-maltsev-3n7DdlkMfEg-unsplash.jpg" alt="Elixirs and photos" /></p>
+
+<p>Più passa il tempo più mi diverto con Elixir, sia usandolo su progetti più grandi che su scemenze domestiche. Tra <strong>The Big Elixir</strong> l’anno scorso e un po’ di esperienza sul campo ho imparato soprattutto una cosa: che quelle che pensavo fossero ovvietà in realtà sono <strong>piccoli consigli</strong> che consentono a chiunque di migliorare la qualità del proprio codice senza fare nulla.</p>
+
+<h3 id="mix-compile---warnings-as-errors"><code class="language-plaintext highlighter-rouge">mix compile --warnings-as-errors</code></h3>
+<p>I più giovani la vedranno come una mossa malvagia senza alcun guadagno, ma in realtà <code class="language-plaintext highlighter-rouge">mix compile --warnings-as-errors</code> è un comando che ci permette di trarre vantaggio da un <strong>assetto più pedante del compilatore</strong> senza dover fare nulla, e salvandoci da potenziali <strong>errori in produzione</strong>. Quello che succede usando questo comando è che il nostro codice viene compilato, ma appena viene trovato un warning (quindi qualcosa di cui il compilatore ci avvisa ma su cui normalmente passa sopra) la compilazione fallisce irrimediabilmente, e noi siamo costretti a dover andare ad aggiustare la porcata che abbiamo (forse) scritto.</p>
+
+<p>La cosa interessante è che questo riguarda solo il nostro codice: fortunatamente se c’è un warning in qualche dipendenza il compilatore continuerà a costruire il nostro pacchetto come se nulla fosse.</p>
+
+<p>Perché è utile? Beh: innanzi tutto senza aver scritto alcun test, anche per un progetto stupidissimo di un weekend, possiamo infilare questo comando in una pipeline e avere una build di continuous integration <strong>più affidabile e gratis</strong>. In secondo luogo, è sempre utile un occhio in più sul codice, e il compilatore di Elixir da solo è in grado di aiutarci sulle marachelle più grandi.</p>
+
+<h3 id="usare-il-formatter-nativo">Usare il formatter nativo</h3>
+<p>Da Elixir 1.6 è disponibile, direttamente integrato nella piattaforma, un <strong>formatter nativo</strong> che prende tutti i file <code class="language-plaintext highlighter-rouge">.ex</code>/<code class="language-plaintext highlighter-rouge">.exs</code> e se abbiamo fatto qualche errore di formattazione o semplicemente scritto codice in maniera poco leggibile, prende il file e lo riscrive in modo da aumentare la leggibilità.</p>
+
+<p>I benefici dell’usare un formatter vanno dalla leggibilità di base al fatto che essendo la configurazione parte del progetto, sia che siamo da soli a lavorare su una codebase sia che siamo in novecento avremo uno stile coerente su tutto il codice.</p>
+
+<p>Quello di usare un formatter è un consiglio valido per ogni tipo di piattaforma e linguaggio, ma il formatter di Elixir ci dà qualcosa in più: un comando per controllare se i file sono stati formattati, da inserire ovviamente insieme a <code class="language-plaintext highlighter-rouge">mix compile --warnings-as-errors</code> nella nostra pipeline.</p>
+
+<p>Se andiamo a guardare le opzioni di <code class="language-plaintext highlighter-rouge">mix format</code> infatti possiamo vedere qualcosa di interessante:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">--check-formatted</code> - checks that the file is already formatted. This is    useful in pre-commit hooks and CI scripts if you want to reject contributions with unformatted code. However keep in mind that the formatted output may differ between Elixir versions as improvements and fixes are applied to the formatter.</li>
+  <li><code class="language-plaintext highlighter-rouge">--check-equivalent</code> - checks if the files after formatting have the same    AST as before formatting. If the ASTs are not equivalent, it is a bug in the code formatter. This option is useful if you suspect you have ran into a formatter bug and you would like confirmation.</li>
+</ul>
+
+<p>In base a che livello di comprensione abbiamo di come funziona la compilazione del codice Elixir possiamo usare uno di questi due flag. Io personalmente tendo a usare <code class="language-plaintext highlighter-rouge">--check-formatted</code>, dato che <code class="language-plaintext highlighter-rouge">--check-equivalent</code> è più adatto per cercare bachi all’interno del formatter stesso.</p>
+
+<p>Insomma, se vogliamo controllare che ogni cambiamento sia adeguatamente formattato andiamo a inserire <code class="language-plaintext highlighter-rouge">mix format --check-formatted</code> all’interno della nostra pipeline e subito ne noteremo i risultati.</p>
+
+<h3 id="usare-credo">Usare Credo</h3>
+<p>L’ultimo consiglio ma non per importanza è l’adozione di <a href="https://github.com/rrrene/credo">Credo</a>. Conosco questo <strong>tool di linting e analisi statica del codice</strong> (soprattutto la seconda) da quando ho iniziato a scrivere i miei primi programmi in Elixir, merito della segnalazione del buon <a href="https://github.com/claudio-dalicandro">Claudio</a>: è veramente una figata. Innanzi tutto perché non c’è niente da fare ed è veramente “drop in” come approccio: lo metti tra le dipendenze, il tempo di un <code class="language-plaintext highlighter-rouge">mix deps.get</code> e sei già in pole position con <code class="language-plaintext highlighter-rouge">mix credo</code>.</p>
+
+<p>I consigli che dà sono tra i più disparati, e se lo infilate dentro il progetto quando siete all’inizio non avrete necessità di fare refactoring sanguinolenti più in là: vi segnalerà indentazioni sbagliate, pezzi di codice ottimizzabili, addirittura problemi di design del codice, e tronconi del vostro programma dove potete migliorare la leggibilità.</p>
+
+<p>È veramente una figata, e ovviamente potete introdurlo in maniera incrementale dato che ogni <strong>check di Credo</strong> è disabilitabile da file di configurazione, quindi è possibile partire con una configurazione più blanda per andare poi col tempo, dopo un po’ di refactoring se il progetto è vecchio, a introdurre man mano sempre più controlli.</p>
+
+<p>Beh, spero di avervi dato qualche indizio interessante su mosse di effort minimo che possono avere un grande impatto di qualità sui vostri progetti in <strong>Elixir</strong>. Se nella vostra cintura avete altri strumenti simili vi aspetto nei commenti ;-)</p>
+
+<p>Photo courtesy of <a href="https://unsplash.com/@art_maltsev">Artem Maltsev</a></p>
+
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2019/06/micro/" title=""micro" - di Alessio Biancalana">
+          "micro"
+        </a>
+      </h1>
+      <span class="post-date">02 Jun 2019</span>
+    
+
+    <p><img src="https://gitlab.com/dottorblaster/blog-images/raw/master/images/computers/action-blur-close-up-735911.jpg" alt="Typing code" /></p>
+
+<p>L’altro giorno ho visitato uno strano sito. Un sito carino, con un sacco di figure che pretendevano di spiegare alcune cose altrimenti complicate. E in tutto il sito, un po’ ovunque, campeggiava una parola con una radice che sempre più spesso vedo usare nell’informatica, e sempre più sovente impropriamente: “micro”. Ho sbattuto un paio di volte le palpebre, riconosciuto l’oggettiva validità dei concetti esposti, chiuso il browser e iniziato a pensare a tutte le volte che ho visto stampate su uno schermo le parole che avevo appena letto.</p>
+
+<h3 id="backend-lalba-dei-microservizi">Backend: l’alba dei microservizi</h3>
+<p>Sono già un bel po’ di anni che mi sorbisco le auto-lodi masturbatorie di coloro che implementano <strong>architetture a microservizi</strong>, e c’è un pattern ricorrente che voglio mettere per iscritto: di solito la distanza tra il racconto e la realtà dei fatti è abissale. Ma andiamo per ordine: l’architettura a microservizi è una chimera a forma di cloud computing e cluster di container che ha preso forma qualche anno fa, venendo immediatamente presa come esempio di virtù da <em>qualsiasi</em> backend developer e architetto di sistemi software. Negli ultimi due o tre anni, non ho mai sostenuto un colloquio, che fosse per una posizione frontend, backend, full-stack o per andare a fare il cameriere senza che mi venisse messa in ottima luce la presenza nell’azienda X (che fosse Tesla, che fosse Amazon, che fosse l’enoteca sotto casa mia) di una sfavillante, scintillante, stupenda architettura a microservizi. Ci sono alcuni casi in cui ho fatto delle domande per approfondire e ho trovato qualcosa che mi ha convinto<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>. In altri momenti mi sono messo le mani nei capelli. Un caso tipico è l’approfondimento della piattaforma alla base dei servizi: gli incapaci (scusate ragazzi, ma non mi viene in mente un sinonimo caruccio) solitamente si vantano di avere tutti i servizi scritti in un solo linguaggio. Ora, delle due l’una: o il dominio che tratti è eccezionalmente ristretto, oppure da qualche parte stai usando <strong>un cucchiaio per piantare un chiodo nel muro</strong>.</p>
+
+<p>Oltre questo, la buzzword dei microservizi portata avanti dalle società di consulenza di mezzo mondo insieme a una manciata di manager saccenti e architetti sotto LSD ci ha portati alla dimenticanza del passato, ovvero che la <strong>Service Oriented Architecture</strong> di una volta era esattamente quello che adesso viene spacciato come architettura a microservizi, per un motivo molto semplice: nonostante la domanda fosse lì in bella vista, ha ricevuto la solita risposta per salvare capre e cavoli. Al quesito “quanto deve essere grande un microservizio?”, la risposta (beninteso: la risposta che darei anch’io ad oggi) è “dipende”.</p>
+
+<p>Questo chiaramente significa che c’è chi si è sentito in potere di definire la propria architettura “a microservizi” anche se di mezzo c’era un Enterprise Service Bus, che le architetture a microservices cercano di abbattere. O che altri hanno deciso che invece di fare cotract-based development potevano serializzare gli oggetti di dominio. In sostanza, “microservices” ha perso la propria indentità esattamente come tempo prima Service Oriented Architecture aveva perso la propria, con <strong>velenose parole</strong> in proposito da parte di Martin Fowler<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup>:</p>
+
+<blockquote>
+  <p>When we’ve talked about microservices a common question is whether this is just Service Oriented Architecture (SOA) that we saw a decade ago. There is merit to this point, because the microservice style is very similar to what some advocates of SOA have been in favor of. The problem, however, is that SOA means too many different things, and that most of the time that we come across something called “SOA” it’s significantly different to the style we’re describing here, usually due to a focus on ESBs used to integrate monolithic applications.</p>
+
+  <p>[…]</p>
+
+  <p>This common manifestation of SOA has led some microservice advocates to reject the SOA label entirely, although others consider microservices to be one form of SOA, perhaps service orientation done right. Either way, the fact that SOA means such different things means it’s valuable to have a term that more crisply defines this architectural style.</p>
+</blockquote>
+
+<p>In sostanza quello che sostengo è che esattamente come la Service Oriented Architecture sia diventata un meltin’ pot di qualsiasi soluzione “fattorizzata” per i backend applicativi architetturalmente parlando, anche la “microservices architecture” sia diventata una “microservices culture/tribe/community”, non fornendo un pattern vincolante. Perché è possibile dare un nome alle cose solo quando c’è un <strong>vincolo</strong> a tenerle assieme. Come la carbonara che è formata da abbondante uovo, abbondante pecorino, e abbondante guanciale.</p>
+
+<h3 id="frontend-lalba-dei-micro-frontend-appunto">Frontend: l’alba dei micro-frontend (appunto)</h3>
+<p>All’inizio del post ho menzionato un sito. Il sito in questione è <a href="https://micro-frontends.org/">Micro-frontends</a>, e descrive un’architettura per i frontend di applicazioni web che in queste ultime settimane ha fatto discutere la community in lungo e in largo. In generale il pattern è più o meno questo: metti <strong>svariate micro-applicazioni</strong> scritte nel linguaggio che vuoi, già compilate, nella stessa pagina, poi speri che succeda qualcosa. Nello specifico il minestrone di applicazioni dovrebbe funzionare accettando di venire orchestrato da un meccanismo di “IPC” (se sto parlando arabo c’è <a href="https://it.wikipedia.org/wiki/Comunicazione_tra_processi">Wikipedia</a>) che gestisce le informazioni da passare all’una o all’altra app. È una buona idea, ma di fatto ha molte limitazioni nel quotidiano, esattamente come nel quotidiano hanno delle limitazioni i microservizi e qualsiasi cosa che venga venduta come la panacea a un sacco di mali se non a tutti.</p>
+
+<p>Per esempio, i browser caricano <strong>tanti bundle</strong> ognuno con la propria versione di React, Angular o Vue? Per forza, altrimenti nulla di tutto questo sarebbe agnostico alla tecnologia che usano gli altri. Solo che tanti bundle pesano, per cui serve coordinamento per indirizzare questa criticità in modo che qualche altro meccanismo possa fornire delle librerie “common” (come i common chunks di Webpack?) che consentano a tutti i componenti di funzionare mantenendo i bundle a una dimensione accettabile. In questo modo si sposta la complessità sul lato architetturale, come per i microservizi, e si mantiene semplice il dominio di ogni componente, ma lo stesso Dan Abramov (che è il ragazzotto che ha scritto Redux) si è <a href="https://twitter.com/dan_abramov/status/1132493678730252288">espresso</a> in merito:</p>
+
+<blockquote>
+  <p>I don’t understand micro-frontends.</p>
+
+  <p>The problems they’re supposed to solve sound to me like they’re already solved by a good component model. So is this solving an organizational issue rather than technical one? Such as if two teams can’t agree on anything, even shared infra.</p>
+</blockquote>
+
+<p>E mi piace molto la <a href="https://twitter.com/lmatteis/status/1132667251453300736">risposta</a> che gli ha dato Luca Matteis<sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">3</a></sup>:</p>
+
+<blockquote>
+  <p>I think “micro-frontends” is an overloaded term. Facebook’s frontend has various teams working on different sections. They probably don’t share same tech (Ads uses different stuff from the Wall). You’d still call that micro-frontend I guess</p>
+</blockquote>
+
+<p>Esattamente come per i microservizi, tutto questo ha un <strong>costo in termini di governo dell’entropia</strong> che può generare. È per questo che chiunque dovrebbe riflettere benissimo prima di adottare un pattern del genere: perché le persone da cui viene, e le persone che lo propongono, lo propongono come soluzione ai <strong>loro</strong> problemi, problemi di un’azienda con:</p>
+
+<ul>
+  <li>Centinaia (se non migliaia) di dipendenti</li>
+  <li>Centinaia di pagine servite al secondo</li>
+  <li>Centinaia di repository e team</li>
+</ul>
+
+<p>Ho sentito parlare di micro-frontend di sfuggita da Facebook. Da Zalando. Ed esattamente come i microservizi, da piccole e medie imprese di quartiere che pensano a risolvere problemi che non hanno prima di mettere un punto a quelli che hanno (tipo la revenue per dipendente, che è un problema che nessun software per quanto ben scritto possa risolvere, ve lo garantisco).</p>
+
+<p><img src="https://gitlab.com/dottorblaster/blog-images/raw/master/images/computers/alphabet-blur-close-up-671629.jpg" alt="A keyboard" /></p>
+
+<h3 id="dare-un-nome-alle-cose">Dare un nome alle cose</h3>
+
+<p>E quindi siamo qua. Io ormai ogni volta che sento la parola “micro” come prefisso a qualcosa ho un riflesso della glottide che non è per niente bello da vedere, fidatevi. Allo stesso tempo in queste settimane durante le mie avventure ho capito che è possbile risolvere problemi anche leggendo <strong>paper di vent’anni fa</strong>, che le architetture alla fine sono sempre tutte un po’ diverse, e che ogni scarrafone è bello a mamma sua.</p>
+
+<p>Come scrivevo poco sopra, per dare un nome alle cose è necessario definirne i <strong>tratti formali</strong> che le tengano vincolate alla realtà. Per questo motivo preferisco sempre chi mi descrive minuziosamente quello che fa senza tentare di riassumerlo con una buzzword. E sempre per questo motivo all’interno del mio ultimo progetto ho definito un’architettura di servizi chiamata “molecule architecture”, che non voglio spiegarvi proprio perché non mi interessa che diventi uno standard, un pattern, una buzzword. Le ho dato un nome, una definizione formale, e mi tengo tutto stretto perché non ho l’ansia di far vedere quanto sono bravo (anzi, ne ho un po’ vergogna); né ho l’ansia di rifarmi al percorso di altri, se non in parte, perché sono conscio del fatto che le problematiche in cui incorro io sono diverse dalle criticità legate alla gestione del dominio di conoscenza di Netflix o Google o Facebook. Mi auguro che questa generazione di sviluppatori impari a riconoscere i pattern e ad applicare i design solo quando necessari, e che le persone imparino a fuggire dal “micro” a tutti i costi. Perché se è vero che spezzare i problemi è un buon modo per risolverne di grossi a un costo accettabile, una domanda assolutamente legittima è se questo tipo di separazioni dei concetti sia profittevole sul corto, medio, lungo termine. E per chi.</p>
+
+<p><em>Photos coutesy of <a href="https://www.instagram.com/soumilkmr/">Soumil K.</a> and <a href="https://www.instagram.com/marcell_and/">Marcellino Andrian</a></em></p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>Un caso paradossalmente è stato proprio Hootsuite, in cui addirittura senza saperlo ho trovato un buon esempio di architettura backend, per quanto un gomitolo di complessità rispetto ad alcune tematiche. Ma questa complessità è veramente un male? Ne parleremo. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p><a href="https://martinfowler.com/articles/microservices.html">Martin Fowler, “Microservices”. Marzo 2014</a> <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:3" role="doc-endnote">
+      <p>Ho riso un sacco quando mi sono trovato davanti la risposta di Luca. Ci ho lavorato insieme per quasi due anni in Hootsuite (anche se per pochissimo tempo nello stesso team), ed è una persona straordinariamente preparata. Leggere la sua risposta mandata da così lontano rispetto a quello che era l’ufficio che condividevamo, beh… mi ha fatto sentire la sua mancanza, ecco. <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2019/04/visual-studio-code-gioie-dolori-cpu-100/" title="Visual Studio Code, gioie e dolori: CPU al 100% con la nuova versione - di Alessio Biancalana">
+          Visual Studio Code, gioie e dolori: CPU al 100% con la nuova versione
+        </a>
+      </h1>
+      <span class="post-date">11 Apr 2019</span>
+    
+
+    <p>In questi ultimi – boh – due giorni, mi è capitato di riavviare il computer per dare una pulita e installare qualche aggiornamento di sistema rimasto lì a prendere un po’ di polvere (non sono più il ghepardo di una volta con gli aggiornamenti, devo dire); contestualmente ho riavviato <strong>Visual Studio Code</strong> e anche di quello ho automaticamente installato l’ultima versione.</p>
+
+<p>Purtroppo ho immediatamente notato qualche problemino, nel senso che aprendo più di due o tre file <strong>JavaScript</strong> (e facendo frontend “for a living”, beh, mi capita spesso) la CPU andava al 100%, e non la smetteva mai se non occasionalmente. Non avendo tempo per indagare me lo sono tenuto così per qualche decina di ore, dopodiché appena ho avuto due minuti ho cominciato a scartabellare e greppare l’internet per capire cosa stava succedendo e come risolvere quello che ho scoperto essere un problema non solo mio, ma anzi di un sacco di altra gente.</p>
+
+<h3 id="tldr">tl;dr</h3>
+<p>Il comando in questione ha riportato ordine nel mio microcosmo, e penso che lo eseguirò anche sul resto delle mie workstation prima possibile:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">rm</span> <span class="nt">-rf</span> Library/Caches/typescript/<span class="k">*</span>
+</code></pre></div></div>
+
+<p>In pratica, non lo sapevo ma l’installazione di <strong>TypeScript</strong> distribuita con Visual Studio Code crea una <strong>cache</strong> relativa a un sacco di oggetti che vengono costantemente smanacciati dal compilatore e dall’editor. Con questo la eliminiamo annullando eventuali stalli o incoerenze, come nella migliore delle tradizioni di ogni meccanismo di caching: se qualcosa può corrompersi e generare falsi hit positivi o negativi, lo farà.</p>
+
+<h3 id="debuggare-visual-studio-code">Debuggare Visual Studio Code</h3>
+<p>Nel corso del mio <code class="language-plaintext highlighter-rouge">grep</code> dell’intera Internet, sono inciampato prima di tutto su un commento utile di uno sviluppatore di Visual Studio Code che consigliava di aprire l’<strong>inspector dei processi</strong> interni all’editor. Questo può essere fatto tramite il comando:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; Developer: Open Process Explorer
+</code></pre></div></div>
+
+<p>Possiamo impartire questo comando tramite il menu che appare premendo <code class="language-plaintext highlighter-rouge">CTRL-Shift-P</code> su Linux e Windows, o <code class="language-plaintext highlighter-rouge">Cmd-Shift-P</code> se siamo un Mac. Ci apparirà una finestra che mostra il consumo di risorse di ogni processo integrato, che nel system monitor tradizionale viene contrassegnato solo come <em>Code Helper</em>, il che non è un grande aiuto.</p>
+
+<p><img src="https://gitlab.com/dottorblaster/blog-images/raw/master/images/vs_code_ts_server.png" alt="Visual Studio Code TS server 100% CPU" /></p>
+
+<p>Viceversa questa simpatica finestra è veramente utile. Grazie a queste informazioni sono incappato in un sacco di maledizioni verso il <strong>TypeScript Language Server</strong>, che per la verità gestisce anche il normale JavaScript. Ho guardato queste tre issue:</p>
+
+<ul>
+  <li><a href="https://github.com/Microsoft/vscode/issues/63630">Latest VSCode Insiders electron_node tsserver.js taking 100% of CPU</a></li>
+  <li><a href="https://github.com/Microsoft/vscode/issues/71829">100% CPU used after upgrading to Mojave</a></li>
+  <li><a href="https://github.com/Microsoft/vscode/issues/71751">1.33 performance issues with TypeScript and JavaScript</a></li>
+</ul>
+
+<p>Leggendo l’ultima, capendo l’antifona, ho deciso di mettere in pratica il consiglio che la maggior parte dei commenti caldeggiavano. Come scritto sopra:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">rm</span> <span class="nt">-rf</span> Library/Caches/typescript/<span class="k">*</span>
+</code></pre></div></div>
+
+<p>Chiuso Visual Studio Code, riaperto, e il problema era svanito. Il sistema operativo ha giusto impiegato un po’ di tempo per ricostruire alcuni indici e la cache, dopodiché tutto è andato liscio come l’olio. Devo dire che non conoscevo l’inspector integrato per i processi di Code. Dovrei usarlo più spesso.</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/page/9"><i class="fa fa-chevron-circle-left"></i></a>
+  
+  
+    
+      <a class="pagination-item newer" href="/page/7"><i class="fa fa-chevron-circle-right"></i></a>
+    
+  
+</div>
+
+
+      <div class="footer">
+        <p>
+          &copy; Grab The Blaster is brought to you by Alessio Biancalana with <a href="http://jekyllrb.com/">Jekyll</a> and much ♥, under <a href="https://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC</a>.
+        </p>
+        <form class="search-form" action="/search" method="get">
+          <input type="text" placeholder="Cerca →" name="query">
+        </form>
+      </div>
+      <div class="webring-container">
+        <webring-banner>
+          <p>Member of <a href="https://retronerds.netlify.app"></a></p>
+          <a href="https://retronerds.netlify.app/prev">Previous</a>
+          <a href="https://retronerds.netlify.app/random">Random</a>
+          <a href="https://retronerds.netlify.app/next">Next</a>
+        </webring-banner>
+        <script async src="https://retronerds.netlify.app/embed.js" charset="utf-8"></script>
+      </div>
+    </div>
+
+  </body>
+</html>

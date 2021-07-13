@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <link rel="canonical" href="/page/61/" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- Enable Graph API for Facebook integration -->
+  <meta content="Grab The Blaster" property="og:site_name">
+  
+    <meta content="Home" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="Un blog nerd il giusto di Alessio Biancalana" property="og:description">
+  
+  
+    <meta content="https://dottorblaster.it/page/61/" property="og:url">
+  
+  
+  
+  
+
+  <!--   Enable Twitter Cards support through metadata, thanks to http://davidensinger.com/2013/04/supporting-twitter-cards-with-jekyll/ -->
+<!--   <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@site_username">
+  <meta name="twitter:creator" content="@creator_username">
+  
+    <meta name="twitter:title" content="Home">
+  
+  
+    <meta name="twitter:url" content="https://dottorblaster.it/page/61/">
+   -->
+  <!-- This is from @stammy -->
+<!--   <meta name="twitter:description" content="
+  {% for post in paginator.posts %}
+  
+    {% if post.layout == &quot;link&quot; %}
+      
+        
+          {{ post.title }}
+        
+        
+      
+    {% else %}
+      
+        
+          {{ ...">
+  
+    <meta name="twitter:image:src" content="https://dottorblaster.it/path/to/image/logo.png">
+    -->
+
+  <title>
+    
+      Grab The Blaster &middot; di Alessio Biancalana
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/grabtheblaster.css">
+  <link rel="stylesheet" href="/public/font-awesome/css/font-awesome.min.css">
+
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700italic,700,400italic' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,700' rel='stylesheet' type='text/css' />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title="" href="https://dottorblaster.it/feed">
+</head>
+
+
+  <body>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=81489295682&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="container content">
+      <div class="masthead">
+        <h3 class="masthead-title">
+          <img src="/public/avatar-blaster.png" alt="Alessio Biancalana">
+          <a href="/" title="Home page">Grab The Blaster</a>
+          <small>di Alessio Biancalana</small>
+        </h3>
+        <div class="social-icons"><a href="/about/" title="About Me"><i class="fa fa-user-circle-o"></i></a> <a href="https://twitter.com/dottorblaster" title="Twitter - @dottorblaster"><i class="fa fa-twitter"></i></a> <a href="https://github.com/dottorblaster" title="GitHub - dottorblaster"><i class="fa fa-github"></i></a></div>
+      </div>
+
+      <div class="posts">
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2013/11/fedora-mongodb-nuovo-packaging-che-mi-ha-messo-difficolta/" title="Fedora e MongoDB: nuovo packaging (che mi ha messo in difficoltà) - di Alessio Biancalana">
+          Fedora e MongoDB: nuovo packaging (che mi ha messo in difficoltà)
+        </a>
+      </h1>
+      <span class="post-date">02 Nov 2013</span>
+    
+
+    <p><img class="alignnone" alt="" src="http://i44.tinypic.com/8vu8.png" width="696" height="333" /></p>
+<p>Francamente, non mi sono aspettato mai molto dalla mia <strong>Fedora</strong> installata sulla workstation casalinga, se non che funzionasse senza darmi grattacapi. Ultimamente invece ha cominciato a rendermi <strong>veramente fiero di usarla</strong> (cose configurate automagicamente, uso del PC scordandomi che OS ci fosse sotto) dandomi però qualche liscebusso per controbilanciare la facilità d'uso. In particolare, stavo andando a scrivere qualche riga di codice per <a href="http://twitantonio.it/">TwitAntonio</a> (dato che, a quanto pare, le API non vogliono funzionare come dovrebbero) e facendo partire il demone di <strong>MongoDB</strong> mi sono accorto come la procedura di start fosse fallita miseramente.</p>
+<p>Uhm - mi sono detto - strano, il <strong>pacchetto</strong> è installato correttamente. E in effetti controllo: è lì, installato, senza fare una piega. Ho anche il client da CLI: me ne servo, ma mi restituisce che non riesce ovviamente a connettersi al mio host, dato che il demone è spento. La faccio breve: dopo una serie di ricerche, mi è venuto in mente che forse <strong>quei buontemponi dei developer di Fedora</strong> potevano aver cambiato la <strong>nomenclatura</strong> e lo stato dei pacchetti nei repository.</p>
+<pre>$ yum search mongodb</pre>
+<p>E improvvisamente vedo che spunta qualcosa, qualcosa che prima non avevo mai installato né avuto la necessità di usare:</p>
+<pre>[...]
+mongodb-server.x86_64: MongoDB server, sharding server and support scripts
+[...]</pre>
+<p>Eccolo lì, t'ho trovato maledetto. È stato sufficiente per me dare da <strong>terminale</strong>:</p>
+<pre>$ sudo yum install mongodb-server</pre>
+<p>E la questione è andata a posto da sé: MongoDB è tornato a funzionare senza problemi dato che il <strong>file relativo al demone</strong> si trovava in quel pacchetto insieme al resto della struttura "server". Per far partire il servizio di <strong>MongoDB su Fedora</strong> successivamente basta usare <strong>systemd</strong>:</p>
+<pre>$ sudo systemctl start mongod</pre>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2013/11/email-3-0-nasce-dark-mail-alliance/" title="Email 3.0: nasce la Dark Mail Alliance - di Alessio Biancalana">
+          Email 3.0: nasce la Dark Mail Alliance
+        </a>
+      </h1>
+      <span class="post-date">01 Nov 2013</span>
+    
+
+    <p><img class="alignnone" alt="" src="http://farm3.staticflickr.com/2004/2249414769_67a40a7f77_b.jpg" width="1024" height="683" /></p>
+<p>Non voglio vantarmi, ma qualche settimana fa, mentre amici mi condividevano i link di vari messenger sedicenti "sicuri" per quanto concerne la sicurezza dei messaggi che ci si scambia tramite questo mezzo, me ne sono uscito - quasi per battuta - "ma non si potrebbe cercare di rendere le <strong>email più sicure</strong> senza inventarsi un protocollo del tutto nuovo?"</p>
+<p>È un'esigenza concreta nel mondo corporate: <strong>usiamo tutti le email</strong>, e tutt'ora escludendo il traffico di rete generato dai bimbiminkia e gli ormai trentenni papaminkia che si sparano le pose e mandano foto zozze alle loro amanti via Facebook, l'utilizzo del protocollo email è imprescindibile. È uno <strong>standard aperto</strong>, uno standard che ormai permea la rete, ma non è più sufficiente. Per questo sono stato contentissimo che <strong>Lavabit</strong> (il famosissimo "provider di posta di Snowden") e <strong>Silent Circle</strong> abbiano presentato qualche ora fa insieme la <strong>Dark Mail Alliance</strong>, che si occupa principalmente di fare ricerca in ambito IT Security per rendere le email qualcosa di cui ci si può ancora fidare.</p>
+<p>Direttamente dal post ufficiale sul blog di <a href="http://silentcircle.wordpress.com/2013/10/30/announcing-the-dark-mail-alliance-founded-by-silent-circle-lavabit/?utm_source=buffer&amp;utm_campaign=Buffer&amp;utm_content=buffer47aa4&amp;utm_medium=linkedin">Silent Circle</a>, la risposta concreta alle mie preoccupazioni:</p>
+<blockquote><p>What we call ‘Email 3.0.’ is an urgent replacement for today’s decades old email protocols (‘1.0’) and mail that is encrypted but still relies on vulnerable protocols leaking metadata (‘2.0’).</p></blockquote>
+<p>Non credo ci sia da dire altro: spero che la <strong>ricerca</strong> prosegua così com'è iniziata, ovvero letteralmente <strong>col botto</strong>. Che le nostre comunicazioni siano sicure, in questo periodo, è più <a href="http://darkmail.info/">importante</a> che mai.</p>
+<p><em>Photo courtesy of <a href="http://www.flickr.com/photos/dansays/2249414769/">Dan Budiac</a></em></p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2013/11/dottorblaster-it-digitalocean/" title="dottorblaster.it @ DigitalOcean - di Alessio Biancalana">
+          dottorblaster.it @ DigitalOcean
+        </a>
+      </h1>
+      <span class="post-date">01 Nov 2013</span>
+    
+
+    <p><img class="aligncenter" alt="" src="https://i.imgur.com/dxEAhZr.png?1" width="1009" height="597" /></p>
+<p>Era già un po' che ci pensavo, e alla fine l'ho fatto: con il vecchio servizio in scadenza, e il nuovo anno di lavoro alle porte, ho deciso di <strong>spostare il blog</strong> da un banale hosting condiviso <strong>al mio VPS</strong> dove tengo anche le altre applicazioni che sto sviluppando, eccetera eccetera. Questo significa che da oggi, su questo blog, a questo IP, a questo dominio risponde un serverino (con <strong>Debian</strong> come OS) totalmente configurato e amministrato dal sottoscritto, in macchina virtuale, con locazione fisica in un <strong>data center di Amsterdam</strong>.</p>
+<p>Il provider che ho scelto per farmi ospitare è <a href="https://www.digitalocean.com/">DigitalOcean</a>, per tutta una serie di motivi: primo fra tutti, il loro <a href="http://www.youtube.com/watch?v=vHZLCahai4Q">spot su YouTube</a> che mi ha conquistato, insieme ovviamente ai feedback dei miei amici. Su consiglio di <a href="http://blog.setale.me/">Lorenzo</a> infatti ho creato una droplet di test qualche mese fa, e non me ne sono mai pentito, anzi. Di qui, la decisione. Un altro punto a favore di <strong>DigitalOcean</strong> poi (almeno per me) è l'<strong>attenzione all'ecosistema open</strong>: ha una comunità fiorente, e ci sono developer (o membri del team) che donano soldi a chi porta avanti progetti che fanno crescere la piattaforma. Una dote rara da trovare, come ha raccontato sempre <strong>Lorenzo</strong> in un <a href="http://blog.setale.me/2013/09/01/500-di-soddisfazioni/">suo post</a>.</p>
+<p>In ultimo, ovviamente il prezzo: per <strong>5 dollari al mese</strong>, ossia come dicono negli sport di attrezzi per fitness <strong>qualche caffè ogni 15 giorni</strong>, abbiamo a disposizione delle istanze dove possiamo scegliere noi il <strong>sistema operativo</strong> e configurarle come preferiamo, con prestazioni assolutamente elevate e un pannello di controllo al top che permette il deploy rapido di nuove macchine, nel caso in cui l'architettura con cui ci troviamo dovesse (e potesse, chiaramente) scalare rapidamente.</p>
+<p>Insomma: per adesso sono soddisfatto. Ah, perché <strong>Amsterdam</strong>? Perché così posso ospitare chi e cosa voglio, senza preoccuparmi del fatto che <strong>GPG</strong> sia considerato un'<a href="http://en.wikipedia.org/wiki/Pretty_Good_Privacy#Current_situation">arma termonucleare globale</a>. (Ovviamente, adesso la situazione sulla <strong>crittografia PGP</strong> è più stabile, ma non intendo solo quella: voglio poter usare la tecnologia che mi pare. Simple.)</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2013/10/git-modificare-lurl-repository-remoto/" title="Git: modificare l'URL di un repository remoto - di Alessio Biancalana">
+          Git: modificare l'URL di un repository remoto
+        </a>
+      </h1>
+      <span class="post-date">22 Oct 2013</span>
+    
+
+    <p><img class="aligncenter" alt="git" src="http://farm9.staticflickr.com/8524/8673251944_0e3ca1f1f3_c.jpg" width="800" height="334" /></p>
+<p>In questi giorni mi è successa una cosa abbastanza strana (per me, almeno): ho iniziato a sviluppare un'applicazione, poi effettivamente ho scoperto che il <strong>nome che le avevo dato</strong> non solo era già preso da un'altra app (che mi aveva pure fregato il dominio), ma era registrato come trademark eccetera eccetera, cosicché se l'avessi usato comunque avrei fatto un grave torto al suo utilizzatore primario. Insomma, ho deciso di <strong>cambiare nome all'applicazione</strong>.</p>
+<p>Posto che non voglio discutere se sia giusto o meno assegnare un nome "ufficiale" a dei repository per app ancora in sviluppo, ho cambiato quindi anche nome al <strong>repository Git</strong> dove facevo push dei miei cambiamenti: essendo lo sviluppo portato avanti su più macchine, ho avuto delle difficoltà di tipo "rottura di cosiddetti" a migrare al nuovo repository, almeno finché non ho deciso di aprire il manuale di Git per controllare se "origin" potesse essere modificato senza particolari rogne. Così, ho studiato un po'.</p>
+<p>Per <strong>modificare un URL di un qualsiasi repository</strong> remoto a cui abbiamo assegnato uno short name, ci basta dare questo comando da terminale:</p>
+<p><code>git config remote.origin.url $URL</code></p>
+<p>Il che ovviamente corrisponde al modificare il <strong>repository origin</strong>. Se il repository si chiama pippo, ovviamente ci basterà modificare il nome del repository, intuitivamente:</p>
+<p><code>git config remote.pippo.url $URL</code></p>
+<p>Fine della storia. Così possiamo <strong>cambiare URL del repository</strong> remoto ogni volta che vogliamo. Ovviamente, per team di grandi dimensioni, è necessario avvisare all'interno del flusso di lavoro di stare fermi, pena trovarsi con <strong>commit e push mandati a carte quarantotto</strong>, specie se chi lavora al progetto fa parecchie push. Ah, la bellezza della continous integration.</p>
+<p><em>Poscritto</em> - <strong>Fulvio</strong> mi ha appena ricordato <a href="https://www.facebook.com/if.you.read.this.you.dont.need.glasses/posts/10202387757792303">su Facebook</a> che c'è anche un altro modo; da <strong>Git 1.7</strong> possiamo anche dare il seguente comando:</p>
+<p><code>git remote set-url origin $URL</code></p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2013/10/nexus-5-shut-money/" title="Nexus 5 - Shut up and take my money - di Alessio Biancalana">
+          Nexus 5 - Shut up and take my money
+        </a>
+      </h1>
+      <span class="post-date">18 Oct 2013</span>
+    
+
+    <p><img class="aligncenter" alt="Moto X" src="http://img.popherald.com/uploads/2013/08/google-nexus-5-motox.jpg" width="786" height="613" /></p>
+<p>Al solito, le mie <strong>considerazioni pre-uscita</strong> sul nuovo flagship device di <strong>Google</strong>. Perché ho messo una foto del Moto X in copertina, anche se stiamo parlando di <strong>Nexus 5</strong>? Perché, oltre ad essere una bella immagine in sé, il sentimento che ho provato guardando le <a href="http://www.theverge.com/2013/10/17/4850738/nexus-5-google-play-store-price">immagini semi-ufficiali</a> del Nexus 5 per la prima volta è stato molto simile a quello che mi è stato dettato dalla pancia (sono pur sempre un figlio del consumismo) quando ho visto il <strong>Moto X di Motorola</strong>: un dispositivo al top, costruito bene, capace di garantirmi anni di supporto e anni di <strong>hackability</strong> in totale tranquillità.</p>
+<p>Malgrado i miei sforzi, sto continuando a non possedere <strong>telefoni Nexus</strong> (per il tablet invece come sapete ho un bellissimo Nexus 7 di prima generazione), e me ne pento amaramente ogni volta che devo metterci le mani in maniera approfondita; questo Nexus 5 invece un po' come tutti i sui predecessori sarebbe un affare diverso, che mi permetterebbe di avere uno <strong>smartphone open</strong>... almeno in parte - viste le critiche (sensate!) di <a href="http://dottorblaster.it/2013/08/android-aosp-ha-perso-suo-pezzo-da-90-che-ha-fatto-bene-ad-andarsene/">Jean-Baptiste Queru</a> a tutto il cucuzzaro.</p>
+<p><img class="aligncenter" alt="Nexus 5" src="http://cdn1.sbnation.com/entry_photo_images/9143693/nexus_5_large_verge_medium_landscape.jpg" width="640" height="404" /></p>
+<p>Così, arriva la vera notizia: stanotte Google Play Devices ha aperto i battenti con il nuovo Nexus 5, immediatamente messo "a tacere" da Google stessa, altrettanto immediatamente leakato e diffuso dalla community che gravita attorno ad Android, come sempre attentissima. Cosa intendo fare? Intendo prenderlo. Esattamente come mi aveva stuzzicato il <a href="http://dottorblaster.it/2012/12/tuttavia-me-il-nexus-4/">Nexus 4</a>, anche questo Nexus 5 mi attira parecchio, e credo che farò il grande salto: ne vale la pena, specialmente potendo accedere già da subito ad un - seppur non ancora diffuso in forma di codice sorgente - <strong>Android 4.4</strong> stock, e guardare personalmente che cosa c'è di nuovo. Il nuovo design del launcher mi attira molto: chissà se sarà effettivamente così.</p>
+<p>Butto i miei soldi? Maybe. Sono un consumista nato, un <strong>gadget addicted</strong>. Sarebbe inevitabile fare altrimenti.</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/page/62"><i class="fa fa-chevron-circle-left"></i></a>
+  
+  
+    
+      <a class="pagination-item newer" href="/page/60"><i class="fa fa-chevron-circle-right"></i></a>
+    
+  
+</div>
+
+
+      <div class="footer">
+        <p>
+          &copy; Grab The Blaster is brought to you by Alessio Biancalana with <a href="http://jekyllrb.com/">Jekyll</a> and much ♥, under <a href="https://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC</a>.
+        </p>
+        <form class="search-form" action="/search" method="get">
+          <input type="text" placeholder="Cerca →" name="query">
+        </form>
+      </div>
+      <div class="webring-container">
+        <webring-banner>
+          <p>Member of <a href="https://retronerds.netlify.app"></a></p>
+          <a href="https://retronerds.netlify.app/prev">Previous</a>
+          <a href="https://retronerds.netlify.app/random">Random</a>
+          <a href="https://retronerds.netlify.app/next">Next</a>
+        </webring-banner>
+        <script async src="https://retronerds.netlify.app/embed.js" charset="utf-8"></script>
+      </div>
+    </div>
+
+  </body>
+</html>

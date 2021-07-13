@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <link rel="canonical" href="/page/151/" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- Enable Graph API for Facebook integration -->
+  <meta content="Grab The Blaster" property="og:site_name">
+  
+    <meta content="Home" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="Un blog nerd il giusto di Alessio Biancalana" property="og:description">
+  
+  
+    <meta content="https://dottorblaster.it/page/151/" property="og:url">
+  
+  
+  
+  
+
+  <!--   Enable Twitter Cards support through metadata, thanks to http://davidensinger.com/2013/04/supporting-twitter-cards-with-jekyll/ -->
+<!--   <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@site_username">
+  <meta name="twitter:creator" content="@creator_username">
+  
+    <meta name="twitter:title" content="Home">
+  
+  
+    <meta name="twitter:url" content="https://dottorblaster.it/page/151/">
+   -->
+  <!-- This is from @stammy -->
+<!--   <meta name="twitter:description" content="
+  {% for post in paginator.posts %}
+  
+    {% if post.layout == &quot;link&quot; %}
+      
+        
+          {{ post.title }}
+        
+        
+      
+    {% else %}
+      
+        
+          {{ ...">
+  
+    <meta name="twitter:image:src" content="https://dottorblaster.it/path/to/image/logo.png">
+    -->
+
+  <title>
+    
+      Grab The Blaster &middot; di Alessio Biancalana
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/grabtheblaster.css">
+  <link rel="stylesheet" href="/public/font-awesome/css/font-awesome.min.css">
+
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700italic,700,400italic' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,700' rel='stylesheet' type='text/css' />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title="" href="https://dottorblaster.it/feed">
+</head>
+
+
+  <body>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=81489295682&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="container content">
+      <div class="masthead">
+        <h3 class="masthead-title">
+          <img src="/public/avatar-blaster.png" alt="Alessio Biancalana">
+          <a href="/" title="Home page">Grab The Blaster</a>
+          <small>di Alessio Biancalana</small>
+        </h3>
+        <div class="social-icons"><a href="/about/" title="About Me"><i class="fa fa-user-circle-o"></i></a> <a href="https://twitter.com/dottorblaster" title="Twitter - @dottorblaster"><i class="fa fa-twitter"></i></a> <a href="https://github.com/dottorblaster" title="GitHub - dottorblaster"><i class="fa fa-github"></i></a></div>
+      </div>
+
+      <div class="posts">
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2007/12/il-compositor-di-metacity-ce/" title="Il compositor di Metacity? C'È!!! - di Alessio Biancalana">
+          Il compositor di Metacity? C'È!!!
+        </a>
+      </h1>
+      <span class="post-date">06 Dec 2007</span>
+    
+
+    <p>Cominciavo effettivamente a domandarmi se XFCE sarebbe stato o no seguito da Gnome nella scelta di integrare un compositor nel Window Manager... ebbene: l'hanno fatto!</p>
+<p>Oddio, non vorrei usare però paroloni troppo affrettati. Si tratta di un branch unstable dell'SVN di Gnome che comunque può essere tranquillamente compilato sulla nostra nostra Linux-Box senza fare danni. Ma partiamo dall'inizio:</p>
+<p>Un bel giorno arriva un tizio e dice di aver fatto delle belle cosine con la libreria tizio-caio bellissima e fighissima, che fornisce un effetto super-figo a Nautilus, così se ne esce su Gnome-Look con <a href="http://gnome-look.org/content/show.php/Nautilus+Transparent+Back?content=56631">il suo mockup</a> che rappresenta Nautilus con sfondo trasparente.</p>
+<p>L'idea di avere uno Gnome così frulla così in testa a tutti quanti (non ditemi che non siete mai andati a guardare due volte quel mockup), e c'è chi decide, forse per quel mockup, forse per puro genio creativo, di mettere in pratica una cosa simile: avere ombre seducenti e trasparenze reali direttamente in Gnome, senza dover sporcarsi le mani con Compiz o altre schifezze.<a id="more"></a><a id="more-131"></a></p>
+<p>Così viene fuori, in questo branch unstable, qualcosa di molto simile alle ombre e al fading che Compiz consente; ma invece di continuare a parlare, andiamo a compilare con le dritte fornite da <a href="http://elleuca.blogspot.com/2007/12/che-ce-frega-der-cileno-noi-cavemo.html">Luca Ferretti</a> nel suo post.</p>
+<p>Scarichiamo i sorgenti dall'SVN di Gnome:</p>
+<blockquote><p><em>svn co http://svn.gnome.org/svn/metacity/branches/iains-blingtastic-bucket-o-bling/ metacity-compositor</em></p></blockquote>
+<p>Se tutto è andato a buon fine, possiamo spostarci nella cartella dei sorgenti e andare ad inziare:</p>
+<blockquote><p><code>cd metacity-compositor<br />
+./autogen.sh --enable-compositor</code></p></blockquote>
+<p>Questo genererà tutto il generabile e abiliterà il compositing.</p>
+<blockquote><p><code>make</code></p></blockquote>
+<p>Ovviamente la procedura è la solita</p>
+<blockquote><p><code>sudo make install</code></p></blockquote>
+<p>o per chi non è illuminato dalla potenza di sudo</p>
+<blockquote><p><code>su<br />
+make install</code></p></blockquote>
+<p>Ok, e adesso? Beh, adesso è semplice: andiamo ad abilitare il compositing.</p>
+<blockquote><p><code>gconf-editor</code></p></blockquote>
+<p>aprirà l'editor della configurazione. Adesso andiamo a cercare la chiave, che si trova in</p>
+<blockquote><p><code>/apps/metacity/general/compositing_manager</code></p></blockquote>
+<p>andiamo a mettere il tic sul quadratino di fianco a compositing_manager e, fatto questo, riavviamo il nostro Gnome.</p>
+<p>UAO! Trasparenze reali, ombre, fading!</p>
+<p>Benvenuti nell'era del nuovo Metacity :D</p>
+<p align="center"><a href="http://img135.imageshack.us/img135/2466/schermatasb5.png"><img src="http://img513.imageshack.us/img513/8811/shotwl0.png" /></a></p>
+<p>_________</p>
+<p>Il post di Luca Ferretti <a href="http://osrevolution.wordpress.com/2007/12/05/bisognava-cogliere-lattimo-almeno-io-la-penso-cosi/">è stato segnalato a sua volta da imu</a>, in uno dei suoi ultimi post.</p>
+<p><strong>Aggiornamento</strong>: Sono stati risolti i problemi con Appearance... che aspettate, correte a compilare!</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2007/12/2624rc2-kamikaze/" title="2.6.24rc2-kamikaze - di Alessio Biancalana">
+          2.6.24rc2-kamikaze
+        </a>
+      </h1>
+      <span class="post-date">05 Dec 2007</span>
+    
+
+    <p>Neanche a dirlo, avevo tempo, ed è bastato dare</p>
+<blockquote><p>yaourt -S kernel26kamikaze</p></blockquote>
+<p>per compilarlo. Piccoli accorgimenti nel menù di configurazione mi hanno permesso di attivare tutto il supporto necessario al mio hard drive Serial ATA, che prima con i kernel custom faceva le bizze, invece adesso fila tutto liscio come l'olio.</p>
+<p align="center"><img src="http://img356.imageshack.us/img356/4628/schermatamonitordisisterm8.png" /></p>
+<p align="left">Kamikaze è un ottimo patchset, e lo consiglio a chiunque abbia voglia di mettere un po' le mani in pasta. Il tutto risulta accelerato per rasentare la perfezione di un sistema Linux come Dio comanda, ma alla fine, al mio occhio, non è che il tutto differisca molto dal vanilla che ho sulla Debian.</p>
+<p align="left">Se qualcuno avesse pareri discordanti da riferire, commentasse pure ;)</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2007/12/una-veste-tutta-nuova-per-la-home/" title="Una veste tutta nuova per la Home - di Alessio Biancalana">
+          Una veste tutta nuova per la Home
+        </a>
+      </h1>
+      <span class="post-date">04 Dec 2007</span>
+    
+
+    <p>Come avrete certamente notato, ho cambiato radicalmente il tema della Bl@ster's Home, sostituendo la vetusta estetica precedente con un bellissimo tema, sempre basato sulla semplicità di Kubrick, ma con qualche aggiunta in più ed un configuratore fantastico che non smetto mai di ammirare e con cui non la pianterò più di smanettare. Ma facciamo un tour completo del nuovo tema.<a id="more"></a><a id="more-129"></a></p>
+<p>Partiamo dalla prima cosa che l'occhio nota: l'header. Ho rifatto completamente l'header, basandomi sul precedente, cambiando Tux, in quanto quello che c'era prima sembrava stilizzato a detta di alcuni, così ne ho reperito un esemplare migliorato, e che si adattava bene allo stile del nuovo tema. La scritta che prima diceva "~blaster" è cambiata, per lasciare posto al mio compagno di avventure, un più "hackeroso" esemplare di consolle; sembra quasi Tilda, non trovate?</p>
+<p align="center"><img src="http://img122.imageshack.us/img122/4827/asherneotuxg28612ia9.png" /></p>
+<p>Andando immediatamente sotto troviamo la nuova navbar. Vi sarete sicuramente accorti che non avevo previsto ques'ultima, e quindi l'header va sistemato di conseguenza: si può infatti notare parte dell'ombreggiatura delle scritte che va a cozzare contro il background della nuova navbar, background che comunque si comporta egregiamente; ho inoltre modificato il file dell'header per metterci i link che volevo io, e non quella schifezza di elenco pagine che c'è sempre :)</p>
+<p>Andando sempre giù l'occhio del buon osservatore può trovare un piccolo calendario con background blu, bellissimo ma leggermente illeggibile, così ho deciso di ripetere la data subito accanto, nei metadati superiori... alla faccia delle cose poco chiare :D</p>
+<p>Andando ancora in basso, alla fine dei post, si può riscontrare la discordanza dal Mandigo originale in quanto ho ripristinato i link a categorie e commenti in fondo ai post e con uno stile che ricorda molto Freshy. Inoltre vedendo come era venuto il tutto, mi sono prodigato attraverso il configuratore affinchè le immagini fossero senza cornice (cosa secondo me bruttissima, e che non da per nulla senso di integrità con il post) e si trovassero sempre non parallele al testo, bensì leggermente staccate, come nel vecchio tema (e in tutti i temi di questo mondo).</p>
+<p>Infine spostando l'arguto occhio sulla destra si può vedere come io abbia faticosamente ripristinato la vecchia sidebar, che ormai è entrata a far parte della storia di questo blog, con la sua tagboard e gli antipixel che fanno un po' old style.</p>
+<p>Tocco finale, lo stile è allargato ai fini di ottimizzare il tutto per una risoluzione 1024x768.</p>
+<p>Parere? Su 10, 12! Un grande tema alla radice, personalizzato diventa un piccolo gioiello. In più, reputo di importanza vitale l'esistenza di un tema come questo, un tema che si mette in luce nell'era del web 2.0 per la sua possibilità di configurare ogni minimo aspetto estetico anche senza conoscere una virgola di codice HTML o CSS.</p>
+<p><strong>Enjoy the Web!</strong></p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2007/12/26239/" title="2.6.23.9 - di Alessio Biancalana">
+          2.6.23.9
+        </a>
+      </h1>
+      <span class="post-date">03 Dec 2007</span>
+    
+
+    <p>Dopo molto tempo dal suo rilascio, visto che non avevo nulla da fare, ho deciso di ricompilare all'ultima stable. Poche novità, pochi snellimenti, poche aggiunte. Ma vuoi mettere con l'output di <em>uname -r</em> che restituisce un lapidario</p>
+<blockquote><p>2.6.23.9</p></blockquote>
+<p>Non c'è lotta.</p>
+<p align="center"> <img src="http://img519.imageshack.us/img519/9785/schermatadomandafj9.png" /></p>
+<p align="left">Non vedo l'ora di provare il 2.6.24... ovviamente quando sarà rilasciato. Non ho voglia di mettermi a lottare con le prepatch :)</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+  <div class="post">
+    
+      <h1 class="post-title">
+        <a href="/2007/12/kde-4-the-neverending-story/" title="KDE 4 - The Neverending Story - di Alessio Biancalana">
+          KDE 4 - The Neverending Story
+        </a>
+      </h1>
+      <span class="post-date">02 Dec 2007</span>
+    
+
+    <p>E non mi riferisco al celebre libro "La Storia Infinita" di Michael Ende, bensì al rilascio del famosissimo KDE 4, il desktop ormai più atteso del pianeta: montoya purtroppo <a href="http://toastedtech.wordpress.com/2007/12/01/kde-4-spostata-la-release-a-gennaio/">informa i gentili lettori</a> che la quarta versione del K Desktop Environment non sarà più sui nostri PC in versione stabile l'undici Dicembre... bensì l'undici del mese di Gennaio 2008!</p>
+<p>Quello che doveva essere praticamente il rilascio dell'anno, è stato posticipato ancora... chissà che Gnome 3 non lo freghi :D</p>
+
+  </div>
+  <div class="post-closure">
+    <i class="icon-closure fa fa-paper-plane-o"></i>
+  </div>
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/page/152"><i class="fa fa-chevron-circle-left"></i></a>
+  
+  
+    
+      <a class="pagination-item newer" href="/page/150"><i class="fa fa-chevron-circle-right"></i></a>
+    
+  
+</div>
+
+
+      <div class="footer">
+        <p>
+          &copy; Grab The Blaster is brought to you by Alessio Biancalana with <a href="http://jekyllrb.com/">Jekyll</a> and much ♥, under <a href="https://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC</a>.
+        </p>
+        <form class="search-form" action="/search" method="get">
+          <input type="text" placeholder="Cerca →" name="query">
+        </form>
+      </div>
+      <div class="webring-container">
+        <webring-banner>
+          <p>Member of <a href="https://retronerds.netlify.app"></a></p>
+          <a href="https://retronerds.netlify.app/prev">Previous</a>
+          <a href="https://retronerds.netlify.app/random">Random</a>
+          <a href="https://retronerds.netlify.app/next">Next</a>
+        </webring-banner>
+        <script async src="https://retronerds.netlify.app/embed.js" charset="utf-8"></script>
+      </div>
+    </div>
+
+  </body>
+</html>
