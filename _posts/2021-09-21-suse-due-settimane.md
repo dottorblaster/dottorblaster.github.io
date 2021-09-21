@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: true
-title: SUSE Week #2 
+title: "SUSE Week #2" 
 date: 2021-09-21 11:42:43 +0200
 categories: 
 - Open Source
