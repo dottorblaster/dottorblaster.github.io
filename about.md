@@ -11,5 +11,5 @@ E così, dopo **Linux** ho deciso che la prossima cosa di cui avrei imparato ogn
 
 Durante questi anni ho raggiunto svariati risultati soddisfacenti, come gli incontri più che ravvicinati con la community di **Arch Linux**, la mia distribuzione Linux preferita, vari contributi all'ecosistema **open source**, e una parentesi molto stimolante all'interno della comunità italiana relativa agli **open data**.
 
-Attualmente sono Senior Software Engineer in [Prima.it](https://www.prima.it/), ma i side project mi affascinano, e ne ho sempre portato avanti qualcuno nel tempo libero. Per parlarne, basta [scrivermi](mailto:dottorblaster@gmail.com). Per il mio curriculum, c'è il mio [LinkedIn](https://it.linkedin.com/in/alessiobiancalana).
+Attualmente sono Senior Software Engineer in [SUSE](https://www.suse.com/), ma i side project mi affascinano, e ne ho sempre portato avanti qualcuno nel tempo libero. Per parlarne, basta [scrivermi](mailto:dottorblaster@gmail.com). Per il mio curriculum, c'è il mio [LinkedIn](https://it.linkedin.com/in/alessiobiancalana).
 
