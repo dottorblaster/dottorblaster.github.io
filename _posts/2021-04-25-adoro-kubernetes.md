@@ -50,4 +50,6 @@ Non è facile riassumere tutto quello che uno può imparare in settimane di deep
 
 Non fatevi cogliere alla sprovvista.
 
+_Un ringraziamento particolare a [Andrea Spagnolo](https://www.linkedin.com/in/andrea-spagnolo-0189574), che mi ha fatto da mentore nell'apprendimento delle basi di Kubernetes, ed è stato anche un mio fidatissimo compagno di profanità quando ho provato a usare [cert-manager](https://cert-manager.io/)._
+
 [^1]: O anche deployare degli applicativi completi. K3s è full-K8s compliant rispetto alle API, e anche se è particolarmente indicato per ambienti piccoli non c'è dubbio che possiamo deployarci anche un bell'MVP in produzione.
