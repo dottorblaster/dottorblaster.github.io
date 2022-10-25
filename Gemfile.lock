@@ -62,7 +62,7 @@ GEM
     regexp_parser (2.6.0)
     rexml (3.2.5)
     rickshaw (0.5.0)
-    rmagick (4.3.0)
+    rmagick (5.0.0)
     rouge (4.0.0)
     rubocop (1.37.1)
       json (~> 2.3)
