@@ -46,13 +46,13 @@ module Jekyll
     end
 
     def generate_title_layer(context)
-      Magick::Image.read("caption:#{context['page']['title']}") do
-        self.fill = '#FFFFFF'
-        self.font = 'JetBrains-Mono-Bold'
-        self.pointsize = 40
-        self.size = '1100x630'
-        self.gravity = Magick::CenterGravity
-        self.background_color = 'none'
+      Magick::Image.read("caption:#{context['page']['title']}") do |caption|
+        caption.fill = '#FFFFFF'
+        caption.font = 'JetBrains-Mono-Bold'
+        caption.pointsize = 40
+        caption.size = '1100x630'
+        caption.gravity = Magick::CenterGravity
+        caption.background_color = 'none'
       end.first
     end
   end
