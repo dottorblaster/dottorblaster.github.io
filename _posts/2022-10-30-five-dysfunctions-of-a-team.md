@@ -16,7 +16,7 @@ tags:
 
 ![Le cinque disfunzioni di un team](https://gitlab.com/dottorblaster/blog-images/-/raw/master/images/five_dysnfunctions.png)
 
-Tempo fa, il mio amico [Marco](https://github.com/xantrac) mi ha inviato un libro dicendo che lo avrei trovato illuminante. Consentitemi uno spoiler: lo è stato. Quando ho iniziato a leggere **The Five Dysfunctions Of A Team, di Patrick Lencioni**, non avrei mai immaginato che nonostante la semplicità dei concetti esposti l'avrei trovato così "eye-opening". Una delle cose che mi hanno colpito, per esempio, è stato il fatto che il paradigma che viene esposto funzioni a tutti i livelli, senza distinzioni, che si tratti di un team di exec che fanno del prendere decisioni ad alto livello il proprio mestiere, o che si tratti di un team di sviluppatori.
+Tempo fa, il mio amico [Marco](https://github.com/xantrac) mi ha inviato un libro dicendo che lo avrei trovato illuminante. Consentitemi uno spoiler: lo è stato. Quando ho iniziato a leggere **The Five Dysfunctions Of A Team, di Patrick Lencioni**, non avrei mai immaginato che nonostante la semplicità dei concetti esposti l'avrei trovato così "eye-opening". Una delle cose che mi hanno colpito, per esempio, è stato il fatto che il paradigma che viene esposto funzioni a tutti i livelli, senza distinzioni, che si tratti di un team di exec che fa del prendere decisioni ad alto livello il proprio mestiere, o che si tratti di un team di sviluppatori.
 
 O ancora, che si tratti di un team con competenze orizzontali.
 
