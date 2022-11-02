@@ -64,7 +64,7 @@ GEM
     rickshaw (0.5.0)
     rmagick (5.0.0)
     rouge (4.0.0)
-    rubocop (1.37.1)
+    rubocop (1.38.0)
       json (~> 2.3)
       parallel (~> 1.10)
       parser (>= 3.1.2.1)
