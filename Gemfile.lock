@@ -7,7 +7,7 @@ GEM
     burstfm (0.2.0)
       colorize
     colorator (1.1.0)
-    colorize (1.0.3)
+    colorize (1.0.5)
     concurrent-ruby (1.1.10)
     em-websocket (0.5.3)
       eventmachine (>= 0.12.9)
