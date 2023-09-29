@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: true
-title: Dottorblaster feat. Trento Halloween Tour 2023
+title: "Dottorblaster feat. Trento Halloween Tour 2023"
 date: 2023-09-29 16:50:11 +0200
 categories:
 - Linux
