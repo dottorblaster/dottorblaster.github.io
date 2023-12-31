@@ -110,6 +110,8 @@ pre code {
 
 .post-date {
   text-align: center;
+  margin-bottom: 0.2rem;
+  font-size: 14px;
 }
 
 div.highlight {
@@ -250,5 +252,6 @@ a.pagination-item:hover {
 
   .post-date {
     text-align: left;
+    font-size: 18px;
   }
 }

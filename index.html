@@ -14,12 +14,12 @@ title: Home
         <a href="{{ post.url }}" title="permalink: {{ post.title }} di Alessio Biancalana"><i class="fa fa-comments-o icon-commentary"></i></a>
       </h2>
     {% else %}
+      <span class="post-date">{{ post.date | date_to_string }}</span>
       <h1 class="post-title">
         <a href="{{ post.url }}" title="{{ post.title}} - di Alessio Biancalana">
           {{ post.title }}
         </a>
       </h1>
-      <span class="post-date">{{ post.date | date_to_string }}</span>
     {% endif %}
 
     {{ post.content }}
