@@ -173,11 +173,6 @@ a.pagination-item:hover {
   color: #999999;
 }
 
-.social-section {
-  margin-bottom: 1rem;
-  margin-top: -1rem;
-}
-
 .twitter-share-button {
   vertical-align: text-bottom !important;
   margin-left: 2rem;
