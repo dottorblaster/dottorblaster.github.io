@@ -69,7 +69,7 @@ GEM
     regexp_parser (2.9.0)
     rexml (3.2.6)
     rickshaw (0.5.0)
-    rmagick (5.4.1)
+    rmagick (5.4.2)
       observer (~> 0.1)
       pkg-config (~> 1.4)
     rouge (4.2.0)
