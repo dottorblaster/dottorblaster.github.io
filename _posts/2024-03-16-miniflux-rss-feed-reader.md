@@ -29,7 +29,7 @@ Per quanto ci abbia pensato, comunque non ho mai trovato la voglia di strisciare
 
 Ovviamente la mia risposta è stata sull'onda del "se prima avevi la mia curiosità ora hai la mia attenzione", e ho cominciato a investigare.
 
-E quindi adesso vi spiego perché Miniflux è il feed reader migliore del mondo.
+E quindi adesso vi spiego perché **Miniflux** è il feed reader migliore del mondo.
 
 Innanzi tutto ha un'interfaccia web minimalissima. E quando dico minimale intendo _davvero_ minimale, no notifiche, no toast, no cazzate, solo tu e il testo. Penso che il tutto siano solo template statici, che per un'app del genere assolvono il compito perfettamente.
 
