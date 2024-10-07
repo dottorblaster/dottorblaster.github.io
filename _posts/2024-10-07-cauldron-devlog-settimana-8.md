@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: true
-title: Cauldron dev log, settimana #8
+title: "Cauldron dev log, settimana #8"
 date: 2024-10-07 21:04:39 +0200
 categories: 
 - Category
