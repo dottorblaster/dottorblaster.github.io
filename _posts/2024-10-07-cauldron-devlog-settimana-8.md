@@ -5,10 +5,13 @@ published: true
 title: "Cauldron dev log, settimana #8"
 date: 2024-10-07 21:04:39 +0200
 categories: 
-- Category
+- Linux
 tags: 
-- first_tag
-- second_tag
+- linux
+- gnome
+- pocket
+- cauldron
+- gtk
 ---
 
 Da metà Luglio più o meno sto scrivendo un **client Pocket per Linux** che ho iniziato per un paio di motivi principali:
