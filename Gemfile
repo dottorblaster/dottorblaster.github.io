@@ -10,4 +10,4 @@ gem 'rmagick'
 gem 'rickshaw'
 gem 'rubocop', require: false
 
-gem "webrick", "~> 1.8"
+gem "webrick", "~> 1.9"
