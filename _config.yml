@@ -37,3 +37,5 @@ exclude:
   - LICENSE.md
   - .gitignore
   - vendor
+
+include: [".well-known"]
