@@ -25,7 +25,7 @@ A Natale però ho deciso di farmi un piccolo regalo extra, grazie anche allo sti
 - Switch: **Gazzew Boba Linear Thock**, prelubrificati;
 - Keycap: **SOLIDEE 135 bianchi**, con l'alfabeto **hiragana** riportato a lato, regalo di Agnese.
 
-### L'arrivo
+## L'arrivo
 La sfida maggiore è stata reperire tutti i pezzi: il case/kit Tofu60 si trova abbastanza facilmente, i keycap sono stati ordinati su un noto sito di ecommerce, mentre per gli switch ho dovuto impegnarmi un po' di più: oltre a venire oggettivamente un rene rispetto a degli switch per delle tasche più contenute, ho scoperto che i Boba Linear sono rari come il santo Graal, motivo per cui ho dovuto prenderli da un sito terribile, che non nominerò, ma che ha affidato la sua logistica a UPS.
 
 ![Close-up della confezione dei Boba Linear](https://gitlab.com/dottorblaster/blog-images/-/raw/master/images/new-keeb/2025-01-26_18-38-04_673.jpeg)
@@ -39,7 +39,7 @@ Siccome so che ve lo state chiedendo: oggettivamente sono gli switch migliori ch
 
 ![La weight bar infilata dentro il case](https://gitlab.com/dottorblaster/blog-images/-/raw/master/images/new-keeb/2025-01-24_15-44-21_690.jpeg)
 
-### Il montaggio
+## Il montaggio
 A posteriori, devo dire che il montaggio non mi ha preso troppo tempo, e **pensavo molto peggio**. Lì per lì, tuttavia, ci sono stati dei momenti in cui ho detto "adesso appendo tutto e vado a farmi un giro" da quanto ero frustrato. Il motivo di questa frustrazione è che il kit di suo arriva **senza un vero set di istruzioni**. Alla seconda build guide che guardavo su YouTube ho anche capito un po' come funzionava tutto il giro, e sono andato a riguardare la pagina del kit stesso su KBDFans, dove c'è in realtà un breakdown abbastanza preciso delle parti e di come si combinano tra di loro.
 
 ![PCB, foam e plate](https://gitlab.com/dottorblaster/blog-images/-/raw/master/images/new-keeb/2025-01-24_15-44-03_420.jpeg)
