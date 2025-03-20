@@ -16,7 +16,7 @@ tags:
 
 Pur essendo una persona che soffre moderatamente il cambio di stagione[^1], devo dire che sto accusando quest'entrata della primavera in maniera meno grave del solito, e uno dei motivi è che il design team di GNOME (nella persona di [Brage Fuglseth](https://bragefuglseth.dev/)) ha finalmente dato un'icona a [Cauldron](https://flathub.org/apps/it.dottorblaster.cauldron). Sinceramente sono sempre stato emozionato più del dovuto per questa cosa, e devo dire che fin dal primo momento mi sono eccitato come un cucciolo di labrador perché non solo ho provato a fare un'app desktop e ci sono sommariamente riuscito, ma grazie a questa icona adesso sembra anche una "cosa vera" - di quelle del desktop environment per davvero, ecco.
 
-![L'icona di Cauldron in anteprima](https://gitlab.gnome.org/-/project/1308/uploads/a1dffc1c71c96538a11a5ae32d682f4a/Preview.png)
+![L'icona di Cauldron in anteprima](https://gitlab.com/dottorblaster/blog-images/-/raw/master/images/cauldron/cauldron.png)
 
 Questo mi ha dato un boost di motivazione per aggiungere due cose che volevo piazzare dentro Cauldron da tantissimo tempo:
 
