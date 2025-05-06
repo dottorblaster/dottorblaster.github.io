@@ -34,8 +34,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Install ImageMagick inside the CI environment
-        run: sudo apt install -y imagemagick libmagickwand-dev
+        run: |
+          sudo apt update
+          sudo apt install -y imagemagick libmagickwand-dev
+
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
