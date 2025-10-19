@@ -14,7 +14,7 @@ tags:
 
 Sono stato tirato in ballo [da Marco durante uno dei suoi ultimi scritti](https://cedmax.net/effimero/) perché mi ha fatto fare (con mio sommo piacere) da beta reader, e durante la lettura gli ho attaccato una pippa così possente che ha deciso di taggarmi direttamente.
 
-Vado quindi con questa mia (lol) a rispondere a un paio di punti che mi hanno davvero stuzzicato, specialmente rigusardo il perché facciamo quello che facciamo, anche perché mi ha particolarmente colpito l'atteggiamente a tratti simile a tratti profondamente diverso con cui ci approcciamo a determinate gesta, soprattutto tecnologiche.
+Vado quindi con questa mia (lol) a rispondere a un paio di punti che mi hanno davvero stuzzicato, specialmente riguardo il perché facciamo quello che facciamo, anche perché mi ha particolarmente colpito l'atteggiamente a tratti simile a tratti profondamente diverso con cui ci approcciamo a determinate gesta, soprattutto tecnologiche.
 
 Un punto riguarda i side project. Quello che mi è sempre capitato di pensare soprattutto dopo un certo punto è che è vero che i side project sono qualcosa che nella maggior parte dei casi va a morire, ma soprattutto quando vengono integrati in una prospettiva e in un ecosistema più ampi è molto più difficile che diventino solo un rinnovo automatico sulla carta di credito. Per questo motivo dopo parecchi progetti condotti in questo modo ho deciso in realtà di sfruttare il mio tempo libero in un modo che almeno a me fa divertire di più: progetti relativamente grandi, open source, possibilmente con una bella prospettiva di adozione futura o con una grossissima storia che ne possa assicurare quantomeno la sopravvivenza "nell'etere" (ovvero nell'Internet, in qualche modo[^1]).
 
