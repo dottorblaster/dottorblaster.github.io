@@ -13,7 +13,7 @@
 			"id": "did:web:dottorblaster.it#atproto",
 			"type": "Multikey",
 			"controller": "did:web:dottorblaster.it",
-			"publicKeyMultibase": "zQ3shhy7K9Xy2PjsVEZwMYk7ZcmCYsfRkBTH4Ey2BNKmQYBwi"
+			"publicKeyMultibase": "zQ3shmEdMExNxsv8wRC2jfaFKsevKh2NPngfYH4aDkV8yxmGY"
 		}
 	],
 	"service": [
