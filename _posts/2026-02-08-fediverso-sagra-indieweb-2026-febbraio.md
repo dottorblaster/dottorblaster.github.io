@@ -3,7 +3,7 @@
 layout: post
 status: publish
 published: true
-title: Fediverso ed elucubrazioni connesse (Sagra IndieWeb 2026 - Febbraio)
+title: "Fediverso ed elucubrazioni connesse (Sagra IndieWeb 2026 - Febbraio)"
 date: 2026-02-08 12:35:15 +0100
 categories:
 - Tech
