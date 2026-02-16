@@ -5,7 +5,7 @@ title: Home
 
 <div class="posts">
   {% for post in paginator.posts %}
-  <div class="post">
+  <div class="post"{% if post.lang and post.lang != site.lang %} lang="{{ post.lang }}"{% endif %}>
     {% if post.layout == "link" %}
       <h2 class="post-title post-title-link">
         <a href="{{ post.origlink }}">
