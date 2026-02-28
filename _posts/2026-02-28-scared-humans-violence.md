@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: true
-language: en
+lang: en
 title: Scared humans and violence
 date: 2026-02-28 11:33:13 +0100
 categories:
