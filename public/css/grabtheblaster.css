@@ -79,7 +79,7 @@ body::after {
   z-index: 0;
   border-radius: 50%;
   filter: blur(110px);
-  opacity: 0.18;
+  opacity: 0.25;
 }
 
 body::before {
@@ -102,23 +102,8 @@ body::after {
 html[data-theme="dark"] body::before { opacity: 0.32; }
 html[data-theme="dark"] body::after  { opacity: 0.20; }
 
-/* subtle grid, fading toward the bottom */
-body > .container::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 0;
-  background-image:
-    linear-gradient(to right, var(--rule) 1px, transparent 1px),
-    linear-gradient(to bottom, var(--rule) 1px, transparent 1px);
-  background-size: 48px 48px;
-  -webkit-mask-image: radial-gradient(ellipse at 50% 15%, #000 25%, transparent 75%);
-          mask-image: radial-gradient(ellipse at 50% 15%, #000 25%, transparent 75%);
-  opacity: 0.45;
-}
-
-html[data-theme="dark"] body > .container::before { opacity: 0.6; }
+/* no background texture — just the radial glows below do the work */
+body > .container::before { content: none; }
 
 .container.content {
   position: relative;
