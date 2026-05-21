@@ -2,9 +2,23 @@
   <link href="http://gmpg.org/xfn/11" rel="profile">
   <link rel="canonical" href="{{ page.url }}" />
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="color-scheme" content="light dark">
 
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- Anti-FOUC theme bootstrap: must run before render -->
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem('gtb-theme');
+        var theme = stored || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
 
   <!-- Enable Graph API for Facebook integration -->
   <meta content="{{ site.title }}" property="og:site_name">
@@ -77,9 +91,10 @@
   <link rel="stylesheet" href="/{{ site.baseurl }}public/font-awesome/css/font-awesome.min.css">
 
   <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700italic,700,400italic' rel='stylesheet' type='text/css' />
-  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css' />
-  <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,700' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap' rel='stylesheet' type='text/css' />
 
   <!-- Icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/{{ site.baseurl }}public/apple-touch-icon-precomposed.png">

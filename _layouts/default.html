@@ -4,49 +4,59 @@
   {% include head.html %}
 
   <body>
-
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=81489295682&version=v2.0";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+    {% include statusbar.html %}
 
     <div class="container content">
-      <div class="masthead">
-        <h3 class="masthead-title">
-          <img src="{{ site.baseurl }}/public/avatar-blaster.png" alt="Alessio Biancalana">
-          <a href="{{ site.baseurl }}/" title="Home page">{{ site.title }}</a>
-          <small>{{ site.tagline }}</small>
-        </h3>
-        <div class="social-icons">
-          <a href="{{ site.baseurl }}/about/" title="About Me"><i class="fa fa-user-circle"></i></a>
-          <a href="https://fosstodon.org/@dottorblaster" title="Mastodon - @dottorblaster@fosstodon.org"><i class="fab fa-mastodon"></i></a>
-          <a href="https://github.com/dottorblaster" title="GitHub - dottorblaster"><i class="fab fa-github-alt"></i></a></div>
-      </div>
+      <header class="masthead hero">
+        <p class="hero-eyebrow"><span class="term-accent">~</span> linux &middot; open source &middot; dal 2014 <span class="penguin">&lt;(°)</span></p>
+        <h1 class="hero-title">
+          <a href="{{ site.baseurl }}/" title="Home page" class="hero-logo">
+            <span class="hero-logo-l1">Grab The</span>
+            <span class="hero-logo-l2">Blaster</span>
+          </a>
+        </h1>
+        <p class="hero-tagline"><span class="mono-comment">//</span> {{ site.tagline }}</p>
+        <p class="hero-prompt" aria-hidden="true">
+          <span class="prompt-user">dottorblaster</span><span class="prompt-at">@</span><span class="prompt-host">grabtheblaster</span><span class="prompt-tail">:~$</span>
+          <span class="prompt-cmd">ls -t ./posts</span><span class="prompt-cursor"></span>
+        </p>
+        <nav class="hero-nav" aria-label="Site navigation">
+          <a class="nav-pill" href="{{ site.baseurl }}/about/" title="About Me"><i class="fa fa-user-circle" aria-hidden="true"></i><span>about</span></a>
+          <a class="nav-pill" href="https://fosstodon.org/@dottorblaster" title="Mastodon - @dottorblaster@fosstodon.org" rel="me"><i class="fab fa-mastodon" aria-hidden="true"></i><span>mastodon</span></a>
+          <a class="nav-pill" href="https://github.com/dottorblaster" title="GitHub - dottorblaster"><i class="fab fa-github-alt" aria-hidden="true"></i><span>github</span></a>
+          <a class="nav-pill nav-pill-rss" href="{{ site.url }}/feed" title="RSS feed"><i class="fa fa-rss" aria-hidden="true"></i><span>rss</span></a>
+        </nav>
+      </header>
 
-      {{ content }}
+      <main>
+        {{ content }}
+      </main>
 
-      <div class="footer">
-        <p>
+      <footer class="footer">
+        <pre class="git-log"><a class="gl-link" href="https://github.com/dottorblaster/dottorblaster.github.io/commit/{{ site.git.full }}" title="vedi commit su GitHub"><span class="gl-commit">commit {{ site.git.full }}</span></a><span class="gl-ref"> (HEAD -&gt; master, origin/master)</span>
+<span class="gl-key">Author:</span> {{ site.git.author | escape }} &lt;{{ site.git.email | escape }}&gt;
+<span class="gl-key">Date:</span>   {{ site.git.date | escape }}
+
+    <span class="gl-subject">{{ site.git.subject | escape }}</span></pre>
+
+        <p class="footer-copy">
           &copy; {{ site.title }} is brought to you by {{ site.author.name }} with <a href="http://jekyllrb.com/">Jekyll</a> and much ♥, under <a href="{{ site.license.link }}">{{ site.license.label }}</a>.
         </p>
-        <form class="search-form" action="/search" method="get">
-          <input type="text" placeholder="Cerca →" name="query">
+        <form class="search-form" action="/search" method="get" role="search">
+          <input type="text" placeholder="cerca · premi /" name="query" aria-label="Cerca nel blog (scorciatoia: barra)">
         </form>
-      </div>
-      <div class="webring-container">
-        <webring-banner>
-          <p>Member of <a href="https://retronerds.netlify.app">{{ your-title }}</a></p>
-          <a href="https://retronerds.netlify.app/prev">Previous</a>
-          <a href="https://retronerds.netlify.app/random">Random</a>
-          <a href="https://retronerds.netlify.app/next">Next</a>
-        </webring-banner>
-        <script async src="https://retronerds.netlify.app/embed.js" charset="utf-8"></script>
-      </div>
+        <div class="webring-container">
+          <webring-banner>
+            <p>Member of <a href="https://retronerds.netlify.app">{{ your-title }}</a></p>
+            <a href="https://retronerds.netlify.app/prev">Previous</a>
+            <a href="https://retronerds.netlify.app/random">Random</a>
+            <a href="https://retronerds.netlify.app/next">Next</a>
+          </webring-banner>
+          <script async src="https://retronerds.netlify.app/embed.js" charset="utf-8"></script>
+        </div>
+      </footer>
     </div>
 
+    <script defer src="{{ site.baseurl }}/public/js/blog.js"></script>
   </body>
 </html>

@@ -1,0 +1,55 @@
+{% comment %} breadcrumb path — shell-style location {% endcomment %}
+{% assign show_progress = false %}
+{% assign ws_active = 0 %}
+{% if page.layout == "post" %}
+  {% assign breadcrumb = "~/posts/" | append: page.slug %}
+  {% assign show_progress = true %}
+  {% assign ws_active = 1 %}
+{% elsif page.layout == "link" %}
+  {% assign breadcrumb = "~/links/" | append: page.slug %}
+  {% assign show_progress = true %}
+  {% assign ws_active = 1 %}
+{% elsif paginator.page > 1 %}
+  {% assign breadcrumb = "~/page/" | append: paginator.page %}
+  {% assign ws_active = 1 %}
+{% elsif page.url == "/" %}
+  {% assign breadcrumb = "~" %}
+  {% assign ws_active = 1 %}
+{% elsif page.url == "/about/" %}
+  {% assign breadcrumb = "~/about" %}
+  {% assign ws_active = 2 %}
+{% elsif page.url contains "/search" %}
+  {% assign breadcrumb = "~/search" %}
+  {% assign ws_active = 4 %}
+{% elsif page.url contains "404" %}
+  {% assign breadcrumb = "~/404" %}
+{% else %}
+  {% assign breadcrumb = "~" | append: page.url | replace_first: "/", "/" %}
+{% endif %}
+
+<div class="statusbar" role="navigation" aria-label="Status bar">
+  <div class="statusbar-inner">
+    <div class="ws-group" aria-label="Sezioni del sito (scorciatoie 1–4)">
+      <a class="ws{% if ws_active == 1 %} active{% endif %}" href="{{ site.baseurl }}/" data-tip="home" aria-label="Home (1)"{% if ws_active == 1 %} aria-current="page"{% endif %}>1</a>
+      <a class="ws{% if ws_active == 2 %} active{% endif %}" href="{{ site.baseurl }}/about/" data-tip="about" aria-label="About (2)"{% if ws_active == 2 %} aria-current="page"{% endif %}>2</a>
+      <a class="ws" href="{{ site.url }}/feed" data-tip="feed" aria-label="RSS feed (3)">3</a>
+      <a class="ws{% if ws_active == 4 %} active{% endif %}" href="{{ site.baseurl }}/search" data-tip="search" aria-label="Search (4)"{% if ws_active == 4 %} aria-current="page"{% endif %}>4</a>
+    </div>
+    <span class="sb-sep" aria-hidden="true">│</span>
+    <span class="sb-path" title="{{ breadcrumb }}">{{ breadcrumb }}</span>
+    <span class="sb-spacer" aria-hidden="true"></span>
+    {% if show_progress %}
+      <span class="sb-progress" id="sb-progress" aria-label="Avanzamento lettura">
+        <span class="sb-progress-bar"><span class="sb-progress-fill"></span></span>
+        <span class="sb-progress-pct">0%</span>
+      </span>
+    {% endif %}
+    <span class="sb-seg sb-hide-sm" aria-hidden="true">CPU 2%</span>
+    <span class="sb-seg sb-hide-sm" aria-hidden="true"> 87%</span>
+    <span class="sb-seg sb-clock" id="sb-clock" aria-live="polite">--:--</span>
+    <button type="button" class="sb-theme" id="sb-theme-toggle" aria-label="Cambia tema">
+      <span class="sb-theme-icon" aria-hidden="true">☀</span>
+      <span class="sb-theme-label">light</span>
+    </button>
+  </div>
+</div>

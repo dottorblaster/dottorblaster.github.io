@@ -2,40 +2,50 @@
 layout: default
 ---
 
-<div class="post">
-  <span class="post-date">{{ page.date | date_to_string }}</span>
-  <h1 class="post-title">{{ page.title }}</h1>
-  {{ content }}
-</div>
+<article class="post post-single">
+  <header class="post-header">
+    {% assign post_lang = page.lang | default: site.lang %}
+    <div class="post-card-meta">
+      <span class="lang-badge lang-{{ post_lang | downcase }}">{{ post_lang | upcase }}</span>
+      <span class="meta-date">{{ page.date | date_to_string }}</span>
+      {% if page.categories.size > 0 %}
+        <span class="meta-sep" aria-hidden="true">·</span>
+        <span class="meta-cat">{{ page.categories | first | downcase }}</span>
+      {% endif %}
+    </div>
+    <h1 class="post-title">{{ page.title }}</h1>
+  </header>
+  <div class="post-body">
+    {{ content }}
+  </div>
+</article>
 
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'blasterhome'; // required: replace example with your forum shortname
+<section class="comments" aria-label="Comments">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      var disqus_shortname = 'blasterhome';
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
 
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-
-
-<div class="related">
-  <h2>Related Posts</h2>
+{% if site.related_posts.size > 0 %}
+<section class="related" aria-label="Related posts">
+  <h2 class="related-title">// related</h2>
   <ul class="related-posts">
     {% for post in site.related_posts limit:3 %}
       <li>
-        <h3>
-          <a href="{{ site.url }}{{ post.url }}">
-            {{ post.title }}
-            <small>{{ post.date | date_to_string }}</small>
-          </a>
-        </h3>
+        <a class="related-card" href="{{ site.url }}{{ post.url }}">
+          <span class="related-card-date">{{ post.date | date_to_string }}</span>
+          <span class="related-card-title">{{ post.title }}</span>
+        </a>
       </li>
     {% endfor %}
   </ul>
-</div>
+</section>
+{% endif %}
