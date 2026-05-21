@@ -3,46 +3,57 @@ layout: default
 title: Home
 ---
 
-<div class="posts">
+<section class="posts feed" aria-label="Articoli recenti">
   {% for post in paginator.posts %}
-  <div class="post"{% if post.lang and post.lang != site.lang %} lang="{{ post.lang }}"{% endif %}>
+    {% assign post_lang = post.lang | default: site.lang %}
     {% if post.layout == "link" %}
-      <h2 class="post-title post-title-link">
-        <a href="{{ post.origlink }}">
-          {{ post.title }}
-        </a>
-        <a href="{{ post.url }}" title="permalink: {{ post.title }} di Alessio Biancalana"><i class="fa fa-comments-o icon-commentary"></i></a>
-      </h2>
+      {% assign card_href = post.origlink %}
+      {% assign read_label = "leggi il link →" %}
     {% else %}
-      <span class="post-date">{{ post.date | date_to_string }}</span>
-      <h1 class="post-title">
-        <a href="{{ post.url }}" title="{{ post.title}} - di Alessio Biancalana">
-          {{ post.title }}
-        </a>
-      </h1>
+      {% assign card_href = post.url %}
+      {% assign read_label = "leggi →" %}
     {% endif %}
 
-    {{ post.content }}
-  </div>
-  <div class="post-closure">
-    <i class="icon-closure fa fa-paper-plane-o"></i>
-  </div>
+    <a class="post-card{% if post.layout == 'link' %} post-card-link{% endif %}"
+       href="{{ card_href }}"
+       {% if post.lang and post.lang != site.lang %}lang="{{ post.lang }}"{% endif %}>
+      <div class="post-card-meta">
+        <span class="lang-badge lang-{{ post_lang | downcase }}">{{ post_lang | upcase }}</span>
+        <span class="meta-date">{{ post.date | date_to_string }}</span>
+        {% if post.categories.size > 0 %}
+          <span class="meta-sep" aria-hidden="true">·</span>
+          <span class="meta-cat">{{ post.categories | first | downcase }}</span>
+        {% endif %}
+        {% if post.layout == "link" %}
+          <span class="meta-sep" aria-hidden="true">·</span>
+          <span class="meta-kind"><i class="fa fa-link" aria-hidden="true"></i> link</span>
+        {% endif %}
+      </div>
+      <h2 class="post-card-title">{{ post.title }}</h2>
+      <p class="post-card-excerpt">{{ post.content | strip_html | truncatewords: 40 }}</p>
+      <div class="post-card-footer">
+        <span class="read-more">{{ read_label }}</span>
+        {% if post.layout == "link" %}
+          <a class="permalink-hint" href="{{ post.url }}" title="permalink: {{ post.title }}"><i class="fa fa-comments-o" aria-hidden="true"></i> commenti</a>
+        {% endif %}
+      </div>
+    </a>
   {% endfor %}
-</div>
+</section>
 
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="/{{ site.baseurl }}page/{{paginator.next_page}}"><i class="fa fa-chevron-circle-left"></i></a>
-  {% else %}
-    <span class="pagination-item older"><i class="fa fa-chevron-circle-left"></i></span>
-  {% endif %}
+<nav class="pagination" aria-label="Paginazione">
   {% if paginator.previous_page %}
     {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="/{{ site.baseurl }}"><i class="fa fa-chevron-circle-right"></i></a>
+      <a class="pagination-item newer" href="/{{ site.baseurl }}"><span class="pg-arrow">←</span> <span class="pg-mono">cd ../</span></a>
     {% else %}
-      <a class="pagination-item newer" href="/{{ site.baseurl }}page/{{paginator.previous_page}}"><i class="fa fa-chevron-circle-right"></i></a>
+      <a class="pagination-item newer" href="/{{ site.baseurl }}page/{{ paginator.previous_page }}"><span class="pg-arrow">←</span> <span class="pg-mono">cd ../page/{{ paginator.previous_page }}</span></a>
     {% endif %}
   {% else %}
-    <span class="pagination-item newer"><i class="fa fa-chevron-circle-right"></i></span>
+    <span class="pagination-item newer disabled"><span class="pg-mono">## HEAD</span></span>
   {% endif %}
-</div>
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="/{{ site.baseurl }}page/{{ paginator.next_page }}"><span class="pg-mono">cd ./page/{{ paginator.next_page }}</span> <span class="pg-arrow">→</span></a>
+  {% else %}
+    <span class="pagination-item older disabled"><span class="pg-mono">## end of history</span></span>
+  {% endif %}
+</nav>
