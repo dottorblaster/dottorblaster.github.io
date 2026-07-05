@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: true
-title: This is a title
+title: openSUSE Conference 2026
 date: 2026-07-05 18:42:16 +0200
 categories:
 - Linux
