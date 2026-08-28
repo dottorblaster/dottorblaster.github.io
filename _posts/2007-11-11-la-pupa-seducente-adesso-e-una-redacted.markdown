@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: true
-title: La pupa seducente? Adesso è una cozza obesa!
+title: La pupa seducente? Adesso è una [redacted]!
 author:
   display_name: Bl@ster
   login: Blaster
