@@ -119,7 +119,7 @@ GEM
       observer (~> 0.1)
       pkg-config (~> 1.4)
     rouge (4.7.0)
-    rubocop (1.92.1)
+    rubocop (1.92.2)
       json (>= 2.3)
       language_server-protocol (~> 3.17.0.2)
       lint_roller (~> 1.1.0)
@@ -270,7 +270,7 @@ CHECKSUMS
   rickshaw (0.5.0) sha256=3cc74f039f68055ef05681cb8820ac32dd281657bd5959af6db816a83fb4849f
   rmagick (7.2.0) sha256=6d0669260aef7cc84b578d4fff4fcfa3717b5074fe7ba5531f357b769eadc543
   rouge (4.7.0) sha256=dba5896715c0325c362e895460a6d350803dbf6427454f49a47500f3193ea739
-  rubocop (1.92.1) sha256=a905381a5344215a79abcfe80f6c94366447e6a55347c9a525b5a24990e33f62
+  rubocop (1.92.2) sha256=14fb31eed143a0dc6f78186c550c1715e81cd38f59d05d1165050e445c1f5382
   rubocop-ast (1.50.0) sha256=b9ca88300da0803ee222ad20cdb30494c0a784eed06fdc35d254b06d662788db
   ruby-progressbar (1.13.0) sha256=80fc9c47a9b640d6834e0dc7b3c94c9df37f08cb072b7761e4a71e22cff29b33
   safe_yaml (1.0.5) sha256=a6ac2d64b7eb027bdeeca1851fe7e7af0d668e133e8a88066a0c6f7087d9f848
