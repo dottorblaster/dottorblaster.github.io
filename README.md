@@ -25,8 +25,9 @@ $ bundle exec thor serve
 The blog uses a reading-first editorial layout inspired by schedkit: warm paper
 and charcoal backgrounds, fine rules, muted blue accents, and an original inline
 SVG workstation illustration. **MADE Dillan** stays the signature face for the
-masthead and titles. Article text uses a system sans-serif; metadata and code use
-a system monospace. No external font service or front-end build is needed.
+masthead, titles, and all article subheadings. Article text and excerpts use Georgia
+with system serif fallbacks; navigation uses a system sans-serif, and metadata and code use a system
+monospace. No external font service or front-end build is needed.
 
 - `_includes/header.html` and `footer.html`: shared navigation, search, social
   links, official Retronerds webring (with a no-JavaScript fallback), and Git metadata.
