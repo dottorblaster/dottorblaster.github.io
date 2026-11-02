@@ -1,0 +1,8 @@
+{% assign entry = include.post %}
+{% assign entry_lang = entry.lang | default: site.lang %}
+<div class="post-meta">
+  <abbr class="lang-badge" lang="{{ entry_lang | escape }}" title="{% if entry_lang == 'en' %}English{% elsif entry_lang == 'it' %}Italiano{% else %}{{ entry_lang | escape }}{% endif %}">{{ entry_lang | upcase | escape }}</abbr>
+  <time datetime="{{ entry.date | date_to_xmlschema }}">{{ entry.date | date: '%d.%m.%Y' }}</time>
+  {% if entry.categories.size > 0 %}<span class="meta-category">{{ entry.categories | first | escape }}</span>{% endif %}
+  {% if entry.layout == 'link' %}<span class="meta-kind">↗ Link</span>{% endif %}
+</div>

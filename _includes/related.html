@@ -1,0 +1,15 @@
+{% if site.related_posts.size > 0 %}
+<section class="related reading-width" aria-labelledby="related-title" lang="it">
+  <p class="eyebrow">Continua a curiosare</p>
+  <h2 id="related-title">Altri appunti</h2>
+  <ul class="related-posts">
+    {% for post in site.related_posts limit:3 %}
+      <li><a href="{{ post.url | relative_url }}">
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%d.%m.%Y' }}</time>
+        <span lang="{{ post.lang | default: site.lang }}">{{ post.title }}</span>
+        <span aria-hidden="true">↗</span>
+      </a></li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}

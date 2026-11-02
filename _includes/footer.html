@@ -1,0 +1,53 @@
+<footer class="site-footer" lang="it">
+  <div class="container">
+    <div class="footer-grid">
+      <section class="footer-discover" aria-labelledby="footer-search-title">
+        <p class="eyebrow">Non tutto finisce in prima pagina</p>
+        <h2 id="footer-search-title">C'è dell'altro.</h2>
+        <form class="search-form" action="{{ '/search/' | relative_url }}" method="get" role="search">
+          <label class="visually-hidden" for="footer-query">Cerca nel blog</label>
+          <div class="search-field">
+            <input id="footer-query" type="search" placeholder="Cerca tra gli appunti…" name="query" required>
+            <button type="submit" aria-label="Cerca nel blog"><span aria-hidden="true">→</span></button>
+          </div>
+          <p class="search-hint">Una parola, un progetto, una vecchia ossessione. <span class="keyboard-hint" hidden>Premi <kbd>/</kbd> per cercare.</span></p>
+        </form>
+        <nav class="social-links" aria-label="Seguimi e contattami">
+          <a href="https://fosstodon.org/@dottorblaster" rel="me">Mastodon <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/dottorblaster">GitHub <span aria-hidden="true">↗</span></a>
+          <a href="mailto:{{ site.author.email }}">Scrivimi <span aria-hidden="true">↗</span></a>
+          <a href="{{ '/feed' | relative_url }}">RSS <span aria-hidden="true">↗</span></a>
+        </nav>
+      </section>
+      <section class="footer-webring" aria-labelledby="webring-title">
+        <h2 id="webring-title" class="eyebrow">Il web è fatto di persone</h2>
+        <webring-banner>
+          <div class="webring-fallback">
+            <p>Questo blog fa parte di</p>
+            <h3><a href="https://retronerds.netlify.app">Retronerds? Dipende!</a></h3>
+            <p>Un piccolo pezzo di web indipendente.</p>
+            <nav aria-label="Webring Retronerds">
+              <a href="https://retronerds.netlify.app/prev">← Precedente</a>
+              <a href="https://retronerds.netlify.app/random">A caso</a>
+              <a href="https://retronerds.netlify.app/next">Successivo →</a>
+            </nav>
+          </div>
+        </webring-banner>
+        <script async src="https://retronerds.netlify.app/embed.js" charset="utf-8"></script>
+      </section>
+    </div>
+    <section class="revision" aria-labelledby="revision-title">
+      <h2 class="eyebrow" id="revision-title">Colophon <span aria-hidden="true">/</span> git log -1</h2>
+      <div class="git-log">
+        <p class="git-commit">{% if site.git.full and site.git.full != 'unknown' %}<a href="{{ site.github.repo }}/commit/{{ site.git.full }}">commit {{ site.git.short }}</a>{% else %}<span>commit non disponibile</span>{% endif %} <span class="git-ref">(HEAD)</span></p>
+        {% if site.git.author != '' %}<p><span class="git-key">Author:</span> {{ site.git.author | escape }} &lt;{{ site.git.email | escape }}&gt;</p>{% endif %}
+        {% if site.git.date != '' %}<p><span class="git-key">Date:</span> {{ site.git.date | escape }}</p>{% endif %}
+        {% if site.git.subject != '' %}<p class="git-subject">{{ site.git.subject | escape }}</p>{% endif %}
+      </div>
+    </section>
+    <div class="footer-bottom">
+      <p>© {{ site.time | date: '%Y' }} {{ site.author.name }} · <a href="{{ site.license.link }}">{{ site.license.label }}</a></p>
+      <p>Fatto con <a href="https://jekyllrb.com/">Jekyll</a>, curiosità e un editor di testo.</p>
+    </div>
+  </div>
+</footer>
