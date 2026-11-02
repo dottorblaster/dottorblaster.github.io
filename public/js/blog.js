@@ -113,13 +113,17 @@
         style.textContent = webringStyles;
         ring.shadowRoot.appendChild(style);
         var labels = [
-          ['.webring-banner__link--prev', '← Precedente', 'Vai al sito precedente'],
-          ['.webring-banner__link--random', 'A caso', 'Vai a un sito casuale'],
-          ['.webring-banner__link--next', 'Successivo →', 'Vai al sito successivo']
+          ['.webring-banner__link--prev', '← Precedente'],
+          ['.webring-banner__link--random', 'A caso'],
+          ['.webring-banner__link--next', 'Successivo →']
         ];
         labels.forEach(function (item) {
           var link = ring.shadowRoot.querySelector(item[0]);
-          if (link) { link.textContent = item[1]; link.setAttribute('aria-label', item[2]); }
+          if (link) {
+            link.textContent = item[1];
+            // Use the visible Italian text, not the embed's English accessible name.
+            link.removeAttribute('aria-label');
+          }
         });
       });
     });

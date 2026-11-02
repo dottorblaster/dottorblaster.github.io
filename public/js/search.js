@@ -27,7 +27,9 @@
         builder.term(lunr.tokenizer(query).map(function (token) { return token.toString(); }));
       });
     }
-    summary.textContent = results.length ? results.length + ' risultati per «' + query + '».' : 'Nessun risultato per «' + query + '». Prova con un’altra parola.';
+    summary.textContent = results.length
+      ? (results.length === 1 ? '1 risultato' : results.length + ' risultati') + ' per «' + query + '».'
+      : 'Nessun risultato per «' + query + '». Prova con un’altra parola.';
     var fragment = document.createDocumentFragment();
     results.forEach(function (result) {
       var item = window.store[result.ref];

@@ -25,7 +25,6 @@ title: Home
   <a class="back-link" href="{{ '/' | relative_url }}">← Torna agli ultimi appunti</a>
   <p class="eyebrow">Il blog / Pagina {{ paginator.page }}</p>
   <h1>Un po' più indietro.</h1>
-  <p>Altri appunti, altre cose da raccontare.</p>
 </header>
 {% endif %}
 
@@ -35,7 +34,6 @@ title: Home
       <p class="eyebrow">01 / Il blog</p>
       <h2 id="feed-title">{% if paginator.page == 1 %}Ultimi appunti{% else %}Dall'archivio{% endif %}</h2>
     </div>
-    <span class="section-note">In ordine di curiosità.<br>Quella più recente, prima.</span>
   </header>
   {% for post in paginator.posts %}
     {% if post.layout == 'link' %}
@@ -49,7 +47,7 @@ title: Home
         <h3 class="entry-title" lang="{{ post.lang | default: site.lang }}"><a href="{{ card_href | escape }}">{{ post.title }}<span class="entry-arrow" aria-hidden="true">{% if post.layout == 'link' %}↗{% else %}→{% endif %}</span></a></h3>
         <p class="entry-excerpt" lang="{{ post.lang | default: site.lang }}">{{ post.content | strip_html | normalize_whitespace | truncatewords: 40 }}</p>
         <div class="entry-links">
-          <a href="{{ card_href | escape }}" aria-label="{% if post.layout == 'link' %}Apri il link{% else %}Leggi{% endif %}: {{ post.title | strip_html | escape }}">{% if post.layout == 'link' %}Apri il link <span aria-hidden="true">↗</span>{% else %}Leggi l'articolo <span aria-hidden="true">→</span>{% endif %}</a>
+          <a href="{{ card_href | escape }}" aria-label="{% if post.layout == 'link' %}Apri il link{% else %}Leggi l'articolo{% endif %}: {{ post.title | strip_html | escape }}">{% if post.layout == 'link' %}Apri il link <span aria-hidden="true">↗</span>{% else %}Leggi l'articolo <span aria-hidden="true">→</span>{% endif %}</a>
           {% if post.layout == 'link' %}<a href="{{ post.url | relative_url }}" aria-label="Commenti e permalink: {{ post.title | strip_html | escape }}">Commenti e permalink</a>{% endif %}
         </div>
       </div>

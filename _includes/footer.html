@@ -2,15 +2,14 @@
   <div class="container">
     <div class="footer-grid">
       <section class="footer-discover" aria-labelledby="footer-search-title">
-        <p class="eyebrow">Non tutto finisce in prima pagina</p>
-        <h2 id="footer-search-title">C'è dell'altro.</h2>
+        <h2 id="footer-search-title">Cerca nel blog</h2>
         <form class="search-form" action="{{ '/search/' | relative_url }}" method="get" role="search">
           <label class="visually-hidden" for="footer-query">Cerca nel blog</label>
           <div class="search-field">
             <input id="footer-query" type="search" placeholder="Cerca tra gli appunti…" name="query" required>
             <button type="submit" aria-label="Cerca nel blog"><span aria-hidden="true">→</span></button>
           </div>
-          <p class="search-hint">Una parola, un progetto, una vecchia ossessione. <span class="keyboard-hint" hidden>Premi <kbd>/</kbd> per cercare.</span></p>
+          <p class="search-hint keyboard-hint" hidden>Premi <kbd>/</kbd> per cercare.</p>
         </form>
         <nav class="social-links" aria-label="Seguimi e contattami">
           <a href="https://fosstodon.org/@dottorblaster" rel="me">Mastodon <span aria-hidden="true">↗</span></a>
@@ -20,12 +19,11 @@
         </nav>
       </section>
       <section class="footer-webring" aria-labelledby="webring-title">
-        <h2 id="webring-title" class="eyebrow">Il web è fatto di persone</h2>
+        <h2 id="webring-title" class="eyebrow">Webring</h2>
         <webring-banner>
           <div class="webring-fallback">
             <p>Questo blog fa parte di</p>
             <h3><a href="https://retronerds.netlify.app">Retronerds? Dipende!</a></h3>
-            <p>Un piccolo pezzo di web indipendente.</p>
             <nav aria-label="Webring Retronerds">
               <a href="https://retronerds.netlify.app/prev">← Precedente</a>
               <a href="https://retronerds.netlify.app/random">A caso</a>
@@ -47,7 +45,7 @@
     </section>
     <div class="footer-bottom">
       <p>© {{ site.time | date: '%Y' }} {{ site.author.name }} · <a href="{{ site.license.link }}">{{ site.license.label }}</a></p>
-      <p>Fatto con <a href="https://jekyllrb.com/">Jekyll</a>, curiosità e un editor di testo.</p>
+      <p>Fatto con <a href="https://jekyllrb.com/">Jekyll</a>.</p>
     </div>
   </div>
 </footer>

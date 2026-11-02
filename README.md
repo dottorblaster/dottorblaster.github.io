@@ -47,6 +47,7 @@ Post content, URLs, RSS, and Open Graph image generation are unchanged.
 ```bash
 bundle exec jekyll build
 python3 tests/site_smoke.py _site
+node --test tests/search.test.cjs
 
 # Also check deployment under a subpath:
 bundle exec jekyll build --baseurl /preview --destination /tmp/gtb-preview

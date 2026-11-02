@@ -18,10 +18,17 @@ class Document(HTMLParser):
         self.elements = []
         self.nested_links = False
         self.in_link = False
+        self.in_head = False
+        self.in_title = False
+        self.title = ""
         self.feed(path.read_text(encoding="utf-8"))
 
     def handle_starttag(self, tag, attrs):
         self.elements.append((tag, dict(attrs)))
+        if tag == "head":
+            self.in_head = True
+        if tag == "title" and self.in_head:
+            self.in_title = True
         if tag == "a":
             self.nested_links |= self.in_link
             self.in_link = True
@@ -29,6 +36,14 @@ class Document(HTMLParser):
     def handle_endtag(self, tag):
         if tag == "a":
             self.in_link = False
+        if tag == "head":
+            self.in_head = False
+        if tag == "title":
+            self.in_title = False
+
+    def handle_data(self, data):
+        if self.in_title:
+            self.title += data
 
     def select(self, tag=None, **attrs):
         return [a for t, a in self.elements
@@ -95,8 +110,10 @@ class SiteSmokeTests(unittest.TestCase):
         pages = sorted((ROOT / "page").glob("*/index.html"))
         self.assertTrue(pages)
         found_link = False
+        site_name, = self.home.select("meta", property="og:site_name")
         for path in pages:
             page = Document(path)
+            self.assertEqual(page.title, f"Pagina {path.parent.name} · {site_name['content']}")
             self.assertFalse(page.nested_links, path)
             self.assertEqual(len(page.select("h1")), 1, path)
             self.assertFalse(page.with_class("hero"), path)

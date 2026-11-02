@@ -27,7 +27,7 @@
   {% endif %}
   {% for category in page.categories limit:1 %}<meta property="article:section" content="{{ category | escape }}">{% endfor %}
   {% for tag in page.tags %}<meta property="article:tag" content="{{ tag | escape }}">{% endfor %}
-  <title>{% if page.title == 'Home' %}{{ site.title | escape }} · {{ site.tagline | escape }}{% else %}{{ page.title | strip_html | escape }} · {{ site.title | escape }}{% endif %}</title>
+  <title>{% if paginator.page > 1 %}Pagina {{ paginator.page }} · {{ site.title | escape }}{% elsif page.title == 'Home' %}{{ site.title | escape }} · {{ site.tagline | escape }}{% else %}{{ page.title | strip_html | escape }} · {{ site.title | escape }}{% endif %}</title>
   <link rel="preload" href="{{ '/public/made_dillan.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="{{ '/public/css/grabtheblaster.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/public/css/syntax.css' | relative_url }}">
