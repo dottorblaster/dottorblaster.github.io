@@ -6,29 +6,29 @@ title: Home
 {% if paginator.page == 1 %}
 <header class="hero">
   <div class="hero-copy">
-    <p class="eyebrow">Linux · Open source · Curiosità</p>
+    <p class="eyebrow">Linux · Open source · Tech · Life</p>
     <h1 class="hero-title">Grab The<br><span>Blaster</span><span class="hero-dot" aria-hidden="true">.</span></h1>
     <p class="hero-lede">Un blog nerd il giusto.</p>
-    <p class="hero-description">Software, sistemi e altre cose che mi fanno dire «uuuh». Appunti di <a href="{{ '/about/' | relative_url }}">Alessio Biancalana</a>.</p>
+    <p class="hero-description">Software, sistemi e altre cose che mi fanno brillare gli occhi. Appunti di <a href="{{ '/about/' | relative_url }}">Alessio Biancalana</a>.</p>
     <div class="hero-links">
-      <a href="#articoli">Leggi gli ultimi appunti <span aria-hidden="true">↓</span></a>
-      <a href="{{ '/about/' | relative_url }}">Chi scrive <span aria-hidden="true">↗</span></a>
+      <a href="#posts">Leggi gli ultimi appunti <span aria-hidden="true">↓</span></a>
+      <a href="{{ '/about/' | relative_url }}">Io in (più o meno) due righe <span aria-hidden="true">↗</span></a>
     </div>
   </div>
   <figure class="hero-art">
     {% include workbench.svg %}
-    <figcaption><span>Fig. 01</span> Appunti dalla sala macchine.</figcaption>
+    <figcaption><span>Fig. 01</span> Appunti dal mio ufficio</figcaption>
   </figure>
 </header>
 {% else %}
 <header class="archive-header">
   <a class="back-link" href="{{ '/' | relative_url }}">← Torna agli ultimi appunti</a>
   <p class="eyebrow">Il blog / Pagina {{ paginator.page }}</p>
-  <h1>Un po' più indietro.</h1>
+  <h1>Un po' più indietro:</h1>
 </header>
 {% endif %}
 
-<section class="feed" id="articoli" aria-labelledby="feed-title">
+<section class="feed" id="posts" aria-labelledby="feed-title">
   <header class="section-heading">
     <div>
       <p class="eyebrow">01 / Il blog</p>
