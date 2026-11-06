@@ -5,7 +5,6 @@ Well well, I finally made all my blog available under Jekyll.
 
 ## Technologies I'm using
 - [Jekyll](http://jekyllrb.com/)
-- [Poole](https://github.com/poole/poole)
 - [GitHub Pages](https://pages.github.com/)
 - [Thor](http://whatisthor.com/)
 - [lunr.js](http://lunrjs.com/)

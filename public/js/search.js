@@ -1,54 +1,53 @@
-(function() {
-  function displaySearchResults(results, store) {
-    var searchResults = document.getElementById("search-results"),
-      appendString = "",
-      item;
+(function () {
+  'use strict';
+  var query = new URLSearchParams(window.location.search).get('query');
+  var summary = document.getElementById('search-summary');
+  var resultsList = document.getElementById('search-results');
+  var input = document.getElementById('footer-query');
+  if (!query || !query.trim()) return;
+  query = query.trim();
+  if (input) input.value = query;
 
-    if (!results.length) {
-      return (searchResults.innerHTML = "<li>No results found</li>");
-    }
-
-    for (var i = 0; i < results.length; i++) {
-      // Iterate over the results
-      item = store[results[i].ref];
-      appendString +=
-        '<li><a href="' +
-        item.url +
-        '"><h3>' +
-        item.title +
-        "</h3></a><p>" +
-        item.content.substring(0, 150) +
-        "[...]</p></li>";
-    }
-
-    searchResults.innerHTML = appendString;
-  }
-
-  function getQueryVariable(q) {
-    return new URLSearchParams(window.location.search.substring(1)).get(q);
-  }
-
-  var searchTerm = getQueryVariable("query"),
-    results = [];
-
-  if (searchTerm) {
-    // Initalize lunr with the fields it will be searching on. I've given title
-    // a boost of 10 to indicate matches on this field are more important.
-    var idx = lunr(function() {
-      this.field("id");
-      this.field("title", { boost: 10 });
-      this.field("content");
-      for (var key in window.store) {
-        // Add the data to lunr
-        this.add({
-          id: key,
-          title: window.store[key].title,
-          content: window.store[key].content
-        });
-      }
+  try {
+    var index = lunr(function () {
+      this.ref('id');
+      this.field('title', { boost: 10 });
+      this.field('content');
+      Object.keys(window.store).forEach(function (key) {
+        this.add({ id: key, title: window.store[key].title, content: window.store[key].content });
+      }, this);
     });
-
-    results = idx.search(searchTerm);
-    displaySearchResults(results, window.store);
+    var results;
+    try {
+      results = index.search(query);
+    } catch (error) {
+      if (!(error instanceof lunr.QueryParseError)) throw error;
+      // Treat malformed advanced syntax as plain words rather than breaking search.
+      results = index.query(function (builder) {
+        builder.term(lunr.tokenizer(query).map(function (token) { return token.toString(); }));
+      });
+    }
+    summary.textContent = results.length
+      ? (results.length === 1 ? '1 risultato' : results.length + ' risultati') + ' per «' + query + '».'
+      : 'Nessun risultato per «' + query + '». Prova con un’altra parola.';
+    var fragment = document.createDocumentFragment();
+    results.forEach(function (result) {
+      var item = window.store[result.ref];
+      var li = document.createElement('li');
+      li.lang = item.lang;
+      var heading = document.createElement('h2');
+      var link = document.createElement('a');
+      link.href = item.url;
+      link.textContent = item.title;
+      heading.appendChild(link);
+      var excerpt = document.createElement('p');
+      excerpt.textContent = item.content.slice(0, 180) + (item.content.length > 180 ? '…' : '');
+      li.appendChild(heading);
+      li.appendChild(excerpt);
+      fragment.appendChild(li);
+    });
+    resultsList.replaceChildren(fragment);
+  } catch (_) {
+    summary.textContent = 'Non è stato possibile completare la ricerca. Riprova tra poco o sfoglia il blog dalla home.';
   }
 })();

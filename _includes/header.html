@@ -1,0 +1,16 @@
+<header class="site-header" lang="it">
+  <div class="container header-inner">
+    <a class="site-brand" href="{{ '/' | relative_url }}" aria-label="Grab The Blaster — Home">Grab The Blaster<span class="brand-dot" aria-hidden="true">.</span></a>
+    <nav class="site-nav" aria-label="Navigazione principale">
+      <a href="{{ '/' | relative_url }}"{% if page.title == 'Home' %} aria-current="page"{% endif %}>Blog</a>
+      <a href="{{ '/about/' | relative_url }}"{% if page.url == '/about/' %} aria-current="page"{% endif %}>About</a>
+      <a href="{{ '/feed' | relative_url }}">RSS <span aria-hidden="true">↗</span></a>
+    </nav>
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Cambia tema" hidden>
+      <svg class="theme-icon" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+        <g class="icon-sun"><circle cx="12" cy="12" r="4"/><path d="M12 1v3m0 16v3M1 12h3m16 0h3M4.2 4.2l2.1 2.1m11.4 11.4 2.1 2.1M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></g>
+        <path class="icon-moon" d="M20.5 14.2A8.8 8.8 0 0 1 9.8 3.5a8.8 8.8 0 1 0 10.7 10.7Z"/>
+      </svg>
+    </button>
+  </div>
+</header>

@@ -3,57 +3,68 @@ layout: default
 title: Home
 ---
 
-<section class="posts feed" aria-label="Articoli recenti">
-  {% for post in paginator.posts %}
-    {% assign post_lang = post.lang | default: site.lang %}
-    {% if post.layout == "link" %}
-      {% assign card_href = post.origlink %}
-      {% assign read_label = "leggi il link →" %}
-    {% else %}
-      {% assign card_href = post.url %}
-      {% assign read_label = "leggi →" %}
-    {% endif %}
+{% if paginator.page == 1 %}
+<header class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">Linux · Open source · Tech · Life</p>
+    <h1 class="hero-title">Grab The<br><span>Blaster</span><span class="hero-dot" aria-hidden="true">.</span></h1>
+    <p class="hero-lede">Un blog nerd il giusto.</p>
+    <p class="hero-description">Software, sistemi e altre cose che mi fanno brillare gli occhi. Appunti di <a href="{{ '/about/' | relative_url }}">Alessio Biancalana</a>.</p>
+    <div class="hero-links">
+      <a href="#posts">Leggi gli ultimi appunti <span aria-hidden="true">↓</span></a>
+      <a href="{{ '/about/' | relative_url }}">Io in (più o meno) due righe <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+  <figure class="hero-art">
+    {% include workbench.svg %}
+    <figcaption><span>Fig. 01</span> Appunti dal mio ufficio</figcaption>
+  </figure>
+</header>
+{% else %}
+<header class="archive-header">
+  <a class="back-link" href="{{ '/' | relative_url }}">← Torna agli ultimi appunti</a>
+  <p class="eyebrow">Il blog / Pagina {{ paginator.page }}</p>
+  <h1>Un po' più indietro:</h1>
+</header>
+{% endif %}
 
-    <a class="post-card{% if post.layout == 'link' %} post-card-link{% endif %}"
-       href="{{ card_href }}"
-       {% if post.lang and post.lang != site.lang %}lang="{{ post.lang }}"{% endif %}>
-      <div class="post-card-meta">
-        <span class="lang-badge lang-{{ post_lang | downcase }}">{{ post_lang | upcase }}</span>
-        <span class="meta-date">{{ post.date | date_to_string }}</span>
-        {% if post.categories.size > 0 %}
-          <span class="meta-sep" aria-hidden="true">·</span>
-          <span class="meta-cat">{{ post.categories | first | downcase }}</span>
-        {% endif %}
-        {% if post.layout == "link" %}
-          <span class="meta-sep" aria-hidden="true">·</span>
-          <span class="meta-kind"><i class="fa fa-link" aria-hidden="true"></i> link</span>
-        {% endif %}
+<section class="feed" id="posts" aria-labelledby="feed-title">
+  <header class="section-heading">
+    <div>
+      <p class="eyebrow">01 / Il blog</p>
+      <h2 id="feed-title">{% if paginator.page == 1 %}Ultimi appunti{% else %}Dall'archivio{% endif %}</h2>
+    </div>
+  </header>
+  {% for post in paginator.posts %}
+    {% if post.layout == 'link' %}
+      {% assign card_href = post.origlink %}
+    {% else %}
+      {% assign card_href = post.url | relative_url %}
+    {% endif %}
+    <article class="post-entry{% if post.layout == 'link' %} post-entry-link{% endif %}">
+      {% include post-meta.html post=post %}
+      <div class="entry-content">
+        <h3 class="entry-title" lang="{{ post.lang | default: site.lang }}"><a href="{{ card_href | escape }}">{{ post.title }}<span class="entry-arrow" aria-hidden="true">{% if post.layout == 'link' %}↗{% else %}→{% endif %}</span></a></h3>
+        <p class="entry-excerpt" lang="{{ post.lang | default: site.lang }}">{{ post.content | strip_html | normalize_whitespace | truncatewords: 40 }}</p>
+        <div class="entry-links">
+          <a href="{{ card_href | escape }}" aria-label="{% if post.layout == 'link' %}Apri il link{% else %}Leggi l'articolo{% endif %}: {{ post.title | strip_html | escape }}">{% if post.layout == 'link' %}Apri il link <span aria-hidden="true">↗</span>{% else %}Leggi l'articolo <span aria-hidden="true">→</span>{% endif %}</a>
+          {% if post.layout == 'link' %}<a href="{{ post.url | relative_url }}" aria-label="Commenti e permalink: {{ post.title | strip_html | escape }}">Commenti e permalink</a>{% endif %}
+        </div>
       </div>
-      <h2 class="post-card-title">{{ post.title }}</h2>
-      <p class="post-card-excerpt">{{ post.content | strip_html | truncatewords: 40 }}</p>
-      <div class="post-card-footer">
-        <span class="read-more">{{ read_label }}</span>
-        {% if post.layout == "link" %}
-          <a class="permalink-hint" href="{{ post.url }}" title="permalink: {{ post.title }}"><i class="fa fa-comments-o" aria-hidden="true"></i> commenti</a>
-        {% endif %}
-      </div>
-    </a>
+    </article>
   {% endfor %}
 </section>
 
 <nav class="pagination" aria-label="Paginazione">
   {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="/{{ site.baseurl }}"><span class="pg-arrow">←</span> <span class="pg-mono">cd ../</span></a>
-    {% else %}
-      <a class="pagination-item newer" href="/{{ site.baseurl }}page/{{ paginator.previous_page }}"><span class="pg-arrow">←</span> <span class="pg-mono">cd ../page/{{ paginator.previous_page }}</span></a>
-    {% endif %}
+    <a href="{{ paginator.previous_page_path | relative_url }}" rel="prev">← Più recenti</a>
   {% else %}
-    <span class="pagination-item newer disabled"><span class="pg-mono">## HEAD</span></span>
+    <span class="pagination-end">Sei all'inizio</span>
   {% endif %}
+  <span class="page-count">{{ paginator.page }} / {{ paginator.total_pages }}</span>
   {% if paginator.next_page %}
-    <a class="pagination-item older" href="/{{ site.baseurl }}page/{{ paginator.next_page }}"><span class="pg-mono">cd ./page/{{ paginator.next_page }}</span> <span class="pg-arrow">→</span></a>
+    <a href="{{ paginator.next_page_path | relative_url }}" rel="next">Meno recenti →</a>
   {% else %}
-    <span class="pagination-item older disabled"><span class="pg-mono">## end of history</span></span>
+    <span class="pagination-end">Fine dell'archivio</span>
   {% endif %}
 </nav>

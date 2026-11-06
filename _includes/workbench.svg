@@ -1,0 +1,72 @@
+<svg class="workbench" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 460" role="img" aria-labelledby="workbench-title workbench-desc">
+  <title id="workbench-title">Una piccola sala macchine</title>
+  <desc id="workbench-desc">Un computer isometrico con tastiera, codice sullo schermo e appunti collegati da tracce di circuito. Un disegno tecnico del posto in cui nasce il blog.</desc>
+  <defs>
+    <pattern id="bench-grid" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".7" fill="var(--line-strong)"/></pattern>
+  </defs>
+  <rect x="26" y="24" width="508" height="396" fill="url(#bench-grid)" opacity=".35"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3">
+    <!-- Registration marks and drawing annotations. -->
+    <g stroke="var(--line-strong)">
+      <path d="M26 40V24h16m476 0h16v16M26 404v16h16m476 0h16v-16"/>
+      <path stroke-dasharray="3 5" d="m63 315 228 131 212-122M291 432v14"/>
+      <path d="m62 309 0 12m441-3v12"/>
+    </g>
+    <!-- Isometric plinth. -->
+    <path fill="var(--surface-2)" stroke="var(--line-strong)" d="m64 294 228 132 210-121v12L292 438 64 306Z"/>
+    <path fill="var(--bg)" stroke="var(--line-strong)" d="m64 294 210-121 228 132-210 121Z"/>
+    <path stroke="var(--line-strong)" d="M292 426v12"/>
+    <g stroke="var(--line)">
+      <path d="m87 294 187-108 205 119-187 108Z"/>
+      <path d="m322 389 46-27h44l38-22m-115 58 47-27h44l30-18"/>
+      <circle cx="322" cy="389" r="2"/><circle cx="335" cy="398" r="2"/>
+    </g>
+    <!-- Terminal enclosure: top, side, then front. -->
+    <path fill="var(--surface)" stroke="var(--line-strong)" d="m182 87 38-22 190 110-38 22Z"/>
+    <path fill="var(--surface-2)" stroke="var(--line-strong)" d="m372 197 38-22v147l-38 22Z"/>
+    <path fill="var(--surface)" stroke="var(--line-strong)" d="m182 87 190 110v147L182 234Z"/>
+    <g stroke="var(--muted)">
+      <path d="m382 219 18-10m-18 17 18-10m-18 17 18-10m-18 17 18-10m-18 17 18-10"/>
+      <path d="m197 222 62 36m-62-29 62 36"/>
+    </g>
+    <!-- Screen, skewed into the front face. -->
+    <g transform="matrix(1 .578 0 1 196 109)">
+      <rect width="162" height="98" fill="var(--bg)" stroke="var(--accent)"/>
+      <path stroke="var(--line)" d="M0 17h162"/>
+      <g fill="var(--line-strong)" stroke="none"><circle cx="9" cy="8" r="1.7"/><circle cx="16" cy="8" r="1.7"/><circle cx="23" cy="8" r="1.7"/></g>
+      <g stroke="var(--accent)" stroke-width="2">
+        <path d="m13 31 5 4-5 4m13 0h9M13 53h29m8 0h44M13 64h12m8 0h57m-77 11h49"/>
+      </g>
+      <path stroke="var(--line-strong)" d="M103 53h28M99 64h43M72 75h30"/>
+      <rect x="13" y="84" width="6" height="3" fill="var(--accent)" stroke="none"/>
+    </g>
+    <circle cx="350" cy="317" r="3" fill="var(--accent)" stroke="none"/>
+    <!-- Keyboard. -->
+    <path fill="var(--surface-2)" stroke="var(--line-strong)" d="m116 285 174 101 66-38v7l-66 38-174-101Z"/>
+    <path fill="var(--surface)" stroke="var(--line-strong)" d="m116 285 66-38 174 101-66 38Z"/>
+    <g transform="matrix(1 .578 -1 .578 182 259)" stroke="var(--line-strong)">
+      <path fill="var(--bg)" d="M0 0h152v44H0Z"/>
+      <path d="M0 11h152M0 22h152M0 33h152M12 0v11m14-11v11m14-11v11m14-11v11m14-11v11m14-11v11m14-11v11m14-11v11m14-11v11m14-11v11M17 11v11m14-11v11m14-11v11m14-11v11m14-11v11m14-11v11m14-11v11m14-11v11m14-11v11M22 22v11m14-11v11m14-11v11m14-11v11m14-11v11m14-11v11m14-11v11m14-11v11M22 33v11m18-11v11m70-11v11m20-11v11"/>
+    </g>
+    <!-- A loose page connected to the machine. -->
+    <path stroke="var(--accent)" stroke-dasharray="3 5" d="M139 154v55l-31 18v41"/>
+    <circle cx="108" cy="268" r="3" fill="var(--accent-tint)" stroke="var(--accent)"/>
+    <g transform="matrix(1 .578 0 1 77 72)">
+      <path fill="var(--bg)" stroke="var(--accent)" d="M0 0h55l13 13v74H0Z"/>
+      <path stroke="var(--accent)" d="M55 0v13h13M12 25h34m-34 9h43m-43 9h29"/>
+      <path stroke="var(--line-strong)" d="M12 57h43m-43 9h33"/>
+    </g>
+    <!-- Callouts. -->
+    <g stroke="var(--line-strong)">
+      <path d="M112 73V46H54m356 167 40-23h57M148 326l-42 24H36"/>
+      <circle cx="410" cy="213" r="2" fill="var(--bg)"/>
+      <circle cx="148" cy="326" r="2" fill="var(--bg)"/>
+    </g>
+  </g>
+  <g fill="var(--muted)" font-family="var(--mono)" font-size="10">
+    <text x="54" y="36">01 / appunti</text>
+    <text x="507" y="180" text-anchor="end">02 / codice</text>
+    <text x="36" y="368">03 / curiosità</text>
+    <text x="528" y="445" text-anchor="end" font-size="9">GTB — WORKSTATION / 001</text>
+  </g>
+</svg>

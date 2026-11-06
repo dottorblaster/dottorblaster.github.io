@@ -37,6 +37,7 @@ exclude:
   - LICENSE.md
   - .gitignore
   - vendor
+  - tests
 
 lang: it
 

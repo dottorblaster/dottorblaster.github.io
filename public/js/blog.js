@@ -1,175 +1,131 @@
 (function () {
   'use strict';
 
-  var STORAGE_KEY = 'gtb-theme';
   var root = document.documentElement;
+  var toggle = document.getElementById('theme-toggle');
+  var systemTheme = window.matchMedia('(prefers-color-scheme: dark)');
+  var preference = null;
+  try { preference = localStorage.getItem('gtb-theme'); } catch (_) {}
+  if (preference !== 'light' && preference !== 'dark') preference = null;
 
-  /* ---------- live clock ---------- */
-  var clockEl = document.getElementById('sb-clock');
-  function tickClock() {
-    if (!clockEl) return;
-    var d = new Date();
-    var hh = String(d.getHours()).padStart(2, '0');
-    var mm = String(d.getMinutes()).padStart(2, '0');
-    clockEl.textContent = hh + ':' + mm;
-  }
-  tickClock();
-  // align next tick to the start of the next minute
-  var msToNextMinute = (60 - new Date().getSeconds()) * 1000;
-  setTimeout(function () {
-    tickClock();
-    setInterval(tickClock, 60 * 1000);
-  }, msToNextMinute);
-
-  /* ---------- theme toggle ---------- */
-  var toggle = document.getElementById('sb-theme-toggle');
-  if (!toggle) return;
-
-  var iconEl = toggle.querySelector('.sb-theme-icon');
-  var labelEl = toggle.querySelector('.sb-theme-label');
-
-  function apply(theme) {
+  function applyTheme(theme) {
     root.setAttribute('data-theme', theme);
-    if (iconEl) iconEl.textContent = theme === 'dark' ? '☾' : '☀';
-    if (labelEl) labelEl.textContent = theme;
-    toggle.setAttribute('aria-label', theme === 'dark' ? 'Passa al tema chiaro' : 'Passa al tema scuro');
+    if (toggle) {
+      var label = theme === 'dark' ? 'Passa al tema chiaro' : 'Passa al tema scuro';
+      toggle.setAttribute('aria-label', label);
+      toggle.title = label;
+    }
   }
 
-  apply(root.getAttribute('data-theme') || 'light');
-
-  toggle.addEventListener('click', function () {
-    var current = root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
-    var next = current === 'dark' ? 'light' : 'dark';
-    apply(next);
-    try { localStorage.setItem(STORAGE_KEY, next); } catch (_) {}
+  applyTheme(preference || (systemTheme.matches ? 'dark' : 'light'));
+  if (toggle) {
+    toggle.hidden = false;
+    toggle.addEventListener('click', function () {
+      preference = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      applyTheme(preference);
+      try { localStorage.setItem('gtb-theme', preference); } catch (_) {}
+    });
+  }
+  function followSystem(event) {
+    if (!preference) applyTheme(event.matches ? 'dark' : 'light');
+  }
+  if (systemTheme.addEventListener) systemTheme.addEventListener('change', followSystem);
+  else systemTheme.addListener(followSystem);
+  window.addEventListener('storage', function (event) {
+    if (event.key !== 'gtb-theme' && event.key !== null) return;
+    preference = event.newValue === 'dark' || event.newValue === 'light' ? event.newValue : null;
+    applyTheme(preference || (systemTheme.matches ? 'dark' : 'light'));
   });
 
-  // follow system theme if user hasn't picked one yet
-  if (window.matchMedia) {
-    var mql = window.matchMedia('(prefers-color-scheme: dark)');
-    var listener = function (e) {
-      try {
-        if (localStorage.getItem(STORAGE_KEY)) return;
-      } catch (_) { return; }
-      apply(e.matches ? 'dark' : 'light');
-    };
-    if (mql.addEventListener) mql.addEventListener('change', listener);
-    else if (mql.addListener) mql.addListener(listener);
-  }
-
-  /* ---------- global keybindings ---------- */
-  function inEditable(t) {
-    return t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.isContentEditable);
-  }
-
-  document.addEventListener('keydown', function (e) {
-    if (e.ctrlKey || e.metaKey || e.altKey) return;
-    if (inEditable(e.target)) return;
-
-    // "/" focuses the search (vim-style)
-    if (e.key === '/') {
-      var input = document.querySelector('.search-form input[name="query"]');
-      if (!input) return;
-      e.preventDefault();
-      input.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      setTimeout(function () { input.focus(); }, 200);
-      return;
-    }
-
-    // 1..4 jump to the corresponding workspace
-    if (e.key >= '1' && e.key <= '4') {
-      var idx = parseInt(e.key, 10) - 1;
-      var ws = document.querySelectorAll('.ws-group a.ws')[idx];
-      if (!ws) return;
-      e.preventDefault();
-      window.location.href = ws.href;
+  var searchInput = document.getElementById('footer-query');
+  var searchHint = document.querySelector('.keyboard-hint');
+  if (searchHint) searchHint.hidden = false;
+  document.addEventListener('keydown', function (event) {
+    var target = event.target;
+    if (event.ctrlKey || event.metaKey || event.altKey || event.isComposing) return;
+    if (target && (target.matches('input, textarea, select') || target.isContentEditable)) return;
+    if (event.key === '/' && searchInput) {
+      event.preventDefault();
+      searchInput.focus({ preventScroll: true });
+      searchInput.scrollIntoView({
+        behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
+        block: 'center'
+      });
     }
   });
 
-  /* ---------- reading progress (post / link pages) ---------- */
-  var progress = document.getElementById('sb-progress');
-  if (progress) {
-    var pctEl = progress.querySelector('.sb-progress-pct');
-    var ticking = false;
-    function updateProgress() {
-      var doc = document.documentElement;
-      var max = (doc.scrollHeight - window.innerHeight) || 1;
-      var pct = Math.min(100, Math.max(0, (window.scrollY / max) * 100));
-      progress.style.setProperty('--progress', pct.toFixed(1) + '%');
-      if (pctEl) pctEl.textContent = Math.round(pct) + '%';
-      ticking = false;
-    }
-    window.addEventListener('scroll', function () {
-      if (!ticking) { requestAnimationFrame(updateProgress); ticking = true; }
-    }, { passive: true });
-    window.addEventListener('resize', function () {
-      if (!ticking) { requestAnimationFrame(updateProgress); ticking = true; }
-    }, { passive: true });
-    updateProgress();
-  }
+  // Allow keyboard users to scroll wide code examples without scrolling the page.
+  document.querySelectorAll('.post-body pre').forEach(function (pre) {
+    pre.tabIndex = 0;
+  });
 
-  /* ---------- restyle the retronerds webring (shadow DOM) ---------- */
-  var WEBRING_OVERRIDES = [
-    ':host { font-family: var(--mono); color: var(--ink-dim); }',
-    '.webring-banner {',
-    '  background-color: var(--panel) !important;',
-    '  border: 1px solid var(--panel-border) !important;',
-    '  border-radius: 14px !important;',
-    '  box-shadow: none !important;',
-    '  max-width: 100% !important;',
-    '  color: var(--ink-dim);',
-    '}',
-    '.webring-banner a { color: var(--magenta) !important; }',
-    '.webring-banner a:hover, .webring-banner a:focus { color: var(--magenta-deep) !important; }',
-    '.webring-banner__header {',
-    '  border-bottom-color: var(--panel-border) !important;',
-    '  padding: 12px 14px !important;',
-    '}',
-    '.webring-banner__title {',
-    '  font-family: var(--display);',
-    '  font-size: 1rem;',
-    '  font-weight: 400;',
-    '  letter-spacing: 0.02em;',
-    '}',
-    '.webring-banner__description { color: var(--ink-dim); font-size: 0.8rem; }',
-    '.webring-banner__description span { color: var(--ink-faint); }',
-    '.webring-banner__info {',
-    '  color: var(--ink-faint) !important;',
-    '  border-color: var(--panel-border) !important;',
-    '}',
-    '.webring-banner__image {',
-    '  width: 40px !important; height: 40px !important;',
-    '  opacity: 0.8;',
-    '  filter: saturate(0.8);',
-    '}',
-    '.webring-banner__links { padding: 10px 14px !important; }',
-    '.webring-banner__link {',
-    '  color: var(--magenta) !important;',
-    '  font-family: var(--mono);',
-    '  font-size: 0.78rem;',
-    '}'
-  ].join('\n');
-
-  function styleWebring() {
-    if (!window.customElements || !customElements.whenDefined) return;
-    customElements.whenDefined('webring-banner').then(function () {
-      var rings = document.querySelectorAll('webring-banner');
-      for (var i = 0; i < rings.length; i++) {
-        var el = rings[i];
-        if (el.dataset.gtbStyled || !el.shadowRoot) continue;
-        var s = document.createElement('style');
-        s.textContent = WEBRING_OVERRIDES;
-        el.shadowRoot.appendChild(s);
-        el.dataset.gtbStyled = '1';
-      }
+  // Don't let the third-party discussion embed delay or interrupt reading.
+  var commentsButton = document.querySelector('.comments-load');
+  if (commentsButton) {
+    var commentsStatus = document.querySelector('.comments-status');
+    commentsButton.hidden = false;
+    commentsButton.addEventListener('click', function () {
+      commentsButton.disabled = true;
+      commentsStatus.textContent = 'Caricamento dei commenti…';
+      window.disqus_config = function () {
+        this.page.url = commentsButton.dataset.pageUrl;
+        this.callbacks.onReady = [function () {
+          commentsButton.hidden = true;
+          commentsStatus.textContent = '';
+        }];
+      };
+      var script = document.createElement('script');
+      script.src = 'https://blasterhome.disqus.com/embed.js';
+      script.async = true;
+      script.onerror = function () {
+        commentsButton.disabled = false;
+        commentsStatus.textContent = 'Disqus non è disponibile. Puoi riprovare caricando i commenti.';
+        script.remove();
+      };
+      document.head.appendChild(script);
     });
   }
 
-  // The embed script is async; try at DOM ready and again at full load.
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', styleWebring);
-  } else {
-    styleWebring();
+  // The official webring owns its links. Only its presentation is adapted here.
+  // CSS variables inherit through the shadow root, so both themes update instantly.
+  var webringStyles = `
+    :host { font-family: var(--sans); color: var(--ink); font-size: 16px; }
+    .webring-banner { max-width: none; background: transparent; color: var(--ink); border: 1px solid var(--line-strong); border-radius: 0; box-shadow: none; }
+    .webring-banner a { color: var(--accent); text-underline-offset: .2em; }
+    .webring-banner a:hover, .webring-banner a:focus { color: var(--accent); }
+    .webring-banner a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+    .webring-banner__header { padding: 1.4rem; border-bottom: 1px solid var(--line); }
+    .webring-banner__image { display: none; }
+    .webring-banner__description { padding-right: 1.5rem; min-width: 0; line-height: 1.7; }
+    .webring-banner__description span { color: var(--muted); font-size: .75rem; }
+    .webring-banner__title { font: 400 1.55rem/1.3 var(--display); margin: .4rem 0 .5rem; overflow-wrap: anywhere; }
+    .webring-banner__title a { color: var(--ink); }
+    .webring-banner__info { color: var(--muted); border: 1px solid var(--line); border-radius: 0; width: 28px; height: 28px; font: .75rem/1 var(--mono); align-items: center; top: .7rem; right: .7rem; }
+    .webring-banner__links { padding: .8rem 1rem; gap: .25rem .75rem; }
+    .webring-banner__link { min-width: 0; padding-block: .4rem; font: .7rem/1.5 var(--mono); }
+  `;
+  if (window.customElements) {
+    customElements.whenDefined('webring-banner').then(function () {
+      document.querySelectorAll('webring-banner').forEach(function (ring) {
+        if (!ring.shadowRoot || ring.shadowRoot.querySelector('[data-blog-style]')) return;
+        var style = document.createElement('style');
+        style.dataset.blogStyle = '';
+        style.textContent = webringStyles;
+        ring.shadowRoot.appendChild(style);
+        var labels = [
+          ['.webring-banner__link--prev', '← Precedente'],
+          ['.webring-banner__link--random', 'A caso'],
+          ['.webring-banner__link--next', 'Successivo →']
+        ];
+        labels.forEach(function (item) {
+          var link = ring.shadowRoot.querySelector(item[0]);
+          if (link) {
+            link.textContent = item[1];
+            // Use the visible Italian text, not the embed's English accessible name.
+            link.removeAttribute('aria-label');
+          }
+        });
+      });
+    });
   }
-  window.addEventListener('load', styleWebring);
 })();
