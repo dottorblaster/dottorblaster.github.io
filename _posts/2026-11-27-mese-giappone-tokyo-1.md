@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: true
-title: Un mese a Tokyo, settimana #1
+title: "Un mese a Tokyo, settimana #1"
 date: 2026-11-27 23:00:01 +0900
 categories:
 - Category
