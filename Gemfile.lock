@@ -123,7 +123,7 @@ GEM
     regexp_parser (2.13.4)
     rexml (3.4.4)
     rickshaw (0.5.0)
-    rmagick (7.3.0)
+    rmagick (7.3.1)
       observer (~> 0.1)
       pkg-config (~> 1.4)
     rouge (4.7.0)
@@ -286,7 +286,7 @@ CHECKSUMS
   regexp_parser (2.13.4) sha256=1d0547814f57e6f00946957bd0ca201bc42f42cfb08eee89df60998aedcd8a3b
   rexml (3.4.4) sha256=19e0a2c3425dfbf2d4fc1189747bdb2f849b6c5e74180401b15734bc97b5d142
   rickshaw (0.5.0) sha256=3cc74f039f68055ef05681cb8820ac32dd281657bd5959af6db816a83fb4849f
-  rmagick (7.3.0) sha256=543a105413c56a05ee58295a4b36a8a308863b1706cf22d0036577cc98287b5f
+  rmagick (7.3.1) sha256=44c64ef42033b4bacf646c8d51d39bb846eb5ae798ed3e9c8a83774f86a721b4
   rouge (4.7.0) sha256=dba5896715c0325c362e895460a6d350803dbf6427454f49a47500f3193ea739
   rubocop (1.92.3) sha256=fd77feac46e8e91c3a534f868a1702c59f5bf8173515fd00a3c6ce1198672ff6
   rubocop-ast (1.53.0) sha256=027984d28485d6502ae4c72f9341080f54f538599f5dbb54f81875a4ddcad574
